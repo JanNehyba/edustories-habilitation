@@ -21,15 +21,14 @@ metriky, hodnota"; klíč je v knize v komentáři u každého čísla).
 **2. Přepočítat v prohlížeči (Binder, ~15 min první spuštění).** Klikněte na
 odznak „launch binder" nahoře. Otevře se RStudio v prohlížeči (nic se
 neinstaluje k vám). Otevřete notebook ve `analyzy/notebooks/` a dejte
-**Render**. Reprodukovatelné z veřejných dat tohoto repozitáře jsou:
+**Render**. Všechny tři empirické studie jsou reprodukovatelné rovnou
+z veřejných dat tohoto repozitáře, bez textů kazuistik a bez jmen:
 - **Studie 1** (`10_korpus.qmd`): z odvozené tabulky `kap5_perkazuistika.csv`
   (počty slov, věk, publikační status; bez textů kazuistik);
 - **Studie 2** (`20_kodovani_llm.qmd`): ze `srovnani_k1_llm.csv` (kategorie
   člověka a modelu, bez textů a jmen);
-- **Studie 3** (`30_ai_vs_ucitel.qmd`): z dat v balíčku OSF k souvisejícímu
-  článku; ta nesou jména anotátorek, proto nejsou v repozitáři a do Binderu se
-  nahrávají ručně (odkaz bude zveřejněn s publikací článku, do té doby na
-  vyžádání u autora).
+- **Studie 3** (`30_ai_vs_ucitel.qmd`): z `kap7_hodnoceni_pseudo.csv`
+  (hodnocení dvojic řešení; anotátorky pod pseudonymy A1–A6, bez textů).
 
 **3. Lokálně** (technicky): `./reproduce.sh` ověří prostředí, přepočítá figury
 a spustí kontrolní brány.

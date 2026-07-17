@@ -27,10 +27,26 @@ set.seed(SEED)
 ROOT <- normalizePath(file.path(getwd(), ".."))          # analyzy/
 H2   <- normalizePath(file.path(ROOT, ".."))             # habilitace-2/
 CSV  <- file.path(H2, "data/externi/osf-aied-ndtkz/anotace_final_data_bezdiakritiky.csv")
+PUB  <- file.path(H2, "data/processed/kap7_hodnoceni_pseudo.csv")
 DATA_SHA <- "ba464aaa3aa7223ba6a14009ec38dfb576db9af250079ed821bb6f9992478927"
-stopifnot(file.exists(CSV))
-
-df <- read.csv(CSV, header = TRUE, sep = ",", fileEncoding = "cp1250")
+# Studie 3 potřebuje k výpočtu jen HODNOCENÍ, ne texty kazuistik. Když je surový
+# OSF soubor přítomen (autor), pseudonymizujeme anotátorky, ponecháme jen
+# analytické sloupce (BEZ textů Popis/Anamneza/Řešení) a zapíšeme veřejnou
+# tabulku; když chybí (Binder), čteme ji. Náhrada jmen 1:1 nemění žádný výsledek
+# (anotátorka vstupuje jen jako náhodný efekt), texty korpusu zůstávají privátní.
+KEEP <- c("Id", "anotator_name", "Otazka", "Hodnoceni", "Reseni_gen_AI",
+          "Pristup.I", "Pristup.II", "Pristup.III")
+if (file.exists(CSV)) {
+  df <- read.csv(CSV, header = TRUE, sep = ",", fileEncoding = "cp1250")
+  pseudo <- setNames(sprintf("A%d", seq_along(sort(unique(df$anotator_name)))),
+                     sort(unique(df$anotator_name)))
+  df$anotator_name <- unname(pseudo[df$anotator_name])   # jména → A1..A6
+  df <- df[, KEEP]
+  write.csv(df, PUB, row.names = FALSE)                  # veřejná tabulka bez textů a jmen
+} else {
+  df <- read.csv(PUB, header = TRUE, sep = ",", encoding = "UTF-8")
+  DATA_SHA <- "public-pseudo"
+}
 stopifnot(length(unique(df$Id)) == 324,
           all(sort(unique(na.omit(df$Hodnoceni))) == -2:2))
 dims <- c(vhodnost     = "Jak.moc.je.vhodna.toto.reseni.pro.danou.situaci.",
@@ -191,7 +207,7 @@ knitr::kable(bind_rows(alpha_rows), digits = 3)
 ## Approach labels: Jaccard (both conventions)
 
 ```{r jaccard}
-pr <- unique(df[, c("Id", "X", "anotator_name", "Reseni_gen_AI",
+pr <- unique(df[, c("Id", "anotator_name", "Reseni_gen_AI",
                     "Pristup.I", "Pristup.II", "Pristup.III")])
 for (c_ in c("Pristup.I", "Pristup.II", "Pristup.III"))
   pr[[c_]][pr[[c_]] %in% c("", "nic")] <- NA

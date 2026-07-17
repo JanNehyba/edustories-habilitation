@@ -21,17 +21,14 @@ výstupům analýz. Nabízíme tři cesty podle toho, kolik techniky chcete.
 1. Klikněte na odznak „launch binder" v README tohoto repozitáře. Poprvé se
    prostředí sestaví (~15 minut), pak se otevře RStudio ve vašem prohlížeči;
    nic se neinstaluje k vám do počítače.
-2. **Studie 1 a 2 běží rovnou** z veřejných dat repozitáře. Otevřete
-   `analyzy/notebooks/10_korpus.qmd` (kap. 5) nebo `20_kodovani_llm.qmd`
-   (kap. 6) a klikněte na **Render**. Vzniklé hodnoty porovnejte s tabulkami
-   a čísly v knize. (Studie 1 čte odvozenou tabulku počtů slov a věku bez
-   textů kazuistik; Studie 2 čte kategorie člověka i modelu bez textů a jmen.)
-3. **Studie 3** potřebuje datový soubor z balíčku OSF k souvisejícímu článku
-   (`anotace_final_data_bezdiakritiky.csv`). Ten NENÍ v repozitáři, protože
-   nese jména anotátorek; odkaz bude zveřejněn s publikací článku, do té doby
-   jej autor poskytne na vyžádání. Nahrajte jej v RStudiu (tlačítko Upload)
-   do složky `data/externi/osf-aied-ndtkz/` (založte ji), otevřete
-   `30_ai_vs_ucitel.qmd` a dejte **Render**; porovnejte s tabulkami 7.1 a 7.2.
+2. **Všechny tři studie běží rovnou** z veřejných dat repozitáře. Otevřete
+   notebook a klikněte na **Render**, pak porovnejte hodnoty s knihou:
+   - `10_korpus.qmd` (Studie 1, kap. 5): z odvozené tabulky počtů slov a věku,
+     bez textů kazuistik;
+   - `20_kodovani_llm.qmd` (Studie 2, kap. 6): z kategorií přiřazených člověkem
+     a modelem, bez textů a jmen;
+   - `30_ai_vs_ucitel.qmd` (Studie 3, kap. 7): z tabulky hodnocení dvojic řešení
+     (anotátorky pod pseudonymy A1–A6, bez textů).
 
 Poznámka: v logu RStudia se mohou objevit hlášky „checkSpelling / iconv" nad
 českými slovy. Jsou neškodné (jen kontrola pravopisu neumí diakritiku) a na
