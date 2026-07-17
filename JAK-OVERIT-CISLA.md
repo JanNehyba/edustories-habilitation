@@ -21,10 +21,14 @@ výstupům analýz. Nabízíme tři cesty podle toho, kolik techniky chcete.
 1. Klikněte na odznak „launch binder" v README tohoto repozitáře.
    Otevře se RStudio ve vašem prohlížeči; nic se neinstaluje k vám do
    počítače.
-2. V RStudiu otevřete `analyzy/notebooks/30_ai_vs_ucitel.qmd` (analýza
-   Studie 3; její data jsou veřejná v balíčku OSF a jsou součástí
-   prostředí).
-3. Klikněte na tlačítko **Render** (případně spusťte buňky postupně).
+2. Opatřete si datový soubor Studie 3 (`anotace_final_data_bezdiakritiky.csv`):
+   je uložen v balíčku na platformě OSF k souvisejícímu článku; odkaz bude
+   zveřejněn s publikací článku a do té doby jej autor poskytne na vyžádání.
+   Soubor NENÍ součástí tohoto repozitáře, protože obsahuje jména anotátorek
+   (tento repozitář důsledně pracuje jen s pseudonymy).
+3. V RStudiu soubor nahrajte (tlačítko Upload) do složky
+   `data/externi/osf-aied-ndtkz/` (založte ji), otevřete
+   `analyzy/notebooks/30_ai_vs_ucitel.qmd` a klikněte na **Render**.
 4. Porovnejte vzniklé hodnoty s tabulkami 7.1 a 7.2 v knize.
 
 Poznámka: notebooky 10 a 20 vyžadují neveřejné řezy korpusu (nezveřejněné
