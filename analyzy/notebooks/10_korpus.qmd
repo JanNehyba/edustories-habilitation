@@ -29,8 +29,10 @@ S6  <- file.path(H2, "data/raw/korpus/export-2026-05/Edustories_export_may26_sva
 S6B <- file.path(H2, "data/raw/korpus/export-2026-05/Edustories_export_may26_svabik.xlsx")
 REZ <- file.path(H2, "data/processed/k1_rez_ids.csv")
 TRUNC <- file.path(H2, "data/processed/truncated_uids.csv")
-sha256 <- function(p) strsplit(system2("shasum", c("-a", "256", shQuote(p)),
-                                       stdout = TRUE), " ")[[1]][1]
+sha256 <- function(p) {
+  if (!file.exists(p)) return("public-derived")   # veřejný běh: raw není, otisk se neuvádí
+  strsplit(system2("shasum", c("-a", "256", shQuote(p)), stdout = TRUE), " ")[[1]][1]
+}
 S6_SHA <- sha256(S6); REZ_SHA <- sha256(REZ)
 manifest <- list()
 put <- function(metric, value, sha = S6_SHA) manifest[[length(manifest) + 1]] <<-
@@ -40,16 +42,44 @@ put <- function(metric, value, sha = S6_SHA) manifest[[length(manifest) + 1]] <<
 ## Full corpus S6 (May 2026)
 
 ```{r s6}
-s6 <- read_csv(S6, col_types = cols(.default = col_character()))
-put("n_korpus_s6", nrow(s6))
-put("n_zverejneno_s6", sum(s6$is_published == "true", na.rm = TRUE))
-s6$uid <- paste0("exp", s6$id)
-trunc <- read_csv(TRUNC, show_col_types = FALSE)
-s6_len <- s6 |> filter(!(uid %in% trunc$case_uid))
-put("n_vyrazeno_delky_trunc", nrow(s6) - nrow(s6_len))
+# Studie 1 potřebuje z plného exportu jen ODVOZENÉ hodnoty (počty slov, věk,
+# publikační status), NE texty kazuistik. Je-li plný export přítomen (stroj
+# autora), spočítáme je a zároveň zapíšeme veřejnou tabulku BEZ TEXTŮ; když
+# chybí (Binder / veřejný běh), načteme tuto tabulku. Čísla jsou identická
+# (táž definice počtu slov wc()). Kategorie a ko-výskyt níže stojí na veřejném
+# k1_rez_ids.csv, takže celá Studie 1 je reprodukovatelná bez textů korpusu.
+PER <- file.path(H2, "data/processed/kap5_perkazuistika.csv")
 wc <- function(x) str_count(x, "\\S+")
+if (file.exists(S6)) {
+  s6 <- read_csv(S6, col_types = cols(.default = col_character()))
+  ai_cols <- grep("^ai_solution_.*_cs$", names(s6), value = TRUE)
+  per <- tibble(
+    uid = paste0("exp", s6$id),
+    is_published = s6$is_published,
+    age = suppressWarnings(as.numeric(s6$age)),
+    wc_description = wc(s6$description_cs),
+    wc_anamnesis   = wc(s6$anamnesis_cs),
+    wc_solution    = wc(s6$solution_cs),
+    wc_outcome     = wc(s6$outcome_cs),
+    ai_complete    = rowSums(!is.na(s6[ai_cols]) & s6[ai_cols] != "") == 6L)
+  write.csv(per, PER, row.names = FALSE)   # veřejná odvozená tabulka (bez textů)
+  PER_SHA <- S6_SHA
+} else {
+  per <- read_csv(PER, col_types = cols(.default = col_character()))
+  per$age <- suppressWarnings(as.numeric(per$age))
+  for (c in grep("^wc_", names(per), value = TRUE)) per[[c]] <- as.integer(per[[c]])
+  per$ai_complete <- per$ai_complete %in% c("TRUE", "true", "1")
+  PER_SHA <- sha256(PER)
+  cat("Plný export S6 není přítomen — Studie 1 běží z veřejné odvozené tabulky",
+      "kap5_perkazuistika.csv (počty slov, věk, publikační status; bez textů korpusu).\n")
+}
+put("n_korpus_s6", nrow(per))
+put("n_zverejneno_s6", sum(per$is_published == "true", na.rm = TRUE))
+trunc <- read_csv(TRUNC, show_col_types = FALSE)
+per_len <- per |> filter(!(uid %in% trunc$case_uid))
+put("n_vyrazeno_delky_trunc", nrow(per) - nrow(per_len))
 len_rows <- lapply(c("description", "anamnesis", "solution", "outcome"), function(part) {
-  w <- wc(s6_len[[paste0(part, "_cs")]])
+  w <- per_len[[paste0("wc_", part)]]
   put(paste0(part, "_slov_median"), median(w, na.rm = TRUE))
   put(paste0(part, "_slov_q1"), quantile(w, .25, na.rm = TRUE))
   put(paste0(part, "_slov_q3"), quantile(w, .75, na.rm = TRUE))
@@ -58,14 +88,13 @@ len_rows <- lapply(c("description", "anamnesis", "solution", "outcome"), functio
 })
 knitr::kable(bind_rows(len_rows), digits = 0, row.names = FALSE,
              caption = "Word counts (Czech text; all 52 truncation-affected cases excluded)")
-age <- suppressWarnings(as.numeric(s6$age))
+age <- per$age
 # hygiena: věk 0 = nevyplněno (kód formuláře), ne skutečný věk → NA;
 # horní mez neořezáváme (žák SŠ může být 20+), počet implauzibilních dokládáme
 put("vek_n_nula_vyrazeno", sum(age == 0, na.rm = TRUE))
 age[age == 0] <- NA
 put("vek_median", median(age, na.rm = TRUE)); put("vek_n", sum(!is.na(age)))
-ai_cols <- grep("^ai_solution_.*_cs$", names(s6), value = TRUE)
-put("n_ai_reseni_kompletni", sum(rowSums(!is.na(s6[ai_cols]) & s6[ai_cols] != "") == 6))
+put("n_ai_reseni_kompletni", sum(per$ai_complete, na.rm = TRUE))
 ```
 
 ## Corpus growth and publication drift
@@ -76,14 +105,27 @@ its cases missing from S6 were unpublished in the meantime.
 ```{r growth}
 snap <- data.frame(
   rez = c("S1 (2023)", "S3 (04/2024)", "S4 (08/2024)", "S5 HF (release)", "S6 (05/2026)"),
-  n = c(757, 1507, 1695, 1492, nrow(s6)))
+  n = c(757, 1507, 1695, 1492, nrow(per)))
 knitr::kable(snap, row.names = FALSE)
 for (i in seq_len(nrow(snap))) put(paste0("rust_", gsub("[^A-Za-z0-9]", "", snap$rez[i])), snap$n[i])
-s6b_ids <- suppressMessages(readxl::read_excel(S6B, sheet = "out"))$id
-s6b_ids <- as.integer(na.omit(s6b_ids))
-drift <- sum(!(s6b_ids %in% as.integer(s6$id)))
-put("n_s6b", length(s6b_ids), sha256(S6B))
-put("n_odpublikovano_s6b_vs_s6", drift, sha256(S6B))
+# Drift potřebuje jen SEZNAM ID staršího i aktuálního exportu (žádné texty).
+# Při běhu autora je materializujeme jako veřejné tabulky, jinak je načteme.
+S6B_IDS <- file.path(H2, "data/processed/kap5_s6b_ids.csv")
+S6_IDS  <- file.path(H2, "data/processed/kap5_s6_ids.csv")
+if (file.exists(S6B)) {
+  s6b_ids <- as.integer(na.omit(suppressMessages(readxl::read_excel(S6B, sheet = "out"))$id))
+  s6_ids  <- as.integer(sub("^exp", "", per$uid))
+  write.csv(data.frame(id = s6b_ids), S6B_IDS, row.names = FALSE)
+  write.csv(data.frame(id = s6_ids),  S6_IDS,  row.names = FALSE)
+  S6B_SHA <- sha256(S6B)
+} else {
+  s6b_ids <- read_csv(S6B_IDS, show_col_types = FALSE)$id
+  s6_ids  <- read_csv(S6_IDS,  show_col_types = FALSE)$id
+  S6B_SHA <- sha256(S6B_IDS)
+}
+drift <- sum(!(s6b_ids %in% s6_ids))
+put("n_s6b", length(s6b_ids), S6B_SHA)
+put("n_odpublikovano_s6b_vs_s6", drift, S6B_SHA)
 cat("S6b:", length(s6b_ids), "případů; z nich", drift, "už není v S6 (odpublikováno).\n")
 ```
 
@@ -142,7 +184,7 @@ Case-level aggregates for `fig_05_*.R` (no case texts — safe to publish).
 ```{r rozdeleni}
 TABDIR <- file.path(H2, "vystupy/tabulky")
 delky <- bind_rows(lapply(c("description", "anamnesis", "solution", "outcome"),
-  function(part) data.frame(cast = part, slova = wc(s6_len[[paste0(part, "_cs")]]))))
+  function(part) data.frame(cast = part, slova = per_len[[paste0("wc_", part)]])))
 delky <- delky[!is.na(delky$slova) & delky$slova > 0, ]
 write.csv(delky, file.path(TABDIR, "kap5_delky_rozdeleni.csv"), row.names = FALSE)
 put("delka_p90_description",
