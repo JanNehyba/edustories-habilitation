@@ -46,6 +46,17 @@ celý řez korpusu veřejný být nemůže. Analýzy proto běží z odvozených
 citace, které jsou vytištěné přímo v knize. Veřejný anotovaný výběr korpusu je
 na Hugging Face: `MU-NLPC/Edustories-en`.
 
+## Licence
+
+- **Kód** (skripty a notebooky, build knihy): MIT (viz `LICENSE`).
+- **Odvozená data** (tabulky a reporty bez textů kazuistik): CC BY-NC 4.0
+  (ověření a nekomerční výzkum s uvedením zdroje; viz `DATA-LICENSE.md`).
+- **Text a PDF knihy**: © Jan Nehyba, všechna práva vyhrazena (pracovní verze
+  ke kontrole; kvůli chystanému knižnímu vydání bez otevřené licence).
+- **Plný korpus kazuistik** není součástí repozitáře (dostupný přes platformu
+  projektu). Výběr v angličtině na Hugging Face `MU-NLPC/Edustories-en` má
+  vlastní licenci.
+
 Chyby a neshody čísel hlaste v Issues tohoto repozitáře.
 
 Průběžná pracovní verze; release s DOI vznikne až po finálním PDF knihy.
