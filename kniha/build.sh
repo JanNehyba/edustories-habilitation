@@ -77,9 +77,10 @@ for t in "${targets[@]}"; do
   quarto render --to "$t" --no-clean
 done
 
-# ── OBÁLKA (až bude): cover/cover_final-cs.pdf se předřadí jako 1. strana ──
-if printf '%s\n' "${targets[@]}" | grep -qx pdf && [ -f cover/cover_final-cs.pdf ]; then
-  "$PY" - cover/cover_final-cs.pdf ../vystupy/export/habilitace2-CZ.pdf <<'PYEOF'
+# ── OBÁLKA: cover/cover_E.pdf (koncept „MUNI plocha", schváleno Janem 17. 7. 2026)
+#    se předřadí jako 1. strana; nahrazuje dřívějšího kandidáta cover_final-cs (B) ──
+if printf '%s\n' "${targets[@]}" | grep -qx pdf && [ -f cover/cover_E.pdf ]; then
+  "$PY" - cover/cover_E.pdf ../vystupy/export/habilitace2-CZ.pdf <<'PYEOF'
 import sys
 from pypdf import PdfWriter, PdfReader
 cover, book = sys.argv[1], sys.argv[2]
