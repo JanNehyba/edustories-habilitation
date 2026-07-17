@@ -25,7 +25,8 @@ suppressPackageStartupMessages({
 SEED <- 20260714; set.seed(SEED)
 H2 <- normalizePath(file.path(getwd(), "../.."))
 CAPV <- file.path(H2, "data/raw/k1-kvalitativni-kodovani-2023-24/05-llm-klasifikace-capv")
-SROV <- file.path(CAPV, "srovnani.csv")
+SROV <- file.path(CAPV, "srovnani.csv")                      # zdroj (autor)
+SROV_PUB <- file.path(H2, "data/processed/srovnani_k1_llm.csv")  # veřejná kopie (companion)
 CLS7 <- file.path(CAPV, "vysledky_class_7.csv")
 S4   <- file.path(H2, "data/raw/korpus/matice/Poslední záloha databáze 4.9.2024/matrix-annotated-22-08-2024 (2).csv")
 LONG <- file.path(H2, "data/processed/anotace_long_k1.csv")
@@ -35,58 +36,83 @@ manifest <- list()
 put <- function(metric, value, sha) manifest[[length(manifest) + 1]] <<-
   data.frame(metric = metric, value = round(as.numeric(value), 4), data_sha = sha)
 
-srov <- read.csv(SROV, sep = ";", encoding = "UTF-8")
-# cls7 i s4 nesou duplicitní id (s4: opakované řádky matice) — bez deduplikace
-# by left_join rozmnožil 7 z 334 párů na 5 řádků a všechny míry shody by běžely
-# nad 361/362 řádky (pseudoreplikace; nalezeno oponenturou 17. 7. 2026).
-cls7 <- read.csv(CLS7, encoding = "UTF-8") |> distinct(id, .keep_all = TRUE)
-s4 <- read.csv(S4, fileEncoding = "UTF-8-BOM")[, c("id", "solutions_annotated")] |>
-  distinct(id, .keep_all = TRUE)
-SROV_SHA <- sha256(SROV)
+# srovnani.csv = id + kategorie člověka i modelu, BEZ textů a jmen → bezpečné
+# zveřejnit. Autor čte zdroj z data/raw a zapisuje veřejnou kopii do
+# data/processed; Binder čte veřejnou kopii. Oba stejný obsah = stejná čísla.
+if (file.exists(SROV)) {
+  srov <- read.csv(SROV, sep = ";", encoding = "UTF-8")
+  write.csv(srov, SROV_PUB, row.names = FALSE)
+  SROV_SHA <- sha256(SROV)
+} else {
+  srov <- read.csv(SROV_PUB, encoding = "UTF-8")
+  SROV_SHA <- sha256(SROV_PUB)
+}
+# srovnani.csv (id + kategorie člověka i modelu, BEZ textů a jmen) je jediný vstup
+# NUTNÝ pro míry shody → je veřejný v companionu a Studie 2 je plně reprodukovatelná
+# v Binderu. Soubory class_7 a matice slouží JEN k ověření provenience sloupců
+# (že solutions_annotated = člověk, main_category = archivovaný běh gpt-4o); jsou
+# neveřejné a když chybí (Binder), provenienční kontrola se přeskočí.
+# cls7 i s4 nesou duplicitní id → distinct před joinem (jinak pseudoreplikace,
+# oprava 17. 7. 2026: 7 z 334 párů se množilo 5×).
+HAVE_PROV <- file.exists(CLS7) && file.exists(S4)
+if (HAVE_PROV) {
+  cls7 <- read.csv(CLS7, encoding = "UTF-8") |> distinct(id, .keep_all = TRUE)
+  s4 <- read.csv(S4, fileEncoding = "UTF-8-BOM")[, c("id", "solutions_annotated")] |>
+    distinct(id, .keep_all = TRUE)
+}
 ```
 
 ## Source resolution: which column is human, which is LLM?
 
 ```{r resolve}
-j <- srov |>
-  left_join(cls7, by = "id") |>
-  left_join(s4, by = "id", suffix = c("", "_s4"))
-stopifnot(nrow(j) == nrow(srov))   # 1 řádek = 1 kazuistika; žádná duplikace joinem
 first_label <- function(x) trimws(sub("[;,].*$", "", x))
-# vysledky_class_7 ukládá verbózní odpověď modelu — hlavní kategorii je nutné
-# vyparsovat z řádku „Hlavní kategorie řešení: X" (naivní first_label na celém
-# textu dává falešnou 0% shodu — dřívější artefakt, opraveno 15. 7. 2026)
-parse_c7_main <- function(x) {
-  m <- regexpr("Hlavní kategorie řešení:\\s*[^\n•]+", x, perl = TRUE)
-  out <- rep(NA_character_, length(x))
-  out[m > 0] <- trimws(sub("Hlavní kategorie řešení:\\s*", "", regmatches(x, m)))
-  out
+if (HAVE_PROV) {
+  j <- srov |>
+    left_join(cls7, by = "id") |>
+    left_join(s4, by = "id", suffix = c("", "_s4"))
+  stopifnot(nrow(j) == nrow(srov))   # 1 řádek = 1 kazuistika; žádná duplikace joinem
+  # vysledky_class_7 ukládá verbózní odpověď modelu — hlavní kategorii je nutné
+  # vyparsovat z řádku „Hlavní kategorie řešení: X" (naivní first_label na celém
+  # textu dává falešnou 0% shodu — dřívější artefakt, opraveno 15. 7. 2026)
+  parse_c7_main <- function(x) {
+    m <- regexpr("Hlavní kategorie řešení:\\s*[^\n•]+", x, perl = TRUE)
+    out <- rep(NA_character_, length(x))
+    out[m > 0] <- trimws(sub("Hlavní kategorie řešení:\\s*", "", regmatches(x, m)))
+    out
+  }
+  agree_main_class7 <- mean(trimws(j$main_category) == parse_c7_main(j$AI_class_sol), na.rm = TRUE)
+  agree_hum_sol     <- mean(first_label(j$solutions_annotated) ==
+                            first_label(j$solutions_annotated_s4), na.rm = TRUE)
+  agree_hum_main    <- mean(first_label(j$main_category) ==
+                            first_label(j$solutions_annotated_s4), na.rm = TRUE)
+  res <- data.frame(hypoteza = c("main_category = class_7 (parsovaná hlavní kategorie)",
+                                 "solutions = HUMAN (vs S4 matice)",
+                                 "main_category vs S4 matice (= human×LLM agreement)"),
+                    shoda = round(c(agree_main_class7, agree_hum_sol, agree_hum_main), 3))
+  knitr::kable(res)
+  # EMPIRICKÉ ROZŘEŠENÍ (revize 15. 7. 2026):
+  # - main_category ≡ class_7 (100 % po korektním parsování verbózního výstupu)
+  #   → modelový sloupec = archivovaný běh gpt-4o vysledky_class_7. ❓ VYŘEŠENO.
+  # - solutions_annotated ≈ sloupec S4 matice (0.97 first-label) → ČLOVĚK
+  #   (matice S4 nese sloučené lidské K1 kódy, viz skript 16 a DATA_README §2)
+  # - shoda main×solutions (0.71) odpovídá publikovaným 72,16 % (ČAPV kód:
+  #   match = main_category == solutions_annotated)
+  stopifnot(agree_main_class7 == 1,        # main = doložený LLM běh class_7
+            agree_hum_sol > 0.9)           # solutions = člověk, tvrdý assert
+  put("overeni_solutions_je_clovek", agree_hum_sol, SROV_SHA)
+  put("overeni_main_je_class7", agree_main_class7, SROV_SHA)
+  put("overeni_main_vs_matice", agree_hum_main, SROV_SHA)
+} else {
+  # Binder / veřejný běh: provenienční soubory nejsou; míry shody se počítají
+  # přímo ze sloupců srovnani.csv (člověk = solutions_annotated, model = main_category).
+  j <- srov
+  cat("Provenienční soubory (class_7, matice) nejsou přítomny — běh z veřejného",
+      "srovnani.csv. Ověření provenience sloupců bylo provedeno autorem (viz kap. 6.2);",
+      "míry shody níže se počítají přímo z kategorií.\n")
 }
-agree_main_class7 <- mean(trimws(j$main_category) == parse_c7_main(j$AI_class_sol), na.rm = TRUE)
-agree_hum_sol     <- mean(first_label(j$solutions_annotated) ==
-                          first_label(j$solutions_annotated_s4), na.rm = TRUE)
-agree_hum_main    <- mean(first_label(j$main_category) ==
-                          first_label(j$solutions_annotated_s4), na.rm = TRUE)
-res <- data.frame(hypoteza = c("main_category = class_7 (parsovaná hlavní kategorie)",
-                               "solutions = HUMAN (vs S4 matice)",
-                               "main_category vs S4 matice (= human×LLM agreement)"),
-                  shoda = round(c(agree_main_class7, agree_hum_sol, agree_hum_main), 3))
-knitr::kable(res)
-# EMPIRICKÉ ROZŘEŠENÍ (revize 15. 7. 2026):
-# - main_category ≡ class_7 (100 % po korektním parsování verbózního výstupu)
-#   → modelový sloupec = archivovaný běh gpt-4o vysledky_class_7. ❓ VYŘEŠENO.
-# - solutions_annotated ≈ sloupec S4 matice (0.97 first-label) → ČLOVĚK
-#   (matice S4 nese sloučené lidské K1 kódy, viz skript 16 a DATA_README §2)
-# - shoda main×solutions (0.71) odpovídá publikovaným 72,16 % (ČAPV kód:
-#   match = main_category == solutions_annotated)
-stopifnot(agree_main_class7 == 1,        # main = doložený LLM běh class_7
-          agree_hum_sol > 0.9)           # solutions = člověk, tvrdý assert
 HUMAN <- "solutions_annotated"; LLM <- "main_category"; SECONDARY <- "secondary_categories"
 cat("HUMAN =", HUMAN, "| LLM =", LLM, "| secondary = další štítky LLM\n")
 put("n_paru_llm_clovek", nrow(srov), SROV_SHA)
-put("overeni_solutions_je_clovek", agree_hum_sol, SROV_SHA)
-put("overeni_main_je_class7", agree_main_class7, SROV_SHA)
-put("overeni_main_vs_matice", agree_hum_main, SROV_SHA)
 ```
 
 ## LLM–human agreement (reproduction of κ = 0.64 / 72.16 %)
@@ -107,6 +133,7 @@ extended <- mean(mapply(function(hh, ll, ss) {
 kap <- irr::kappa2(cbind(h, l))$value
 # bootstrap CI přes páry
 B <- 1000
+set.seed(SEED)   # path-independentní bootstrap (viz níže K1)
 n <- length(h)
 bt <- replicate(B, {
   i <- sample.int(n, replace = TRUE)
@@ -172,17 +199,25 @@ Candidates: human != model, solution text present in S6 (PUBLISHED cases only
 for the author to pick 2–3; the chosen ones are quoted verbatim in ch. 6.
 
 ```{r neshody-kandidati}
+# Tento blok cituje TEXTY řešení (jen zveřejněné kazuistiky) → potřebuje plný
+# export S6, který je neveřejný. V Binderu chybí; kandidáti neshod jsou stejně
+# jen podklad pro výběr do knihy (finální tři jsou v kap. 6.5 vytištěné).
 S6P <- file.path(H2, "data/raw/korpus/export-2026-05/Edustories_export_may26_svabik_v2.csv")
-s6 <- read.csv(S6P, encoding = "UTF-8")
-s6sol <- setNames(s6$solution_cs, as.character(s6$id))
-mism <- j[which(ok)[hh != ll], c("id", "solutions_annotated", "main_category")]
-mism$text <- s6sol[as.character(mism$id)]          # jen zveřejněné (S6 = published)
-mism <- mism[!is.na(mism$text) & nchar(mism$text) > 60 & nchar(mism$text) < 420, ]
-set.seed(SEED)
-kand <- mism[sample(nrow(mism), min(6, nrow(mism))), ]
-for (i in seq_len(nrow(kand)))
-  cat("### Kandidát", i, "(id", kand$id[i], ")\nČLOVĚK:", first_label(kand$solutions_annotated[i]),
-      "| MODEL:", first_label(kand$main_category[i]), "\n", kand$text[i], "\n\n")
+if (file.exists(S6P)) {
+  s6 <- read.csv(S6P, encoding = "UTF-8")
+  s6sol <- setNames(s6$solution_cs, as.character(s6$id))
+  mism <- j[which(ok)[hh != ll], c("id", "solutions_annotated", "main_category")]
+  mism$text <- s6sol[as.character(mism$id)]          # jen zveřejněné (S6 = published)
+  mism <- mism[!is.na(mism$text) & nchar(mism$text) > 60 & nchar(mism$text) < 420, ]
+  set.seed(SEED)
+  kand <- mism[sample(nrow(mism), min(6, nrow(mism))), ]
+  for (i in seq_len(nrow(kand)))
+    cat("### Kandidát", i, "(id", kand$id[i], ")\nČLOVĚK:", first_label(kand$solutions_annotated[i]),
+        "| MODEL:", first_label(kand$main_category[i]), "\n", kand$text[i], "\n\n")
+} else {
+  cat("Plný export S6 není přítomen (běh z veřejných dat) — kvalitativní příklady",
+      "neshod jsou vytištěny v kap. 6.5 knihy.\n")
+}
 ```
 
 ## K1 inter-annotator agreement (overlap subset, human coding)
@@ -206,6 +241,8 @@ alpha_nom <- function(d) {
   c(a = suppressWarnings(irr::kripp.alpha(m, method = "nominal")$value), n = ncol(m))
 }
 B <- 1000
+set.seed(SEED)   # přeseedovat: bootstrap nesmí záviset na spotřebě RNG dřívějšími
+                 # (podmíněnými) bloky — jinak se CI liší mezi během autora a Binderem
 k1_rows <- lapply(unique(prim$dimenze), function(dm) {
   d <- prim |> filter(dimenze == dm)
   base <- alpha_nom(d)

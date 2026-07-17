@@ -16,24 +16,26 @@ výstupům analýz. Nabízíme tři cesty podle toho, kolik techniky chcete.
    tabulka „název metriky, hodnota". Název klíče najdete v knize
    v komentáři u každého čísla (ve zdrojovém textu kapitoly).
 
-## Cesta 2: spustit analýzu v prohlížeči (Binder, ~10 minut)
+## Cesta 2: spustit analýzu v prohlížeči (Binder, ~15 minut poprvé)
 
-1. Klikněte na odznak „launch binder" v README tohoto repozitáře.
-   Otevře se RStudio ve vašem prohlížeči; nic se neinstaluje k vám do
-   počítače.
-2. Opatřete si datový soubor Studie 3 (`anotace_final_data_bezdiakritiky.csv`):
-   je uložen v balíčku na platformě OSF k souvisejícímu článku; odkaz bude
-   zveřejněn s publikací článku a do té doby jej autor poskytne na vyžádání.
-   Soubor NENÍ součástí tohoto repozitáře, protože obsahuje jména anotátorek
-   (tento repozitář důsledně pracuje jen s pseudonymy).
-3. V RStudiu soubor nahrajte (tlačítko Upload) do složky
-   `data/externi/osf-aied-ndtkz/` (založte ji), otevřete
-   `analyzy/notebooks/30_ai_vs_ucitel.qmd` a klikněte na **Render**.
-4. Porovnejte vzniklé hodnoty s tabulkami 7.1 a 7.2 v knize.
+1. Klikněte na odznak „launch binder" v README tohoto repozitáře. Poprvé se
+   prostředí sestaví (~15 minut), pak se otevře RStudio ve vašem prohlížeči;
+   nic se neinstaluje k vám do počítače.
+2. **Studie 1 a 2 běží rovnou** z veřejných dat repozitáře. Otevřete
+   `analyzy/notebooks/10_korpus.qmd` (kap. 5) nebo `20_kodovani_llm.qmd`
+   (kap. 6) a klikněte na **Render**. Vzniklé hodnoty porovnejte s tabulkami
+   a čísly v knize. (Studie 1 čte odvozenou tabulku počtů slov a věku bez
+   textů kazuistik; Studie 2 čte kategorie člověka i modelu bez textů a jmen.)
+3. **Studie 3** potřebuje datový soubor z balíčku OSF k souvisejícímu článku
+   (`anotace_final_data_bezdiakritiky.csv`). Ten NENÍ v repozitáři, protože
+   nese jména anotátorek; odkaz bude zveřejněn s publikací článku, do té doby
+   jej autor poskytne na vyžádání. Nahrajte jej v RStudiu (tlačítko Upload)
+   do složky `data/externi/osf-aied-ndtkz/` (založte ji), otevřete
+   `30_ai_vs_ucitel.qmd` a dejte **Render**; porovnejte s tabulkami 7.1 a 7.2.
 
-Poznámka: notebooky 10 a 20 vyžadují neveřejné řezy korpusu (nezveřejněné
-kazuistiky), proto je v Binderu spustit nelze; k nim slouží zmrazené
-reporty z Cesty 1.
+Poznámka: v logu RStudia se mohou objevit hlášky „checkSpelling / iconv" nad
+českými slovy. Jsou neškodné (jen kontrola pravopisu neumí diakritiku) a na
+výpočty ani render nemají vliv.
 
 ## Cesta 3: lokálně (pro technické čtenáře)
 
