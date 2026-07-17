@@ -1,0 +1,266 @@
+---
+title: "E3 — AI vs Teacher Solutions (Study 3, K2 campaign)"
+author: "EduStories / habilitace-2"
+date: today
+format:
+  html:
+    embed-resources: true
+    toc: true
+execute:
+  warning: false
+  message: false
+---
+
+Formalises the completed E3 analysis (PLAN.md §5, frozen v1.0). Authoritative
+data = OSF package of the AIED manuscript (`data/externi/osf-aied-ndtkz/`),
+column `Reseni_gen_AI`: 0 = AI, 1 = teacher. This notebook (a) reproduces the
+manuscript's LMMs (Table 3), (b) runs the pre-specified CLMM sensitivity,
+(c) computes inter-rater agreement with cluster-bootstrap 95% CIs, and
+(d) writes the numbers manifest `vystupy/tabulky/kap7_k2_shoda_cisla.csv`.
+
+```{r setup}
+suppressPackageStartupMessages({
+  library(dplyr); library(tidyr); library(lmerTest); library(ordinal); library(irr)
+})
+SEED <- 20260714
+set.seed(SEED)
+ROOT <- normalizePath(file.path(getwd(), ".."))          # analyzy/
+H2   <- normalizePath(file.path(ROOT, ".."))             # habilitace-2/
+CSV  <- file.path(H2, "data/externi/osf-aied-ndtkz/anotace_final_data_bezdiakritiky.csv")
+DATA_SHA <- "ba464aaa3aa7223ba6a14009ec38dfb576db9af250079ed821bb6f9992478927"
+stopifnot(file.exists(CSV))
+
+df <- read.csv(CSV, header = TRUE, sep = ",", fileEncoding = "cp1250")
+stopifnot(length(unique(df$Id)) == 324,
+          all(sort(unique(na.omit(df$Hodnoceni))) == -2:2))
+dims <- c(vhodnost     = "Jak.moc.je.vhodna.toto.reseni.pro.danou.situaci.",
+          reaktivni    = "Jak.moc.je.popisovane.reseni.reaktivni.nebo.proaktivni.",
+          humanisticke = "Jak.moc.je.popisovane.reseni.humanisticky.nebo.behavioralne.orientovane.",
+          systemove    = "Jak.moc.je.popisovane.reseni.systemove.nebo.situacni.")
+manifest <- list()
+put <- function(metric, value) manifest[[length(manifest) + 1]] <<-
+  data.frame(metric = metric, value = round(as.numeric(value), 4))
+put("n_kazuistik", length(unique(df$Id)))
+put("n_anotatorek", length(unique(df$anotator_name)))
+put("n_odpovedi_dimenze", nrow(df))
+put("n_missing_dimenze", sum(is.na(df$Hodnoceni)))
+```
+
+## Descriptives by source
+
+```{r descriptives}
+desc <- df |>
+  filter(!is.na(Hodnoceni)) |>
+  mutate(dim = names(dims)[match(Otazka, dims)],
+         src = ifelse(Reseni_gen_AI == 0, "AI", "teacher")) |>
+  group_by(dim, src) |>
+  summarise(n = n(), mean = mean(Hodnoceni), sd = sd(Hodnoceni), .groups = "drop")
+knitr::kable(desc, digits = 2)
+for (i in seq_len(nrow(desc)))
+  put(paste0("mean_", desc$src[i], "_", desc$dim[i]), desc$mean[i])
+```
+
+## Primary models: LMM (manuscript reproduction)
+
+```{r lmm}
+lmm_rows <- lapply(names(dims), function(nm) {
+  d <- df[df$Otazka == dims[[nm]], ]
+  m <- lmer(Hodnoceni ~ Reseni_gen_AI + (1 | Id) + (1 | anotator_name),
+            data = d, REML = FALSE)
+  fe <- summary(m)$coefficients
+  ci <- confint(m, parm = "beta_", method = "Wald")
+  put(paste0("lmm_b0_AI_", nm), fe[1, 1])
+  put(paste0("lmm_b1_ucitel_", nm), fe[2, 1])
+  put(paste0("lmm_b1_se_", nm), fe[2, 2])
+  put(paste0("lmm_b1_ci_lo_", nm), ci[2, 1])
+  put(paste0("lmm_b1_ci_hi_", nm), ci[2, 2])
+  data.frame(dim = nm, b0_AI = fe[1, 1], b1_teacher = fe[2, 1],
+             se = fe[2, 2], ci_lo = ci[2, 1], ci_hi = ci[2, 2], p = fe[2, 5])
+})
+knitr::kable(bind_rows(lmm_rows), digits = 3)
+```
+
+Expected (AIED Table 3): appropriateness −0.85; reactive −1.01; humanistic +0.77;
+systemic −0.17 — reproduced exactly.
+
+## Sensitivity: CLMM (pre-specified)
+
+```{r clmm}
+clmm_rows <- lapply(names(dims), function(nm) {
+  d <- df[df$Otazka == dims[[nm]] & !is.na(df$Hodnoceni), ]
+  m <- clmm(factor(Hodnoceni, ordered = TRUE) ~ Reseni_gen_AI +
+              (1 | Id) + (1 | anotator_name), data = d)
+  co <- summary(m)$coefficients
+  b <- co[grep("Reseni_gen_AI", rownames(co)), , drop = FALSE]
+  put(paste0("clmm_b1_ucitel_", nm), b[1, 1])
+  put(paste0("clmm_or_ucitel_", nm), exp(b[1, 1]))
+  # Wald 95% CI na škále OR (pro tabulku 7.2 a figuru)
+  lo <- b[1, 1] - 1.96 * b[1, 2]; hi <- b[1, 1] + 1.96 * b[1, 2]
+  put(paste0("clmm_or_ci_lo_", nm), exp(lo))
+  put(paste0("clmm_or_ci_hi_", nm), exp(hi))
+  data.frame(dim = nm, b1_teacher = b[1, 1], SE = b[1, 2],
+             OR = exp(b[1, 1]), OR_lo = exp(lo), OR_hi = exp(hi), p = b[1, 4])
+})
+knitr::kable(bind_rows(clmm_rows), digits = 3)
+```
+
+Sensitivity check: CLMM must agree in direction with LMM for all four dimensions.
+
+## Sensitivity: LMM with a random slope for source by case
+
+The design is paired within case (both solutions of the same case are rated),
+so the source effect may vary across cases. The random-intercept-only model
+assumes a constant contrast; here we relax it with (1 + source | Id) and check
+whether the fixed effect and its CI move (opponent finding, 2026-07-17).
+
+```{r lmm-slope}
+slope_rows <- lapply(names(dims), function(nm) {
+  d <- df[df$Otazka == dims[[nm]], ]
+  m <- suppressWarnings(
+    lmer(Hodnoceni ~ Reseni_gen_AI + (1 + Reseni_gen_AI | Id) +
+           (1 | anotator_name), data = d, REML = FALSE))
+  fe <- summary(m)$coefficients
+  ci <- suppressWarnings(confint(m, parm = "beta_", method = "Wald"))
+  put(paste0("lmm_slope_b1_ucitel_", nm), fe[2, 1])
+  put(paste0("lmm_slope_ci_lo_", nm), ci[2, 1])
+  put(paste0("lmm_slope_ci_hi_", nm), ci[2, 2])
+  put(paste0("lmm_slope_singular_", nm), as.integer(isSingular(m)))
+  data.frame(dim = nm, b1_teacher = fe[2, 1],
+             ci_lo = ci[2, 1], ci_hi = ci[2, 2], singular = isSingular(m))
+})
+knitr::kable(bind_rows(slope_rows), digits = 3)
+```
+
+## Missingness by source (ignorability argument for available-case analysis)
+
+Blinding means raters could not skip items by source; verify empirically that
+the missing rate is comparable for AI vs teacher solutions.
+
+```{r missing-by-source}
+mis <- df |>
+  mutate(src = ifelse(Reseni_gen_AI == 0, "AI", "ucitel")) |>
+  group_by(src) |>
+  summarise(n = n(), n_na = sum(is.na(Hodnoceni)),
+            podil_na = mean(is.na(Hodnoceni)), .groups = "drop")
+knitr::kable(mis, digits = 4)
+for (i in seq_len(nrow(mis)))
+  put(paste0("missing_podil_", mis$src[i]), mis$podil_na[i])
+```
+
+## Inter-rater agreement with cluster-bootstrap 95% CIs
+
+Unit = (Id × source); Krippendorff's alpha (ordinal); bootstrap resamples the
+324 case Ids with replacement (B = 1000, seed `r SEED`).
+
+```{r alpha}
+make_wide <- function(d) {
+  w <- d |> mutate(item = paste0(Id, "_", Reseni_gen_AI)) |>
+    select(anotator_name, item, Hodnoceni) |>
+    distinct(anotator_name, item, .keep_all = TRUE) |>
+    pivot_wider(names_from = item, values_from = Hodnoceni)
+  m <- as.matrix(w[, -1]); rownames(m) <- w[[1]]
+  m[, colSums(!is.na(m)) >= 2, drop = FALSE]
+}
+alpha_of <- function(m) suppressWarnings(irr::kripp.alpha(m, method = "ordinal")$value)
+
+B <- 1000
+ids <- unique(df$Id)
+alpha_rows <- lapply(names(dims), function(nm) {
+  d <- df[df$Otazka == dims[[nm]] & !is.na(df$Hodnoceni), ]
+  a <- alpha_of(make_wide(d))
+  by_id <- split(d, d$Id)
+  boots <- vapply(seq_len(B), function(b) {
+    samp <- sample(ids, replace = TRUE)
+    db <- bind_rows(lapply(seq_along(samp), function(i) {
+      x <- by_id[[as.character(samp[i])]]
+      if (is.null(x)) return(NULL)
+      x$Id <- paste0(x$Id, "_", i)   # duplicitní tahy = nové jednotky
+      x
+    }))
+    alpha_of(make_wide(db))
+  }, numeric(1))
+  ci <- quantile(boots, c(.025, .975), na.rm = TRUE)
+  put(paste0("alpha_ord_final_", nm), a)
+  put(paste0("alpha_ci_lo_", nm), ci[1])
+  put(paste0("alpha_ci_hi_", nm), ci[2])
+  data.frame(dim = nm, alpha = a, ci_lo = ci[1], ci_hi = ci[2])
+})
+knitr::kable(bind_rows(alpha_rows), digits = 3)
+```
+
+## Approach labels: Jaccard (both conventions)
+
+```{r jaccard}
+pr <- unique(df[, c("Id", "X", "anotator_name", "Reseni_gen_AI",
+                    "Pristup.I", "Pristup.II", "Pristup.III")])
+for (c_ in c("Pristup.I", "Pristup.II", "Pristup.III"))
+  pr[[c_]][pr[[c_]] %in% c("", "nic")] <- NA
+pr$item <- paste0(pr$Id, "_", pr$Reseni_gen_AI)
+sets <- pr |> rowwise() |>
+  mutate(s = list(na.omit(c(Pristup.I, Pristup.II, Pristup.III)))) |> ungroup() |>
+  select(anotator_name, item, s) |> distinct(anotator_name, item, .keep_all = TRUE)
+rat <- unique(sets$anotator_name)
+jac <- function(sets) {
+  inc <- c(); exc <- c()
+  for (i in seq_along(rat)) for (j in seq_along(rat)) if (i < j) {
+    a <- sets |> filter(anotator_name == rat[i])
+    b <- sets |> filter(anotator_name == rat[j])
+    m2 <- inner_join(a, b, by = "item", suffix = c("_a", "_b"))
+    inc <- c(inc, mean(mapply(function(x, y) {
+      if (!length(x) && !length(y)) return(1)
+      length(intersect(x, y)) / length(union(x, y)) }, m2$s_a, m2$s_b)))
+    exc <- c(exc, mean(mapply(function(x, y) {
+      if (!length(x) && !length(y)) return(NA_real_)
+      length(intersect(x, y)) / length(union(x, y)) }, m2$s_a, m2$s_b), na.rm = TRUE))
+  }
+  c(incl = mean(inc), excl = mean(exc))
+}
+j <- jac(sets)
+put("jaccard_pristupy_obe_prazdne_shoda", j["incl"])
+put("jaccard_pristupy_bez_prazdnych", j["excl"])
+knitr::kable(data.frame(konvence = c("both-empty = agreement (paper)", "exclude both-empty"),
+                        jaccard = round(j, 3)))
+```
+
+## Approach labels: prevalence and GLMM (RQ2 of the manuscript)
+
+Binary outcome: any framework label assigned to a solution by a rater.
+GLMM with logit link, random intercepts for case and annotator (as in the
+manuscript's analyses.R; expected OR ≈ 0.31 for teacher solutions).
+
+```{r glmm-frameworks}
+pr2 <- pr |> rowwise() |>
+  mutate(n_filled = sum(!is.na(c_across(starts_with("Pristup"))))) |> ungroup() |>
+  group_by(Id, Reseni_gen_AI, anotator_name) |>
+  summarise(n_filled = max(n_filled), .groups = "drop") |>
+  mutate(filled_binary = as.integer(n_filled > 0))
+n_labels <- sum(!is.na(pr$Pristup.I)) + sum(!is.na(pr$Pristup.II)) + sum(!is.na(pr$Pristup.III))
+lab_by_src <- pr |> pivot_longer(starts_with("Pristup"), values_to = "lab") |>
+  filter(!is.na(lab)) |> count(Reseni_gen_AI)
+podil_AI <- lab_by_src$n[lab_by_src$Reseni_gen_AI == 0] / sum(lab_by_src$n)
+gm <- lme4::glmer(filled_binary ~ Reseni_gen_AI + (1 | Id) + (1 | anotator_name),
+                  data = pr2, family = binomial)
+gs <- summary(gm)$coefficients
+gci <- exp(confint(gm, parm = "beta_", method = "Wald"))
+put("ramce_n_labelu_celkem", n_labels)
+put("ramce_podil_labelu_AI", podil_AI)
+put("glmm_or_ucitel_ramce", exp(gs[2, 1]))
+put("glmm_or_ci_lo_ramce", gci[2, 1])
+put("glmm_or_ci_hi_ramce", gci[2, 2])
+knitr::kable(data.frame(
+  n_labels_total = n_labels, share_AI = round(podil_AI, 3),
+  OR_teacher = round(exp(gs[2, 1]), 3),
+  ci = sprintf("[%.3f; %.3f]", gci[2, 1], gci[2, 2]), p = signif(gs[2, 4], 3)))
+```
+
+## Freeze: write manifest
+
+```{r manifest}
+out <- bind_rows(manifest) |>
+  mutate(skript = "analyzy/notebooks/30_ai_vs_ucitel.qmd",
+         data_sha = DATA_SHA, seed = SEED, datum = format(Sys.Date()))
+dir.create(file.path(H2, "vystupy/tabulky"), showWarnings = FALSE, recursive = TRUE)
+write.csv(out, file.path(H2, "vystupy/tabulky/kap7_k2_shoda_cisla.csv"), row.names = FALSE)
+cat("Manifest:", nrow(out), "metrik → vystupy/tabulky/kap7_k2_shoda_cisla.csv\n")
+sessionInfo()$R.version$version.string
+```

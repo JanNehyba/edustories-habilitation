@@ -1,0 +1,32 @@
+kampan,dimenze,mira,hodnota,n_jednotek,n_anotatoru,poznamka
+K1_naostro,—,n_kazuistik_celkem,1413.0,1413,5,dělba práce (většina jen 1 anotátorka)
+K1_naostro,—,n_prekryv_ge2_anotatorky,100.0,100,5,"rozdělení n-anotátorek: {1: 1313, 2: 39, 3: 9, 4: 6, 5: 46}"
+K1_naostro,chování,Krippendorff_alpha_nominal,0.4742,93,5,"primární kategorie, jednotky s ≥2 anotátorkami"
+K1_naostro,chování,parova_shoda_primarni,0.514,93,5,
+K1_naostro,chování,Jaccard_multilabel_mean,0.5797,93,5,multi-label (všechny vybrané kategorie)
+K1_naostro,řešení,Krippendorff_alpha_nominal,0.2789,95,5,"primární kategorie, jednotky s ≥2 anotátorkami"
+K1_naostro,řešení,parova_shoda_primarni,0.4832,95,5,
+K1_naostro,řešení,Jaccard_multilabel_mean,0.5513,95,5,multi-label (všechny vybrané kategorie)
+K1_naostro,dopad,Krippendorff_alpha_nominal,0.6962,91,5,"primární kategorie, jednotky s ≥2 anotátorkami"
+K1_naostro,dopad,parova_shoda_primarni,0.8458,91,5,
+K1_naostro,dopad,Jaccard_multilabel_mean,0.8458,91,5,multi-label (všechny vybrané kategorie)
+K2_final351,vhodnost,Krippendorff_alpha_ordinal,0.5274,324,6,z OSF dat (Reseni_gen_AI); reprodukce LMM = Tab.3 článku
+K2_final351,vhodnost,podil_shody_plusminus1,0.9328,324,6,
+K2_final351,reaktivni,Krippendorff_alpha_ordinal,0.6454,324,6,z OSF dat (Reseni_gen_AI); reprodukce LMM = Tab.3 článku
+K2_final351,reaktivni,podil_shody_plusminus1,0.8569,324,6,
+K2_final351,humanisticke,Krippendorff_alpha_ordinal,0.5289,324,6,z OSF dat (Reseni_gen_AI); reprodukce LMM = Tab.3 článku
+K2_final351,humanisticke,podil_shody_plusminus1,0.7877,324,6,
+K2_final351,systemove,Krippendorff_alpha_ordinal,0.5558,324,6,z OSF dat (Reseni_gen_AI); reprodukce LMM = Tab.3 článku
+K2_final351,systemove,podil_shody_plusminus1,0.789,324,6,
+K2_final351,Přístupy,Jaccard_obe_prazdne_shoda,0.7254,324,6,konvence článku (=0.71)
+K3_celá,Kvalita,Krippendorff_alpha_nominal,0.3305,239,2,
+K3_celá,Kvalita,podil_presne_shody,0.954,239,2,
+K3_celá,Kvalita,Cohen_kappa,0.3332,239,2,
+K3_celá,Dopad,Krippendorff_alpha_nominal,0.6256,233,2,
+K3_celá,Dopad,podil_presne_shody,0.7768,233,2,
+K3_celá,Dopad,Cohen_kappa,0.6298,233,2,
+K3_celá,Vhodnost,Krippendorff_alpha_ordinal,0.3327,234,2,
+K3_celá,Vhodnost,podil_presne_shody,0.453,234,2,
+K3_celá,Vhodnost,vazena_kvadr_Cohen_kappa,0.4154,234,2,
+K3_celá,Vhodnost,podil_shody_plusminus1,0.9402,234,2,
+K3_celá,—,n_spolecne_hodnocenych,694.0,694,2,"kazuistiky, které obě anotátorky zpracovaly (finál stále běží)"

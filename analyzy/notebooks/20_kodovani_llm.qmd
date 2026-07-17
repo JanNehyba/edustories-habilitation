@@ -1,0 +1,260 @@
+---
+title: "E2 — LLM as Annotator + K1 Inter-annotator Agreement (Study 2)"
+author: "EduStories / habilitace-2"
+date: today
+format:
+  html:
+    embed-resources: true
+    toc: true
+execute:
+  warning: false
+  message: false
+---
+
+Study 2 (PLAN.md §5 E2): (a) resolves *empirically* which column of the archived
+comparison file is the human annotation and which is the LLM prediction,
+(b) reproduces the LLM–human agreement (manuscript claim: 72.16 %, Cohen's
+κ = 0.64), (c) computes K1 inter-annotator agreement on the overlap subset,
+all with cluster-bootstrap 95% CIs (B = 1000, seed 20260714), and (d) writes
+the manifest `vystupy/tabulky/kap6_kodovani_cisla.csv`.
+
+```{r setup}
+suppressPackageStartupMessages({
+  library(dplyr); library(tidyr); library(irr)
+})
+SEED <- 20260714; set.seed(SEED)
+H2 <- normalizePath(file.path(getwd(), "../.."))
+CAPV <- file.path(H2, "data/raw/k1-kvalitativni-kodovani-2023-24/05-llm-klasifikace-capv")
+SROV <- file.path(CAPV, "srovnani.csv")
+CLS7 <- file.path(CAPV, "vysledky_class_7.csv")
+S4   <- file.path(H2, "data/raw/korpus/matice/Poslední záloha databáze 4.9.2024/matrix-annotated-22-08-2024 (2).csv")
+LONG <- file.path(H2, "data/processed/anotace_long_k1.csv")
+sha256 <- function(p) strsplit(system2("shasum", c("-a", "256", shQuote(p)),
+                                       stdout = TRUE), " ")[[1]][1]
+manifest <- list()
+put <- function(metric, value, sha) manifest[[length(manifest) + 1]] <<-
+  data.frame(metric = metric, value = round(as.numeric(value), 4), data_sha = sha)
+
+srov <- read.csv(SROV, sep = ";", encoding = "UTF-8")
+# cls7 i s4 nesou duplicitní id (s4: opakované řádky matice) — bez deduplikace
+# by left_join rozmnožil 7 z 334 párů na 5 řádků a všechny míry shody by běžely
+# nad 361/362 řádky (pseudoreplikace; nalezeno oponenturou 17. 7. 2026).
+cls7 <- read.csv(CLS7, encoding = "UTF-8") |> distinct(id, .keep_all = TRUE)
+s4 <- read.csv(S4, fileEncoding = "UTF-8-BOM")[, c("id", "solutions_annotated")] |>
+  distinct(id, .keep_all = TRUE)
+SROV_SHA <- sha256(SROV)
+```
+
+## Source resolution: which column is human, which is LLM?
+
+```{r resolve}
+j <- srov |>
+  left_join(cls7, by = "id") |>
+  left_join(s4, by = "id", suffix = c("", "_s4"))
+stopifnot(nrow(j) == nrow(srov))   # 1 řádek = 1 kazuistika; žádná duplikace joinem
+first_label <- function(x) trimws(sub("[;,].*$", "", x))
+# vysledky_class_7 ukládá verbózní odpověď modelu — hlavní kategorii je nutné
+# vyparsovat z řádku „Hlavní kategorie řešení: X" (naivní first_label na celém
+# textu dává falešnou 0% shodu — dřívější artefakt, opraveno 15. 7. 2026)
+parse_c7_main <- function(x) {
+  m <- regexpr("Hlavní kategorie řešení:\\s*[^\n•]+", x, perl = TRUE)
+  out <- rep(NA_character_, length(x))
+  out[m > 0] <- trimws(sub("Hlavní kategorie řešení:\\s*", "", regmatches(x, m)))
+  out
+}
+agree_main_class7 <- mean(trimws(j$main_category) == parse_c7_main(j$AI_class_sol), na.rm = TRUE)
+agree_hum_sol     <- mean(first_label(j$solutions_annotated) ==
+                          first_label(j$solutions_annotated_s4), na.rm = TRUE)
+agree_hum_main    <- mean(first_label(j$main_category) ==
+                          first_label(j$solutions_annotated_s4), na.rm = TRUE)
+res <- data.frame(hypoteza = c("main_category = class_7 (parsovaná hlavní kategorie)",
+                               "solutions = HUMAN (vs S4 matice)",
+                               "main_category vs S4 matice (= human×LLM agreement)"),
+                  shoda = round(c(agree_main_class7, agree_hum_sol, agree_hum_main), 3))
+knitr::kable(res)
+# EMPIRICKÉ ROZŘEŠENÍ (revize 15. 7. 2026):
+# - main_category ≡ class_7 (100 % po korektním parsování verbózního výstupu)
+#   → modelový sloupec = archivovaný běh gpt-4o vysledky_class_7. ❓ VYŘEŠENO.
+# - solutions_annotated ≈ sloupec S4 matice (0.97 first-label) → ČLOVĚK
+#   (matice S4 nese sloučené lidské K1 kódy, viz skript 16 a DATA_README §2)
+# - shoda main×solutions (0.71) odpovídá publikovaným 72,16 % (ČAPV kód:
+#   match = main_category == solutions_annotated)
+stopifnot(agree_main_class7 == 1,        # main = doložený LLM běh class_7
+          agree_hum_sol > 0.9)           # solutions = člověk, tvrdý assert
+HUMAN <- "solutions_annotated"; LLM <- "main_category"; SECONDARY <- "secondary_categories"
+cat("HUMAN =", HUMAN, "| LLM =", LLM, "| secondary = další štítky LLM\n")
+put("n_paru_llm_clovek", nrow(srov), SROV_SHA)
+put("overeni_solutions_je_clovek", agree_hum_sol, SROV_SHA)
+put("overeni_main_je_class7", agree_main_class7, SROV_SHA)
+put("overeni_main_vs_matice", agree_hum_main, SROV_SHA)
+```
+
+## LLM–human agreement (reproduction of κ = 0.64 / 72.16 %)
+
+Exact match on the primary category; extended match (per the original CAPV
+code) counts agreement when the HUMAN label appears among the LLM's
+main + secondary labels. Cohen's κ on primary categories.
+
+```{r agreement}
+h <- first_label(j[[HUMAN]])
+l <- first_label(j[[LLM]])
+sec <- ifelse(is.na(j[[SECONDARY]]) | j[[SECONDARY]] %in% c("", "N/A"),
+              "", j[[SECONDARY]])
+exact <- mean(h == l, na.rm = TRUE)
+extended <- mean(mapply(function(hh, ll, ss) {
+  hh %in% trimws(unlist(strsplit(paste(ll, ss, sep = ","), "[;,]")))
+}, h, l, sec), na.rm = TRUE)
+kap <- irr::kappa2(cbind(h, l))$value
+# bootstrap CI přes páry
+B <- 1000
+n <- length(h)
+bt <- replicate(B, {
+  i <- sample.int(n, replace = TRUE)
+  c(mean(h[i] == l[i], na.rm = TRUE), irr::kappa2(cbind(h[i], l[i]))$value)
+})
+ci_ex <- quantile(bt[1, ], c(.025, .975)); ci_k <- quantile(bt[2, ], c(.025, .975))
+put("shoda_presna_llm", exact, SROV_SHA)
+put("shoda_presna_ci_lo", ci_ex[1], SROV_SHA); put("shoda_presna_ci_hi", ci_ex[2], SROV_SHA)
+put("shoda_rozsirena_llm", extended, SROV_SHA)
+put("kappa_llm_clovek", kap, SROV_SHA)
+put("kappa_ci_lo", ci_k[1], SROV_SHA); put("kappa_ci_hi", ci_k[2], SROV_SHA)
+knitr::kable(data.frame(
+  mira = c("přesná shoda", "rozšířená shoda (vč. sekundárních)", "Cohenovo κ"),
+  hodnota = round(c(exact, extended, kap), 4),
+  CI95 = c(sprintf("[%.3f; %.3f]", ci_ex[1], ci_ex[2]), "—",
+           sprintf("[%.3f; %.3f]", ci_k[1], ci_k[2]))))
+```
+
+Schema note: the comparison uses
+`r length(setdiff(unique(na.omit(h)), ""))` distinct human solution categories
+(the core K1 codebook set, see appendix A; one pair has an empty human label —
+excluded from the count, kept in the agreement reproduction to match the
+original CAPV code). The public HF release uses a different label set —
+documented drift, categories are never merged silently.
+
+```{r schema}
+put("n_kategorii_reseni_srovnani", length(setdiff(unique(na.omit(h)), "")), SROV_SHA)
+```
+
+## Per-category agreement and confusion matrix (book figures, ch. 6)
+
+Per-category: among pairs where the HUMAN label is category c, how often does
+the model's primary label match (model recall per human category). Confusion
+matrix: row = human, column = model, row-normalised. Both written as CSVs for
+`fig_06_*.R`; headline numbers into the manifest.
+
+```{r per-kategorie}
+TABDIR <- file.path(H2, "vystupy/tabulky")
+ok <- !is.na(h) & h != "" & !is.na(l) & l != ""
+hh <- h[ok]; ll <- l[ok]
+kat <- sort(unique(hh))
+perkat <- data.frame(
+  kategorie = kat,
+  n_clovek = as.integer(table(factor(hh, levels = kat))),
+  shoda = vapply(kat, function(c) mean(ll[hh == c] == c), numeric(1)))
+perkat <- perkat[order(-perkat$n_clovek), ]
+write.csv(perkat, file.path(TABDIR, "kap6_shoda_kategorie.csv"), row.names = FALSE)
+for (i in seq_len(nrow(perkat))) {
+  put(paste0("shoda_kat:", substr(perkat$kategorie[i], 1, 30)), perkat$shoda[i], SROV_SHA)
+  put(paste0("n_kat:",     substr(perkat$kategorie[i], 1, 30)), perkat$n_clovek[i], SROV_SHA)
+}
+konf <- as.data.frame(prop.table(table(clovek = hh, model = ll), margin = 1))
+names(konf)[3] <- "podil"
+konf$n_radku <- as.integer(table(hh)[konf$clovek])
+write.csv(konf, file.path(TABDIR, "kap6_konfuzni_matice.csv"), row.names = FALSE)
+knitr::kable(perkat, digits = 3, caption = "Shoda modelu s člověkem po kategoriích")
+```
+
+## Disagreement examples (candidates for the qualitative box in ch. 6)
+
+Candidates: human != model, solution text present in S6 (PUBLISHED cases only
+— book must not quote unpublished texts), short enough to quote. Printed here
+for the author to pick 2–3; the chosen ones are quoted verbatim in ch. 6.
+
+```{r neshody-kandidati}
+S6P <- file.path(H2, "data/raw/korpus/export-2026-05/Edustories_export_may26_svabik_v2.csv")
+s6 <- read.csv(S6P, encoding = "UTF-8")
+s6sol <- setNames(s6$solution_cs, as.character(s6$id))
+mism <- j[which(ok)[hh != ll], c("id", "solutions_annotated", "main_category")]
+mism$text <- s6sol[as.character(mism$id)]          # jen zveřejněné (S6 = published)
+mism <- mism[!is.na(mism$text) & nchar(mism$text) > 60 & nchar(mism$text) < 420, ]
+set.seed(SEED)
+kand <- mism[sample(nrow(mism), min(6, nrow(mism))), ]
+for (i in seq_len(nrow(kand)))
+  cat("### Kandidát", i, "(id", kand$id[i], ")\nČLOVĚK:", first_label(kand$solutions_annotated[i]),
+      "| MODEL:", first_label(kand$main_category[i]), "\n", kand$text[i], "\n\n")
+```
+
+## K1 inter-annotator agreement (overlap subset, human coding)
+
+From the tidy table (primary category per case × annotator × dimension);
+units rated by ≥2 of the 5 annotators. Krippendorff's alpha (nominal) with
+cluster bootstrap over cases; multi-label Jaccard over all assigned categories.
+
+```{r k1}
+LONG_SHA <- sha256(LONG)
+k1 <- read.csv(LONG, encoding = "UTF-8") |> filter(!is.na(case_uid), case_uid != "")
+prim <- k1 |> filter(poradi == 1) |>
+  select(case_uid, anotator, dimenze, hodnota)
+alpha_nom <- function(d) {
+  w <- d |> distinct(anotator, case_uid, .keep_all = TRUE) |>
+    pivot_wider(names_from = case_uid, values_from = hodnota,
+                id_cols = anotator)
+  m <- as.matrix(w[, -1])
+  m <- m[, colSums(!is.na(m)) >= 2, drop = FALSE]
+  if (ncol(m) < 2) return(c(a = NA, n = ncol(m)))
+  c(a = suppressWarnings(irr::kripp.alpha(m, method = "nominal")$value), n = ncol(m))
+}
+B <- 1000
+k1_rows <- lapply(unique(prim$dimenze), function(dm) {
+  d <- prim |> filter(dimenze == dm)
+  base <- alpha_nom(d)
+  cases <- unique(d$case_uid)
+  boots <- vapply(seq_len(B), function(b) {
+    samp <- sample(cases, replace = TRUE)
+    db <- bind_rows(lapply(seq_along(samp), function(i) {
+      x <- d[d$case_uid == samp[i], ]; x$case_uid <- paste0(x$case_uid, "_", i); x
+    }))
+    alpha_nom(db)["a"]
+  }, numeric(1))
+  ci <- quantile(boots, c(.025, .975), na.rm = TRUE)
+  put(paste0("k1_alpha_nom_", dm), base["a"], LONG_SHA)
+  put(paste0("k1_alpha_ci_lo_", dm), ci[1], LONG_SHA)
+  put(paste0("k1_alpha_ci_hi_", dm), ci[2], LONG_SHA)
+  put(paste0("k1_n_prekryv_", dm), base["n"], LONG_SHA)
+  data.frame(dimenze = dm, alpha = base["a"], ci_lo = ci[1], ci_hi = ci[2],
+             n_jednotek = base["n"])
+})
+knitr::kable(bind_rows(k1_rows), digits = 3, row.names = FALSE)
+
+# multi-label Jaccard (všechny přiřazené kategorie)
+jac_rows <- lapply(unique(k1$dimenze), function(dm) {
+  d <- k1 |> filter(dimenze == dm) |>
+    group_by(case_uid, anotator) |>
+    summarise(s = list(unique(hodnota)), .groups = "drop")
+  by_case <- split(d, d$case_uid)
+  js <- unlist(lapply(by_case, function(g) {
+    if (nrow(g) < 2) return(NULL)
+    out <- c()
+    for (i in 1:(nrow(g) - 1)) for (jj in (i + 1):nrow(g)) {
+      u <- union(g$s[[i]], g$s[[jj]])
+      out <- c(out, length(intersect(g$s[[i]], g$s[[jj]])) / length(u))
+    }
+    out
+  }))
+  put(paste0("k1_jaccard_", dm), mean(js), LONG_SHA)
+  data.frame(dimenze = dm, jaccard = mean(js), n_paru = length(js))
+})
+knitr::kable(bind_rows(jac_rows), digits = 3, row.names = FALSE)
+```
+
+## Freeze: write manifest
+
+```{r manifest}
+out <- bind_rows(manifest) |>
+  mutate(skript = "analyzy/notebooks/20_kodovani_llm.qmd", seed = SEED,
+         datum = format(Sys.Date())) |>
+  select(metric, value, skript, data_sha, seed, datum)
+write.csv(out, file.path(H2, "vystupy/tabulky/kap6_kodovani_cisla.csv"), row.names = FALSE)
+cat("Manifest:", nrow(out), "metrik → vystupy/tabulky/kap6_kodovani_cisla.csv\n")
+```

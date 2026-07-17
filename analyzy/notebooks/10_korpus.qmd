@@ -1,0 +1,222 @@
+---
+title: "E1 — Corpus Descriptives (Study 1)"
+author: "EduStories / habilitace-2"
+date: today
+format:
+  html:
+    embed-resources: true
+    toc: true
+execute:
+  warning: false
+  message: false
+---
+
+Study 1 (PLAN.md §5 E1): descriptive profile of the full corpus snapshot S6
+(May 2026), corpus growth across named snapshots, publication drift (S6b),
+and the human-coded K1 descriptives (behaviours / solutions / outcomes) on the
+reproducible `K1_rez` slice — with the pre-specified DUAL counts (cases with
+category vs total assignments). Text-length statistics conservatively exclude
+all 52 cases ever affected by extraction truncation (8 of them were later
+repaired but stay excluded; D4). Writes `vystupy/tabulky/kap5_korpus_cisla.csv`.
+
+```{r setup}
+suppressPackageStartupMessages({
+  library(dplyr); library(tidyr); library(readr); library(stringr)
+})
+SEED <- 20260714; set.seed(SEED)
+H2 <- normalizePath(file.path(getwd(), "../.."))
+S6  <- file.path(H2, "data/raw/korpus/export-2026-05/Edustories_export_may26_svabik_v2.csv")
+S6B <- file.path(H2, "data/raw/korpus/export-2026-05/Edustories_export_may26_svabik.xlsx")
+REZ <- file.path(H2, "data/processed/k1_rez_ids.csv")
+TRUNC <- file.path(H2, "data/processed/truncated_uids.csv")
+sha256 <- function(p) strsplit(system2("shasum", c("-a", "256", shQuote(p)),
+                                       stdout = TRUE), " ")[[1]][1]
+S6_SHA <- sha256(S6); REZ_SHA <- sha256(REZ)
+manifest <- list()
+put <- function(metric, value, sha = S6_SHA) manifest[[length(manifest) + 1]] <<-
+  data.frame(metric = metric, value = round(as.numeric(value), 4), data_sha = sha)
+```
+
+## Full corpus S6 (May 2026)
+
+```{r s6}
+s6 <- read_csv(S6, col_types = cols(.default = col_character()))
+put("n_korpus_s6", nrow(s6))
+put("n_zverejneno_s6", sum(s6$is_published == "true", na.rm = TRUE))
+s6$uid <- paste0("exp", s6$id)
+trunc <- read_csv(TRUNC, show_col_types = FALSE)
+s6_len <- s6 |> filter(!(uid %in% trunc$case_uid))
+put("n_vyrazeno_delky_trunc", nrow(s6) - nrow(s6_len))
+wc <- function(x) str_count(x, "\\S+")
+len_rows <- lapply(c("description", "anamnesis", "solution", "outcome"), function(part) {
+  w <- wc(s6_len[[paste0(part, "_cs")]])
+  put(paste0(part, "_slov_median"), median(w, na.rm = TRUE))
+  put(paste0(part, "_slov_q1"), quantile(w, .25, na.rm = TRUE))
+  put(paste0(part, "_slov_q3"), quantile(w, .75, na.rm = TRUE))
+  data.frame(cast = part, median = median(w, na.rm = TRUE),
+             q1 = quantile(w, .25, na.rm = TRUE), q3 = quantile(w, .75, na.rm = TRUE))
+})
+knitr::kable(bind_rows(len_rows), digits = 0, row.names = FALSE,
+             caption = "Word counts (Czech text; all 52 truncation-affected cases excluded)")
+age <- suppressWarnings(as.numeric(s6$age))
+# hygiena: věk 0 = nevyplněno (kód formuláře), ne skutečný věk → NA;
+# horní mez neořezáváme (žák SŠ může být 20+), počet implauzibilních dokládáme
+put("vek_n_nula_vyrazeno", sum(age == 0, na.rm = TRUE))
+age[age == 0] <- NA
+put("vek_median", median(age, na.rm = TRUE)); put("vek_n", sum(!is.na(age)))
+ai_cols <- grep("^ai_solution_.*_cs$", names(s6), value = TRUE)
+put("n_ai_reseni_kompletni", sum(rowSums(!is.na(s6[ai_cols]) & s6[ai_cols] != "") == 6))
+```
+
+## Corpus growth and publication drift
+
+Named snapshots (documented in DATA_README §1); S6b is the older export cut —
+its cases missing from S6 were unpublished in the meantime.
+
+```{r growth}
+snap <- data.frame(
+  rez = c("S1 (2023)", "S3 (04/2024)", "S4 (08/2024)", "S5 HF (release)", "S6 (05/2026)"),
+  n = c(757, 1507, 1695, 1492, nrow(s6)))
+knitr::kable(snap, row.names = FALSE)
+for (i in seq_len(nrow(snap))) put(paste0("rust_", gsub("[^A-Za-z0-9]", "", snap$rez[i])), snap$n[i])
+s6b_ids <- suppressMessages(readxl::read_excel(S6B, sheet = "out"))$id
+s6b_ids <- as.integer(na.omit(s6b_ids))
+drift <- sum(!(s6b_ids %in% as.integer(s6$id)))
+put("n_s6b", length(s6b_ids), sha256(S6B))
+put("n_odpublikovano_s6b_vs_s6", drift, sha256(S6B))
+cat("S6b:", length(s6b_ids), "případů; z nich", drift, "už není v S6 (odpublikováno).\n")
+```
+
+## K1 human coding on the `K1_rez` slice — DUAL counts
+
+Multi-label: a case may carry several categories. We therefore report BOTH
+„cases with category" and „assignments" (PLAN §5 ⊕); their ratio explains why
+assignment totals exceed the number of cases.
+
+```{r k1rez}
+rez <- read_csv(REZ, show_col_types = FALSE)
+put("n_k1_rez", nrow(rez), REZ_SHA)
+# normalizace štítků: sjednotit velikost písmen a známé překlepy na kanonickou formu
+canon_label <- function(p) {
+  p <- gsub("Částěčný", "Částečný", p)
+  p <- gsub("odbonríky", "odborníky", p)           # překlep v datech
+  substr(p, 1, 1) <- toupper(substr(p, 1, 1))       # „rozhovor" → „Rozhovor"
+  p
+}
+split_cats <- function(x) {
+  x <- x[!is.na(x)]
+  unlist(lapply(x, function(v) {
+    p <- trimws(unlist(strsplit(v, "[;,]")))
+    p <- canon_label(p)
+    p[p != "" & !(p %in% c("-", "?", "(zvolit)"))]
+  }))
+}
+dual <- lapply(c(chovani = "problems_annotated", reseni = "solutions_annotated",
+                 dopad = "implications_annotated"), function(col) NULL)
+for (nm in names(c(chovani = 1, reseni = 1, dopad = 1))) {
+  col <- c(chovani = "problems_annotated", reseni = "solutions_annotated",
+           dopad = "implications_annotated")[[nm]]
+  cats_per_case <- lapply(rez[[col]], function(v) unique(split_cats(v)))
+  assignments <- unlist(cats_per_case)
+  n_cases_with <- table(assignments)                 # případů s kategorií
+  n_assign <- length(assignments)
+  put(paste0("k1_", nm, "_prirazeni_celkem"), n_assign, REZ_SHA)
+  put(paste0("k1_", nm, "_pripadu_s_udajem"), sum(lengths(cats_per_case) > 0), REZ_SHA)
+  put(paste0("k1_", nm, "_pomer_prirazeni_na_pripad"),
+      n_assign / sum(lengths(cats_per_case) > 0), REZ_SHA)
+  top <- sort(n_cases_with, decreasing = TRUE)[1:min(8, length(n_cases_with))]
+  for (k in names(top))
+    put(paste0("k1_", nm, "_pripadu:", substr(k, 1, 38)), top[[k]], REZ_SHA)
+  # vzácné strategie: explicitní metrika pro „proaktivní" (tvrzení o řídkosti v kap. 5)
+  if (nm == "reseni" && "Proaktivní řešení" %in% names(n_cases_with))
+    put("k1_reseni_pripadu:Proaktivní řešení", n_cases_with[["Proaktivní řešení"]], REZ_SHA)
+  print(knitr::kable(data.frame(kategorie = names(top), pripadu = as.integer(top)),
+                     caption = paste0(nm, " — top kategorie (počet PŘÍPADŮ)")))
+}
+```
+
+## Distributions for book figures (word lengths, age)
+
+Case-level aggregates for `fig_05_*.R` (no case texts — safe to publish).
+
+```{r rozdeleni}
+TABDIR <- file.path(H2, "vystupy/tabulky")
+delky <- bind_rows(lapply(c("description", "anamnesis", "solution", "outcome"),
+  function(part) data.frame(cast = part, slova = wc(s6_len[[paste0(part, "_cs")]]))))
+delky <- delky[!is.na(delky$slova) & delky$slova > 0, ]
+write.csv(delky, file.path(TABDIR, "kap5_delky_rozdeleni.csv"), row.names = FALSE)
+put("delka_p90_description",
+    quantile(delky$slova[delky$cast == "description"], .9, na.rm = TRUE))
+vek_tab <- as.data.frame(table(vek = round(age)), responseName = "n")
+write.csv(vek_tab, file.path(TABDIR, "kap5_vek_rozdeleni.csv"), row.names = FALSE)
+put("vek_q1", quantile(age, .25, na.rm = TRUE))
+put("vek_q3", quantile(age, .75, na.rm = TRUE))
+cat("rozdělení: délky", nrow(delky), "řádků; věk", nrow(vek_tab), "hodnot\n")
+```
+
+## K1 full category tables, co-occurrence and outcome-by-solution
+
+All categories per dimension (figures), conditional co-occurrence
+P(solution | behaviour) on K1_rez cases, and share of long-term success by
+solution type. Unit = CASE (multi-label: a case counts once per category it
+carries). Descriptive only — no causal claims.
+
+```{r k1-hloubka}
+cats_of <- function(col) lapply(rez[[col]], function(v) unique(split_cats(v)))
+CH <- cats_of("problems_annotated")
+RE <- cats_of("solutions_annotated")
+DO <- cats_of("implications_annotated")
+
+# (a) úplné tabulky kategorií pro figury
+plne <- bind_rows(
+  data.frame(dimenze = "chovani", kategorie = unlist(CH)),
+  data.frame(dimenze = "reseni",  kategorie = unlist(RE)),
+  data.frame(dimenze = "dopad",   kategorie = unlist(DO))) |>
+  count(dimenze, kategorie, name = "pripadu") |>
+  arrange(dimenze, desc(pripadu))
+write.csv(plne, file.path(TABDIR, "kap5_k1_kategorie.csv"), row.names = FALSE)
+
+# (b) ko-výskyt: P(řešení | chování), jen buňky s n_chování >= 50
+beh_n <- table(unlist(lapply(CH, unique)))
+kov <- do.call(rbind, lapply(names(beh_n)[beh_n >= 50], function(b) {
+  idx <- vapply(CH, function(s) b %in% s, logical(1))
+  res_tab <- table(unlist(RE[idx]))
+  data.frame(chovani = b, reseni = names(res_tab),
+             n_spolu = as.integer(res_tab),
+             n_chovani = sum(idx),
+             podil = as.numeric(res_tab) / sum(idx))
+}))
+write.csv(kov, file.path(TABDIR, "kap5_kovyskyt.csv"), row.names = FALSE)
+for (i in seq_len(nrow(kov)))
+  put(paste0("kov_podil:", substr(kov$chovani[i], 1, 24), "|",
+             substr(kov$reseni[i], 1, 24)), kov$podil[i], REZ_SHA)
+
+# (c) dopad podle typu řešení: podíl dlouhodobého úspěchu (jen n >= 30)
+dop <- do.call(rbind, lapply(names(table(unlist(RE))), function(r) {
+  idx <- vapply(RE, function(s) r %in% s, logical(1)) &
+         vapply(DO, length, integer(1)) > 0
+  if (sum(idx) < 30) return(NULL)
+  du  <- mean(vapply(DO[idx], function(s) "Dlouhodobý úspěch" %in% s, logical(1)))
+  neu <- mean(vapply(DO[idx], function(s) "Neúspěch" %in% s, logical(1)))
+  data.frame(reseni = r, n = sum(idx), podil_DU = du, podil_NEU = neu)
+}))
+dop <- dop[order(-dop$podil_DU), ]
+write.csv(dop, file.path(TABDIR, "kap5_dopad_podle_reseni.csv"), row.names = FALSE)
+for (i in seq_len(nrow(dop))) {
+  put(paste0("dopadDU:", substr(dop$reseni[i], 1, 30)), dop$podil_DU[i], REZ_SHA)
+  put(paste0("dopadN:",  substr(dop$reseni[i], 1, 30)), dop$n[i], REZ_SHA)
+}
+knitr::kable(dop, digits = 3,
+             caption = "Podíl dlouhodobého úspěchu podle typu řešení (deskriptivně)")
+```
+
+## Freeze: write manifest
+
+```{r manifest}
+out <- bind_rows(manifest) |>
+  mutate(skript = "analyzy/notebooks/10_korpus.qmd", seed = SEED,
+         datum = format(Sys.Date())) |>
+  select(metric, value, skript, data_sha, seed, datum)
+write.csv(out, file.path(H2, "vystupy/tabulky/kap5_korpus_cisla.csv"), row.names = FALSE)
+cat("Manifest:", nrow(out), "metrik → vystupy/tabulky/kap5_korpus_cisla.csv\n")
+```

@@ -1,0 +1,3775 @@
+case_uid,event,anotator,dimenze,poradi,hodnota
+exp3011,k3_final_26,A12,kvalita,1,Plná
+exp3011,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp3011,k3_final_26,A12,vhodnost,1,3
+exp3010,k3_final_26,A12,kvalita,1,Plná
+exp3010,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp3010,k3_final_26,A12,vhodnost,1,2
+exp3009,k3_final_26,A12,kvalita,1,Plná
+exp3009,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp3009,k3_final_26,A12,vhodnost,1,4
+exp3008,k3_final_26,A12,kvalita,1,Plná
+exp3008,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp3008,k3_final_26,A12,vhodnost,1,3
+exp3007,k3_final_26,A12,kvalita,1,Plná
+exp3007,k3_final_26,A12,dopad,1,Neúspěch
+exp3007,k3_final_26,A12,vhodnost,1,2
+exp3006,k3_final_26,A12,kvalita,1,Plná
+exp3006,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp3006,k3_final_26,A12,vhodnost,1,3
+exp3005,k3_final_26,A12,kvalita,1,Plná
+exp3005,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp3005,k3_final_26,A12,vhodnost,1,3
+exp3004,k3_final_26,A12,kvalita,1,Plná
+exp3004,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp3004,k3_final_26,A12,vhodnost,1,3
+exp3003,k3_final_26,A12,kvalita,1,Plná
+exp3003,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp3003,k3_final_26,A12,vhodnost,1,2
+exp3002,k3_final_26,A12,kvalita,1,Plná
+exp3002,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp3002,k3_final_26,A12,vhodnost,1,3
+exp3001,k3_final_26,A12,kvalita,1,Plochá
+exp3001,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp3001,k3_final_26,A12,vhodnost,1,2
+exp3000,k3_final_26,A12,kvalita,1,Plná
+exp3000,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp3000,k3_final_26,A12,vhodnost,1,2
+exp2999,k3_final_26,A12,kvalita,1,Plná
+exp2999,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2999,k3_final_26,A12,vhodnost,1,4
+exp2998,k3_final_26,A12,kvalita,1,Plná
+exp2998,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2998,k3_final_26,A12,vhodnost,1,4
+exp2997,k3_final_26,A12,kvalita,1,Plná
+exp2997,k3_final_26,A12,dopad,1,Neúspěch
+exp2997,k3_final_26,A12,vhodnost,1,3
+exp2996,k3_final_26,A12,kvalita,1,Plná
+exp2996,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2996,k3_final_26,A12,vhodnost,1,3
+exp2995,k3_final_26,A12,kvalita,1,Plná
+exp2995,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2995,k3_final_26,A12,vhodnost,1,4
+exp2994,k3_final_26,A12,kvalita,1,Plná
+exp2994,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2994,k3_final_26,A12,vhodnost,1,3
+exp2993,k3_final_26,A12,kvalita,1,Plná
+exp2993,k3_final_26,A12,dopad,1,Neúspěch
+exp2993,k3_final_26,A12,vhodnost,1,2
+exp2992,k3_final_26,A12,kvalita,1,Plná
+exp2992,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2992,k3_final_26,A12,vhodnost,1,3
+exp2991,k3_final_26,A12,kvalita,1,Plná
+exp2991,k3_final_26,A12,dopad,1,Neúspěch
+exp2991,k3_final_26,A12,vhodnost,1,3
+exp2990,k3_final_26,A12,kvalita,1,Plná
+exp2990,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2990,k3_final_26,A12,vhodnost,1,3
+exp2989,k3_final_26,A12,kvalita,1,Plná
+exp2989,k3_final_26,A12,dopad,1,Neúspěch
+exp2989,k3_final_26,A12,vhodnost,1,3
+exp2988,k3_final_26,A12,kvalita,1,Plná
+exp2988,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2988,k3_final_26,A12,vhodnost,1,3
+exp2987,k3_final_26,A12,kvalita,1,Plná
+exp2987,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2987,k3_final_26,A12,vhodnost,1,3
+exp2986,k3_final_26,A12,kvalita,1,Plná
+exp2986,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2986,k3_final_26,A12,vhodnost,1,4
+exp2985,k3_final_26,A12,kvalita,1,Plná
+exp2985,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2985,k3_final_26,A12,vhodnost,1,3
+exp2984,k3_final_26,A12,kvalita,1,Plná
+exp2984,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2984,k3_final_26,A12,vhodnost,1,3
+exp2983,k3_final_26,A12,kvalita,1,Plná
+exp2983,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2983,k3_final_26,A12,vhodnost,1,3
+exp2982,k3_final_26,A12,kvalita,1,Plná
+exp2982,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2982,k3_final_26,A12,vhodnost,1,2
+exp2981,k3_final_26,A12,kvalita,1,Plná
+exp2981,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2981,k3_final_26,A12,vhodnost,1,3
+exp2980,k3_final_26,A12,kvalita,1,Plná
+exp2980,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2980,k3_final_26,A12,vhodnost,1,2
+exp2979,k3_final_26,A12,kvalita,1,Plná
+exp2979,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2979,k3_final_26,A12,vhodnost,1,4
+exp2978,k3_final_26,A12,kvalita,1,Plná
+exp2978,k3_final_26,A12,dopad,1,Neúspěch
+exp2978,k3_final_26,A12,vhodnost,1,2
+exp2977,k3_final_26,A12,kvalita,1,Plná
+exp2977,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2977,k3_final_26,A12,vhodnost,1,3
+exp2976,k3_final_26,A12,kvalita,1,Plná
+exp2976,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2976,k3_final_26,A12,vhodnost,1,3
+exp2975,k3_final_26,A12,kvalita,1,Plná
+exp2975,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2975,k3_final_26,A12,vhodnost,1,3
+exp2974,k3_final_26,A12,kvalita,1,Plná
+exp2974,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2974,k3_final_26,A12,vhodnost,1,3
+exp2973,k3_final_26,A12,kvalita,1,Plná
+exp2973,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2973,k3_final_26,A12,vhodnost,1,4
+exp2972,k3_final_26,A12,kvalita,1,Plochá
+exp2972,k3_final_26,A12,dopad,1,Neúspěch
+exp2972,k3_final_26,A12,vhodnost,1,1
+exp2971,k3_final_26,A12,kvalita,1,Plná
+exp2971,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2971,k3_final_26,A12,vhodnost,1,4
+exp2970,k3_final_26,A12,kvalita,1,Plná
+exp2970,k3_final_26,A12,dopad,1,Neúspěch
+exp2970,k3_final_26,A12,vhodnost,1,2
+exp2969,k3_final_26,A12,kvalita,1,Plná
+exp2969,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2969,k3_final_26,A12,vhodnost,1,3
+exp2968,k3_final_26,A12,kvalita,1,Plná
+exp2968,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2968,k3_final_26,A12,vhodnost,1,2
+exp2967,k3_final_26,A12,kvalita,1,Plná
+exp2967,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2967,k3_final_26,A12,vhodnost,1,3
+exp2966,k3_final_26,A12,kvalita,1,Plná
+exp2966,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2966,k3_final_26,A12,vhodnost,1,3
+exp2965,k3_final_26,A12,kvalita,1,Plná
+exp2965,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2965,k3_final_26,A12,vhodnost,1,2
+exp2964,k3_final_26,A12,kvalita,1,Plná
+exp2964,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2964,k3_final_26,A12,vhodnost,1,2
+exp2963,k3_final_26,A12,kvalita,1,Plná
+exp2963,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2963,k3_final_26,A12,vhodnost,1,3
+exp2962,k3_final_26,A12,kvalita,1,Plná
+exp2962,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2962,k3_final_26,A12,vhodnost,1,3
+exp2961,k3_final_26,A12,kvalita,1,Plná
+exp2961,k3_final_26,A12,dopad,1,Neúspěch
+exp2961,k3_final_26,A12,vhodnost,1,1
+exp2960,k3_final_26,A12,kvalita,1,Plná
+exp2960,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2960,k3_final_26,A12,vhodnost,1,4
+exp2959,k3_final_26,A12,kvalita,1,Plná
+exp2959,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2959,k3_final_26,A12,vhodnost,1,3
+exp2958,k3_final_26,A12,kvalita,1,Plná
+exp2958,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2958,k3_final_26,A12,vhodnost,1,2
+exp2957,k3_final_26,A12,kvalita,1,Plná
+exp2957,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2957,k3_final_26,A12,vhodnost,1,3
+exp2956,k3_final_26,A12,kvalita,1,Plná
+exp2956,k3_final_26,A12,dopad,1,Neúspěch
+exp2956,k3_final_26,A12,vhodnost,1,2
+exp2955,k3_final_26,A12,kvalita,1,Plná
+exp2955,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2955,k3_final_26,A12,vhodnost,1,3
+exp2954,k3_final_26,A12,kvalita,1,Plná
+exp2954,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2954,k3_final_26,A12,vhodnost,1,4
+exp2953,k3_final_26,A12,kvalita,1,Plochá
+exp2953,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2953,k3_final_26,A12,vhodnost,1,2
+exp2952,k3_final_26,A12,kvalita,1,Plná
+exp2952,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2952,k3_final_26,A12,vhodnost,1,4
+exp2951,k3_final_26,A12,kvalita,1,Plná
+exp2951,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2951,k3_final_26,A12,vhodnost,1,3
+exp2950,k3_final_26,A12,kvalita,1,Plná
+exp2950,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2950,k3_final_26,A12,vhodnost,1,4
+exp2949,k3_final_26,A12,kvalita,1,Plná
+exp2949,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2949,k3_final_26,A12,vhodnost,1,2
+exp2948,k3_final_26,A12,kvalita,1,Plná
+exp2948,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2948,k3_final_26,A12,vhodnost,1,3
+exp2947,k3_final_26,A12,kvalita,1,Plná
+exp2947,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2947,k3_final_26,A12,vhodnost,1,2
+exp2946,k3_final_26,A12,kvalita,1,Plná
+exp2946,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2946,k3_final_26,A12,vhodnost,1,3
+exp2945,k3_final_26,A12,kvalita,1,Plná
+exp2945,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2945,k3_final_26,A12,vhodnost,1,4
+exp2944,k3_final_26,A12,kvalita,1,Plná
+exp2944,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2944,k3_final_26,A12,vhodnost,1,3
+exp2943,k3_final_26,A12,kvalita,1,Plná
+exp2943,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2943,k3_final_26,A12,vhodnost,1,2
+exp2942,k3_final_26,A12,kvalita,1,Plná
+exp2942,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2942,k3_final_26,A12,vhodnost,1,4
+exp2941,k3_final_26,A12,kvalita,1,Plná
+exp2941,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2941,k3_final_26,A12,vhodnost,1,3
+exp2940,k3_final_26,A12,kvalita,1,Plná
+exp2940,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2940,k3_final_26,A12,vhodnost,1,3
+exp2939,k3_final_26,A12,kvalita,1,Plná
+exp2939,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2939,k3_final_26,A12,vhodnost,1,2
+exp2938,k3_final_26,A12,kvalita,1,Plná
+exp2938,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2938,k3_final_26,A12,vhodnost,1,2
+exp2937,k3_final_26,A12,kvalita,1,Plná
+exp2937,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2937,k3_final_26,A12,vhodnost,1,3
+exp2936,k3_final_26,A12,kvalita,1,Plná
+exp2936,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2936,k3_final_26,A12,vhodnost,1,3
+exp2935,k3_final_26,A12,kvalita,1,Plná
+exp2935,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2935,k3_final_26,A12,vhodnost,1,2
+exp2934,k3_final_26,A12,kvalita,1,Plná
+exp2934,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2934,k3_final_26,A12,vhodnost,1,4
+exp2933,k3_final_26,A12,kvalita,1,Plná
+exp2933,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2933,k3_final_26,A12,vhodnost,1,3
+exp2932,k3_final_26,A12,kvalita,1,Plná
+exp2932,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2932,k3_final_26,A12,vhodnost,1,2
+exp2931,k3_final_26,A12,kvalita,1,Plná
+exp2931,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2931,k3_final_26,A12,vhodnost,1,3
+exp2930,k3_final_26,A12,kvalita,1,Plná
+exp2930,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2930,k3_final_26,A12,vhodnost,1,4
+exp2929,k3_final_26,A12,kvalita,1,Plná
+exp2929,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2929,k3_final_26,A12,vhodnost,1,3
+exp2928,k3_final_26,A12,kvalita,1,Plná
+exp2928,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2928,k3_final_26,A12,vhodnost,1,2
+exp2927,k3_final_26,A12,kvalita,1,Plná
+exp2927,k3_final_26,A12,dopad,1,Neúspěch
+exp2927,k3_final_26,A12,vhodnost,1,2
+exp2926,k3_final_26,A12,kvalita,1,Plná
+exp2926,k3_final_26,A12,dopad,1,Neúspěch
+exp2926,k3_final_26,A12,vhodnost,1,2
+exp2925,k3_final_26,A12,kvalita,1,Plochá
+exp2924,k3_final_26,A12,kvalita,1,Plná
+exp2924,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2924,k3_final_26,A12,vhodnost,1,4
+exp2923,k3_final_26,A12,kvalita,1,Plná
+exp2923,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2923,k3_final_26,A12,vhodnost,1,4
+exp2922,k3_final_26,A12,kvalita,1,Plná
+exp2922,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2922,k3_final_26,A12,vhodnost,1,4
+exp2921,k3_final_26,A12,kvalita,1,Plná
+exp2921,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2921,k3_final_26,A12,vhodnost,1,3
+exp2920,k3_final_26,A12,kvalita,1,Plná
+exp2920,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2920,k3_final_26,A12,vhodnost,1,4
+exp2919,k3_final_26,A12,kvalita,1,Plná
+exp2919,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2919,k3_final_26,A12,vhodnost,1,3
+exp2918,k3_final_26,A12,kvalita,1,Plná
+exp2918,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2918,k3_final_26,A12,vhodnost,1,2
+exp2917,k3_final_26,A12,kvalita,1,Plochá
+exp2916,k3_final_26,A12,kvalita,1,Plná
+exp2916,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2916,k3_final_26,A12,vhodnost,1,2
+exp2915,k3_final_26,A12,kvalita,1,Plná
+exp2915,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2915,k3_final_26,A12,vhodnost,1,4
+exp2914,k3_final_26,A12,kvalita,1,Plná
+exp2914,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2914,k3_final_26,A12,vhodnost,1,3
+exp2913,k3_final_26,A12,kvalita,1,Plná
+exp2913,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2913,k3_final_26,A12,vhodnost,1,2
+exp2912,k3_final_26,A12,kvalita,1,Plná
+exp2912,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2912,k3_final_26,A12,vhodnost,1,3
+exp2911,k3_final_26,A12,kvalita,1,Plná
+exp2911,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2911,k3_final_26,A12,vhodnost,1,3
+exp2910,k3_final_26,A12,kvalita,1,Plná
+exp2910,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2910,k3_final_26,A12,vhodnost,1,4
+exp2909,k3_final_26,A12,kvalita,1,Plná
+exp2909,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2909,k3_final_26,A12,vhodnost,1,3
+exp2908,k3_final_26,A12,kvalita,1,Plná
+exp2908,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2908,k3_final_26,A12,vhodnost,1,3
+exp2907,k3_final_26,A12,kvalita,1,Plná
+exp2907,k3_final_26,A12,dopad,1,Neúspěch
+exp2907,k3_final_26,A12,vhodnost,1,2
+exp2906,k3_final_26,A12,kvalita,1,Plná
+exp2906,k3_final_26,A12,dopad,1,Neúspěch
+exp2906,k3_final_26,A12,vhodnost,1,2
+exp2905,k3_final_26,A12,kvalita,1,Plná
+exp2905,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2905,k3_final_26,A12,vhodnost,1,3
+exp2904,k3_final_26,A12,kvalita,1,Plná
+exp2904,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2904,k3_final_26,A12,vhodnost,1,4
+exp2903,k3_final_26,A12,kvalita,1,Plná
+exp2903,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2903,k3_final_26,A12,vhodnost,1,3
+exp2902,k3_final_26,A12,kvalita,1,Plná
+exp2902,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2902,k3_final_26,A12,vhodnost,1,2
+exp2901,k3_final_26,A12,kvalita,1,Plná
+exp2901,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2901,k3_final_26,A12,vhodnost,1,4
+exp2900,k3_final_26,A12,kvalita,1,Plná
+exp2900,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2900,k3_final_26,A12,vhodnost,1,4
+exp2899,k3_final_26,A12,kvalita,1,Plná
+exp2899,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2899,k3_final_26,A12,vhodnost,1,3
+exp2898,k3_final_26,A12,kvalita,1,Plná
+exp2898,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2898,k3_final_26,A12,vhodnost,1,4
+exp2897,k3_final_26,A12,kvalita,1,Plná
+exp2897,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2897,k3_final_26,A12,vhodnost,1,3
+exp2896,k3_final_26,A12,kvalita,1,Plná
+exp2896,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2896,k3_final_26,A12,vhodnost,1,4
+exp2895,k3_final_26,A12,kvalita,1,Plná
+exp2895,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2895,k3_final_26,A12,vhodnost,1,3
+exp2894,k3_final_26,A12,kvalita,1,Plná
+exp2894,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2894,k3_final_26,A12,vhodnost,1,2
+exp2893,k3_final_26,A12,kvalita,1,Plná
+exp2893,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2893,k3_final_26,A12,vhodnost,1,3
+exp2892,k3_final_26,A12,kvalita,1,Plná
+exp2892,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2892,k3_final_26,A12,vhodnost,1,3
+exp2891,k3_final_26,A12,kvalita,1,Plná
+exp2891,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2891,k3_final_26,A12,vhodnost,1,3
+exp2890,k3_final_26,A12,kvalita,1,Plná
+exp2890,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2890,k3_final_26,A12,vhodnost,1,3
+exp2889,k3_final_26,A12,kvalita,1,Plná
+exp2889,k3_final_26,A12,dopad,1,Neúspěch
+exp2889,k3_final_26,A12,vhodnost,1,2
+exp2888,k3_final_26,A12,kvalita,1,Plná
+exp2888,k3_final_26,A12,dopad,1,Neúspěch
+exp2888,k3_final_26,A12,vhodnost,1,2
+exp2887,k3_final_26,A12,kvalita,1,Plná
+exp2887,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2887,k3_final_26,A12,vhodnost,1,2
+exp2886,k3_final_26,A12,kvalita,1,Plná
+exp2886,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2886,k3_final_26,A12,vhodnost,1,3
+exp2885,k3_final_26,A12,kvalita,1,Plná
+exp2885,k3_final_26,A12,dopad,1,Neúspěch
+exp2885,k3_final_26,A12,vhodnost,1,2
+exp2884,k3_final_26,A12,kvalita,1,Plná
+exp2884,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2884,k3_final_26,A12,vhodnost,1,2
+exp2883,k3_final_26,A12,kvalita,1,Plná
+exp2883,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2883,k3_final_26,A12,vhodnost,1,2
+exp2882,k3_final_26,A12,kvalita,1,Plná
+exp2882,k3_final_26,A12,dopad,1,Neúspěch
+exp2882,k3_final_26,A12,vhodnost,1,2
+exp2881,k3_final_26,A12,kvalita,1,Plná
+exp2881,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2881,k3_final_26,A12,vhodnost,1,3
+exp2880,k3_final_26,A12,kvalita,1,Plná
+exp2880,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2880,k3_final_26,A12,vhodnost,1,3
+exp2879,k3_final_26,A12,kvalita,1,Plná
+exp2879,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2879,k3_final_26,A12,vhodnost,1,3
+exp2878,k3_final_26,A12,kvalita,1,Plná
+exp2878,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2878,k3_final_26,A12,vhodnost,1,3
+exp2877,k3_final_26,A12,kvalita,1,Plná
+exp2877,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2877,k3_final_26,A12,vhodnost,1,3
+exp2876,k3_final_26,A12,kvalita,1,Plná
+exp2876,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2876,k3_final_26,A12,vhodnost,1,2
+exp2875,k3_final_26,A12,kvalita,1,Plná
+exp2875,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2875,k3_final_26,A12,vhodnost,1,3
+exp2874,k3_final_26,A12,kvalita,1,Plná
+exp2874,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2874,k3_final_26,A12,vhodnost,1,2
+exp2873,k3_final_26,A12,kvalita,1,Plná
+exp2873,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2873,k3_final_26,A12,vhodnost,1,3
+exp2872,k3_final_26,A12,kvalita,1,Plná
+exp2872,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2872,k3_final_26,A12,vhodnost,1,3
+exp2871,k3_final_26,A12,kvalita,1,Plná
+exp2871,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2871,k3_final_26,A12,vhodnost,1,2
+exp2870,k3_final_26,A12,kvalita,1,Plná
+exp2870,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2870,k3_final_26,A12,vhodnost,1,2
+exp2869,k3_final_26,A12,kvalita,1,Plochá
+exp2869,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2869,k3_final_26,A12,vhodnost,1,4
+exp2868,k3_final_26,A12,kvalita,1,Plná
+exp2868,k3_final_26,A12,dopad,1,Neúspěch
+exp2868,k3_final_26,A12,vhodnost,1,2
+exp2867,k3_final_26,A12,kvalita,1,Plná
+exp2867,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2867,k3_final_26,A12,vhodnost,1,3
+exp2866,k3_final_26,A12,kvalita,1,Plná
+exp2866,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2866,k3_final_26,A12,vhodnost,1,3
+exp2865,k3_final_26,A12,kvalita,1,Plná
+exp2865,k3_final_26,A12,dopad,1,Neúspěch
+exp2865,k3_final_26,A12,vhodnost,1,3
+exp2864,k3_final_26,A12,kvalita,1,Plochá
+exp2864,k3_final_26,A12,dopad,1,Neúspěch
+exp2864,k3_final_26,A12,vhodnost,1,2
+exp2863,k3_final_26,A12,kvalita,1,Plná
+exp2863,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2863,k3_final_26,A12,vhodnost,1,4
+exp2862,k3_final_26,A12,kvalita,1,Plná
+exp2862,k3_final_26,A12,dopad,1,Neúspěch
+exp2862,k3_final_26,A12,vhodnost,1,2
+exp2861,k3_final_26,A12,kvalita,1,Plná
+exp2861,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2861,k3_final_26,A12,vhodnost,1,3
+exp2860,k3_final_26,A12,kvalita,1,Plná
+exp2860,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2860,k3_final_26,A12,vhodnost,1,2
+exp2859,k3_final_26,A12,kvalita,1,Plná
+exp2859,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2859,k3_final_26,A12,vhodnost,1,3
+exp2858,k3_final_26,A12,kvalita,1,Plná
+exp2858,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2858,k3_final_26,A12,vhodnost,1,4
+exp2857,k3_final_26,A12,kvalita,1,Plná
+exp2857,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2857,k3_final_26,A12,vhodnost,1,3
+exp2856,k3_final_26,A12,kvalita,1,Plochá
+exp2856,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2856,k3_final_26,A12,vhodnost,1,4
+exp2855,k3_final_26,A12,kvalita,1,Plná
+exp2855,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2855,k3_final_26,A12,vhodnost,1,4
+exp2854,k3_final_26,A12,kvalita,1,Plná
+exp2854,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2854,k3_final_26,A12,vhodnost,1,2
+exp2853,k3_final_26,A12,kvalita,1,Plná
+exp2853,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2853,k3_final_26,A12,vhodnost,1,3
+exp2852,k3_final_26,A12,kvalita,1,Plná
+exp2852,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2852,k3_final_26,A12,vhodnost,1,3
+exp2851,k3_final_26,A12,kvalita,1,Plná
+exp2851,k3_final_26,A12,dopad,1,Neúspěch
+exp2851,k3_final_26,A12,vhodnost,1,3
+exp2850,k3_final_26,A12,kvalita,1,Plochá
+exp2850,k3_final_26,A12,dopad,1,Neúspěch
+exp2850,k3_final_26,A12,vhodnost,1,1
+exp2849,k3_final_26,A12,kvalita,1,Plná
+exp2849,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2849,k3_final_26,A12,vhodnost,1,2
+exp2848,k3_final_26,A12,kvalita,1,Plná
+exp2848,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2848,k3_final_26,A12,vhodnost,1,3
+exp2847,k3_final_26,A12,kvalita,1,Plná
+exp2847,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2847,k3_final_26,A12,vhodnost,1,3
+exp2846,k3_final_26,A12,kvalita,1,Plná
+exp2846,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2846,k3_final_26,A12,vhodnost,1,3
+exp2845,k3_final_26,A12,kvalita,1,Plná
+exp2845,k3_final_26,A12,dopad,1,Neúspěch
+exp2845,k3_final_26,A12,vhodnost,1,3
+exp2844,k3_final_26,A12,kvalita,1,Plná
+exp2844,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2844,k3_final_26,A12,vhodnost,1,4
+exp2843,k3_final_26,A12,kvalita,1,Plná
+exp2843,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2843,k3_final_26,A12,vhodnost,1,3
+exp2842,k3_final_26,A12,kvalita,1,Plná
+exp2842,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2842,k3_final_26,A12,vhodnost,1,3
+exp2841,k3_final_26,A12,kvalita,1,Plná
+exp2841,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2841,k3_final_26,A12,vhodnost,1,4
+exp2840,k3_final_26,A12,kvalita,1,Plná
+exp2840,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2840,k3_final_26,A12,vhodnost,1,2
+exp2839,k3_final_26,A12,kvalita,1,Plná
+exp2839,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2839,k3_final_26,A12,vhodnost,1,4
+exp2838,k3_final_26,A12,kvalita,1,Plná
+exp2838,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2838,k3_final_26,A12,vhodnost,1,4
+exp2837,k3_final_26,A12,kvalita,1,Plná
+exp2837,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2837,k3_final_26,A12,vhodnost,1,3
+exp2836,k3_final_26,A12,kvalita,1,Plná
+exp2836,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2836,k3_final_26,A12,vhodnost,1,4
+exp2835,k3_final_26,A12,kvalita,1,Plná
+exp2835,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2835,k3_final_26,A12,vhodnost,1,4
+exp2834,k3_final_26,A12,kvalita,1,Plná
+exp2834,k3_final_26,A12,dopad,1,Neúspěch
+exp2834,k3_final_26,A12,vhodnost,1,3
+exp2833,k3_final_26,A12,kvalita,1,Plná
+exp2833,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2833,k3_final_26,A12,vhodnost,1,2
+exp2832,k3_final_26,A12,kvalita,1,Plná
+exp2832,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2832,k3_final_26,A12,vhodnost,1,4
+exp2831,k3_final_26,A12,kvalita,1,Plná
+exp2831,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2831,k3_final_26,A12,vhodnost,1,4
+exp2830,k3_final_26,A12,kvalita,1,Plochá
+exp2830,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2830,k3_final_26,A12,vhodnost,1,3
+exp2829,k3_final_26,A12,kvalita,1,Plná
+exp2829,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2829,k3_final_26,A12,vhodnost,1,2
+exp2828,k3_final_26,A12,kvalita,1,Plná
+exp2828,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2828,k3_final_26,A12,vhodnost,1,3
+exp2827,k3_final_26,A12,kvalita,1,Plná
+exp2827,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2827,k3_final_26,A12,vhodnost,1,3
+exp2825,k3_final_26,A12,kvalita,1,Plná
+exp2825,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2825,k3_final_26,A12,vhodnost,1,4
+exp2824,k3_final_26,A12,kvalita,1,Plná
+exp2824,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2824,k3_final_26,A12,vhodnost,1,3
+exp2823,k3_final_26,A12,kvalita,1,Plná
+exp2823,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2823,k3_final_26,A12,vhodnost,1,3
+exp2822,k3_final_26,A12,kvalita,1,Plná
+exp2822,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2822,k3_final_26,A12,vhodnost,1,2
+exp2821,k3_final_26,A12,kvalita,1,Plná
+exp2821,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2821,k3_final_26,A12,vhodnost,1,3
+exp2820,k3_final_26,A12,kvalita,1,Plná
+exp2820,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2820,k3_final_26,A12,vhodnost,1,4
+exp2818,k3_final_26,A12,kvalita,1,Plná
+exp2818,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2818,k3_final_26,A12,vhodnost,1,2
+exp2817,k3_final_26,A12,kvalita,1,Plná
+exp2817,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2817,k3_final_26,A12,vhodnost,1,2
+exp2816,k3_final_26,A12,kvalita,1,Plná
+exp2816,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2816,k3_final_26,A12,vhodnost,1,4
+exp2815,k3_final_26,A12,kvalita,1,Plná
+exp2815,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2815,k3_final_26,A12,vhodnost,1,2
+exp2814,k3_final_26,A12,kvalita,1,Plná
+exp2814,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2814,k3_final_26,A12,vhodnost,1,3
+exp2813,k3_final_26,A12,kvalita,1,Plná
+exp2813,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2813,k3_final_26,A12,vhodnost,1,3
+exp2812,k3_final_26,A12,kvalita,1,Plná
+exp2812,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2812,k3_final_26,A12,vhodnost,1,4
+exp2811,k3_final_26,A12,kvalita,1,Plná
+exp2811,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2811,k3_final_26,A12,vhodnost,1,2
+exp2810,k3_final_26,A12,kvalita,1,Plná
+exp2810,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2810,k3_final_26,A12,vhodnost,1,4
+exp2809,k3_final_26,A12,kvalita,1,Plná
+exp2809,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2809,k3_final_26,A12,vhodnost,1,3
+exp2808,k3_final_26,A12,kvalita,1,Plná
+exp2808,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2808,k3_final_26,A12,vhodnost,1,4
+exp2807,k3_final_26,A12,kvalita,1,Plná
+exp2807,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2807,k3_final_26,A12,vhodnost,1,3
+exp2806,k3_final_26,A12,kvalita,1,Plná
+exp2806,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2806,k3_final_26,A12,vhodnost,1,3
+exp2805,k3_final_26,A12,kvalita,1,Plná
+exp2805,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2805,k3_final_26,A12,vhodnost,1,3
+exp2804,k3_final_26,A12,kvalita,1,Plná
+exp2804,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2804,k3_final_26,A12,vhodnost,1,4
+exp2803,k3_final_26,A12,kvalita,1,Plná
+exp2803,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2803,k3_final_26,A12,vhodnost,1,4
+exp2802,k3_final_26,A12,kvalita,1,Plná
+exp2802,k3_final_26,A12,dopad,1,Neúspěch
+exp2802,k3_final_26,A12,vhodnost,1,3
+exp2801,k3_final_26,A12,kvalita,1,Plochá
+exp2801,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2801,k3_final_26,A12,vhodnost,1,3
+exp2800,k3_final_26,A12,kvalita,1,Plná
+exp2800,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2800,k3_final_26,A12,vhodnost,1,2
+exp2799,k3_final_26,A12,kvalita,1,Plná
+exp2799,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2799,k3_final_26,A12,vhodnost,1,4
+exp2798,k3_final_26,A12,kvalita,1,Plná
+exp2798,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2798,k3_final_26,A12,vhodnost,1,4
+exp2797,k3_final_26,A12,kvalita,1,Plná
+exp2797,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2797,k3_final_26,A12,vhodnost,1,3
+exp2796,k3_final_26,A12,kvalita,1,Plná
+exp2796,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2796,k3_final_26,A12,vhodnost,1,4
+exp2795,k3_final_26,A12,kvalita,1,Plná
+exp2795,k3_final_26,A12,dopad,1,Neúspěch
+exp2795,k3_final_26,A12,vhodnost,1,3
+exp2794,k3_final_26,A12,kvalita,1,Plná
+exp2794,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2794,k3_final_26,A12,vhodnost,1,3
+exp2793,k3_final_26,A12,kvalita,1,Plná
+exp2793,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2793,k3_final_26,A12,vhodnost,1,3
+exp2792,k3_final_26,A12,kvalita,1,Plná
+exp2792,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2792,k3_final_26,A12,vhodnost,1,4
+exp2791,k3_final_26,A12,kvalita,1,Plná
+exp2791,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2791,k3_final_26,A12,vhodnost,1,3
+exp2790,k3_final_26,A12,kvalita,1,Plná
+exp2790,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2790,k3_final_26,A12,vhodnost,1,3
+exp2789,k3_final_26,A12,kvalita,1,Plná
+exp2789,k3_final_26,A12,dopad,1,Neúspěch
+exp2789,k3_final_26,A12,vhodnost,1,3
+exp2788,k3_final_26,A12,kvalita,1,Plná
+exp2788,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2788,k3_final_26,A12,vhodnost,1,4
+exp2787,k3_final_26,A12,kvalita,1,Plná
+exp2787,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2787,k3_final_26,A12,vhodnost,1,3
+exp2786,k3_final_26,A12,kvalita,1,Plná
+exp2786,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2786,k3_final_26,A12,vhodnost,1,3
+exp2785,k3_final_26,A12,kvalita,1,Plná
+exp2785,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2785,k3_final_26,A12,vhodnost,1,3
+exp2784,k3_final_26,A12,kvalita,1,Plochá
+exp2784,k3_final_26,A12,vhodnost,1,1
+exp2783,k3_final_26,A12,kvalita,1,Plná
+exp2783,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2783,k3_final_26,A12,vhodnost,1,3
+exp2782,k3_final_26,A12,kvalita,1,Plná
+exp2782,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2782,k3_final_26,A12,vhodnost,1,4
+exp2781,k3_final_26,A12,kvalita,1,Plná
+exp2781,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2781,k3_final_26,A12,vhodnost,1,4
+exp2780,k3_final_26,A12,kvalita,1,Plná
+exp2780,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2780,k3_final_26,A12,vhodnost,1,4
+exp2779,k3_final_26,A12,kvalita,1,Plná
+exp2779,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2779,k3_final_26,A12,vhodnost,1,4
+exp2778,k3_final_26,A12,kvalita,1,Plná
+exp2778,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2778,k3_final_26,A12,vhodnost,1,3
+exp2777,k3_final_26,A12,kvalita,1,Plná
+exp2777,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2777,k3_final_26,A12,vhodnost,1,4
+exp2776,k3_final_26,A12,kvalita,1,Plná
+exp2776,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2776,k3_final_26,A12,vhodnost,1,3
+exp2775,k3_final_26,A12,kvalita,1,Plná
+exp2775,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2775,k3_final_26,A12,vhodnost,1,4
+exp2774,k3_final_26,A12,kvalita,1,Plná
+exp2774,k3_final_26,A12,dopad,1,Krátkodobý úspěch
+exp2774,k3_final_26,A12,vhodnost,1,3
+exp2773,k3_final_26,A12,kvalita,1,Plná
+exp2773,k3_final_26,A12,dopad,1,Neúspěch
+exp2773,k3_final_26,A12,vhodnost,1,2
+exp2772,k3_final_26,A12,kvalita,1,Plná
+exp2772,k3_final_26,A12,dopad,1,Dlouhodobý úspěch
+exp2772,k3_final_26,A12,vhodnost,1,2
+exp2771,k3_final_26,A12,kvalita,1,Plná
+exp2771,k3_final_26,A12,dopad,1,Neúspěch
+exp2771,k3_final_26,A12,vhodnost,1,2
+exp1836,k3_final_26,A2,kvalita,1,Plná
+exp1836,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1836,k3_final_26,A2,vhodnost,1,3
+exp1835,k3_final_26,A2,kvalita,1,Plná
+exp1835,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1835,k3_final_26,A2,vhodnost,1,4
+exp1829,k3_final_26,A2,kvalita,1,Plná
+exp1829,k3_final_26,A2,dopad,1,Neúspěch
+exp1829,k3_final_26,A2,vhodnost,1,2
+exp1827,k3_final_26,A2,kvalita,1,Plná
+exp1827,k3_final_26,A2,dopad,1,Neúspěch
+exp1827,k3_final_26,A2,vhodnost,1,3
+exp1826,k3_final_26,A2,kvalita,1,Plná
+exp1826,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1826,k3_final_26,A2,vhodnost,1,4
+exp1824,k3_final_26,A2,kvalita,1,Plná
+exp1824,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1824,k3_final_26,A2,vhodnost,1,4
+exp1822,k3_final_26,A2,kvalita,1,Plná
+exp1822,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1822,k3_final_26,A2,vhodnost,1,4
+exp1819,k3_final_26,A2,kvalita,1,Plná
+exp1819,k3_final_26,A2,dopad,1,Neúspěch
+exp1819,k3_final_26,A2,vhodnost,1,3
+exp1818,k3_final_26,A2,kvalita,1,Plná
+exp1818,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1818,k3_final_26,A2,vhodnost,1,4
+exp1817,k3_final_26,A2,kvalita,1,Plná
+exp1817,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1817,k3_final_26,A2,vhodnost,1,4
+exp1811,k3_final_26,A2,kvalita,1,Plná
+exp1811,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1811,k3_final_26,A2,vhodnost,1,4
+exp1808,k3_final_26,A2,kvalita,1,Plochá
+exp1805,k3_final_26,A2,kvalita,1,Plná
+exp1805,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1805,k3_final_26,A2,vhodnost,1,4
+exp1803,k3_final_26,A2,kvalita,1,Plná
+exp1803,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1803,k3_final_26,A2,vhodnost,1,4
+exp1802,k3_final_26,A2,kvalita,1,Plná
+exp1802,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1802,k3_final_26,A2,vhodnost,1,3
+exp1801,k3_final_26,A2,kvalita,1,Plná
+exp1801,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1801,k3_final_26,A2,vhodnost,1,3
+exp1800,k3_final_26,A2,kvalita,1,Plná
+exp1800,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1800,k3_final_26,A2,vhodnost,1,3
+exp1799,k3_final_26,A2,kvalita,1,Plná
+exp1799,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1799,k3_final_26,A2,vhodnost,1,3
+exp1796,k3_final_26,A2,kvalita,1,Plná
+exp1796,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1796,k3_final_26,A2,vhodnost,1,3
+exp1795,k3_final_26,A2,kvalita,1,Plná
+exp1795,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1795,k3_final_26,A2,vhodnost,1,4
+exp1794,k3_final_26,A2,kvalita,1,Plná
+exp1794,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1794,k3_final_26,A2,vhodnost,1,3
+exp1792,k3_final_26,A2,kvalita,1,Plná
+exp1792,k3_final_26,A2,dopad,1,Neúspěch
+exp1792,k3_final_26,A2,vhodnost,1,4
+exp1789,k3_final_26,A2,kvalita,1,Plná
+exp1789,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1789,k3_final_26,A2,vhodnost,1,4
+exp1788,k3_final_26,A2,kvalita,1,Plná
+exp1788,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1788,k3_final_26,A2,vhodnost,1,4
+exp1787,k3_final_26,A2,kvalita,1,Plná
+exp1787,k3_final_26,A2,dopad,1,Neúspěch
+exp1787,k3_final_26,A2,vhodnost,1,4
+exp1785,k3_final_26,A2,kvalita,1,Plná
+exp1785,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1785,k3_final_26,A2,vhodnost,1,2
+exp1784,k3_final_26,A2,kvalita,1,Plná
+exp1784,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1784,k3_final_26,A2,vhodnost,1,3
+exp1782,k3_final_26,A2,kvalita,1,Plná
+exp1782,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1782,k3_final_26,A2,vhodnost,1,3
+exp1780,k3_final_26,A2,kvalita,1,Plná
+exp1780,k3_final_26,A2,dopad,1,Neúspěch
+exp1780,k3_final_26,A2,vhodnost,1,4
+exp1778,k3_final_26,A2,kvalita,1,Plná
+exp1778,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1778,k3_final_26,A2,vhodnost,1,3
+exp1777,k3_final_26,A2,kvalita,1,Plná
+exp1777,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1777,k3_final_26,A2,vhodnost,1,4
+exp1776,k3_final_26,A2,kvalita,1,Plná
+exp1776,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1776,k3_final_26,A2,vhodnost,1,4
+exp1774,k3_final_26,A2,kvalita,1,Plná
+exp1774,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1774,k3_final_26,A2,vhodnost,1,4
+exp1772,k3_final_26,A2,kvalita,1,Plná
+exp1772,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1772,k3_final_26,A2,vhodnost,1,4
+exp1770,k3_final_26,A2,kvalita,1,Plná
+exp1770,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1770,k3_final_26,A2,vhodnost,1,4
+exp1769,k3_final_26,A2,kvalita,1,Plná
+exp1769,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1769,k3_final_26,A2,vhodnost,1,4
+exp1768,k3_final_26,A2,kvalita,1,Plná
+exp1768,k3_final_26,A2,dopad,1,Neúspěch
+exp1768,k3_final_26,A2,vhodnost,1,4
+exp1762,k3_final_26,A2,kvalita,1,Plná
+exp1762,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1762,k3_final_26,A2,vhodnost,1,4
+exp1761,k3_final_26,A2,kvalita,1,Plná
+exp1761,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1761,k3_final_26,A2,vhodnost,1,3
+exp1759,k3_final_26,A2,kvalita,1,Plná
+exp1759,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1759,k3_final_26,A2,vhodnost,1,4
+exp1756,k3_final_26,A2,kvalita,1,Plná
+exp1756,k3_final_26,A2,dopad,1,Neúspěch
+exp1756,k3_final_26,A2,vhodnost,1,2
+exp1754,k3_final_26,A2,kvalita,1,Plná
+exp1754,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1754,k3_final_26,A2,vhodnost,1,3
+exp1753,k3_final_26,A2,kvalita,1,Plná
+exp1753,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1753,k3_final_26,A2,vhodnost,1,4
+exp1752,k3_final_26,A2,kvalita,1,Plná
+exp1752,k3_final_26,A2,dopad,1,Neúspěch
+exp1752,k3_final_26,A2,vhodnost,1,3
+exp1747,k3_final_26,A2,kvalita,1,Plná
+exp1747,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1747,k3_final_26,A2,vhodnost,1,3
+exp1746,k3_final_26,A2,kvalita,1,Plná
+exp1746,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1746,k3_final_26,A2,vhodnost,1,4
+exp1745,k3_final_26,A2,kvalita,1,Plná
+exp1745,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1745,k3_final_26,A2,vhodnost,1,4
+exp1742,k3_final_26,A2,kvalita,1,Plná
+exp1742,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1742,k3_final_26,A2,vhodnost,1,4
+exp1741,k3_final_26,A2,kvalita,1,Plná
+exp1741,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1741,k3_final_26,A2,vhodnost,1,3
+exp1740,k3_final_26,A2,kvalita,1,Plná
+exp1740,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1740,k3_final_26,A2,vhodnost,1,3
+exp1739,k3_final_26,A2,kvalita,1,Plná
+exp1739,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1739,k3_final_26,A2,vhodnost,1,4
+exp1738,k3_final_26,A2,kvalita,1,Plná
+exp1738,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1738,k3_final_26,A2,vhodnost,1,4
+exp1737,k3_final_26,A2,kvalita,1,Plná
+exp1737,k3_final_26,A2,dopad,1,Neúspěch
+exp1737,k3_final_26,A2,vhodnost,1,3
+exp1736,k3_final_26,A2,kvalita,1,Plná
+exp1736,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1736,k3_final_26,A2,vhodnost,1,3
+exp1735,k3_final_26,A2,kvalita,1,Plná
+exp1735,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1735,k3_final_26,A2,vhodnost,1,3
+exp1734,k3_final_26,A2,kvalita,1,Plná
+exp1734,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1734,k3_final_26,A2,vhodnost,1,3
+exp1733,k3_final_26,A2,kvalita,1,Plná
+exp1733,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1733,k3_final_26,A2,vhodnost,1,2
+exp1731,k3_final_26,A2,kvalita,1,Plná
+exp1731,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1731,k3_final_26,A2,vhodnost,1,3
+exp1730,k3_final_26,A2,kvalita,1,Plná
+exp1730,k3_final_26,A2,dopad,1,Neúspěch
+exp1730,k3_final_26,A2,vhodnost,1,2
+exp1729,k3_final_26,A2,kvalita,1,Plná
+exp1729,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1729,k3_final_26,A2,vhodnost,1,2
+exp1726,k3_final_26,A2,kvalita,1,Plná
+exp1726,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1726,k3_final_26,A2,vhodnost,1,3
+exp1725,k3_final_26,A2,kvalita,1,Plná
+exp1725,k3_final_26,A2,dopad,1,Neúspěch
+exp1725,k3_final_26,A2,vhodnost,1,4
+exp1724,k3_final_26,A2,kvalita,1,Plná
+exp1724,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1724,k3_final_26,A2,vhodnost,1,3
+exp1723,k3_final_26,A2,kvalita,1,Plná
+exp1723,k3_final_26,A2,dopad,1,Neúspěch
+exp1723,k3_final_26,A2,vhodnost,1,2
+exp1719,k3_final_26,A2,kvalita,1,Plná
+exp1719,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1719,k3_final_26,A2,vhodnost,1,4
+exp1718,k3_final_26,A2,kvalita,1,Plná
+exp1718,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1718,k3_final_26,A2,vhodnost,1,3
+exp1713,k3_final_26,A2,kvalita,1,Plná
+exp1713,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1713,k3_final_26,A2,vhodnost,1,3
+exp1711,k3_final_26,A2,kvalita,1,Plná
+exp1711,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1711,k3_final_26,A2,vhodnost,1,3
+exp1709,k3_final_26,A2,kvalita,1,Plná
+exp1709,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1709,k3_final_26,A2,vhodnost,1,4
+exp1706,k3_final_26,A2,kvalita,1,Plná
+exp1706,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1706,k3_final_26,A2,vhodnost,1,2
+exp1705,k3_final_26,A2,kvalita,1,Plná
+exp1705,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1705,k3_final_26,A2,vhodnost,1,3
+exp1704,k3_final_26,A2,kvalita,1,Plná
+exp1704,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1704,k3_final_26,A2,vhodnost,1,4
+exp1702,k3_final_26,A2,kvalita,1,Plná
+exp1702,k3_final_26,A2,dopad,1,Neúspěch
+exp1702,k3_final_26,A2,vhodnost,1,4
+exp1701,k3_final_26,A2,kvalita,1,Plná
+exp1701,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1701,k3_final_26,A2,vhodnost,1,3
+exp1700,k3_final_26,A2,kvalita,1,Plná
+exp1700,k3_final_26,A2,dopad,1,Neúspěch
+exp1700,k3_final_26,A2,vhodnost,1,2
+exp1699,k3_final_26,A2,kvalita,1,Plná
+exp1699,k3_final_26,A2,dopad,1,Neúspěch
+exp1699,k3_final_26,A2,vhodnost,1,4
+exp1697,k3_final_26,A2,kvalita,1,Plná
+exp1697,k3_final_26,A2,dopad,1,Neúspěch
+exp1697,k3_final_26,A2,vhodnost,1,3
+exp1696,k3_final_26,A2,kvalita,1,Plná
+exp1696,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1696,k3_final_26,A2,vhodnost,1,2
+exp1695,k3_final_26,A2,kvalita,1,Plná
+exp1695,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1695,k3_final_26,A2,vhodnost,1,4
+exp1694,k3_final_26,A2,kvalita,1,Plná
+exp1694,k3_final_26,A2,dopad,1,Neúspěch
+exp1694,k3_final_26,A2,vhodnost,1,3
+exp1693,k3_final_26,A2,kvalita,1,Plná
+exp1693,k3_final_26,A2,dopad,1,Neúspěch
+exp1693,k3_final_26,A2,vhodnost,1,4
+exp1685,k3_final_26,A2,kvalita,1,Plná
+exp1685,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1685,k3_final_26,A2,vhodnost,1,2
+exp1683,k3_final_26,A2,kvalita,1,Plná
+exp1683,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1683,k3_final_26,A2,vhodnost,1,2
+exp1681,k3_final_26,A2,kvalita,1,Plná
+exp1681,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1681,k3_final_26,A2,vhodnost,1,4
+exp1676,k3_final_26,A2,kvalita,1,Plná
+exp1676,k3_final_26,A2,dopad,1,Neúspěch
+exp1676,k3_final_26,A2,vhodnost,1,4
+exp1674,k3_final_26,A2,kvalita,1,Plná
+exp1674,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1674,k3_final_26,A2,vhodnost,1,4
+exp1673,k3_final_26,A2,kvalita,1,Plná
+exp1673,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1673,k3_final_26,A2,vhodnost,1,4
+exp1672,k3_final_26,A2,kvalita,1,Plná
+exp1672,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1672,k3_final_26,A2,vhodnost,1,4
+exp1671,k3_final_26,A2,kvalita,1,Plná
+exp1671,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1671,k3_final_26,A2,vhodnost,1,4
+exp1670,k3_final_26,A2,kvalita,1,Plná
+exp1670,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1670,k3_final_26,A2,vhodnost,1,4
+exp1668,k3_final_26,A2,kvalita,1,Plná
+exp1668,k3_final_26,A2,dopad,1,Neúspěch
+exp1668,k3_final_26,A2,vhodnost,1,2
+exp1667,k3_final_26,A2,kvalita,1,Plná
+exp1667,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1667,k3_final_26,A2,vhodnost,1,4
+exp1665,k3_final_26,A2,kvalita,1,Plná
+exp1665,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1665,k3_final_26,A2,vhodnost,1,3
+exp1663,k3_final_26,A2,kvalita,1,Plná
+exp1663,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1663,k3_final_26,A2,vhodnost,1,4
+exp1661,k3_final_26,A2,kvalita,1,Plná
+exp1661,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1661,k3_final_26,A2,vhodnost,1,3
+exp1660,k3_final_26,A2,kvalita,1,Plná
+exp1660,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1660,k3_final_26,A2,vhodnost,1,4
+exp1659,k3_final_26,A2,kvalita,1,Plná
+exp1659,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1659,k3_final_26,A2,vhodnost,1,2
+exp1658,k3_final_26,A2,kvalita,1,Plná
+exp1658,k3_final_26,A2,dopad,1,Neúspěch
+exp1658,k3_final_26,A2,vhodnost,1,2
+exp1656,k3_final_26,A2,kvalita,1,Plná
+exp1656,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1656,k3_final_26,A2,vhodnost,1,4
+exp1654,k3_final_26,A2,kvalita,1,Plná
+exp1654,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1654,k3_final_26,A2,vhodnost,1,4
+exp1653,k3_final_26,A2,kvalita,1,Plná
+exp1653,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1653,k3_final_26,A2,vhodnost,1,3
+exp1652,k3_final_26,A2,kvalita,1,Plná
+exp1652,k3_final_26,A2,dopad,1,Neúspěch
+exp1652,k3_final_26,A2,vhodnost,1,4
+exp1651,k3_final_26,A2,kvalita,1,Plná
+exp1651,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1651,k3_final_26,A2,vhodnost,1,3
+exp1649,k3_final_26,A2,kvalita,1,Plná
+exp1649,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1649,k3_final_26,A2,vhodnost,1,4
+exp1646,k3_final_26,A2,kvalita,1,Plná
+exp1646,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1646,k3_final_26,A2,vhodnost,1,4
+exp1643,k3_final_26,A2,kvalita,1,Plná
+exp1643,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1643,k3_final_26,A2,vhodnost,1,4
+exp1642,k3_final_26,A2,kvalita,1,Plná
+exp1642,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1642,k3_final_26,A2,vhodnost,1,3
+exp1641,k3_final_26,A2,kvalita,1,Plná
+exp1641,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1641,k3_final_26,A2,vhodnost,1,3
+exp1639,k3_final_26,A2,kvalita,1,Plná
+exp1639,k3_final_26,A2,dopad,1,Neúspěch
+exp1639,k3_final_26,A2,vhodnost,1,3
+exp1638,k3_final_26,A2,kvalita,1,Plná
+exp1638,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1638,k3_final_26,A2,vhodnost,1,4
+exp1637,k3_final_26,A2,kvalita,1,Plná
+exp1637,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1637,k3_final_26,A2,vhodnost,1,3
+exp1635,k3_final_26,A2,kvalita,1,Plná
+exp1635,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1635,k3_final_26,A2,vhodnost,1,4
+exp1633,k3_final_26,A2,kvalita,1,Plná
+exp1633,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1633,k3_final_26,A2,vhodnost,1,4
+exp1632,k3_final_26,A2,kvalita,1,Plná
+exp1632,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1632,k3_final_26,A2,vhodnost,1,3
+exp1631,k3_final_26,A2,kvalita,1,Plná
+exp1631,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1631,k3_final_26,A2,vhodnost,1,4
+exp1628,k3_final_26,A2,kvalita,1,Plná
+exp1628,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1628,k3_final_26,A2,vhodnost,1,4
+exp1627,k3_final_26,A2,kvalita,1,Plná
+exp1627,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1627,k3_final_26,A2,vhodnost,1,3
+exp1626,k3_final_26,A2,kvalita,1,Plná
+exp1626,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1626,k3_final_26,A2,vhodnost,1,3
+exp1624,k3_final_26,A2,kvalita,1,Plná
+exp1624,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1624,k3_final_26,A2,vhodnost,1,3
+exp1623,k3_final_26,A2,kvalita,1,Plná
+exp1623,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1623,k3_final_26,A2,vhodnost,1,4
+exp1622,k3_final_26,A2,kvalita,1,Plná
+exp1622,k3_final_26,A2,dopad,1,Neúspěch
+exp1622,k3_final_26,A2,vhodnost,1,2
+exp1619,k3_final_26,A2,kvalita,1,Plná
+exp1619,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1619,k3_final_26,A2,vhodnost,1,2
+exp1618,k3_final_26,A2,kvalita,1,Plná
+exp1618,k3_final_26,A2,dopad,1,Neúspěch
+exp1618,k3_final_26,A2,vhodnost,1,3
+exp1617,k3_final_26,A2,kvalita,1,Plná
+exp1617,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1617,k3_final_26,A2,vhodnost,1,4
+exp1616,k3_final_26,A2,kvalita,1,Plná
+exp1616,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1616,k3_final_26,A2,vhodnost,1,3
+exp1614,k3_final_26,A2,kvalita,1,Plná
+exp1614,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1614,k3_final_26,A2,vhodnost,1,3
+exp1613,k3_final_26,A2,kvalita,1,Plná
+exp1613,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1613,k3_final_26,A2,vhodnost,1,3
+exp1611,k3_final_26,A2,kvalita,1,Plná
+exp1611,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1611,k3_final_26,A2,vhodnost,1,4
+exp1610,k3_final_26,A2,kvalita,1,Plná
+exp1610,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1610,k3_final_26,A2,vhodnost,1,2
+exp1608,k3_final_26,A2,kvalita,1,Plná
+exp1608,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1608,k3_final_26,A2,vhodnost,1,3
+exp1607,k3_final_26,A2,kvalita,1,Plná
+exp1607,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1607,k3_final_26,A2,vhodnost,1,4
+exp1606,k3_final_26,A2,kvalita,1,Plná
+exp1606,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1606,k3_final_26,A2,vhodnost,1,4
+exp1605,k3_final_26,A2,kvalita,1,Plná
+exp1605,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1605,k3_final_26,A2,vhodnost,1,3
+exp1602,k3_final_26,A2,kvalita,1,Plná
+exp1602,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1602,k3_final_26,A2,vhodnost,1,3
+exp1601,k3_final_26,A2,kvalita,1,Plná
+exp1601,k3_final_26,A2,dopad,1,Neúspěch
+exp1601,k3_final_26,A2,vhodnost,1,3
+exp1598,k3_final_26,A2,kvalita,1,Plná
+exp1598,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1598,k3_final_26,A2,vhodnost,1,2
+exp1596,k3_final_26,A2,kvalita,1,Plná
+exp1596,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1596,k3_final_26,A2,vhodnost,1,3
+exp1595,k3_final_26,A2,kvalita,1,Plná
+exp1595,k3_final_26,A2,dopad,1,Neúspěch
+exp1595,k3_final_26,A2,vhodnost,1,2
+exp1594,k3_final_26,A2,kvalita,1,Plná
+exp1594,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1594,k3_final_26,A2,vhodnost,1,4
+exp1593,k3_final_26,A2,kvalita,1,Plná
+exp1593,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1593,k3_final_26,A2,vhodnost,1,4
+exp1591,k3_final_26,A2,kvalita,1,Plná
+exp1591,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1591,k3_final_26,A2,vhodnost,1,3
+exp1589,k3_final_26,A2,kvalita,1,Plná
+exp1589,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1589,k3_final_26,A2,vhodnost,1,4
+exp1588,k3_final_26,A2,kvalita,1,Plná
+exp1588,k3_final_26,A2,dopad,1,Neúspěch
+exp1588,k3_final_26,A2,vhodnost,1,3
+exp1586,k3_final_26,A2,kvalita,1,Plná
+exp1586,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1586,k3_final_26,A2,vhodnost,1,3
+exp1583,k3_final_26,A2,kvalita,1,Plná
+exp1583,k3_final_26,A2,dopad,1,Neúspěch
+exp1583,k3_final_26,A2,vhodnost,1,2
+exp1577,k3_final_26,A2,kvalita,1,Plná
+exp1577,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1577,k3_final_26,A2,vhodnost,1,3
+exp1576,k3_final_26,A2,kvalita,1,Plná
+exp1576,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1576,k3_final_26,A2,vhodnost,1,2
+exp1574,k3_final_26,A2,kvalita,1,Plná
+exp1574,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1574,k3_final_26,A2,vhodnost,1,2
+exp1573,k3_final_26,A2,kvalita,1,Plná
+exp1573,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1573,k3_final_26,A2,vhodnost,1,3
+exp1572,k3_final_26,A2,kvalita,1,Plná
+exp1572,k3_final_26,A2,dopad,1,Neúspěch
+exp1572,k3_final_26,A2,vhodnost,1,3
+exp1571,k3_final_26,A2,kvalita,1,Plná
+exp1571,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1571,k3_final_26,A2,vhodnost,1,4
+exp1570,k3_final_26,A2,kvalita,1,Plná
+exp1570,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1570,k3_final_26,A2,vhodnost,1,4
+exp1569,k3_final_26,A2,kvalita,1,Plná
+exp1569,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1569,k3_final_26,A2,vhodnost,1,4
+exp1568,k3_final_26,A2,kvalita,1,Plná
+exp1568,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1568,k3_final_26,A2,vhodnost,1,3
+exp1567,k3_final_26,A2,kvalita,1,Plná
+exp1567,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1567,k3_final_26,A2,vhodnost,1,3
+exp1565,k3_final_26,A2,kvalita,1,Plná
+exp1565,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1565,k3_final_26,A2,vhodnost,1,4
+exp1562,k3_final_26,A2,kvalita,1,Plná
+exp1562,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1562,k3_final_26,A2,vhodnost,1,4
+exp1561,k3_final_26,A2,kvalita,1,Plná
+exp1561,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1561,k3_final_26,A2,vhodnost,1,3
+exp1559,k3_final_26,A2,kvalita,1,Plná
+exp1559,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1559,k3_final_26,A2,vhodnost,1,3
+exp1557,k3_final_26,A2,kvalita,1,Plná
+exp1557,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1557,k3_final_26,A2,vhodnost,1,2
+exp1556,k3_final_26,A2,kvalita,1,Plná
+exp1556,k3_final_26,A2,dopad,1,Neúspěch
+exp1556,k3_final_26,A2,vhodnost,1,2
+exp1555,k3_final_26,A2,kvalita,1,Plná
+exp1555,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1555,k3_final_26,A2,vhodnost,1,3
+exp1554,k3_final_26,A2,kvalita,1,Plná
+exp1554,k3_final_26,A2,dopad,1,Neúspěch
+exp1554,k3_final_26,A2,vhodnost,1,3
+exp1549,k3_final_26,A2,kvalita,1,Plná
+exp1549,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1549,k3_final_26,A2,vhodnost,1,4
+exp1547,k3_final_26,A2,kvalita,1,Plná
+exp1547,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1547,k3_final_26,A2,vhodnost,1,3
+exp1544,k3_final_26,A2,kvalita,1,Plná
+exp1544,k3_final_26,A2,dopad,1,Neúspěch
+exp1544,k3_final_26,A2,vhodnost,1,4
+exp1541,k3_final_26,A2,kvalita,1,Plná
+exp1541,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1541,k3_final_26,A2,vhodnost,1,4
+exp1537,k3_final_26,A2,kvalita,1,Plná
+exp1537,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1537,k3_final_26,A2,vhodnost,1,2
+exp1536,k3_final_26,A2,kvalita,1,Plná
+exp1536,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1536,k3_final_26,A2,vhodnost,1,3
+exp1532,k3_final_26,A2,kvalita,1,Plná
+exp1532,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1532,k3_final_26,A2,vhodnost,1,4
+exp1531,k3_final_26,A2,kvalita,1,Plná
+exp1531,k3_final_26,A2,dopad,1,Neúspěch
+exp1531,k3_final_26,A2,vhodnost,1,3
+exp1530,k3_final_26,A2,kvalita,1,Plná
+exp1530,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1530,k3_final_26,A2,vhodnost,1,3
+exp1529,k3_final_26,A2,kvalita,1,Plná
+exp1529,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp1529,k3_final_26,A2,vhodnost,1,4
+exp1528,k3_final_26,A2,kvalita,1,Plná
+exp1528,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1528,k3_final_26,A2,vhodnost,1,2
+exp1526,k3_final_26,A2,kvalita,1,Plná
+exp1526,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1526,k3_final_26,A2,vhodnost,1,3
+exp1525,k3_final_26,A2,kvalita,1,Plná
+exp1525,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1525,k3_final_26,A2,vhodnost,1,4
+exp1523,k3_final_26,A2,kvalita,1,Plná
+exp1523,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp1523,k3_final_26,A2,vhodnost,1,4
+exp2296,k3_final_26,A2,kvalita,1,Plná
+exp2296,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2296,k3_final_26,A2,vhodnost,1,4
+exp2306,k3_final_26,A2,kvalita,1,Plochá
+exp2347,k3_final_26,A2,kvalita,1,Plná
+exp2347,k3_final_26,A2,dopad,1,Neúspěch
+exp2347,k3_final_26,A2,vhodnost,1,2
+exp2360,k3_final_26,A2,kvalita,1,Plochá
+exp2375,k3_final_26,A2,kvalita,1,Plochá
+exp2378,k3_final_26,A2,kvalita,1,Plná
+exp2378,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2378,k3_final_26,A2,vhodnost,1,3
+exp2380,k3_final_26,A2,kvalita,1,Plochá
+,k3_final_26,A2,kvalita,1,Plná
+,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+,k3_final_26,A2,vhodnost,1,4
+exp2421,k3_final_26,A2,kvalita,1,Plochá
+exp2426,k3_final_26,A2,kvalita,1,Plochá
+exp2431,k3_final_26,A2,kvalita,1,Plochá
+exp2432,k3_final_26,A2,kvalita,1,Plná
+exp2432,k3_final_26,A2,dopad,1,Neúspěch
+exp2432,k3_final_26,A2,vhodnost,1,2
+exp2435,k3_final_26,A2,kvalita,1,Plná
+exp2435,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2435,k3_final_26,A2,vhodnost,1,3
+exp2448,k3_final_26,A2,kvalita,1,Plochá
+exp2449,k3_final_26,A2,kvalita,1,Plochá
+,k3_final_26,A2,kvalita,1,Plochá
+exp2462,k3_final_26,A2,kvalita,1,Plná
+exp2462,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2462,k3_final_26,A2,vhodnost,1,4
+exp2463,k3_final_26,A2,kvalita,1,Plná
+exp2463,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2463,k3_final_26,A2,vhodnost,1,4
+exp2464,k3_final_26,A2,kvalita,1,Plná
+exp2464,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2464,k3_final_26,A2,vhodnost,1,4
+exp2465,k3_final_26,A2,kvalita,1,Plná
+exp2465,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2465,k3_final_26,A2,vhodnost,1,4
+exp2471,k3_final_26,A2,kvalita,1,Plochá
+exp2472,k3_final_26,A2,kvalita,1,Plná
+exp2472,k3_final_26,A2,dopad,1,Neúspěch
+exp2472,k3_final_26,A2,vhodnost,1,3
+exp2475,k3_final_26,A2,kvalita,1,Plná
+exp2475,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2475,k3_final_26,A2,vhodnost,1,4
+exp2476,k3_final_26,A2,kvalita,1,Plná
+exp2476,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2476,k3_final_26,A2,vhodnost,1,3
+exp2488,k3_final_26,A2,kvalita,1,Plná
+exp2488,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2488,k3_final_26,A2,vhodnost,1,4
+exp2491,k3_final_26,A2,kvalita,1,Plná
+exp2491,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2491,k3_final_26,A2,vhodnost,1,4
+exp2492,k3_final_26,A2,kvalita,1,Plná
+exp2492,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2492,k3_final_26,A2,vhodnost,1,4
+exp2493,k3_final_26,A2,kvalita,1,Plná
+exp2493,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2493,k3_final_26,A2,vhodnost,1,4
+exp2495,k3_final_26,A2,kvalita,1,Plochá
+exp2500,k3_final_26,A2,kvalita,1,Plná
+exp2500,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2500,k3_final_26,A2,vhodnost,1,3
+exp2501,k3_final_26,A2,kvalita,1,Plná
+exp2501,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2501,k3_final_26,A2,vhodnost,1,4
+exp2510,k3_final_26,A2,kvalita,1,Plná
+exp2510,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2510,k3_final_26,A2,vhodnost,1,4
+exp2511,k3_final_26,A2,kvalita,1,Plochá
+exp2512,k3_final_26,A2,kvalita,1,Plná
+exp2512,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2512,k3_final_26,A2,vhodnost,1,4
+exp2513,k3_final_26,A2,kvalita,1,Plná
+exp2513,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2513,k3_final_26,A2,vhodnost,1,3
+exp2519,k3_final_26,A2,kvalita,1,Plochá
+exp2522,k3_final_26,A2,kvalita,1,Plná
+exp2522,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2522,k3_final_26,A2,vhodnost,1,2
+exp2523,k3_final_26,A2,kvalita,1,Plná
+exp2523,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2523,k3_final_26,A2,vhodnost,1,4
+exp2524,k3_final_26,A2,kvalita,1,Plochá
+exp2528,k3_final_26,A2,kvalita,1,Plná
+exp2528,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2528,k3_final_26,A2,vhodnost,1,4
+exp2529,k3_final_26,A2,kvalita,1,Plochá
+exp2530,k3_final_26,A2,kvalita,1,Plochá
+exp2531,k3_final_26,A2,kvalita,1,Plná
+exp2531,k3_final_26,A2,dopad,1,Neúspěch
+exp2531,k3_final_26,A2,vhodnost,1,3
+exp2532,k3_final_26,A2,kvalita,1,Plná
+exp2532,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2532,k3_final_26,A2,vhodnost,1,4
+exp2533,k3_final_26,A2,kvalita,1,Plná
+exp2533,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2533,k3_final_26,A2,vhodnost,1,4
+exp2534,k3_final_26,A2,kvalita,1,Plná
+exp2534,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2534,k3_final_26,A2,vhodnost,1,3
+exp2535,k3_final_26,A2,kvalita,1,Plná
+exp2535,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2535,k3_final_26,A2,vhodnost,1,4
+exp2536,k3_final_26,A2,kvalita,1,Plochá
+exp2537,k3_final_26,A2,kvalita,1,Plná
+exp2537,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2537,k3_final_26,A2,vhodnost,1,4
+exp2538,k3_final_26,A2,kvalita,1,Plná
+exp2538,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2538,k3_final_26,A2,vhodnost,1,4
+exp2539,k3_final_26,A2,kvalita,1,Plná
+exp2539,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2539,k3_final_26,A2,vhodnost,1,4
+exp2540,k3_final_26,A2,kvalita,1,Plná
+exp2540,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2540,k3_final_26,A2,vhodnost,1,3
+exp2541,k3_final_26,A2,kvalita,1,Plná
+exp2541,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2541,k3_final_26,A2,vhodnost,1,2
+exp2542,k3_final_26,A2,kvalita,1,Plná
+exp2542,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2542,k3_final_26,A2,vhodnost,1,4
+exp2543,k3_final_26,A2,kvalita,1,Plná
+exp2543,k3_final_26,A2,dopad,1,Neúspěch
+exp2543,k3_final_26,A2,vhodnost,1,4
+exp2544,k3_final_26,A2,kvalita,1,Plná
+exp2544,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2544,k3_final_26,A2,vhodnost,1,2
+exp2545,k3_final_26,A2,kvalita,1,Plná
+exp2545,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2545,k3_final_26,A2,vhodnost,1,4
+exp2546,k3_final_26,A2,kvalita,1,Plná
+exp2546,k3_final_26,A2,dopad,1,Neúspěch
+exp2546,k3_final_26,A2,vhodnost,1,2
+exp2547,k3_final_26,A2,kvalita,1,Plná
+exp2547,k3_final_26,A2,dopad,1,Neúspěch
+exp2547,k3_final_26,A2,vhodnost,1,2
+exp2548,k3_final_26,A2,kvalita,1,Plná
+exp2548,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2548,k3_final_26,A2,vhodnost,1,4
+exp2549,k3_final_26,A2,kvalita,1,Plná
+exp2549,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2549,k3_final_26,A2,vhodnost,1,4
+exp2550,k3_final_26,A2,kvalita,1,Plná
+exp2550,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2550,k3_final_26,A2,vhodnost,1,2
+exp2551,k3_final_26,A2,kvalita,1,Plná
+exp2551,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2551,k3_final_26,A2,vhodnost,1,4
+exp2552,k3_final_26,A2,kvalita,1,Plná
+exp2552,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2552,k3_final_26,A2,vhodnost,1,3
+exp2553,k3_final_26,A2,kvalita,1,Plná
+exp2553,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2553,k3_final_26,A2,vhodnost,1,4
+exp2554,k3_final_26,A2,kvalita,1,Plná
+exp2554,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2554,k3_final_26,A2,vhodnost,1,4
+exp2555,k3_final_26,A2,kvalita,1,Plná
+exp2555,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2555,k3_final_26,A2,vhodnost,1,4
+exp2556,k3_final_26,A2,kvalita,1,Plná
+exp2556,k3_final_26,A2,dopad,1,Neúspěch
+exp2556,k3_final_26,A2,vhodnost,1,3
+exp2557,k3_final_26,A2,kvalita,1,Plná
+exp2557,k3_final_26,A2,dopad,1,Neúspěch
+exp2557,k3_final_26,A2,vhodnost,1,3
+exp2558,k3_final_26,A2,kvalita,1,Plná
+exp2558,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2558,k3_final_26,A2,vhodnost,1,3
+exp2559,k3_final_26,A2,kvalita,1,Plná
+exp2559,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2559,k3_final_26,A2,vhodnost,1,3
+exp2560,k3_final_26,A2,kvalita,1,Plná
+exp2560,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2560,k3_final_26,A2,vhodnost,1,3
+exp2561,k3_final_26,A2,kvalita,1,Plná
+exp2561,k3_final_26,A2,dopad,1,Neúspěch
+exp2561,k3_final_26,A2,vhodnost,1,2
+exp2562,k3_final_26,A2,kvalita,1,Plná
+exp2562,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2562,k3_final_26,A2,vhodnost,1,4
+exp2563,k3_final_26,A2,kvalita,1,Plná
+exp2563,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2563,k3_final_26,A2,vhodnost,1,4
+exp2564,k3_final_26,A2,kvalita,1,Plná
+exp2564,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2564,k3_final_26,A2,vhodnost,1,4
+exp2565,k3_final_26,A2,kvalita,1,Plná
+exp2565,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2565,k3_final_26,A2,vhodnost,1,3
+exp2566,k3_final_26,A2,kvalita,1,Plná
+exp2566,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2566,k3_final_26,A2,vhodnost,1,4
+exp2567,k3_final_26,A2,kvalita,1,Plná
+exp2567,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2567,k3_final_26,A2,vhodnost,1,4
+exp2568,k3_final_26,A2,kvalita,1,Plná
+exp2568,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2568,k3_final_26,A2,vhodnost,1,3
+exp2569,k3_final_26,A2,kvalita,1,Plná
+exp2569,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2569,k3_final_26,A2,vhodnost,1,3
+exp2570,k3_final_26,A2,kvalita,1,Plná
+exp2570,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2570,k3_final_26,A2,vhodnost,1,4
+exp2571,k3_final_26,A2,kvalita,1,Plná
+exp2571,k3_final_26,A2,dopad,1,Neúspěch
+exp2571,k3_final_26,A2,vhodnost,1,4
+exp2572,k3_final_26,A2,kvalita,1,Plná
+exp2572,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2572,k3_final_26,A2,vhodnost,1,4
+exp2573,k3_final_26,A2,kvalita,1,Plná
+exp2573,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2573,k3_final_26,A2,vhodnost,1,3
+exp2574,k3_final_26,A2,kvalita,1,Plná
+exp2574,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2574,k3_final_26,A2,vhodnost,1,3
+exp2575,k3_final_26,A2,kvalita,1,Plná
+exp2575,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2575,k3_final_26,A2,vhodnost,1,4
+exp2576,k3_final_26,A2,kvalita,1,Plná
+exp2576,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2576,k3_final_26,A2,vhodnost,1,3
+exp2577,k3_final_26,A2,kvalita,1,Plná
+exp2577,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2577,k3_final_26,A2,vhodnost,1,3
+exp2578,k3_final_26,A2,kvalita,1,Plná
+exp2578,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2578,k3_final_26,A2,vhodnost,1,4
+exp2579,k3_final_26,A2,kvalita,1,Plná
+exp2579,k3_final_26,A2,dopad,1,Neúspěch
+exp2579,k3_final_26,A2,vhodnost,1,3
+exp2580,k3_final_26,A2,kvalita,1,Plná
+exp2580,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2580,k3_final_26,A2,vhodnost,1,3
+exp2581,k3_final_26,A2,kvalita,1,Plná
+exp2581,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2581,k3_final_26,A2,vhodnost,1,3
+exp2582,k3_final_26,A2,kvalita,1,Plná
+exp2582,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2582,k3_final_26,A2,vhodnost,1,4
+exp2583,k3_final_26,A2,kvalita,1,Plná
+exp2583,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2583,k3_final_26,A2,vhodnost,1,4
+exp2584,k3_final_26,A2,kvalita,1,Plná
+exp2584,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2584,k3_final_26,A2,vhodnost,1,3
+exp2585,k3_final_26,A2,kvalita,1,Plná
+exp2585,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2585,k3_final_26,A2,vhodnost,1,4
+exp2586,k3_final_26,A2,kvalita,1,Plná
+exp2586,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2586,k3_final_26,A2,vhodnost,1,3
+exp2587,k3_final_26,A2,kvalita,1,Plná
+exp2587,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2587,k3_final_26,A2,vhodnost,1,4
+exp2588,k3_final_26,A2,kvalita,1,Plná
+exp2588,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2588,k3_final_26,A2,vhodnost,1,4
+exp2589,k3_final_26,A2,kvalita,1,Plná
+exp2589,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2589,k3_final_26,A2,vhodnost,1,4
+exp2590,k3_final_26,A2,kvalita,1,Plná
+exp2590,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2590,k3_final_26,A2,vhodnost,1,4
+exp2592,k3_final_26,A2,kvalita,1,Plná
+exp2592,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2592,k3_final_26,A2,vhodnost,1,3
+exp2593,k3_final_26,A2,kvalita,1,Plná
+exp2593,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2593,k3_final_26,A2,vhodnost,1,4
+exp2594,k3_final_26,A2,kvalita,1,Plná
+exp2594,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2594,k3_final_26,A2,vhodnost,1,3
+exp2595,k3_final_26,A2,kvalita,1,Plná
+exp2595,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2595,k3_final_26,A2,vhodnost,1,3
+exp2596,k3_final_26,A2,kvalita,1,Plná
+exp2596,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2596,k3_final_26,A2,vhodnost,1,4
+exp2597,k3_final_26,A2,kvalita,1,Plná
+exp2597,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2597,k3_final_26,A2,vhodnost,1,3
+exp2598,k3_final_26,A2,kvalita,1,Plná
+exp2598,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2598,k3_final_26,A2,vhodnost,1,4
+exp2599,k3_final_26,A2,kvalita,1,Plná
+exp2599,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2599,k3_final_26,A2,vhodnost,1,2
+exp2600,k3_final_26,A2,kvalita,1,Plná
+exp2600,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2600,k3_final_26,A2,vhodnost,1,4
+exp2601,k3_final_26,A2,kvalita,1,Plná
+exp2601,k3_final_26,A2,dopad,1,Neúspěch
+exp2601,k3_final_26,A2,vhodnost,1,4
+exp2602,k3_final_26,A2,kvalita,1,Plná
+exp2602,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2602,k3_final_26,A2,vhodnost,1,4
+exp2603,k3_final_26,A2,kvalita,1,Plná
+exp2603,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2603,k3_final_26,A2,vhodnost,1,2
+exp2604,k3_final_26,A2,kvalita,1,Plná
+exp2604,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2604,k3_final_26,A2,vhodnost,1,4
+exp2605,k3_final_26,A2,kvalita,1,Plná
+exp2605,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2605,k3_final_26,A2,vhodnost,1,1
+exp2606,k3_final_26,A2,kvalita,1,Plná
+exp2606,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2606,k3_final_26,A2,vhodnost,1,2
+exp2607,k3_final_26,A2,kvalita,1,Plná
+exp2607,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2607,k3_final_26,A2,vhodnost,1,4
+exp2608,k3_final_26,A2,kvalita,1,Plná
+exp2608,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2608,k3_final_26,A2,vhodnost,1,4
+exp2609,k3_final_26,A2,kvalita,1,Plná
+exp2609,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2609,k3_final_26,A2,vhodnost,1,3
+exp2610,k3_final_26,A2,kvalita,1,Plná
+exp2610,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2610,k3_final_26,A2,vhodnost,1,3
+exp2611,k3_final_26,A2,kvalita,1,Plná
+exp2611,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2611,k3_final_26,A2,vhodnost,1,4
+exp2612,k3_final_26,A2,kvalita,1,Plná
+exp2612,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2612,k3_final_26,A2,vhodnost,1,3
+exp2613,k3_final_26,A2,kvalita,1,Plná
+exp2613,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2613,k3_final_26,A2,vhodnost,1,3
+exp2614,k3_final_26,A2,kvalita,1,Plná
+exp2614,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2614,k3_final_26,A2,vhodnost,1,3
+exp2615,k3_final_26,A2,kvalita,1,Plná
+exp2615,k3_final_26,A2,dopad,1,Neúspěch
+exp2615,k3_final_26,A2,vhodnost,1,3
+exp2616,k3_final_26,A2,kvalita,1,Plná
+exp2616,k3_final_26,A2,dopad,1,Neúspěch
+exp2616,k3_final_26,A2,vhodnost,1,2
+exp2617,k3_final_26,A2,kvalita,1,Plná
+exp2617,k3_final_26,A2,dopad,1,Neúspěch
+exp2617,k3_final_26,A2,vhodnost,1,3
+exp2618,k3_final_26,A2,kvalita,1,Plná
+exp2618,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2618,k3_final_26,A2,vhodnost,1,3
+exp2619,k3_final_26,A2,kvalita,1,Plná
+exp2619,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2619,k3_final_26,A2,vhodnost,1,4
+exp2620,k3_final_26,A2,kvalita,1,Plná
+exp2620,k3_final_26,A2,dopad,1,Neúspěch
+exp2620,k3_final_26,A2,vhodnost,1,2
+exp2621,k3_final_26,A2,kvalita,1,Plná
+exp2621,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2621,k3_final_26,A2,vhodnost,1,4
+exp2622,k3_final_26,A2,kvalita,1,Plná
+exp2622,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2622,k3_final_26,A2,vhodnost,1,2
+exp2623,k3_final_26,A2,kvalita,1,Plná
+exp2623,k3_final_26,A2,dopad,1,Neúspěch
+exp2623,k3_final_26,A2,vhodnost,1,3
+exp2624,k3_final_26,A2,kvalita,1,Plná
+exp2624,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2624,k3_final_26,A2,vhodnost,1,4
+exp2625,k3_final_26,A2,kvalita,1,Plná
+exp2625,k3_final_26,A2,dopad,1,Neúspěch
+exp2625,k3_final_26,A2,vhodnost,1,2
+exp2626,k3_final_26,A2,kvalita,1,Plná
+exp2626,k3_final_26,A2,dopad,1,Neúspěch
+exp2626,k3_final_26,A2,vhodnost,1,2
+exp2627,k3_final_26,A2,kvalita,1,Plná
+exp2627,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2627,k3_final_26,A2,vhodnost,1,2
+exp2628,k3_final_26,A2,kvalita,1,Plná
+exp2628,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2628,k3_final_26,A2,vhodnost,1,3
+exp2629,k3_final_26,A2,kvalita,1,Plná
+exp2629,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2629,k3_final_26,A2,vhodnost,1,3
+exp2630,k3_final_26,A2,kvalita,1,Plná
+exp2630,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2630,k3_final_26,A2,vhodnost,1,4
+exp2631,k3_final_26,A2,kvalita,1,Plná
+exp2631,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2631,k3_final_26,A2,vhodnost,1,2
+exp2632,k3_final_26,A2,kvalita,1,Plná
+exp2632,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2632,k3_final_26,A2,vhodnost,1,3
+exp2633,k3_final_26,A2,kvalita,1,Plná
+exp2633,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2633,k3_final_26,A2,vhodnost,1,2
+exp2634,k3_final_26,A2,kvalita,1,Plná
+exp2634,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2634,k3_final_26,A2,vhodnost,1,3
+exp2635,k3_final_26,A2,kvalita,1,Plná
+exp2635,k3_final_26,A2,dopad,1,Neúspěch
+exp2635,k3_final_26,A2,vhodnost,1,2
+exp2636,k3_final_26,A2,kvalita,1,Plochá
+exp2636,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2636,k3_final_26,A2,vhodnost,1,2
+exp2637,k3_final_26,A2,kvalita,1,Plná
+exp2637,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2637,k3_final_26,A2,vhodnost,1,4
+exp2639,k3_final_26,A2,kvalita,1,Plná
+exp2639,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2639,k3_final_26,A2,vhodnost,1,3
+exp2640,k3_final_26,A2,kvalita,1,Plná
+exp2640,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2640,k3_final_26,A2,vhodnost,1,3
+exp2641,k3_final_26,A2,kvalita,1,Plná
+exp2641,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2641,k3_final_26,A2,vhodnost,1,3
+exp2642,k3_final_26,A2,kvalita,1,Plná
+exp2642,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2642,k3_final_26,A2,vhodnost,1,3
+exp2643,k3_final_26,A2,kvalita,1,Plná
+exp2643,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2643,k3_final_26,A2,vhodnost,1,3
+exp2644,k3_final_26,A2,kvalita,1,Plná
+exp2644,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2644,k3_final_26,A2,vhodnost,1,4
+exp2645,k3_final_26,A2,kvalita,1,Plná
+exp2645,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2645,k3_final_26,A2,vhodnost,1,4
+exp2646,k3_final_26,A2,kvalita,1,Plná
+exp2646,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2646,k3_final_26,A2,vhodnost,1,4
+exp2647,k3_final_26,A2,kvalita,1,Plná
+exp2647,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2647,k3_final_26,A2,vhodnost,1,3
+exp2648,k3_final_26,A2,kvalita,1,Plná
+exp2648,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2648,k3_final_26,A2,vhodnost,1,3
+exp2649,k3_final_26,A2,kvalita,1,Plochá
+exp2650,k3_final_26,A2,kvalita,1,Plná
+exp2650,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2650,k3_final_26,A2,vhodnost,1,4
+exp2651,k3_final_26,A2,kvalita,1,Plná
+exp2651,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2651,k3_final_26,A2,vhodnost,1,4
+exp2652,k3_final_26,A2,kvalita,1,Plná
+exp2652,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2652,k3_final_26,A2,vhodnost,1,3
+exp2653,k3_final_26,A2,kvalita,1,Plná
+exp2653,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2653,k3_final_26,A2,vhodnost,1,3
+exp2654,k3_final_26,A2,kvalita,1,Plná
+exp2654,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2654,k3_final_26,A2,vhodnost,1,4
+exp2655,k3_final_26,A2,kvalita,1,Plná
+exp2655,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2655,k3_final_26,A2,vhodnost,1,3
+exp2656,k3_final_26,A2,kvalita,1,Plná
+exp2656,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2656,k3_final_26,A2,vhodnost,1,3
+exp2657,k3_final_26,A2,kvalita,1,Plná
+exp2657,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2657,k3_final_26,A2,vhodnost,1,4
+exp2658,k3_final_26,A2,kvalita,1,Plná
+exp2658,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2658,k3_final_26,A2,vhodnost,1,2
+exp2659,k3_final_26,A2,kvalita,1,Plná
+exp2659,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2659,k3_final_26,A2,vhodnost,1,3
+exp2661,k3_final_26,A2,kvalita,1,Plná
+exp2661,k3_final_26,A2,dopad,1,Neúspěch
+exp2661,k3_final_26,A2,vhodnost,1,4
+exp2662,k3_final_26,A2,kvalita,1,Plná
+exp2662,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2662,k3_final_26,A2,vhodnost,1,4
+exp2663,k3_final_26,A2,kvalita,1,Plná
+exp2663,k3_final_26,A2,dopad,1,Neúspěch
+exp2663,k3_final_26,A2,vhodnost,1,2
+exp2664,k3_final_26,A2,kvalita,1,Plná
+exp2664,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2664,k3_final_26,A2,vhodnost,1,3
+exp2665,k3_final_26,A2,kvalita,1,Plná
+exp2665,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2665,k3_final_26,A2,vhodnost,1,4
+exp2666,k3_final_26,A2,kvalita,1,Plná
+exp2666,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2666,k3_final_26,A2,vhodnost,1,3
+exp2667,k3_final_26,A2,kvalita,1,Plná
+exp2667,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2667,k3_final_26,A2,vhodnost,1,4
+exp2668,k3_final_26,A2,kvalita,1,Plná
+exp2668,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2668,k3_final_26,A2,vhodnost,1,3
+exp2669,k3_final_26,A2,kvalita,1,Plná
+exp2669,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2669,k3_final_26,A2,vhodnost,1,3
+exp2670,k3_final_26,A2,kvalita,1,Plná
+exp2670,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2670,k3_final_26,A2,vhodnost,1,3
+exp2671,k3_final_26,A2,kvalita,1,Plná
+exp2671,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2671,k3_final_26,A2,vhodnost,1,3
+exp2672,k3_final_26,A2,kvalita,1,Plná
+exp2672,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2672,k3_final_26,A2,vhodnost,1,4
+exp2673,k3_final_26,A2,kvalita,1,Plná
+exp2673,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2673,k3_final_26,A2,vhodnost,1,4
+exp2674,k3_final_26,A2,kvalita,1,Plná
+exp2674,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2674,k3_final_26,A2,vhodnost,1,4
+exp2675,k3_final_26,A2,kvalita,1,Plná
+exp2675,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2675,k3_final_26,A2,vhodnost,1,3
+exp2676,k3_final_26,A2,kvalita,1,Plná
+exp2676,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2676,k3_final_26,A2,vhodnost,1,3
+exp2677,k3_final_26,A2,kvalita,1,Plná
+exp2677,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2677,k3_final_26,A2,vhodnost,1,3
+exp2678,k3_final_26,A2,kvalita,1,Plná
+exp2678,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2678,k3_final_26,A2,vhodnost,1,4
+exp2679,k3_final_26,A2,kvalita,1,Plochá
+exp2679,k3_final_26,A2,dopad,1,Neúspěch
+exp2679,k3_final_26,A2,vhodnost,1,1
+exp2680,k3_final_26,A2,kvalita,1,Plná
+exp2680,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2680,k3_final_26,A2,vhodnost,1,3
+exp2681,k3_final_26,A2,kvalita,1,Plná
+exp2681,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2681,k3_final_26,A2,vhodnost,1,3
+exp2682,k3_final_26,A2,kvalita,1,Plná
+exp2682,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2682,k3_final_26,A2,vhodnost,1,3
+exp2683,k3_final_26,A2,kvalita,1,Plná
+exp2683,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2683,k3_final_26,A2,vhodnost,1,4
+exp2684,k3_final_26,A2,kvalita,1,Plná
+exp2684,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2684,k3_final_26,A2,vhodnost,1,4
+exp2685,k3_final_26,A2,kvalita,1,Plochá
+exp2685,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2685,k3_final_26,A2,vhodnost,1,3
+exp2686,k3_final_26,A2,kvalita,1,Plná
+exp2686,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2686,k3_final_26,A2,vhodnost,1,4
+exp2687,k3_final_26,A2,kvalita,1,Plochá
+exp2687,k3_final_26,A2,dopad,1,Neúspěch
+exp2687,k3_final_26,A2,vhodnost,1,3
+exp2688,k3_final_26,A2,kvalita,1,Plná
+exp2688,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2688,k3_final_26,A2,vhodnost,1,4
+exp2689,k3_final_26,A2,kvalita,1,Plná
+exp2689,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2689,k3_final_26,A2,vhodnost,1,4
+exp2690,k3_final_26,A2,kvalita,1,Plná
+exp2690,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2690,k3_final_26,A2,vhodnost,1,4
+exp2691,k3_final_26,A2,kvalita,1,Plná
+exp2691,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2691,k3_final_26,A2,vhodnost,1,4
+exp2692,k3_final_26,A2,kvalita,1,Plná
+exp2692,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2692,k3_final_26,A2,vhodnost,1,3
+exp2693,k3_final_26,A2,kvalita,1,Plná
+exp2693,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2693,k3_final_26,A2,vhodnost,1,3
+exp2694,k3_final_26,A2,kvalita,1,Plná
+exp2694,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2694,k3_final_26,A2,vhodnost,1,3
+exp2695,k3_final_26,A2,kvalita,1,Plná
+exp2695,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2695,k3_final_26,A2,vhodnost,1,3
+exp2696,k3_final_26,A2,kvalita,1,Plná
+exp2696,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2696,k3_final_26,A2,vhodnost,1,4
+exp2697,k3_final_26,A2,kvalita,1,Plná
+exp2697,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2697,k3_final_26,A2,vhodnost,1,3
+exp2698,k3_final_26,A2,kvalita,1,Plná
+exp2698,k3_final_26,A2,dopad,1,Neúspěch
+exp2698,k3_final_26,A2,vhodnost,1,4
+exp2699,k3_final_26,A2,kvalita,1,Plná
+exp2699,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2699,k3_final_26,A2,vhodnost,1,4
+exp2700,k3_final_26,A2,kvalita,1,Plná
+exp2700,k3_final_26,A2,dopad,1,Neúspěch
+exp2700,k3_final_26,A2,vhodnost,1,4
+exp2701,k3_final_26,A2,kvalita,1,Plná
+exp2701,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2701,k3_final_26,A2,vhodnost,1,4
+exp2702,k3_final_26,A2,kvalita,1,Plná
+exp2702,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2702,k3_final_26,A2,vhodnost,1,4
+exp2703,k3_final_26,A2,kvalita,1,Plná
+exp2703,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2703,k3_final_26,A2,vhodnost,1,4
+exp2704,k3_final_26,A2,kvalita,1,Plná
+exp2704,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2704,k3_final_26,A2,vhodnost,1,3
+exp2705,k3_final_26,A2,kvalita,1,Plochá
+exp2705,k3_final_26,A2,dopad,1,Neúspěch
+exp2705,k3_final_26,A2,vhodnost,1,1
+exp2706,k3_final_26,A2,kvalita,1,Plná
+exp2706,k3_final_26,A2,dopad,1,Neúspěch
+exp2706,k3_final_26,A2,vhodnost,1,4
+exp2707,k3_final_26,A2,kvalita,1,Plná
+exp2707,k3_final_26,A2,dopad,1,Neúspěch
+exp2707,k3_final_26,A2,vhodnost,1,3
+exp2708,k3_final_26,A2,kvalita,1,Plná
+exp2708,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2708,k3_final_26,A2,vhodnost,1,4
+exp2709,k3_final_26,A2,kvalita,1,Plná
+exp2709,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2709,k3_final_26,A2,vhodnost,1,4
+exp2710,k3_final_26,A2,kvalita,1,Plná
+exp2710,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2710,k3_final_26,A2,vhodnost,1,4
+exp2711,k3_final_26,A2,kvalita,1,Plná
+exp2711,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2711,k3_final_26,A2,vhodnost,1,3
+exp2712,k3_final_26,A2,kvalita,1,Plná
+exp2712,k3_final_26,A2,dopad,1,Neúspěch
+exp2712,k3_final_26,A2,vhodnost,1,3
+exp2713,k3_final_26,A2,kvalita,1,Plná
+exp2713,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2713,k3_final_26,A2,vhodnost,1,4
+exp2714,k3_final_26,A2,kvalita,1,Plná
+exp2714,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2714,k3_final_26,A2,vhodnost,1,4
+exp2715,k3_final_26,A2,kvalita,1,Plná
+exp2715,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2715,k3_final_26,A2,vhodnost,1,3
+exp2716,k3_final_26,A2,kvalita,1,Plná
+exp2716,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2716,k3_final_26,A2,vhodnost,1,4
+exp2717,k3_final_26,A2,kvalita,1,Plná
+exp2717,k3_final_26,A2,dopad,1,Neúspěch
+exp2717,k3_final_26,A2,vhodnost,1,2
+exp2718,k3_final_26,A2,kvalita,1,Plná
+exp2718,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2718,k3_final_26,A2,vhodnost,1,3
+exp2719,k3_final_26,A2,kvalita,1,Plná
+exp2719,k3_final_26,A2,dopad,1,Neúspěch
+exp2719,k3_final_26,A2,vhodnost,1,2
+exp2720,k3_final_26,A2,kvalita,1,Plná
+exp2720,k3_final_26,A2,dopad,1,Neúspěch
+exp2720,k3_final_26,A2,vhodnost,1,3
+exp2721,k3_final_26,A2,kvalita,1,Plná
+exp2721,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2721,k3_final_26,A2,vhodnost,1,4
+exp2722,k3_final_26,A2,kvalita,1,Plná
+exp2722,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2722,k3_final_26,A2,vhodnost,1,3
+exp2723,k3_final_26,A2,kvalita,1,Plná
+exp2723,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2723,k3_final_26,A2,vhodnost,1,3
+exp2724,k3_final_26,A2,kvalita,1,Plná
+exp2724,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2724,k3_final_26,A2,vhodnost,1,4
+exp2725,k3_final_26,A2,kvalita,1,Plná
+exp2725,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2725,k3_final_26,A2,vhodnost,1,4
+exp2726,k3_final_26,A2,kvalita,1,Plná
+exp2726,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2726,k3_final_26,A2,vhodnost,1,4
+exp2727,k3_final_26,A2,kvalita,1,Plná
+exp2727,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2727,k3_final_26,A2,vhodnost,1,3
+exp2728,k3_final_26,A2,kvalita,1,Plná
+exp2728,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2728,k3_final_26,A2,vhodnost,1,3
+exp2729,k3_final_26,A2,kvalita,1,Plná
+exp2729,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2729,k3_final_26,A2,vhodnost,1,3
+exp2730,k3_final_26,A2,kvalita,1,Plná
+exp2730,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2730,k3_final_26,A2,vhodnost,1,3
+exp2731,k3_final_26,A2,kvalita,1,Plná
+exp2731,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2731,k3_final_26,A2,vhodnost,1,4
+exp2732,k3_final_26,A2,kvalita,1,Plná
+exp2732,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2732,k3_final_26,A2,vhodnost,1,4
+exp2733,k3_final_26,A2,kvalita,1,Plná
+exp2733,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2733,k3_final_26,A2,vhodnost,1,3
+exp2734,k3_final_26,A2,kvalita,1,Plná
+exp2734,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2734,k3_final_26,A2,vhodnost,1,3
+exp2735,k3_final_26,A2,kvalita,1,Plná
+exp2735,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2735,k3_final_26,A2,vhodnost,1,4
+exp2736,k3_final_26,A2,kvalita,1,Plná
+exp2736,k3_final_26,A2,dopad,1,Neúspěch
+exp2736,k3_final_26,A2,vhodnost,1,3
+exp2737,k3_final_26,A2,kvalita,1,Plná
+exp2737,k3_final_26,A2,dopad,1,Neúspěch
+exp2737,k3_final_26,A2,vhodnost,1,4
+exp2738,k3_final_26,A2,kvalita,1,Plná
+exp2738,k3_final_26,A2,dopad,1,Neúspěch
+exp2738,k3_final_26,A2,vhodnost,1,2
+exp2739,k3_final_26,A2,kvalita,1,Plná
+exp2739,k3_final_26,A2,dopad,1,Neúspěch
+exp2739,k3_final_26,A2,vhodnost,1,3
+exp2740,k3_final_26,A2,kvalita,1,Plná
+exp2740,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2740,k3_final_26,A2,vhodnost,1,2
+exp2741,k3_final_26,A2,kvalita,1,Plná
+exp2741,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2741,k3_final_26,A2,vhodnost,1,3
+exp2742,k3_final_26,A2,kvalita,1,Plná
+exp2742,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2742,k3_final_26,A2,vhodnost,1,4
+exp2743,k3_final_26,A2,kvalita,1,Plná
+exp2743,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2743,k3_final_26,A2,vhodnost,1,3
+exp2744,k3_final_26,A2,kvalita,1,Plná
+exp2744,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2744,k3_final_26,A2,vhodnost,1,3
+exp2745,k3_final_26,A2,kvalita,1,Plná
+exp2745,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2745,k3_final_26,A2,vhodnost,1,4
+exp2746,k3_final_26,A2,kvalita,1,Plná
+exp2746,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2746,k3_final_26,A2,vhodnost,1,3
+exp2747,k3_final_26,A2,kvalita,1,Plná
+exp2747,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2747,k3_final_26,A2,vhodnost,1,3
+exp2748,k3_final_26,A2,kvalita,1,Plná
+exp2748,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2748,k3_final_26,A2,vhodnost,1,4
+exp2749,k3_final_26,A2,kvalita,1,Plná
+exp2749,k3_final_26,A2,dopad,1,Neúspěch
+exp2749,k3_final_26,A2,vhodnost,1,2
+exp2750,k3_final_26,A2,kvalita,1,Plná
+exp2750,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2750,k3_final_26,A2,vhodnost,1,4
+exp2751,k3_final_26,A2,kvalita,1,Plná
+exp2751,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2751,k3_final_26,A2,vhodnost,1,4
+exp2752,k3_final_26,A2,kvalita,1,Plná
+exp2752,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2752,k3_final_26,A2,vhodnost,1,3
+exp2753,k3_final_26,A2,kvalita,1,Plná
+exp2753,k3_final_26,A2,dopad,1,Neúspěch
+exp2753,k3_final_26,A2,vhodnost,1,3
+exp2754,k3_final_26,A2,kvalita,1,Plná
+exp2754,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2754,k3_final_26,A2,vhodnost,1,4
+exp2755,k3_final_26,A2,kvalita,1,Plná
+exp2755,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2755,k3_final_26,A2,vhodnost,1,3
+exp2756,k3_final_26,A2,kvalita,1,Plná
+exp2756,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2756,k3_final_26,A2,vhodnost,1,4
+exp2757,k3_final_26,A2,kvalita,1,Plná
+exp2757,k3_final_26,A2,dopad,1,Neúspěch
+exp2757,k3_final_26,A2,vhodnost,1,4
+exp2758,k3_final_26,A2,kvalita,1,Plná
+exp2758,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2758,k3_final_26,A2,vhodnost,1,4
+exp2759,k3_final_26,A2,kvalita,1,Plná
+exp2759,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2759,k3_final_26,A2,vhodnost,1,3
+exp2760,k3_final_26,A2,kvalita,1,Plná
+exp2760,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2760,k3_final_26,A2,vhodnost,1,4
+exp2761,k3_final_26,A2,kvalita,1,Plná
+exp2761,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2761,k3_final_26,A2,vhodnost,1,4
+exp2762,k3_final_26,A2,kvalita,1,Plná
+exp2762,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2762,k3_final_26,A2,vhodnost,1,4
+exp2763,k3_final_26,A2,kvalita,1,Plná
+exp2763,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2763,k3_final_26,A2,vhodnost,1,4
+exp2764,k3_final_26,A2,kvalita,1,Plná
+exp2764,k3_final_26,A2,dopad,1,Neúspěch
+exp2764,k3_final_26,A2,vhodnost,1,3
+exp2765,k3_final_26,A2,kvalita,1,Plná
+exp2765,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2765,k3_final_26,A2,vhodnost,1,3
+exp2766,k3_final_26,A2,kvalita,1,Plná
+exp2766,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2766,k3_final_26,A2,vhodnost,1,4
+exp2767,k3_final_26,A2,kvalita,1,Plná
+exp2767,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2767,k3_final_26,A2,vhodnost,1,2
+exp2768,k3_final_26,A2,kvalita,1,Plná
+exp2768,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2768,k3_final_26,A2,vhodnost,1,4
+exp2769,k3_final_26,A2,kvalita,1,Plná
+exp2769,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2769,k3_final_26,A2,vhodnost,1,4
+exp2770,k3_final_26,A2,kvalita,1,Plná
+exp2770,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2770,k3_final_26,A2,vhodnost,1,3
+exp2771,k3_final_26,A2,kvalita,1,Plná
+exp2771,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2771,k3_final_26,A2,vhodnost,1,3
+exp2772,k3_final_26,A2,kvalita,1,Plná
+exp2772,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2772,k3_final_26,A2,vhodnost,1,4
+exp2773,k3_final_26,A2,kvalita,1,Plná
+exp2773,k3_final_26,A2,dopad,1,Neúspěch
+exp2773,k3_final_26,A2,vhodnost,1,3
+exp2774,k3_final_26,A2,kvalita,1,Plná
+exp2774,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2774,k3_final_26,A2,vhodnost,1,4
+exp2775,k3_final_26,A2,kvalita,1,Plná
+exp2775,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2775,k3_final_26,A2,vhodnost,1,4
+exp2776,k3_final_26,A2,kvalita,1,Plná
+exp2776,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2776,k3_final_26,A2,vhodnost,1,4
+exp2777,k3_final_26,A2,kvalita,1,Plná
+exp2777,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2777,k3_final_26,A2,vhodnost,1,4
+exp2778,k3_final_26,A2,kvalita,1,Plná
+exp2778,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2778,k3_final_26,A2,vhodnost,1,4
+exp2779,k3_final_26,A2,kvalita,1,Plná
+exp2779,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2779,k3_final_26,A2,vhodnost,1,4
+exp2780,k3_final_26,A2,kvalita,1,Plná
+exp2780,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2780,k3_final_26,A2,vhodnost,1,4
+exp2781,k3_final_26,A2,kvalita,1,Plná
+exp2781,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2781,k3_final_26,A2,vhodnost,1,4
+exp2782,k3_final_26,A2,kvalita,1,Plná
+exp2782,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2782,k3_final_26,A2,vhodnost,1,4
+exp2783,k3_final_26,A2,kvalita,1,Plná
+exp2783,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2783,k3_final_26,A2,vhodnost,1,3
+exp2784,k3_final_26,A2,kvalita,1,Plná
+exp2784,k3_final_26,A2,dopad,1,Neúspěch
+exp2784,k3_final_26,A2,vhodnost,1,2
+exp2785,k3_final_26,A2,kvalita,1,Plná
+exp2785,k3_final_26,A2,dopad,1,Neúspěch
+exp2785,k3_final_26,A2,vhodnost,1,3
+exp2786,k3_final_26,A2,kvalita,1,Plná
+exp2786,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2786,k3_final_26,A2,vhodnost,1,3
+exp2787,k3_final_26,A2,kvalita,1,Plná
+exp2787,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2787,k3_final_26,A2,vhodnost,1,3
+exp2788,k3_final_26,A2,kvalita,1,Plná
+exp2788,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2788,k3_final_26,A2,vhodnost,1,4
+exp2789,k3_final_26,A2,kvalita,1,Plná
+exp2789,k3_final_26,A2,dopad,1,Neúspěch
+exp2789,k3_final_26,A2,vhodnost,1,4
+exp2790,k3_final_26,A2,kvalita,1,Plná
+exp2790,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2790,k3_final_26,A2,vhodnost,1,3
+exp2791,k3_final_26,A2,kvalita,1,Plná
+exp2791,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2791,k3_final_26,A2,vhodnost,1,3
+exp2792,k3_final_26,A2,kvalita,1,Plná
+exp2792,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2792,k3_final_26,A2,vhodnost,1,4
+exp2793,k3_final_26,A2,kvalita,1,Plná
+exp2793,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2793,k3_final_26,A2,vhodnost,1,2
+exp2794,k3_final_26,A2,kvalita,1,Plná
+exp2794,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2794,k3_final_26,A2,vhodnost,1,4
+exp2795,k3_final_26,A2,kvalita,1,Plná
+exp2795,k3_final_26,A2,dopad,1,Neúspěch
+exp2795,k3_final_26,A2,vhodnost,1,2
+exp2796,k3_final_26,A2,kvalita,1,Plná
+exp2796,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2796,k3_final_26,A2,vhodnost,1,4
+exp2797,k3_final_26,A2,kvalita,1,Plná
+exp2797,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2797,k3_final_26,A2,vhodnost,1,3
+exp2798,k3_final_26,A2,kvalita,1,Plná
+exp2798,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2798,k3_final_26,A2,vhodnost,1,3
+exp2799,k3_final_26,A2,kvalita,1,Plná
+exp2799,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2799,k3_final_26,A2,vhodnost,1,4
+exp2800,k3_final_26,A2,kvalita,1,Plná
+exp2800,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2800,k3_final_26,A2,vhodnost,1,3
+exp2801,k3_final_26,A2,kvalita,1,Plochá
+exp2801,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2801,k3_final_26,A2,vhodnost,1,3
+exp2802,k3_final_26,A2,kvalita,1,Plná
+exp2802,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2802,k3_final_26,A2,vhodnost,1,3
+exp2803,k3_final_26,A2,kvalita,1,Plná
+exp2803,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2803,k3_final_26,A2,vhodnost,1,4
+exp2804,k3_final_26,A2,kvalita,1,Plná
+exp2804,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2804,k3_final_26,A2,vhodnost,1,4
+exp2805,k3_final_26,A2,kvalita,1,Plná
+exp2805,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2805,k3_final_26,A2,vhodnost,1,3
+exp2806,k3_final_26,A2,kvalita,1,Plná
+exp2806,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2806,k3_final_26,A2,vhodnost,1,3
+exp2807,k3_final_26,A2,kvalita,1,Plochá
+exp2808,k3_final_26,A2,kvalita,1,Plná
+exp2808,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2808,k3_final_26,A2,vhodnost,1,4
+exp2809,k3_final_26,A2,kvalita,1,Plná
+exp2809,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2809,k3_final_26,A2,vhodnost,1,3
+exp2810,k3_final_26,A2,kvalita,1,Plná
+exp2810,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2810,k3_final_26,A2,vhodnost,1,4
+exp2811,k3_final_26,A2,kvalita,1,Plná
+exp2811,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2811,k3_final_26,A2,vhodnost,1,3
+exp2812,k3_final_26,A2,kvalita,1,Plochá
+exp2813,k3_final_26,A2,kvalita,1,Plná
+exp2813,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2813,k3_final_26,A2,vhodnost,1,3
+exp2814,k3_final_26,A2,kvalita,1,Plná
+exp2814,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2814,k3_final_26,A2,vhodnost,1,4
+exp2815,k3_final_26,A2,kvalita,1,Plná
+exp2815,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2815,k3_final_26,A2,vhodnost,1,3
+exp2816,k3_final_26,A2,kvalita,1,Plná
+exp2816,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2816,k3_final_26,A2,vhodnost,1,4
+exp2817,k3_final_26,A2,kvalita,1,Plná
+exp2817,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2817,k3_final_26,A2,vhodnost,1,3
+exp2818,k3_final_26,A2,kvalita,1,Plná
+exp2818,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2818,k3_final_26,A2,vhodnost,1,4
+exp2820,k3_final_26,A2,kvalita,1,Plná
+exp2820,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2820,k3_final_26,A2,vhodnost,1,4
+exp2821,k3_final_26,A2,kvalita,1,Plná
+exp2821,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2821,k3_final_26,A2,vhodnost,1,3
+exp2822,k3_final_26,A2,kvalita,1,Plná
+exp2822,k3_final_26,A2,dopad,1,Neúspěch
+exp2822,k3_final_26,A2,vhodnost,1,3
+exp2823,k3_final_26,A2,kvalita,1,Plná
+exp2823,k3_final_26,A2,dopad,1,Neúspěch
+exp2823,k3_final_26,A2,vhodnost,1,3
+exp2824,k3_final_26,A2,kvalita,1,Plná
+exp2824,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2824,k3_final_26,A2,vhodnost,1,3
+exp2825,k3_final_26,A2,kvalita,1,Plná
+exp2825,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2825,k3_final_26,A2,vhodnost,1,4
+exp2827,k3_final_26,A2,kvalita,1,Plná
+exp2827,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2827,k3_final_26,A2,vhodnost,1,3
+exp2828,k3_final_26,A2,kvalita,1,Plná
+exp2828,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2828,k3_final_26,A2,vhodnost,1,4
+exp2829,k3_final_26,A2,kvalita,1,Plná
+exp2829,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2829,k3_final_26,A2,vhodnost,1,3
+exp2830,k3_final_26,A2,kvalita,1,Plná
+exp2830,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2830,k3_final_26,A2,vhodnost,1,3
+exp2831,k3_final_26,A2,kvalita,1,Plná
+exp2831,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2831,k3_final_26,A2,vhodnost,1,4
+exp2832,k3_final_26,A2,kvalita,1,Plná
+exp2832,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2832,k3_final_26,A2,vhodnost,1,4
+exp2833,k3_final_26,A2,kvalita,1,Plná
+exp2833,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2833,k3_final_26,A2,vhodnost,1,3
+exp2834,k3_final_26,A2,kvalita,1,Plná
+exp2834,k3_final_26,A2,dopad,1,Neúspěch
+exp2834,k3_final_26,A2,vhodnost,1,4
+exp2835,k3_final_26,A2,kvalita,1,Plná
+exp2835,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2835,k3_final_26,A2,vhodnost,1,4
+exp2836,k3_final_26,A2,kvalita,1,Plná
+exp2836,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2836,k3_final_26,A2,vhodnost,1,4
+exp2837,k3_final_26,A2,kvalita,1,Plná
+exp2837,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2837,k3_final_26,A2,vhodnost,1,4
+exp2838,k3_final_26,A2,kvalita,1,Plná
+exp2838,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2838,k3_final_26,A2,vhodnost,1,4
+exp2839,k3_final_26,A2,kvalita,1,Plná
+exp2839,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2839,k3_final_26,A2,vhodnost,1,4
+exp2840,k3_final_26,A2,kvalita,1,Plná
+exp2840,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2840,k3_final_26,A2,vhodnost,1,3
+exp2841,k3_final_26,A2,kvalita,1,Plná
+exp2841,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2841,k3_final_26,A2,vhodnost,1,4
+exp2842,k3_final_26,A2,kvalita,1,Plná
+exp2842,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2842,k3_final_26,A2,vhodnost,1,4
+exp2843,k3_final_26,A2,kvalita,1,Plná
+exp2843,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2843,k3_final_26,A2,vhodnost,1,4
+exp2844,k3_final_26,A2,kvalita,1,Plná
+exp2844,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2844,k3_final_26,A2,vhodnost,1,4
+exp2845,k3_final_26,A2,kvalita,1,Plná
+exp2845,k3_final_26,A2,dopad,1,Neúspěch
+exp2845,k3_final_26,A2,vhodnost,1,4
+exp2846,k3_final_26,A2,kvalita,1,Plná
+exp2846,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2846,k3_final_26,A2,vhodnost,1,4
+exp2847,k3_final_26,A2,kvalita,1,Plná
+exp2847,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2847,k3_final_26,A2,vhodnost,1,4
+exp2848,k3_final_26,A2,kvalita,1,Plná
+exp2848,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2848,k3_final_26,A2,vhodnost,1,4
+exp2849,k3_final_26,A2,kvalita,1,Plná
+exp2849,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2849,k3_final_26,A2,vhodnost,1,3
+exp2850,k3_final_26,A2,kvalita,1,Plná
+exp2850,k3_final_26,A2,dopad,1,Neúspěch
+exp2850,k3_final_26,A2,vhodnost,1,2
+exp2851,k3_final_26,A2,kvalita,1,Plná
+exp2851,k3_final_26,A2,dopad,1,Neúspěch
+exp2851,k3_final_26,A2,vhodnost,1,3
+exp2852,k3_final_26,A2,kvalita,1,Plná
+exp2852,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2852,k3_final_26,A2,vhodnost,1,4
+exp2853,k3_final_26,A2,kvalita,1,Plná
+exp2853,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2853,k3_final_26,A2,vhodnost,1,4
+exp2854,k3_final_26,A2,kvalita,1,Plná
+exp2854,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2854,k3_final_26,A2,vhodnost,1,3
+exp2855,k3_final_26,A2,kvalita,1,Plná
+exp2855,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2855,k3_final_26,A2,vhodnost,1,4
+exp2856,k3_final_26,A2,kvalita,1,Plná
+exp2856,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2856,k3_final_26,A2,vhodnost,1,4
+exp2857,k3_final_26,A2,kvalita,1,Plná
+exp2857,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2857,k3_final_26,A2,vhodnost,1,3
+exp2858,k3_final_26,A2,kvalita,1,Plná
+exp2858,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2858,k3_final_26,A2,vhodnost,1,4
+exp2859,k3_final_26,A2,kvalita,1,Plná
+exp2859,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2859,k3_final_26,A2,vhodnost,1,4
+exp2860,k3_final_26,A2,kvalita,1,Plná
+exp2860,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2860,k3_final_26,A2,vhodnost,1,3
+exp2861,k3_final_26,A2,kvalita,1,Plná
+exp2861,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2861,k3_final_26,A2,vhodnost,1,3
+exp2862,k3_final_26,A2,kvalita,1,Plná
+exp2862,k3_final_26,A2,dopad,1,Neúspěch
+exp2862,k3_final_26,A2,vhodnost,1,4
+exp2863,k3_final_26,A2,kvalita,1,Plná
+exp2863,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2863,k3_final_26,A2,vhodnost,1,4
+exp2864,k3_final_26,A2,kvalita,1,Plná
+exp2864,k3_final_26,A2,dopad,1,Neúspěch
+exp2864,k3_final_26,A2,vhodnost,1,2
+exp2865,k3_final_26,A2,kvalita,1,Plná
+exp2865,k3_final_26,A2,dopad,1,Neúspěch
+exp2865,k3_final_26,A2,vhodnost,1,3
+exp2866,k3_final_26,A2,kvalita,1,Plná
+exp2866,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2866,k3_final_26,A2,vhodnost,1,4
+exp2867,k3_final_26,A2,kvalita,1,Plná
+exp2867,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2867,k3_final_26,A2,vhodnost,1,3
+exp2868,k3_final_26,A2,kvalita,1,Plná
+exp2868,k3_final_26,A2,dopad,1,Neúspěch
+exp2868,k3_final_26,A2,vhodnost,1,3
+exp2869,k3_final_26,A2,kvalita,1,Plná
+exp2869,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2869,k3_final_26,A2,vhodnost,1,4
+exp2870,k3_final_26,A2,kvalita,1,Plná
+exp2870,k3_final_26,A2,dopad,1,Neúspěch
+exp2870,k3_final_26,A2,vhodnost,1,3
+exp2871,k3_final_26,A2,kvalita,1,Plná
+exp2871,k3_final_26,A2,dopad,1,Neúspěch
+exp2871,k3_final_26,A2,vhodnost,1,3
+exp2872,k3_final_26,A2,kvalita,1,Plná
+exp2872,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2872,k3_final_26,A2,vhodnost,1,3
+exp2873,k3_final_26,A2,kvalita,1,Plná
+exp2873,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2873,k3_final_26,A2,vhodnost,1,3
+exp2874,k3_final_26,A2,kvalita,1,Plná
+exp2874,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2874,k3_final_26,A2,vhodnost,1,4
+exp2875,k3_final_26,A2,kvalita,1,Plná
+exp2875,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2875,k3_final_26,A2,vhodnost,1,4
+exp2876,k3_final_26,A2,kvalita,1,Plná
+exp2876,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2876,k3_final_26,A2,vhodnost,1,2
+exp2877,k3_final_26,A2,kvalita,1,Plná
+exp2877,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2877,k3_final_26,A2,vhodnost,1,4
+exp2878,k3_final_26,A2,kvalita,1,Plná
+exp2878,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2878,k3_final_26,A2,vhodnost,1,4
+exp2879,k3_final_26,A2,kvalita,1,Plná
+exp2879,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2879,k3_final_26,A2,vhodnost,1,4
+exp2880,k3_final_26,A2,kvalita,1,Plná
+exp2880,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2880,k3_final_26,A2,vhodnost,1,4
+exp2881,k3_final_26,A2,kvalita,1,Plná
+exp2881,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2881,k3_final_26,A2,vhodnost,1,2
+exp2882,k3_final_26,A2,kvalita,1,Plná
+exp2882,k3_final_26,A2,dopad,1,Neúspěch
+exp2882,k3_final_26,A2,vhodnost,1,2
+exp2883,k3_final_26,A2,kvalita,1,Plná
+exp2883,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2883,k3_final_26,A2,vhodnost,1,3
+exp2884,k3_final_26,A2,kvalita,1,Plná
+exp2884,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2884,k3_final_26,A2,vhodnost,1,4
+exp2885,k3_final_26,A2,kvalita,1,Plná
+exp2885,k3_final_26,A2,dopad,1,Neúspěch
+exp2885,k3_final_26,A2,vhodnost,1,2
+exp2886,k3_final_26,A2,kvalita,1,Plná
+exp2886,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2886,k3_final_26,A2,vhodnost,1,4
+exp2887,k3_final_26,A2,kvalita,1,Plná
+exp2887,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2887,k3_final_26,A2,vhodnost,1,3
+exp2888,k3_final_26,A2,kvalita,1,Plná
+exp2888,k3_final_26,A2,dopad,1,Neúspěch
+exp2888,k3_final_26,A2,vhodnost,1,2
+exp2889,k3_final_26,A2,kvalita,1,Plná
+exp2889,k3_final_26,A2,dopad,1,Neúspěch
+exp2889,k3_final_26,A2,vhodnost,1,2
+exp2890,k3_final_26,A2,kvalita,1,Plná
+exp2890,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2890,k3_final_26,A2,vhodnost,1,3
+exp2891,k3_final_26,A2,kvalita,1,Plná
+exp2891,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2891,k3_final_26,A2,vhodnost,1,4
+exp2892,k3_final_26,A2,kvalita,1,Plná
+exp2892,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2892,k3_final_26,A2,vhodnost,1,4
+exp2893,k3_final_26,A2,kvalita,1,Plná
+exp2893,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2893,k3_final_26,A2,vhodnost,1,4
+exp2894,k3_final_26,A2,kvalita,1,Plná
+exp2894,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2894,k3_final_26,A2,vhodnost,1,3
+exp2895,k3_final_26,A2,kvalita,1,Plná
+exp2895,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2895,k3_final_26,A2,vhodnost,1,4
+exp2896,k3_final_26,A2,kvalita,1,Plná
+exp2896,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2896,k3_final_26,A2,vhodnost,1,4
+exp2897,k3_final_26,A2,kvalita,1,Plná
+exp2897,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2897,k3_final_26,A2,vhodnost,1,3
+exp2898,k3_final_26,A2,kvalita,1,Plná
+exp2898,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2898,k3_final_26,A2,vhodnost,1,4
+exp2899,k3_final_26,A2,kvalita,1,Plná
+exp2899,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2899,k3_final_26,A2,vhodnost,1,3
+exp2900,k3_final_26,A2,kvalita,1,Plná
+exp2900,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2900,k3_final_26,A2,vhodnost,1,4
+exp2901,k3_final_26,A2,kvalita,1,Plná
+exp2901,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2901,k3_final_26,A2,vhodnost,1,4
+exp2902,k3_final_26,A2,kvalita,1,Plná
+exp2902,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2902,k3_final_26,A2,vhodnost,1,3
+exp2903,k3_final_26,A2,kvalita,1,Plná
+exp2903,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2903,k3_final_26,A2,vhodnost,1,4
+exp2904,k3_final_26,A2,kvalita,1,Plná
+exp2904,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2904,k3_final_26,A2,vhodnost,1,4
+exp2905,k3_final_26,A2,kvalita,1,Plná
+exp2905,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2905,k3_final_26,A2,vhodnost,1,4
+exp2906,k3_final_26,A2,kvalita,1,Plná
+exp2906,k3_final_26,A2,dopad,1,Neúspěch
+exp2906,k3_final_26,A2,vhodnost,1,3
+exp2907,k3_final_26,A2,kvalita,1,Plná
+exp2907,k3_final_26,A2,dopad,1,Neúspěch
+exp2907,k3_final_26,A2,vhodnost,1,3
+exp2908,k3_final_26,A2,kvalita,1,Plná
+exp2908,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2908,k3_final_26,A2,vhodnost,1,4
+exp2909,k3_final_26,A2,kvalita,1,Plná
+exp2909,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2909,k3_final_26,A2,vhodnost,1,4
+exp2910,k3_final_26,A2,kvalita,1,Plná
+exp2910,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2910,k3_final_26,A2,vhodnost,1,4
+exp2911,k3_final_26,A2,kvalita,1,Plná
+exp2911,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2911,k3_final_26,A2,vhodnost,1,4
+exp2912,k3_final_26,A2,kvalita,1,Plná
+exp2912,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2912,k3_final_26,A2,vhodnost,1,4
+exp2913,k3_final_26,A2,kvalita,1,Plná
+exp2913,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2913,k3_final_26,A2,vhodnost,1,3
+exp2914,k3_final_26,A2,kvalita,1,Plná
+exp2914,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2914,k3_final_26,A2,vhodnost,1,4
+exp2915,k3_final_26,A2,kvalita,1,Plná
+exp2915,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2915,k3_final_26,A2,vhodnost,1,3
+exp2916,k3_final_26,A2,kvalita,1,Plná
+exp2916,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2916,k3_final_26,A2,vhodnost,1,4
+exp2917,k3_final_26,A2,kvalita,1,Plná
+exp2917,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2917,k3_final_26,A2,vhodnost,1,4
+exp2918,k3_final_26,A2,kvalita,1,Plná
+exp2918,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2918,k3_final_26,A2,vhodnost,1,4
+exp2919,k3_final_26,A2,kvalita,1,Plná
+exp2919,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2919,k3_final_26,A2,vhodnost,1,3
+exp2920,k3_final_26,A2,kvalita,1,Plná
+exp2920,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2920,k3_final_26,A2,vhodnost,1,3
+exp2921,k3_final_26,A2,kvalita,1,Plná
+exp2921,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2921,k3_final_26,A2,vhodnost,1,3
+exp2922,k3_final_26,A2,kvalita,1,Plná
+exp2922,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2922,k3_final_26,A2,vhodnost,1,4
+exp2923,k3_final_26,A2,kvalita,1,Plná
+exp2923,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2923,k3_final_26,A2,vhodnost,1,4
+exp2924,k3_final_26,A2,kvalita,1,Plná
+exp2924,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2924,k3_final_26,A2,vhodnost,1,4
+exp2925,k3_final_26,A2,kvalita,1,Plochá
+exp2925,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2925,k3_final_26,A2,vhodnost,1,3
+exp2926,k3_final_26,A2,kvalita,1,Plná
+exp2926,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2926,k3_final_26,A2,vhodnost,1,3
+exp2927,k3_final_26,A2,kvalita,1,Plná
+exp2927,k3_final_26,A2,dopad,1,Neúspěch
+exp2927,k3_final_26,A2,vhodnost,1,3
+exp2928,k3_final_26,A2,kvalita,1,Plná
+exp2928,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2928,k3_final_26,A2,vhodnost,1,4
+exp2929,k3_final_26,A2,kvalita,1,Plná
+exp2929,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2929,k3_final_26,A2,vhodnost,1,4
+exp2930,k3_final_26,A2,kvalita,1,Plná
+exp2930,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2930,k3_final_26,A2,vhodnost,1,4
+exp2931,k3_final_26,A2,kvalita,1,Plná
+exp2931,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2931,k3_final_26,A2,vhodnost,1,4
+exp2932,k3_final_26,A2,kvalita,1,Plná
+exp2932,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2932,k3_final_26,A2,vhodnost,1,3
+exp2933,k3_final_26,A2,kvalita,1,Plná
+exp2933,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2933,k3_final_26,A2,vhodnost,1,4
+exp2934,k3_final_26,A2,kvalita,1,Plná
+exp2934,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2934,k3_final_26,A2,vhodnost,1,4
+exp2935,k3_final_26,A2,kvalita,1,Plná
+exp2935,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2935,k3_final_26,A2,vhodnost,1,3
+exp2936,k3_final_26,A2,kvalita,1,Plná
+exp2936,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2936,k3_final_26,A2,vhodnost,1,4
+exp2937,k3_final_26,A2,kvalita,1,Plná
+exp2937,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2937,k3_final_26,A2,vhodnost,1,4
+exp2938,k3_final_26,A2,kvalita,1,Plná
+exp2938,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2938,k3_final_26,A2,vhodnost,1,3
+exp2939,k3_final_26,A2,kvalita,1,Plná
+exp2939,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2939,k3_final_26,A2,vhodnost,1,4
+exp2940,k3_final_26,A2,kvalita,1,Plná
+exp2940,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2940,k3_final_26,A2,vhodnost,1,4
+exp2941,k3_final_26,A2,kvalita,1,Plná
+exp2941,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2941,k3_final_26,A2,vhodnost,1,4
+exp2942,k3_final_26,A2,kvalita,1,Plná
+exp2942,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2942,k3_final_26,A2,vhodnost,1,4
+exp2943,k3_final_26,A2,kvalita,1,Plná
+exp2943,k3_final_26,A2,dopad,1,Neúspěch
+exp2943,k3_final_26,A2,vhodnost,1,4
+exp2944,k3_final_26,A2,kvalita,1,Plná
+exp2944,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2944,k3_final_26,A2,vhodnost,1,3
+exp2945,k3_final_26,A2,kvalita,1,Plná
+exp2945,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2945,k3_final_26,A2,vhodnost,1,4
+exp2946,k3_final_26,A2,kvalita,1,Plná
+exp2946,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2946,k3_final_26,A2,vhodnost,1,4
+exp2947,k3_final_26,A2,kvalita,1,Plná
+exp2947,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2947,k3_final_26,A2,vhodnost,1,3
+exp2948,k3_final_26,A2,kvalita,1,Plná
+exp2948,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2948,k3_final_26,A2,vhodnost,1,4
+exp2949,k3_final_26,A2,kvalita,1,Plná
+exp2949,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2949,k3_final_26,A2,vhodnost,1,3
+exp2950,k3_final_26,A2,kvalita,1,Plná
+exp2950,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2950,k3_final_26,A2,vhodnost,1,4
+exp2951,k3_final_26,A2,kvalita,1,Plná
+exp2951,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2951,k3_final_26,A2,vhodnost,1,4
+exp2952,k3_final_26,A2,kvalita,1,Plná
+exp2952,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2952,k3_final_26,A2,vhodnost,1,4
+exp2953,k3_final_26,A2,kvalita,1,Plná
+exp2953,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2953,k3_final_26,A2,vhodnost,1,3
+exp2954,k3_final_26,A2,kvalita,1,Plná
+exp2954,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2954,k3_final_26,A2,vhodnost,1,4
+exp2955,k3_final_26,A2,kvalita,1,Plná
+exp2955,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2955,k3_final_26,A2,vhodnost,1,4
+exp2956,k3_final_26,A2,kvalita,1,Plná
+exp2956,k3_final_26,A2,dopad,1,Neúspěch
+exp2956,k3_final_26,A2,vhodnost,1,3
+exp2957,k3_final_26,A2,kvalita,1,Plná
+exp2957,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2957,k3_final_26,A2,vhodnost,1,3
+exp2958,k3_final_26,A2,kvalita,1,Plná
+exp2958,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2958,k3_final_26,A2,vhodnost,1,4
+exp2959,k3_final_26,A2,kvalita,1,Plná
+exp2959,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2959,k3_final_26,A2,vhodnost,1,4
+exp2960,k3_final_26,A2,kvalita,1,Plná
+exp2960,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2960,k3_final_26,A2,vhodnost,1,4
+exp2961,k3_final_26,A2,kvalita,1,Plná
+exp2961,k3_final_26,A2,dopad,1,Neúspěch
+exp2961,k3_final_26,A2,vhodnost,1,2
+exp2962,k3_final_26,A2,kvalita,1,Plná
+exp2962,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2962,k3_final_26,A2,vhodnost,1,3
+exp2963,k3_final_26,A2,kvalita,1,Plná
+exp2963,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2963,k3_final_26,A2,vhodnost,1,3
+exp2964,k3_final_26,A2,kvalita,1,Plná
+exp2964,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2964,k3_final_26,A2,vhodnost,1,3
+exp2965,k3_final_26,A2,kvalita,1,Plná
+exp2965,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2965,k3_final_26,A2,vhodnost,1,3
+exp2966,k3_final_26,A2,kvalita,1,Plná
+exp2966,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2966,k3_final_26,A2,vhodnost,1,3
+exp2967,k3_final_26,A2,kvalita,1,Plná
+exp2967,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2967,k3_final_26,A2,vhodnost,1,4
+exp2968,k3_final_26,A2,kvalita,1,Plná
+exp2968,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2968,k3_final_26,A2,vhodnost,1,4
+exp2969,k3_final_26,A2,kvalita,1,Plná
+exp2969,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2969,k3_final_26,A2,vhodnost,1,4
+exp2970,k3_final_26,A2,kvalita,1,Plná
+exp2970,k3_final_26,A2,dopad,1,Neúspěch
+exp2970,k3_final_26,A2,vhodnost,1,3
+exp2971,k3_final_26,A2,kvalita,1,Plná
+exp2971,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2971,k3_final_26,A2,vhodnost,1,4
+exp2972,k3_final_26,A2,kvalita,1,Plná
+exp2972,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2972,k3_final_26,A2,vhodnost,1,2
+exp2973,k3_final_26,A2,kvalita,1,Plná
+exp2973,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2973,k3_final_26,A2,vhodnost,1,3
+exp2974,k3_final_26,A2,kvalita,1,Plná
+exp2974,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2974,k3_final_26,A2,vhodnost,1,3
+exp2975,k3_final_26,A2,kvalita,1,Plná
+exp2975,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2975,k3_final_26,A2,vhodnost,1,3
+exp2976,k3_final_26,A2,kvalita,1,Plná
+exp2976,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2976,k3_final_26,A2,vhodnost,1,4
+exp2977,k3_final_26,A2,kvalita,1,Plná
+exp2977,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2977,k3_final_26,A2,vhodnost,1,4
+exp2978,k3_final_26,A2,kvalita,1,Plná
+exp2978,k3_final_26,A2,dopad,1,Neúspěch
+exp2978,k3_final_26,A2,vhodnost,1,4
+exp2979,k3_final_26,A2,kvalita,1,Plná
+exp2979,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2979,k3_final_26,A2,vhodnost,1,4
+exp2980,k3_final_26,A2,kvalita,1,Plná
+exp2980,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2980,k3_final_26,A2,vhodnost,1,3
+exp2981,k3_final_26,A2,kvalita,1,Plná
+exp2981,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2981,k3_final_26,A2,vhodnost,1,3
+exp2982,k3_final_26,A2,kvalita,1,Plná
+exp2982,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2982,k3_final_26,A2,vhodnost,1,2
+exp2983,k3_final_26,A2,kvalita,1,Plná
+exp2983,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2983,k3_final_26,A2,vhodnost,1,4
+exp2984,k3_final_26,A2,kvalita,1,Plná
+exp2984,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2984,k3_final_26,A2,vhodnost,1,4
+exp2985,k3_final_26,A2,kvalita,1,Plná
+exp2985,k3_final_26,A2,dopad,1,Neúspěch
+exp2985,k3_final_26,A2,vhodnost,1,2
+exp2986,k3_final_26,A2,kvalita,1,Plná
+exp2986,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2986,k3_final_26,A2,vhodnost,1,4
+exp2987,k3_final_26,A2,kvalita,1,Plná
+exp2987,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2987,k3_final_26,A2,vhodnost,1,3
+exp2988,k3_final_26,A2,kvalita,1,Plná
+exp2988,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2988,k3_final_26,A2,vhodnost,1,4
+exp2989,k3_final_26,A2,kvalita,1,Plná
+exp2989,k3_final_26,A2,dopad,1,Neúspěch
+exp2989,k3_final_26,A2,vhodnost,1,3
+exp2990,k3_final_26,A2,kvalita,1,Plná
+exp2990,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2990,k3_final_26,A2,vhodnost,1,4
+exp2991,k3_final_26,A2,kvalita,1,Plná
+exp2991,k3_final_26,A2,dopad,1,Neúspěch
+exp2991,k3_final_26,A2,vhodnost,1,3
+exp2992,k3_final_26,A2,kvalita,1,Plná
+exp2992,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2992,k3_final_26,A2,vhodnost,1,3
+exp2993,k3_final_26,A2,kvalita,1,Plná
+exp2993,k3_final_26,A2,dopad,1,Neúspěch
+exp2993,k3_final_26,A2,vhodnost,1,3
+exp2994,k3_final_26,A2,kvalita,1,Plná
+exp2994,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2994,k3_final_26,A2,vhodnost,1,4
+exp2995,k3_final_26,A2,kvalita,1,Plná
+exp2995,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2995,k3_final_26,A2,vhodnost,1,4
+exp2996,k3_final_26,A2,kvalita,1,Plná
+exp2996,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2996,k3_final_26,A2,vhodnost,1,4
+exp2997,k3_final_26,A2,kvalita,1,Plná
+exp2997,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp2997,k3_final_26,A2,vhodnost,1,3
+exp2998,k3_final_26,A2,kvalita,1,Plná
+exp2998,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2998,k3_final_26,A2,vhodnost,1,4
+exp2999,k3_final_26,A2,kvalita,1,Plná
+exp2999,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp2999,k3_final_26,A2,vhodnost,1,4
+exp3000,k3_final_26,A2,kvalita,1,Plná
+exp3000,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3000,k3_final_26,A2,vhodnost,1,3
+exp3001,k3_final_26,A2,kvalita,1,Plochá
+exp3002,k3_final_26,A2,kvalita,1,Plná
+exp3002,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3002,k3_final_26,A2,vhodnost,1,3
+exp3003,k3_final_26,A2,kvalita,1,Plná
+exp3003,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3003,k3_final_26,A2,vhodnost,1,3
+exp3004,k3_final_26,A2,kvalita,1,Plná
+exp3004,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3004,k3_final_26,A2,vhodnost,1,3
+exp3005,k3_final_26,A2,kvalita,1,Plná
+exp3005,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3005,k3_final_26,A2,vhodnost,1,4
+exp3006,k3_final_26,A2,kvalita,1,Plná
+exp3006,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3006,k3_final_26,A2,vhodnost,1,4
+exp3007,k3_final_26,A2,kvalita,1,Plná
+exp3007,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3007,k3_final_26,A2,vhodnost,1,3
+exp3008,k3_final_26,A2,kvalita,1,Plná
+exp3008,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3008,k3_final_26,A2,vhodnost,1,4
+exp3009,k3_final_26,A2,kvalita,1,Plná
+exp3009,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3009,k3_final_26,A2,vhodnost,1,4
+exp3010,k3_final_26,A2,kvalita,1,Plná
+exp3010,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3010,k3_final_26,A2,vhodnost,1,4
+exp3011,k3_final_26,A2,kvalita,1,Plná
+exp3011,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3011,k3_final_26,A2,vhodnost,1,4
+exp3012,k3_final_26,A2,kvalita,1,Plná
+exp3012,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3012,k3_final_26,A2,vhodnost,1,4
+exp3013,k3_final_26,A2,kvalita,1,Plná
+exp3013,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3013,k3_final_26,A2,vhodnost,1,3
+exp3014,k3_final_26,A2,kvalita,1,Plná
+exp3014,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3014,k3_final_26,A2,vhodnost,1,4
+exp3015,k3_final_26,A2,kvalita,1,Plná
+exp3015,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3015,k3_final_26,A2,vhodnost,1,3
+exp3016,k3_final_26,A2,kvalita,1,Plná
+exp3016,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3016,k3_final_26,A2,vhodnost,1,4
+exp3017,k3_final_26,A2,kvalita,1,Plná
+exp3017,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3017,k3_final_26,A2,vhodnost,1,3
+exp3018,k3_final_26,A2,kvalita,1,Plná
+exp3018,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3018,k3_final_26,A2,vhodnost,1,2
+exp3019,k3_final_26,A2,kvalita,1,Plná
+exp3019,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3019,k3_final_26,A2,vhodnost,1,4
+exp3020,k3_final_26,A2,kvalita,1,Plná
+exp3020,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3020,k3_final_26,A2,vhodnost,1,4
+exp3021,k3_final_26,A2,kvalita,1,Plná
+exp3021,k3_final_26,A2,dopad,1,Neúspěch
+exp3021,k3_final_26,A2,vhodnost,1,4
+exp3022,k3_final_26,A2,kvalita,1,Plná
+exp3022,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3022,k3_final_26,A2,vhodnost,1,3
+exp3023,k3_final_26,A2,kvalita,1,Plná
+exp3023,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3023,k3_final_26,A2,vhodnost,1,2
+exp3024,k3_final_26,A2,kvalita,1,Plná
+exp3024,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3024,k3_final_26,A2,vhodnost,1,3
+exp3025,k3_final_26,A2,kvalita,1,Plná
+exp3025,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3025,k3_final_26,A2,vhodnost,1,3
+exp3026,k3_final_26,A2,kvalita,1,Plná
+exp3026,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3026,k3_final_26,A2,vhodnost,1,2
+exp3027,k3_final_26,A2,kvalita,1,Plná
+exp3027,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3027,k3_final_26,A2,vhodnost,1,4
+exp3028,k3_final_26,A2,kvalita,1,Plná
+exp3028,k3_final_26,A2,dopad,1,Neúspěch
+exp3028,k3_final_26,A2,vhodnost,1,4
+exp3029,k3_final_26,A2,kvalita,1,Plná
+exp3029,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3029,k3_final_26,A2,vhodnost,1,2
+exp3030,k3_final_26,A2,kvalita,1,Plná
+exp3030,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3030,k3_final_26,A2,vhodnost,1,3
+exp3031,k3_final_26,A2,kvalita,1,Plná
+exp3031,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3031,k3_final_26,A2,vhodnost,1,3
+exp3033,k3_final_26,A2,kvalita,1,Plná
+exp3033,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3033,k3_final_26,A2,vhodnost,1,3
+exp3034,k3_final_26,A2,kvalita,1,Plná
+exp3034,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3034,k3_final_26,A2,vhodnost,1,4
+exp3035,k3_final_26,A2,kvalita,1,Plná
+exp3035,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3035,k3_final_26,A2,vhodnost,1,3
+exp3036,k3_final_26,A2,kvalita,1,Plná
+exp3036,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3036,k3_final_26,A2,vhodnost,1,4
+exp3037,k3_final_26,A2,kvalita,1,Plná
+exp3037,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3037,k3_final_26,A2,vhodnost,1,3
+exp3038,k3_final_26,A2,kvalita,1,Plná
+exp3038,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3038,k3_final_26,A2,vhodnost,1,3
+exp3039,k3_final_26,A2,kvalita,1,Plná
+exp3039,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3039,k3_final_26,A2,vhodnost,1,4
+exp3040,k3_final_26,A2,kvalita,1,Plná
+exp3040,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3040,k3_final_26,A2,vhodnost,1,4
+exp3041,k3_final_26,A2,kvalita,1,Plná
+exp3041,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3041,k3_final_26,A2,vhodnost,1,3
+exp3042,k3_final_26,A2,kvalita,1,Plná
+exp3042,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3042,k3_final_26,A2,vhodnost,1,4
+exp3043,k3_final_26,A2,kvalita,1,Plná
+exp3043,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3043,k3_final_26,A2,vhodnost,1,4
+exp3044,k3_final_26,A2,kvalita,1,Plná
+exp3044,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3044,k3_final_26,A2,vhodnost,1,4
+exp3045,k3_final_26,A2,kvalita,1,Plná
+exp3045,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3045,k3_final_26,A2,vhodnost,1,4
+exp3046,k3_final_26,A2,kvalita,1,Plná
+exp3046,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3046,k3_final_26,A2,vhodnost,1,4
+exp3047,k3_final_26,A2,kvalita,1,Plná
+exp3047,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3047,k3_final_26,A2,vhodnost,1,4
+exp3048,k3_final_26,A2,kvalita,1,Plná
+exp3048,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3048,k3_final_26,A2,vhodnost,1,4
+exp3049,k3_final_26,A2,kvalita,1,Plná
+exp3049,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3049,k3_final_26,A2,vhodnost,1,4
+exp3050,k3_final_26,A2,kvalita,1,Plná
+exp3050,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3050,k3_final_26,A2,vhodnost,1,4
+exp3051,k3_final_26,A2,kvalita,1,Plná
+exp3051,k3_final_26,A2,dopad,1,Neúspěch
+exp3051,k3_final_26,A2,vhodnost,1,4
+exp3052,k3_final_26,A2,kvalita,1,Plná
+exp3052,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3052,k3_final_26,A2,vhodnost,1,4
+exp3053,k3_final_26,A2,kvalita,1,Plná
+exp3053,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3053,k3_final_26,A2,vhodnost,1,4
+exp3054,k3_final_26,A2,kvalita,1,Plná
+exp3054,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3054,k3_final_26,A2,vhodnost,1,4
+exp3055,k3_final_26,A2,kvalita,1,Plná
+exp3055,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3055,k3_final_26,A2,vhodnost,1,4
+exp3056,k3_final_26,A2,kvalita,1,Plná
+exp3056,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3056,k3_final_26,A2,vhodnost,1,4
+exp3057,k3_final_26,A2,kvalita,1,Plná
+exp3057,k3_final_26,A2,dopad,1,Neúspěch
+exp3057,k3_final_26,A2,vhodnost,1,3
+exp3058,k3_final_26,A2,kvalita,1,Plná
+exp3058,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3058,k3_final_26,A2,vhodnost,1,3
+exp3059,k3_final_26,A2,kvalita,1,Plná
+exp3059,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3059,k3_final_26,A2,vhodnost,1,4
+exp3060,k3_final_26,A2,kvalita,1,Plná
+exp3060,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3060,k3_final_26,A2,vhodnost,1,4
+exp3061,k3_final_26,A2,kvalita,1,Plná
+exp3061,k3_final_26,A2,dopad,1,Neúspěch
+exp3061,k3_final_26,A2,vhodnost,1,4
+exp3062,k3_final_26,A2,kvalita,1,Plná
+exp3062,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3062,k3_final_26,A2,vhodnost,1,4
+exp3063,k3_final_26,A2,kvalita,1,Plná
+exp3063,k3_final_26,A2,dopad,1,Neúspěch
+exp3063,k3_final_26,A2,vhodnost,1,3
+exp3064,k3_final_26,A2,kvalita,1,Plná
+exp3064,k3_final_26,A2,dopad,1,Neúspěch
+exp3064,k3_final_26,A2,vhodnost,1,4
+exp3065,k3_final_26,A2,kvalita,1,Plná
+exp3065,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3065,k3_final_26,A2,vhodnost,1,4
+exp3066,k3_final_26,A2,kvalita,1,Plná
+exp3066,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3066,k3_final_26,A2,vhodnost,1,3
+exp3067,k3_final_26,A2,kvalita,1,Plná
+exp3067,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3067,k3_final_26,A2,vhodnost,1,4
+exp3068,k3_final_26,A2,kvalita,1,Plná
+exp3068,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3068,k3_final_26,A2,vhodnost,1,3
+exp3069,k3_final_26,A2,kvalita,1,Plná
+exp3069,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3069,k3_final_26,A2,vhodnost,1,4
+exp3070,k3_final_26,A2,kvalita,1,Plná
+exp3070,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3070,k3_final_26,A2,vhodnost,1,3
+exp3071,k3_final_26,A2,kvalita,1,Plná
+exp3071,k3_final_26,A2,dopad,1,Neúspěch
+exp3071,k3_final_26,A2,vhodnost,1,4
+exp3072,k3_final_26,A2,kvalita,1,Plná
+exp3072,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3072,k3_final_26,A2,vhodnost,1,4
+exp3073,k3_final_26,A2,kvalita,1,Plná
+exp3073,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3073,k3_final_26,A2,vhodnost,1,2
+exp3074,k3_final_26,A2,kvalita,1,Plná
+exp3074,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3074,k3_final_26,A2,vhodnost,1,4
+exp3075,k3_final_26,A2,kvalita,1,Plná
+exp3075,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3075,k3_final_26,A2,vhodnost,1,3
+exp3076,k3_final_26,A2,kvalita,1,Plná
+exp3076,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3076,k3_final_26,A2,vhodnost,1,3
+exp3077,k3_final_26,A2,kvalita,1,Plná
+exp3077,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3077,k3_final_26,A2,vhodnost,1,4
+exp3078,k3_final_26,A2,kvalita,1,Plná
+exp3078,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3078,k3_final_26,A2,vhodnost,1,4
+exp3079,k3_final_26,A2,kvalita,1,Plná
+exp3079,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3079,k3_final_26,A2,vhodnost,1,3
+exp3080,k3_final_26,A2,kvalita,1,Plná
+exp3080,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3080,k3_final_26,A2,vhodnost,1,4
+exp3081,k3_final_26,A2,kvalita,1,Plná
+exp3081,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3081,k3_final_26,A2,vhodnost,1,3
+exp3082,k3_final_26,A2,kvalita,1,Plná
+exp3082,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3082,k3_final_26,A2,vhodnost,1,4
+exp3083,k3_final_26,A2,kvalita,1,Plná
+exp3083,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3083,k3_final_26,A2,vhodnost,1,3
+exp3084,k3_final_26,A2,kvalita,1,Plná
+exp3084,k3_final_26,A2,dopad,1,Neúspěch
+exp3084,k3_final_26,A2,vhodnost,1,2
+exp3085,k3_final_26,A2,kvalita,1,Plná
+exp3085,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3085,k3_final_26,A2,vhodnost,1,3
+exp3086,k3_final_26,A2,kvalita,1,Plná
+exp3086,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3086,k3_final_26,A2,vhodnost,1,4
+exp3087,k3_final_26,A2,kvalita,1,Plná
+exp3087,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3087,k3_final_26,A2,vhodnost,1,4
+exp3088,k3_final_26,A2,kvalita,1,Plná
+exp3088,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3088,k3_final_26,A2,vhodnost,1,3
+exp3089,k3_final_26,A2,kvalita,1,Plná
+exp3089,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3089,k3_final_26,A2,vhodnost,1,4
+exp3090,k3_final_26,A2,kvalita,1,Plná
+exp3090,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3090,k3_final_26,A2,vhodnost,1,4
+exp3091,k3_final_26,A2,kvalita,1,Plná
+exp3091,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3091,k3_final_26,A2,vhodnost,1,4
+exp3092,k3_final_26,A2,kvalita,1,Plná
+exp3092,k3_final_26,A2,dopad,1,Neúspěch
+exp3092,k3_final_26,A2,vhodnost,1,2
+exp3093,k3_final_26,A2,kvalita,1,Plná
+exp3093,k3_final_26,A2,dopad,1,Neúspěch
+exp3093,k3_final_26,A2,vhodnost,1,2
+exp3094,k3_final_26,A2,kvalita,1,Plná
+exp3094,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3094,k3_final_26,A2,vhodnost,1,4
+exp3095,k3_final_26,A2,kvalita,1,Plná
+exp3095,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3095,k3_final_26,A2,vhodnost,1,3
+exp3096,k3_final_26,A2,kvalita,1,Plná
+exp3096,k3_final_26,A2,dopad,1,Neúspěch
+exp3096,k3_final_26,A2,vhodnost,1,3
+exp3097,k3_final_26,A2,kvalita,1,Plná
+exp3097,k3_final_26,A2,dopad,1,Neúspěch
+exp3097,k3_final_26,A2,vhodnost,1,3
+exp3098,k3_final_26,A2,kvalita,1,Plná
+exp3098,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3098,k3_final_26,A2,vhodnost,1,4
+exp3100,k3_final_26,A2,kvalita,1,Plná
+exp3100,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3100,k3_final_26,A2,vhodnost,1,3
+exp3101,k3_final_26,A2,kvalita,1,Plná
+exp3101,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3101,k3_final_26,A2,vhodnost,1,4
+exp3102,k3_final_26,A2,kvalita,1,Plná
+exp3102,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3102,k3_final_26,A2,vhodnost,1,3
+exp3103,k3_final_26,A2,kvalita,1,Plná
+exp3103,k3_final_26,A2,dopad,1,Neúspěch
+exp3103,k3_final_26,A2,vhodnost,1,3
+exp3104,k3_final_26,A2,kvalita,1,Plná
+exp3104,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3104,k3_final_26,A2,vhodnost,1,3
+exp3105,k3_final_26,A2,kvalita,1,Plná
+exp3105,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3105,k3_final_26,A2,vhodnost,1,3
+exp3106,k3_final_26,A2,kvalita,1,Plná
+exp3106,k3_final_26,A2,dopad,1,Neúspěch
+exp3106,k3_final_26,A2,vhodnost,1,2
+exp3107,k3_final_26,A2,kvalita,1,Plochá
+exp3108,k3_final_26,A2,kvalita,1,Plná
+exp3108,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3108,k3_final_26,A2,vhodnost,1,3
+exp3109,k3_final_26,A2,kvalita,1,Plná
+exp3109,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3109,k3_final_26,A2,vhodnost,1,4
+exp3110,k3_final_26,A2,kvalita,1,Plná
+exp3110,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3110,k3_final_26,A2,vhodnost,1,3
+exp3111,k3_final_26,A2,kvalita,1,Plná
+exp3111,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3111,k3_final_26,A2,vhodnost,1,3
+exp3112,k3_final_26,A2,kvalita,1,Plná
+exp3112,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3112,k3_final_26,A2,vhodnost,1,4
+exp3114,k3_final_26,A2,kvalita,1,Plná
+exp3114,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3114,k3_final_26,A2,vhodnost,1,3
+exp3115,k3_final_26,A2,kvalita,1,Plná
+exp3115,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3115,k3_final_26,A2,vhodnost,1,4
+exp3116,k3_final_26,A2,kvalita,1,Plná
+exp3116,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3116,k3_final_26,A2,vhodnost,1,3
+exp3117,k3_final_26,A2,kvalita,1,Plná
+exp3117,k3_final_26,A2,dopad,1,Neúspěch
+exp3117,k3_final_26,A2,vhodnost,1,4
+exp3118,k3_final_26,A2,kvalita,1,Plná
+exp3118,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3118,k3_final_26,A2,vhodnost,1,4
+exp3119,k3_final_26,A2,kvalita,1,Plná
+exp3119,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3119,k3_final_26,A2,vhodnost,1,4
+exp3120,k3_final_26,A2,kvalita,1,Plochá
+exp3120,k3_final_26,A2,vhodnost,1,4
+exp3121,k3_final_26,A2,kvalita,1,Plná
+exp3121,k3_final_26,A2,dopad,1,Neúspěch
+exp3121,k3_final_26,A2,vhodnost,1,4
+exp3122,k3_final_26,A2,kvalita,1,Plná
+exp3122,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3122,k3_final_26,A2,vhodnost,1,4
+exp3123,k3_final_26,A2,kvalita,1,Plná
+exp3123,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3123,k3_final_26,A2,vhodnost,1,4
+exp3124,k3_final_26,A2,kvalita,1,Plná
+exp3124,k3_final_26,A2,dopad,1,Neúspěch
+exp3124,k3_final_26,A2,vhodnost,1,2
+exp3125,k3_final_26,A2,kvalita,1,Plná
+exp3125,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3125,k3_final_26,A2,vhodnost,1,4
+exp3126,k3_final_26,A2,kvalita,1,Plná
+exp3126,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3126,k3_final_26,A2,vhodnost,1,4
+exp3127,k3_final_26,A2,kvalita,1,Plná
+exp3127,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3127,k3_final_26,A2,vhodnost,1,4
+exp3128,k3_final_26,A2,kvalita,1,Plná
+exp3128,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3128,k3_final_26,A2,vhodnost,1,4
+exp3129,k3_final_26,A2,kvalita,1,Plná
+exp3129,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3129,k3_final_26,A2,vhodnost,1,4
+exp3130,k3_final_26,A2,kvalita,1,Plná
+exp3130,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3130,k3_final_26,A2,vhodnost,1,2
+exp3131,k3_final_26,A2,kvalita,1,Plná
+exp3131,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3131,k3_final_26,A2,vhodnost,1,3
+exp3132,k3_final_26,A2,kvalita,1,Plná
+exp3132,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3132,k3_final_26,A2,vhodnost,1,3
+exp3133,k3_final_26,A2,kvalita,1,Plná
+exp3133,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3133,k3_final_26,A2,vhodnost,1,4
+exp3134,k3_final_26,A2,kvalita,1,Plná
+exp3134,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3134,k3_final_26,A2,vhodnost,1,4
+exp3135,k3_final_26,A2,kvalita,1,Plná
+exp3135,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3135,k3_final_26,A2,vhodnost,1,2
+exp3136,k3_final_26,A2,kvalita,1,Plná
+exp3136,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3136,k3_final_26,A2,vhodnost,1,4
+exp3137,k3_final_26,A2,kvalita,1,Plná
+exp3137,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3137,k3_final_26,A2,vhodnost,1,4
+exp3138,k3_final_26,A2,kvalita,1,Plná
+exp3138,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3138,k3_final_26,A2,vhodnost,1,3
+exp3139,k3_final_26,A2,kvalita,1,Plná
+exp3139,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3139,k3_final_26,A2,vhodnost,1,4
+exp3140,k3_final_26,A2,kvalita,1,Plná
+exp3140,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3140,k3_final_26,A2,vhodnost,1,4
+exp3141,k3_final_26,A2,kvalita,1,Plná
+exp3141,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3141,k3_final_26,A2,vhodnost,1,3
+exp3142,k3_final_26,A2,kvalita,1,Plná
+exp3142,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3142,k3_final_26,A2,vhodnost,1,4
+exp3143,k3_final_26,A2,kvalita,1,Plná
+exp3143,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3143,k3_final_26,A2,vhodnost,1,2
+exp3144,k3_final_26,A2,kvalita,1,Plná
+exp3144,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3144,k3_final_26,A2,vhodnost,1,3
+exp3145,k3_final_26,A2,kvalita,1,Plná
+exp3145,k3_final_26,A2,dopad,1,Neúspěch
+exp3145,k3_final_26,A2,vhodnost,1,3
+exp3146,k3_final_26,A2,kvalita,1,Plochá
+exp3147,k3_final_26,A2,kvalita,1,Plná
+exp3147,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3147,k3_final_26,A2,vhodnost,1,4
+exp3148,k3_final_26,A2,kvalita,1,Plná
+exp3148,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3148,k3_final_26,A2,vhodnost,1,3
+exp3149,k3_final_26,A2,kvalita,1,Plná
+exp3149,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3149,k3_final_26,A2,vhodnost,1,2
+exp3151,k3_final_26,A2,kvalita,1,Plná
+exp3151,k3_final_26,A2,dopad,1,Neúspěch
+exp3151,k3_final_26,A2,vhodnost,1,4
+exp3150,k3_final_26,A2,kvalita,1,Plná
+exp3150,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3150,k3_final_26,A2,vhodnost,1,3
+exp3152,k3_final_26,A2,kvalita,1,Plná
+exp3152,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3152,k3_final_26,A2,vhodnost,1,4
+exp3153,k3_final_26,A2,kvalita,1,Plná
+exp3153,k3_final_26,A2,dopad,1,Neúspěch
+exp3153,k3_final_26,A2,vhodnost,1,2
+exp3154,k3_final_26,A2,kvalita,1,Plná
+exp3154,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3154,k3_final_26,A2,vhodnost,1,3
+exp3155,k3_final_26,A2,kvalita,1,Plná
+exp3155,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3155,k3_final_26,A2,vhodnost,1,4
+exp3156,k3_final_26,A2,kvalita,1,Plná
+exp3156,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3156,k3_final_26,A2,vhodnost,1,3
+exp3157,k3_final_26,A2,kvalita,1,Plná
+exp3157,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3157,k3_final_26,A2,vhodnost,1,3
+exp3158,k3_final_26,A2,kvalita,1,Plná
+exp3158,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3158,k3_final_26,A2,vhodnost,1,2
+exp3159,k3_final_26,A2,kvalita,1,Plná
+exp3159,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3159,k3_final_26,A2,vhodnost,1,3
+exp3160,k3_final_26,A2,kvalita,1,Plná
+exp3160,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3160,k3_final_26,A2,vhodnost,1,4
+exp3161,k3_final_26,A2,kvalita,1,Plná
+exp3161,k3_final_26,A2,dopad,1,Neúspěch
+exp3161,k3_final_26,A2,vhodnost,1,3
+exp3162,k3_final_26,A2,kvalita,1,Plná
+exp3162,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3162,k3_final_26,A2,vhodnost,1,2
+exp3163,k3_final_26,A2,kvalita,1,Plná
+exp3163,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3163,k3_final_26,A2,vhodnost,1,2
+exp3164,k3_final_26,A2,kvalita,1,Plná
+exp3164,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3164,k3_final_26,A2,vhodnost,1,4
+exp3165,k3_final_26,A2,kvalita,1,Plná
+exp3165,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3165,k3_final_26,A2,vhodnost,1,2
+exp3166,k3_final_26,A2,kvalita,1,Plná
+exp3166,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3166,k3_final_26,A2,vhodnost,1,4
+exp3167,k3_final_26,A2,kvalita,1,Plná
+exp3167,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3167,k3_final_26,A2,vhodnost,1,3
+exp3168,k3_final_26,A2,kvalita,1,Plná
+exp3168,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3168,k3_final_26,A2,vhodnost,1,4
+exp3169,k3_final_26,A2,kvalita,1,Plná
+exp3169,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3169,k3_final_26,A2,vhodnost,1,4
+exp3170,k3_final_26,A2,kvalita,1,Plná
+exp3170,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3170,k3_final_26,A2,vhodnost,1,4
+exp3171,k3_final_26,A2,kvalita,1,Plochá
+exp3172,k3_final_26,A2,kvalita,1,Plná
+exp3172,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3172,k3_final_26,A2,vhodnost,1,4
+exp3173,k3_final_26,A2,kvalita,1,Plná
+exp3173,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3173,k3_final_26,A2,vhodnost,1,4
+exp3174,k3_final_26,A2,kvalita,1,Plná
+exp3174,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3174,k3_final_26,A2,vhodnost,1,4
+exp3175,k3_final_26,A2,kvalita,1,Plná
+exp3175,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3175,k3_final_26,A2,vhodnost,1,3
+exp3176,k3_final_26,A2,kvalita,1,Plná
+exp3176,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3176,k3_final_26,A2,vhodnost,1,3
+exp3177,k3_final_26,A2,kvalita,1,Plná
+exp3177,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3177,k3_final_26,A2,vhodnost,1,4
+exp3178,k3_final_26,A2,kvalita,1,Plná
+exp3178,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3178,k3_final_26,A2,vhodnost,1,4
+exp3179,k3_final_26,A2,kvalita,1,Plná
+exp3179,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3179,k3_final_26,A2,vhodnost,1,3
+exp3180,k3_final_26,A2,kvalita,1,Plochá
+exp3181,k3_final_26,A2,kvalita,1,Plná
+exp3181,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3181,k3_final_26,A2,vhodnost,1,4
+exp3182,k3_final_26,A2,kvalita,1,Plná
+exp3182,k3_final_26,A2,dopad,1,Neúspěch
+exp3182,k3_final_26,A2,vhodnost,1,2
+exp3183,k3_final_26,A2,kvalita,1,Plná
+exp3183,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3183,k3_final_26,A2,vhodnost,1,3
+exp3184,k3_final_26,A2,kvalita,1,Plná
+exp3184,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3184,k3_final_26,A2,vhodnost,1,4
+exp3185,k3_final_26,A2,kvalita,1,Plná
+exp3185,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3185,k3_final_26,A2,vhodnost,1,3
+exp3186,k3_final_26,A2,kvalita,1,Plochá
+exp3187,k3_final_26,A2,kvalita,1,Plná
+exp3187,k3_final_26,A2,dopad,1,Neúspěch
+exp3187,k3_final_26,A2,vhodnost,1,3
+exp3188,k3_final_26,A2,kvalita,1,Plná
+exp3188,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3188,k3_final_26,A2,vhodnost,1,4
+exp3189,k3_final_26,A2,kvalita,1,Plná
+exp3189,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3189,k3_final_26,A2,vhodnost,1,3
+exp3190,k3_final_26,A2,kvalita,1,Plná
+exp3190,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3190,k3_final_26,A2,vhodnost,1,4
+exp3192,k3_final_26,A2,kvalita,1,Plná
+exp3192,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3192,k3_final_26,A2,vhodnost,1,3
+exp3193,k3_final_26,A2,kvalita,1,Plochá
+exp3193,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3193,k3_final_26,A2,vhodnost,1,2
+exp3194,k3_final_26,A2,kvalita,1,Plná
+exp3194,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3194,k3_final_26,A2,vhodnost,1,3
+exp3195,k3_final_26,A2,kvalita,1,Plná
+exp3195,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3195,k3_final_26,A2,vhodnost,1,4
+exp3196,k3_final_26,A2,kvalita,1,Plná
+exp3196,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3196,k3_final_26,A2,vhodnost,1,3
+exp3197,k3_final_26,A2,kvalita,1,Plná
+exp3197,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3197,k3_final_26,A2,vhodnost,1,4
+exp3198,k3_final_26,A2,kvalita,1,Plná
+exp3198,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3198,k3_final_26,A2,vhodnost,1,4
+exp3199,k3_final_26,A2,kvalita,1,Plná
+exp3199,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3199,k3_final_26,A2,vhodnost,1,3
+exp3200,k3_final_26,A2,kvalita,1,Plná
+exp3200,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3200,k3_final_26,A2,vhodnost,1,4
+exp3201,k3_final_26,A2,kvalita,1,Plná
+exp3201,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3201,k3_final_26,A2,vhodnost,1,4
+exp3202,k3_final_26,A2,kvalita,1,Plná
+exp3202,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3202,k3_final_26,A2,vhodnost,1,4
+exp3203,k3_final_26,A2,kvalita,1,Plochá
+exp3204,k3_final_26,A2,kvalita,1,Plná
+exp3204,k3_final_26,A2,dopad,1,Neúspěch
+exp3204,k3_final_26,A2,vhodnost,1,2
+exp3205,k3_final_26,A2,kvalita,1,Plná
+exp3205,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3205,k3_final_26,A2,vhodnost,1,4
+exp3206,k3_final_26,A2,kvalita,1,Plná
+exp3206,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3206,k3_final_26,A2,vhodnost,1,4
+exp3207,k3_final_26,A2,kvalita,1,Plná
+exp3207,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3207,k3_final_26,A2,vhodnost,1,4
+exp3208,k3_final_26,A2,kvalita,1,Plná
+exp3208,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3208,k3_final_26,A2,vhodnost,1,2
+exp3209,k3_final_26,A2,kvalita,1,Plná
+exp3209,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3209,k3_final_26,A2,vhodnost,1,3
+exp3210,k3_final_26,A2,kvalita,1,Plná
+exp3210,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3210,k3_final_26,A2,vhodnost,1,4
+exp3211,k3_final_26,A2,kvalita,1,Plná
+exp3211,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3211,k3_final_26,A2,vhodnost,1,4
+exp3212,k3_final_26,A2,kvalita,1,Plná
+exp3212,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3212,k3_final_26,A2,vhodnost,1,3
+exp3213,k3_final_26,A2,kvalita,1,Plná
+exp3213,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3213,k3_final_26,A2,vhodnost,1,4
+exp3214,k3_final_26,A2,kvalita,1,Plná
+exp3214,k3_final_26,A2,dopad,1,Neúspěch
+exp3214,k3_final_26,A2,vhodnost,1,4
+exp3215,k3_final_26,A2,kvalita,1,Plná
+exp3215,k3_final_26,A2,dopad,1,Neúspěch
+exp3215,k3_final_26,A2,vhodnost,1,3
+exp3216,k3_final_26,A2,kvalita,1,Plochá
+exp3217,k3_final_26,A2,kvalita,1,Plná
+exp3217,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3217,k3_final_26,A2,vhodnost,1,3
+exp3218,k3_final_26,A2,kvalita,1,Plná
+exp3218,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3218,k3_final_26,A2,vhodnost,1,4
+exp3219,k3_final_26,A2,kvalita,1,Plná
+exp3219,k3_final_26,A2,dopad,1,Neúspěch
+exp3219,k3_final_26,A2,vhodnost,1,4
+exp3220,k3_final_26,A2,kvalita,1,Plná
+exp3220,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3220,k3_final_26,A2,vhodnost,1,4
+exp3221,k3_final_26,A2,kvalita,1,Plná
+exp3221,k3_final_26,A2,dopad,1,Neúspěch
+exp3221,k3_final_26,A2,vhodnost,1,2
+exp3222,k3_final_26,A2,kvalita,1,Plná
+exp3222,k3_final_26,A2,dopad,1,Neúspěch
+exp3222,k3_final_26,A2,vhodnost,1,4
+exp3223,k3_final_26,A2,kvalita,1,Plná
+exp3223,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3223,k3_final_26,A2,vhodnost,1,3
+exp3224,k3_final_26,A2,kvalita,1,Plná
+exp3224,k3_final_26,A2,dopad,1,Neúspěch
+exp3224,k3_final_26,A2,vhodnost,1,3
+exp3225,k3_final_26,A2,kvalita,1,Plná
+exp3225,k3_final_26,A2,dopad,1,Neúspěch
+exp3225,k3_final_26,A2,vhodnost,1,3
+exp3226,k3_final_26,A2,kvalita,1,Plná
+exp3226,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3226,k3_final_26,A2,vhodnost,1,4
+exp3227,k3_final_26,A2,kvalita,1,Plochá
+exp3228,k3_final_26,A2,kvalita,1,Plná
+exp3228,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3228,k3_final_26,A2,vhodnost,1,4
+exp3229,k3_final_26,A2,kvalita,1,Plná
+exp3229,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3229,k3_final_26,A2,vhodnost,1,4
+exp3230,k3_final_26,A2,kvalita,1,Plná
+exp3230,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3230,k3_final_26,A2,vhodnost,1,3
+exp3231,k3_final_26,A2,kvalita,1,Plná
+exp3231,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3231,k3_final_26,A2,vhodnost,1,3
+exp3232,k3_final_26,A2,kvalita,1,Plochá
+exp3233,k3_final_26,A2,kvalita,1,Plná
+exp3233,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3233,k3_final_26,A2,vhodnost,1,4
+exp3234,k3_final_26,A2,kvalita,1,Plná
+exp3234,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3234,k3_final_26,A2,vhodnost,1,4
+exp3235,k3_final_26,A2,kvalita,1,Plná
+exp3235,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3235,k3_final_26,A2,vhodnost,1,4
+exp3236,k3_final_26,A2,kvalita,1,Plná
+exp3236,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3236,k3_final_26,A2,vhodnost,1,3
+exp3237,k3_final_26,A2,kvalita,1,Plochá
+exp3238,k3_final_26,A2,kvalita,1,Plná
+exp3238,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3238,k3_final_26,A2,vhodnost,1,2
+exp3239,k3_final_26,A2,kvalita,1,Plná
+exp3239,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3239,k3_final_26,A2,vhodnost,1,4
+exp3240,k3_final_26,A2,kvalita,1,Plochá
+exp3241,k3_final_26,A2,kvalita,1,Plná
+exp3241,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3241,k3_final_26,A2,vhodnost,1,4
+exp3242,k3_final_26,A2,kvalita,1,Plná
+exp3242,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3242,k3_final_26,A2,vhodnost,1,4
+exp3243,k3_final_26,A2,kvalita,1,Plná
+exp3243,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3243,k3_final_26,A2,vhodnost,1,4
+exp3244,k3_final_26,A2,kvalita,1,Plná
+exp3244,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3244,k3_final_26,A2,vhodnost,1,4
+exp3245,k3_final_26,A2,kvalita,1,Plná
+exp3245,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3245,k3_final_26,A2,vhodnost,1,4
+exp3246,k3_final_26,A2,kvalita,1,Plná
+exp3246,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3246,k3_final_26,A2,vhodnost,1,3
+exp3247,k3_final_26,A2,kvalita,1,Plná
+exp3247,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3247,k3_final_26,A2,vhodnost,1,3
+exp3248,k3_final_26,A2,kvalita,1,Plochá
+exp3249,k3_final_26,A2,kvalita,1,Plná
+exp3249,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3249,k3_final_26,A2,vhodnost,1,4
+exp3250,k3_final_26,A2,kvalita,1,Plná
+exp3250,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3250,k3_final_26,A2,vhodnost,1,4
+exp3251,k3_final_26,A2,kvalita,1,Plná
+exp3251,k3_final_26,A2,dopad,1,Neúspěch
+exp3251,k3_final_26,A2,vhodnost,1,3
+exp3252,k3_final_26,A2,kvalita,1,Plochá
+exp3253,k3_final_26,A2,kvalita,1,Plná
+exp3253,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3253,k3_final_26,A2,vhodnost,1,4
+exp3254,k3_final_26,A2,kvalita,1,Plochá
+exp3255,k3_final_26,A2,kvalita,1,Plochá
+exp3256,k3_final_26,A2,kvalita,1,Plná
+exp3256,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3256,k3_final_26,A2,vhodnost,1,3
+exp3257,k3_final_26,A2,kvalita,1,Plná
+exp3257,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3257,k3_final_26,A2,vhodnost,1,3
+exp3258,k3_final_26,A2,kvalita,1,Plná
+exp3258,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3258,k3_final_26,A2,vhodnost,1,4
+exp3259,k3_final_26,A2,kvalita,1,Plná
+exp3259,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3259,k3_final_26,A2,vhodnost,1,2
+exp3260,k3_final_26,A2,kvalita,1,Plná
+exp3260,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3260,k3_final_26,A2,vhodnost,1,3
+exp3261,k3_final_26,A2,kvalita,1,Plná
+exp3261,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3261,k3_final_26,A2,vhodnost,1,3
+exp3262,k3_final_26,A2,kvalita,1,Plná
+exp3262,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3262,k3_final_26,A2,vhodnost,1,3
+exp3263,k3_final_26,A2,kvalita,1,Plná
+exp3263,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3263,k3_final_26,A2,vhodnost,1,4
+exp3264,k3_final_26,A2,kvalita,1,Plná
+exp3264,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3264,k3_final_26,A2,vhodnost,1,4
+exp3265,k3_final_26,A2,kvalita,1,Plná
+exp3265,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3265,k3_final_26,A2,vhodnost,1,2
+exp3266,k3_final_26,A2,kvalita,1,Plná
+exp3266,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3266,k3_final_26,A2,vhodnost,1,4
+exp3267,k3_final_26,A2,kvalita,1,Plná
+exp3267,k3_final_26,A2,dopad,1,Neúspěch
+exp3267,k3_final_26,A2,vhodnost,1,4
+exp3268,k3_final_26,A2,kvalita,1,Plná
+exp3268,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3268,k3_final_26,A2,vhodnost,1,3
+exp3269,k3_final_26,A2,kvalita,1,Plná
+exp3269,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3269,k3_final_26,A2,vhodnost,1,4
+exp3270,k3_final_26,A2,kvalita,1,Plná
+exp3270,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3270,k3_final_26,A2,vhodnost,1,4
+exp3271,k3_final_26,A2,kvalita,1,Plná
+exp3271,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3271,k3_final_26,A2,vhodnost,1,3
+exp3272,k3_final_26,A2,kvalita,1,Plná
+exp3272,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3272,k3_final_26,A2,vhodnost,1,4
+exp3273,k3_final_26,A2,kvalita,1,Plná
+exp3273,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3273,k3_final_26,A2,vhodnost,1,3
+exp3274,k3_final_26,A2,kvalita,1,Plná
+exp3274,k3_final_26,A2,dopad,1,Neúspěch
+exp3274,k3_final_26,A2,vhodnost,1,4
+exp3275,k3_final_26,A2,kvalita,1,Plná
+exp3275,k3_final_26,A2,dopad,1,Neúspěch
+exp3275,k3_final_26,A2,vhodnost,1,2
+exp3276,k3_final_26,A2,kvalita,1,Plná
+exp3276,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3276,k3_final_26,A2,vhodnost,1,3
+exp3277,k3_final_26,A2,kvalita,1,Plná
+exp3277,k3_final_26,A2,dopad,1,Neúspěch
+exp3277,k3_final_26,A2,vhodnost,1,2
+exp3278,k3_final_26,A2,kvalita,1,Plná
+exp3278,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3278,k3_final_26,A2,vhodnost,1,4
+exp3279,k3_final_26,A2,kvalita,1,Plná
+exp3279,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3279,k3_final_26,A2,vhodnost,1,4
+exp3280,k3_final_26,A2,kvalita,1,Plná
+exp3280,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3280,k3_final_26,A2,vhodnost,1,4
+exp3281,k3_final_26,A2,kvalita,1,Plná
+exp3281,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3281,k3_final_26,A2,vhodnost,1,4
+exp3282,k3_final_26,A2,kvalita,1,Plná
+exp3282,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3282,k3_final_26,A2,vhodnost,1,4
+exp3283,k3_final_26,A2,kvalita,1,Plná
+exp3283,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3283,k3_final_26,A2,vhodnost,1,4
+exp3284,k3_final_26,A2,kvalita,1,Plná
+exp3284,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3284,k3_final_26,A2,vhodnost,1,4
+exp3285,k3_final_26,A2,kvalita,1,Plná
+exp3285,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3285,k3_final_26,A2,vhodnost,1,4
+exp3286,k3_final_26,A2,kvalita,1,Plná
+exp3286,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3286,k3_final_26,A2,vhodnost,1,4
+exp3287,k3_final_26,A2,kvalita,1,Plná
+exp3287,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3287,k3_final_26,A2,vhodnost,1,4
+exp3288,k3_final_26,A2,kvalita,1,Plná
+exp3288,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3288,k3_final_26,A2,vhodnost,1,4
+exp3289,k3_final_26,A2,kvalita,1,Plná
+exp3289,k3_final_26,A2,dopad,1,Neúspěch
+exp3289,k3_final_26,A2,vhodnost,1,2
+exp3290,k3_final_26,A2,kvalita,1,Plná
+exp3290,k3_final_26,A2,dopad,1,Neúspěch
+exp3290,k3_final_26,A2,vhodnost,1,2
+exp3291,k3_final_26,A2,kvalita,1,Plná
+exp3291,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3291,k3_final_26,A2,vhodnost,1,4
+exp3292,k3_final_26,A2,kvalita,1,Plná
+exp3292,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3292,k3_final_26,A2,vhodnost,1,3
+exp3293,k3_final_26,A2,kvalita,1,Plná
+exp3293,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3293,k3_final_26,A2,vhodnost,1,3
+exp3294,k3_final_26,A2,kvalita,1,Plná
+exp3294,k3_final_26,A2,dopad,1,Neúspěch
+exp3294,k3_final_26,A2,vhodnost,1,3
+exp3295,k3_final_26,A2,kvalita,1,Plná
+exp3295,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3295,k3_final_26,A2,vhodnost,1,3
+exp3296,k3_final_26,A2,kvalita,1,Plná
+exp3296,k3_final_26,A2,dopad,1,Neúspěch
+exp3296,k3_final_26,A2,vhodnost,1,4
+exp3297,k3_final_26,A2,kvalita,1,Plná
+exp3297,k3_final_26,A2,dopad,1,Neúspěch
+exp3297,k3_final_26,A2,vhodnost,1,4
+exp3298,k3_final_26,A2,kvalita,1,Plná
+exp3298,k3_final_26,A2,dopad,1,Neúspěch
+exp3298,k3_final_26,A2,vhodnost,1,4
+exp3299,k3_final_26,A2,kvalita,1,Plná
+exp3299,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3299,k3_final_26,A2,vhodnost,1,4
+exp3300,k3_final_26,A2,kvalita,1,Plná
+exp3300,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3300,k3_final_26,A2,vhodnost,1,2
+exp3301,k3_final_26,A2,kvalita,1,Plná
+exp3301,k3_final_26,A2,dopad,1,Neúspěch
+exp3301,k3_final_26,A2,vhodnost,1,2
+exp3302,k3_final_26,A2,kvalita,1,Plochá
+exp3303,k3_final_26,A2,kvalita,1,Plná
+exp3303,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3303,k3_final_26,A2,vhodnost,1,4
+exp3304,k3_final_26,A2,kvalita,1,Plná
+exp3304,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3304,k3_final_26,A2,vhodnost,1,4
+exp3305,k3_final_26,A2,kvalita,1,Plná
+exp3305,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3305,k3_final_26,A2,vhodnost,1,3
+exp3306,k3_final_26,A2,kvalita,1,Plná
+exp3306,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3306,k3_final_26,A2,vhodnost,1,4
+exp3307,k3_final_26,A2,kvalita,1,Plná
+exp3307,k3_final_26,A2,dopad,1,Neúspěch
+exp3307,k3_final_26,A2,vhodnost,1,3
+exp3308,k3_final_26,A2,kvalita,1,Plná
+exp3308,k3_final_26,A2,dopad,1,Neúspěch
+exp3308,k3_final_26,A2,vhodnost,1,3
+exp3309,k3_final_26,A2,kvalita,1,Plná
+exp3309,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3309,k3_final_26,A2,vhodnost,1,3
+exp3310,k3_final_26,A2,kvalita,1,Plná
+exp3310,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3310,k3_final_26,A2,vhodnost,1,3
+exp3311,k3_final_26,A2,kvalita,1,Plná
+exp3311,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3311,k3_final_26,A2,vhodnost,1,4
+exp3312,k3_final_26,A2,kvalita,1,Plná
+exp3312,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3312,k3_final_26,A2,vhodnost,1,4
+exp3313,k3_final_26,A2,kvalita,1,Plná
+exp3313,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3313,k3_final_26,A2,vhodnost,1,4
+exp3314,k3_final_26,A2,kvalita,1,Plná
+exp3314,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3314,k3_final_26,A2,vhodnost,1,4
+exp3315,k3_final_26,A2,kvalita,1,Plná
+exp3315,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3315,k3_final_26,A2,vhodnost,1,4
+exp3316,k3_final_26,A2,kvalita,1,Plná
+exp3316,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3316,k3_final_26,A2,vhodnost,1,4
+exp3317,k3_final_26,A2,kvalita,1,Plná
+exp3317,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3317,k3_final_26,A2,vhodnost,1,2
+exp3318,k3_final_26,A2,kvalita,1,Plná
+exp3318,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3318,k3_final_26,A2,vhodnost,1,4
+exp3319,k3_final_26,A2,kvalita,1,Plná
+exp3319,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3319,k3_final_26,A2,vhodnost,1,4
+exp3320,k3_final_26,A2,kvalita,1,Plochá
+exp3321,k3_final_26,A2,kvalita,1,Plochá
+exp3322,k3_final_26,A2,kvalita,1,Plná
+exp3322,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3322,k3_final_26,A2,vhodnost,1,2
+exp3323,k3_final_26,A2,kvalita,1,Plná
+exp3323,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3323,k3_final_26,A2,vhodnost,1,3
+exp3324,k3_final_26,A2,kvalita,1,Plná
+exp3324,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3324,k3_final_26,A2,vhodnost,1,3
+exp3325,k3_final_26,A2,kvalita,1,Plná
+exp3325,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3325,k3_final_26,A2,vhodnost,1,3
+exp3326,k3_final_26,A2,kvalita,1,Plná
+exp3326,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3326,k3_final_26,A2,vhodnost,1,4
+exp3327,k3_final_26,A2,kvalita,1,Plná
+exp3327,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3327,k3_final_26,A2,vhodnost,1,4
+exp3328,k3_final_26,A2,kvalita,1,Plná
+exp3328,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3328,k3_final_26,A2,vhodnost,1,3
+exp3329,k3_final_26,A2,kvalita,1,Plná
+exp3329,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3329,k3_final_26,A2,vhodnost,1,3
+exp3330,k3_final_26,A2,kvalita,1,Plná
+exp3330,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3330,k3_final_26,A2,vhodnost,1,4
+exp3331,k3_final_26,A2,kvalita,1,Plná
+exp3331,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3331,k3_final_26,A2,vhodnost,1,3
+exp3332,k3_final_26,A2,kvalita,1,Plná
+exp3332,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3332,k3_final_26,A2,vhodnost,1,4
+exp3333,k3_final_26,A2,kvalita,1,Plná
+exp3333,k3_final_26,A2,dopad,1,Neúspěch
+exp3333,k3_final_26,A2,vhodnost,1,3
+exp3334,k3_final_26,A2,kvalita,1,Plná
+exp3334,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3334,k3_final_26,A2,vhodnost,1,4
+exp3335,k3_final_26,A2,kvalita,1,Plná
+exp3335,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3335,k3_final_26,A2,vhodnost,1,4
+exp3336,k3_final_26,A2,kvalita,1,Plná
+exp3336,k3_final_26,A2,dopad,1,Neúspěch
+exp3336,k3_final_26,A2,vhodnost,1,2
+exp3337,k3_final_26,A2,kvalita,1,Plná
+exp3337,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3337,k3_final_26,A2,vhodnost,1,4
+exp3338,k3_final_26,A2,kvalita,1,Plná
+exp3338,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3338,k3_final_26,A2,vhodnost,1,4
+exp3339,k3_final_26,A2,kvalita,1,Plná
+exp3339,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3339,k3_final_26,A2,vhodnost,1,3
+exp3340,k3_final_26,A2,kvalita,1,Plná
+exp3340,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3340,k3_final_26,A2,vhodnost,1,3
+exp3341,k3_final_26,A2,kvalita,1,Plná
+exp3341,k3_final_26,A2,dopad,1,Neúspěch
+exp3341,k3_final_26,A2,vhodnost,1,3
+exp3342,k3_final_26,A2,kvalita,1,Plná
+exp3342,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3342,k3_final_26,A2,vhodnost,1,3
+exp3343,k3_final_26,A2,kvalita,1,Plná
+exp3343,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3343,k3_final_26,A2,vhodnost,1,4
+exp3344,k3_final_26,A2,kvalita,1,Plná
+exp3344,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3344,k3_final_26,A2,vhodnost,1,4
+exp3345,k3_final_26,A2,kvalita,1,Plná
+exp3345,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3345,k3_final_26,A2,vhodnost,1,3
+exp3346,k3_final_26,A2,kvalita,1,Plná
+exp3346,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3346,k3_final_26,A2,vhodnost,1,4
+exp3347,k3_final_26,A2,kvalita,1,Plná
+exp3347,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3347,k3_final_26,A2,vhodnost,1,4
+exp3348,k3_final_26,A2,kvalita,1,Plná
+exp3348,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3348,k3_final_26,A2,vhodnost,1,4
+exp3349,k3_final_26,A2,kvalita,1,Plná
+exp3349,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3349,k3_final_26,A2,vhodnost,1,4
+exp3350,k3_final_26,A2,kvalita,1,Plná
+exp3350,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3350,k3_final_26,A2,vhodnost,1,2
+exp3351,k3_final_26,A2,kvalita,1,Plná
+exp3351,k3_final_26,A2,dopad,1,Neúspěch
+exp3351,k3_final_26,A2,vhodnost,1,2
+exp3352,k3_final_26,A2,kvalita,1,Plná
+exp3352,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3352,k3_final_26,A2,vhodnost,1,3
+exp3353,k3_final_26,A2,kvalita,1,Plná
+exp3353,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3353,k3_final_26,A2,vhodnost,1,3
+exp3354,k3_final_26,A2,kvalita,1,Plná
+exp3354,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3354,k3_final_26,A2,vhodnost,1,4
+exp3355,k3_final_26,A2,kvalita,1,Plná
+exp3355,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3355,k3_final_26,A2,vhodnost,1,3
+exp3356,k3_final_26,A2,kvalita,1,Plná
+exp3356,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3356,k3_final_26,A2,vhodnost,1,4
+exp3357,k3_final_26,A2,kvalita,1,Plná
+exp3357,k3_final_26,A2,dopad,1,Neúspěch
+exp3357,k3_final_26,A2,vhodnost,1,2
+exp3358,k3_final_26,A2,kvalita,1,Plná
+exp3358,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3358,k3_final_26,A2,vhodnost,1,4
+exp3359,k3_final_26,A2,kvalita,1,Plná
+exp3359,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3359,k3_final_26,A2,vhodnost,1,4
+exp3360,k3_final_26,A2,kvalita,1,Plná
+exp3360,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3360,k3_final_26,A2,vhodnost,1,3
+exp3361,k3_final_26,A2,kvalita,1,Plná
+exp3361,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3361,k3_final_26,A2,vhodnost,1,4
+exp3362,k3_final_26,A2,kvalita,1,Plná
+exp3362,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3362,k3_final_26,A2,vhodnost,1,3
+exp3363,k3_final_26,A2,kvalita,1,Plná
+exp3363,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3363,k3_final_26,A2,vhodnost,1,3
+exp3364,k3_final_26,A2,kvalita,1,Plná
+exp3364,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3364,k3_final_26,A2,vhodnost,1,4
+exp3365,k3_final_26,A2,kvalita,1,Plná
+exp3365,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3365,k3_final_26,A2,vhodnost,1,4
+exp3366,k3_final_26,A2,kvalita,1,Plná
+exp3366,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp3366,k3_final_26,A2,vhodnost,1,2
+exp3367,k3_final_26,A2,kvalita,1,Plná
+exp3367,k3_final_26,A2,dopad,1,Dlouhodobý úspěch
+exp3367,k3_final_26,A2,vhodnost,1,4
+exp4349,k3_final_26,A2,kvalita,1,Plochá
+exp4350,k3_final_26,A2,kvalita,1,Plná
+exp4350,k3_final_26,A2,dopad,1,Krátkodobý úspěch
+exp4350,k3_final_26,A2,vhodnost,1,1

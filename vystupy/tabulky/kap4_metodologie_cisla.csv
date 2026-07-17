@@ -1,0 +1,8 @@
+metric,value,skript,data_sha,seed,datum
+multiplicita_2x,354,analyzy/scripts/15_kap4_cisla.py,8489729556881c5a0485a777b22b0c1a293ce13f6fa1184bd27e26293f2e6701,,2026-07-16
+multiplicita_3x,35,analyzy/scripts/15_kap4_cisla.py,8489729556881c5a0485a777b22b0c1a293ce13f6fa1184bd27e26293f2e6701,,2026-07-16
+multiplicita_4x,1,analyzy/scripts/15_kap4_cisla.py,8489729556881c5a0485a777b22b0c1a293ce13f6fa1184bd27e26293f2e6701,,2026-07-16
+prekryv_ge2_udalosti,390,analyzy/scripts/15_kap4_cisla.py,8489729556881c5a0485a777b22b0c1a293ce13f6fa1184bd27e26293f2e6701,,2026-07-16
+prekryv_ge1_udalost,2415,analyzy/scripts/15_kap4_cisla.py,8489729556881c5a0485a777b22b0c1a293ce13f6fa1184bd27e26293f2e6701,,2026-07-16
+prekryv_ge2_kampane,300,analyzy/scripts/15_kap4_cisla.py,8489729556881c5a0485a777b22b0c1a293ce13f6fa1184bd27e26293f2e6701,,2026-07-16
+prekryv_ge3_kampane,0,analyzy/scripts/15_kap4_cisla.py,8489729556881c5a0485a777b22b0c1a293ce13f6fa1184bd27e26293f2e6701,,2026-07-16
