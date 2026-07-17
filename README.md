@@ -12,7 +12,9 @@ Obsah: analytické skripty a notebooky (EN), manifesty čísel (jediný zdroj
 **Jak si ověřit čísla knihy** (i bez programování): viz
 [JAK-OVERIT-CISLA.md](JAK-OVERIT-CISLA.md). Analýzu Studie 3 lze spustit
 přímo v prohlížeči přes Binder (odznak níže; konfigurace v `.binder/`);
-data této studie jsou veřejná v balíčku OSF. Notebooky Studií 1 a 2
+její data jsou uložena v balíčku OSF k souvisejícímu článku (odkaz bude
+zveřejněn s publikací článku, do té doby na vyžádání) a do Binderu se
+nahrávají ručně, protože nesou jména anotátorek. Notebooky Studií 1 a 2
 vyžadují neveřejné řezy korpusu; k nim slouží zmrazené HTML reporty
 ve `vystupy/reporty/`.
 
