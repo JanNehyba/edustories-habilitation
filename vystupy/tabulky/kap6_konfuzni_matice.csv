@@ -1,0 +1,145 @@
+"clovek","model","podil","n_radku"
+"(Kázeňské) Tresty","(Kázeňské) Tresty",0.75,8
+"Dohoda","(Kázeňské) Tresty",0.111111111111111,9
+"Důsledky","(Kázeňské) Tresty",0,16
+"Fyzické zakročení","(Kázeňské) Tresty",0,7
+"Nerespektující komunikace","(Kázeňské) Tresty",0.0357142857142857,28
+"Podpora","(Kázeňské) Tresty",0,43
+"Práce s kolektivem","(Kázeňské) Tresty",0,16
+"Přemístění žáka","(Kázeňské) Tresty",0,10
+"Proaktivní řešení","(Kázeňské) Tresty",0,2
+"Rozhovor","(Kázeňské) Tresty",0,155
+"Spolupráce s odborníky","(Kázeňské) Tresty",0,22
+"Upozornění","(Kázeňské) Tresty",0,17
+"(Kázeňské) Tresty","Dohoda",0,8
+"Dohoda","Dohoda",0.555555555555556,9
+"Důsledky","Dohoda",0,16
+"Fyzické zakročení","Dohoda",0,7
+"Nerespektující komunikace","Dohoda",0,28
+"Podpora","Dohoda",0.0232558139534884,43
+"Práce s kolektivem","Dohoda",0,16
+"Přemístění žáka","Dohoda",0,10
+"Proaktivní řešení","Dohoda",0,2
+"Rozhovor","Dohoda",0,155
+"Spolupráce s odborníky","Dohoda",0.0454545454545455,22
+"Upozornění","Dohoda",0,17
+"(Kázeňské) Tresty","Důsledky",0.125,8
+"Dohoda","Důsledky",0.111111111111111,9
+"Důsledky","Důsledky",0.75,16
+"Fyzické zakročení","Důsledky",0.142857142857143,7
+"Nerespektující komunikace","Důsledky",0.0357142857142857,28
+"Podpora","Důsledky",0,43
+"Práce s kolektivem","Důsledky",0,16
+"Přemístění žáka","Důsledky",0,10
+"Proaktivní řešení","Důsledky",0,2
+"Rozhovor","Důsledky",0.0193548387096774,155
+"Spolupráce s odborníky","Důsledky",0,22
+"Upozornění","Důsledky",0,17
+"(Kázeňské) Tresty","Fyzické zakročení",0,8
+"Dohoda","Fyzické zakročení",0,9
+"Důsledky","Fyzické zakročení",0,16
+"Fyzické zakročení","Fyzické zakročení",0.714285714285714,7
+"Nerespektující komunikace","Fyzické zakročení",0,28
+"Podpora","Fyzické zakročení",0,43
+"Práce s kolektivem","Fyzické zakročení",0,16
+"Přemístění žáka","Fyzické zakročení",0,10
+"Proaktivní řešení","Fyzické zakročení",0,2
+"Rozhovor","Fyzické zakročení",0,155
+"Spolupráce s odborníky","Fyzické zakročení",0,22
+"Upozornění","Fyzické zakročení",0,17
+"(Kázeňské) Tresty","Nerespektující komunikace",0,8
+"Dohoda","Nerespektující komunikace",0,9
+"Důsledky","Nerespektující komunikace",0.125,16
+"Fyzické zakročení","Nerespektující komunikace",0,7
+"Nerespektující komunikace","Nerespektující komunikace",0.642857142857143,28
+"Podpora","Nerespektující komunikace",0,43
+"Práce s kolektivem","Nerespektující komunikace",0,16
+"Přemístění žáka","Nerespektující komunikace",0,10
+"Proaktivní řešení","Nerespektující komunikace",0,2
+"Rozhovor","Nerespektující komunikace",0.00645161290322581,155
+"Spolupráce s odborníky","Nerespektující komunikace",0,22
+"Upozornění","Nerespektující komunikace",0,17
+"(Kázeňské) Tresty","Podpora",0.125,8
+"Dohoda","Podpora",0,9
+"Důsledky","Podpora",0,16
+"Fyzické zakročení","Podpora",0,7
+"Nerespektující komunikace","Podpora",0,28
+"Podpora","Podpora",0.558139534883721,43
+"Práce s kolektivem","Podpora",0,16
+"Přemístění žáka","Podpora",0,10
+"Proaktivní řešení","Podpora",0,2
+"Rozhovor","Podpora",0.0387096774193548,155
+"Spolupráce s odborníky","Podpora",0.0454545454545455,22
+"Upozornění","Podpora",0,17
+"(Kázeňské) Tresty","Práce s kolektivem",0,8
+"Dohoda","Práce s kolektivem",0.111111111111111,9
+"Důsledky","Práce s kolektivem",0,16
+"Fyzické zakročení","Práce s kolektivem",0,7
+"Nerespektující komunikace","Práce s kolektivem",0,28
+"Podpora","Práce s kolektivem",0,43
+"Práce s kolektivem","Práce s kolektivem",0.6875,16
+"Přemístění žáka","Práce s kolektivem",0,10
+"Proaktivní řešení","Práce s kolektivem",0,2
+"Rozhovor","Práce s kolektivem",0.032258064516129,155
+"Spolupráce s odborníky","Práce s kolektivem",0,22
+"Upozornění","Práce s kolektivem",0,17
+"(Kázeňské) Tresty","Přemístění žáka",0,8
+"Dohoda","Přemístění žáka",0,9
+"Důsledky","Přemístění žáka",0.0625,16
+"Fyzické zakročení","Přemístění žáka",0,7
+"Nerespektující komunikace","Přemístění žáka",0,28
+"Podpora","Přemístění žáka",0.0697674418604651,43
+"Práce s kolektivem","Přemístění žáka",0,16
+"Přemístění žáka","Přemístění žáka",1,10
+"Proaktivní řešení","Přemístění žáka",0,2
+"Rozhovor","Přemístění žáka",0.0193548387096774,155
+"Spolupráce s odborníky","Přemístění žáka",0.136363636363636,22
+"Upozornění","Přemístění žáka",0.0588235294117647,17
+"(Kázeňské) Tresty","Proaktivní řešení",0,8
+"Dohoda","Proaktivní řešení",0,9
+"Důsledky","Proaktivní řešení",0,16
+"Fyzické zakročení","Proaktivní řešení",0,7
+"Nerespektující komunikace","Proaktivní řešení",0,28
+"Podpora","Proaktivní řešení",0.27906976744186,43
+"Práce s kolektivem","Proaktivní řešení",0.125,16
+"Přemístění žáka","Proaktivní řešení",0,10
+"Proaktivní řešení","Proaktivní řešení",1,2
+"Rozhovor","Proaktivní řešení",0,155
+"Spolupráce s odborníky","Proaktivní řešení",0,22
+"Upozornění","Proaktivní řešení",0.0588235294117647,17
+"(Kázeňské) Tresty","Rozhovor",0,8
+"Dohoda","Rozhovor",0,9
+"Důsledky","Rozhovor",0.0625,16
+"Fyzické zakročení","Rozhovor",0,7
+"Nerespektující komunikace","Rozhovor",0.214285714285714,28
+"Podpora","Rozhovor",0.0232558139534884,43
+"Práce s kolektivem","Rozhovor",0.1875,16
+"Přemístění žáka","Rozhovor",0,10
+"Proaktivní řešení","Rozhovor",0,2
+"Rozhovor","Rozhovor",0.774193548387097,155
+"Spolupráce s odborníky","Rozhovor",0.0454545454545455,22
+"Upozornění","Rozhovor",0.117647058823529,17
+"(Kázeňské) Tresty","Spolupráce s odborníky",0,8
+"Dohoda","Spolupráce s odborníky",0,9
+"Důsledky","Spolupráce s odborníky",0,16
+"Fyzické zakročení","Spolupráce s odborníky",0,7
+"Nerespektující komunikace","Spolupráce s odborníky",0,28
+"Podpora","Spolupráce s odborníky",0.0232558139534884,43
+"Práce s kolektivem","Spolupráce s odborníky",0,16
+"Přemístění žáka","Spolupráce s odborníky",0,10
+"Proaktivní řešení","Spolupráce s odborníky",0,2
+"Rozhovor","Spolupráce s odborníky",0.0516129032258065,155
+"Spolupráce s odborníky","Spolupráce s odborníky",0.681818181818182,22
+"Upozornění","Spolupráce s odborníky",0,17
+"(Kázeňské) Tresty","Upozornění",0,8
+"Dohoda","Upozornění",0.111111111111111,9
+"Důsledky","Upozornění",0,16
+"Fyzické zakročení","Upozornění",0.142857142857143,7
+"Nerespektující komunikace","Upozornění",0.0714285714285714,28
+"Podpora","Upozornění",0.0232558139534884,43
+"Práce s kolektivem","Upozornění",0,16
+"Přemístění žáka","Upozornění",0,10
+"Proaktivní řešení","Upozornění",0,2
+"Rozhovor","Upozornění",0.0580645161290323,155
+"Spolupráce s odborníky","Upozornění",0.0454545454545455,22
+"Upozornění","Upozornění",0.764705882352941,17

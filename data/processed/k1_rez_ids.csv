@@ -1,0 +1,1360 @@
+case_uid,mat_id,problems_annotated,solutions_annotated,implications_annotated
+exp562,579,"Fyzická agrese, Verbální agrese, Porušování třídních/školních pravidel","Rozhovor, Důsledky",Částěčný úspěch
+exp1145,1147,"Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku ","Upozornění, Důsledky, Podpora",Neúspěch
+exp390,383,"Verbální narušování výuky, Neverbální narušování výuky",Podpora,Dlouhodobý úspěch
+exp584,584,Porušování třídních/školních pravidel,"Rozhovor, Důsledky",Dlouhodobý úspěch
+mat1174,1174,Fyzická agrese,"Rozhovor, Přemístění žáka ",Částěčný úspěch
+mat176,176,Diagnóza, ,
+mat1085,1085,Šikana,Rozhovor,Částěčný úspěch
+exp700,706,Porušování třídních/školních pravidel,Přemístění žáka ,Dlouhodobý úspěch
+mat1103,1103,"Sebedestruktivní chování, Neplnění školních povinností/nepřipravenost na výuku ","Rozhovor, Spolupráce s odborníky, Podpora",Dlouhodobý úspěch
+mat1437,1437,Verbální agrese,"Rozhovor, Podpora",Neúspěch
+exp1237,1240,Verbální agrese,Rozhovor,Dlouhodobý úspěch
+exp312,310,"Neverbální narušování výuky, Porušování třídních/školních pravidel","Rozhovor, Důsledky",Neúspěch
+exp863,869,"Nevěnování se výuce/Nepozornost při výuce, Neverbální narušování výuky, Verbální agrese","Rozhovor, Dohoda",Neúspěch
+exp785,781,"Šikana, Porušování třídních/školních pravidel","Práce s kolektivem, Důsledky, Podpora",Neúspěch
+mat1332,1332,Fyzická agrese,Dohoda,Neúspěch
+mat922,922,"Fyzická agrese, Verbální agrese","Rozhovor, Důsledky",Neúspěch
+exp469,472,"Verbální narušování výuky, Problémy s docházkou, Neplnění školních povinností/nepřipravenost na výuku , Emoční výbuchy, Diagnóza","Rozhovor, Spolupráce s odborníky, Podpora, Nerespektující komunikace",Neúspěch
+mat985,985,"Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku , Verbální narušování výuky, Neverbální narušování výuky","Upozornění, Rozhovor, Spolupráce s odborníky, Podpora",Částěčný úspěch
+mat498,498,"Verbální agrese, Verbální narušování výuky","Nerespektující komunikace, Podpora",Dlouhodobý úspěch
+exp670,661,"Verbální agrese, Fyzická agrese","Rozhovor, Spolupráce s odborníky",Neúspěch
+exp321,323,"Emoční výbuchy, Nevěnování se výuce/Nepozornost při výuce, Nezvládání výuky","Rozhovor, Podpora",Dlouhodobý úspěch
+exp426,426,"Neverbální narušování výuky, Verbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce, Fyzická agrese, Verbální agrese","Rozhovor, Důsledky, Spolupráce s odborníky",Neúspěch
+mat1226,1226,"Verbální narušování výuky, Diagnóza","Rozhovor, Dohoda",
+exp941,939,"Emoční výbuchy, Fyzická agrese","Rozhovor, Podpora",Dlouhodobý úspěch
+exp1498,1506,"Fyzická agrese, Verbální agrese, Porušování třídních/školních pravidel, Emoční výbuchy, Lhaní a podvody","Rozhovor, Spolupráce s odborníky, Práce s kolektivem",Částěčný úspěch
+exp1480,1478,"Verbální agrese, Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky, Neverbální narušování výuky, Diagnóza","Rozhovor, Podpora",Dlouhodobý úspěch
+mat901,901,"Neplnění školních povinností/nepřipravenost na výuku , Verbální agrese","Rozhovor, Podpora, Spolupráce s odborníky",Dlouhodobý úspěch
+mat1410,1410,"Šikana, Problémy s docházkou","Práce s kolektivem, Rozhovor",Neúspěch
+exp1230,1223,Verbální narušování výuky,"Upozornění, Přemístění žáka ",Dlouhodobý úspěch
+exp146,142,"Neverbální narušování výuky, Verbální narušování výuky, Neplnění školních povinností/nepřipravenost na výuku , Verbální agrese, Nevěnování se výuce/Nepozornost při výuce, Porušování třídních/školních pravidel","Přemístění žáka , Důsledky, Nerespektující komunikace",Neúspěch
+mat372,372,"Emoční výbuchy, Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku ","Rozhovor, Podpora",Částěčný úspěch
+exp457,463,Nezvládání výuky,"Rozhovor, Podpora, Přemístění žáka ","Krátkodobý úspěch, Částěčný úspěch"
+exp316,311,"Sebedestruktivní chování, Emoční výbuchy","Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+mat719,719,"Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky",Rozhovor,Neúspěch
+exp1148,1146,Porušování třídních/školních pravidel,"Rozhovor, Spolupráce s odborníky, Přemístění žáka ",Dlouhodobý úspěch
+exp1280,1281,Neverbální narušování výuky,Podpora,Dlouhodobý úspěch
+mat1176,1176,"Verbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce",Upozornění,Částěčný úspěch
+mat1382,1382,Problémy s docházkou,"Rozhovor, Důsledky",Dlouhodobý úspěch
+exp69,68,"Porušování třídních/školních pravidel, Problémy s docházkou","Rozhovor, Spolupráce s odborníky, Důsledky",Dlouhodobý úspěch
+exp1104,1106,"Verbální agrese, Neplnění školních povinností/nepřipravenost na výuku , Neverbální narušování výuky",,Neúspěch
+exp419,427,"Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku ","Přemístění žáka , Rozhovor, Podpora",Dlouhodobý úspěch
+mat1049,1049,Diagnóza,,
+exp283,272,"Fyzická agrese, Verbální agrese","Rozhovor, Důsledky",Dlouhodobý úspěch
+exp331,317,"Diagnóza, Emoční výbuchy, Fyzická agrese","Rozhovor, Podpora",Dlouhodobý úspěch
+exp46,52,"Porušování třídních/školních pravidel, Šikana","Rozhovor, Důsledky",Neúspěch
+exp626,622,"Porušování třídních/školních pravidel, Neplnění školních povinností/nepřipravenost na výuku , Verbální narušování výuky, Šikana","Upozornění, Důsledky, Rozhovor, Přemístění žáka ",Neúspěch
+exp421,428,"Verbální agrese, Verbální narušování výuky, Neverbální narušování výuky, Fyzická agrese","Upozornění, Přemístění žáka , Nerespektující komunikace, Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+exp233,241,"Šikana, Diagnóza","Rozhovor, Spolupráce s odborníky, Práce s kolektivem",Dlouhodobý úspěch
+exp516,527,Sebedestruktivní chování,"Rozhovor, Spolupráce s odborníky, Podpora, Práce s kolektivem",Dlouhodobý úspěch
+mat1277,1277,Emoční výbuchy,"Přemístění žáka , Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+exp675,680,"Verbální agrese, Fyzická agrese, Neverbální narušování výuky, Verbální narušování výuky","Upozornění, Rozhovor, Spolupráce s odborníky, Práce s kolektivem, Podpora",Dlouhodobý úspěch
+exp678,673,"Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky, Neverbální narušování výuky, Verbální agrese","Nerespektující komunikace, (Kázeňské) Tresty",Neúspěch
+mat904,904,Porušování třídních/školních pravidel,"Upozornění, Důsledky, Přemístění žáka ",Dlouhodobý úspěch
+exp651,647,"Fyzická agrese, Verbální agrese, Porušování třídních/školních pravidel, Šikana","Spolupráce s odborníky, Práce s kolektivem, Rozhovor",Dlouhodobý úspěch
+exp831,832,"Porušování třídních/školních pravidel, Nevěnování se výuce/Nepozornost při výuce, Lhaní a podvody, Fyzická agrese, Verbální agrese, Šikana, Diagnóza","Rozhovor, Spolupráce s odborníky, Důsledky, Přemístění žáka ",Částěčný úspěch
+exp1277,1268,"Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku , Diagnóza, Problémy s docházkou","Rozhovor, Spolupráce s odborníky, Podpora, Přemístění žáka ",Neúspěch
+exp561,563,"Emoční výbuchy, Nevěnování se výuce/Nepozornost při výuce",Rozhovor,Neúspěch
+exp695,687,"Problémy s docházkou, Neplnění školních povinností/nepřipravenost na výuku , Diagnóza","Rozhovor, Podpora, Spolupráce s odborníky",Neúspěch
+mat958,958,Sebedestruktivní chování,"Rozhovor, Spolupráce s odborníky, Podpora",Dlouhodobý úspěch
+mat190,190,"Diagnóza, Emoční výbuchy, Lhaní a podvody","Podpora, Rozhovor",Neúspěch
+exp973,976,"Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku , Problémy s docházkou","Podpora, Rozhovor",Částěčný úspěch
+exp694,700,"Fyzická agrese, Verbální agrese, Porušování třídních/školních pravidel","Rozhovor, Důsledky",Neúspěch
+exp508,511,"Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku , Diagnóza","Rozhovor, Podpora",Částěčný úspěch
+mat1083,1083,"Porušování třídních/školních pravidel, Fyzická agrese",Rozhovor,Neúspěch
+exp475,475,Porušování třídních/školních pravidel,Upozornění,Dlouhodobý úspěch
+exp855,857,"Verbální agrese, Neverbální narušování výuky, Verbální narušování výuky","(Kázeňské) Tresty, Rozhovor, Důsledky, Podpora, Nerespektující komunikace",Neúspěch
+exp744,748,"Porušování třídních/školních pravidel, Fyzická agrese","Rozhovor, Důsledky",Neúspěch
+exp249,253,"Fyzická agrese, Verbální agrese","Upozornění, Přemístění žáka , Rozhovor, Spolupráce s odborníky, Nerespektující komunikace",Neúspěch
+exp14,22,"Porušování třídních/školních pravidel, Lhaní a podvody, Emoční výbuchy, Neplnění školních povinností/nepřipravenost na výuku ","Spolupráce s odborníky, Rozhovor, Nerespektující komunikace",Částěčný úspěch
+mat1338,1338,"Diagnóza, Fyzická agrese, Sebedestruktivní chování","Rozhovor, Podpora",Dlouhodobý úspěch
+exp452,460,"Diagnóza, Nezvládání výuky, Porušování třídních/školních pravidel","Rozhovor, Práce s kolektivem",Neúspěch
+exp1169,1185,"Verbální agrese, Verbální narušování výuky","Upozornění, (Kázeňské) Tresty, Nerespektující komunikace",Neúspěch
+exp956,956,"Verbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce","Upozornění, Nerespektující komunikace",Částěčný úspěch
+exp1222,1216,Problémy s docházkou,"Rozhovor, Spolupráce s odborníky, Podpora",Dlouhodobý úspěch
+exp385,386,"Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky, Fyzická agrese, Verbální agrese, Porušování třídních/školních pravidel","Nerespektující komunikace, Důsledky, Rozhovor",Krátkodobý úspěch
+exp803,806,"Neplnění školních povinností/nepřipravenost na výuku , Problémy s docházkou","Rozhovor, Nerespektující komunikace, Podpora, Spolupráce s odborníky",Dlouhodobý úspěch
+exp1436,1438,Porušování třídních/školních pravidel,"Spolupráce s odborníky, Důsledky",Dlouhodobý úspěch
+exp340,344,Problémy s docházkou,"Rozhovor, Spolupráce s odborníky, Nerespektující komunikace",Neúspěch
+exp771,770,"Problémy s docházkou, Neplnění školních povinností/nepřipravenost na výuku ","Rozhovor, Podpora","Dlouhodobý úspěch, Částěčný úspěch"
+mat1333,1333,"Neplnění školních povinností/nepřipravenost na výuku , Fyzická agrese","Rozhovor, Spolupráce s odborníky, Přemístění žáka ",Neúspěch
+exp132,131,"Fyzická agrese, Diagnóza, Verbální agrese","Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+exp871,872,Diagnóza,,Dlouhodobý úspěch
+exp1118,1124,Fyzická agrese,"Rozhovor, Práce s kolektivem",Dlouhodobý úspěch
+mat1397,1397,Porušování třídních/školních pravidel,"Rozhovor, Důsledky, Upozornění",Dlouhodobý úspěch
+exp90,88,"Porušování třídních/školních pravidel, Fyzická agrese, Verbální agrese","Fyzické zakročení, Rozhovor, Spolupráce s odborníky",Částěčný úspěch
+mat1483,1483,"Diagnóza, Emoční výbuchy, Nezvládání výuky",Podpora,Dlouhodobý úspěch
+mat331,331,"Neplnění školních povinností/nepřipravenost na výuku , Nevěnování se výuce/Nepozornost při výuce",Rozhovor,Neúspěch
+exp1246,1239,"Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku , Fyzická agrese, Diagnóza","Nerespektující komunikace, Rozhovor",
+mat467,467,Verbální agrese,"Nerespektující komunikace, Rozhovor",Krátkodobý úspěch
+exp116,122,"Fyzická agrese, Verbální agrese","Nerespektující komunikace, Podpora, Přemístění žáka , Rozhovor, Spolupráce s odborníky",
+mat1045,1045,Verbální agrese,"Práce s kolektivem, Podpora",
+exp1101,1096,"Verbální agrese, Neverbální narušování výuky, Verbální narušování výuky, Diagnóza, Porušování třídních/školních pravidel","Podpora, Nerespektující komunikace, Přemístění žáka ",Neúspěch
+exp1125,1131,Nezvládání výuky,"Podpora, Rozhovor, Přemístění žáka ",Neúspěch
+exp1292,1295,"Problémy s docházkou, Nezvládání výuky","Rozhovor, Spolupráce s odborníky, Podpora",Dlouhodobý úspěch
+exp860,861,"Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku , Verbální narušování výuky, Fyzická agrese","Podpora, Spolupráce s odborníky, Přemístění žáka , Důsledky",Neúspěch
+exp1458,1460,"Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky, Neverbální narušování výuky","Upozornění, Rozhovor, Podpora",Dlouhodobý úspěch
+exp1127,1127,"Fyzická agrese, Nezvládání výuky, Verbální narušování výuky, Neverbální narušování výuky","Podpora, Rozhovor","Částěčný úspěch, Neúspěch"
+mat616,616,Verbální agrese,Rozhovor,
+exp1155,1142,"Porušování třídních/školních pravidel, Lhaní a podvody","Rozhovor, Důsledky",Dlouhodobý úspěch
+exp70,71,"Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku ","Nerespektující komunikace, Důsledky, (Kázeňské) Tresty, Rozhovor, Dohoda",Částěčný úspěch
+mat304,304,"Fyzická agrese, Diagnóza, Šikana, Nevěnování se výuce/Nepozornost při výuce",Nerespektující komunikace,
+mat1246,1246,"Nezvládání výuky, Verbální agrese, Neplnění školních povinností/nepřipravenost na výuku ","Práce s kolektivem, Podpora",Dlouhodobý úspěch
+mat1388,1388,"Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky, Neverbální narušování výuky",Podpora,Krátkodobý úspěch
+exp666,671,"Problémy s docházkou, Porušování třídních/školních pravidel, Neplnění školních povinností/nepřipravenost na výuku ","Rozhovor, Důsledky, Dohoda, Spolupráce s odborníky",Částěčný úspěch
+mat979,979,Porušování třídních/školních pravidel,"Nerespektující komunikace, Rozhovor, Práce s kolektivem",
+mat818,818,"Verbální agrese, Porušování třídních/školních pravidel",Důsledky,Dlouhodobý úspěch
+exp1060,1059,"Fyzická agrese, Šikana, Neplnění školních povinností/nepřipravenost na výuku , Nezvládání výuky, Emoční výbuchy, Diagnóza","Nerespektující komunikace, Podpora, Spolupráce s odborníky",Částěčný úspěch
+exp127,125,"Problémy s docházkou, Neplnění školních povinností/nepřipravenost na výuku ","Rozhovor, Podpora",Dlouhodobý úspěch
+mat1489,1489,"Fyzická agrese, Verbální agrese","Upozornění, Fyzické zakročení, Přemístění žáka , Spolupráce s odborníky",Krátkodobý úspěch
+exp1072,1068,"Fyzická agrese, Verbální agrese","Rozhovor, Podpora",Neúspěch
+mat77,77,Porušování třídních/školních pravidel,Práce s kolektivem,Dlouhodobý úspěch
+exp368,375,Fyzická agrese,Důsledky,Dlouhodobý úspěch
+exp840,840,Verbální agrese,"Rozhovor, Práce s kolektivem",Dlouhodobý úspěch
+exp1456,1451,"Šikana, Problémy s docházkou","Práce s kolektivem, Spolupráce s odborníky, Přemístění žáka ",Neúspěch
+mat248,248,"Fyzická agrese, Verbální narušování výuky, Neverbální narušování výuky, Porušování třídních/školních pravidel","Nerespektující komunikace, Důsledky",Krátkodobý úspěch
+mat1102,1102,"Neverbální narušování výuky, Fyzická agrese",Upozornění,Dlouhodobý úspěch
+mat276,276,"Porušování třídních/školních pravidel, Emoční výbuchy","Podpora, Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+exp408,412,"Diagnóza, Verbální narušování výuky, Fyzická agrese, Neverbální narušování výuky, Verbální agrese","Upozornění, Podpora, Dohoda, Přemístění žáka ",Neúspěch
+exp126,124,Emoční výbuchy,"Upozornění, Spolupráce s odborníky, Rozhovor, Přemístění žáka ",Neúspěch
+exp21,30,"Nevěnování se výuce/Nepozornost při výuce, Neverbální narušování výuky, Verbální narušování výuky, Fyzická agrese","Podpora, Spolupráce s odborníky, Přemístění žáka , Rozhovor",Částěčný úspěch
+mat245,245,"Diagnóza, Nevěnování se výuce/Nepozornost při výuce",Podpora,Dlouhodobý úspěch
+mat440,440,"Verbální agrese, Verbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce","Upozornění, Rozhovor, Podpora, Dohoda, Spolupráce s odborníky",Dlouhodobý úspěch
+mat169,169,"Nevěnování se výuce/Nepozornost při výuce, Verbální agrese, Lhaní a podvody, Verbální narušování výuky, Fyzická agrese",Rozhovor,Krátkodobý úspěch
+mat66,66,"Verbální narušování výuky, Neverbální narušování výuky","Upozornění, Nerespektující komunikace, Důsledky",Krátkodobý úspěch
+exp381,382,"Verbální agrese, Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky, Neverbální narušování výuky","Rozhovor, Spolupráce s odborníky, Upozornění",Neúspěch
+mat571,571,"Diagnóza, Nezvládání výuky",Podpora,Částěčný úspěch
+exp770,768,"Neplnění školních povinností/nepřipravenost na výuku , Nevěnování se výuce/Nepozornost při výuce, Nezvládání výuky, Diagnóza","Rozhovor, Práce s kolektivem, Spolupráce s odborníky",Částěčný úspěch
+exp1384,1376,"Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku , Verbální narušování výuky",Rozhovor,Dlouhodobý úspěch
+exp805,793,"Neplnění školních povinností/nepřipravenost na výuku , Nezvládání výuky","Rozhovor, Podpora, Nerespektující komunikace, Spolupráce s odborníky",
+exp653,652,"Neplnění školních povinností/nepřipravenost na výuku , Nevěnování se výuce/Nepozornost při výuce",Rozhovor,Neúspěch
+exp862,860,"Verbální narušování výuky, Neverbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku , Fyzická agrese, Verbální agrese","Podpora, Důsledky, Rozhovor, Nerespektující komunikace",Dlouhodobý úspěch
+mat487,487,Nevěnování se výuce/Nepozornost při výuce,"Upozornění, Nerespektující komunikace, Důsledky",Dlouhodobý úspěch
+exp1208,1214,"Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky, Neverbální narušování výuky, Diagnóza","Rozhovor, Spolupráce s odborníky, Podpora",Dlouhodobý úspěch
+exp1371,1375,"Neplnění školních povinností/nepřipravenost na výuku , Lhaní a podvody","Rozhovor, Důsledky",Neúspěch
+exp809,810,"Porušování třídních/školních pravidel, Fyzická agrese, Lhaní a podvody, Diagnóza","Rozhovor, Důsledky","Částěčný úspěch, Dlouhodobý úspěch"
+mat1079,1079,"Porušování třídních/školních pravidel, Šikana",,
+exp977,968,"Neverbální narušování výuky, Verbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku ",Rozhovor,Neúspěch
+exp1473,1474,Problémy s docházkou,Rozhovor,Dlouhodobý úspěch
+exp1192,1192,"Porušování třídních/školních pravidel, Nezvládání výuky, Sebedestruktivní chování, Problémy s docházkou","Rozhovor, Spolupráce s odborníky, Podpora",Částěčný úspěch
+exp728,722,"Problémy s docházkou, Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku , Nezvládání výuky, Verbální agrese, Porušování třídních/školních pravidel","Podpora, Upozornění, Spolupráce s odborníky, Rozhovor",Neúspěch
+mat501,501,"Porušování třídních/školních pravidel, Nevěnování se výuce/Nepozornost při výuce, Verbální agrese, Fyzická agrese","Nerespektující komunikace, Důsledky, (Kázeňské) Tresty",Částěčný úspěch
+mat1464,1464,"Fyzická agrese, Verbální agrese","Práce s kolektivem, Rozhovor",Dlouhodobý úspěch
+mat1175,1175,"Verbální agrese, Lhaní a podvody",Rozhovor,Krátkodobý úspěch
+exp44,45,Fyzická agrese,"Rozhovor, Důsledky",Dlouhodobý úspěch
+mat60,60,"Diagnóza, Šikana",Práce s kolektivem,Dlouhodobý úspěch
+exp1202,1212,"Diagnóza, Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku ",Podpora,Dlouhodobý úspěch
+mat1180,1180,"Verbální agrese, Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky, Neverbální narušování výuky","Rozhovor, Práce s kolektivem, (Kázeňské) Tresty",Dlouhodobý úspěch
+exp25,24,Šikana,"Podpora, Práce s kolektivem",Částěčný úspěch
+exp510,515,"Emoční výbuchy, Problémy s docházkou, Nevěnování se výuce/Nepozornost při výuce","Rozhovor, Podpora, Spolupráce s odborníky, Nerespektující komunikace",Neúspěch
+exp483,483,"Verbální narušování výuky, Verbální agrese, Emoční výbuchy, Diagnóza",Podpora,Částěčný úspěch
+exp1500,1497,"Verbální agrese, Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku , Verbální narušování výuky","Upozornění, Nerespektující komunikace, Rozhovor, Důsledky",Neúspěch
+exp838,837,"Neplnění školních povinností/nepřipravenost na výuku , Problémy s docházkou, Diagnóza","Dohoda, Rozhovor, Podpora",Dlouhodobý úspěch
+mat1069,1069,"Verbální agrese, Fyzická agrese","Fyzické zakročení, Rozhovor",Dlouhodobý úspěch
+mat1456,1456,Verbální narušování výuky,"(Kázeňské) Tresty, Důsledky, Rozhovor",Dlouhodobý úspěch
+exp428,431,"Šikana, Diagnóza","Práce s kolektivem, Rozhovor",Dlouhodobý úspěch
+exp938,937,"Verbální narušování výuky, Neverbální narušování výuky, Nezvládání výuky","Upozornění, Fyzické zakročení, Podpora",Částěčný úspěch
+mat995,995,"Porušování třídních/školních pravidel, Fyzická agrese","Rozhovor, Důsledky, Upozornění, Spolupráce s odborníky",Neúspěch
+mat116,116,"Verbální agrese, Nevěnování se výuce/Nepozornost při výuce","Rozhovor, Upozornění, Důsledky",Neúspěch
+mat1502,1502,"Šikana, Porušování třídních/školních pravidel","Spolupráce s odborníky, Nerespektující komunikace",Dlouhodobý úspěch
+exp647,644,"Fyzická agrese, Verbální agrese","Rozhovor, Práce s kolektivem, Přemístění žáka ",Neúspěch
+exp1250,1250,"Verbální narušování výuky, Neverbální narušování výuky","Rozhovor, Práce s kolektivem, (Kázeňské) Tresty",Dlouhodobý úspěch
+exp830,825,Fyzická agrese,"Spolupráce s odborníky, Přemístění žáka ",Neúspěch
+exp237,238,"Fyzická agrese, Neplnění školních povinností/nepřipravenost na výuku , Problémy s docházkou","Důsledky, Podpora, Spolupráce s odborníky, Rozhovor",Částěčný úspěch
+mat221,221,Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Krátkodobý úspěch
+exp775,773,"Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky, Neverbální narušování výuky","Upozornění, Rozhovor, Přemístění žáka ",Dlouhodobý úspěch
+mat757,757,"Fyzická agrese, Verbální agrese, Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku ",,Neúspěch
+exp1475,1476,Fyzická agrese,"Rozhovor, Práce s kolektivem",Dlouhodobý úspěch
+exp1120,1113,"Verbální agrese, Sebedestruktivní chování","Rozhovor, Spolupráce s odborníky, Přemístění žáka ",Částěčný úspěch
+mat79,79,"Neplnění školních povinností/nepřipravenost na výuku , Sebedestruktivní chování",Spolupráce s odborníky,Dlouhodobý úspěch
+exp759,765,Porušování třídních/školních pravidel,"Důsledky, Dohoda, Rozhovor",Dlouhodobý úspěch
+exp1403,1390,Verbální agrese,"Rozhovor, Práce s kolektivem, Nerespektující komunikace",Dlouhodobý úspěch
+exp267,262,Verbální narušování výuky,"Upozornění, Spolupráce s odborníky, Rozhovor, Důsledky, Práce s kolektivem",Dlouhodobý úspěch
+exp987,984,"Fyzická agrese, Šikana",Rozhovor,Neúspěch
+exp16,16,"Verbální narušování výuky, Neverbální narušování výuky","Upozornění, Nerespektující komunikace",Krátkodobý úspěch
+exp963,964,Šikana,Rozhovor,Neúspěch
+exp358,354,Porušování třídních/školních pravidel,"Rozhovor, Důsledky, Přemístění žáka ",Neúspěch
+exp1021,1019,"Fyzická agrese, Porušování třídních/školních pravidel","Rozhovor, Důsledky",Dlouhodobý úspěch
+exp1443,1440,Problémy s docházkou,"Rozhovor, Spolupráce s odborníky, Podpora",Dlouhodobý úspěch
+mat486,486,Fyzická agrese,"Nerespektující komunikace, Důsledky",
+,275,"Verbální agrese, Fyzická agrese",Rozhovor,
+mat529,529,"Lhaní a podvody, Porušování třídních/školních pravidel",Důsledky,Neúspěch
+mat845,845,"Neplnění školních povinností/nepřipravenost na výuku , Nevěnování se výuce/Nepozornost při výuce","Podpora, Spolupráce s odborníky, Rozhovor",
+mat536,536,"Šikana, Verbální agrese, Porušování třídních/školních pravidel","Rozhovor, Spolupráce s odborníky, Práce s kolektivem",Částěčný úspěch
+exp959,963,"Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku , Verbální narušování výuky, Neverbální narušování výuky, Verbální agrese","Rozhovor, Přemístění žáka ",Částěčný úspěch
+exp1137,1135,"Verbální agrese, Fyzická agrese, Šikana","Spolupráce s odborníky, Rozhovor, Důsledky, Přemístění žáka ",Neúspěch
+exp187,185,"Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky, Verbální agrese","Rozhovor, Upozornění, Důsledky",Neúspěch
+exp203,204,"Verbální agrese, Neplnění školních povinností/nepřipravenost na výuku , Problémy s docházkou","Rozhovor, Nerespektující komunikace",Dlouhodobý úspěch
+,583,Verbální agrese,Podpora,Neúspěch
+exp784,789,"Diagnóza, Verbální agrese, Fyzická agrese","Přemístění žáka , Spolupráce s odborníky",Neúspěch
+exp893,889,"Verbální narušování výuky, Neverbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce","Upozornění, Podpora, Fyzické zakročení, Spolupráce s odborníky",Dlouhodobý úspěch
+exp1022,1027,Porušování třídních/školních pravidel,"Rozhovor, Spolupráce s odborníky, Důsledky",Dlouhodobý úspěch
+mat1280,1280,"Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky","Rozhovor, Spolupráce s odborníky, Podpora",Neúspěch
+exp477,480,"Fyzická agrese, Verbální agrese","Rozhovor, Důsledky",Neúspěch
+exp341,343,Porušování třídních/školních pravidel,"Rozhovor, Přemístění žáka ",Dlouhodobý úspěch
+mat232,232,"Fyzická agrese, Verbální agrese",,
+mat1008,1008,"Šikana, Problémy s docházkou","Rozhovor, Spolupráce s odborníky, Podpora, Přemístění žáka ",Neúspěch
+exp366,362,"Neplnění školních povinností/nepřipravenost na výuku , Lhaní a podvody, Problémy s docházkou",Rozhovor,Krátkodobý úspěch
+exp43,44,Fyzická agrese,"Rozhovor, Spolupráce s odborníky, Důsledky, Práce s kolektivem",Dlouhodobý úspěch
+mat421,421,"Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky, Neverbální narušování výuky, Diagnóza","Práce s kolektivem, Spolupráce s odborníky, Podpora",Dlouhodobý úspěch
+mat775,775,"Verbální agrese, Fyzická agrese","Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+exp707,713,"Diagnóza, Emoční výbuchy, Fyzická agrese","Rozhovor, Spolupráce s odborníky, Podpora",Dlouhodobý úspěch
+exp425,433,"Fyzická agrese, Lhaní a podvody","Práce s kolektivem, Rozhovor, Dohoda",Dlouhodobý úspěch
+mat102,102,Nevěnování se výuce/Nepozornost při výuce,Upozornění,Neúspěch
+mat108,108,"Verbální narušování výuky, Neverbální narušování výuky",,
+mat555,555,"Neplnění školních povinností/nepřipravenost na výuku , Nevěnování se výuce/Nepozornost při výuce",Nerespektující komunikace,Částěčný úspěch
+mat1228,1228,"Problémy s docházkou, Porušování třídních/školních pravidel","Rozhovor, Spolupráce s odborníky, Přemístění žáka ",Částěčný úspěch
+exp286,290,Porušování třídních/školních pravidel,"Rozhovor, Fyzické zakročení, Dohoda",Dlouhodobý úspěch
+mat1080,1080,Sebedestruktivní chování,"Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+exp928,932,"Fyzická agrese, Verbální narušování výuky, Neverbální narušování výuky, Verbální agrese","Spolupráce s odborníky, Přemístění žáka , Důsledky, Podpora",Neúspěch
+exp1035,1047,"Verbální agrese, Verbální narušování výuky, Neverbální narušování výuky, Emoční výbuchy","Upozornění, Rozhovor, Přemístění žáka ",Neúspěch
+exp713,707,"Diagnóza, Nezvládání výuky","Rozhovor, Podpora",Dlouhodobý úspěch
+exp122,129,Problémy s docházkou,"Podpora, Rozhovor",Krátkodobý úspěch
+exp730,731,"Emoční výbuchy, Verbální agrese","Rozhovor, Práce s kolektivem",Dlouhodobý úspěch
+exp277,278,"Nevěnování se výuce/Nepozornost při výuce, Verbální agrese","Nerespektující komunikace, Upozornění, Rozhovor",Dlouhodobý úspěch
+exp817,808,Fyzická agrese,"(Kázeňské) Tresty, Rozhovor, Práce s kolektivem",Dlouhodobý úspěch
+mat918,918,Fyzická agrese,"Spolupráce s odborníky, Přemístění žáka , Důsledky",Neúspěch
+exp1034,1031,"Verbální narušování výuky, Neverbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku , Porušování třídních/školních pravidel","Upozornění, Nerespektující komunikace, Přemístění žáka , Rozhovor",Částěčný úspěch
+mat368,368,"Verbální agrese, Emoční výbuchy, Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky, Neverbální narušování výuky","Upozornění, Rozhovor, Fyzické zakročení",
+mat1256,1256,Verbální agrese,"Rozhovor, Práce s kolektivem, Podpora, Nerespektující komunikace",Neúspěch
+mat33,33,"Diagnóza, Verbální narušování výuky",Podpora,Dlouhodobý úspěch
+exp668,670,"Šikana, Verbální agrese","Rozhovor, Dohoda, Důsledky",Dlouhodobý úspěch
+exp715,702,"Diagnóza, Emoční výbuchy, Verbální agrese, Nevěnování se výuce/Nepozornost při výuce","Rozhovor, Podpora, Dohoda, Důsledky, (Kázeňské) Tresty",Neúspěch
+,615,Verbální narušování výuky,"Upozornění, Nerespektující komunikace",Dlouhodobý úspěch
+exp465,452,"Problémy s docházkou, Neplnění školních povinností/nepřipravenost na výuku , Nevěnování se výuce/Nepozornost při výuce, Verbální agrese","Rozhovor, Podpora",Neúspěch
+exp720,716,"Porušování třídních/školních pravidel, Diagnóza","Upozornění, Důsledky",Dlouhodobý úspěch
+exp567,561,Porušování třídních/školních pravidel,"Práce s kolektivem, Spolupráce s odborníky, Rozhovor",Částěčný úspěch
+mat882,882,"Diagnóza, Verbální agrese","Podpora, Rozhovor, Práce s kolektivem",Částěčný úspěch
+exp351,355,Verbální agrese,Přemístění žáka ,Neúspěch
+exp690,694,"Fyzická agrese, Diagnóza, Emoční výbuchy, Verbální agrese","Rozhovor, Spolupráce s odborníky",Neúspěch
+exp1286,1290,"Šikana, Problémy s docházkou","Rozhovor, Dohoda",Částěčný úspěch
+exp364,366,"Emoční výbuchy, Fyzická agrese, Verbální agrese","Upozornění, Přemístění žáka , Spolupráce s odborníky, Rozhovor, Důsledky",Částěčný úspěch
+mat164,164,"Verbální agrese, Fyzická agrese, Porušování třídních/školních pravidel","Upozornění, Fyzické zakročení",
+mat888,888,"Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky",Upozornění,Neúspěch
+exp899,905,Problémy s docházkou,"Rozhovor, Podpora, Dohoda",Částěčný úspěch
+mat539,539,Porušování třídních/školních pravidel,"Upozornění, Nerespektující komunikace, Fyzické zakročení, Rozhovor, Důsledky, Přemístění žáka ",Neúspěch
+exp991,990,Verbální agrese,"Rozhovor, Práce s kolektivem",Dlouhodobý úspěch
+exp1313,1312,Nevěnování se výuce/Nepozornost při výuce,"Rozhovor, Podpora",Neúspěch
+exp542,545,"Diagnóza, Verbální narušování výuky, Neverbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce","Přemístění žáka , Rozhovor",Krátkodobý úspěch
+mat533,533,"Sebedestruktivní chování, Fyzická agrese, Verbální agrese","Rozhovor, Spolupráce s odborníky, Přemístění žáka ",Částěčný úspěch
+mat1194,1194,"Porušování třídních/školních pravidel, Šikana","Rozhovor, Důsledky",Dlouhodobý úspěch
+exp1187,1189,Problémy s docházkou,"Spolupráce s odborníky, Rozhovor, Dohoda, Přemístění žáka ",Neúspěch
+exp681,681,"Fyzická agrese, Emoční výbuchy","Upozornění, Nerespektující komunikace, Fyzické zakročení, Rozhovor, Spolupráce s odborníky, Podpora, Přemístění žáka ",Neúspěch
+exp320,325,Porušování třídních/školních pravidel,"Upozornění, Důsledky, Nerespektující komunikace",Krátkodobý úspěch
+exp802,799,"Fyzická agrese, Emoční výbuchy, Neplnění školních povinností/nepřipravenost na výuku , Sebedestruktivní chování","Podpora, Spolupráce s odborníky, Rozhovor, Přemístění žáka ",Neúspěch
+exp73,64,"Verbální narušování výuky, Verbální agrese","Upozornění, Podpora",Dlouhodobý úspěch
+mat692,692,"Verbální agrese, Emoční výbuchy",,Krátkodobý úspěch
+exp241,240,"Verbální agrese, Emoční výbuchy, Neplnění školních povinností/nepřipravenost na výuku ",Přemístění žáka ,Krátkodobý úspěch
+mat906,906,Problémy s docházkou,"Podpora, Spolupráce s odborníky, Rozhovor",Neúspěch
+mat1363,1363,Porušování třídních/školních pravidel,Důsledky,Dlouhodobý úspěch
+exp263,260,"Neplnění školních povinností/nepřipravenost na výuku , Lhaní a podvody, Verbální agrese","Upozornění, Nerespektující komunikace, Rozhovor, Dohoda, Podpora, Důsledky",Neúspěch
+,528,"Fyzická agrese, Verbální agrese","Spolupráce s odborníky, Rozhovor",Neúspěch
+exp1213,1202,Porušování třídních/školních pravidel,"Rozhovor, Podpora",Částěčný úspěch
+exp976,977,"Verbální agrese, Verbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce, Neverbální narušování výuky, Porušování třídních/školních pravidel","Spolupráce s odborníky, Rozhovor",Dlouhodobý úspěch
+exp193,199,"Verbální agrese, Verbální narušování výuky","Nerespektující komunikace, Fyzické zakročení, Přemístění žáka , Upozornění, Rozhovor, Podpora",Částěčný úspěch
+exp1193,1197,"Problémy s docházkou, Diagnóza, Nezvládání výuky",Rozhovor,Neúspěch
+mat865,865,Porušování třídních/školních pravidel,"Práce s kolektivem, Podpora, Rozhovor",Dlouhodobý úspěch
+,576,Porušování třídních/školních pravidel,"Práce s kolektivem, Rozhovor, Přemístění žáka ",Dlouhodobý úspěch
+exp1002,1007,"Šikana, Porušování třídních/školních pravidel","Rozhovor, Nerespektující komunikace, Dohoda, Důsledky, Práce s kolektivem",Dlouhodobý úspěch
+exp5,219,"Diagnóza, Emoční výbuchy",Rozhovor,Dlouhodobý úspěch
+exp555,553,"Fyzická agrese, Emoční výbuchy","Důsledky, Upozornění, Rozhovor, Dohoda",Částěčný úspěch
+exp38,31,"Diagnóza, Fyzická agrese, Emoční výbuchy","Upozornění, Přemístění žáka , Práce s kolektivem, Spolupráce s odborníky, Rozhovor, Dohoda",Částěčný úspěch
+mat57,57,"Neplnění školních povinností/nepřipravenost na výuku , Nevěnování se výuce/Nepozornost při výuce","Rozhovor, Podpora, Dohoda",Dlouhodobý úspěch
+exp1218,1217,"Fyzická agrese, Diagnóza","Rozhovor, Důsledky, Nerespektující komunikace",Krátkodobý úspěch
+mat887,887,Porušování třídních/školních pravidel,"Rozhovor, Upozornění",Dlouhodobý úspěch
+mat975,975,"Verbální narušování výuky, Neverbální narušování výuky","Spolupráce s odborníky, Rozhovor",
+mat586,586,"Diagnóza, Problémy s docházkou, Neplnění školních povinností/nepřipravenost na výuku , Nevěnování se výuce/Nepozornost při výuce","Spolupráce s odborníky, Práce s kolektivem, Přemístění žáka , Rozhovor",Neúspěch
+mat866,866,"Diagnóza, Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky, Neverbální narušování výuky, Neplnění školních povinností/nepřipravenost na výuku ","Spolupráce s odborníky, Podpora",Částěčný úspěch
+mat462,462,Problémy s docházkou,Rozhovor,Neúspěch
+exp1018,1014,"Fyzická agrese, Verbální agrese","Fyzické zakročení, Rozhovor, Spolupráce s odborníky",Částěčný úspěch
+exp857,856,"Neplnění školních povinností/nepřipravenost na výuku , Nevěnování se výuce/Nepozornost při výuce","Důsledky, Rozhovor, Podpora, Dohoda",Dlouhodobý úspěch
+exp962,965,"Fyzická agrese, Verbální narušování výuky, Neverbální narušování výuky, Diagnóza","Upozornění, Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+mat1243,1243,"Verbální agrese, Fyzická agrese","Rozhovor, Důsledky, Práce s kolektivem",
+,351,Porušování třídních/školních pravidel,"Rozhovor, Důsledky, Přemístění žáka ",Neúspěch
+exp1151,1156,"Porušování třídních/školních pravidel, Fyzická agrese, Verbální agrese","Spolupráce s odborníky, Rozhovor, Práce s kolektivem, (Kázeňské) Tresty",Částěčný úspěch
+exp620,627,"Diagnóza, Emoční výbuchy, Nezvládání výuky","Spolupráce s odborníky, Přemístění žáka , Rozhovor, Podpora",Částěčný úspěch
+exp948,950,"Problémy s docházkou, Nevěnování se výuce/Nepozornost při výuce, Verbální agrese, Porušování třídních/školních pravidel, Fyzická agrese","Rozhovor, Spolupráce s odborníky, Přemístění žáka , Dohoda",Neúspěch
+exp844,846,"Verbální agrese, Porušování třídních/školních pravidel","Rozhovor, Spolupráce s odborníky, Dohoda, Práce s kolektivem, Podpora",Dlouhodobý úspěch
+mat100,100,"Neplnění školních povinností/nepřipravenost na výuku , Nevěnování se výuce/Nepozornost při výuce",Podpora,Krátkodobý úspěch
+mat1315,1315,"Verbální agrese, Fyzická agrese, Diagnóza","Fyzické zakročení, Přemístění žáka , Rozhovor, Upozornění, Důsledky",
+exp297,298,"Nevěnování se výuce/Nepozornost při výuce, Fyzická agrese, Diagnóza, Emoční výbuchy","Přemístění žáka , Podpora",Dlouhodobý úspěch
+exp1452,1461,"Verbální agrese, Verbální narušování výuky, Fyzická agrese, Nevěnování se výuce/Nepozornost při výuce","Podpora, Přemístění žáka , Nerespektující komunikace, Důsledky","Částěčný úspěch, Neúspěch"
+exp631,632,"Verbální narušování výuky, Neverbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce","Upozornění, Rozhovor, Nerespektující komunikace, Důsledky",Neúspěch
+exp1126,1125,"Problémy s docházkou, Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku ","Rozhovor, Přemístění žáka ",Neúspěch
+exp988,983,"Šikana, Verbální agrese, Porušování třídních/školních pravidel",Rozhovor,Dlouhodobý úspěch
+exp1023,1032,"Porušování třídních/školních pravidel, Nevěnování se výuce/Nepozornost při výuce","Upozornění, Rozhovor, Přemístění žáka ",Neúspěch
+mat655,655,Fyzická agrese,"Upozornění, Rozhovor, (Kázeňské) Tresty, Dohoda",Dlouhodobý úspěch
+mat1337,1337,"Neplnění školních povinností/nepřipravenost na výuku , Lhaní a podvody","Podpora, Rozhovor",Neúspěch
+exp427,429,"Verbální agrese, Nevěnování se výuce/Nepozornost při výuce, Diagnóza","Rozhovor, Důsledky, Upozornění, Nerespektující komunikace, Přemístění žáka , Podpora, Spolupráce s odborníky",Neúspěch
+exp1160,1157,Verbální agrese,"(Kázeňské) Tresty, Upozornění","Částěčný úspěch, Neúspěch, Částěčný úspěch"
+mat1463,1463,"Šikana, Porušování třídních/školních pravidel","Rozhovor, Důsledky, Přemístění žáka ",Neúspěch
+exp1469,1470,"Verbální narušování výuky, Verbální agrese","Upozornění, Rozhovor",Dlouhodobý úspěch
+exp1339,1334,Porušování třídních/školních pravidel,"Rozhovor, Upozornění, Nerespektující komunikace, Práce s kolektivem, Důsledky",Dlouhodobý úspěch
+exp1454,1459,"Porušování třídních/školních pravidel, Fyzická agrese","Rozhovor, Důsledky, Dohoda",Neúspěch
+exp239,237,"Problémy s docházkou, Neplnění školních povinností/nepřipravenost na výuku , Nevěnování se výuce/Nepozornost při výuce","Důsledky, Rozhovor",Částěčný úspěch
+exp597,602,"Problémy s docházkou, Neplnění školních povinností/nepřipravenost na výuku , Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky","Upozornění, Podpora, Rozhovor, Spolupráce s odborníky",Částěčný úspěch
+exp970,971,Problémy s docházkou,"Upozornění, Rozhovor, Podpora",Částěčný úspěch
+mat1453,1453,Fyzická agrese,"Nerespektující komunikace, Důsledky, Přemístění žáka , Rozhovor",Neúspěch
+exp269,271,"Fyzická agrese, Verbální agrese, Emoční výbuchy, Diagnóza","Nerespektující komunikace, Rozhovor, Podpora",Neúspěch
+exp1268,1275,Verbální agrese,"Spolupráce s odborníky, Upozornění, Podpora",Částěčný úspěch
+exp202,209,"Verbální agrese, Verbální narušování výuky, Neplnění školních povinností/nepřipravenost na výuku , Emoční výbuchy","Přemístění žáka , Spolupráce s odborníky, Upozornění, Rozhovor, Práce s kolektivem, Podpora",Dlouhodobý úspěch
+mat359,359,"Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku , Verbální agrese","Upozornění, Podpora",Dlouhodobý úspěch
+exp395,395,"Verbální agrese, Verbální narušování výuky, Neverbální narušování výuky","Upozornění, Rozhovor, Práce s kolektivem, Podpora",Dlouhodobý úspěch
+exp62,59,"Problémy s docházkou, Verbální agrese, Fyzická agrese, Neplnění školních povinností/nepřipravenost na výuku ","Důsledky, Rozhovor, Spolupráce s odborníky, Přemístění žáka ",Neúspěch
+exp307,307,Lhaní a podvody,"Rozhovor, Nerespektující komunikace",Neúspěch
+exp1103,1098,Verbální agrese,"Nerespektující komunikace, Upozornění",Neúspěch
+mat424,424,Fyzická agrese,"Přemístění žáka , Spolupráce s odborníky",Neúspěch
+exp1033,1035,"Problémy s docházkou, Lhaní a podvody",Rozhovor,Dlouhodobý úspěch
+mat1379,1379,"Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku , Porušování třídních/školních pravidel, Verbální agrese","Důsledky, Rozhovor, Přemístění žáka ",Neúspěch
+exp1489,1484,"Verbální agrese, Neverbální narušování výuky, Verbální narušování výuky, Problémy s docházkou, Nevěnování se výuce/Nepozornost při výuce, Šikana","Rozhovor, Práce s kolektivem, Přemístění žáka ",Částěčný úspěch
+exp338,340,"Fyzická agrese, Verbální agrese, Porušování třídních/školních pravidel","Nerespektující komunikace, Fyzické zakročení, Upozornění, Spolupráce s odborníky, Rozhovor, Přemístění žáka ",Neúspěch
+mat1118,1118,Porušování třídních/školních pravidel,"Upozornění, Důsledky, Rozhovor",Neúspěch
+exp480,482,"Verbální agrese, Verbální narušování výuky","Upozornění, Důsledky, Rozhovor",Dlouhodobý úspěch
+exp824,821,Verbální agrese,"Upozornění, Rozhovor",Neúspěch
+exp704,711,"Emoční výbuchy, Verbální narušování výuky, Verbální agrese, Fyzická agrese","Přemístění žáka , Podpora, Rozhovor, Dohoda",Dlouhodobý úspěch
+exp236,234,"Verbální agrese, Fyzická agrese","Fyzické zakročení, Rozhovor, Podpora, Přemístění žáka , Spolupráce s odborníky, Důsledky",Částěčný úspěch
+mat1289,1289,"Verbální agrese, Diagnóza","Rozhovor, Dohoda",Částěčný úspěch
+exp192,197,"Verbální agrese, Verbální narušování výuky","Důsledky, Rozhovor",Částěčný úspěch
+mat1350,1350,Fyzická agrese,,Neúspěch
+exp89,82,"Lhaní a podvody, Porušování třídních/školních pravidel, Verbální agrese","Upozornění, Rozhovor, Podpora",Neúspěch
+exp1487,1487,"Porušování třídních/školních pravidel, Lhaní a podvody, Verbální agrese","Rozhovor, Spolupráce s odborníky, Přemístění žáka ",Neúspěch
+exp1390,1400,Verbální narušování výuky,"Rozhovor, Spolupráce s odborníky, Důsledky",Neúspěch
+exp110,112,"Porušování třídních/školních pravidel, Lhaní a podvody","Práce s kolektivem, Spolupráce s odborníky",Částěčný úspěch
+exp1282,1284,"Nevěnování se výuce/Nepozornost při výuce, Verbální agrese, Verbální narušování výuky","Dohoda, Podpora, Spolupráce s odborníky, Důsledky",Krátkodobý úspěch
+mat933,933,"Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku, Problémy s docházkou","Spolupráce s odborníky, Přemístění žáka, Podpora",Neúspěch
+exp1438,1433,"Fyzická agrese, Porušování třídních/školních pravidel","Důsledky, Rozhovor, Spolupráce s odborníky, Přemístění žáka ",Dlouhodobý úspěch
+mat381,381,Porušování třídních/školních pravidel,"Rozhovor, Důsledky",Dlouhodobý úspěch
+exp1272,1273,"Verbální narušování výuky, Neverbální narušování výuky","Rozhovor, Spolupráce s odborníky, Proaktivní řešení, Přemístění žáka ",Dlouhodobý úspěch
+exp1261,1261,Nevěnování se výuce/Nepozornost při výuce,"Rozhovor, Spolupráce s odborníky, Podpora, Přemístění žáka ",Dlouhodobý úspěch
+exp897,908,"Neplnění školních povinností/nepřipravenost na výuku, Verbální agrese","Spolupráce s odborníky, Upozornění",Dlouhodobý úspěch
+exp598,603,"Verbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce","Rozhovor, Dohoda",Dlouhodobý úspěch
+exp931,925,"Verbální agrese, Šikana","Spolupráce s odborníky, Rozhovor",Dlouhodobý úspěch
+exp1121,1119,Porušování třídních/školních pravidel,"Rozhovor, Důsledky",Dlouhodobý úspěch
+mat621,621,"Verbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce, Porušování třídních/školních pravidel",Rozhovor,Dlouhodobý úspěch
+exp335,345,Diagnóza,"Práce s kolektivem, Proaktivní řešení",Dlouhodobý úspěch
+exp1494,1495,"Nevěnování se výuce/Nepozornost při výuce, Porušování třídních/školních pravidel","Rozhovor, Spolupráce s odborníky, Důsledky",Dlouhodobý úspěch
+exp1039,1034,Verbální agrese,"Upozornění, Rozhovor, Spolupráce s odborníky",Neúspěch
+exp1225,1222,"Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky","Upozornění, (Kázeňské) Tresty",Dlouhodobý úspěch
+mat1385,1385,"Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky",Nerespektující komunikace,Neúspěch
+exp434,434,"Fyzická agrese, Nevěnování se výuce/Nepozornost při výuce",Nerespektující komunikace,Neúspěch
+exp1234,1245,"Verbální agrese, Lhaní a podvody","Rozhovor, Spolupráce s odborníky",Neúspěch
+exp432,430,"Verbální narušování výuky, Neverbální narušování výuky","Nerespektující komunikace, Rozhovor",Neúspěch
+mat635,635,Porušování třídních/školních pravidel,"Rozhovor, Nerespektující komunikace",Dlouhodobý úspěch
+exp1334,1328,Fyzická agrese,"Rozhovor, Práce s kolektivem",Dlouhodobý úspěch
+exp1227,1227,"Nezvládání výuky, Nevěnování se výuce/Nepozornost při výuce","Podpora, Spolupráce s odborníky, Rozhovor",Dlouhodobý úspěch
+mat1002,1002,"Problémy s docházkou, Verbální narušování výuky, Neverbální narušování výuky, Neplnění školních povinností/nepřipravenost na výuku ","Rozhovor, Důsledky",Neúspěch
+exp245,255,"Neplnění školních povinností/nepřipravenost na výuku, Problémy s docházkou, Nevěnování se výuce/Nepozornost při výuce","Rozhovor, Podpora, Dohoda, Spolupráce s odborníky",Dlouhodobý úspěch
+exp1096,1101,Porušování třídních/školních pravidel,"Rozhovor, Dohoda",Dlouhodobý úspěch
+exp405,406,"Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku ","Rozhovor, Spolupráce s odborníky, Přemístění žáka ",Neúspěch
+mat863,863,Nevěnování se výuce/Nepozornost při výuce,Spolupráce s odborníky,Neúspěch
+exp676,675,Lhaní a podvody,"Rozhovor, Přemístění žáka ",Neúspěch
+mat1055,1055,Nevěnování se výuce/Nepozornost při výuce,"Nerespektující komunikace, Důsledky",Neúspěch
+exp344,333,"Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky","Rozhovor, Upozornění, Proaktivní řešení",Dlouhodobý úspěch
+exp1045,1037,"Verbální agrese, Verbální narušování výuky","Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+exp86,87,Fyzická agrese,"Přemístění žáka, Podpora, Upozornění",Krátkodobý úspěch
+exp1425,1429,Fyzická agrese,"Rozhovor, Přemístění žáka ",Neúspěch
+mat266,266,"Verbální narušování výuky, Verbální agrese","Fyzické zakročení, Podpora, Rozhovor, Práce s kolektivem",?
+exp276,288,"Verbální narušování výuky, Neverbální narušování výuky, Fyzická agrese","Rozhovor, Podpora",Dlouhodobý úspěch
+exp1490,1491,Fyzická agrese,"Rozhovor, Spolupráce s odborníky, Přemístění žáka ",Neúspěch
+mat1501,1501,Šikana,"Rozhovor, Nerespektující komunikace",Neúspěch
+exp1318,1321,"Neplnění školních povinností/nepřipravenost na výuku, Verbální agrese, Nevěnování se výuce/Nepozornost při výuce","Rozhovor, Nerespektující komunikace, Důsledky",Neúspěch
+exp1163,1169,Verbální narušování výuky,"Spolupráce s odborníky, Rozhovor",Neúspěch
+mat414,414,Porušování třídních/školních pravidel,"Upozornění, Nerespektující komunikace, Rozhovor",Neúspěch
+exp1319,1310,Šikana,"Spolupráce s odborníky, Rozhovor",Dlouhodobý úspěch
+exp216,222,Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Neúspěch
+mat114,114,-,"Spolupráce s odborníky, Rozhovor, Práce s kolektivem",-
+exp760,755,"Verbální agrese, Verbální narušování výuky","Rozhovor, Podpora, Důsledky",Neúspěch
+exp175,175,"Fyzická agrese, Verbální agrese","Rozhovor, Spolupráce s odborníky, Dohoda",Dlouhodobý úspěch
+exp854,848,"Verbální narušování výuky, Neverbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce, Fyzická agrese","Důsledky, Proaktivní řešení, Rozhovor",Dlouhodobý úspěch
+exp1089,1090,Neplnění školních povinností/nepřipravenost na výuku,Rozhovor,Dlouhodobý úspěch
+mat1183,1183,-,Nerespektující komunikace,Neúspěch
+mat1043,1043,Verbální agrese,Rozhovor,Neúspěch
+exp985,991,Nevěnování se výuce/Nepozornost při výuce,"Rozhovor, Dohoda, Podpora",Dlouhodobý úspěch
+exp284,286,"Fyzická agrese, Verbální agrese","Rozhovor, Spolupráce s odborníky",Neúspěch
+exp870,875,"Verbální agrese, Fyzická agrese","Spolupráce s odborníky, Rozhovor, Důsledky",Neúspěch
+exp1358,1354,"Verbální agrese, Verbální narušování výuky",Nerespektující komunikace,Neúspěch
+exp1215,1203,Fyzická agrese,"Rozhovor, Spolupráce s odborníky",Neúspěch
+exp31,32,Porušování třídních/školních pravidel,Přemístění žáka,Neúspěch
+exp1345,1346,Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Neúspěch
+exp210,211,"Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku ","Rozhovor, Spolupráce s odborníky, Podpora",Dlouhodobý úspěch
+exp1036,1036,"Porušování třídních/školních pravidel, Šikana",Rozhovor,Neúspěch
+exp724,725,"Neplnění školních povinností/nepřipravenost na výuku, Verbální narušování výuky, Fyzická agrese, Nevěnování se výuce/Nepozornost při výuce","Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+mat1209,1209,Lhaní a podvody,Rozhovor,Neúspěch
+mat423,423,"Verbální narušování výuky, Neverbální narušování výuky","Podpora, Rozhovor",Dlouhodobý úspěch
+exp946,941,"Fyzická agrese, Verbální agrese","Fyzické zakročení, Spolupráce s odborníky, Rozhovor, Důsledky",Dlouhodobý úspěch
+mat926,926,"Šikana, Porušování třídních/školních pravidel","Spolupráce s odborníky, Rozhovor",Dlouhodobý úspěch
+exp810,807,"Porušování třídních/školních pravidel, Verbální narušování výuky, Neverbální narušování výuky","Rozhovor, Spolupráce s odborníky",Neúspěch
+exp182,189,"Nevěnování se výuce/Nepozornost při výuce, Diagnóza","Rozhovor, Podpora",Dlouhodobý úspěch
+mat1086,1086,Verbální agrese,"Rozhovor, Spolupráce s odborníky, Důsledky",Dlouhodobý úspěch
+mat945,945,Fyzická agrese,"Rozhovor, Spolupráce s odborníky, Podpora, Práce s kolektivem",Dlouhodobý úspěch
+mat495,495,-,"Rozhovor, Spolupráce s odborníky, Podpora",Dlouhodobý úspěch
+exp463,465,Fyzická agrese,"Fyzické zakročení, Přemístění žáka, Rozhovor, Podpora",Dlouhodobý úspěch
+exp1409,1409,"Nezvládání výuky, Neplnění školních povinností/nepřipravenost na výuku ","Spolupráce s odborníky, Rozhovor, Podpora",Dlouhodobý úspěch
+exp914,910,"Fyzická agrese, Verbální agrese","Dohoda, Spolupráce s odborníky, Rozhovor",Neúspěch
+mat84,84,Fyzická agrese,"Rozhovor, Spolupráce s odborníky",Neúspěch
+mat678,678,Verbální narušování výuky,Proaktivní řešení,Dlouhodobý úspěch
+mat1122,1122,"Fyzická agrese, Emoční výbuchy","Rozhovor, Dohoda, (Kázeňské) Tresty",Dlouhodobý úspěch
+exp165,156,"Problémy s docházkou, Nevěnování se výuce/Nepozornost při výuce","Rozhovor, Spolupráce s odborníky",Neúspěch
+exp1256,1254,"Problémy s docházkou, Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky, Neverbální narušování výuky","Nerespektující komunikace, Přemístění žáka ",Neúspěch
+exp1288,1291,"Verbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce",Dohoda,Dlouhodobý úspěch
+exp514,535,"Nevěnování se výuce/Nepozornost při výuce, Neverbální narušování výuky, Verbální narušování výuky","Nerespektující komunikace, Přemístění žáka, Rozhovor",Neúspěch
+exp1062,1062,"Fyzická agrese, Verbální agrese",Spolupráce s odborníky,Neúspěch
+exp818,814,Šikana,"Rozhovor, Dohoda",Dlouhodobý úspěch
+exp1242,1236,"Porušování třídních/školních pravidel, Šikana","Rozhovor, Spolupráce s odborníky, Dohoda",Dlouhodobý úspěch
+mat1488,1488,"Verbální narušování výuky, Fyzická agrese, Verbální agrese","Upozornění, Přemístění žáka, (Kázeňské) Tresty, Rozhovor",Dlouhodobý úspěch
+exp540,523,Emoční výbuchy,"Upozornění, Nerespektující komunikace",Neúspěch
+exp168,180,"Emoční výbuchy, Porušování třídních/školních pravidel, Sebedestruktivní chování","Spolupráce s odborníky, Rozhovor, Podpora, Přemístění žáka ",Dlouhodobý úspěch
+exp1158,1158,Verbální narušování výuky,Proaktivní řešení,Dlouhodobý úspěch
+mat1253,1253,Lhaní a podvody,"Podpora, Důsledky",Dlouhodobý úspěch
+exp406,417,"Lhaní a podvody, Fyzická agrese, Verbální agrese","Důsledky, Přemístění žáka , Rozhovor, Spolupráce s odborníky",Neúspěch
+mat1405,1405,Neplnění školních povinností/nepřipravenost na výuku ,"Rozhovor, Podpora",Dlouhodobý úspěch
+exp1129,1126,Verbální agrese,"Práce s kolektivem, Rozhovor",Dlouhodobý úspěch
+exp367,364,Fyzická agrese,-,Neúspěch
+exp1255,1262,Porušování třídních/školních pravidel,"Rozhovor, Spolupráce s odborníky",Neúspěch
+exp1214,1205,"Verbální narušování výuky, Neplnění školních povinností/nepřipravenost na výuku ","Rozhovor, Upozornění",Neúspěch
+mat347,347,Nevěnování se výuce/Nepozornost při výuce,Upozornění,Dlouhodobý úspěch
+exp733,744,Neverbální narušování výuky,"Spolupráce s odborníky, Rozhovor",Dlouhodobý úspěch
+mat1081,1081,"Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku ","Spolupráce s odborníky, Rozhovor, Dohoda",Neúspěch
+exp1333,1327,"Nevěnování se výuce/Nepozornost při výuce, Problémy s docházkou, Neplnění školních povinností/nepřipravenost na výuku ","Spolupráce s odborníky, Podpora",Neúspěch
+exp499,494,"Diagnóza, Fyzická agrese","Podpora, Práce s kolektivem",Neúspěch
+mat591,591,Šikana,"Fyzické zakročení, Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+mat917,917,Problémy s docházkou,"Rozhovor, Dohoda, Spolupráce s odborníky, Upozornění",Dlouhodobý úspěch
+exp223,244,"Fyzická agrese, Porušování třídních/školních pravidel, Verbální agrese","Rozhovor, Spolupráce s odborníky, Podpora",Neúspěch
+exp807,811,"Nevěnování se výuce/Nepozornost při výuce, Neverbální narušování výuky, Verbální narušování výuky, Diagnóza",Podpora,Částěčný úspěch
+exp532,544,"Fyzická agrese, Emoční výbuchy, Verbální agrese, Porušování třídních/školních pravidel","Upozornění, Důsledky, Spolupráce s odborníky",Neúspěch
+exp1006,1011,"Verbální agrese, Verbální narušování výuky","Práce s kolektivem, Upozornění",Dlouhodobý úspěch
+mat899,899,"Emoční výbuchy, Diagnóza","Podpora, Spolupráce s odborníky",Dlouhodobý úspěch
+exp416,416,"Fyzická agrese, Problémy s docházkou","Podpora, Práce s kolektivem",Neúspěch
+mat1428,1428,Porušování třídních/školních pravidel,"Rozhovor, Nerespektující komunikace, Důsledky",Dlouhodobý úspěch
+exp545,552,"Fyzická agrese, Emoční výbuchy","Rozhovor, Dohoda",Neúspěch
+mat309,309,Porušování třídních/školních pravidel,"Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+exp883,890,"Nevěnování se výuce/Nepozornost při výuce, Porušování třídních/školních pravidel, Verbální narušování výuky, Verbální agrese","Nerespektující komunikace, Upozornění, (Kázeňské) Tresty",Neúspěch
+mat399,399,"Nezvládání výuky, Porušování třídních/školních pravidel","Upozornění, Rozhovor, Podpora",Dlouhodobý úspěch
+exp361,371,"Verbální narušování výuky, Neverbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce, Diagnóza","Rozhovor, Dohoda",Dlouhodobý úspěch
+exp57,55,Emoční výbuchy,"Přemístění žáka , Podpora, Nerespektující komunikace",Dlouhodobý úspěch
+exp556,562,Verbální agrese,Rozhovor,Dlouhodobý úspěch
+exp1153,1149,"Diagnóza, Nevěnování se výuce/Nepozornost při výuce, Neverbální narušování výuky","Upozornění, Rozhovor, (Kázeňské) Tresty",Neúspěch
+exp313,313,"Problémy s docházkou, Diagnóza","Spolupráce s odborníky, Podpora, Práce s kolektivem, Dohoda",Dlouhodobý úspěch
+exp1402,1387,Verbální narušování výuky,"Přemístění žáka , Rozhovor, Dohoda",Neúspěch
+exp125,110,Neplnění školních povinností/nepřipravenost na výuku ,"Rozhovor, Spolupráce s odborníky, Důsledky",Neúspěch
+exp1093,1091,Nezvládání výuky,"Rozhovor, Upozornění, Spolupráce s odborníky, Podpora",Krátkodobý úspěch
+exp1015,1006,Porušování třídních/školních pravidel,"Upozornění, Rozhovor, Spolupráce s odborníky",Krátkodobý úspěch
+mat101,101,Verbální narušování výuky,"Upozornění, Rozhovor",Dlouhodobý úspěch
+exp461,454,Šikana,Rozhovor,Neúspěch
+exp1156,1151,"Verbální narušování výuky, Verbální agrese, Emoční výbuchy, Diagnóza","Rozhovor, Spolupráce s odborníky",Neúspěch
+mat1383,1383,Porušování třídních/školních pravidel,"Upozornění, Rozhovor",Neúspěch
+,267,"Verbální narušování výuky, Verbální agrese, Diagnóza, Fyzická agrese","Fyzické zakročení, Podpora, Rozhovor, Práce s kolektivem",?
+exp778,782,"Fyzická agrese, Emoční výbuchy","Rozhovor, Spolupráce s odborníky, Práce s kolektivem",Dlouhodobý úspěch
+mat297,297,"Neplnění školních povinností/nepřipravenost na výuku , Verbální agrese",Nerespektující komunikace,Neúspěch
+exp1058,1050,"Verbální narušování výuky, Diagnóza","Spolupráce s odborníky, Rozhovor, Proaktivní řešení, Podpora",Dlouhodobý úspěch
+exp952,953,"Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky, Nezvládání výuky, Fyzická agrese, Neplnění školních povinností/nepřipravenost na výuku , Diagnóza","Podpora, Rozhovor, Přemístění žáka , Spolupráce s odborníky",Dlouhodobý úspěch
+mat705,705,"Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku ","Upozornění, Rozhovor, Dohoda, Podpora",Dlouhodobý úspěch
+exp960,959,"Fyzická agrese, Verbální agrese, Verbální narušování výuky","Upozornění, Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+exp382,378,"Verbální agrese, Fyzická agrese","Spolupráce s odborníky, Rozhovor",Neúspěch
+exp281,287,"Porušování třídních/školních pravidel, Fyzická agrese, Diagnóza","Rozhovor, Důsledky, Práce s kolektivem",Částěčný úspěch
+mat1446,1446,Porušování třídních/školních pravidel,"Rozhovor, Důsledky",Dlouhodobý úspěch
+exp743,737,"Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky, Diagnóza, Neverbální narušování výuky, Porušování třídních/školních pravidel","Spolupráce s odborníky, Rozhovor, Podpora",Dlouhodobý úspěch
+mat127,127,"Neplnění školních povinností/nepřipravenost na výuku , Porušování třídních/školních pravidel, Verbální narušování výuky","Rozhovor, Spolupráce s odborníky, Podpora",Dlouhodobý úspěch
+exp327,328,"Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky, Diagnóza","Podpora, (Kázeňské) Tresty",Neúspěch
+mat293,293,"Nevěnování se výuce/Nepozornost při výuce, Fyzická agrese","Rozhovor, Podpora",Neúspěch
+exp1044,1042,"Neplnění školních povinností/nepřipravenost na výuku , Diagnóza","Podpora, Spolupráce s odborníky",Dlouhodobý úspěch
+exp481,479,Verbální agrese,"Práce s kolektivem, Rozhovor",Dlouhodobý úspěch
+exp859,850,"Emoční výbuchy, Diagnóza","Rozhovor, Spolupráce s odborníky, Práce s kolektivem",Dlouhodobý úspěch
+mat778,778,Verbální agrese,"Rozhovor, (Kázeňské) Tresty, Důsledky",Dlouhodobý úspěch
+mat629,629,"Verbální narušování výuky, Neverbální narušování výuky",Podpora,Dlouhodobý úspěch
+exp211,210,Verbální agrese,"Rozhovor, Práce s kolektivem",Dlouhodobý úspěch
+mat1193,1193,?,"Rozhovor, Spolupráce s odborníky",?
+exp1226,1229,"Verbální narušování výuky, Neverbální narušování výuky, Verbální agrese","Upozornění, Spolupráce s odborníky, Rozhovor, Dohoda",Neúspěch
+exp153,141,Verbální agrese,"(Kázeňské) Tresty, Podpora",Dlouhodobý úspěch
+exp1088,1088,"Porušování třídních/školních pravidel, Šikana","Rozhovor, Nerespektující komunikace",Dlouhodobý úspěch
+exp998,999,Fyzická agrese,Rozhovor,Neúspěch
+exp947,943,"Porušování třídních/školních pravidel, Verbální agrese","Rozhovor, Upozornění, Práce s kolektivem",Dlouhodobý úspěch
+exp1368,1355,"Diagnóza, Emoční výbuchy","Rozhovor, Spolupráce s odborníky, Podpora, Dohoda",Dlouhodobý úspěch
+exp986,987,"Verbální agrese, Verbální narušování výuky",Nerespektující komunikace,Dlouhodobý úspěch
+exp494,491,"Porušování třídních/školních pravidel, Fyzická agrese","Spolupráce s odborníky, Rozhovor, Důsledky",Dlouhodobý úspěch
+exp198,200,Porušování třídních/školních pravidel,Spolupráce s odborníky,Dlouhodobý úspěch
+exp1445,1448,"Verbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce, Porušování třídních/školních pravidel, Neverbální narušování výuky","Rozhovor, Spolupráce s odborníky, Podpora",Částěčný úspěch
+exp1238,1232,"Neverbální narušování výuky, Verbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce, Verbální agrese, Porušování třídních/školních pravidel","(Kázeňské) Tresty, Rozhovor, Upozornění, Důsledky, Spolupráce s odborníky",Neúspěch
+exp706,715,"Fyzická agrese, Verbální agrese","Nerespektující komunikace, Spolupráce s odborníky, Práce s kolektivem",Dlouhodobý úspěch
+mat1201,1201,"Diagnóza, Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky","Rozhovor, Proaktivní řešení",Dlouhodobý úspěch
+mat592,592,"Verbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce, Fyzická agrese","Podpora, Upozornění, Nerespektující komunikace, (Kázeňské) Tresty",-
+mat148,148,"Verbální agrese, Emoční výbuchy",Upozornění,Neúspěch
+exp729,728,Porušování třídních/školních pravidel,"Spolupráce s odborníky, Rozhovor, Přemístění žáka , Důsledky",Neúspěch
+mat283,283,Verbální agrese,"Přemístění žáka , Rozhovor",Dlouhodobý úspěch
+exp302,299,"Diagnóza, Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky",Nerespektující komunikace,Neúspěch
+exp629,619,Porušování třídních/školních pravidel,Rozhovor,Dlouhodobý úspěch
+exp292,292,"Nevěnování se výuce/Nepozornost při výuce, Nezvládání výuky, Diagnóza","Rozhovor, Podpora, Dohoda, Proaktivní řešení",Dlouhodobý úspěch
+exp531,514,"Diagnóza, Verbální narušování výuky","Podpora, Dohoda",Dlouhodobý úspěch
+exp693,701,"Diagnóza, Fyzická agrese, Emoční výbuchy","Nerespektující komunikace, Přemístění žáka, Důsledky, Upozornění",Krátkodobý úspěch
+exp1054,1048,"Emoční výbuchy, Fyzická agrese, Diagnóza, Sebedestruktivní chování","Přemístění žáka, Proaktivní řešení, Podpora, Práce s kolektivem",Dlouhodobý úspěch
+exp1303,1306,Fyzická agrese,"Rozhovor, (Kázeňské) Tresty",Dlouhodobý úspěch
+mat507,507,"Nevěnování se výuce/Nepozornost při výuce, Nezvládání výuky, Diagnóza","Podpora, Spolupráce s odborníky",Neúspěch
+exp123,130,"Diagnóza, Verbální agrese, Porušování třídních/školních pravidel","Upozornění, (Kázeňské) Tresty, Nerespektující komunikace",Neúspěch
+exp582,585,"Nevěnování se výuce/Nepozornost při výuce, Verbální agrese, Neplnění školních povinností/nepřipravenost na výuku ","Rozhovor, Důsledky, Podpora",Neúspěch
+mat332,332,Porušování třídních/školních pravidel,Rozhovor,?
+exp323,324,"Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku , Problémy s docházkou","Rozhovor, Důsledky, Přemístění žáka ",Neúspěch
+exp1465,1467,"Porušování třídních/školních pravidel, Problémy s docházkou, Verbální narušování výuky","Rozhovor, Spolupráce s odborníky, Podpora, Dohoda",Neúspěch
+exp989,994,"Diagnóza, Emoční výbuchy, Nevěnování se výuce/Nepozornost při výuce","Přemístění žáka, Podpora, Důsledky",Dlouhodobý úspěch
+mat567,567,"Neverbální narušování výuky, Diagnóza",Proaktivní řešení,Dlouhodobý úspěch
+exp129,136,"Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky, Neplnění školních povinností/nepřipravenost na výuku ",Podpora,Dlouhodobý úspěch
+exp1105,1108,Sebedestruktivní chování,"Spolupráce s odborníky, Rozhovor, Upozornění",Neúspěch
+exp637,620,"Fyzická agrese, Verbální narušování výuky","Upozornění, Nerespektující komunikace, Rozhovor",Neúspěch
+exp1152,1143,"Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky, Verbální agrese",Nerespektující komunikace,Neúspěch
+exp438,436,"Diagnóza, Porušování třídních/školních pravidel",Spolupráce s odborníky,Neúspěch
+mat665,665,Porušování třídních/školních pravidel,"Spolupráce s odborníky, Rozhovor, Dohoda, Důsledky",Neúspěch
+exp1417,1419,Fyzická agrese,"Rozhovor, Spolupráce s odborníky, Důsledky, Práce s kolektivem",Dlouhodobý úspěch
+mat630,630,Porušování třídních/školních pravidel,Důsledky,Neúspěch
+exp701,708,"Problémy s docházkou, Neplnění školních povinností/nepřipravenost na výuku ","Spolupráce s odborníky, Podpora, Proaktivní řešení, Rozhovor",Neúspěch
+exp157,159,"Verbální narušování výuky, Emoční výbuchy","Upozornění, (Kázeňské) Tresty, Spolupráce s odborníky, Přemístění žáka, Rozhovor",Dlouhodobý úspěch
+exp1019,1023,Problémy s docházkou,"Rozhovor, Důsledky",Dlouhodobý úspěch
+exp1296,1300,"Diagnóza, Verbální agrese","Rozhovor, Spolupráce s odborníky, Přemístění žáka, Podpora, Práce s kolektivem",Dlouhodobý úspěch
+mat1104,1104,Verbální narušování výuky,"Upozornění, Přemístění žáka ",Dlouhodobý úspěch
+mat1308,1308,Porušování třídních/školních pravidel,"Spolupráce s odborníky, Rozhovor",Dlouhodobý úspěch
+exp1305,1303,"Diagnóza, Emoční výbuchy, Fyzická agrese","Rozhovor, Podpora, Spolupráce s odborníky, Přemístění žáka ",Neúspěch
+exp1356,1356,Verbální narušování výuky,Rozhovor,Neúspěch
+exp1115,1114,"Diagnóza, Verbální agrese","Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+exp199,196,Fyzická agrese,"Rozhovor, Upozornění",Neúspěch
+exp1251,1247,"Nezvládání výuky, Emoční výbuchy",Nerespektující komunikace,Neúspěch
+mat969,969,"Porušování třídních/školních pravidel, Verbální narušování výuky","Upozornění, Podpora",Dlouhodobý úspěch
+exp435,439,"Verbální narušování výuky, Verbální agrese","Upozornění, Rozhovor, Dohoda, Spolupráce s odborníky",Dlouhodobý úspěch
+exp409,411,"Verbální narušování výuky, Fyzická agrese, Diagnóza","Rozhovor, Dohoda",Dlouhodobý úspěch
+exp654,650,"Verbální agrese, Fyzická agrese, Porušování třídních/školních pravidel","Spolupráce s odborníky, Podpora, Přemístění žáka ",Neúspěch
+exp1439,1443,Fyzická agrese,"Nerespektující komunikace, Rozhovor, Důsledky, Spolupráce s odborníky",Neúspěch
+exp100,97,Lhaní a podvody,"Rozhovor, Podpora",Dlouhodobý úspěch
+exp1220,1221,"Problémy s docházkou, Neplnění školních povinností/nepřipravenost na výuku, Lhaní a podvody, Diagnóza","Dohoda, Spolupráce s odborníky, Podpora, Důsledky",Neúspěch
+exp156,157,"Nevěnování se výuce/Nepozornost při výuce, Neverbální narušování výuky, Diagnóza","Upozornění, Přemístění žáka , Proaktivní řešení",Dlouhodobý úspěch
+mat420,420,Verbální agrese,"Spolupráce s odborníky, Práce s kolektivem",Neúspěch
+exp1343,1344,"Lhaní a podvody, Porušování třídních/školních pravidel","Nerespektující komunikace, Důsledky, Spolupráce s odborníky, Rozhovor",Neúspěch
+exp482,478,Verbální narušování výuky,"Upozornění, Rozhovor, Dohoda",?
+exp1362,1366,Verbální agrese,"Rozhovor, Upozornění, Spolupráce s odborníky, Důsledky",Neúspěch
+mat944,944,"Porušování třídních/školních pravidel, Neplnění školních povinností/nepřipravenost na výuku ","Spolupráce s odborníky, Rozhovor",Neúspěch
+exp444,448,"Verbální narušování výuky, Fyzická agrese, Porušování třídních/školních pravidel, Diagnóza","Fyzické zakročení, Rozhovor, Podpora, Spolupráce s odborníky",Neúspěch
+exp181,179,"Emoční výbuchy, Verbální agrese, Fyzická agrese, Diagnóza","Fyzické zakročení, Rozhovor, Přemístění žáka, Podpora, Proaktivní řešení",Neúspěch
+exp396,391,"Verbální narušování výuky, Neverbální narušování výuky","Rozhovor, Proaktivní řešení, Dohoda",Dlouhodobý úspěch
+exp1295,1297,Šikana,"Spolupráce s odborníky, Rozhovor, (Kázeňské) Tresty",Dlouhodobý úspěch
+exp1071,1067,"Diagnóza, Fyzická agrese","Rozhovor, Podpora, Spolupráce s odborníky, Práce s kolektivem",Dlouhodobý úspěch
+mat1248,1248,Emoční výbuchy,"Přemístění žáka, Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+exp1485,1486,Lhaní a podvody,Rozhovor,Dlouhodobý úspěch
+exp641,637,"Verbální agrese, Fyzická agrese","Spolupráce s odborníky, Rozhovor, Upozornění, Důsledky",Částěčný úspěch
+exp1433,1422,"Verbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce, Porušování třídních/školních pravidel, Verbální agrese","Upozornění, Nerespektující komunikace, Spolupráce s odborníky, Přemístění žáka ",Neúspěch
+exp1024,1028,Šikana,"Práce s kolektivem, Spolupráce s odborníky",Neúspěch
+exp794,794,"Diagnóza, Šikana","Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+exp1328,1335,"Diagnóza, Verbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce, Verbální agrese, Porušování třídních/školních pravidel","Nerespektující komunikace, Podpora, Rozhovor",Neúspěch
+exp655,662,"Nevěnování se výuce/Nepozornost při výuce, Verbální agrese, Verbální narušování výuky, Neverbální narušování výuky, Diagnóza","Podpora, Upozornění, Spolupráce s odborníky, Přemístění žáka, Rozhovor",Krátkodobý úspěch
+exp289,295,"Verbální agrese, Lhaní a podvody","Rozhovor, Upozornění, Dohoda, Podpora, Přemístění žáka ",Neúspěch
+exp520,549,"Verbální narušování výuky, Diagnóza, Verbální agrese, Neverbální narušování výuky","Spolupráce s odborníky, Rozhovor, Dohoda",Dlouhodobý úspěch
+mat1241,1241,Fyzická agrese,Rozhovor,Neúspěch
+exp81,89,"Verbální narušování výuky, Fyzická agrese, Neverbální narušování výuky","Upozornění, (Kázeňské) Tresty, Přemístění žáka ",Dlouhodobý úspěch
+mat986,986,"Verbální narušování výuky, Neverbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku , Fyzická agrese","Upozornění, Důsledky, Rozhovor, Spolupráce s odborníky, Dohoda, (Kázeňské) Tresty",Neúspěch
+exp937,938,"Nevěnování se výuce/Nepozornost při výuce, Emoční výbuchy, Fyzická agrese, Verbální agrese, Neverbální narušování výuky, Diagnóza","Nerespektující komunikace, Rozhovor, (Kázeňské) Tresty, Důsledky, Přemístění žáka ",Neúspěch
+mat611,611,"Porušování třídních/školních pravidel, Emoční výbuchy, Verbální agrese, Fyzická agrese","Spolupráce s odborníky, Přemístění žáka, Rozhovor, Upozornění, Podpora",Dlouhodobý úspěch
+exp663,666,"Nevěnování se výuce/Nepozornost při výuce, Verbální agrese","Práce s kolektivem, Rozhovor",Dlouhodobý úspěch
+mat1395,1395,"Emoční výbuchy, Fyzická agrese, Verbální agrese, Diagnóza","Podpora, Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+exp1429,1432,Šikana,Rozhovor,Neúspěch
+exp1310,1320,Lhaní a podvody,"Spolupráce s odborníky, Rozhovor, (Kázeňské) Tresty",Dlouhodobý úspěch
+exp296,291,"Verbální narušování výuky, Fyzická agrese","Spolupráce s odborníky, Důsledky, (Kázeňské) Tresty, Rozhovor, Dohoda, Přemístění žáka, Podpora",Neúspěch
+mat1426,1426,"Fyzická agrese, Porušování třídních/školních pravidel","Rozhovor, Důsledky",Dlouhodobý úspěch
+exp1453,1455,Verbální narušování výuky,"Upozornění, Fyzické zakročení, Rozhovor",Neúspěch
+mat349,349,"Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku , Verbální agrese","Upozornění, Rozhovor, Spolupráce s odborníky, Přemístění žáka ",Neúspěch
+exp677,679,Porušování třídních/školních pravidel,"Rozhovor, Spolupráce s odborníky",-
+mat1420,1420,Problémy s docházkou,"Rozhovor, Upozornění",Neúspěch
+exp1100,1097,"Verbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce","Spolupráce s odborníky, Rozhovor",Dlouhodobý úspěch
+exp832,835,"Verbální agrese, Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky","Nerespektující komunikace, Rozhovor, Přemístění žáka , Podpora",Krátkodobý úspěch
+exp1349,1342,"Verbální narušování výuky, Šikana, Fyzická agrese, Lhaní a podvody","Rozhovor, Důsledky, Přemístění žáka ",Neúspěch
+exp456,459,"Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky","Upozornění, (Kázeňské) Tresty",Dlouhodobý úspěch
+exp383,376,"Fyzická agrese, Verbální agrese, Verbální narušování výuky, Neplnění školních povinností/nepřipravenost na výuku ","Důsledky, Rozhovor, Přemístění žáka ",Neúspěch
+exp337,334,"Verbální agrese, Verbální narušování výuky","Rozhovor, Nerespektující komunikace",Neúspěch
+exp763,763,"Nevěnování se výuce/Nepozornost při výuce, Neverbální narušování výuky",Podpora,Krátkodobý úspěch
+exp1327,1331,Fyzická agrese,Rozhovor,Neúspěch
+exp1004,1010,"Diagnóza, Verbální narušování výuky, Verbální agrese",Rozhovor,Dlouhodobý úspěch
+mat1494,1494,"Verbální narušování výuky, Fyzická agrese, Emoční výbuchy, Diagnóza","Podpora, Rozhovor",Dlouhodobý úspěch
+mat329,329,Diagnóza,"Rozhovor, Upozornění, Důsledky",Dlouhodobý úspěch
+exp319,319,"Neplnění školních povinností/nepřipravenost na výuku , Fyzická agrese, Verbální agrese",Rozhovor,Dlouhodobý úspěch
+exp1170,1160,"Problémy s docházkou, Nezvládání výuky",Rozhovor,Dlouhodobý úspěch
+exp1377,1378,Neplnění školních povinností/nepřipravenost na výuku,Upozornění,Dlouhodobý úspěch
+exp18,13,"Diagnóza, Fyzická agrese, Verbální agrese",Podpora,Dlouhodobý úspěch 
+exp173,172,"Diagnóza, Fyzická agrese",Spolupráce s odborníky,Neúspěch 
+exp266,261,"Fyzická agrese, Verbální agrese, Diagnóza","Rozhovor, Spolupráce s odborníky, Přemístění žáka , Nerespektující komunikace",Dlouhodobý úspěch
+exp834,827,"Fyzická agrese, Diagnóza, Verbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku ","Rozhovor, Přemístění žáka , Důsledky",Neúspěch
+exp867,868,"Nevěnování se výuce/Nepozornost při výuce, Porušování třídních/školních pravidel","Upozornění, Nerespektující komunikace",?
+exp795,803,"Verbální narušování výuky, Porušování třídních/školních pravidel","Rozhovor, Práce s kolektivem, Spolupráce s odborníky, Přemístění žáka , Důsledky",Neúspěch
+exp137,139,"Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku , Problémy s docházkou","Rozhovor, Dohoda",Dlouhodobý úspěch
+exp543,550,"Porušování třídních/školních pravidel, Fyzická agrese, Neverbální narušování výuky, Verbální agrese, Nevěnování se výuce/Nepozornost při výuce","Podpora, Rozhovor",Neúspěch
+exp636,618,"Nevěnování se výuce/Nepozornost při výuce, Neverbální narušování výuky","Rozhovor, Přemístění žáka , Nerespektující komunikace",Neúspěch
+exp850,853,"Porušování třídních/školních pravidel, Fyzická agrese, Verbální agrese","Rozhovor, Spolupráce s odborníky",Neúspěch
+exp851,862,"Nevěnování se výuce/Nepozornost při výuce, Neverbální narušování výuky","Rozhovor, Práce s kolektivem, Dohoda",Dlouhodobý úspěch
+mat140,140,"Problémy s docházkou, Neplnění školních povinností/nepřipravenost na výuku, Verbální narušování výuky","Rozhovor, Důsledky",Neúspěch
+exp1325,1317,"Porušování třídních/školních pravidel, Verbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce","Upozornění, Důsledky, Rozhovor, Nerespektující komunikace",Neúspěch
+exp882,880,"Emoční výbuchy, Diagnóza","Spolupráce s odborníky, Přemístění žáka ",Dlouhodobý úspěch
+mat225,225,Emoční výbuchy,"Přemístění žáka , Podpora",Dlouhodobý úspěch
+mat1399,1399,Emoční výbuchy,"Rozhovor, Práce s kolektivem, Spolupráce s odborníky",Dlouhodobý úspěch
+exp418,410,Verbální agrese,Rozhovor,Neúspěch
+exp325,326,"Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky, Neverbální narušování výuky","Přemístění žáka, Nerespektující komunikace",Neúspěch
+exp300,300,"Sebedestruktivní chování, Diagnóza, Fyzická agrese","Rozhovor, Práce s kolektivem, Spolupráce s odborníky, Podpora",Dlouhodobý úspěch
+mat893,893,Problémy s docházkou,,Neúspěch
+exp1211,1206,"Fyzická agrese, Emoční výbuchy, Lhaní a podvody , Porušování třídních/školních pravidel",Rozhovor,Dlouhodobý úspěch
+mat1398,1398,"Verbální agrese, Fyzická agrese","Rozhovor, Spolupráce s odborníky",Částěčný úspěch
+exp1317,1322,"Fyzická agrese, Emoční výbuchy",Spolupráce s odborníky,Dlouhodobý úspěch
+exp1207,1213,Diagnóza,"Rozhovor, Nerespektující komunikace",Částěčný úspěch
+exp558,574,Porušování třídních/školních pravidel,Podpora,Dlouhodobý úspěch
+exp500,504,Šikana,"rozhovor, dohoda, Práce s kolektivem",Dlouhodobý úspěch
+mat1301,1301,Porušování třídních/školních pravidel,"rozhovor, spolupráce s odborníky, Upozornění",
+mat4,4,"Verbální narušování výuky, Neverbální narušování výuky","rozhovor, Rozhovor",Částěčný úspěch
+mat919,919,Šikana,Práce s kolektivem,Dlouhodobý úspěch
+mat468,468,Fyzická agrese,Nerespektující komunikace,Neúspěch
+exp324,322,Fyzická agrese,Práce s kolektivem,Neúspěch
+exp8,6,"Problémy s docházkou, Porušování třídních/školních pravidel",Spolupráce s odborníky,Neúspěch
+exp1301,1296,Problémy s docházkou,Spolupráce s odborníky,Neúspěch
+exp553,548,"Diagnóza, Neplnění školních povinností/nepřipravenost na výuku , Verbální narušování výuky, Fyzická agrese","(Kázeňské) Tresty, Rozhovor",Neúspěch
+exp754,756,Emoční výbuchy,"Rozhovor, Přemístění žáka ",Krátkodobý úspěch
+exp33,40,"Neplnění školních povinností/nepřipravenost na výuku , Verbální narušování výuky","Nerespektující komunikace, Spolupráce s odborníky, Přemístění žáka ",Částěčný úspěch
+mat543,543,"Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku ",Rozhovor,Krátkodobý úspěch
+exp227,243,Verbální agrese,"Rozhovor, Práce s kolektivem",Dlouhodobý úspěch
+exp613,608,"Porušování třídních/školních pravidel, Lhaní a podvody",Rozhovor,Neúspěch
+exp813,813,"Fyzická agrese, Verbální agrese","Rozhovor, Dohoda",Neúspěch
+exp1191,1191,"Neplnění školních povinností/nepřipravenost na výuku , Diagnóza, Sebedestruktivní chování, Problémy s docházkou","Rozhovor, Dohoda, Spolupráce s odborníky, Důsledky",Neúspěch
+mat1075,1075,"Verbální narušování výuky, Neverbální narušování výuky","Dohoda, Důsledky",Dlouhodobý úspěch
+mat1373,1373,Porušování třídních/školních pravidel,"Upozornění, Důsledky, (Kázeňské) Tresty, Spolupráce s odborníky",Krátkodobý úspěch
+mat1482,1482,Lhaní a podvody,Práce s kolektivem,Neúspěch
+exp811,809,"Fyzická agrese, Diagnóza","Spolupráce s odborníky, Přemístění žáka , Fyzické zakročení",Neúspěch
+exp1389,1396,"Fyzická agrese, Verbální agrese","Podpora, Spolupráce s odborníky, Upozornění","Krátkodobý úspěch, Částěčný úspěch"
+mat377,377,"Verbální narušování výuky, Diagnóza","Rozhovor, Dohoda, Práce s kolektivem",Dlouhodobý úspěch
+exp314,315,"Fyzická agrese, Verbální agrese, Šikana","Rozhovor, Práce s kolektivem",Dlouhodobý úspěch
+exp439,443,"Lhaní a podvody, Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku , Problémy s docházkou","Rozhovor, Spolupráce s odborníky",Neúspěch
+exp328,320,"Neplnění školních povinností/nepřipravenost na výuku , Problémy s docházkou","(Kázeňské) Tresty, Důsledky",Dlouhodobý úspěch
+exp815,812,"Verbální agrese, Emoční výbuchy, Verbální narušování výuky, Sebedestruktivní chování, Verbální agrese","Přemístění žáka , Rozhovor, Podpora",Dlouhodobý úspěch
+exp806,800,"Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku , Verbální narušování výuky","Rozhovor, Přemístění žáka , Podpora",Dlouhodobý úspěch
+exp1134,1139,"Fyzická agrese, Emoční výbuchy, Problémy s docházkou, Diagnóza","Spolupráce s odborníky, Dohoda, Podpora",Částěčný úspěch
+exp423,425,"Fyzická agrese, Verbální agrese, Šikana","Rozhovor, Spolupráce s odborníky, Upozornění, (Kázeňské) Tresty",Dlouhodobý úspěch
+exp571,554,"Fyzická agrese, Emoční výbuchy, Neverbální narušování výuky, Porušování třídních/školních pravidel",Rozhovor,"Částěčný úspěch, Krátkodobý úspěch"
+mat595,595,"Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku ","Důsledky, (Kázeňské) Tresty",Neúspěch
+mat902,902,Lhaní a podvody,Rozhovor,Neúspěch
+mat974,974,Emoční výbuchy,"Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+exp1047,1053,"Šikana, Lhaní a podvody",Rozhovor,Neúspěch
+mat1224,1224,"Nevěnování se výuce/Nepozornost při výuce, Nezvládání výuky",Rozhovor,Dlouhodobý úspěch
+mat651,651,"Diagnóza, Emoční výbuchy, Verbální agrese","Přemístění žáka , Práce s kolektivem, Rozhovor, Dohoda",Dlouhodobý úspěch
+exp226,228,"Lhaní a podvody, Nevěnování se výuce/Nepozornost při výuce, Šikana, Verbální agrese","Rozhovor, Nerespektující komunikace, Spolupráce s odborníky",Dlouhodobý úspěch
+exp723,721,"Problémy s docházkou, Nezvládání výuky","Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+exp816,817,"Fyzická agrese, Verbální narušování výuky","Rozhovor, Nerespektující komunikace, Spolupráce s odborníky, (Kázeňské) Tresty",Neúspěch
+exp983,988,"Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku , Verbální narušování výuky, Neverbální narušování výuky, Fyzická agrese","(Kázeňské) Tresty, Spolupráce s odborníky",Částěčný úspěch
+exp691,695,Diagnóza,Práce s kolektivem,Dlouhodobý úspěch
+exp64,67,"Nevěnování se výuce/Nepozornost při výuce, Neverbální narušování výuky, Porušování třídních/školních pravidel, Diagnóza",Přemístění žáka,Krátkodobý úspěch
+exp393,394,"Neplnění školních povinností/nepřipravenost na výuku , Nezvládání výuky, Diagnóza","Přemístění žáka , Podpora",Částěčný úspěch
+exp995,998,"Verbální agrese, Sebedestruktivní chování, Fyzická agrese","Rozhovor, Spolupráce s odborníky",Krátkodobý úspěch
+exp214,212,Problémy s docházkou,"Spolupráce s odborníky, Podpora, Dohoda",Částěčný úspěch
+mat1166,1166,"Fyzická agrese, Verbální agrese","Rozhovor, Práce s kolektivem",Dlouhodobý úspěch
+exp782,788,"Diagnóza, Emoční výbuchy, Lhaní a podvody, Porušování třídních/školních pravidel, Neverbální narušování výuky, Verbální narušování výuky, Fyzická agrese, Verbální agrese","Spolupráce s odborníky, Rozhovor",Dlouhodobý úspěch
+exp522,537,Šikana,"Rozhovor, Spolupráce s odborníky, (Kázeňské) Tresty, Práce s kolektivem",Neúspěch
+exp717,723,"Diagnóza, Nezvládání výuky, Nevěnování se výuce/Nepozornost při výuce","Upozornění, Přemístění žáka , Podpora",Dlouhodobý úspěch
+mat859,859,"Porušování třídních/školních pravidel, Fyzická agrese, Problémy s docházkou","Důsledky, Spolupráce s odborníky, (Kázeňské) Tresty",Neúspěch
+mat86,86,"Porušování třídních/školních pravidel, Emoční výbuchy","Práce s kolektivem, Upozornění",Neúspěch
+mat1357,1357,"Fyzická agrese, Porušování třídních/školních pravidel","Nerespektující komunikace, Důsledky",Dlouhodobý úspěch
+mat273,273,"Problémy s docházkou, Šikana","Přemístění žáka , (Kázeňské) Tresty",Neúspěch
+mat924,924,"Neverbální narušování výuky, Verbální agrese","Rozhovor, Upozornění",Částěčný úspěch
+exp1493,1490,Neplnění školních povinností/nepřipravenost na výuku ,"Důsledky, Podpora",Dlouhodobý úspěch
+mat1358,1358,Verbální narušování výuky,"Přemístění žáka , Nerespektující komunikace","Částěčný úspěch, Neúspěch"
+exp624,631,"Neverbální narušování výuky, Porušování třídních/školních pravidel","Přemístění žáka , Práce s kolektivem, Rozhovor, Dohoda, Důsledky",Dlouhodobý úspěch
+mat1038,1038,"Verbální agrese, Lhaní a podvody, Porušování třídních/školních pravidel, Problémy s docházkou",Spolupráce s odborníky,Částěčný úspěch
+exp1406,1407,Lhaní a podvody,Rozhovor,"Dlouhodobý úspěch, Krátkodobý úspěch"
+mat1005,1005,Šikana,"Práce s kolektivem, Rozhovor",Dlouhodobý úspěch
+,274,"Verbální narušování výuky, Neverbální narušování výuky","Upozornění, (Kázeňské) Tresty, Důsledky",Částěčný úspěch
+exp1020,1025,"Verbální narušování výuky, Emoční výbuchy","Přemístění žáka , Rozhovor, Práce s kolektivem, Upozornění, Dohoda",Dlouhodobý úspěch
+exp363,363,"Neplnění školních povinností/nepřipravenost na výuku , Problémy s docházkou","Rozhovor, Spolupráce s odborníky, Upozornění",Dlouhodobý úspěch
+exp634,623,Verbální agrese,"Upozornění, Rozhovor, Dohoda",Dlouhodobý úspěch
+exp3,3,"Problémy s docházkou, Diagnóza, Lhaní a podvody","Rozhovor, Podpora, Spolupráce s odborníky",Dlouhodobý úspěch
+exp11,7,"Problémy s docházkou, Verbální narušování výuky, Diagnóza","Přemístění žáka , Podpora",Dlouhodobý úspěch
+exp311,312,Šikana,"Spolupráce s odborníky, (Kázeňské) Tresty",Neúspěch
+exp662,669,"Neplnění školních povinností/nepřipravenost na výuku , Verbální narušování výuky, Šikana","Spolupráce s odborníky, Dohoda",Neúspěch
+mat947,947,"Šikana, Verbální agrese","Upozornění, Rozhovor",Dlouhodobý úspěch
+exp1482,1485,"Fyzická agrese, Neplnění školních povinností/nepřipravenost na výuku , Verbální narušování výuky","Rozhovor, Dohoda",Dlouhodobý úspěch
+mat216,216,"Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku ",Důsledky,Neúspěch
+mat1066,1066,"Lhaní a podvody, Problémy s docházkou","Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+mat28,28,"Diagnóza, Lhaní a podvody, Emoční výbuchy, Neplnění školních povinností/nepřipravenost na výuku ","Práce s kolektivem, Rozhovor, (Kázeňské) Tresty",Neúspěch
+mat1401,1401,Verbální agrese,"Spolupráce s odborníky, Přemístění žáka ",Krátkodobý úspěch
+exp876,874,Porušování třídních/školních pravidel,"Spolupráce s odborníky, (Kázeňské) Tresty",Dlouhodobý úspěch
+mat683,683,"Neverbální narušování výuky, Verbální narušování výuky",Nerespektující komunikace,Dlouhodobý úspěch
+mat639,639,Porušování třídních/školních pravidel,"Spolupráce s odborníky, Upozornění, Rozhovor, (Kázeňské) Tresty",
+exp756,758,"Fyzická agrese, Diagnóza","Rozhovor, Práce s kolektivem, Přemístění žáka ",Dlouhodobý úspěch
+exp1415,1403,"Neplnění školních povinností/nepřipravenost na výuku , Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky","Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+exp615,625,"Emoční výbuchy, Verbální narušování výuky, Neplnění školních povinností/nepřipravenost na výuku , Diagnóza","Spolupráce s odborníky, (Kázeňské) Tresty, Podpora",Dlouhodobý úspěch
+mat1475,1475,"Lhaní a podvody, Problémy s docházkou","Rozhovor, Upozornění",Neúspěch
+exp253,257,"Diagnóza, Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku , Verbální agrese, Emoční výbuchy","Podpora, Práce s kolektivem, Spolupráce s odborníky",Dlouhodobý úspěch
+exp19,26,"Nevěnování se výuce/Nepozornost při výuce, Neverbální narušování výuky, Fyzická agrese, Sebedestruktivní chování","(Kázeňské) Tresty, Rozhovor, Dohoda, Přemístění žáka , Upozornění",Neúspěch
+exp349,337,Lhaní a podvody,Fyzické zakročení,Dlouhodobý úspěch
+exp117,107,"Nezvládání výuky, Problémy s docházkou, Neplnění školních povinností/nepřipravenost na výuku ",Přemístění žáka ,Dlouhodobý úspěch
+exp347,350,Šikana,"Spolupráce s odborníky, (Kázeňské) Tresty",Částěčný úspěch
+exp59,56,"Fyzická agrese, Emoční výbuchy, Nezvládání výuky, Diagnóza","Rozhovor , Přemístění žáka , Fyzické zakročení",Dlouhodobý úspěch
+exp1354,1365,"Šikana, Nevěnování se výuce/Nepozornost při výuce","Práce s kolektivem, Spolupráce s odborníky, Důsledky",Dlouhodobý úspěch
+exp213,214,"Nevěnování se výuce/Nepozornost při výuce, Neverbální narušování výuky, Verbální agrese","Fyzické zakročení, Důsledky",Neúspěch
+mat121,121,"Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku ","Rozhovor, Spolupráce s odborníky",Částěčný úspěch
+exp1495,1503,"Fyzická agrese, Verbální agrese, Šikana",Spolupráce s odborníky,Neúspěch
+exp71,73,"Verbální agrese, Porušování třídních/školních pravidel, Verbální narušování výuky, Problémy s docházkou","Upozornění, Přemístění žáka , Nerespektující komunikace, Spolupráce s odborníky, (Kázeňské) Tresty",Částěčný úspěch
+exp787,786,"Verbální agrese, Verbální narušování výuky",Práce s kolektivem,Částěčný úspěch
+mat1056,1056,"Diagnóza, Lhaní a podvody","Rozhovor, Práce s kolektivem, Spolupráce s odborníky",Částěčný úspěch
+exp1274,1271,"Sebedestruktivní chování, Šikana",Práce s kolektivem,Dlouhodobý úspěch
+mat931,931,Diagnóza,"Rozhovor, Práce s kolektivem",Neúspěch
+mat797,797,"Neplnění školních povinností/nepřipravenost na výuku , Sebedestruktivní chování, Problémy s docházkou","Rozhovor, Spolupráce s odborníky",Neúspěch
+exp1446,1450,Porušování třídních/školních pravidel,"Rozhovor, (Kázeňské) Tresty, Důsledky",Dlouhodobý úspěch
+exp825,820,Šikana,"Práce s kolektivem, Spolupráce s odborníky, Důsledky",Dlouhodobý úspěch
+exp549,534,"Fyzická agrese, Verbální agrese, Verbální narušování výuky, Neverbální narušování výuky","Upozornění, Přemístění žáka , Spolupráce s odborníky, Práce s kolektivem",Dlouhodobý úspěch
+mat1251,1251,"Neverbální narušování výuky, Verbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku ",Rozhovor,Dlouhodobý úspěch
+exp595,604,"Neplnění školních povinností/nepřipravenost na výuku , Lhaní a podvody","Rozhovor, Upozornění",Neúspěch
+exp473,466,"Neverbální narušování výuky, Diagnóza",Fyzické zakročení,Dlouhodobý úspěch
+exp1283,1285,"Porušování třídních/školních pravidel, Lhaní a podvody","Práce s kolektivem, Spolupráce s odborníky",Dlouhodobý úspěch
+exp1450,1444,"Diagnóza, Fyzická agrese, Šikana","Rozhovor, Práce s kolektivem, Spolupráce s odborníky, Důsledky, Podpora",Dlouhodobý úspěch
+exp61,61,"Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku ",,Neúspěch
+mat894,894,"Nezvládání výuky, Lhaní a podvody, Problémy s docházkou",(Kázeňské) Tresty,Neúspěch
+mat93,93,"Verbální agrese, Diagnóza",Spolupráce s odborníky,
+exp672,667,Neverbální narušování výuky,"Nerespektující komunikace, Práce s kolektivem",Neúspěch
+exp709,712,"Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky, Neverbální narušování výuky","Upozornění, Přemístění žáka , Rozhovor",Neúspěch
+exp194,195,Šikana,"Rozhovor, Spolupráce s odborníky",Částěčný úspěch
+exp290,281,"Problémy s docházkou, Neplnění školních povinností/nepřipravenost na výuku ",Práce s kolektivem,Dlouhodobý úspěch
+mat696,696,"Verbální agrese, Fyzická agrese","Fyzické zakročení, Nerespektující komunikace, Upozornění",Neúspěch
+mat360,360,"Verbální narušování výuky, Neverbální narušování výuky, Verbální agrese","Přemístění žáka , Rozhovor, Spolupráce s odborníky",Neúspěch
+exp525,520,"Diagnóza, Verbální narušování výuky, Neverbální narušování výuky","Rozhovor, Přemístění žáka , Dohoda, Podpora",Dlouhodobý úspěch
+mat819,819,"Nezvládání výuky, Emoční výbuchy",Spolupráce s odborníky,Dlouhodobý úspěch
+mat1132,1132,"Lhaní a podvody, Nevěnování se výuce/Nepozornost při výuce",Práce s kolektivem,Dlouhodobý úspěch
+mat183,183,Šikana,"Rozhovor, Podpora, Spolupráce s odborníky",Částěčný úspěch
+exp1040,1033,Fyzická agrese,"Rozhovor, Práce s kolektivem",Dlouhodobý úspěch
+exp115,111,"Verbální narušování výuky, Fyzická agrese","Rozhovor, Dohoda",Dlouhodobý úspěch
+exp40,43,Porušování třídních/školních pravidel,"Dohoda, Práce s kolektivem, Podpora",Dlouhodobý úspěch
+mat923,923,Fyzická agrese,"Práce s kolektivem, Rozhovor",Dlouhodobý úspěch
+exp212,205,"Diagnóza, Fyzická agrese, Neplnění školních povinností/nepřipravenost na výuku , Verbální narušování výuky","Fyzické zakročení, Spolupráce s odborníky, (Kázeňské) Tresty",Neúspěch
+exp1168,1165,"Diagnóza, Lhaní a podvody, Neplnění školních povinností/nepřipravenost na výuku , Problémy s docházkou, Verbální narušování výuky","(Kázeňské) Tresty, Podpora",Krátkodobý úspěch
+exp55,53,Verbální narušování výuky,Upozornění,Dlouhodobý úspěch
+exp551,546," Fyzická agrese, Verbální agrese",Rozhovor,Neúspěch
+exp1009,1001,"Fyzická agrese, Verbální agrese","Práce s kolektivem, Spolupráce s odborníky",Dlouhodobý úspěch
+exp1166,1164,"Diagnóza, Neplnění školních povinností/nepřipravenost na výuku ",Spolupráce s odborníky,Dlouhodobý úspěch
+mat1282,1282,"Šikana, Fyzická agrese",,Neúspěch
+mat760,760,Sebedestruktivní chování,"Spolupráce s odborníky, Rozhovor",Dlouhodobý úspěch
+exp179,184,Neplnění školních povinností/nepřipravenost na výuku ,"Upozornění, Podpora, Rozhovor",Dlouhodobý úspěch
+mat980,980,Sebedestruktivní chování,Rozhovor,Dlouhodobý úspěch
+exp78,81,"Diagnóza, Nezvládání výuky",Rozhovor,Dlouhodobý úspěch
+exp1231,1231,Verbální narušování výuky,"Upozornění, (Kázeňské) Tresty, Přemístění žáka ",Neúspěch
+mat106,106,"Diagnóza, Verbální narušování výuky",Spolupráce s odborníky,Neúspěch
+exp537,542,"Diagnóza, Neverbální narušování výuky, Fyzická agrese","Rozhovor, Upozornění, Spolupráce s odborníky, Přemístění žáka ",Částěčný úspěch
+exp502,481,"Neverbální narušování výuky, Lhaní a podvody, Nevěnování se výuce/Nepozornost při výuce","Důsledky, Upozornění",Dlouhodobý úspěch
+mat166,166,"Diagnóza, Verbální narušování výuky, Neverbální narušování výuky","Fyzické zakročení, Upozornění, Spolupráce s odborníky",Částěčný úspěch
+exp255,249,"Diagnóza, Sebedestruktivní chování, Šikana","Spolupráce s odborníky, Rozhovor, Práce s kolektivem",Dlouhodobý úspěch
+exp310,308,"Diagnóza, Nezvládání výuky","Spolupráce s odborníky, Podpora",Dlouhodobý úspěch
+exp445,447,"Diagnóza, Emoční výbuchy, Fyzická agrese, Porušování třídních/školních pravidel","Podpora, Spolupráce s odborníky, Přemístění žáka ",Dlouhodobý úspěch
+mat753,753,"Diagnóza, Verbální narušování výuky",Rozhovor,Neúspěch
+exp334,335,"Fyzická agrese, Verbální agrese, Emoční výbuchy",Rozhovor,Dlouhodobý úspěch
+exp92,98,"Neverbální narušování výuky, Neverbální narušování výuky",Rozhovor,Neúspěch
+exp772,766,"Šikana, Verbální narušování výuky, Neverbální narušování výuky","Rozhovor, (Kázeňské) Tresty",Neúspěch
+exp741,738,Nevěnování se výuce/Nepozornost při výuce,Podpora,Dlouhodobý úspěch
+exp842,844,Nezvládání výuky,,Dlouhodobý úspěch
+mat951,951," , Diagnóza, Neverbální narušování výuky, Neplnění školních povinností/nepřipravenost na výuku ","Podpora, Spolupráce s odborníky",Dlouhodobý úspěch
+mat103,103,"Lhaní a podvody, Verbální agrese","Upozornění, (Kázeňské) Tresty, Důsledky",Neúspěch
+exp446,435,"Fyzická agrese, Neverbální narušování výuky, Verbální narušování výuky, Neplnění školních povinností/nepřipravenost na výuku ","Upozornění, Spolupráce s odborníky, Rozhovor",Dlouhodobý úspěch
+exp68,75,"Lhaní a podvody, Verbální agrese","Rozhovor, Práce s kolektivem, Spolupráce s odborníky",Neúspěch
+mat1348,1348,"Porušování třídních/školních pravidel, Neverbální narušování výuky, Emoční výbuchy, Verbální agrese",Spolupráce s odborníky,Částěčný úspěch
+exp1139,1129,Problémy s docházkou,"Rozhovor, Spolupráce s odborníky",Neúspěch
+exp305,303,"Verbální narušování výuky, Neverbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce","Upozornění, (Kázeňské) Tresty, Důsledky",Částěčný úspěch
+mat1270,1270,Neplnění školních povinností/nepřipravenost na výuku ,"Spolupráce s odborníky, Podpora",Neúspěch
+mat1230,1230,Neplnění školních povinností/nepřipravenost na výuku ,"Upozornění, Nerespektující komunikace",Dlouhodobý úspěch
+mat734,734,"Nevěnování se výuce/Nepozornost při výuce, Lhaní a podvody","Podpora, Rozhovor",Neúspěch
+mat389,389,Šikana,"Rozhovor, Spolupráce s odborníky, (Kázeňské) Tresty, Práce s kolektivem",Dlouhodobý úspěch
+mat236,236,"Diagnóza, Verbální narušování výuky, Neverbální narušování výuky","Upozornění, Podpora, (Kázeňské) Tresty",Neúspěch
+mat1252,1252,Verbální narušování výuky,Rozhovor,Krátkodobý úspěch
+exp304,306,Verbální narušování výuky,"Rozhovor, Nerespektující komunikace",Neúspěch
+exp124,118,Porušování třídních/školních pravidel,Práce s kolektivem,Dlouhodobý úspěch
+exp1217,1218,"Diagnóza, Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku ","Přemístění žáka , Spolupráce s odborníky",Neúspěch
+exp671,674,"Lhaní a podvody, Šikana, Verbální agrese","Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+mat250,250,"Lhaní a podvody, Neplnění školních povinností/nepřipravenost na výuku , Problémy s docházkou","Spolupráce s odborníky, Rozhovor, (Kázeňské) Tresty",Neúspěch
+mat1099,1099,"Diagnóza, Emoční výbuchy, Šikana, Porušování třídních/školních pravidel","Rozhovor, Práce s kolektivem, Spolupráce s odborníky, (Kázeňské) Tresty",Neúspěch
+exp1084,1084,"Lhaní a podvody, Sebedestruktivní chování","Podpora, Rozhovor, Spolupráce s odborníky, Práce s kolektivem",Dlouhodobý úspěch
+exp101,95,"Neverbální narušování výuky, Verbální narušování výuky, Emoční výbuchy",Spolupráce s odborníky,Dlouhodobý úspěch
+mat1313,1313,Verbální agrese,"Rozhovor, Přemístění žáka , Spolupráce s odborníky, Práce s kolektivem",Částěčný úspěch
+mat34,34,"Diagnóza, Verbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce",Upozornění,Neúspěch
+exp1107,1107,Nevěnování se výuce/Nepozornost při výuce,Podpora,Dlouhodobý úspěch
+exp458,449,"Neverbální narušování výuky, Verbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce, Emoční výbuchy","Rozhovor, Přemístění žáka , Podpora",
+mat446,446,Porušování třídních/školních pravidel,Nerespektující komunikace,Neúspěch
+mat772,772,Verbální narušování výuky,"Upozornění, Rozhovor",Dlouhodobý úspěch
+exp716,717,Verbální narušování výuky,"Upozornění, Důsledky, Spolupráce s odborníky",Neúspěch
+exp910,911,Neplnění školních povinností/nepřipravenost na výuku ,Podpora,Dlouhodobý úspěch
+exp1149,1150,Fyzická agrese,"Rozhovor, Práce s kolektivem",Dlouhodobý úspěch
+exp911,909,"Porušování třídních/školních pravidel, Diagnóza","Rozhovor, Práce s kolektivem",Krátkodobý úspěch
+exp1067,1074,"Fyzická agrese, Verbální agrese","Spolupráce s odborníky, (Kázeňské) Tresty, Důsledky",Neúspěch
+mat78,78,"Fyzická agrese, Verbální agrese",(Kázeňské) Tresty,Neúspěch
+mat85,85,Porušování třídních/školních pravidel,"(Kázeňské) Tresty, Rozhovor, Práce s kolektivem, Spolupráce s odborníky",Dlouhodobý úspěch
+mat842,842,"Emoční výbuchy, Diagnóza, Neplnění školních povinností/nepřipravenost na výuku ","Spolupráce s odborníky, Přemístění žáka ",Dlouhodobý úspěch
+exp88,83,"Verbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce","Upozornění, Rozhovor, Spolupráce s odborníky, (Kázeňské) Tresty","Neúspěch, Neúspěch, Částěčný úspěch"
+mat458,458,"Diagnóza, Verbální agrese","Rozhovor, Upozornění, Přemístění žáka ",Dlouhodobý úspěch
+mat927,927,Porušování třídních/školních pravidel,"Rozhovor, Práce s kolektivem",Dlouhodobý úspěch
+exp680,677,"Verbální agrese, Verbální narušování výuky","Spolupráce s odborníky, (Kázeňské) Tresty, Práce s kolektivem",Dlouhodobý úspěch
+exp1133,1138,"Diagnóza, Emoční výbuchy, Porušování třídních/školních pravidel, Fyzická agrese",Spolupráce s odborníky,Částěčný úspěch
+exp1108,1112,"Nevěnování se výuce/Nepozornost při výuce, Fyzická agrese, Diagnóza","Spolupráce s odborníky, Přemístění žáka , Rozhovor",Dlouhodobý úspěch
+exp437,437,"Lhaní a podvody, Problémy s docházkou, Nevěnování se výuce/Nepozornost při výuce","Spolupráce s odborníky, Podpora",Dlouhodobý úspěch
+exp768,771,"Verbální agrese, Verbální narušování výuky","Rozhovor, Přemístění žáka , Práce s kolektivem, Spolupráce s odborníky",Neúspěch
+mat645,645,Porušování třídních/školních pravidel,Upozornění,Dlouhodobý úspěch
+mat830,830,Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Dlouhodobý úspěch
+exp1379,1374,Fyzická agrese,"Rozhovor, Upozornění",Neúspěch
+exp1199,1200,Neplnění školních povinností/nepřipravenost na výuku ,"(Kázeňské) Tresty, Rozhovor",Krátkodobý úspěch
+exp412,405,"Šikana, Fyzická agrese","Spolupráce s odborníky, Práce s kolektivem",Částěčný úspěch
+mat1311,1311,"Verbální narušování výuky, Neplnění školních povinností/nepřipravenost na výuku ","Rozhovor, (Kázeňské) Tresty, Spolupráce s odborníky",Neúspěch
+exp939,942,Nevěnování se výuce/Nepozornost při výuce,,Neúspěch
+mat105,105,Šikana,"Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+exp612,610,"Verbální narušování výuky, Verbální agrese, Emoční výbuchy",Rozhovor,Dlouhodobý úspěch
+exp843,839,"Diagnóza, Neplnění školních povinností/nepřipravenost na výuku ",Podpora,Dlouhodobý úspěch
+mat689,689,Nevěnování se výuce/Nepozornost při výuce,"Upozornění, Spolupráce s odborníky",Částěčný úspěch
+exp1065,1064,"Problémy s docházkou, Verbální agrese, Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku , Porušování třídních/školních pravidel","Spolupráce s odborníky, Podpora",Neúspěch
+mat940,940,Sebedestruktivní chování,Spolupráce s odborníky,Částěčný úspěch
+exp65,63,"Nevěnování se výuce/Nepozornost při výuce, Fyzická agrese, Verbální agrese, Neverbální narušování výuky","Nerespektující komunikace, Fyzické zakročení, Spolupráce s odborníky, Přemístění žáka , Upozornění, Podpora",Neúspěch
+mat282,282,Neplnění školních povinností/nepřipravenost na výuku ,"Upozornění, Důsledky",Neúspěch
+mat779,779,"Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky, Neverbální narušování výuky, Neplnění školních povinností/nepřipravenost na výuku ","Upozornění, Práce s kolektivem",Dlouhodobý úspěch
+exp1210,1210,"Porušování třídních/školních pravidel, Lhaní a podvody","Rozhovor, Spolupráce s odborníky, Upozornění, Důsledky, (Kázeňské) Tresty",Dlouhodobý úspěch
+mat239,239,"Neverbální narušování výuky, Verbální narušování výuky","(Kázeňské) Tresty, Upozornění",Dlouhodobý úspěch
+mat146,146,"Neverbální narušování výuky, Verbální narušování výuky",Spolupráce s odborníky,Neúspěch
+exp1410,1406,Porušování třídních/školních pravidel,"Spolupráce s odborníky, Přemístění žáka , (Kázeňské) Tresty",Částěčný úspěch
+exp373,374,"Problémy s docházkou, Neplnění školních povinností/nepřipravenost na výuku ","Rozhovor, Spolupráce s odborníky","Neúspěch, Částěčný úspěch"
+mat1235,1235,Porušování třídních/školních pravidel,"Fyzické zakročení, Upozornění, Spolupráce s odborníky",Dlouhodobý úspěch
+exp113,119,"Verbální narušování výuky, Neverbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce, Diagnóza","Spolupráce s odborníky, Podpora, Přemístění žáka , Důsledky",Dlouhodobý úspěch
+exp1136,1134,"Neplnění školních povinností/nepřipravenost na výuku , Sebedestruktivní chování","Rozhovor, Spolupráce s odborníky, Podpora",Dlouhodobý úspěch
+mat251,251,Neplnění školních povinností/nepřipravenost na výuku ,Rozhovor,Krátkodobý úspěch
+exp1459,1452,Nevěnování se výuce/Nepozornost při výuce,Podpora,Dlouhodobý úspěch
+mat1215,1215,"Verbální narušování výuky, Lhaní a podvody","Spolupráce s odborníky, Dohoda",Částěčný úspěch
+mat900,900,"Diagnóza, Nezvládání výuky","Dohoda, Důsledky, Rozhovor, Podpora",Částěčný úspěch
+exp4,10,"Lhaní a podvody, Porušování třídních/školních pravidel","Rozhovor, Spolupráce s odborníky, (Kázeňské) Tresty",Neúspěch
+exp449,450,"Verbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce","Upozornění, Podpora, Nerespektující komunikace",Krátkodobý úspěch
+exp1427,1427,Porušování třídních/školních pravidel,"Práce s kolektivem, Fyzické zakročení, Důsledky, (Kázeňské) Tresty",Neúspěch
+mat709,709,"Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky",Upozornění,
+exp252,256,"Verbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce, Neverbální narušování výuky, Porušování třídních/školních pravidel","Dohoda, Spolupráce s odborníky, Podpora",Neúspěch
+mat390,390,"Neplnění školních povinností/nepřipravenost na výuku , Verbální narušování výuky, Problémy s docházkou, Verbální agrese","Rozhovor, (Kázeňské) Tresty, Spolupráce s odborníky",Neúspěch
+exp1204,1207,"Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku , Neverbální narušování výuky",Důsledky,Neúspěch
+mat558,558,Verbální narušování výuky,Nerespektující komunikace,Neúspěch
+mat1424,1424,"Verbální narušování výuky, Porušování třídních/školních pravidel, Diagnóza","Rozhovor, Podpora, Spolupráce s odborníky, (Kázeňské) Tresty",Neúspěch
+exp847,847,"Diagnóza, Fyzická agrese, Verbální agrese, Emoční výbuchy","Dohoda, Spolupráce s odborníky, Podpora",Dlouhodobý úspěch
+exp464,461,"Verbální narušování výuky, Neverbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce",Rozhovor,Částěčný úspěch
+mat724,724,"Problémy s docházkou, Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku ","Spolupráce s odborníky, Dohoda, Rozhovor",Částěčný úspěch
+exp1395,1389,Diagnóza,"Spolupráce s odborníky, Podpora",Neúspěch
+mat145,145,"Diagnóza, Porušování třídních/školních pravidel","Upozornění, Podpora",Částěčný úspěch
+exp507,502,"Neplnění školních povinností/nepřipravenost na výuku , Neverbální narušování výuky, Problémy s docházkou","(Kázeňské) Tresty, Podpora",Neúspěch
+mat1319,1319,"Neplnění školních povinností/nepřipravenost na výuku , Verbální narušování výuky, Porušování třídních/školních pravidel",,Neúspěch
+exp735,740,"Lhaní a podvody, Neplnění školních povinností/nepřipravenost na výuku , Problémy s docházkou, Verbální agrese","Upozornění, Spolupráce s odborníky",Neúspěch
+exp1404,1392,"Fyzická agrese, Porušování třídních/školních pravidel, Lhaní a podvody","Rozhovor, Důsledky, Práce s kolektivem, Upozornění",Dlouhodobý úspěch
+mat540,540,"Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku , Verbální agrese","Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+exp176,178,"Diagnóza, Verbální agrese, Verbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce, Porušování třídních/školních pravidel","Přemístění žáka , (Kázeňské) Tresty, Podpora",Krátkodobý úspěch
+exp1451,1454,"Verbální agrese, Diagnóza, Porušování třídních/školních pravidel, Verbální narušování výuky","Spolupráce s odborníky, Přemístění žáka ",Neúspěch
+exp699,698,"Diagnóza, Neplnění školních povinností/nepřipravenost na výuku , Nezvládání výuky",Rozhovor,Neúspěch
+exp940,949,"Fyzická agrese, Šikana","Rozhovor, Práce s kolektivem, Spolupráce s odborníky, Práce s kolektivem, (Kázeňské) Tresty",Částěčný úspěch
+mat1054,1054,"Verbální narušování výuky, Neverbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce","Spolupráce s odborníky, Podpora",Dlouhodobý úspěch
+mat883,883,Lhaní a podvody,"Rozhovor, Spolupráce s odborníky, Dohoda",Dlouhodobý úspěch
+exp904,907,"Neplnění školních povinností/nepřipravenost na výuku , Lhaní a podvody","Spolupráce s odborníky, Důsledky",Dlouhodobý úspěch
+mat1500,1500,"Diagnóza, Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky, Neverbální narušování výuky",Podpora,Dlouhodobý úspěch
+mat8,8,"Diagnóza, Neverbální narušování výuky",Rozhovor,
+exp669,668,"Šikana, Lhaní a podvody","(Kázeňské) Tresty, Spolupráce s odborníky, Práce s kolektivem",Dlouhodobý úspěch
+exp1159,1167,Šikana,"Rozhovor, Spolupráce s odborníky, (Kázeňské) Tresty",Neúspěch
+exp329,330,"Lhaní a podvody, Neplnění školních povinností/nepřipravenost na výuku , Problémy s docházkou","Rozhovor, Důsledky",Neúspěch
+exp1351,1353,"Verbální narušování výuky, Neverbální narušování výuky","Rozhovor, Upozornění, Přemístění žáka ",Dlouhodobý úspěch
+exp1337,1341,"Šikana, Diagnóza, Fyzická agrese","Rozhovor, Spolupráce s odborníky, (Kázeňské) Tresty, Přemístění žáka ",Částěčný úspěch
+exp1481,1493,"Diagnóza, Verbální agrese, Verbální narušování výuky, Neverbální narušování výuky","Rozhovor, Dohoda, Práce s kolektivem",Dlouhodobý úspěch
+mat259,259,"Fyzická agrese, Porušování třídních/školních pravidel, Emoční výbuchy",Rozhovor,Dlouhodobý úspěch
+exp1185,1182,"Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky, Neverbální narušování výuky",Rozhovor,Krátkodobý úspěch
+exp375,373,Neplnění školních povinností/nepřipravenost na výuku ,"Upozornění, (Kázeňské) Tresty, Důsledky",Dlouhodobý úspěch
+exp1348,1349,"Lhaní a podvody, Porušování třídních/školních pravidel","Rozhovor, Podpora, Spolupráce s odborníky",Dlouhodobý úspěch
+mat934,934,Nevěnování se výuce/Nepozornost při výuce,"Rozhovor, Přemístění žáka ",Dlouhodobý úspěch
+mat143,143,"Diagnóza, Verbální narušování výuky","Upozornění, (Kázeňské) Tresty",Dlouhodobý úspěch
+exp1154,1145,"Diagnóza, Verbální narušování výuky, Neverbální narušování výuky, Verbální agrese","Nerespektující komunikace, Spolupráce s odborníky, (Kázeňské) Tresty",Neúspěch
+mat1076,1076,Šikana,"Rozhovor, Práce s kolektivem",Neúspěch
+mat1173,1173,Nevěnování se výuce/Nepozornost při výuce,Upozornění,Neúspěch
+exp1424,1431,Verbální narušování výuky,Podpora,Krátkodobý úspěch
+exp527,532,Šikana,"Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+mat1304,1304,"Porušování třídních/školních pravidel, Lhaní a podvody","Rozhovor, Důsledky",Dlouhodobý úspěch
+exp218,227,"Problémy s docházkou, Neplnění školních povinností/nepřipravenost na výuku ","Spolupráce s odborníky, Rozhovor",Neúspěch
+exp1042,1041,Šikana,Rozhovor,Částěčný úspěch
+exp230,229,Problémy s docházkou,"Rozhovor, Spolupráce s odborníky, Přemístění žáka ",Dlouhodobý úspěch
+exp1284,1287,"Sebedestruktivní chování, Šikana","Spolupráce s odborníky, Podpora, Rozhovor",Dlouhodobý úspěch
+mat1305,1305,Fyzická agrese,"Rozhovor, Nerespektující komunikace", Neúspěch
+mat213,213,Porušování třídních/školních pravidel,"Rozhovor, Důsledky",Dlouhodobý úspěch
+mat886,886,Porušování třídních/školních pravidel,"Rozhovor, Důsledky",Částěčný úspěch
+exp83,80,"Neplnění školních povinností/nepřipravenost na výuku , Šikana","Rozhovor, Upozornění",Neúspěch
+exp140,149,Verbální narušování výuky,Upozornění,Dlouhodobý úspěch
+mat815,815,Problémy s docházkou,Rozhovor,Neúspěch
+mat1089,1089,"Verbální agrese, Fyzická agrese, Problémy s docházkou, Nezvládání výuky","Rozhovor, Důsledky",Neúspěch
+exp673,672,"Verbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce","Podpora, Rozhovor, Spolupráce s odborníky",Částěčný úspěch
+mat1162,1162,Emoční výbuchy,"Rozhovor, Dohoda",Dlouhodobý úspěch
+exp570,556,Verbální narušování výuky,Podpora,Neúspěch
+mat916,916,Fyzická agrese,Spolupráce s odborníky,Neúspěch
+exp128,134,Verbální narušování výuky,Upozornění,Neúspěch
+exp1128,1115,Verbální narušování výuky,Nerespektující komunikace,Neúspěch
+mat824,824,"Diagnóza, Fyzická agrese","Podpora, Dohoda",Dlouhodobý úspěch
+exp407,409,"Verbální narušování výuky, Emoční výbuchy, Fyzická agrese",Rozhovor,Částěčný úspěch
+mat369,369,"Verbální narušování výuky, Neverbální narušování výuky, Neplnění školních povinností/nepřipravenost na výuku , Lhaní a podvody","Rozhovor, Spolupráce s odborníky",Částěčný úspěch
+exp512,508,"Porušování třídních/školních pravidel, Nevěnování se výuce/Nepozornost při výuce","Rozhovor, Dohoda",Dlouhodobý úspěch
+exp1197,1188,Problémy s docházkou,"Rozhovor, Dohoda, Spolupráce s odborníky",Dlouhodobý úspěch
+exp509,505,Fyzická agrese,"Důsledky, Rozhovor",Neúspěch
+exp1344,1340,Porušování třídních/školních pravidel,"Upozornění, Důsledky",Neúspěch
+exp388,387,Verbální agrese,Rozhovor,Dlouhodobý úspěch
+exp10,1,"Emoční výbuchy, Fyzická agrese","Rozhovor, Důsledky",Krátkodobý úspěch
+exp365,361,Fyzická agrese,"Rozhovor, Práce s kolektivem",Dlouhodobý úspěch
+exp895,895,"Verbální agrese, Fyzická agrese","Dohoda, Spolupráce s odborníky, Rozhovor, Důsledky",Dlouhodobý úspěch
+exp826,829,Verbální agrese,Rozhovor,Krátkodobý úspěch
+exp1419,1423,Verbální narušování výuky,"Rozhovor, Důsledky",Dlouhodobý úspěch
+mat476,476,Verbální narušování výuky,Nerespektující komunikace,Neúspěch
+exp1281,1288,Fyzická agrese,Důsledky,Neúspěch
+mat58,58,Fyzická agrese,Rozhovor,Neúspěch
+mat638,638,"Šikana, Fyzická agrese","Důsledky, Spolupráce s odborníky, Rozhovor",Neúspěch
+exp1315,1314,"Verbální narušování výuky, Porušování třídních/školních pravidel","Rozhovor, Práce s kolektivem",Dlouhodobý úspěch
+exp1059,1058,Verbální narušování výuky,"Přemístění žáka , Rozhovor",Dlouhodobý úspěch
+mat173,173,Lhaní a podvody,Rozhovor,Dlouhodobý úspěch
+exp460,451,Šikana,Rozhovor,Dlouhodobý úspěch
+exp134,126,Porušování třídních/školních pravidel, Upozornění,Neúspěch
+exp993,989,Diagnóza,Spolupráce s odborníky,Dlouhodobý úspěch
+exp856,858,Porušování třídních/školních pravidel,"Spolupráce s odborníky, Důsledky",Dlouhodobý úspěch
+exp708,714,Šikana,"Rozhovor, Práce s kolektivem",Dlouhodobý úspěch
+exp95,91,"Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky","Podpora, Přemístění žáka",Krátkodobý úspěch
+exp1460,1458,Nevěnování se výuce/Nepozornost při výuce,Přemístění žáka ,Dlouhodobý úspěch
+exp178,182,Verbální agrese,"Rozhovor, Nerespektující komunikace",Částěčný úspěch
+exp874,876,Problémy s docházkou,"Rozhovor, Práce s kolektivem",Dlouhodobý úspěch
+exp1271,1269,Nevěnování se výuce/Nepozornost při výuce,"Rozhovor, Důsledky, Spolupráce s odborníky",Neúspěch
+exp781,787,Emoční výbuchy,Rozhovor,Krátkodobý úspěch
+exp422,415,Porušování třídních/školních pravidel,"Rozhovor, Dohoda, Spolupráce s odborníky",Dlouhodobý úspěch
+exp256,252,Nevěnování se výuce/Nepozornost při výuce,"Podpora, Spolupráce s odborníky, Rozhovor",Částěčný úspěch
+exp63,70,"Verbální agrese, Verbální narušování výuky","Upozornění, Rozhovor",Neúspěch
+exp801,804,Neverbální narušování výuky,"Rozhovor, Podpora",Částěčný úspěch
+exp136,132,Šikana,"Práce s kolektivem, Spolupráce s odborníky, Rozhovor, Přemístění žáka ",Neúspěch
+exp293,301,"Nevěnování se výuce/Nepozornost při výuce, Porušování třídních/školních pravidel","Práce s kolektivem, Dohoda",Částěčný úspěch
+exp1027,1030,Neplnění školních povinností/nepřipravenost na výuku ,"Rozhovor, Důsledky","Částěčný úspěch, Neúspěch"
+exp322,327,"Neverbální narušování výuky, Sebedestruktivní chování",Rozhovor,Krátkodobý úspěch
+mat1120,1120,Emoční výbuchy,Spolupráce s odborníky,Neúspěch
+mat1024,1024,Neverbální narušování výuky,Podpora,Neúspěch
+exp821,833,Emoční výbuchy,"Rozhovor, Podpora, Spolupráce s odborníky","Částěčný úspěch, Dlouhodobý úspěch"
+exp362,365,"Nezvládání výuky, Nevěnování se výuce/Nepozornost při výuce","Spolupráce s odborníky, Podpora",Dlouhodobý úspěch
+mat1402,1402,Problémy s docházkou,,Neúspěch
+exp336,339,"Verbální narušování výuky, Neverbální narušování výuky","Přemístění žáka , Důsledky","Částěčný úspěch, Dlouhodobý úspěch"
+mat422,422,"Verbální agrese, Fyzická agrese","Rozhovor, Spolupráce s odborníky",Neúspěch
+,165,"Verbální narušování výuky, Neverbální narušování výuky","Upozornění, Podpora, Spolupráce s odborníky, Rozhovor",Částěčný úspěch
+mat29,29,"Diagnóza, Verbální agrese","Rozhovor, Práce s kolektivem",Dlouhodobý úspěch
+exp546,517,Fyzická agrese,"Spolupráce s odborníky, Rozhovor, Důsledky",Neúspěch
+mat194,194,Verbální narušování výuky,"Rozhovor, Práce s kolektivem",Dlouhodobý úspěch
+exp1360,1369,Emoční výbuchy,"Rozhovor, Práce s kolektivem",Dlouhodobý úspěch
+exp950,946,"Nezvládání výuky, Fyzická agrese",Podpora,Neúspěch
+exp1399,1404,"Verbální agrese, Fyzická agrese","Rozhovor, Fyzické zakročení",Neúspěch
+mat168,168,Emoční výbuchy,"Podpora, Rozhovor",Krátkodobý úspěch
+exp643,653,Sebedestruktivní chování,"Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+mat174,174,Emoční výbuchy,Nerespektující komunikace,Neúspěch
+exp548,519,Fyzická agrese,"Rozhovor, Spolupráce s odborníky",Krátkodobý úspěch
+exp1216,1220,Porušování třídních/školních pravidel,"Rozhovor, Dohoda",Neúspěch
+exp1232,1238,Lhaní a podvody,"Práce s kolektivem, Rozhovor",Dlouhodobý úspěch
+mat913,913,Sebedestruktivní chování,"Spolupráce s odborníky, Rozhovor",Dlouhodobý úspěch
+exp951,954,Fyzická agrese,"Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+mat74,74,Verbální agrese,Rozhovor,
+exp1258,1260,"Fyzická agrese, Emoční výbuchy","Upozornění, Důsledky",Částečný úspěch
+exp755,751,Sebedestruktivní chování,"Rozhovor, Dohoda",Dlouhodobý úspěch
+exp659,658,Verbální agrese,Upozornění,Dlouhodobý úspěch
+exp849,843,"Emoční výbuchy, Diagnóza",Spolupráce s odborníky,Neúspěch
+mat235,235,Šikana,"Rozhovor, Spolupráce s odborníky, Důsledky",Dlouhodobý úspěch
+,733,"Problémy s docházkou, Nevěnování se výuce/Nepozornost při výuce","Podpora, Dohoda",Neúspěch
+exp217,215,Porušování třídních/školních pravidel,"Dohoda, Rozhovor",Dlouhodobý úspěch
+exp164,163,Emoční výbuchy,"Rozhovor, Podpora",Krátkodobý úspěch
+exp135,133,Šikana,"Rozhovor, Práce s kolektivem",Dlouhodobý úspěch
+exp1119,1111,Emoční výbuchy,Rozhovor,Dlouhodobý úspěch
+exp1228,1234,Šikana,"Práce s kolektivem, Rozhovor",Dlouhodobý úspěch
+exp934,935,Diagnóza,"Spolupráce s odbonríky, Práce s kolektivem, Rozhovor",Dlouhodobý úspěch
+mat186,186,Neplnění školních povinností/nepřipravenost na výuku,"Upozornění, Důsledky",Dlouhodobý úspěch
+exp36,42,Emoční výbuchy,Rozhovor,Krátkodobý úspěch
+mat693,693,"Verbální agrese, Fyzická agrese","Rozhovor, Práce s kolektivem",Dlouhodobý úspěch
+mat109,109,"Problémy s docházkou, Nezvládání výuky","Podpora, Spolupráce s odborníky",Dlouhodobý úspěch
+exp1270,1274,Porušování třídních/školních pravidel,Rozhovor,Částečný úspěch
+exp1447,1449,Emoční výbuchy,"Spolupráce s odbonríky, Rozhovor, Důsledky",Dlouhodobý úspěch
+exp485,484,"Problémy s docházkou, Diagnóza","Podpora, ",Neúspěch
+exp472,469,"Verbální narušování výuky, Neverbální narušování výuky, ",Práce s kolektivem,Částečný úspěch
+exp887,891,Fyzická agrese,"Rozhovor, Práce s kolektivem",Dlouhodobý úspěch
+exp943,948,Verbální agrese,Fyzické zakročení,Neúspěch
+exp23,25,"Nevěnování se výuce/Nepozornost při výuce, Emoční výbuchy","Rozhovor, Dohoda, Podpora, Upozornění",Částěčný úspěch
+mat1393,1393,Fyzická agrese,"Rozhovor, Práce s kolektivem",Neúspěch
+exp1198,1199,Šikana,"Rozhovor, Práce s kolektivem, Spolupráce s odborníky",Neúspěch
+exp67,69,"Neverbální narušování výuky, Verbální narušování výuky","Upozornění, Rozhovor, Spolupráce s odborníky, Podpora",Dlouhodobý úspěch
+mat885,885,"Nezvládání výuky, Porušování třídních/školních pravidel","Rozhovor, Spolupráce s odborníky, Důsledky",Dlouhodobý úspěch
+exp1279,1272,"Fyzická agrese, Verbální agrese","Rozhovor, Práce s kolektivem, Spolupráce s odborníky, Podpora",Krátkodobý úspěch
+exp360,367,Fyzická agrese,"Rozhovor, (Kázeňské) Tresty",Krátkodobý úspěch
+exp496,506,"Nevěnování se výuce/Nepozornost při výuce, Nezvládání výuky","Spolupráce s odborníky, Rozhovor, Podpora",Dlouhodobý úspěch
+exp861,851,Nezvládání výuky,"Rozhovor, Podpora, Spolupráce s odborníky",Neúspěch
+mat1323,1323,Porušování třídních/školních pravidel,,
+mat384,384,Lhaní a podvody,Důsledky,Neúspěch
+exp722,718,Fyzická agrese,"Rozhovor, Důsledky",Dlouhodobý úspěch
+exp1346,1343,"Verbální narušování výuky, Nezvládání výuky, Emoční výbuchy","Podpora, Dohoda, Rozhovor",Dlouhodobý úspěch
+exp455,455,Šikana,"Rozhovor, Spolupráce s odborníky, Důsledky",Dlouhodobý úspěch
+exp77,76,Verbální agrese,"(Kázeňské) Tresty, Nerespektující komunikace",Neúspěch
+exp913,915,Šikana,Rozhovor,Dlouhodobý úspěch
+exp238,233,Verbální agrese,Rozhovor,Částěčný úspěch
+exp391,396,Verbální narušování výuky,"Nerespektující komunikace, Důsledky",Neúspěch
+exp170,177,"Fyzická agrese, Diagnóza","Rozhovor, Nerespektující komunikace, Spolupráce s odborníky",Částěčný úspěch
+exp28,19,Emoční výbuchy,Rozhovor,Krátkodobý úspěch
+exp1323,1318,Neplnění školních povinností/nepřipravenost na výuku ,"Rozhovor, Podpora",Dlouhodobý úspěch
+exp1201,1198,"Šikana, Sebedestruktivní chování","Rozhovor, Spolupráce s odborníky, Práce s kolektivem",Dlouhodobý úspěch
+exp348,342,Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Neúspěch
+exp58,62,Emoční výbuchy,"Rozhovor, Nerespektující komunikace","Krátkodobý úspěch, Neúspěch"
+mat873,873,Nevěnování se výuce/Nepozornost při výuce,"Upozornění, Nerespektující komunikace",Neúspěch
+mat1133,1133,Emoční výbuchy,Rozhovor,Neúspěch
+mat1435,1435,"Neverbální narušování výuky, Verbální narušování výuky",(Kázeňské) Tresty,Krátkodobý úspěch
+exp288,279,Šikana,"Přemístění žáka , Důsledky, Práce s kolektivem",Neúspěch
+exp41,37,"Šikana, Fyzická agrese, Verbální agrese","Práce s kolektivem, Spolupráce s odborníky, Dohoda",Dlouhodobý úspěch
+mat663,663,"Emoční výbuchy, Diagnóza",Rozhovor,Neúspěch
+exp1366,1359,"Verbální narušování výuky, Verbální agrese","Rozhovor, Přemístění žáka , Důsledky",Dlouhodobý úspěch
+exp1094,1094,"Problémy s docházkou, Neplnění školních povinností/nepřipravenost na výuku ",Podpora,Neúspěch
+exp974,978,Verbální agrese,"Rozhovor, Dohoda",Neúspěch
+exp740,739,"Verbální agrese, Fyzická agrese, Porušování třídních/školních pravidel","Rozhovor, Spolupráce s odborníky, Přemístění žáka ",Částěčný úspěch
+exp191,192,"Emoční výbuchy, Porušování třídních/školních pravidel","Podpora, Rozhovor",Neúspěch
+exp916,920,Šikana,"Práce s kolektivem, Spolupráce s odborníky, Rozhovor",Neúspěch
+exp450,457,"Neverbální narušování výuky, Verbální narušování výuky","Upozornění, (Kázeňské) Tresty",Dlouhodobý úspěch
+exp682,676,Fyzická agrese,"Rozhovor, Dohoda",Dlouhodobý úspěch
+exp764,761,Verbální agrese,Rozhovor,Neúspěch
+exp1359,1360,Šikana,"Rozhovor, Dohoda, Důsledky","Dlouhodobý úspěch, Částěčný úspěch"
+exp411,413,Neverbální narušování výuky,Upozornění,Krátkodobý úspěch
+exp819,826,Fyzická agrese,Rozhovor,Dlouhodobý úspěch
+exp622,617,"Neplnění školních povinností/nepřipravenost na výuku , Problémy s docházkou","Rozhovor, Přemístění žáka ",Dlouhodobý úspěch
+exp106,115,Neverbální narušování výuky,Dohoda,Dlouhodobý úspěch
+mat418,418,Šikana,"Práce s kolektivem, Rozhovor",Dlouhodobý úspěch
+mat1436,1436,"Fyzická agrese, Neverbální narušování výuky","Rozhovor, Dohoda",Dlouhodobý úspěch
+mat970,970,Porušování třídních/školních pravidel,"Práce s kolektivem, Rozhovor",Neúspěch
+exp1435,1442,"Fyzická agrese, Porušování třídních/školních pravidel","Rozhovor, Dohoda",Dlouhodobý úspěch
+mat90,90,"Verbální narušování výuky, Neplnění školních povinností/nepřipravenost na výuku ",Přemístění žáka ,Neúspěch
+mat849,849,Nevěnování se výuce/Nepozornost při výuce,Upozornění,Neúspěch
+mat1152,1152,Lhaní a podvody,"Rozhovor, Přemístění žáka ",Neúspěch
+exp1441,1441,"Verbální narušování výuky, Porušování třídních/školních pravidel","Rozhovor, Práce s kolektivem, Spolupráce s odborníky",Neúspěch
+mat754,754,Porušování třídních/školních pravidel,"Práce s kolektivem, Rozhovor",Dlouhodobý úspěch
+mat499,499,"Emoční výbuchy, Diagnóza",,
+exp7,12,Emoční výbuchy,"Rozhovor, Podpora",Neúspěch
+exp399,397,"Verbální agrese, Fyzická agrese","Rozhovor, Dohoda",Dlouhodobý úspěch
+exp275,285,Porušování třídních/školních pravidel,"Rozhovor, Spolupráce s odborníky, Důsledky",Dlouhodobý úspěch
+exp683,691,Fyzická agrese,Rozhovor,Krátkodobý úspěch
+exp1236,1237,Porušování třídních/školních pravidel,"Rozhovor, Dohoda, Důsledky",Dlouhodobý úspěch
+exp1408,1411,Nevěnování se výuce/Nepozornost při výuce,"Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+mat690,690,Verbální agrese,Práce s kolektivem,Dlouhodobý úspěch
+exp848,852,"Nevěnování se výuce/Nepozornost při výuce, Emoční výbuchy",Rozhovor,Dlouhodobý úspěch
+exp161,160,Fyzická agrese,"Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+mat896,896,Verbální agrese,Rozhovor,Neúspěch
+exp1200,1204,"Šikana, Porušování třídních/školních pravidel","Rozhovor, Důsledky",Částěčný úspěch
+exp257,258,Fyzická agrese,Rozhovor,Neúspěch
+exp345,336,"Verbální narušování výuky, Neverbální narušování výuky","Rozhovor, Upozornění, Podpora",Neúspěch
+exp1416,1415,"Porušování třídních/školních pravidel, Fyzická agrese","Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+exp1037,1040,"Porušování třídních/školních pravidel, Lhaní a podvody",Rozhovor,Neúspěch
+exp534,516,"Neverbální narušování výuky, Verbální narušování výuky","Rozhovor, Podpora",Dlouhodobý úspěch
+mat1016,1016,Porušování třídních/školních pravidel,Rozhovor,Neúspěch
+exp769,769,"Verbální agrese, Fyzická agrese","Rozhovor, Spolupráce s odborníky",Neúspěch
+exp1322,1324,Neplnění školních povinností/nepřipravenost na výuku ,Rozhovor,Dlouhodobý úspěch
+exp765,762,Nevěnování se výuce/Nepozornost při výuce,"Rozhovor, Podpora",Dlouhodobý úspěch
+exp1109,1109,Verbální agrese,"Dohoda, Upozornění",Dlouhodobý úspěch
+exp533,522,"Verbální agrese, Fyzická agrese","Rozhovor, Dohoda",Dlouhodobý úspěch
+exp27,23,Verbální agrese,"Práce s kolektivem, (Kázeňské) Tresty, Rozhovor",Dlouhodobý úspěch
+exp1276,1279,Emoční výbuchy,"Rozhovor, Podpora, Spolupráce s odborníky",Částěčný úspěch
+exp343,341,"Nevěnování se výuce/Nepozornost při výuce, Verbální agrese",Rozhovor,Dlouhodobý úspěch
+exp430,432,Fyzická agrese,Dohoda,Neúspěch
+exp468,474,Verbální agrese,"Rozhovor, Upozornění, Spolupráce s odborníky, Přemístění žáka ",Neúspěch
+mat218,218,"Porušování třídních/školních pravidel, Lhaní a podvody","Rozhovor, Spolupráce s odborníky",Neúspěch
+exp918,912,Verbální narušování výuky,Fyzické zakročení,Neúspěch
+exp1212,1211,Nezvládání výuky,Nerespektující komunikace,Neúspěch
+mat1012,1012,Verbální narušování výuky,Rozhovor,Neúspěch
+exp1471,1466,Verbální narušování výuky,"Práce s kolektivem, Podpora",Dlouhodobý úspěch
+exp1068,1071,Verbální narušování výuky,"Rozhovor, Spolupráce s odborníky",Neúspěch
+exp1092,1093,"Verbální narušování výuky, Neverbální narušování výuky","Rozhovor, Přemístění žáka ",Neúspěch
+mat697,697,Verbální agrese,Rozhovor,Dlouhodobý úspěch
+mat997,997,"Verbální narušování výuky, Neverbální narušování výuky",,
+mat154,154,"Nevěnování se výuce/Nepozornost při výuce, Verbální agrese",Fyzické zakročení,Neúspěch
+mat1100,1100,Problémy s docházkou,"Rozhovor, Spolupráce s odborníky",Neúspěch
+exp1476,1479,"Verbální agrese, Porušování třídních/školních pravidel, Nevěnování se výuce/Nepozornost při výuce",Rozhovor,Neúspěch
+exp1502,1505,"Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky",Rozhovor,Neúspěch
+mat790,790,Porušování třídních/školních pravidel,Rozhovor,Dlouhodobý úspěch
+exp711,704,Emoční výbuchy,"Rozhovor, Přemístění žáka ",Neúspěch
+exp1265,1266,Šikana,"Rozhovor, Práce s kolektivem",Neúspěch
+exp577,560,Problémy s docházkou,"Práce s kolektivem, Rozhovor, Podpora, Dohoda",Dlouhodobý úspěch
+mat802,802,Verbální narušování výuky,"Rozhovor, Dohoda",Dlouhodobý úspěch
+exp544,513,Nevěnování se výuce/Nepozornost při výuce,,
+exp617,634,"Verbální narušování výuky, Neverbální narušování výuky","Rozhovor, Nerespektující komunikace",Neúspěch
+exp1111,1117,Verbální narušování výuky,"Rozhovor, Podpora",Dlouhodobý úspěch
+exp1353,1345,Porušování třídních/školních pravidel,"Rozhovor, Dohoda",Dlouhodobý úspěch
+mat791,791,"Neplnění školních povinností/nepřipravenost na výuku , Verbální agrese",Rozhovor,Neúspěch
+exp114,117,Verbální narušování výuky,Práce s kolektivem,Dlouhodobý úspěch
+exp1085,1082,Problémy s docházkou,Rozhovor,Dlouhodobý úspěch
+mat831,831,Neplnění školních povinností/nepřipravenost na výuku ,"Upozornění, Podpora",Neúspěch
+exp111,120,Nezvládání výuky,Dohoda,Neúspěch
+exp664,657,Problémy s docházkou,"Rozhovor, Spolupráce s odborníky, Důsledky",Neúspěch
+exp628,636,"Verbální narušování výuky, Neverbální narušování výuky",Nerespektující komunikace,Neúspěch
+exp376,370,"Problémy s docházkou, Neplnění školních povinností/nepřipravenost na výuku ","Rozhovor, Důsledky, Spolupráce s odborníky",Neúspěch
+mat656,656,Sebedestruktivní chování,"Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+exp935,936,"Neverbální narušování výuky, Verbální narušování výuky","Upozornění, Nerespektující komunikace, Podpora",Neúspěch
+mat823,823,"Porušování třídních/školních pravidel, Neverbální narušování výuky, Verbální narušování výuky","Podpora, Rozhovor, Práce s kolektivem",Neúspěch
+mat1457,1457,Verbální narušování výuky,Důsledky,Neúspěch
+mat992,992,Verbální narušování výuky,Nerespektující komunikace,Neúspěch
+exp875,877,Problémy s docházkou,"Rozhovor, Práce s kolektivem, Spolupráce s odborníky",Neúspěch
+mat774,774,Porušování třídních/školních pravidel,Dohoda,Dlouhodobý úspěch
+exp1501,1507,"Problémy s docházkou, Neplnění školních povinností/nepřipravenost na výuku ","Rozhovor, Spolupráce s odborníky, Podpora",Neúspěch
+exp6,5,"Neverbální narušování výuky, Verbální narušování výuky","Rozhovor, Podpora",Částěčný úspěch
+exp1005,1004,Neplnění školních povinností/nepřipravenost na výuku ,"Podpora, Práce s kolektivem",Neúspěch
+mat1309,1309,Emoční výbuchy,,Částěčný úspěch
+exp1186,1190,Problémy s docházkou,"Rozhovor, Spolupráce s odborníky, Dohoda",Dlouhodobý úspěch
+exp1374,1377,Verbální agrese,"Rozhovor, Nerespektující komunikace",Neúspěch
+exp1012,1003,Verbální agrese,Rozhovor,Částěčný úspěch
+exp1075,1078,Neverbální narušování výuky,Nerespektující komunikace,Neúspěch
+exp836,838,"Verbální narušování výuky, Nezvládání výuky",Podpora,Částěčný úspěch
+exp1342,1347,"Nevěnování se výuce/Nepozornost při výuce, Verbální agrese","Rozhovor, Dohoda",Částěčný úspěch
+exp303,305,"Verbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce","Upozornění, Přemístění žáka , Nerespektující komunikace",Neúspěch
+exp1411,1408,Sebedestruktivní chování,"Rozhovor, Spolupráce s odborníky, Podpora",Neúspěch
+exp309,314,Sebedestruktivní chování,"Spolupráce s odborníky, Práce s kolektivem, Podpora",Neúspěch
+exp144,150,"Verbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce","Upozornění, Rozhovor, Důsledky",Neúspěch
+mat575,575,Porušování třídních/školních pravidel,"Přemístění žáka , Rozhovor",Dlouhodobý úspěch
+exp726,727,Nevěnování se výuce/Nepozornost při výuce,Dohoda,Dlouhodobý úspěch
+mat1116,1116, Verbální narušování výuky,Dohoda,Dlouhodobý úspěch
+mat471,471,Šikana,"Rozhovor, Práce s kolektivem",Dlouhodobý úspěch
+mat972,972,Neplnění školních povinností/nepřipravenost na výuku ,,Neúspěch
+exp650,654,"Šikana, Porušování třídních/školních pravidel","Rozhovor, Důsledky",Dlouhodobý úspěch
+mat400,400,"Neplnění školních povinností/nepřipravenost na výuku , Porušování třídních/školních pravidel",Rozhovor,Neúspěch
+mat512,512,Fyzická agrese,"Rozhovor, Dohoda",Dlouhodobý úspěch
+exp326,321,Fyzická agrese,"Spolupráce s odborníky, Rozhovor, Důsledky",Dlouhodobý úspěch
+exp22,20,Fyzická agrese,"Rozhovor, Nerespektující komunikace",Neúspěch
+exp684,685,Neplnění školních povinností/nepřipravenost na výuku ,"Rozhovor, Upozornění, Nerespektující komunikace",Neúspěch
+exp891,903,Šikana,"Rozhovor, Práce s kolektivem, Spolupráce s odborníky, Důsledky",Dlouhodobý úspěch
+exp820,828,"Sebedestruktivní chování, Verbální agrese",Rozhovor,Dlouhodobý úspěch
+exp1357,1352,Emoční výbuchy,"Rozhovor, Podpora",Neúspěch
+mat408,408,Šikana,"Rozhovor, Dohoda",Neúspěch
+exp923,921,Sebedestruktivní chování,"Rozhovor, Spolupráce s odborníky, Práce s kolektivem",Dlouhodobý úspěch
+exp528,538,"Emoční výbuchy, ",Rozhovor,Dlouhodobý úspěch
+exp757,759,Nevěnování se výuce/Nepozornost při výuce,Podpora,Neúspěch
+exp1073,1063,"Problémy s docházkou, Porušování třídních/školních pravidel, Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku ",Rozhovor,Neúspěch
+mat246,246,Nezvládání výuky,Podpora,Neúspěch
+mat1128,1128,"Fyzická agrese, Porušování třídních/školních pravidel","Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+exp792,785,"Fyzická agrese, Nevěnování se výuce/Nepozornost při výuce, Porušování třídních/školních pravidel",Rozhovor,Neúspěch
+exp484,490,Verbální narušování výuky,(Kázeňské) Tresty,Neúspěch
+mat155,155,Emoční výbuchy,Rozhovor,Dlouhodobý úspěch
+exp957,962,"Diagnóza, Šikana","Rozhovor, Práce s kolektivem",Dlouhodobý úspěch
+exp852,854,Porušování třídních/školních pravidel,Rozhovor,Dlouhodobý úspěch
+exp630,626,Fyzická agrese,"Rozhovor, Fyzické zakročení",Neúspěch
+exp696,686,"Problémy s docházkou, Diagnóza, Neplnění školních povinností/nepřipravenost na výuku ","Rozhovor, Podpora",Dlouhodobý úspěch
+mat1434,1434,"Neverbální narušování výuky, Verbální narušování výuky, Fyzická agrese",Podpora,Dlouhodobý úspěch
+mat18,18,"Verbální narušování výuky, Fyzická agrese",Rozhovor,Neúspěch
+mat128,128,"Fyzická agrese, Verbální agrese","Práce s kolektivem, Spolupráce s odborníky",Neúspěch
+exp932,928,Verbální narušování výuky,Rozhovor,Krátkodobý úspěch
+exp979,981,Porušování třídních/školních pravidel,"Důsledky, Rozhovor",Dlouhodobý úspěch
+mat1477,1477,Verbální narušování výuky,(Kázeňské) Tresty,Dlouhodobý úspěch
+mat191,191,"Diagnóza, Nevěnování se výuce/Nepozornost při výuce",Podpora,Neúspěch
+exp984,993,"Verbální agrese, Verbální narušování výuky","Přemístění žáka , Důsledky",Neúspěch
+mat1471,1471,Nevěnování se výuce/Nepozornost při výuce,Nerespektující komunikace,Dlouhodobý úspěch
+exp1326,1329,Neverbální narušování výuky,Fyzické zakročení,Částěčný úspěch
+mat607,607,"Porušování třídních/školních pravidel, Fyzická agrese","Rozhovor, Práce s kolektivem",Dlouhodobý úspěch
+exp183,181,Fyzická agrese,"Rozhovor, Důsledky, Fyzické zakročení",Krátkodobý úspěch
+exp294,302,"Diagnóza, Emoční výbuchy","Rozhovor, Podpora",Dlouhodobý úspěch
+mat1299,1299,"Fyzická agrese, Šikana","Rozhovor, Spolupráce s odborníky",Neúspěch
+exp1267,1263,Fyzická agrese,Rozhovor,Dlouhodobý úspěch
+exp1244,1244,Porušování třídních/školních pravidel,"Rozhovor, Dohoda",Dlouhodobý úspěch
+exp515,518,Fyzická agrese,"Spolupráce s odborníky, Rozhovor, Podpora",Dlouhodobý úspěch
+mat1070,1070,"Neplnění školních povinností/nepřipravenost na výuku , Nevěnování se výuce/Nepozornost při výuce",Rozhovor,Neúspěch
+exp158,158,Verbální narušování výuky,"Nerespektující komunikace, Upozornění",Neúspěch
+exp1194,1196,Problémy s docházkou,Rozhovor,Dlouhodobý úspěch
+mat17,17,Fyzická agrese,Rozhovor,Dlouhodobý úspěch
+mat1073,1073,Fyzická agrese,Rozhovor,Dlouhodobý úspěch
+exp523,547,Nevěnování se výuce/Nepozornost při výuce,Podpora,Dlouhodobý úspěch
+exp660,659,"Verbální narušování výuky, Neverbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce, Lhaní a podvody, Verbální agrese","Rozhovor, Spolupráce s odborníky, Důsledky, Upozornění, Nerespektující komunikace",Částěčný úspěch
+exp1240,1233,"Neplnění školních povinností/nepřipravenost na výuku , Nevěnování se výuce/Nepozornost při výuce, Diagnóza","Rozhovor, Podpora",Dlouhodobý úspěch
+exp1025,1020,"Verbální narušování výuky, Porušování třídních/školních pravidel","Spolupráce s odborníky, Důsledky, Rozhovor",Neúspěch
+exp1266,1264,"Nevěnování se výuce/Nepozornost při výuce, Porušování třídních/školních pravidel, Verbální agrese","Nerespektující komunikace, Důsledky","Neúspěch, Krátkodobý úspěch"
+exp1422,1417,Neverbální narušování výuky,"Rozhovor, Spolupráce s odborníky, Podpora",Částěčný úspěch
+exp278,284,"Fyzická agrese, Verbální agrese",Důsledky,Neúspěch
+exp798,798,"Verbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce, Neverbální narušování výuky",Podpora,Dlouhodobý úspěch
+exp30,27,"Porušování třídních/školních pravidel, Nevěnování se výuce/Nepozornost při výuce","(Kázeňské) Tresty, Rozhovor, Podpora",Dlouhodobý úspěch
+exp443,438,"Neplnění školních povinností/nepřipravenost na výuku , Verbální narušování výuky, Problémy s docházkou",Rozhovor,Neúspěch
+exp1463,1465,Porušování třídních/školních pravidel,Důsledky,Neúspěch
+exp229,230,"Verbální narušování výuky, Fyzická agrese, Verbální agrese","Rozhovor, Spolupráce s odborníky, Podpora, (Kázeňské) Tresty, Upozornění",Dlouhodobý úspěch
+exp45,38,Emoční výbuchy,"Fyzické zakročení, Přemístění žáka ",Krátkodobý úspěch
+exp1043,1046,Verbální agrese,"Rozhovor, Práce s kolektivem",Dlouhodobý úspěch
+exp470,470,"Neplnění školních povinností/nepřipravenost na výuku , Verbální agrese",Nerespektující komunikace,Částěčný úspěch
+mat1286,1286,"Verbální agrese, Fyzická agrese, Šikana","Rozhovor, Přemístění žáka ",Dlouhodobý úspěch
+exp1478,1480,Verbální agrese,"Rozhovor, Důsledky, Spolupráce s odborníky, Práce s kolektivem",Dlouhodobý úspěch
+exp686,688,"Problémy s docházkou, Neplnění školních povinností/nepřipravenost na výuku ","Rozhovor, Spolupráce s odborníky",Neúspěch
+exp1382,1386,Verbální narušování výuky,"Podpora, Rozhovor, Důsledky",Dlouhodobý úspěch
+mat640,640,Verbální narušování výuky,Rozhovor,Neúspěch
+exp1300,1302,"Verbální agrese, Fyzická agrese","Rozhovor, Podpora",Částěčný úspěch
+exp1219,1219,Verbální agrese,"Rozhovor, Spolupráce s odborníky",Částěčný úspěch
+exp1167,1159,Šikana,"Rozhovor, Podpora, Práce s kolektivem",Částěčný úspěch
+mat1259,1259,Neplnění školních povinností/nepřipravenost na výuku ,"Rozhovor, Podpora, Dohoda",Krátkodobý úspěch
+mat1371,1371,Problémy s docházkou,Rozhovor,Dlouhodobý úspěch
+exp799,801,Verbální agrese,"Spolupráce s odborníky, Rozhovor, Práce s kolektivem, Důsledky",Dlouhodobý úspěch
+exp160,161,"Verbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce","Rozhovor, Práce s kolektivem, Dohoda, Podpora",Dlouhodobý úspěch
+exp953,957,"Neplnění školních povinností/nepřipravenost na výuku , Nevěnování se výuce/Nepozornost při výuce",Rozhovor,Neúspěch
+exp1189,1187,Verbální agrese,"Důsledky, Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+exp829,822,"Verbální narušování výuky, Neverbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce","Upozornění, Rozhovor, Důsledky, Podpora",Dlouhodobý úspěch
+exp1278,1278,Šikana,"Rozhovor, Práce s kolektivem, Spolupráce s odborníky",Dlouhodobý úspěch
+exp869,878,Verbální narušování výuky,"Důsledky, Rozhovor",Krátkodobý úspěch
+exp912,914,Porušování třídních/školních pravidel,Rozhovor,Neúspěch
+mat153,153,Neplnění školních povinností/nepřipravenost na výuku ,"Rozhovor, Podpora",Dlouhodobý úspěch
+mat1381,1381,"Verbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce",Fyzické zakročení,Neúspěch
+mat510,510,Porušování třídních/školních pravidel,Rozhovor,Krátkodobý úspěch
+exp1138,1136,Fyzická agrese,"Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+exp104,104,Neplnění školních povinností/nepřipravenost na výuku ,Nerespektující komunikace,Neúspěch
+mat1336,1336,Problémy s docházkou,Spolupráce s odborníky,Dlouhodobý úspěch
+exp1144,1144,Šikana,Rozhovor,Dlouhodobý úspěch
+mat54,54,"Neverbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce, Diagnóza, Porušování třídních/školních pravidel","Rozhovor, Podpora",Dlouhodobý úspěch
+mat152,152,Diagnóza,,
+mat404,404,Verbální narušování výuky,"Nerespektující komunikace, Přemístění žáka , Rozhovor",
+exp207,208,"Verbální agrese, Fyzická agrese",Rozhovor,Dlouhodobý úspěch
+mat1425,1425,"Verbální agrese, Fyzická agrese",Rozhovor,Dlouhodobý úspěch
+exp1329,1326,Nevěnování se výuce/Nepozornost při výuce,"Rozhovor, Podpora",Dlouhodobý úspěch
+exp9,9,Fyzická agrese,Rozhovor,Dlouhodobý úspěch
+mat1015,1015,"Fyzická agrese, Verbální agrese",Rozhovor,Dlouhodobý úspěch
+exp1340,1351,Šikana,Rozhovor,Dlouhodobý úspěch
+exp1056,1061,Šikana,"Rozhovor, Podpora",Dlouhodobý úspěch
+exp451,453,Šikana,"Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+exp254,254,"Verbální narušování výuky, Neverbální narušování výuky","Přemístění žáka , Rozhovor",Dlouhodobý úspěch
+exp901,897,Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Dlouhodobý úspěch
+exp1316,1316,Porušování třídních/školních pravidel,"Přemístění žáka , Rozhovor, Dohoda, Důsledky",Dlouhodobý úspěch
+exp886,881,Neplnění školních povinností/nepřipravenost na výuku ,"Rozhovor, Podpora",Neúspěch
+exp1421,1421,Verbální agrese,Rozhovor,Dlouhodobý úspěch
+mat624,624,Nevěnování se výuce/Nepozornost při výuce,"Rozhovor, Upozornění, Nerespektující komunikace",Částěčný úspěch
+mat346,346,Verbální agrese,(Kázeňské) Tresty,Neúspěch
+mat1294,1294,Problémy s docházkou,"Rozhovor, Spolupráce s odborníky",Neúspěch
+mat263,263,Problémy s docházkou,"Rozhovor, Důsledky",Neúspěch
+exp139,151,Sebedestruktivní chování,"Rozhovor, Podpora",Dlouhodobý úspěch
+exp466,473,"Nevěnování se výuce/Nepozornost při výuce, Nezvládání výuky, Verbální narušování výuky","Rozhovor, Podpora",Dlouhodobý úspěch
+mat641,641,Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Neúspěch
+mat1492,1492,Verbální agrese,"Rozhovor, Dohoda",Dlouhodobý úspěch
+exp1418,1418,Emoční výbuchy,Spolupráce s odborníky,Neúspěch
+exp491,489,Porušování třídních/školních pravidel,"Rozhovor, Důsledky",Neúspěch
+mat1447,1447,"Verbální narušování výuky, Neverbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce",Rozhovor,
+mat1172,1172,"Neverbální narušování výuky, Verbální narušování výuky",Podpora,Dlouhodobý úspěch
+mat147,147,Verbální narušování výuky,"Přemístění žáka , Rozhovor",Dlouhodobý úspěch
+exp966,955,Nevěnování se výuce/Nepozornost při výuce,Dohoda,Krátkodobý úspěch
+exp1413,1413,"Diagnóza, Emoční výbuchy","Rozhovor, Podpora",Dlouhodobý úspěch
+exp462,464,Neplnění školních povinností/nepřipravenost na výuku ,"Důsledky, Podpora","Neúspěch, Částěčný úspěch"
+mat187,187,Problémy s docházkou,"Podpora, Rozhovor",Neúspěch
+exp1140,1148,Porušování třídních/školních pravidel,"Upozornění, Rozhovor",Dlouhodobý úspěch
+mat1225,1225,Problémy s docházkou,"Důsledky, Spolupráce s odborníky",
+exp138,144,"Neplnění školních povinností/nepřipravenost na výuku , Verbální narušování výuky","Rozhovor, Podpora",Neúspěch
+mat752,752,"Verbální agrese, Emoční výbuchy","Nerespektující komunikace, Fyzické zakročení",Částěčný úspěch
+exp990,982,"Neplnění školních povinností/nepřipravenost na výuku , Problémy s docházkou, Diagnóza","Rozhovor, Spolupráce s odborníky, Podpora",Neúspěch
+exp189,198,"Neverbální narušování výuky, Verbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce, Fyzická agrese, Verbální agrese","Přemístění žáka , Rozhovor",Dlouhodobý úspěch
+exp888,884,Verbální narušování výuky,Rozhovor,Krátkodobý úspěch
+exp280,280,Neplnění školních povinností/nepřipravenost na výuku ,,Dlouhodobý úspěch
+exp295,294,"Neverbální narušování výuky, Verbální narušování výuky, Verbální agrese","(Kázeňské) Tresty, Podpora",Dlouhodobý úspěch
+mat1372,1372,Nevěnování se výuce/Nepozornost při výuce,Důsledky,Dlouhodobý úspěch
+exp398,401,Problémy s docházkou,(Kázeňské) Tresty,Dlouhodobý úspěch
+exp121,123,"Neverbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce, Diagnóza",Podpora,Krátkodobý úspěch
+exp1206,1208,Neplnění školních povinností/nepřipravenost na výuku ,Rozhovor,Částěčný úspěch
+exp205,203,"Emoční výbuchy, Porušování třídních/školních pravidel, Verbální agrese","Rozhovor, Upozornění, Podpora",Krátkodobý úspěch
+exp244,247,"Verbální narušování výuky, Neverbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce","Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+exp1423,1430,"Fyzická agrese, Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky, Neverbální narušování výuky","Spolupráce s odborníky, Rozhovor, Podpora",Dlouhodobý úspěch
+exp1414,1416,"Diagnóza, Nezvládání výuky, Nevěnování se výuce/Nepozornost při výuce, Porušování třídních/školních pravidel","Rozhovor, Spolupráce s odborníky, Přemístění žáka ",Neúspěch
+exp1147,1154,Emoční výbuchy,"Rozhovor, Podpora",Dlouhodobý úspěch
+exp377,385,"Fyzická agrese, Verbální agrese","Rozhovor, Důsledky",Dlouhodobý úspěch
+exp1331,1330,Verbální agrese,Podpora,Dlouhodobý úspěch
+exp853,855,Neverbální narušování výuky,"Rozhovor, Podpora",Dlouhodobý úspěch
+,220,"Diagnóza, Emoční výbuchy",Podpora,Neúspěch
+exp645,642,"Nevěnování se výuce/Nepozornost při výuce, Verbální agrese, Problémy s docházkou, Verbální narušování výuky","Upozornění, Nerespektující komunikace, Rozhovor, Důsledky",Neúspěch
+exp1,2,Šikana,Rozhovor,Neúspěch
+mat699,699,Porušování třídních/školních pravidel,Důsledky,Neúspěch
+exp1440,1439,Fyzická agrese,"Spolupráce s odborníky, Rozhovor, Důsledky",Neúspěch
+exp961,952,"Diagnóza, Verbální agrese, Fyzická agrese, Neverbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce","Podpora, (Kázeňské) Tresty, Přemístění žáka , Rozhovor, Nerespektující komunikace",Dlouhodobý úspěch
+mat1325,1325,Nevěnování se výuce/Nepozornost při výuce,,
+mat1292,1292,Neverbální narušování výuky,"Fyzické zakročení, Nerespektující komunikace",
+mat1361,1361,Nevěnování se výuce/Nepozornost při výuce,"Spolupráce s odborníky, Rozhovor",Dlouhodobý úspěch
+exp442,442,"Verbální agrese, Verbální narušování výuky, Neverbální narušování výuky, Porušování třídních/školních pravidel",Rozhovor,Částěčný úspěch
+exp1141,1137,"Verbální agrese, Diagnóza",Spolupráce s odborníky,Neúspěch
+exp1253,1257,"Diagnóza, Emoční výbuchy, Nezvládání výuky","Podpora, Spolupráce s odborníky, Rozhovor",Dlouhodobý úspěch
+exp665,664,Problémy s docházkou,"Rozhovor, Spolupráce s odborníky, Přemístění žáka ",Dlouhodobý úspěch
+exp1383,1380,"Verbální agrese, Nevěnování se výuce/Nepozornost při výuce",Rozhovor,Dlouhodobý úspěch
+exp1262,1258,Problémy s docházkou,"Rozhovor, Spolupráce s odborníky",Krátkodobý úspěch
+exp1341,1339,Šikana,"Rozhovor, Nerespektující komunikace",Dlouhodobý úspěch
+exp317,318,Verbální agrese,"Rozhovor, Důsledky",Částěčný úspěch
+exp648,649,"Neplnění školních povinností/nepřipravenost na výuku , Nevěnování se výuce/Nepozornost při výuce",Rozhovor,Dlouhodobý úspěch
+exp712,710,"Problémy s docházkou, Nevěnování se výuce/Nepozornost při výuce",Podpora,Neúspěch
+exp1291,1283,Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Dlouhodobý úspěch
+exp981,973,"Neplnění školních povinností/nepřipravenost na výuku , Problémy s docházkou","Podpora, Rozhovor, Spolupráce s odborníky",Neúspěch
+exp623,628,"Fyzická agrese, Emoční výbuchy","Rozhovor, Přemístění žáka ",Krátkodobý úspěch
+exp638,633,"Nevěnování se výuce/Nepozornost při výuce, Porušování třídních/školních pravidel","Rozhovor, Podpora, Dohoda",Dlouhodobý úspěch
+exp1304,1307,Šikana,"Rozhovor, (Kázeňské) Tresty, Upozornění",Částěčný úspěch
+exp1466,1469,Problémy s docházkou,"Rozhovor, Spolupráce s odborníky",Neúspěch
+exp1259,1255,Porušování třídních/školních pravidel,Rozhovor,Dlouhodobý úspěch
+exp1444,1445,"Lhaní a podvody, Nevěnování se výuce/Nepozornost při výuce, Problémy s docházkou, Neplnění školních povinností/nepřipravenost na výuku , Porušování třídních/školních pravidel","Rozhovor, Spolupráce s odborníky, Podpora, Důsledky",Neúspěch
+mat796,796,Verbální agrese,Rozhovor,Dlouhodobý úspěch
+mat557,557,"Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku ",Rozhovor,Krátkodobý úspěch
+mat682,682,Emoční výbuchy,"Upozornění, Rozhovor, Podpora",Dlouhodobý úspěch
+mat1110,1110,Verbální narušování výuky,"Fyzické zakročení, Přemístění žáka , Upozornění",Dlouhodobý úspěch
+exp1269,1267,"Fyzická agrese, Verbální agrese","Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+mat1184,1184,Verbální narušování výuky,,
+mat1060,1060,"Diagnóza, Problémy s docházkou, Nezvládání výuky",Rozhovor,Částěčný úspěch
+mat541,541,Emoční výbuchy,,
+mat1195,1195,Fyzická agrese,Spolupráce s odborníky,Neúspěch
+exp1387,1394,Emoční výbuchy,"Podpora, Spolupráce s odborníky, Přemístění žáka ",Částěčný úspěch
+exp503,485,Lhaní a podvody,Rozhovor,Dlouhodobý úspěch
+exp96,96,"Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku , Porušování třídních/školních pravidel","Rozhovor, Podpora",Neúspěch
+exp1029,1021,Verbální narušování výuky,"Důsledky, Upozornění",Krátkodobý úspěch
+exp1263,1265,Fyzická agrese,Práce s kolektivem,Dlouhodobý úspěch
+exp894,892,Porušování třídních/školních pravidel,"Upozornění, Důsledky",Neúspěch
+exp1046,1039,Verbální agrese,"Rozhovor, Dohoda",Dlouhodobý úspěch
+exp201,207,"Verbální agrese, Verbální narušování výuky, Diagnóza","Nerespektující komunikace, Upozornění, Spolupráce s odborníky, Rozhovor, Přemístění žáka ",Dlouhodobý úspěch
+exp389,393,Nevěnování se výuce/Nepozornost při výuce,"Upozornění, Podpora",Částěčný úspěch
+exp791,795,"Verbální agrese, Porušování třídních/školních pravidel","Rozhovor, Spolupráce s odborníky",Neúspěch
+exp401,398,Problémy s docházkou,"Rozhovor, Spolupráce s odborníky, Přemístění žáka ",Dlouhodobý úspěch
+exp762,767,"Porušování třídních/školních pravidel, Nevěnování se výuce/Nepozornost při výuce, Problémy s docházkou","Rozhovor, Spolupráce s odborníky",Krátkodobý úspěch
+mat1384,1384,"Neverbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce","Upozornění, Rozhovor",Dlouhodobý úspěch
+mat1242,1242,Fyzická agrese,,
+exp1031,1029,Diagnóza,Přemístění žáka ,Dlouhodobý úspěch
+exp644,643,Emoční výbuchy,Rozhovor,Dlouhodobý úspěch
+mat961,961,Fyzická agrese,Rozhovor,Dlouhodobý úspěch
+mat726,726,Neplnění školních povinností/nepřipravenost na výuku ,,
+exp98,99,Verbální agrese,"Rozhovor, Spolupráce s odborníky, Přemístění žáka ",Dlouhodobý úspěch
+exp797,805,"Porušování třídních/školních pravidel, Verbální agrese","Důsledky, Nerespektující komunikace",Krátkodobý úspěch
+exp414,407,"Verbální agrese, Porušování třídních/školních pravidel","Spolupráce s odborníky, Rozhovor",Krátkodobý úspěch
+exp1070,1072,Porušování třídních/školních pravidel,"Důsledky, Upozornění",Částěčný úspěch
+exp1053,1057,"Neplnění školních povinností/nepřipravenost na výuku , Nevěnování se výuce/Nepozornost při výuce","Rozhovor, Spolupráce s odborníky",Neúspěch
+mat930,930,Verbální narušování výuky,"Rozhovor, Fyzické zakročení",Částěčný úspěch
+mat201,201,Verbální agrese,"Rozhovor, Spolupráce s odborníky",Neúspěch
+mat135,135,Porušování třídních/školních pravidel,"Rozhovor, (Kázeňské) Tresty",Dlouhodobý úspěch
+exp1048,1052,Emoční výbuchy,"Rozhovor, Podpora",Dlouhodobý úspěch
+exp42,41,Neverbální narušování výuky,"Upozornění, Podpora",Částěčný úspěch
+exp1026,1018,Porušování třídních/školních pravidel,"Rozhovor, Spolupráce s odborníky, Důsledky",Dlouhodobý úspěch
+mat231,231,Fyzická agrese,Rozhovor,Neúspěch
+exp378,379,Verbální agrese,Rozhovor,Dlouhodobý úspěch
+exp299,289,"Verbální narušování výuky, Verbální agrese, Nevěnování se výuce/Nepozornost při výuce","Rozhovor, Přemístění žáka ",Dlouhodobý úspěch
+mat419,419,"Nevěnování se výuce/Nepozornost při výuce, Verbální agrese",Rozhovor,Dlouhodobý úspěch
+exp400,392,"Diagnóza, Porušování třídních/školních pravidel","Rozhovor, Podpora",Dlouhodobý úspěch
+exp1161,1163,Diagnóza,"Spolupráce s odborníky, Rozhovor",Neúspěch
+mat1087,1087,"Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku , Porušování třídních/školních pravidel, Verbální narušování výuky, Neverbální narušování výuky, Emoční výbuchy, Problémy s docházkou",Spolupráce s odborníky,
+exp646,648,Šikana,"Rozhovor, Důsledky",Dlouhodobý úspěch
+exp1367,1368,"Nezvládání výuky, Problémy s docházkou","Podpora, Rozhovor, Spolupráce s odborníky",Neúspěch
+exp529,521,"Neverbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce","Upozornění, Důsledky, Rozhovor",Krátkodobý úspěch
+exp72,65,Emoční výbuchy,"Spolupráce s odborníky, Rozhovor, Přemístění žáka ",Dlouhodobý úspěch
+mat15,15,Nevěnování se výuce/Nepozornost při výuce,Rozhovor,
+exp1063,1065,Porušování třídních/školních pravidel,"Rozhovor, Spolupráce s odborníky, Důsledky",Dlouhodobý úspěch
+exp495,493,Nezvládání výuky,Rozhovor,Dlouhodobý úspěch
+exp371,380,Verbální agrese,Rozhovor,Neúspěch
+mat188,188,Nevěnování se výuce/Nepozornost při výuce,(Kázeňské) Tresty,Dlouhodobý úspěch
+exp767,764,"Fyzická agrese, Sebedestruktivní chování, Verbální agrese, Emoční výbuchy","Nerespektující komunikace, Rozhovor",Dlouhodobý úspěch
+exp225,217,Porušování třídních/školních pravidel,"Rozhovor, Důsledky",Dlouhodobý úspěch
+exp790,792,"Verbální narušování výuky, Neverbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce","Spolupráce s odborníky, Podpora",Částěčný úspěch
+exp1077,1077,Porušování třídních/školních pravidel,"(Kázeňské) Tresty, Rozhovor, Podpora",Dlouhodobý úspěch
+mat879,879,"Verbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce","Rozhovor, Podpora",Dlouhodobý úspěch
+,338,"Verbální agrese, Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku ",Nerespektující komunikace,Neúspěch
+exp725,720,"Diagnóza, Lhaní a podvody","Spolupráce s odborníky, Práce s kolektivem",Neúspěch
+exp1016,1017,Verbální agrese,"Upozornění, Rozhovor, Důsledky",Krátkodobý úspěch
+exp1275,1276,Problémy s docházkou,Rozhovor,Neúspěch
+mat456,456,"Verbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce, Verbální agrese","Upozornění, Nerespektující komunikace, Přemístění žáka , Rozhovor",Neúspěch
+mat1504,1504,Šikana,"Rozhovor, Důsledky",
+exp808,816,Sebedestruktivní chování,"Podpora, Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+exp204,202,Emoční výbuchy,Přemístění žáka ,Částěčný úspěch
+exp162,162,Verbální agrese,"Důsledky, Rozhovor",Částěčný úspěch
+mat402,402,"Nevěnování se výuce/Nepozornost při výuce, Neplnění školních povinností/nepřipravenost na výuku ",Důsledky,Neúspěch
+exp702,703,"Verbální narušování výuky, Neverbální narušování výuky","Upozornění, Podpora",Dlouhodobý úspěch
+exp1130,1130,Verbální agrese,"Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+exp1407,1414,Porušování třídních/školních pravidel,"Rozhovor, Důsledky",Dlouhodobý úspěch
+mat1022,1022,Verbální narušování výuky,"Upozornění, Nerespektující komunikace, Důsledky",Dlouhodobý úspěch
+exp1028,1026,Fyzická agrese,"Nerespektující komunikace, Rozhovor",Dlouhodobý úspěch
+exp1405,1412,Fyzická agrese,Nerespektující komunikace,Neúspěch
+exp1099,1105,"Verbální narušování výuky, Diagnóza",Podpora,Krátkodobý úspěch
+mat35,35,"Neplnění školních povinností/nepřipravenost na výuku , Verbální narušování výuky, Nevěnování se výuce/Nepozornost při výuce",,
+exp498,509,Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Neúspěch
+exp1398,1391,Šikana,"Rozhovor, Spolupráce s odborníky, Důsledky",Částěčný úspěch
+exp91,92,Emoční výbuchy,"Rozhovor, Spolupráce s odborníky",Dlouhodobý úspěch
+mat1364,1364,Problémy s docházkou,Rozhovor,Neúspěch
+exp902,898,Verbální narušování výuky,,Neúspěch
+exp1380,1370,Diagnóza,"Nerespektující komunikace, Podpora, Rozhovor",Dlouhodobý úspěch
+exp246,242,"Verbální agrese, Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky, Sebedestruktivní chování, Fyzická agrese","Důsledky, Upozornění, Rozhovor, Přemístění žáka ",Neúspěch
+exp15,14,Sebedestruktivní chování,Rozhovor,Neúspěch
+exp308,316,Porušování třídních/školních pravidel,"Rozhovor, Podpora",Neúspěch
+mat601,601,"Diagnóza, Emoční výbuchy","Rozhovor, Spolupráce s odborníky, Podpora",Dlouhodobý úspěch
+mat388,388,Šikana,"Rozhovor, Důsledky",Částěčný úspěch
+mat1298,1298,Šikana,Rozhovor,Dlouhodobý úspěch
+,167,"Nevěnování se výuce/Nepozornost při výuce, Verbální narušování výuky, Neverbální narušování výuky","Spolupráce s odborníky, Rozhovor",Částěčný úspěch
+exp837,841,Nevěnování se výuce/Nepozornost při výuce,"Rozhovor, Podpora, Upozornění",Krátkodobý úspěch
+exp13,21,"Problémy s docházkou, Emoční výbuchy","Rozhovor, Podpora",Krátkodobý úspěch

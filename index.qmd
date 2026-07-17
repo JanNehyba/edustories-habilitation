@@ -1,0 +1,54 @@
+---
+title: "Náročné chování žáků v době AI"
+subtitle: "Companion habilitační monografie — výsledky, data a kód na jednom místě"
+---
+
+::: {.callout-note appearance="simple"}
+Všechny výsledky monografie lze přepočítat ze zveřejněných dat tam, kde to
+publikační status kazuistik eticky dovoluje; u ostatních studií jsou
+k dispozici úplné skripty, agregovaná data a HTML reporty analýz.
+Každé číslo v knize je dohledatelné v manifestu příslušné analýzy
+(skript + otisk dat + seed).
+:::
+
+## Studie 1 — Co korpus obsahuje {.study-card}
+
+🟡 **Částečně přepočitatelné z veřejných dat** (EN verze korpusu je veřejná;
+plné české texty podléhají publikačnímu statusu kazuistik)
+
+[📄 Číst analýzu](reporty/10_korpus.html){.btn .btn-primary}
+[💻 Zdrojový kód]({{< var repo.blob >}}/analyzy/notebooks/10_korpus.qmd){.btn .btn-outline-primary}
+[📊 Data (HF dataset)]({{< var hf.dataset >}}){.btn .btn-outline-primary}
+
+## Studie 2 — Anotuje jazykový model jako člověk? {.study-card}
+
+🟡 **Částečně přepočitatelné** (párované anotace člověk×LLM jsou agregované;
+texty přes veřejný dataset)
+
+[📄 Číst analýzu](reporty/20_kodovani_llm.html){.btn .btn-primary}
+[💻 Zdrojový kód]({{< var repo.blob >}}/analyzy/notebooks/20_kodovani_llm.qmd){.btn .btn-outline-primary}
+[📊 Data]({{< var repo.blob >}}/data/srovnani.csv){.btn .btn-outline-primary}
+
+## Studie 3 — AI řešení vs. učitelská řešení {.study-card}
+
+🟢 **Plně přepočitatelné** po zveřejnění OSF balíčku (nyní v anonymním
+recenzním řízení; do té doby na vyžádání)
+
+[📄 Číst analýzu](reporty/30_ai_vs_ucitel.html){.btn .btn-primary}
+[💻 Zdrojový kód]({{< var repo.blob >}}/analyzy/notebooks/30_ai_vs_ucitel.qmd){.btn .btn-outline-primary}
+[📊 Data (OSF)](#){.btn .btn-outline-primary .disabled}
+
+## Studie 4 — Dá se kvalita kazuistik spolehlivě posoudit? {.study-card}
+
+⏳ **Anotace probíhá** — analýza bude zmrazena k pojmenovanému řezu
+(viz metodologie, kap. 4)
+
+[📄 Číst analýzu](#){.btn .btn-primary .disabled}
+[💻 Zdrojový kód](#){.btn .btn-outline-primary .disabled}
+
+---
+
+Kniha: *Náročné chování žáků v době AI: kazuistiky z praxe a jazykové
+modely v pedagogickém výzkumu* (v přípravě, PdF MU).
+Projekt TAČR TQ01000030 · [GitHub]({{< var repo.url >}}) ·
+[Dataset]({{< var hf.dataset >}})
