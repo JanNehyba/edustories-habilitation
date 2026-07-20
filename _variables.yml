@@ -1,7 +1,0 @@
-repo:
-  owner: JanNehyba
-  name: edustories-habilitation   # potvrzeno Janem 17. 7. 2026
-  url: https://github.com/JanNehyba/edustories-habilitation
-  blob: https://github.com/JanNehyba/edustories-habilitation/blob/main
-hf:
-  dataset: https://huggingface.co/datasets/MU-NLPC/Edustories-en
