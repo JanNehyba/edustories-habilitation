@@ -22,7 +22,7 @@ Kurátorovaný anotovaný **výběr** korpusu v angličtině je na Hugging Face
 (`MU-NLPC/Edustories-en`) pod tam uvedenou licencí.
 
 ## Podmínky užití
-Odvozené tabulky v této složce jsou pod licencí **CC BY-NC 4.0** (ověření
-a nekomerční výzkum s uvedením zdroje; viz `DATA-LICENSE.md` v kořeni repozitáře).
+Celý repozitář je pod licencí **CC BY-NC 4.0** (ověření a nekomerční výzkum
+s uvedením zdroje; viz `LICENSE` v kořeni repozitáře).
 Plný korpus tomuto režimu NEpodléhá a není součástí repozitáře.
 Významy sloupců dokumentuje kniha (kap. 4, příloha C).

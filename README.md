@@ -55,11 +55,10 @@ na Hugging Face: `MU-NLPC/Edustories-en`.
 
 ## Licence
 
-- **Kód** (skripty a notebooky, build knihy): MIT (viz `LICENSE`).
-- **Odvozená data** (tabulky a reporty bez textů kazuistik): CC BY-NC 4.0
-  (ověření a nekomerční výzkum s uvedením zdroje; viz `DATA-LICENSE.md`).
-- **Text a PDF knihy**: © Jan Nehyba, všechna práva vyhrazena (pracovní verze
-  ke kontrole; kvůli chystanému knižnímu vydání bez otevřené licence).
+Celý repozitář (kód a notebooky, odvozená data, tabulky, obrázky i text a sazba
+monografie) je pod jednotnou licencí **CC BY-NC 4.0** (nekomerční užití
+s uvedením zdroje; viz `LICENSE`).
+
 - **Plný korpus kazuistik** není součástí repozitáře (dostupný přes platformu
   projektu). Výběr v angličtině na Hugging Face `MU-NLPC/Edustories-en` má
   vlastní licenci.
