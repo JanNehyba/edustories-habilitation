@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Náročné chování žáků v době AI — doprovodné materiály</title>
+<meta name="description" content="Doprovodné materiály k habilitační monografii Jana Nehyby (Pedagogická fakulta MU): kniha, data, analýzy a jejich ověření.">
+<style>
+  :root{
+    --muni:#0000DC; --pdf:#FF7300;
+    --ink:#1b1b1b; --muted:#5c5c5c; --line:#e2e2e2; --bg:#ffffff;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"STIX Two Text",Georgia,"Times New Roman",serif;
+    font-size:18px; line-height:1.62;
+    font-kerning:normal; text-rendering:optimizeLegibility;
+  }
+  .band{height:4px;background:var(--muni)}
+  main{max-width:44rem;margin:0 auto;padding:3rem 1.35rem 4rem}
+  .inst{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    font-size:.74rem;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin:0 0 1.4rem}
+  h1{font-size:2.05rem;line-height:1.18;font-weight:600;color:var(--muni);margin:0 0 .35rem}
+  .sub{font-size:1.12rem;font-style:italic;color:var(--muted);margin:0 0 1.1rem}
+  .byline{font-size:.95rem;color:var(--ink);margin:0 0 2rem}
+  .byline .sep{color:var(--line)}
+  h2{font-size:1.28rem;font-weight:600;color:var(--muni);
+    margin:2.9rem 0 .8rem;padding-bottom:.3rem;border-bottom:1px solid var(--line)}
+  p{margin:0 0 1rem}
+  a{color:var(--muni);text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:.5px}
+  a:hover{text-decoration-thickness:1.5px}
+  .lead{font-size:1.06rem}
+  .quick{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    font-size:.9rem;margin:1.6rem 0 0;padding:0;list-style:none;
+    display:flex;flex-wrap:wrap;gap:.35rem 1.4rem}
+  .quick a{white-space:nowrap}
+  .accent{color:var(--pdf)}
+  dl{margin:1rem 0}
+  dt{font-weight:600;margin-top:.9rem}
+  dd{margin:.15rem 0 0;color:var(--ink)}
+  .pdfwrap{border:1px solid var(--line);margin:1.1rem 0 .5rem;background:#fafafa}
+  .pdfwrap iframe{display:block;width:100%;height:82vh;min-height:520px;border:0}
+  .pdfmeta{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    font-size:.85rem;color:var(--muted);margin:.2rem 0 0}
+  .note{font-size:.92rem;color:var(--muted)}
+  footer{max-width:44rem;margin:0 auto;padding:1.6rem 1.35rem 3rem;
+    border-top:1px solid var(--line);
+    font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+    font-size:.82rem;color:var(--muted);line-height:1.5}
+  footer a{color:var(--muted)}
+  code{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.86em;
+    background:#f4f4f6;padding:.08em .35em;border-radius:2px}
+  @media (max-width:520px){ body{font-size:17px} h1{font-size:1.7rem} main{padding-top:2rem} }
+</style>
+</head>
+<body>
+<div class="band"></div>
+<main>
+  <p class="inst">Masarykova univerzita · Pedagogická fakulta</p>
+  <h1>Náročné chování žáků v době AI</h1>
+  <p class="sub">Kazuistiky z praxe a jazykové modely v pedagogickém výzkumu</p>
+  <p class="byline">Habilitační monografie &nbsp;<span class="sep">|</span>&nbsp; Jan Nehyba &nbsp;<span class="sep">|</span>&nbsp; pracovní verze 2026</p>
+
+  <p class="lead">Tato stránka shromažďuje doprovodné materiály k habilitační
+  monografii: samotnou knihu, zveřejněná data, analytický kód a nástroje, jimiž
+  si lze každé číslo v textu ověřit. Monografie zkoumá, jaké náročné chování
+  žáků učitelé v praxi řeší a jak lze k výzkumu tohoto tématu využít velké
+  jazykové modely. Opírá se o korpus <strong>Edustories</strong> — více než tři
+  tisíce kazuistik, které napsali studující učitelství a učitelé z praxe — a ve
+  třech empirických studiích popisuje typy náročného chování a jejich řešení,
+  ověřuje, nakolik se jazykový model shoduje s lidskými anotátorkami, a
+  srovnává řešení generovaná umělou inteligencí s řešeními učitelů. Knihu vedou
+  dvě zásady: původnost a dohledatelnost — každé analytické číslo je vázáno na
+  zveřejněná data a skripty.</p>
+
+  <ul class="quick">
+    <li><a href="#kniha">↓ Číst knihu</a></li>
+    <li><a href="https://edustories.cz/">Platforma Edustories ↗</a></li>
+    <li><a href="https://huggingface.co/datasets/MU-NLPC/Edustories-en">Dataset na Hugging Face ↗</a></li>
+    <li><a href="https://github.com/JanNehyba/edustories-habilitation">Repozitář na GitHubu ↗</a></li>
+  </ul>
+
+  <h2 id="kniha">Kniha</h2>
+  <p>Níže je monografie k přečtení přímo v okně (pracovní verze; kapitoly osm až
+  deset se doplní po uzavření třetí anotační etapy). Sazba je generovaná ze
+  zdrojových textů, obrázky vznikají kódem nad zveřejněnými daty.</p>
+  <div class="pdfwrap">
+    <iframe src="vystupy/export/habilitace2-CZ.pdf#view=FitH" title="Náročné chování žáků v době AI — PDF monografie" loading="lazy"></iframe>
+  </div>
+  <p class="pdfmeta"><a href="vystupy/export/habilitace2-CZ.pdf" target="_blank" rel="noopener">Otevřít PDF na celé stránce ↗</a> &nbsp;·&nbsp; <a href="vystupy/export/habilitace2-CZ.pdf" download>Stáhnout PDF</a></p>
+
+  <h2 id="data">Data</h2>
+  <p>Veřejně dostupná je <strong>odvozená datová podmnožina bez textů kazuistik
+  a bez osobních údajů</strong>: tabulky délek a věku, kategorie přiřazené
+  člověkem i modelem a pseudonymizovaná hodnocení dvojic řešení (anotátorky
+  vystupují pod pseudonymy). Leží ve složce
+  <a href="https://github.com/JanNehyba/edustories-habilitation/tree/main/data/processed"><code>data/processed/</code></a>
+  a slouží k přepočtu výsledků knihy. Kurátorovaný anotovaný výběr korpusu
+  v angličtině je publikován jako dataset
+  <a href="https://huggingface.co/datasets/MU-NLPC/Edustories-en">Edustories-en</a>
+  na Hugging Face.</p>
+  <p><strong>Plný korpus</strong> — přes tři tisíce českých kazuistik i s texty —
+  zůstává za platformou <a href="https://edustories.cz/">edustories.cz</a>, kde
+  slouží studujícím a učitelům; volně ke stažení není. Kniha proto pracuje se
+  zveřejněnou podmnožinou a s doloženými časovými řezy korpusu, nikoli s „živou“
+  databází.</p>
+
+  <h2 id="analyzy">Analýzy a jejich ověření</h2>
+  <p>Tři analytické notebooky v jazyce R přepočítávají výsledky od zveřejněných
+  dat po tabulky a obrázky knihy. Můžete si je přečíst jako hotové reporty, nebo
+  je spustit v prohlížeči přes Binder (sestaví se prostředí RStudio, nic se
+  neinstaluje do vašeho počítače):</p>
+  <dl>
+    <dt>Studie 1 — Co korpus obsahuje</dt>
+    <dd><a href="vystupy/reporty/10_korpus.html">report</a> · typy náročného chování, řešení a dopadů na reprodukovatelném řezu korpusu.</dd>
+    <dt>Studie 2 — Shoduje se jazykový model s lidmi?</dt>
+    <dd><a href="vystupy/reporty/20_kodovani_llm.html">report</a> · srovnání lidského a modelového kódování řešení.</dd>
+    <dt>Studie 3 — Řešení generovaná AI vs. řešení učitelů</dt>
+    <dd><a href="vystupy/reporty/30_ai_vs_ucitel.html">report</a> · zaslepené hodnocení dvojic řešení na čtyřech pedagogických dimenzích.</dd>
+  </dl>
+  <p><a href="https://mybinder.org/v2/gh/JanNehyba/edustories-habilitation/HEAD?urlpath=rstudio">Spustit analýzy v prohlížeči (Binder) ↗</a>
+  &nbsp;·&nbsp;
+  <a href="https://github.com/JanNehyba/edustories-habilitation/tree/main/analyzy/notebooks">zdrojové notebooky ↗</a></p>
+  <p class="note">Jak čísla drží pohromadě: každé tvrdé číslo v knize nese
+  strojově čitelnou kotvu na <em>zdrojovou tabulku čísel</em> příslušné analýzy
+  (skript + otisk dat + náhodné zrno). Před každým sestavením knihy kontrolní
+  brána ověří, že se próza s daty shoduje, a druhá brána, že každá citace má
+  záznam v seznamu literatury. Netechnický návod krok za krokem:
+  <a href="https://github.com/JanNehyba/edustories-habilitation/blob/main/JAK-OVERIT-CISLA.md">Jak si ověřit čísla knihy</a>.</p>
+
+  <h2 id="recenzenti">Pro recenzenty</h2>
+  <p>Práce je koncipována jako <strong>empirická monografie</strong> podle § 72
+  zákona o vysokých školách. Struktura sleduje standard: úvod, teoretická
+  východiska, metodologie, empirické studie a (po uzavření sběru) diskuse a
+  závěr. Citační norma je APA 7; etické náležitosti — souhlas Etické komise pro
+  výzkum Masarykovy univerzity a anonymizace dat — dokládá příloha o etice.
+  Rozsah pracovní verze je přibližně sto třicet tištěných stran a s doplněním
+  závěrečných kapitol dále poroste.</p>
+  <p>Nadstandardem práce je úplná <strong>dohledatelnost výsledků</strong>:
+  data, kód i postupy jsou zveřejněné tak, aby analýzy šlo nezávisle přepočítat
+  (viz oddíl výše). Podrobnou matici souladu s kritérii habilitačního řízení
+  poskytujeme na vyžádání.</p>
+
+  <h2 id="licence">Licence a citace</h2>
+  <p>Kód a notebooky jsou pod licencí MIT; zveřejněná odvozená data pod
+  <a href="https://github.com/JanNehyba/edustories-habilitation/blob/main/DATA-LICENSE.md">CC BY-NC 4.0</a>;
+  text a sazba monografie jsou autorské dílo, všechna práva vyhrazena (pracovní
+  verze). Plný korpus kazuistik není součástí tohoto repozitáře.</p>
+</main>
+<footer>
+  <p>Jan Nehyba · Katedra … , Pedagogická fakulta, Masarykova univerzita ·
+  projekt Edustories (TA ČR TQ01000030).
+  Doprovodný repozitář:
+  <a href="https://github.com/JanNehyba/edustories-habilitation">github.com/JanNehyba/edustories-habilitation</a>.</p>
+</footer>
+</body>
+</html>
