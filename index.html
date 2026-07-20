@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Náročné chování žáků v době AI — doprovodné materiály</title>
+<title>Náročné chování žáků v době AI: doprovodné materiály</title>
 <meta name="description" content="Doprovodné materiály k habilitační monografii Jana Nehyby (Pedagogická fakulta MU): kniha, data, analýzy a jejich ověření.">
 <style>
   :root{
@@ -60,6 +60,8 @@
   .pdfmeta{font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
     font-size:.85rem;color:var(--muted);margin:.2rem 0 0}
   .note{font-size:.92rem;color:var(--muted)}
+  .doclink{border-left:3px solid var(--muni);background:#f6f6fb;
+    padding:.6rem .95rem;margin:1.3rem 0;font-size:.98rem}
   footer{max-width:44rem;margin:0 auto;padding:1.6rem 1.35rem 3rem;
     border-top:1px solid var(--line);
     font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
@@ -94,12 +96,12 @@
   monografii: samotnou knihu, zveřejněná data, analytický kód a nástroje, jimiž
   si lze každé číslo v textu ověřit. Monografie zkoumá, jaké náročné chování
   žáků učitelé v praxi řeší a jak lze k výzkumu tohoto tématu využít velké
-  jazykové modely. Opírá se o korpus <strong>Edustories</strong> — více než tři
-  tisíce kazuistik, které napsali studující učitelství a učitelé z praxe — a ve
+  jazykové modely. Opírá se o korpus <strong>Edustories</strong> (více než tři
+  tisíce kazuistik, které napsali studující učitelství a učitelé z praxe) a ve
   třech empirických studiích popisuje typy náročného chování a jejich řešení,
   ověřuje, nakolik se jazykový model shoduje s lidskými anotátorkami, a
   srovnává řešení generovaná umělou inteligencí s řešeními učitelů. Knihu vedou
-  dvě zásady: původnost a dohledatelnost — každé analytické číslo je vázáno na
+  dvě zásady, původnost a dohledatelnost: každé analytické číslo je vázáno na
   zveřejněná data a skripty.</p>
 
   <p class="ext">Související: <a href="https://edustories.cz/">platforma Edustories ↗</a>
@@ -108,7 +110,7 @@
 
   <h2 id="kniha">Kniha</h2>
   <div class="pdfwrap">
-    <iframe src="vystupy/export/habilitace2-CZ.pdf#view=FitH" title="Náročné chování žáků v době AI — PDF monografie" loading="lazy"></iframe>
+    <iframe src="vystupy/export/habilitace2-CZ.pdf#view=FitH" title="Náročné chování žáků v době AI: PDF monografie" loading="lazy"></iframe>
   </div>
   <p class="pdfmeta"><a href="vystupy/export/habilitace2-CZ.pdf" target="_blank" rel="noopener">Otevřít knihu na celé stránce ↗</a> &nbsp;·&nbsp; <a href="vystupy/export/habilitace2-CZ.pdf" download>stáhnout knihu (PDF)</a></p>
 
@@ -122,7 +124,7 @@
   v angličtině je publikován jako dataset
   <a href="https://huggingface.co/datasets/MU-NLPC/Edustories-en">Edustories-en</a>
   na Hugging Face.</p>
-  <p><strong>Plný korpus</strong> — přes tři tisíce českých kazuistik i s texty —
+  <p><strong>Plný korpus</strong>, přes tři tisíce českých kazuistik i s texty,
   zůstává za platformou <a href="https://edustories.cz/">edustories.cz</a>, kde
   slouží studujícím a učitelům; volně ke stažení není. Kniha proto pracuje se
   zveřejněnou podmnožinou a s doloženými časovými řezy korpusu, nikoli s „živou“
@@ -134,11 +136,11 @@
   je spustit v prohlížeči přes Binder (sestaví se prostředí RStudio, nic se
   neinstaluje do vašeho počítače):</p>
   <dl>
-    <dt>Studie 1 — Co korpus obsahuje</dt>
+    <dt>Studie 1: Co korpus obsahuje</dt>
     <dd><a href="vystupy/reporty/10_korpus.html">report</a> · typy náročného chování, řešení a dopadů na reprodukovatelném řezu korpusu.</dd>
-    <dt>Studie 2 — Shoduje se jazykový model s lidmi?</dt>
+    <dt>Studie 2: Shoduje se jazykový model s lidmi?</dt>
     <dd><a href="vystupy/reporty/20_kodovani_llm.html">report</a> · srovnání lidského a modelového kódování řešení.</dd>
-    <dt>Studie 3 — Řešení generovaná AI vs. řešení učitelů</dt>
+    <dt>Studie 3: Řešení generovaná AI vs. řešení učitelů</dt>
     <dd><a href="vystupy/reporty/30_ai_vs_ucitel.html">report</a> · zaslepené hodnocení dvojic řešení na čtyřech pedagogických dimenzích.</dd>
   </dl>
   <p><a href="https://mybinder.org/v2/gh/JanNehyba/edustories-habilitation/HEAD?urlpath=rstudio">Spustit analýzy v prohlížeči (Binder) ↗</a>
@@ -152,21 +154,28 @@
   <a href="https://github.com/JanNehyba/edustories-habilitation/blob/main/JAK-OVERIT-CISLA.md">Jak si ověřit čísla knihy</a>.</p>
 
   <h2 id="recenzenti">Pro recenzenty</h2>
-  <p>Práce je <strong>empirická monografie</strong> podle § 72 zákona
-  č. 111/1998 Sb. (forma „c“ dle Směrnice MU č. 7/2017). Odborný požadavek
-  Směrnice děkana PdF č. 2/2021 — recenzovaná monografie v rozsahu nejméně
-  sta tištěných stran — pracovní verze naplňuje již nyní (přibližně sto třicet
-  pět stran); po doplnění závěrečných kapitol poroste dále. Struktura sleduje
-  standard: úvod, teoretická východiska, metodologie, empirické studie a (po
-  uzavření sběru) diskuse a závěr.</p>
-  <p>Formální náležitosti odpovídají oficiálnímu Vzoru MU: formát A4, řádkování
-  1,5, jednotná titulní strana i prohlášení autora. Práce je psána česky
-  s povinným anglickým abstraktem; citační norma je APA 7. Etické náležitosti —
-  schválení Etickou komisí pro výzkum Masarykovy univerzity (č. j. EKV-2022-118)
-  a trojstupňová anonymizace ověřená auditem — dokládá příloha o etice.
-  Souhrnný <a href="vystupy/export/soulad-s-pozadavky.pdf">přehled souladu
-  s požadavky na habilitační práci (PDF ke stažení)</a> shrnuje jednotlivá
-  kritéria a jejich naplnění.</p>
+  <p>Práce je <strong>empirická monografie</strong> podle
+  <a href="https://www.zakonyprolidi.cz/cs/1998-111#p72">§ 72 zákona č. 111/1998 Sb.</a>
+  Požadavky konkretizují
+  <a href="https://www.muni.cz/o-univerzite/uredni-deska/rad-habilitacniho-rizeni-a-rizeni-ke-jmenovani-profesorem-na-mu">Řád habilitačního řízení MU</a>
+  a <a href="https://www.ped.muni.cz/vyzkum/habilitace-a-jmenovani-profesorem">Zásady habilitačního řízení na PdF MU</a>:
+  recenzovaná monografie v rozsahu nejméně sta tištěných stran. Pracovní verze
+  ji naplňuje již nyní (přibližně sto třicet pět stran) a po doplnění
+  závěrečných kapitol poroste dále. Struktura sleduje standard: úvod, teoretická
+  východiska, metodologie, empirické studie a (po uzavření sběru) diskuse a
+  závěr.</p>
+  <p>Formální náležitosti odpovídají
+  <a href="https://www.ped.muni.cz/vyzkum/habilitace-a-jmenovani-profesorem">oficiálnímu Vzoru MU</a>:
+  formát A4, řádkování 1,5, jednotná titulní strana i prohlášení autora. Práce
+  je psána česky s povinným anglickým abstraktem; citační norma je
+  <a href="https://apastyle.apa.org/">APA 7</a>. Etické náležitosti (schválení
+  Etickou komisí pro výzkum Masarykovy univerzity, č. j. EKV-2022-118, a
+  trojstupňová anonymizace ověřená auditem) dokládá příloha o etice.</p>
+  <p>Vedle samotné monografie stanoví Zásady PdF (čl. 5) i odborné předpoklady
+  uchazeče: vědecké studie, ohlasy, pedagogickou praxi, projekty a další. Jejich
+  přehled a doložení shrnuje níže uvedený dokument; osobní publikačně-citační
+  údaje jsou přitom vedeny v neveřejné dokumentaci řízení.</p>
+  <p class="doclink"><a href="vystupy/export/soulad-s-pozadavky.pdf">Přehled souladu s požadavky na habilitační práci (PDF ke stažení)</a>. Dokument kritérium po kritériu ukazuje, jak práce i uchazeč naplňují požadavky habilitačního řízení.</p>
   <p>Nadstandardem práce je úplná <strong>dohledatelnost výsledků</strong>:
   data, kód i postupy jsou zveřejněné tak, aby analýzy šlo nezávisle přepočítat
   (viz oddíl Analýzy výše).</p>
