@@ -13,12 +13,12 @@ výstupům analýz. Nabízíme tři cesty podle toho, kolik techniky chcete.
 2. V reportu najdete tytéž tabulky a hodnoty, které cituje kniha.
 3. Chcete-li konkrétní číslo, otevřete manifest ve složce
    `vystupy/tabulky/` (např. `kap7_k2_shoda_cisla.csv`), což je obyčejná
-   tabulka „název metriky, hodnota". Název klíče najdete v knize
+   tabulka „název metriky, hodnota“. Název klíče najdete v knize
    v komentáři u každého čísla (ve zdrojovém textu kapitoly).
 
 ## Cesta 2: spustit analýzu v prohlížeči (Binder, ~15 minut poprvé)
 
-1. Klikněte na odznak „launch binder" v README tohoto repozitáře. Poprvé se
+1. Klikněte na odznak „launch binder“ v README tohoto repozitáře. Poprvé se
    prostředí sestaví (~15 minut), pak se otevře RStudio ve vašem prohlížeči;
    nic se neinstaluje k vám do počítače.
 2. **Všechny tři studie běží rovnou** z veřejných dat repozitáře. Otevřete
@@ -30,7 +30,7 @@ výstupům analýz. Nabízíme tři cesty podle toho, kolik techniky chcete.
    - `30_ai_vs_ucitel.qmd` (Studie 3, kap. 7): z tabulky hodnocení dvojic řešení
      (anotátorky pod pseudonymy A1–A6, bez textů).
 
-Poznámka: v logu RStudia se mohou objevit hlášky „checkSpelling / iconv" nad
+Poznámka: v logu RStudia se mohou objevit hlášky „checkSpelling / iconv“ nad
 českými slovy. Jsou neškodné (jen kontrola pravopisu neumí diakritiku) a na
 výpočty ani render nemají vliv.
 

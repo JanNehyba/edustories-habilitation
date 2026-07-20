@@ -16,11 +16,11 @@ analýzy ve složce [`vystupy/reporty/`](vystupy/reporty): `10_korpus.html`
 (kap. 5), `20_kodovani_llm.html` (kap. 6), `30_ai_vs_ucitel.html` (kap. 7).
 Najdete v nich tytéž tabulky a hodnoty jako v knize. Konkrétní číslo dohledáte
 v manifestu ve složce [`vystupy/tabulky/`](vystupy/tabulky) (tabulka „název
-metriky, hodnota"; klíč je v knize v komentáři u každého čísla).
+metriky, hodnota“; klíč je v knize v komentáři u každého čísla).
 
 **2. Přepočítat v prohlížeči (Binder, ~15 min první spuštění).** Klikněte na
-odznak „launch binder" nahoře. Otevře se RStudio v prohlížeči (nic se
-neinstaluje k vám). Otevřete notebook ve `analyzy/notebooks/` a dejte
+odznak „launch binder“ nahoře. Otevře se RStudio v prohlížeči (nic se
+neinstaluje k vám). Otevřete notebook v `analyzy/notebooks/` a dejte
 **Render**. Všechny tři empirické studie jsou reprodukovatelné rovnou
 z veřejných dat tohoto repozitáře, bez textů kazuistik a bez jmen:
 - **Studie 1** (`10_korpus.qmd`): z odvozené tabulky `kap5_perkazuistika.csv`
