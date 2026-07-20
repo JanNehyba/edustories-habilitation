@@ -42,8 +42,8 @@ průběžně; při přidání pojmu zkontrolovat konzistenci napříč kapitolam
 | Krippendorffovo α | Krippendorff's alpha | koeficient shody (nominální/ordinální) | kap. 6, 7 |
 | Gwet AC1 | Gwet's AC1 | koeficient shody odolný vůči nevyváženosti (plán pro K3) | kap. 4, Studie 4 |
 | smíšený model (LMM/CLMM/GLMM) | (generalized/cumulative) linear mixed model | modely s náhodnými efekty kazuistiky a anotátorky | kap. 7 |
-| manifest čísel | numbers manifest | tabulka metrika–hodnota z notebooku; jediný zdroj čísel prózy (brána 95) | kap. 4 |
-| kotva (čísla) | (number) anchor | HTML komentář vážící číslo v próze na manifest | kap. 4 (technicky) |
+| zdrojová tabulka čísel | numbers manifest | tabulka „metrika–hodnota“ z analýzy; jediný zdroj čísel prózy (brána 95); v próze „manifest“ nepoužívat | kap. 4 |
+| kotva (čísla) | (number) anchor | HTML komentář vážící číslo v próze na zdrojovou tabulku čísel | kap. 4 (technicky) |
 | companion (repozitář) | companion repository | veřejný doprovodný repozitář s kódem, reporty a daty | kap. 4, 10 |
 | anotátorka A1–A12 | annotator A1–A12 | pseudonymy; mapování na osoby jen interně | kap. 4, příloha C |
 | trojstupňová anonymizace | three-stage anonymization | pisatel → NER (NameTag/CNEC 2.0) → LLM; poté ruční kontrola | kap. 3, 4, přílohy B, D |
