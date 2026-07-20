@@ -67,6 +67,7 @@ format:
         \renewcommand{\bottomfraction}{0.6}
         \renewcommand{\textfraction}{0.1}
         \renewcommand{\floatpagefraction}{0.75}
+        \usepackage{needspace}
         \usepackage{newunicodechar}
         \newunicodechar{→}{\ensuremath{\rightarrow}}
         \newunicodechar{↔}{\ensuremath{\leftrightarrow}}

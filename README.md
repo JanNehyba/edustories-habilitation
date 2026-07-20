@@ -15,7 +15,7 @@ kolik techniky chcete (podrobný návod: [JAK-OVERIT-CISLA.md](JAK-OVERIT-CISLA.
 analýzy ve složce [`vystupy/reporty/`](vystupy/reporty): `10_korpus.html`
 (kap. 5), `20_kodovani_llm.html` (kap. 6), `30_ai_vs_ucitel.html` (kap. 7).
 Najdete v nich tytéž tabulky a hodnoty jako v knize. Konkrétní číslo dohledáte
-v manifestu ve složce [`vystupy/tabulky/`](vystupy/tabulky) (tabulka „název
+ve zdrojové tabulce čísel ve složce [`vystupy/tabulky/`](vystupy/tabulky) (tabulka „název
 metriky, hodnota“; klíč je v knize v komentáři u každého čísla).
 
 **2. Přepočítat v prohlížeči (Binder, ~15 min první spuštění).** Klikněte na
@@ -30,12 +30,17 @@ z veřejných dat tohoto repozitáře, bez textů kazuistik a bez jmen:
 - **Studie 3** (`30_ai_vs_ucitel.qmd`): z `kap7_hodnoceni_pseudo.csv`
   (hodnocení dvojic řešení; anotátorky pod pseudonymy A1–A6, bez textů).
 
+**Pozn. k pseudonymům:** veřejný dataset Studie 3 přečíslovává svých šest
+anotátorek nezávisle jako A1–A6. V knize (příloha C.1) tytéž anotátorky
+vystupují v celoknižním schématu A1–A12 (Studie 3 = A1, A2, A8, A9, A10, A12).
+Obě sady jsou pseudonymy a nemají mezi sebou vztah 1:1.
+
 **3. Lokálně** (technicky): `./reproduce.sh` ověří prostředí, přepočítá figury
 a spustí kontrolní brány.
 
 ## Co repozitář obsahuje a co ne
 
-Obsahuje: analytické notebooky a skripty, manifesty čísel (jediný zdroj čísel
+Obsahuje: analýzy v R a skripty, zdrojové tabulky čísel (jediný zdroj čísel
 prózy), HTML reporty, figury, veřejnou datovou podmnožinu **bez textů kazuistik
 a bez osobních údajů** (anotátorky pod pseudonymy) a build knihy.
 
