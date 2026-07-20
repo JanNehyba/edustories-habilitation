@@ -1,5 +1,7 @@
 # Edustories: doprovodný repozitář habilitační práce
 
+> ⚠️ **Pracovní návrh, nikoli oficiální podání.** Toto je pracovní návrh habilitační monografie. **Nejde** o oficiálně podanou ani posuzovanou habilitační práci.
+
 Doprovodný repozitář monografie *Náročné chování žáků v době AI: kazuistiky
 z praxe a jazykové modely v pedagogickém výzkumu* (Jan Nehyba, Masarykova
 univerzita, 2026). Slouží k tomu, aby si kdokoli mohl ověřit každé číslo v knize.
