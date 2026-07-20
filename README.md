@@ -1,4 +1,4 @@
-# Edustories: companion repozitář habilitační práce
+# Edustories: doprovodný repozitář habilitační práce
 
 Doprovodný repozitář monografie *Náročné chování žáků v době AI: kazuistiky
 z praxe a jazykové modely v pedagogickém výzkumu* (Jan Nehyba, Masarykova

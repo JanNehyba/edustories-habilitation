@@ -5,7 +5,7 @@ EN ekvivalenty slouží pro abstrakt, companion (notebooky anglicky) a překlady
 citací. Pojem se v knize užívá VŽDY ve tvaru z tohoto glosáře. Plní se
 průběžně; při přidání pojmu zkontrolovat konzistenci napříč kapitolami. -->
 
-| CZ (závazné) | EN (companion/abstrakt) | Vymezení | Zavedeno |
+| CZ (závazné) | EN (repozitář/abstrakt) | Vymezení | Zavedeno |
 |---|---|---|---|
 | kazuistika | case study (case report) | autentická případová studie náročného chování psaná studujícími učitelství a učiteli z vlastní zkušenosti | kap. 1, 3 |
 | náročné chování | challenging behaviour | chování žáků narušující výuku či vztahy, předmět kazuistik (NE „problémové chování" v prozaickém textu; v citacích předloh ponechat originál) | kap. 1, 2 |
@@ -44,7 +44,7 @@ průběžně; při přidání pojmu zkontrolovat konzistenci napříč kapitolam
 | smíšený model (LMM/CLMM/GLMM) | (generalized/cumulative) linear mixed model | modely s náhodnými efekty kazuistiky a anotátorky | kap. 7 |
 | zdrojová tabulka čísel | numbers manifest | tabulka „metrika–hodnota“ z analýzy; jediný zdroj čísel prózy (brána 95); v próze „manifest“ nepoužívat | kap. 4 |
 | kotva (čísla) | (number) anchor | HTML komentář vážící číslo v próze na zdrojovou tabulku čísel | kap. 4 (technicky) |
-| companion (repozitář) | companion repository | veřejný doprovodný repozitář s kódem, reporty a daty | kap. 4, 10 |
+| doprovodný repozitář | companion repository | veřejný repozitář s kódem, reporty a daty | kap. 4, 10 |
 | anotátorka A1–A12 | annotator A1–A12 | pseudonymy; mapování na osoby jen interně | kap. 4, příloha C |
 | trojstupňová anonymizace | three-stage anonymization | pisatel → NER (NameTag/CNEC 2.0) → LLM; poté ruční kontrola | kap. 3, 4, přílohy B, D |
 | VO (výzkumná otázka) | RQ (research question) | v knize VŽDY zkratka „VO", nikdy „RQ" | kap. 1 |
@@ -56,7 +56,7 @@ průběžně; při přidání pojmu zkontrolovat konzistenci napříč kapitolam
   předlohy (kódovací kniha, prompty) často užívají „problémové/nevhodné chování"
   v doslovných citacích se ponechává originál, próza nepřebírá.
 - **„řez" vs. „snapshot":** v CZ próze výhradně „řez"; „snapshot" jen v EN
-  notebocích a companionu.
+  noteboocích a v doprovodném repozitáři.
 - **„Plná" vs. „Použitelná" (K3):** operacionalizace píše „Použitelná",
   data „Plná"; kniha užívá znění z dat s vysvětlením v příloze A.
 - **Vhodnost K2 vs. K3:** týž název, jiné škály (1–5 vs. 1–4); nikdy
