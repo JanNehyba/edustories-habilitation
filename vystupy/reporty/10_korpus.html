@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="EduStories / habilitace-2">
-<meta name="dcterms.date" content="2026-07-17">
+<meta name="dcterms.date" content="2026-07-22">
 
 <title>E1 — Corpus Descriptives (Study 1)</title>
 <style>
@@ -2239,7 +2239,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 17, 2026</p>
+      <p class="date">July 22, 2026</p>
     </div>
   </div>
   
@@ -2446,36 +2446,41 @@ vertical-align: -.125em;
 <span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">substr</span>(p, <span class="dv">1</span>, <span class="dv">1</span>) <span class="ot">&lt;-</span> <span class="fu">toupper</span>(<span class="fu">substr</span>(p, <span class="dv">1</span>, <span class="dv">1</span>))       <span class="co"># „rozhovor&quot; → „Rozhovor&quot;</span></span>
 <span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>  p</span>
 <span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>split_cats <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> x[<span class="sc">!</span><span class="fu">is.na</span>(x)]</span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unlist</span>(<span class="fu">lapply</span>(x, <span class="cf">function</span>(v) {</span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>    p <span class="ot">&lt;-</span> <span class="fu">trimws</span>(<span class="fu">unlist</span>(<span class="fu">strsplit</span>(v, <span class="st">&quot;[;,]&quot;</span>)))</span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>    p <span class="ot">&lt;-</span> <span class="fu">canon_label</span>(p)</span>
-<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>    p[p <span class="sc">!=</span> <span class="st">&quot;&quot;</span> <span class="sc">&amp;</span> <span class="sc">!</span>(p <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;-&quot;</span>, <span class="st">&quot;?&quot;</span>, <span class="st">&quot;(zvolit)&quot;</span>))]</span>
-<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>  }))</span>
-<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>dual <span class="ot">&lt;-</span> <span class="fu">lapply</span>(<span class="fu">c</span>(<span class="at">chovani =</span> <span class="st">&quot;problems_annotated&quot;</span>, <span class="at">reseni =</span> <span class="st">&quot;solutions_annotated&quot;</span>,</span>
-<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>                 <span class="at">dopad =</span> <span class="st">&quot;implications_annotated&quot;</span>), <span class="cf">function</span>(col) <span class="cn">NULL</span>)</span>
-<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (nm <span class="cf">in</span> <span class="fu">names</span>(<span class="fu">c</span>(<span class="at">chovani =</span> <span class="dv">1</span>, <span class="at">reseni =</span> <span class="dv">1</span>, <span class="at">dopad =</span> <span class="dv">1</span>))) {</span>
-<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>  col <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">chovani =</span> <span class="st">&quot;problems_annotated&quot;</span>, <span class="at">reseni =</span> <span class="st">&quot;solutions_annotated&quot;</span>,</span>
-<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>           <span class="at">dopad =</span> <span class="st">&quot;implications_annotated&quot;</span>)[[nm]]</span>
-<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>  cats_per_case <span class="ot">&lt;-</span> <span class="fu">lapply</span>(rez[[col]], <span class="cf">function</span>(v) <span class="fu">unique</span>(<span class="fu">split_cats</span>(v)))</span>
-<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>  assignments <span class="ot">&lt;-</span> <span class="fu">unlist</span>(cats_per_case)</span>
-<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>  n_cases_with <span class="ot">&lt;-</span> <span class="fu">table</span>(assignments)                 <span class="co"># případů s kategorií</span></span>
-<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>  n_assign <span class="ot">&lt;-</span> <span class="fu">length</span>(assignments)</span>
-<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="fu">paste0</span>(<span class="st">&quot;k1_&quot;</span>, nm, <span class="st">&quot;_prirazeni_celkem&quot;</span>), n_assign, REZ_SHA)</span>
-<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="fu">paste0</span>(<span class="st">&quot;k1_&quot;</span>, nm, <span class="st">&quot;_pripadu_s_udajem&quot;</span>), <span class="fu">sum</span>(<span class="fu">lengths</span>(cats_per_case) <span class="sc">&gt;</span> <span class="dv">0</span>), REZ_SHA)</span>
-<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="fu">paste0</span>(<span class="st">&quot;k1_&quot;</span>, nm, <span class="st">&quot;_pomer_prirazeni_na_pripad&quot;</span>),</span>
-<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>      n_assign <span class="sc">/</span> <span class="fu">sum</span>(<span class="fu">lengths</span>(cats_per_case) <span class="sc">&gt;</span> <span class="dv">0</span>), REZ_SHA)</span>
-<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>  top <span class="ot">&lt;-</span> <span class="fu">sort</span>(n_cases_with, <span class="at">decreasing =</span> <span class="cn">TRUE</span>)[<span class="dv">1</span><span class="sc">:</span><span class="fu">min</span>(<span class="dv">8</span>, <span class="fu">length</span>(n_cases_with))]</span>
-<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (k <span class="cf">in</span> <span class="fu">names</span>(top))</span>
-<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a>    <span class="fu">put</span>(<span class="fu">paste0</span>(<span class="st">&quot;k1_&quot;</span>, nm, <span class="st">&quot;_pripadu:&quot;</span>, <span class="fu">substr</span>(k, <span class="dv">1</span>, <span class="dv">38</span>)), top[[k]], REZ_SHA)</span>
-<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a>  <span class="co"># vzácné strategie: explicitní metrika pro „proaktivní&quot; (tvrzení o řídkosti v kap. 5)</span></span>
-<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (nm <span class="sc">==</span> <span class="st">&quot;reseni&quot;</span> <span class="sc">&amp;&amp;</span> <span class="st">&quot;Proaktivní řešení&quot;</span> <span class="sc">%in%</span> <span class="fu">names</span>(n_cases_with))</span>
-<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a>    <span class="fu">put</span>(<span class="st">&quot;k1_reseni_pripadu:Proaktivní řešení&quot;</span>, n_cases_with[[<span class="st">&quot;Proaktivní řešení&quot;</span>]], REZ_SHA)</span>
-<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="fu">data.frame</span>(<span class="at">kategorie =</span> <span class="fu">names</span>(top), <span class="at">pripadu =</span> <span class="fu">as.integer</span>(top)),</span>
-<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a>                     <span class="at">caption =</span> <span class="fu">paste0</span>(nm, <span class="st">&quot; — top kategorie (počet PŘÍPADŮ)&quot;</span>)))</span>
-<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="co"># vyřazené štítky: placeholdery + mimo-kodbook u řešení. „Proaktivní řešení&quot;</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="co"># (kategorie z V1, ve V2 zrušená) a „Humor&quot; zaznamenala v lidském K1 jediná</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="co"># anotátorka kvůli chybně sestavenému výběrovému seznamu (viz příloha A / kap. 5);</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="co"># do lidské korpusové deskriptivy nepatří. V LLM srovnání (kap. 6) zůstávají.</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>EXCLUDE_LABELS <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;-&quot;</span>, <span class="st">&quot;?&quot;</span>, <span class="st">&quot;(zvolit)&quot;</span>, <span class="st">&quot;Proaktivní řešení&quot;</span>, <span class="st">&quot;Humor&quot;</span>)</span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>split_cats <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> x[<span class="sc">!</span><span class="fu">is.na</span>(x)]</span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">unlist</span>(<span class="fu">lapply</span>(x, <span class="cf">function</span>(v) {</span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>    p <span class="ot">&lt;-</span> <span class="fu">trimws</span>(<span class="fu">unlist</span>(<span class="fu">strsplit</span>(v, <span class="st">&quot;[;,]&quot;</span>)))</span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>    p <span class="ot">&lt;-</span> <span class="fu">canon_label</span>(p)</span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>    p[p <span class="sc">!=</span> <span class="st">&quot;&quot;</span> <span class="sc">&amp;</span> <span class="sc">!</span>(p <span class="sc">%in%</span> EXCLUDE_LABELS)]</span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>  }))</span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>dual <span class="ot">&lt;-</span> <span class="fu">lapply</span>(<span class="fu">c</span>(<span class="at">chovani =</span> <span class="st">&quot;problems_annotated&quot;</span>, <span class="at">reseni =</span> <span class="st">&quot;solutions_annotated&quot;</span>,</span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a>                 <span class="at">dopad =</span> <span class="st">&quot;implications_annotated&quot;</span>), <span class="cf">function</span>(col) <span class="cn">NULL</span>)</span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (nm <span class="cf">in</span> <span class="fu">names</span>(<span class="fu">c</span>(<span class="at">chovani =</span> <span class="dv">1</span>, <span class="at">reseni =</span> <span class="dv">1</span>, <span class="at">dopad =</span> <span class="dv">1</span>))) {</span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>  col <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="at">chovani =</span> <span class="st">&quot;problems_annotated&quot;</span>, <span class="at">reseni =</span> <span class="st">&quot;solutions_annotated&quot;</span>,</span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>           <span class="at">dopad =</span> <span class="st">&quot;implications_annotated&quot;</span>)[[nm]]</span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>  cats_per_case <span class="ot">&lt;-</span> <span class="fu">lapply</span>(rez[[col]], <span class="cf">function</span>(v) <span class="fu">unique</span>(<span class="fu">split_cats</span>(v)))</span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>  assignments <span class="ot">&lt;-</span> <span class="fu">unlist</span>(cats_per_case)</span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>  n_cases_with <span class="ot">&lt;-</span> <span class="fu">table</span>(assignments)                 <span class="co"># případů s kategorií</span></span>
+<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>  n_assign <span class="ot">&lt;-</span> <span class="fu">length</span>(assignments)</span>
+<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="fu">paste0</span>(<span class="st">&quot;k1_&quot;</span>, nm, <span class="st">&quot;_prirazeni_celkem&quot;</span>), n_assign, REZ_SHA)</span>
+<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="fu">paste0</span>(<span class="st">&quot;k1_&quot;</span>, nm, <span class="st">&quot;_pripadu_s_udajem&quot;</span>), <span class="fu">sum</span>(<span class="fu">lengths</span>(cats_per_case) <span class="sc">&gt;</span> <span class="dv">0</span>), REZ_SHA)</span>
+<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="fu">paste0</span>(<span class="st">&quot;k1_&quot;</span>, nm, <span class="st">&quot;_pomer_prirazeni_na_pripad&quot;</span>),</span>
+<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a>      n_assign <span class="sc">/</span> <span class="fu">sum</span>(<span class="fu">lengths</span>(cats_per_case) <span class="sc">&gt;</span> <span class="dv">0</span>), REZ_SHA)</span>
+<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a>  top <span class="ot">&lt;-</span> <span class="fu">sort</span>(n_cases_with, <span class="at">decreasing =</span> <span class="cn">TRUE</span>)[<span class="dv">1</span><span class="sc">:</span><span class="fu">min</span>(<span class="dv">8</span>, <span class="fu">length</span>(n_cases_with))]</span>
+<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (k <span class="cf">in</span> <span class="fu">names</span>(top))</span>
+<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a>    <span class="fu">put</span>(<span class="fu">paste0</span>(<span class="st">&quot;k1_&quot;</span>, nm, <span class="st">&quot;_pripadu:&quot;</span>, <span class="fu">substr</span>(k, <span class="dv">1</span>, <span class="dv">38</span>)), top[[k]], REZ_SHA)</span>
+<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a>  <span class="co"># (dříve zde byla explicitní metrika „Proaktivní řešení&quot; pro tvrzení o řídkosti</span></span>
+<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a>  <span class="co">#  v kap. 5; kategorie je artefaktem jednoho výběrového seznamu, proto vyřazena</span></span>
+<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a>  <span class="co">#  z lidské deskriptivy — viz EXCLUDE_LABELS výše a příloha A.)</span></span>
+<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">print</span>(knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="fu">data.frame</span>(<span class="at">kategorie =</span> <span class="fu">names</span>(top), <span class="at">pripadu =</span> <span class="fu">as.integer</span>(top)),</span>
+<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a>                     <span class="at">caption =</span> <span class="fu">paste0</span>(nm, <span class="st">&quot; — top kategorie (počet PŘÍPADŮ)&quot;</span>)))</span>
+<span id="cb7-44"><a href="#cb7-44" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 
@@ -2694,7 +2699,7 @@ Table: dopad — top kategorie (počet PŘÍPADŮ)
 <span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(out, <span class="fu">file.path</span>(H2, <span class="st">&quot;vystupy/tabulky/kap5_korpus_cisla.csv&quot;</span>), <span class="at">row.names =</span> <span class="cn">FALSE</span>)</span>
 <span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&quot;Manifest:&quot;</span>, <span class="fu">nrow</span>(out), <span class="st">&quot;metrik → vystupy/tabulky/kap5_korpus_cisla.csv</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Manifest: 234 metrik → vystupy/tabulky/kap5_korpus_cisla.csv</code></pre>
+<pre><code>Manifest: 223 metrik → vystupy/tabulky/kap5_korpus_cisla.csv</code></pre>
 </div>
 </div>
 </section>

@@ -145,12 +145,17 @@ canon_label <- function(p) {
   substr(p, 1, 1) <- toupper(substr(p, 1, 1))       # „rozhovor" → „Rozhovor"
   p
 }
+# vyřazené štítky: placeholdery + mimo-kodbook u řešení. „Proaktivní řešení"
+# (kategorie z V1, ve V2 zrušená) a „Humor" zaznamenala v lidském K1 jediná
+# anotátorka kvůli chybně sestavenému výběrovému seznamu (viz příloha A / kap. 5);
+# do lidské korpusové deskriptivy nepatří. V LLM srovnání (kap. 6) zůstávají.
+EXCLUDE_LABELS <- c("-", "?", "(zvolit)", "Proaktivní řešení", "Humor")
 split_cats <- function(x) {
   x <- x[!is.na(x)]
   unlist(lapply(x, function(v) {
     p <- trimws(unlist(strsplit(v, "[;,]")))
     p <- canon_label(p)
-    p[p != "" & !(p %in% c("-", "?", "(zvolit)"))]
+    p[p != "" & !(p %in% EXCLUDE_LABELS)]
   }))
 }
 dual <- lapply(c(chovani = "problems_annotated", reseni = "solutions_annotated",
@@ -169,9 +174,9 @@ for (nm in names(c(chovani = 1, reseni = 1, dopad = 1))) {
   top <- sort(n_cases_with, decreasing = TRUE)[1:min(8, length(n_cases_with))]
   for (k in names(top))
     put(paste0("k1_", nm, "_pripadu:", substr(k, 1, 38)), top[[k]], REZ_SHA)
-  # vzácné strategie: explicitní metrika pro „proaktivní" (tvrzení o řídkosti v kap. 5)
-  if (nm == "reseni" && "Proaktivní řešení" %in% names(n_cases_with))
-    put("k1_reseni_pripadu:Proaktivní řešení", n_cases_with[["Proaktivní řešení"]], REZ_SHA)
+  # (dříve zde byla explicitní metrika „Proaktivní řešení" pro tvrzení o řídkosti
+  #  v kap. 5; kategorie je artefaktem jednoho výběrového seznamu, proto vyřazena
+  #  z lidské deskriptivy — viz EXCLUDE_LABELS výše a příloha A.)
   print(knitr::kable(data.frame(kategorie = names(top), pripadu = as.integer(top)),
                      caption = paste0(nm, " — top kategorie (počet PŘÍPADŮ)")))
 }
