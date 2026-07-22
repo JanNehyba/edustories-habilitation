@@ -7,7 +7,6 @@
 "Diagnóza","Podpora",98,203,0.482758620689655
 "Diagnóza","Práce s kolektivem",36,203,0.177339901477833
 "Diagnóza","Přemístění žáka",48,203,0.236453201970443
-"Diagnóza","Proaktivní řešení",8,203,0.0394088669950739
 "Diagnóza","Rozhovor",116,203,0.571428571428571
 "Diagnóza","Spolupráce s odborníky",87,203,0.428571428571429
 "Diagnóza","Upozornění",21,203,0.103448275862069
@@ -19,7 +18,6 @@
 "Emoční výbuchy","Podpora",59,143,0.412587412587413
 "Emoční výbuchy","Práce s kolektivem",15,143,0.104895104895105
 "Emoční výbuchy","Přemístění žáka",39,143,0.272727272727273
-"Emoční výbuchy","Proaktivní řešení",2,143,0.013986013986014
 "Emoční výbuchy","Rozhovor",100,143,0.699300699300699
 "Emoční výbuchy","Spolupráce s odborníky",57,143,0.398601398601399
 "Emoční výbuchy","Upozornění",20,143,0.13986013986014
@@ -31,7 +29,6 @@
 "Fyzická agrese","Podpora",61,299,0.204013377926421
 "Fyzická agrese","Práce s kolektivem",47,299,0.157190635451505
 "Fyzická agrese","Přemístění žáka",68,299,0.22742474916388
-"Fyzická agrese","Proaktivní řešení",3,299,0.0100334448160535
 "Fyzická agrese","Rozhovor",226,299,0.755852842809365
 "Fyzická agrese","Spolupráce s odborníky",129,299,0.431438127090301
 "Fyzická agrese","Upozornění",41,299,0.137123745819398
@@ -54,7 +51,6 @@
 "Neplnění školních povinností/nepřipravenost na výuku","Podpora",79,201,0.393034825870647
 "Neplnění školních povinností/nepřipravenost na výuku","Práce s kolektivem",9,201,0.0447761194029851
 "Neplnění školních povinností/nepřipravenost na výuku","Přemístění žáka",30,201,0.149253731343284
-"Neplnění školních povinností/nepřipravenost na výuku","Proaktivní řešení",1,201,0.00497512437810945
 "Neplnění školních povinností/nepřipravenost na výuku","Rozhovor",132,201,0.656716417910448
 "Neplnění školních povinností/nepřipravenost na výuku","Spolupráce s odborníky",80,201,0.398009950248756
 "Neplnění školních povinností/nepřipravenost na výuku","Upozornění",29,201,0.144278606965174
@@ -66,7 +62,6 @@
 "Nevěnování se výuce/Nepozornost při výuce","Podpora",110,293,0.37542662116041
 "Nevěnování se výuce/Nepozornost při výuce","Práce s kolektivem",13,293,0.0443686006825939
 "Nevěnování se výuce/Nepozornost při výuce","Přemístění žáka",57,293,0.194539249146758
-"Nevěnování se výuce/Nepozornost při výuce","Proaktivní řešení",5,293,0.0170648464163823
 "Nevěnování se výuce/Nepozornost při výuce","Rozhovor",182,293,0.621160409556314
 "Nevěnování se výuce/Nepozornost při výuce","Spolupráce s odborníky",81,293,0.276450511945392
 "Nevěnování se výuce/Nepozornost při výuce","Upozornění",68,293,0.232081911262799
@@ -78,7 +73,6 @@
 "Neverbální narušování výuky","Podpora",62,174,0.35632183908046
 "Neverbální narušování výuky","Práce s kolektivem",14,174,0.0804597701149425
 "Neverbální narušování výuky","Přemístění žáka",38,174,0.218390804597701
-"Neverbální narušování výuky","Proaktivní řešení",5,174,0.028735632183908
 "Neverbální narušování výuky","Rozhovor",99,174,0.568965517241379
 "Neverbální narušování výuky","Spolupráce s odborníky",50,174,0.28735632183908
 "Neverbální narušování výuky","Upozornění",52,174,0.298850574712644
@@ -90,7 +84,6 @@
 "Nezvládání výuky","Podpora",37,58,0.637931034482759
 "Nezvládání výuky","Práce s kolektivem",3,58,0.0517241379310345
 "Nezvládání výuky","Přemístění žáka",9,58,0.155172413793103
-"Nezvládání výuky","Proaktivní řešení",1,58,0.0172413793103448
 "Nezvládání výuky","Rozhovor",37,58,0.637931034482759
 "Nezvládání výuky","Spolupráce s odborníky",23,58,0.396551724137931
 "Nezvládání výuky","Upozornění",5,58,0.0862068965517241
@@ -112,7 +105,6 @@
 "Problémy s docházkou","Podpora",52,142,0.366197183098592
 "Problémy s docházkou","Práce s kolektivem",10,142,0.0704225352112676
 "Problémy s docházkou","Přemístění žáka",21,142,0.147887323943662
-"Problémy s docházkou","Proaktivní řešení",1,142,0.00704225352112676
 "Problémy s docházkou","Rozhovor",106,142,0.746478873239437
 "Problémy s docházkou","Spolupráce s odborníky",78,142,0.549295774647887
 "Problémy s docházkou","Upozornění",10,142,0.0704225352112676
@@ -135,7 +127,6 @@
 "Verbální agrese","Podpora",68,330,0.206060606060606
 "Verbální agrese","Práce s kolektivem",55,330,0.166666666666667
 "Verbální agrese","Přemístění žáka",71,330,0.215151515151515
-"Verbální agrese","Proaktivní řešení",1,330,0.00303030303030303
 "Verbální agrese","Rozhovor",241,330,0.73030303030303
 "Verbální agrese","Spolupráce s odborníky",127,330,0.384848484848485
 "Verbální agrese","Upozornění",77,330,0.233333333333333
@@ -147,7 +138,6 @@
 "Verbální narušování výuky","Podpora",102,328,0.310975609756098
 "Verbální narušování výuky","Práce s kolektivem",28,328,0.0853658536585366
 "Verbální narušování výuky","Přemístění žáka",72,328,0.219512195121951
-"Verbální narušování výuky","Proaktivní řešení",8,328,0.024390243902439
 "Verbální narušování výuky","Rozhovor",193,328,0.588414634146341
 "Verbální narušování výuky","Spolupráce s odborníky",92,328,0.280487804878049
 "Verbální narušování výuky","Upozornění",101,328,0.307926829268293
