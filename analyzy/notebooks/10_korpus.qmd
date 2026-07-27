@@ -149,7 +149,17 @@ canon_label <- function(p) {
 # (kategorie z V1, ve V2 zrušená) a „Humor" zaznamenala v lidském K1 jediná
 # anotátorka kvůli chybně sestavenému výběrovému seznamu (viz příloha A / kap. 5);
 # do lidské korpusové deskriptivy nepatří. V LLM srovnání (kap. 6) zůstávají.
-EXCLUDE_LABELS <- c("-", "?", "(zvolit)", "Proaktivní řešení", "Humor")
+#
+# „Diagnóza" je JINÝ případ (rozhodnutí 27. 7. 2026): NEJDE o artefakt výběrového
+# seznamu — kategorie č. 14 stromu V2 (kód DIA) byla v nabídce u všech pěti
+# anotátorek. Vyřazena je z věcného důvodu: její definice („Žák/žákyně má
+# diagnostikovanou některou z diagnóz SVP.") popisuje STAV ŽÁKA, ne chování,
+# takže do dimenze problémového chování nepatří. Data to potvrzují: 94,4 %
+# výskytů je co-kód k jinému chování, užití mezi anotátorkami kolísá 3,7-21,7 %,
+# shoda na kategorii je 40,9 % a její vyřazení zvedne α dimenze z 0,474 na 0,509.
+# Diagnóza se v knize reportuje zvlášť jako kontextová proměnná z pole
+# diagnoses_unified (metriky `dia_*` níže). Doklad: příloha A + kap. 5.
+EXCLUDE_LABELS <- c("-", "?", "(zvolit)", "Proaktivní řešení", "Humor", "Diagnóza")
 split_cats <- function(x) {
   x <- x[!is.na(x)]
   unlist(lapply(x, function(v) {
@@ -180,6 +190,21 @@ for (nm in names(c(chovani = 1, reseni = 1, dopad = 1))) {
   print(knitr::kable(data.frame(kategorie = names(top), pripadu = as.integer(top)),
                      caption = paste0(nm, " — top kategorie (počet PŘÍPADŮ)")))
 }
+```
+
+## Diagnosis as a CONTEXT variable (not a behaviour category)
+
+Since the `Diagnóza` label was removed from the behaviour dimension (see
+`EXCLUDE_LABELS`), the substantive question „do cases involving a pupil with a
+recorded diagnosis differ?" is answered from the curated corpus field
+`diagnoses_unified` (column `ma_diagnozu` in `K1_rez`), which is a property of
+the case, not an annotator judgement about behaviour.
+
+```{r diagnoza-kontext}
+dia <- rez$ma_diagnozu == 1
+put("dia_pripadu", sum(dia), REZ_SHA)
+put("dia_podil", mean(dia), REZ_SHA)
+cat("K1_rez s vyplněnou diagnózou:", sum(dia), sprintf("(%.1f %%)\n", 100 * mean(dia)))
 ```
 
 ## Distributions for book figures (word lengths, age)
@@ -237,6 +262,28 @@ write.csv(kov, file.path(TABDIR, "kap5_kovyskyt.csv"), row.names = FALSE)
 for (i in seq_len(nrow(kov)))
   put(paste0("kov_podil:", substr(kov$chovani[i], 1, 24), "|",
              substr(kov$reseni[i], 1, 24)), kov$podil[i], REZ_SHA)
+
+# (b2) totéž pro KONTEXTOVOU proměnnou diagnózy: P(řešení | žák má diagnózu).
+# Nahrazuje dřívější řádek `kov_podil:Diagnóza|*`, který stál na anotační
+# kategorii vyřazené z dimenze chování; opora je nyní v poli diagnoses_unified.
+# POZOR na jmenovatele: srovnávací podíl `*_ref` počítáme na CELÉM řezu
+# (n = nrow(rez)), tedy na téže definici jako podíl u kazuistik s diagnózou
+# (n = sum(dia)). Jinak by se srovnávaly dvě různé základny.
+dia_res <- table(unlist(RE[dia]))
+ref_res <- table(unlist(RE))
+for (r in names(dia_res)) {
+  put(paste0("dia_podil_reseni:", substr(r, 1, 24)),
+      as.numeric(dia_res[[r]]) / sum(dia), REZ_SHA)
+  put(paste0("dia_podil_reseni_ref:", substr(r, 1, 24)),
+      as.numeric(ref_res[[r]]) / nrow(rez), REZ_SHA)
+}
+write.csv(data.frame(reseni = names(dia_res),
+                     n_s_diagnozou = as.integer(dia_res), n_diagnoza = sum(dia),
+                     podil_s_diagnozou = as.numeric(dia_res) / sum(dia),
+                     n_cely_rez = as.integer(ref_res[names(dia_res)]),
+                     n_rez = nrow(rez),
+                     podil_cely_rez = as.numeric(ref_res[names(dia_res)]) / nrow(rez)),
+          file.path(TABDIR, "kap5_diagnoza_reseni.csv"), row.names = FALSE)
 
 # (c) dopad podle typu řešení: podíl dlouhodobého úspěchu (jen n >= 30)
 dop <- do.call(rbind, lapply(names(table(unlist(RE))), function(r) {

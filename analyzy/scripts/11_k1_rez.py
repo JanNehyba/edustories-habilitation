@@ -9,6 +9,12 @@ neprázdné). Očekávaný počet: 1 359.
 Historické N=1 319 z rukopisů je NEREKONSTRUOVATELNÉ (DATA_README §5) —
 kniha používá výhradně tento řez.
 
+Sloupec `ma_diagnozu` (0/1, doplněn 27. 7. 2026): má kazuistika vyplněné
+kurátorované pole `diagnoses_unified`? Slouží jako KONTEXTOVÁ proměnná poté,
+co byla z dimenze problémového chování vyřazena kategorie „Diagnóza" (popisuje
+stav žáka, ne chování — viz 10_korpus.qmd, EXCLUDE_LABELS). Ukládá se jen
+příznak, nikoli text diagnózy (anonymizace + veřejný companion repozitář).
+
 Výstup: data/processed/k1_rez_ids.csv (case_uid, mat_id, fp, problems_annotated…)
 Spuštění: cd /Users/jannehyba/habilitace && ./.venv/bin/python habilitace-2/analyzy/scripts/11_k1_rez.py
 """
@@ -63,11 +69,16 @@ n = len(rez)
 print(f"K1_rez: {n} kazuistik (očekáváno 1 359) — {'OK' if n == 1359 else 'POZOR, NESEDÍ!'}")
 print(f"  s case_uid z crosswalku: {rez['case_uid'].notna().sum()}")
 
-cols = ["case_uid", "id", "fp", "problems_annotated", "solutions_annotated",
-        "implications_annotated"]
+# kontextová proměnná: má žák zaznamenanou diagnózu? (kurátorované pole webu,
+# ne volný text `diagnosis`, který obsahuje „ne"/„žádná"/placeholdery)
+du = rez["diagnoses_unified"].fillna("").astype(str).str.strip()
+rez["ma_diagnozu"] = ((du != "") & (du.str.lower() != "nan")).astype(int)
+print(f"  s vyplněnou diagnózou (diagnoses_unified): {int(rez['ma_diagnozu'].sum())}"
+      f" ({100 * rez['ma_diagnozu'].mean():.1f} %)")
+
 rez = rez.rename(columns={"id": "mat_id"})
 cols = ["case_uid", "mat_id", "fp", "problems_annotated", "solutions_annotated",
-        "implications_annotated"]
+        "implications_annotated", "ma_diagnozu"]
 rez[cols].to_csv(OUT, index=False)
 
 meta = {

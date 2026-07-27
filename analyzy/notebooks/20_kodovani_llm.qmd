@@ -228,8 +228,21 @@ cluster bootstrap over cases; multi-label Jaccard over all assigned categories.
 
 ```{r k1}
 LONG_SHA <- sha256(LONG)
-k1 <- read.csv(LONG, encoding = "UTF-8") |> filter(!is.na(case_uid), case_uid != "")
-prim <- k1 |> filter(poradi == 1) |>
+k1 <- read.csv(LONG, encoding = "UTF-8") |>
+  filter(!is.na(case_uid), case_uid != "") |>
+  # „Diagnóza" byla položkou stromu V2, ale nepopisuje chování; shodu
+  # dimenze proto počítáme nad stejnými 13 behaviorálními kategoriemi jako
+  # deskriptivu Studie 1. Po vyřazení případně povýšíme další přiřazený
+  # behaviorální kód na primární, místo abychom celou anotaci zahodili.
+  filter(!(dimenze == "chovani" & hodnota == "Diagnóza"))
+K1_DIMS <- unique(k1$dimenze)  # zachovat původní pořadí i proud RNG bootstrapu
+prim <- k1 |>
+  group_by(case_uid, anotator, dimenze) |>
+  # `filter()` zachová původní pořadí řádků, a tím i přesně stejný
+  # bootstrapový proud pro nezměněné dimenze řešení a dopadu.
+  filter(poradi == min(poradi)) |>
+  ungroup() |>
+  distinct(case_uid, anotator, dimenze, .keep_all = TRUE) |>
   select(case_uid, anotator, dimenze, hodnota)
 alpha_nom <- function(d) {
   w <- d |> distinct(anotator, case_uid, .keep_all = TRUE) |>
@@ -243,10 +256,13 @@ alpha_nom <- function(d) {
 B <- 1000
 set.seed(SEED)   # přeseedovat: bootstrap nesmí záviset na spotřebě RNG dřívějšími
                  # (podmíněnými) bloky — jinak se CI liší mezi během autora a Binderem
-k1_rows <- lapply(unique(prim$dimenze), function(dm) {
+k1_rows <- lapply(K1_DIMS, function(dm) {
   d <- prim |> filter(dimenze == dm)
   base <- alpha_nom(d)
-  cases <- unique(d$case_uid)
+  # Stabilní pořadí jednotek + vlastní seed pro každou dimenzi: změna jedné
+  # dimenze nesmí posunout bootstrapové intervaly ostatních dimenzí.
+  cases <- sort(unique(d$case_uid))
+  set.seed(SEED + match(dm, K1_DIMS))
   boots <- vapply(seq_len(B), function(b) {
     samp <- sample(cases, replace = TRUE)
     db <- bind_rows(lapply(seq_along(samp), function(i) {
@@ -265,7 +281,7 @@ k1_rows <- lapply(unique(prim$dimenze), function(dm) {
 knitr::kable(bind_rows(k1_rows), digits = 3, row.names = FALSE)
 
 # multi-label Jaccard (všechny přiřazené kategorie)
-jac_rows <- lapply(unique(k1$dimenze), function(dm) {
+jac_rows <- lapply(K1_DIMS, function(dm) {
   d <- k1 |> filter(dimenze == dm) |>
     group_by(case_uid, anotator) |>
     summarise(s = list(unique(hodnota)), .groups = "drop")
