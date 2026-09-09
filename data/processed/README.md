@@ -17,7 +17,9 @@ pseudonymy). Slouží k ověření čísel v knize, ne jako náhrada korpusu.
   K1 pod pseudonymy, hodnocení K3; žádný text). Studie 4.
 - `k3_predikce_raw.csv` — predikce dopadu jazykovým modelem (id, model, varianta,
   předpověď, hodnocení obou anotátorek; žádný text). Oddíl 8.6.
-- `anotace_long_k*.csv`, `k1_rez_ids.csv`, `*_ids.csv`, `truncated_uids.csv` —
+- `k1_rez_ids.csv` — řez K1 (1 359 kazuistik): identifikátory, kategorie
+  chování, řešení a dopadu a příznak diagnózy; bez textu i bez otisku textu.
+- `anotace_long_k*.csv`, `*_ids.csv`, `truncated_uids.csv` —
   odvozené anotační a pomocné tabulky.
 
 ## Co tu NENÍ a proč
