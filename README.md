@@ -15,7 +15,8 @@ kolik techniky chcete (podrobný návod: [JAK-OVERIT-CISLA.md](JAK-OVERIT-CISLA.
 
 **1. Bez instalace (2 minuty).** Otevřete v prohlížeči HTML report příslušné
 analýzy ve složce [`vystupy/reporty/`](vystupy/reporty): `10_korpus.html`
-(kap. 5), `20_kodovani_llm.html` (kap. 6), `30_ai_vs_ucitel.html` (kap. 7).
+(kap. 5), `20_kodovani_llm.html` (kap. 6), `30_ai_vs_ucitel.html` (kap. 7),
+`40_kvalita.html` (kap. 8).
 Najdete v nich tytéž tabulky a hodnoty jako v knize. Konkrétní číslo dohledáte
 ve zdrojové tabulce čísel ve složce [`vystupy/tabulky/`](vystupy/tabulky) (tabulka „název
 metriky, hodnota“; klíč je v knize v komentáři u každého čísla).
@@ -23,14 +24,19 @@ metriky, hodnota“; klíč je v knize v komentáři u každého čísla).
 **2. Přepočítat v prohlížeči (Binder, ~15 min první spuštění).** Klikněte na
 odznak „launch binder“ nahoře. Otevře se RStudio v prohlížeči (nic se
 neinstaluje k vám). Otevřete notebook v `analyzy/notebooks/` a dejte
-**Render**. Všechny tři empirické studie jsou reprodukovatelné rovnou
+**Render**. Všechny čtyři empirické studie jsou reprodukovatelné rovnou
 z veřejných dat tohoto repozitáře, bez textů kazuistik a bez jmen:
 - **Studie 1** (`10_korpus.qmd`): z odvozené tabulky `kap5_perkazuistika.csv`
   (počty slov, věk, publikační status; bez textů kazuistik);
 - **Studie 2** (`20_kodovani_llm.qmd`): ze `srovnani_k1_llm.csv` (kategorie
   člověka a modelu, bez textů a jmen);
 - **Studie 3** (`30_ai_vs_ucitel.qmd`): z `kap7_hodnoceni_pseudo.csv`
-  (hodnocení dvojic řešení; anotátorky pod pseudonymy A1–A6, bez textů).
+  (hodnocení dvojic řešení; anotátorky pod pseudonymy A1–A6, bez textů);
+- **Studie 4** (`40_kvalita.qmd`): z `k3_wide.csv` (kvalita, dopad a vhodnost
+  od obou anotátorek řezu `K3_freeze_2026-09-08`), `k3_segmenty.csv` (srovnání
+  s červencovou verzí týchž tabulek) a `k1_k3_pary.csv` (kazuistiky kódované
+  první i třetí etapou); predikci dopadu jazykovým modelem počítá skript
+  `26_k3_predikce_llm.py` a její výstupy jsou v `k3_predikce_raw.csv`.
 
 **Pozn. k pseudonymům:** veřejný dataset Studie 3 přečíslovává svých šest
 anotátorek nezávisle jako A1–A6. V knize (příloha C.1) tytéž anotátorky

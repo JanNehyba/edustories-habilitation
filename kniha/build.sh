@@ -10,8 +10,10 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 
-PY="../../.venv/bin/python"
+PY="../../.venv/bin/python"                       # macOS/Linux
+[ -x "$PY" ] || PY="../../.venv/Scripts/python.exe"  # Windows (Git Bash)
 [ -x "$PY" ] || PY="python3"
+command -v "$PY" >/dev/null 2>&1 || PY="python"
 
 format="${1:-pdf}"
 case "$format" in pdf|docx|all) ;; *)
@@ -77,10 +79,11 @@ for t in "${targets[@]}"; do
   quarto render --to "$t" --no-clean
 done
 
-# ── OBÁLKA: cover/cover_E.pdf (koncept „MUNI plocha", schváleno Janem 17. 7. 2026)
-#    se předřadí jako 1. strana; nahrazuje dřívějšího kandidáta cover_final-cs (B) ──
-if printf '%s\n' "${targets[@]}" | grep -qx pdf && [ -f cover/cover_E.pdf ]; then
-  "$PY" - cover/cover_E.pdf ../vystupy/export/habilitace2-CZ.pdf <<'PYEOF'
+# ── OBÁLKA: cover/cover_B.pdf (koncept „Dvojice řešení": pole činek
+#    učitel ↔ model pro tytéž případy; zvolil Jan 9. 9. 2026, nahrazuje
+#    koncept E „MUNI plocha", který platil od 17. 7. 2026) ──
+if printf '%s\n' "${targets[@]}" | grep -qx pdf && [ -f cover/cover_B.pdf ]; then
+  "$PY" - cover/cover_B.pdf ../vystupy/export/habilitace2-CZ.pdf <<'PYEOF'
 import sys
 from pypdf import PdfWriter, PdfReader
 cover, book = sys.argv[1], sys.argv[2]

@@ -44,8 +44,14 @@ STOPWORDS = {
     "anotovani", "reseni", "vysledek", "dopad", "vhodnost", "kvalita",
 }
 PARTICLES = {"van", "von", "de", "der", "den", "ten", "te", "la", "le", "du"}
+# první segment korporátního jména (před čárkou) → kanonický klíč v CORPORATE
+ALIASES = {
+    "ministerstvo skolstvi": "msmt",
+    "ministerstvo skolstvi, mladeze a telovychovy": "msmt",
+}
+
 CORPORATE = {
-    "r core team", "czech republic", "msmt", "masarykova univerzita",
+    "r core team", "czech republic", "msmt", "ministerstvo skolstvi", "masarykova univerzita",
     "ceska republika", "openai", "anthropic",
     "narodni pedagogicky institut cr", "ceska skolni inspekce",
 }
@@ -58,6 +64,11 @@ def normalize(surname: str) -> str:
 
 
 def lead_surname(author_segment: str) -> str | None:
+    key = _lead_surname(author_segment)
+    return ALIASES.get(key, key) if key else key
+
+
+def _lead_surname(author_segment: str) -> str | None:
     seg = author_segment.strip()
     seg = re.sub(
         r"^(?:e\.g\.|i\.e\.|see also|see|cf\.|viz|srov\.|napr\.|např\.|dle|podle|after|following|in|from|z|ze)[,\s]+",
@@ -148,6 +159,7 @@ def extract_refs(refs_text: str) -> dict[tuple[str, str], str]:
         key = lead_surname(m.group(1))
         if key is None:
             key = normalize(m.group(1).strip().rstrip("."))
+        key = ALIASES.get(key, key)
         entries[(key, y.group(1))] = para.splitlines()[0][:90]
     return entries
 

@@ -34,8 +34,9 @@ metodologie) se opírá právě o tento kontrast.
   `render_figures.sh` obnoví vše. Výstup: `vystupy/obrazky/kapN_nazev.pdf`
   (vektor pro sazbu) + `.png` (300 dpi, náhledy/companion).
 - Podklad VŽDY manifest/analytický výstup — žádná ručně vepsaná hodnota.
-- Popisek v knize: *Obrázek N.M.* + věta; zdrojová věta „Zdroj: manifest …
-  (skript fig_….R)" jako u tabulek.
+- Popisek v knize: *Obrázek N.M.* + věta; pod figurou i tabulkou poznámka dle APA 7
+  „*Poznámka.* Podklady v doprovodném repozitáři: [zdrojová čísla], [analýza v R],
+  [kód obrázku]" (rozhodnutí 19.–20. 7. 2026); label „Zdroj:" se nepoužívá.
 - Jedna myšlenka na figuru; legenda jen, když barva nese význam nad rámec
   pravidla učitel/AI.
 

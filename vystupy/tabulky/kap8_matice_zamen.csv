@@ -1,0 +1,30 @@
+"dimenze","A12","A2","n"
+"kvalita","Plná","Plná",647
+"kvalita","Plochá","Plná",17
+"kvalita","Plná","Plochá",5
+"kvalita","Plochá","Plochá",24
+"dopad","Dlouhodobý úspěch","Dlouhodobý úspěch",283
+"dopad","Krátkodobý úspěch","Dlouhodobý úspěch",63
+"dopad","Neúspěch","Dlouhodobý úspěch",2
+"dopad","Dlouhodobý úspěch","Krátkodobý úspěch",30
+"dopad","Krátkodobý úspěch","Krátkodobý úspěch",161
+"dopad","Neúspěch","Krátkodobý úspěch",17
+"dopad","Dlouhodobý úspěch","Neúspěch",1
+"dopad","Krátkodobý úspěch","Neúspěch",19
+"dopad","Neúspěch","Neúspěch",87
+"vhodnost","1","1",1
+"vhodnost","2","1",1
+"vhodnost","3","1",0
+"vhodnost","4","1",1
+"vhodnost","1","2",5
+"vhodnost","2","2",35
+"vhodnost","3","2",27
+"vhodnost","4","2",6
+"vhodnost","1","3",2
+"vhodnost","2","3",52
+"vhodnost","3","3",134
+"vhodnost","4","3",72
+"vhodnost","1","4",0
+"vhodnost","2","4",5
+"vhodnost","3","4",107
+"vhodnost","4","4",216

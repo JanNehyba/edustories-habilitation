@@ -1,0 +1,927 @@
+case_uid,k1_anotator,k1_chovani_primarni,k1_chovani_vse,k1_reseni_primarni,k1_reseni_vse,k1_dopad4,k1_dopad3,k1_flat,k3_kvalita_A12,k3_dopad_A12,k3_vhodnost_A12,k3_kvalita_A2,k3_dopad_A2,k3_vhodnost_A2,k3_adjudikovano
+exp1,A4,Šikana,Šikana,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp10,A2,Emoční výbuchy,Emoční výbuchy;Fyzická agrese,Rozhovor,Rozhovor;Důsledky,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plochá,,,,,,0
+exp100,A3,Lhaní a podvody,Lhaní a podvody,Rozhovor,Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp1002,A1,Šikana,Šikana;Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Nerespektující komunikace;Dohoda;Důsledky;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1004,A2,Verbální narušování výuky,Verbální narušování výuky,(Kázeňské) Tresty,(Kázeňské) Tresty,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp1005,A2,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku,Podpora,Podpora;Práce s kolektivem,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp1006,A3,Verbální agrese,Verbální agrese;Verbální narušování výuky,Práce s kolektivem,Práce s kolektivem;Upozornění,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1009,A7,Fyzická agrese,Fyzická agrese;Verbální agrese,Práce s kolektivem,Práce s kolektivem;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp101,A7,Neverbální narušování výuky,Neverbální narušování výuky;Verbální narušování výuky;Emoční výbuchy,Spolupráce s odborníky,Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1012,A2,Verbální agrese,Verbální agrese,Rozhovor,Rozhovor,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp1015,A3,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Upozornění,Upozornění;Rozhovor;Spolupráce s odborníky,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp1016,A4,Verbální agrese,Verbální agrese,Upozornění,Upozornění;Rozhovor;Důsledky,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp1018,A1,Fyzická agrese,Fyzická agrese;Verbální agrese,Fyzické zakročení,Fyzické zakročení;Rozhovor;Spolupráce s odborníky,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp1019,A3,Problémy s docházkou,Problémy s docházkou,Rozhovor,Rozhovor;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1020,A7,Verbální narušování výuky,Verbální narušování výuky;Emoční výbuchy,Přemístění žáka,Přemístění žáka;Rozhovor;Práce s kolektivem;Upozornění;Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,2.0,,,,0
+exp1021,A1,Fyzická agrese,Fyzická agrese;Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1022,A1,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Spolupráce s odborníky;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp1023,A1,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Nevěnování se výuce/Nepozornost při výuce,Upozornění,Upozornění;Rozhovor;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp1024,A3,Šikana,Šikana,Práce s kolektivem,Práce s kolektivem;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plochá,,,,,,0
+exp1025,A4,Verbální narušování výuky,Verbální narušování výuky;Porušování třídních/školních pravidel,Spolupráce s odborníky,Spolupráce s odborníky;Důsledky;Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,4.0,,,,0
+exp1026,A4,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Spolupráce s odborníky;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1027,A2,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku,Rozhovor,Rozhovor;Důsledky,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp1028,A4,Fyzická agrese,Fyzická agrese,Nerespektující komunikace,Nerespektující komunikace;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp1029,A4,Verbální narušování výuky,Verbální narušování výuky,Důsledky,Důsledky;Upozornění,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp1031,A4,Diagnóza,Diagnóza,Přemístění žáka,Přemístění žáka,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1033,A1,Problémy s docházkou,Problémy s docházkou;Lhaní a podvody,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1034,A1,Verbální narušování výuky,Verbální narušování výuky;Neverbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce;Neplnění školních povinností/nepřipravenost na výuku;Porušování třídních/školních pravidel,Upozornění,Upozornění;Nerespektující komunikace;Přemístění žáka;Rozhovor,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp1035,A1,Verbální agrese,Verbální agrese;Verbální narušování výuky;Neverbální narušování výuky;Emoční výbuchy,Upozornění,Upozornění;Rozhovor;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp1036,A3,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Šikana,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp1037,A2,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Lhaní a podvody,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp1039,A3,Verbální agrese,Verbální agrese,Upozornění,Upozornění;Rozhovor;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp104,A4,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku,Nerespektující komunikace,Nerespektující komunikace,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp1040,A7,Fyzická agrese,Fyzická agrese,Rozhovor,Rozhovor;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1042,A2,Šikana,Šikana,Rozhovor,Rozhovor,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp1043,A4,Verbální agrese,Verbální agrese,Rozhovor,Rozhovor;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1044,A3,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Diagnóza,Podpora,Podpora;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1045,A3,Verbální agrese,Verbální agrese;Verbální narušování výuky,Rozhovor,Rozhovor;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1046,A4,Verbální agrese,Verbální agrese,Rozhovor,Rozhovor;Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1047,A7,Šikana,Šikana;Lhaní a podvody,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plochá,Neúspěch,3.0,,,,0
+exp1048,A4,Emoční výbuchy,Emoční výbuchy,Rozhovor,Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1053,A4,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Rozhovor;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,4.0,,,,0
+exp1054,A3,Emoční výbuchy,Emoční výbuchy;Fyzická agrese;Diagnóza;Sebedestruktivní chování,Přemístění žáka,Přemístění žáka;Proaktivní řešení;Podpora;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1056,A4,Šikana,Šikana,Rozhovor,Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1058,A3,Verbální narušování výuky,Verbální narušování výuky;Diagnóza,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor;Proaktivní řešení;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1059,A2,Verbální narušování výuky,Verbální narušování výuky,Přemístění žáka,Přemístění žáka;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp106,A2,Neverbální narušování výuky,Neverbální narušování výuky,Dohoda,Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1060,A1,Fyzická agrese,Fyzická agrese;Šikana;Neplnění školních povinností/nepřipravenost na výuku;Nezvládání výuky;Emoční výbuchy;Diagnóza,Nerespektující komunikace,Nerespektující komunikace;Podpora;Spolupráce s odborníky,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp1062,A3,Fyzická agrese,Fyzická agrese;Verbální agrese,Spolupráce s odborníky,Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,4.0,,,,0
+exp1063,A4,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Spolupráce s odborníky;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1065,A7,Problémy s docházkou,Problémy s docházkou;Verbální agrese;Nevěnování se výuce/Nepozornost při výuce;Neplnění školních povinností/nepřipravenost na výuku;Porušování třídních/školních pravidel,Spolupráce s odborníky,Spolupráce s odborníky;Podpora,Neúspěch,Neúspěch,deep,Plná,Neúspěch,4.0,,,,0
+exp1067,A7,Fyzická agrese,Fyzická agrese;Verbální agrese,Spolupráce s odborníky,Spolupráce s odborníky;(Kázeňské) Tresty;Důsledky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp1068,A2,Verbální narušování výuky,Verbální narušování výuky,Rozhovor,Rozhovor;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp1070,A4,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Důsledky,Důsledky;Upozornění,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp1071,A3,Diagnóza,Diagnóza;Fyzická agrese,Rozhovor,Rozhovor;Podpora;Spolupráce s odborníky;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1072,A1,Fyzická agrese,Fyzická agrese;Verbální agrese,Rozhovor,Rozhovor;Podpora,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp1073,A4,Problémy s docházkou,Problémy s docházkou;Porušování třídních/školních pravidel;Nevěnování se výuce/Nepozornost při výuce;Neplnění školních povinností/nepřipravenost na výuku,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,4.0,,,,0
+exp1075,A2,Neverbální narušování výuky,Neverbální narušování výuky,Nerespektující komunikace,Nerespektující komunikace,Neúspěch,Neúspěch,deep,Plochá,,,,,,0
+exp1077,A4,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,(Kázeňské) Tresty,(Kázeňské) Tresty;Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1084,A7,Lhaní a podvody,Lhaní a podvody;Sebedestruktivní chování,Podpora,Podpora;Rozhovor;Spolupráce s odborníky;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1085,A2,Problémy s docházkou,Problémy s docházkou,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1088,A3,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Šikana,Rozhovor,Rozhovor;Nerespektující komunikace,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp1089,A3,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1092,A2,Verbální narušování výuky,Verbální narušování výuky;Neverbální narušování výuky,Rozhovor,Rozhovor;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp1093,A3,Nezvládání výuky,Nezvládání výuky,Rozhovor,Rozhovor;Upozornění;Spolupráce s odborníky;Podpora,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp1094,A2,Problémy s docházkou,Problémy s docházkou;Neplnění školních povinností/nepřipravenost na výuku,Podpora,Podpora,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp1096,A3,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp1099,A4,Verbální narušování výuky,Verbální narušování výuky;Diagnóza,Podpora,Podpora,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp11,A7,Problémy s docházkou,Problémy s docházkou;Verbální narušování výuky;Diagnóza,Přemístění žáka,Přemístění žáka;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp110,A3,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Lhaní a podvody,Práce s kolektivem,Práce s kolektivem;Spolupráce s odborníky,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp1100,A3,Verbální narušování výuky,Verbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1101,A1,Verbální agrese,Verbální agrese;Verbální agrese;Verbální narušování výuky;Neverbální narušování výuky;Neverbální narušování výuky;Verbální narušování výuky;Diagnóza;Diagnóza;Porušování třídních/školních pravidel;Fyzická agrese,Podpora,Podpora;Spolupráce s odborníky;Nerespektující komunikace;Podpora;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp1103,A1,Verbální agrese,Verbální agrese,Nerespektující komunikace,Nerespektující komunikace;Upozornění,Neúspěch,Neúspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1104,A1,Verbální agrese,Verbální agrese;Neplnění školních povinností/nepřipravenost na výuku;Neverbální narušování výuky,,,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp1105,A3,Sebedestruktivní chování,Sebedestruktivní chování,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor;Upozornění,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp1107,A7,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce,Podpora,Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp1108,A7,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Fyzická agrese;Diagnóza,Spolupráce s odborníky,Spolupráce s odborníky;Přemístění žáka;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp1109,A2,Verbální agrese,Verbální agrese,Dohoda,Dohoda;Upozornění,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp111,A2,Nezvládání výuky,Nezvládání výuky,Dohoda,Dohoda,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp1111,A2,Verbální narušování výuky,Verbální narušování výuky,Rozhovor,Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp1115,A3,Diagnóza,Diagnóza;Verbální agrese,Rozhovor,Rozhovor;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1118,A1,Fyzická agrese,Fyzická agrese,Rozhovor,Rozhovor;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1119,A2,Emoční výbuchy,Emoční výbuchy,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp1120,A1,Verbální agrese,Verbální agrese;Sebedestruktivní chování,Rozhovor,Rozhovor;Spolupráce s odborníky;Přemístění žáka,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1121,A3,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp1123,A1,,,Práce s kolektivem,Práce s kolektivem;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1125,A1,Nezvládání výuky,Nezvládání výuky,Podpora,Podpora;Rozhovor;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp1126,A1,Problémy s docházkou,Problémy s docházkou;Nevěnování se výuce/Nepozornost při výuce;Neplnění školních povinností/nepřipravenost na výuku,Rozhovor,Rozhovor;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp1127,A1,Fyzická agrese,Fyzická agrese;Nezvládání výuky;Verbální narušování výuky;Neverbální narušování výuky,Podpora,Podpora;Rozhovor,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp1128,A2,Verbální narušování výuky,Verbální narušování výuky,Nerespektující komunikace,Nerespektující komunikace,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp1129,A3,Verbální agrese,Verbální agrese,Práce s kolektivem,Práce s kolektivem;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp113,A7,Verbální narušování výuky,Verbální narušování výuky;Neverbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce;Diagnóza,Spolupráce s odborníky,Spolupráce s odborníky;Podpora;Přemístění žáka;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp1130,A4,Verbální agrese,Verbální agrese,Rozhovor,Rozhovor;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1133,A7,Diagnóza,Diagnóza;Emoční výbuchy;Porušování třídních/školních pravidel;Fyzická agrese,Spolupráce s odborníky,Spolupráce s odborníky,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Neúspěch,4.0,,,,0
+exp1134,A7,Fyzická agrese,Fyzická agrese;Emoční výbuchy;Problémy s docházkou;Diagnóza,Spolupráce s odborníky,Spolupráce s odborníky;Dohoda;Podpora,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Neúspěch,4.0,,,,0
+exp1136,A7,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Sebedestruktivní chování,Rozhovor,Rozhovor;Spolupráce s odborníky;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp1137,A1,Verbální agrese,Verbální agrese;Fyzická agrese;Šikana,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor;Důsledky;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp1138,A4,Fyzická agrese,Fyzická agrese,Rozhovor,Rozhovor;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1139,A7,Problémy s docházkou,Problémy s docházkou,Rozhovor,Rozhovor;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp114,A2,Verbální narušování výuky,Verbální narušování výuky,Práce s kolektivem,Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp1140,A4,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Upozornění,Upozornění;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp1141,A4,Verbální agrese,Verbální agrese;Diagnóza,Spolupráce s odborníky,Spolupráce s odborníky,Neúspěch,Neúspěch,,Plná,Neúspěch,4.0,,,,0
+exp1144,A4,Šikana,Šikana,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1145,A1,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Neplnění školních povinností/nepřipravenost na výuku,Upozornění,Upozornění;Důsledky;Podpora,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp1147,A4,Emoční výbuchy,Emoční výbuchy,Rozhovor,Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1148,A1,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Spolupráce s odborníky;Přemístění žáka,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1149,A7,Fyzická agrese,Fyzická agrese,Rozhovor,Rozhovor;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp115,A7,Verbální narušování výuky,Verbální narušování výuky;Fyzická agrese,Rozhovor,Rozhovor;Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1151,A1,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Fyzická agrese;Verbální agrese,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor;Práce s kolektivem;(Kázeňské) Tresty,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1152,A3,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Verbální narušování výuky;Verbální agrese,Nerespektující komunikace,Nerespektující komunikace,Neúspěch,Neúspěch,deep,Plochá,,,,,,0
+exp1153,A3,Diagnóza,Diagnóza;Nevěnování se výuce/Nepozornost při výuce;Neverbální narušování výuky,Upozornění,Upozornění;Rozhovor;(Kázeňské) Tresty,Neúspěch,Neúspěch,deep,Plochá,,,,,,0
+exp1154,A7,Diagnóza,Diagnóza;Verbální narušování výuky;Neverbální narušování výuky;Verbální agrese,Nerespektující komunikace,Nerespektující komunikace;Spolupráce s odborníky;(Kázeňské) Tresty,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp1155,A1,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Lhaní a podvody,Rozhovor,Rozhovor;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp1156,A3,Verbální narušování výuky,Verbální narušování výuky;Verbální agrese;Emoční výbuchy;Diagnóza,Rozhovor,Rozhovor;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,4.0,,,,0
+exp1158,A3,Verbální narušování výuky,Verbální narušování výuky,Proaktivní řešení,Proaktivní řešení,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1159,A7,Šikana,Šikana,Rozhovor,Rozhovor;Spolupráce s odborníky;(Kázeňské) Tresty,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp116,A1,Fyzická agrese,Fyzická agrese;Verbální agrese,Nerespektující komunikace,Nerespektující komunikace;Podpora;Přemístění žáka;Rozhovor;Spolupráce s odborníky,,,flat,Plná,Krátkodobý úspěch,4.0,,,,0
+exp1160,A1,Verbální agrese,Verbální agrese,(Kázeňské) Tresty,(Kázeňské) Tresty;Upozornění,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp1161,A4,Diagnóza,Diagnóza,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp1163,A3,Verbální narušování výuky,Verbální narušování výuky,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp1166,A7,Diagnóza,Diagnóza;Neplnění školních povinností/nepřipravenost na výuku,Spolupráce s odborníky,Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1167,A4,Šikana,Šikana,Rozhovor,Rozhovor;Podpora;Práce s kolektivem,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp1168,A7,Diagnóza,Diagnóza;Lhaní a podvody;Neplnění školních povinností/nepřipravenost na výuku;Problémy s docházkou;Verbální narušování výuky,(Kázeňské) Tresty,(Kázeňské) Tresty;Podpora,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp1169,A1,Verbální agrese,Verbální agrese;Verbální narušování výuky,Upozornění,Upozornění;(Kázeňské) Tresty;Nerespektující komunikace,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp117,A7,Nezvládání výuky,Nezvládání výuky;Problémy s docházkou;Neplnění školních povinností/nepřipravenost na výuku,Přemístění žáka,Přemístění žáka,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1170,A3,Problémy s docházkou,Problémy s docházkou;Nezvládání výuky,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1172,A3,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Verbální narušování výuky,Upozornění,Upozornění;Proaktivní řešení,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp1183,A2,,,Rozhovor,Rozhovor;Dohoda;Spolupráce s odborníky;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1185,A7,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Verbální narušování výuky;Neverbální narušování výuky,Rozhovor,Rozhovor,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plochá,,,,,,0
+exp1186,A2,Problémy s docházkou,Problémy s docházkou,Rozhovor,Rozhovor;Spolupráce s odborníky;Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1187,A1,Problémy s docházkou,Problémy s docházkou,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor;Dohoda;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Neúspěch,4.0,,,,0
+exp1189,A4,Verbální agrese,Verbální agrese,Důsledky,Důsledky;Rozhovor;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp1191,A7,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Diagnóza;Sebedestruktivní chování;Problémy s docházkou,Rozhovor,Rozhovor;Dohoda;Spolupráce s odborníky;Důsledky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,4.0,,,,0
+exp1192,A1,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Nezvládání výuky;Sebedestruktivní chování;Problémy s docházkou,Rozhovor,Rozhovor;Spolupráce s odborníky;Podpora,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp1193,A1,Problémy s docházkou,Problémy s docházkou;Diagnóza;Nezvládání výuky,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp1194,A4,Problémy s docházkou,Problémy s docházkou,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1197,A2,Problémy s docházkou,Problémy s docházkou,Rozhovor,Rozhovor;Dohoda;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1198,A2,Šikana,Šikana,Rozhovor,Rozhovor;Práce s kolektivem;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp1199,A7,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku,(Kázeňské) Tresty,(Kázeňské) Tresty;Rozhovor,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1200,A2,Šikana,Šikana;Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Důsledky,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp1201,A2,Šikana,Šikana;Sebedestruktivní chování,Rozhovor,Rozhovor;Spolupráce s odborníky;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1202,A1,Diagnóza,Diagnóza;Nevěnování se výuce/Nepozornost při výuce;Neplnění školních povinností/nepřipravenost na výuku,Podpora,Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp1204,A7,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Neplnění školních povinností/nepřipravenost na výuku;Neverbální narušování výuky,Důsledky,Důsledky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp1206,A4,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku,Rozhovor,Rozhovor,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp1207,A7,Diagnóza,Diagnóza,Rozhovor,Rozhovor;Nerespektující komunikace,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp1208,A1,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Verbální narušování výuky;Neverbální narušování výuky;Diagnóza,Rozhovor,Rozhovor;Spolupráce s odborníky;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp121,A4,Neverbální narušování výuky,Neverbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce;Diagnóza,Podpora,Podpora,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp1210,A7,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Lhaní a podvody,Rozhovor,Rozhovor;Spolupráce s odborníky;Upozornění;Důsledky;(Kázeňské) Tresty,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp1211,A7,Fyzická agrese,Fyzická agrese;Emoční výbuchy;Lhaní a podvody;Porušování třídních/školních pravidel,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp1212,A2,Nezvládání výuky,Nezvládání výuky,Nerespektující komunikace,Nerespektující komunikace,Neúspěch,Neúspěch,deep,Plochá,,,,,,0
+exp1213,A1,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Podpora,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp1214,A3,Verbální narušování výuky,Verbální narušování výuky;Neplnění školních povinností/nepřipravenost na výuku,Rozhovor,Rozhovor;Upozornění,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp1215,A3,Fyzická agrese,Fyzická agrese,Rozhovor,Rozhovor;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,4.0,,,,0
+exp1216,A2,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Dohoda,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp1217,A7,Diagnóza,Diagnóza;Nevěnování se výuce/Nepozornost při výuce;Neplnění školních povinností/nepřipravenost na výuku,Přemístění žáka,Přemístění žáka;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp1218,A1,Fyzická agrese,Fyzická agrese;Diagnóza,Rozhovor,Rozhovor;Důsledky;Nerespektující komunikace,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp1219,A4,Verbální agrese,Verbální agrese,Rozhovor,Rozhovor;Spolupráce s odborníky,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp122,A1,Problémy s docházkou,Problémy s docházkou,Podpora,Podpora;Rozhovor,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp1220,A3,Problémy s docházkou,Problémy s docházkou;Neplnění školních povinností/nepřipravenost na výuku;Lhaní a podvody;Diagnóza,Dohoda,Dohoda;Spolupráce s odborníky;Podpora;Důsledky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,4.0,,,,0
+exp1222,A1,Problémy s docházkou,Problémy s docházkou,Rozhovor,Rozhovor;Spolupráce s odborníky;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp1225,A3,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Verbální narušování výuky,Upozornění,Upozornění;(Kázeňské) Tresty,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp1226,A3,Verbální narušování výuky,Verbální narušování výuky;Neverbální narušování výuky;Verbální agrese,Upozornění,Upozornění;Spolupráce s odborníky;Rozhovor;Dohoda,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp1227,A3,Nezvládání výuky,Nezvládání výuky;Nevěnování se výuce/Nepozornost při výuce,Podpora,Podpora;Spolupráce s odborníky;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,2.0,,,,0
+exp1228,A2,Šikana,Šikana,Práce s kolektivem,Práce s kolektivem;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp123,A3,Diagnóza,Diagnóza;Verbální agrese;Porušování třídních/školních pravidel,Upozornění,Upozornění;(Kázeňské) Tresty;Nerespektující komunikace,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp1230,A1,Verbální narušování výuky,Verbální narušování výuky,Upozornění,Upozornění;Přemístění žáka,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp1231,A7,Verbální narušování výuky,Verbální narušování výuky,Upozornění,Upozornění;(Kázeňské) Tresty;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp1232,A2,Lhaní a podvody,Lhaní a podvody,Práce s kolektivem,Práce s kolektivem;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1234,A3,Verbální agrese,Verbální agrese;Lhaní a podvody,Rozhovor,Rozhovor;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp1236,A2,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Dohoda;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp1237,A1,Verbální agrese,Verbální agrese,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp1238,A3,Neverbální narušování výuky,Neverbální narušování výuky;Verbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce;Verbální agrese;Porušování třídních/školních pravidel,(Kázeňské) Tresty,(Kázeňské) Tresty;Rozhovor;Upozornění;Důsledky;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp124,A7,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Práce s kolektivem,Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp1240,A4,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Nevěnování se výuce/Nepozornost při výuce;Diagnóza,Rozhovor,Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1242,A3,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Šikana,Rozhovor,Rozhovor;Spolupráce s odborníky;Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp1244,A4,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp1246,A1,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Neplnění školních povinností/nepřipravenost na výuku;Fyzická agrese;Diagnóza,Nerespektující komunikace,Nerespektující komunikace;Rozhovor,,,flat,Plná,Neúspěch,1.0,,,,0
+exp125,A3,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku,Rozhovor,Rozhovor;Spolupráce s odborníky;Důsledky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp1250,A1,Verbální narušování výuky,Verbální narušování výuky;Neverbální narušování výuky,Rozhovor,Rozhovor;Práce s kolektivem;(Kázeňské) Tresty,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp1251,A3,Nezvládání výuky,Nezvládání výuky;Emoční výbuchy,Nerespektující komunikace,Nerespektující komunikace,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp1253,A4,Diagnóza,Diagnóza;Emoční výbuchy;Nezvládání výuky,Podpora,Podpora;Spolupráce s odborníky;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1255,A3,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp1256,A3,Problémy s docházkou,Problémy s docházkou;Nevěnování se výuce/Nepozornost při výuce;Verbální narušování výuky;Neverbální narušování výuky,Nerespektující komunikace,Nerespektující komunikace;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp1258,A2,Fyzická agrese,Fyzická agrese;Emoční výbuchy,Upozornění,Upozornění;Důsledky,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,1.0,,,,0
+exp1259,A4,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp126,A1,Emoční výbuchy,Emoční výbuchy,Upozornění,Upozornění;Spolupráce s odborníky;Rozhovor;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp1261,A3,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Rozhovor;Spolupráce s odborníky;Podpora;Přemístění žáka,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1262,A4,Problémy s docházkou,Problémy s docházkou,Rozhovor,Rozhovor;Spolupráce s odborníky,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp1263,A4,Fyzická agrese,Fyzická agrese,Práce s kolektivem,Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1265,A2,Šikana,Šikana,Rozhovor,Rozhovor;Práce s kolektivem,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp1266,A4,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Porušování třídních/školních pravidel;Verbální agrese,Nerespektující komunikace,Nerespektující komunikace;Důsledky,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp1267,A4,Fyzická agrese,Fyzická agrese,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1268,A1,Verbální agrese,Verbální agrese,Spolupráce s odborníky,Spolupráce s odborníky;Upozornění;Podpora,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1269,A4,Fyzická agrese,Fyzická agrese;Verbální agrese,Rozhovor,Rozhovor;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp127,A1,Problémy s docházkou,Problémy s docházkou;Neplnění školních povinností/nepřipravenost na výuku,Rozhovor,Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1270,A2,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Rozhovor,Rozhovor,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp1271,A2,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Rozhovor;Důsledky;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp1272,A3,Verbální narušování výuky,Verbální narušování výuky;Neverbální narušování výuky,Rozhovor,Rozhovor;Spolupráce s odborníky;Proaktivní řešení;Přemístění žáka,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp1274,A7,Sebedestruktivní chování,Sebedestruktivní chování;Šikana,Práce s kolektivem,Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp1275,A4,Problémy s docházkou,Problémy s docházkou,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp1276,A2,Emoční výbuchy,Emoční výbuchy,Rozhovor,Rozhovor;Podpora;Spolupráce s odborníky,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp1277,A1,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Neplnění školních povinností/nepřipravenost na výuku;Diagnóza;Problémy s docházkou,Rozhovor,Rozhovor;Spolupráce s odborníky;Podpora;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp1278,A4,Šikana,Šikana,Rozhovor,Rozhovor;Práce s kolektivem;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1279,A2,Fyzická agrese,Fyzická agrese;Verbální agrese,Rozhovor,Rozhovor;Práce s kolektivem;Spolupráce s odborníky;Podpora,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp128,A2,Verbální narušování výuky,Verbální narušování výuky,Upozornění,Upozornění,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp1280,A1,Neverbální narušování výuky,Neverbální narušování výuky,Podpora,Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1281,A2,Fyzická agrese,Fyzická agrese,Důsledky,Důsledky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp1282,A3,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Verbální agrese;Verbální narušování výuky,Dohoda,Dohoda;Podpora;Spolupráce s odborníky;Důsledky,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp1283,A7,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Lhaní a podvody,Práce s kolektivem,Práce s kolektivem;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp1284,A2,Sebedestruktivní chování,Sebedestruktivní chování;Šikana,Spolupráce s odborníky,Spolupráce s odborníky;Podpora;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp1286,A1,Šikana,Šikana;Problémy s docházkou,Rozhovor,Rozhovor;Dohoda,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp1288,A3,Verbální narušování výuky,Verbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce,Dohoda,Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp129,A3,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Verbální narušování výuky;Neplnění školních povinností/nepřipravenost na výuku,Podpora,Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp1291,A4,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1292,A1,Problémy s docházkou,Problémy s docházkou;Nezvládání výuky,Rozhovor,Rozhovor;Spolupráce s odborníky;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1295,A3,Šikana,Šikana,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor;(Kázeňské) Tresty,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1296,A3,Diagnóza,Diagnóza;Verbální agrese,Rozhovor,Rozhovor;Spolupráce s odborníky;Přemístění žáka;Podpora;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp13,A4,Problémy s docházkou,Problémy s docházkou;Emoční výbuchy,Rozhovor,Rozhovor;Podpora,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1300,A4,Verbální agrese,Verbální agrese;Fyzická agrese,Rozhovor,Rozhovor;Podpora,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp1301,A7,Problémy s docházkou,Problémy s docházkou,Spolupráce s odborníky,Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp1303,A3,Fyzická agrese,Fyzická agrese,Rozhovor,Rozhovor;(Kázeňské) Tresty,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1304,A4,Šikana,Šikana,Rozhovor,Rozhovor;(Kázeňské) Tresty;Upozornění,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp1305,A3,Diagnóza,Diagnóza;Emoční výbuchy;Fyzická agrese,Rozhovor,Rozhovor;Podpora;Spolupráce s odborníky;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp1310,A3,Lhaní a podvody,Lhaní a podvody,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor;(Kázeňské) Tresty,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp1313,A1,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Rozhovor;Podpora,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp1315,A2,Verbální narušování výuky,Verbální narušování výuky;Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,1.0,,,,0
+exp1316,A4,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Přemístění žáka,Přemístění žáka;Rozhovor;Dohoda;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1317,A7,Fyzická agrese,Fyzická agrese;Emoční výbuchy,Spolupráce s odborníky,Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp1318,A3,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Verbální agrese;Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Rozhovor;Nerespektující komunikace;Důsledky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp1319,A3,Šikana,Šikana,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp132,A1,Fyzická agrese,Fyzická agrese;Diagnóza;Verbální agrese,Rozhovor,Rozhovor;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp1322,A2,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp1323,A2,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku,Rozhovor,Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp1325,A3,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Verbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce,Upozornění,Upozornění;Důsledky;Rozhovor;Nerespektující komunikace,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp1326,A4,Neverbální narušování výuky,Neverbální narušování výuky,Fyzické zakročení,Fyzické zakročení,Částečný úspěch,Krátkodobý úspěch,deep,Plochá,,,,,,0
+exp1327,A3,Fyzická agrese,Fyzická agrese,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp1328,A3,Diagnóza,Diagnóza;Verbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce;Verbální agrese;Porušování třídních/školních pravidel,Nerespektující komunikace,Nerespektující komunikace;Podpora;Rozhovor,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp1329,A4,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1331,A4,Verbální agrese,Verbální agrese,Podpora,Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1333,A3,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Problémy s docházkou;Neplnění školních povinností/nepřipravenost na výuku,Spolupráce s odborníky,Spolupráce s odborníky;Podpora,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp1334,A3,Fyzická agrese,Fyzická agrese,Rozhovor,Rozhovor;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1337,A7,Šikana,Šikana;Diagnóza;Fyzická agrese,Rozhovor,Rozhovor;Spolupráce s odborníky;(Kázeňské) Tresty;Přemístění žáka,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp1339,A1,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Upozornění;Nerespektující komunikace;Práce s kolektivem;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp134,A2,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Upozornění,Upozornění,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp1340,A4,Šikana,Šikana,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1341,A4,Šikana,Šikana,Rozhovor,Rozhovor;Nerespektující komunikace,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp1342,A2,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Verbální agrese,Rozhovor,Rozhovor;Dohoda,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp1343,A3,Lhaní a podvody,Lhaní a podvody;Porušování třídních/školních pravidel,Nerespektující komunikace,Nerespektující komunikace;Důsledky;Spolupráce s odborníky;Rozhovor,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp1344,A2,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Upozornění,Upozornění;Důsledky,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp1345,A3,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp1346,A2,Verbální narušování výuky,Verbální narušování výuky;Nezvládání výuky;Emoční výbuchy,Podpora,Podpora;Dohoda;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp1348,A7,Lhaní a podvody,Lhaní a podvody;Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Podpora;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp1349,A3,Verbální narušování výuky,Verbální narušování výuky;Šikana;Fyzická agrese;Lhaní a podvody,Rozhovor,Rozhovor;Důsledky;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp135,A2,Šikana,Šikana,Rozhovor,Rozhovor;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1351,A7,Verbální narušování výuky,Verbální narušování výuky;Neverbální narušování výuky,Rozhovor,Rozhovor;Upozornění;Přemístění žáka,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp1353,A2,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1354,A7,Šikana,Šikana;Nevěnování se výuce/Nepozornost při výuce,Práce s kolektivem,Práce s kolektivem;Spolupráce s odborníky;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1356,A3,Verbální narušování výuky,Verbální narušování výuky,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp1357,A2,Emoční výbuchy,Emoční výbuchy,Rozhovor,Rozhovor;Podpora,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp1358,A3,Verbální agrese,Verbální agrese;Verbální narušování výuky,Nerespektující komunikace,Nerespektující komunikace,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp1359,A2,Šikana,Šikana,Rozhovor,Rozhovor;Dohoda;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp136,A2,Šikana,Šikana,Práce s kolektivem,Práce s kolektivem;Spolupráce s odborníky;Rozhovor;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Neúspěch,4.0,,,,0
+exp1360,A2,Emoční výbuchy,Emoční výbuchy,Rozhovor,Rozhovor;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1362,A3,Verbální agrese,Verbální agrese,Rozhovor,Rozhovor;Upozornění;Spolupráce s odborníky;Důsledky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp1366,A2,Verbální narušování výuky,Verbální narušování výuky;Verbální agrese,Rozhovor,Rozhovor;Přemístění žáka;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1367,A4,Nezvládání výuky,Nezvládání výuky;Problémy s docházkou,Podpora,Podpora;Rozhovor;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,4.0,,,,0
+exp1368,A3,Diagnóza,Diagnóza;Emoční výbuchy,Rozhovor,Rozhovor;Spolupráce s odborníky;Podpora;Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp137,A3,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Neplnění školních povinností/nepřipravenost na výuku;Problémy s docházkou,Rozhovor,Rozhovor;Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1371,A1,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Lhaní a podvody,Rozhovor,Rozhovor;Důsledky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp1374,A2,Verbální agrese,Verbální agrese,Rozhovor,Rozhovor;Nerespektující komunikace,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp1377,A3,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku,Upozornění,Upozornění,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp1379,A7,Fyzická agrese,Fyzická agrese,Rozhovor,Rozhovor;Upozornění,Neúspěch,Neúspěch,deep,Plochá,,,,,,0
+exp138,A4,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Verbální narušování výuky,Rozhovor,Rozhovor;Podpora,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp1380,A4,Diagnóza,Diagnóza,Nerespektující komunikace,Nerespektující komunikace;Podpora;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1382,A4,Verbální narušování výuky,Verbální narušování výuky,Podpora,Podpora;Rozhovor;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1383,A4,Verbální agrese,Verbální agrese;Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1384,A1,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Neplnění školních povinností/nepřipravenost na výuku;Verbální narušování výuky,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1387,A4,Emoční výbuchy,Emoční výbuchy,Podpora,Podpora;Spolupráce s odborníky;Přemístění žáka,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1389,A7,Fyzická agrese,Fyzická agrese;Verbální agrese,Podpora,Podpora;Spolupráce s odborníky;Upozornění,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp139,A4,Sebedestruktivní chování,Sebedestruktivní chování,Rozhovor,Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1390,A3,Verbální narušování výuky,Verbální narušování výuky,Rozhovor,Rozhovor;Spolupráce s odborníky;Důsledky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp1395,A7,Diagnóza,Diagnóza,Spolupráce s odborníky,Spolupráce s odborníky;Podpora,Neúspěch,Neúspěch,deep,Plochá,,,,,,0
+exp1398,A4,Šikana,Šikana,Rozhovor,Rozhovor;Spolupráce s odborníky;Důsledky,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp1399,A2,Verbální agrese,Verbální agrese;Fyzická agrese,Rozhovor,Rozhovor;Fyzické zakročení,Neúspěch,Neúspěch,deep,Plochá,,,,,,0
+exp14,A1,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Lhaní a podvody;Emoční výbuchy;Neplnění školních povinností/nepřipravenost na výuku,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor;Nerespektující komunikace,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp140,A2,Verbální narušování výuky,Verbální narušování výuky,Upozornění,Upozornění,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp1402,A3,Verbální narušování výuky,Verbální narušování výuky,Přemístění žáka,Přemístění žáka;Rozhovor;Dohoda,Neúspěch,Neúspěch,deep,Plná,Dlouhodobý úspěch,2.0,,,,0
+exp1403,A1,Verbální agrese,Verbální agrese,Rozhovor,Rozhovor;Práce s kolektivem;Nerespektující komunikace,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1404,A7,Fyzická agrese,Fyzická agrese;Porušování třídních/školních pravidel;Lhaní a podvody,Rozhovor,Rozhovor;Důsledky;Práce s kolektivem;Upozornění,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp1405,A4,Fyzická agrese,Fyzická agrese,Nerespektující komunikace,Nerespektující komunikace,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp1406,A7,Lhaní a podvody,Lhaní a podvody,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1407,A4,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp1408,A2,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Rozhovor;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1409,A3,Nezvládání výuky,Nezvládání výuky;Neplnění školních povinností/nepřipravenost na výuku,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp1410,A7,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Spolupráce s odborníky,Spolupráce s odborníky;Přemístění žáka;(Kázeňské) Tresty,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1411,A2,Sebedestruktivní chování,Sebedestruktivní chování,Rozhovor,Rozhovor;Spolupráce s odborníky;Podpora,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp1413,A4,Diagnóza,Diagnóza;Emoční výbuchy,Rozhovor,Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1414,A4,Diagnóza,Diagnóza;Nezvládání výuky;Nevěnování se výuce/Nepozornost při výuce;Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Spolupráce s odborníky;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Neúspěch,4.0,,,,0
+exp1415,A7,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Nevěnování se výuce/Nepozornost při výuce;Verbální narušování výuky,Rozhovor,Rozhovor;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp1416,A2,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Fyzická agrese,Rozhovor,Rozhovor;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1417,A3,Fyzická agrese,Fyzická agrese,Rozhovor,Rozhovor;Spolupráce s odborníky;Důsledky;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1418,A4,Emoční výbuchy,Emoční výbuchy,Spolupráce s odborníky,Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp1419,A2,Verbální narušování výuky,Verbální narušování výuky,Rozhovor,Rozhovor;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp1421,A4,Verbální agrese,Verbální agrese,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1422,A4,Neverbální narušování výuky,Neverbální narušování výuky,Rozhovor,Rozhovor;Spolupráce s odborníky;Podpora,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp1423,A4,Fyzická agrese,Fyzická agrese;Nevěnování se výuce/Nepozornost při výuce;Verbální narušování výuky;Neverbální narušování výuky,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1424,A2,Verbální narušování výuky,Verbální narušování výuky,Podpora,Podpora,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp1425,A3,Fyzická agrese,Fyzická agrese,Rozhovor,Rozhovor;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp1427,A7,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Práce s kolektivem,Práce s kolektivem;Fyzické zakročení;Důsledky;(Kázeňské) Tresty,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp1429,A3,Šikana,Šikana,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp1433,A3,Verbální narušování výuky,Verbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce;Porušování třídních/školních pravidel;Verbální agrese,Upozornění,Upozornění;Nerespektující komunikace;Spolupráce s odborníky;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp1435,A2,Fyzická agrese,Fyzická agrese;Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1436,A1,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Spolupráce s odborníky,Spolupráce s odborníky;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1438,A3,Fyzická agrese,Fyzická agrese;Porušování třídních/školních pravidel,Důsledky,Důsledky;Rozhovor;Spolupráce s odborníky;Přemístění žáka,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1439,A3,Fyzická agrese,Fyzická agrese,Nerespektující komunikace,Nerespektující komunikace;Rozhovor;Důsledky;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp144,A2,Verbální narušování výuky,Verbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce,Upozornění,Upozornění;Rozhovor;Důsledky,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp1440,A4,Fyzická agrese,Fyzická agrese,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor;Důsledky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp1441,A2,Verbální narušování výuky,Verbální narušování výuky;Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Práce s kolektivem;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp1443,A1,Problémy s docházkou,Problémy s docházkou,Rozhovor,Rozhovor;Spolupráce s odborníky;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1444,A4,Lhaní a podvody,Lhaní a podvody;Nevěnování se výuce/Nepozornost při výuce;Problémy s docházkou;Neplnění školních povinností/nepřipravenost na výuku;Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Spolupráce s odborníky;Podpora;Důsledky,Neúspěch,Neúspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1445,A3,Verbální narušování výuky,Verbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce;Porušování třídních/školních pravidel;Neverbální narušování výuky,Rozhovor,Rozhovor;Spolupráce s odborníky;Podpora,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp1446,A7,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Rozhovor,Rozhovor;(Kázeňské) Tresty;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1447,A2,Emoční výbuchy,Emoční výbuchy,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp145,A7,Problémy s docházkou,Problémy s docházkou,Spolupráce s odborníky,Spolupráce s odborníky;(Kázeňské) Tresty,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp1450,A7,Diagnóza,Diagnóza;Fyzická agrese;Šikana,Rozhovor,Rozhovor;Práce s kolektivem;Spolupráce s odborníky;Důsledky;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1451,A7,Verbální agrese,Verbální agrese;Diagnóza;Porušování třídních/školních pravidel;Verbální narušování výuky,Spolupráce s odborníky,Spolupráce s odborníky;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp1452,A1,Verbální agrese,Verbální agrese;Verbální narušování výuky;Fyzická agrese;Nevěnování se výuce/Nepozornost při výuce,Podpora,Podpora;Přemístění žáka;Nerespektující komunikace;Důsledky,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp1453,A3,Verbální narušování výuky,Verbální narušování výuky,Upozornění,Upozornění;Fyzické zakročení;Rozhovor,Neúspěch,Neúspěch,deep,Plochá,Dlouhodobý úspěch,1.0,,,,0
+exp1454,A1,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Fyzická agrese,Rozhovor,Rozhovor;Důsledky;Dohoda,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp1456,A1,Šikana,Šikana;Problémy s docházkou,Práce s kolektivem,Práce s kolektivem;Spolupráce s odborníky;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp1458,A1,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Verbální narušování výuky;Neverbální narušování výuky,Upozornění,Upozornění;Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plochá,Dlouhodobý úspěch,4.0,,,,0
+exp1459,A7,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce,Podpora,Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp146,A1,Neverbální narušování výuky,Neverbální narušování výuky;Verbální narušování výuky;Neplnění školních povinností/nepřipravenost na výuku;Verbální agrese;Nevěnování se výuce/Nepozornost při výuce;Porušování třídních/školních pravidel,Přemístění žáka,Přemístění žáka;Důsledky;Nerespektující komunikace,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp1460,A2,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce,Přemístění žáka,Přemístění žáka,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1463,A4,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Důsledky,Důsledky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp1465,A3,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Problémy s docházkou;Verbální narušování výuky,Rozhovor,Rozhovor;Spolupráce s odborníky;Podpora;Dohoda,Neúspěch,Neúspěch,deep,Plná,Neúspěch,4.0,,,,0
+exp1466,A4,Problémy s docházkou,Problémy s docházkou,Rozhovor,Rozhovor;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,4.0,,,,0
+exp1469,A1,Verbální narušování výuky,Verbální narušování výuky;Verbální agrese,Upozornění,Upozornění;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1471,A2,Verbální narušování výuky,Verbální narušování výuky,Práce s kolektivem,Práce s kolektivem;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1473,A1,Problémy s docházkou,Problémy s docházkou,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1475,A1,Fyzická agrese,Fyzická agrese,Rozhovor,Rozhovor;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1476,A2,Verbální agrese,Verbální agrese;Porušování třídních/školních pravidel;Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp1478,A4,Verbální agrese,Verbální agrese,Rozhovor,Rozhovor;Důsledky;Spolupráce s odborníky;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1480,A1,Verbální agrese,Verbální agrese;Nevěnování se výuce/Nepozornost při výuce;Verbální narušování výuky;Neverbální narušování výuky;Diagnóza,Rozhovor,Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1481,A7,Diagnóza,Diagnóza;Verbální agrese;Verbální narušování výuky;Neverbální narušování výuky,Rozhovor,Rozhovor;Dohoda;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp1482,A7,Fyzická agrese,Fyzická agrese;Neplnění školních povinností/nepřipravenost na výuku;Verbální narušování výuky,Rozhovor,Rozhovor;Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1485,A3,Lhaní a podvody,Lhaní a podvody,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1487,A3,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Lhaní a podvody;Verbální agrese,Rozhovor,Rozhovor;Spolupráce s odborníky;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp1489,A1,Verbální agrese,Verbální agrese;Neverbální narušování výuky;Verbální narušování výuky;Problémy s docházkou;Nevěnování se výuce/Nepozornost při výuce;Šikana,Rozhovor,Rozhovor;Práce s kolektivem;Přemístění žáka,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp1490,A3,Fyzická agrese,Fyzická agrese,Rozhovor,Rozhovor;Spolupráce s odborníky;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp1493,A7,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku,Důsledky,Důsledky;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp1494,A3,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Spolupráce s odborníky;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp1495,A7,Fyzická agrese,Fyzická agrese;Verbální agrese;Šikana,Spolupráce s odborníky,Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp1498,A1,Fyzická agrese,Fyzická agrese;Verbální agrese;Porušování třídních/školních pravidel;Emoční výbuchy;Lhaní a podvody,Rozhovor,Rozhovor;Spolupráce s odborníky;Práce s kolektivem,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp15,A4,Sebedestruktivní chování,Sebedestruktivní chování,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp1500,A1,Verbální agrese,Verbální agrese;Nevěnování se výuce/Nepozornost při výuce;Neplnění školních povinností/nepřipravenost na výuku;Verbální narušování výuky,Upozornění,Upozornění;Nerespektující komunikace;Rozhovor;Důsledky,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp1501,A2,Problémy s docházkou,Problémy s docházkou;Neplnění školních povinností/nepřipravenost na výuku,Rozhovor,Rozhovor;Spolupráce s odborníky;Podpora,Neúspěch,Neúspěch,deep,Plná,Neúspěch,4.0,,,,0
+exp1502,A2,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Verbální narušování výuky,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp153,A3,Verbální agrese,Verbální agrese,(Kázeňské) Tresty,(Kázeňské) Tresty;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp156,A3,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Neverbální narušování výuky;Diagnóza,Upozornění,Upozornění;Přemístění žáka;Proaktivní řešení,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp157,A3,Verbální narušování výuky,Verbální narušování výuky;Emoční výbuchy,Upozornění,Upozornění;(Kázeňské) Tresty;Spolupráce s odborníky;Přemístění žáka;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plochá,,,,,,0
+exp158,A4,Verbální narušování výuky,Verbální narušování výuky,Nerespektující komunikace,Nerespektující komunikace;Upozornění,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp16,A1,Verbální narušování výuky,Verbální narušování výuky;Neverbální narušování výuky,Upozornění,Upozornění;Nerespektující komunikace,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp160,A4,Verbální narušování výuky,Verbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Rozhovor;Práce s kolektivem;Dohoda;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp161,A2,Fyzická agrese,Fyzická agrese,Rozhovor,Rozhovor;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp162,A4,Verbální agrese,Verbální agrese,Důsledky,Důsledky;Rozhovor,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp164,A2,Emoční výbuchy,Emoční výbuchy,Rozhovor,Rozhovor;Podpora,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp165,A3,Problémy s docházkou,Problémy s docházkou;Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Rozhovor;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp168,A3,Emoční výbuchy,Emoční výbuchy;Porušování třídních/školních pravidel;Sebedestruktivní chování,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor;Podpora;Přemístění žáka,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Neúspěch,4.0,,,,0
+exp170,A2,Fyzická agrese,Fyzická agrese;Diagnóza,Rozhovor,Rozhovor;Nerespektující komunikace;Spolupráce s odborníky,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp172,A2,Fyzická agrese,Fyzická agrese,Rozhovor,Rozhovor;Práce s kolektivem,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp173,A3,Diagnóza,Diagnóza;Fyzická agrese,Spolupráce s odborníky,Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp175,A3,Fyzická agrese,Fyzická agrese;Verbální agrese,Rozhovor,Rozhovor;Spolupráce s odborníky;Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp176,A7,Diagnóza,Diagnóza;Verbální agrese;Verbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce;Porušování třídních/školních pravidel,Přemístění žáka,Přemístění žáka;(Kázeňské) Tresty;Podpora,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp178,A2,Verbální agrese,Verbální agrese,Rozhovor,Rozhovor;Nerespektující komunikace,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp179,A7,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku,Upozornění,Upozornění;Podpora;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp18,A3,Diagnóza,Diagnóza;Fyzická agrese;Verbální agrese,Podpora,Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp181,A3,Emoční výbuchy,Emoční výbuchy;Verbální agrese;Fyzická agrese;Diagnóza,Fyzické zakročení,Fyzické zakročení;Rozhovor;Přemístění žáka;Podpora;Proaktivní řešení,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp182,A3,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Diagnóza,Rozhovor,Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp183,A4,Fyzická agrese,Fyzická agrese,Rozhovor,Rozhovor;Důsledky;Fyzické zakročení,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plochá,,,,,,0
+exp187,A1,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Verbální narušování výuky;Verbální agrese,Rozhovor,Rozhovor;Upozornění;Důsledky,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp189,A4,Neverbální narušování výuky,Neverbální narušování výuky;Verbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce;Fyzická agrese;Verbální agrese,Přemístění žáka,Přemístění žáka;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp19,A7,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Neverbální narušování výuky;Fyzická agrese;Sebedestruktivní chování,(Kázeňské) Tresty,(Kázeňské) Tresty;Rozhovor;Dohoda;Přemístění žáka;Upozornění,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp191,A2,Emoční výbuchy,Emoční výbuchy;Porušování třídních/školních pravidel,Podpora,Podpora;Rozhovor,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp192,A1,Verbální agrese,Verbální agrese;Verbální narušování výuky,Důsledky,Důsledky;Rozhovor,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp193,A1,Verbální agrese,Verbální agrese;Verbální narušování výuky,Nerespektující komunikace,Nerespektující komunikace;Fyzické zakročení;Přemístění žáka;Upozornění;Rozhovor;Podpora,Částečný úspěch,Krátkodobý úspěch,deep,Plochá,,,,,,0
+exp194,A7,Šikana,Šikana,Rozhovor,Rozhovor;Spolupráce s odborníky,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp198,A3,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Spolupráce s odborníky,Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp199,A3,Fyzická agrese,Fyzická agrese,Rozhovor,Rozhovor;Upozornění,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp201,A4,Verbální agrese,Verbální agrese;Verbální narušování výuky;Diagnóza,Nerespektující komunikace,Nerespektující komunikace;Upozornění;Spolupráce s odborníky;Rozhovor;Přemístění žáka,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp202,A1,Verbální agrese,Verbální agrese;Verbální narušování výuky;Neplnění školních povinností/nepřipravenost na výuku;Emoční výbuchy,Přemístění žáka,Přemístění žáka;Spolupráce s odborníky;Upozornění;Rozhovor;Práce s kolektivem;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp203,A1,Verbální agrese,Verbální agrese;Neplnění školních povinností/nepřipravenost na výuku;Problémy s docházkou,Rozhovor,Rozhovor;Nerespektující komunikace,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp204,A4,Emoční výbuchy,Emoční výbuchy,Přemístění žáka,Přemístění žáka,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp205,A4,Emoční výbuchy,Emoční výbuchy;Porušování třídních/školních pravidel;Verbální agrese,Rozhovor,Rozhovor;Upozornění;Podpora,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp207,A4,Verbální agrese,Verbální agrese;Fyzická agrese,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp21,A1,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Neverbální narušování výuky;Verbální narušování výuky;Fyzická agrese,Podpora,Podpora;Spolupráce s odborníky;Přemístění žáka;Rozhovor,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp210,A3,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Neplnění školních povinností/nepřipravenost na výuku,Rozhovor,Rozhovor;Spolupráce s odborníky;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp212,A7,Diagnóza,Diagnóza;Fyzická agrese;Neplnění školních povinností/nepřipravenost na výuku;Verbální narušování výuky,Fyzické zakročení,Fyzické zakročení;Spolupráce s odborníky;(Kázeňské) Tresty,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp213,A7,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Neverbální narušování výuky;Verbální agrese,Fyzické zakročení,Fyzické zakročení;Důsledky,Neúspěch,Neúspěch,deep,Plochá,,,,,,0
+exp214,A7,Problémy s docházkou,Problémy s docházkou,Spolupráce s odborníky,Spolupráce s odborníky;Podpora;Dohoda,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Neúspěch,4.0,,,,0
+exp216,A3,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp217,A2,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Dohoda,Dohoda;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp218,A2,Problémy s docházkou,Problémy s docházkou;Neplnění školních povinností/nepřipravenost na výuku,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,4.0,,,,0
+exp22,A2,Fyzická agrese,Fyzická agrese,Rozhovor,Rozhovor;Nerespektující komunikace,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,1.0,,,,0
+exp223,A3,Fyzická agrese,Fyzická agrese;Porušování třídních/školních pravidel;Verbální agrese,Rozhovor,Rozhovor;Spolupráce s odborníky;Podpora,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp225,A4,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp226,A7,Lhaní a podvody,Lhaní a podvody;Nevěnování se výuce/Nepozornost při výuce;Šikana;Verbální agrese,Rozhovor,Rozhovor;Nerespektující komunikace;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp227,A2,Verbální agrese,Verbální agrese,Práce s kolektivem,Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp229,A4,Verbální narušování výuky,Verbální narušování výuky;Fyzická agrese;Verbální agrese,Rozhovor,Rozhovor;Spolupráce s odborníky;Podpora;(Kázeňské) Tresty;Upozornění,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp23,A2,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Emoční výbuchy,Rozhovor,Rozhovor;Dohoda;Podpora;Upozornění,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp230,A2,Problémy s docházkou,Problémy s docházkou,Rozhovor,Rozhovor;Spolupráce s odborníky;Přemístění žáka,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp233,A1,Šikana,Šikana;Diagnóza,Rozhovor,Rozhovor;Spolupráce s odborníky;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp236,A1,Verbální agrese,Verbální agrese;Fyzická agrese,Fyzické zakročení,Fyzické zakročení;Rozhovor;Podpora;Přemístění žáka;Spolupráce s odborníky;Důsledky,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp237,A1,Fyzická agrese,Fyzická agrese;Neplnění školních povinností/nepřipravenost na výuku;Problémy s docházkou,Důsledky,Důsledky;Podpora;Spolupráce s odborníky;Rozhovor,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp238,A2,Verbální agrese,Verbální agrese,Rozhovor,Rozhovor,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp239,A1,Problémy s docházkou,Problémy s docházkou;Neplnění školních povinností/nepřipravenost na výuku;Nevěnování se výuce/Nepozornost při výuce,Důsledky,Důsledky;Rozhovor,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp241,A1,Verbální agrese,Verbální agrese;Emoční výbuchy;Neplnění školních povinností/nepřipravenost na výuku,Přemístění žáka,Přemístění žáka,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp244,A4,Verbální narušování výuky,Verbální narušování výuky;Neverbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Rozhovor;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp245,A3,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Problémy s docházkou;Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Rozhovor;Podpora;Dohoda;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp246,A4,Verbální agrese,Verbální agrese;Nevěnování se výuce/Nepozornost při výuce;Verbální narušování výuky;Sebedestruktivní chování;Fyzická agrese,Důsledky,Důsledky;Upozornění;Rozhovor;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp249,A1,Fyzická agrese,Fyzická agrese;Verbální agrese,Upozornění,Upozornění;Přemístění žáka;Rozhovor;Spolupráce s odborníky;Nerespektující komunikace,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp25,A1,Šikana,Šikana,Podpora,Podpora;Práce s kolektivem,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp252,A7,Verbální narušování výuky,Verbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce;Neverbální narušování výuky;Porušování třídních/školních pravidel,Dohoda,Dohoda;Spolupráce s odborníky;Podpora,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp253,A7,Diagnóza,Diagnóza;Nevěnování se výuce/Nepozornost při výuce;Neplnění školních povinností/nepřipravenost na výuku;Verbální agrese;Emoční výbuchy,Podpora,Podpora;Práce s kolektivem;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp254,A4,Verbální narušování výuky,Verbální narušování výuky;Neverbální narušování výuky,Přemístění žáka,Přemístění žáka;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp255,A7,Diagnóza,Diagnóza;Sebedestruktivní chování;Šikana,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp256,A2,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce,Podpora,Podpora;Spolupráce s odborníky;Rozhovor,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp257,A2,Fyzická agrese,Fyzická agrese,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp263,A1,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Lhaní a podvody;Verbální agrese,Upozornění,Upozornění;Nerespektující komunikace;Rozhovor;Dohoda;Podpora;Důsledky,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp266,A3,Fyzická agrese,Fyzická agrese;Verbální agrese;Diagnóza,Rozhovor,Rozhovor;Spolupráce s odborníky;Přemístění žáka;Nerespektující komunikace,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp267,A1,Verbální narušování výuky,Verbální narušování výuky,Upozornění,Upozornění;Spolupráce s odborníky;Rozhovor;Důsledky;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp269,A1,Fyzická agrese,Fyzická agrese;Verbální agrese;Emoční výbuchy;Diagnóza,Nerespektující komunikace,Nerespektující komunikace;Rozhovor;Podpora,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp27,A2,Verbální agrese,Verbální agrese,Práce s kolektivem,Práce s kolektivem;(Kázeňské) Tresty;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp275,A2,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Spolupráce s odborníky;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp276,A3,Verbální narušování výuky,Verbální narušování výuky;Neverbální narušování výuky;Fyzická agrese,Rozhovor,Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp277,A1,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Verbální agrese,Nerespektující komunikace,Nerespektující komunikace;Upozornění;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,2.0,,,,0
+exp278,A4,Fyzická agrese,Fyzická agrese;Verbální agrese,Důsledky,Důsledky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp28,A2,Emoční výbuchy,Emoční výbuchy,Rozhovor,Rozhovor,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp280,A4,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku,,,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp281,A3,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Fyzická agrese;Diagnóza,Rozhovor,Rozhovor;Důsledky;Práce s kolektivem,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp283,A1,Fyzická agrese,Fyzická agrese;Verbální agrese,Rozhovor,Rozhovor;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plochá,Krátkodobý úspěch,3.0,,,,0
+exp284,A3,Fyzická agrese,Fyzická agrese;Verbální agrese,Rozhovor,Rozhovor;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp286,A1,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Fyzické zakročení;Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,2.0,,,,0
+exp288,A2,Šikana,Šikana,Přemístění žáka,Přemístění žáka;Důsledky;Práce s kolektivem,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp289,A3,Verbální agrese,Verbální agrese;Lhaní a podvody,Rozhovor,Rozhovor;Upozornění;Dohoda;Podpora;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp290,A7,Problémy s docházkou,Problémy s docházkou;Neplnění školních povinností/nepřipravenost na výuku,Práce s kolektivem,Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp292,A3,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Nezvládání výuky;Diagnóza,Rozhovor,Rozhovor;Podpora;Dohoda;Proaktivní řešení,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp293,A2,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Porušování třídních/školních pravidel,Práce s kolektivem,Práce s kolektivem;Dohoda,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp294,A4,Diagnóza,Diagnóza;Emoční výbuchy,Rozhovor,Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp295,A4,Neverbální narušování výuky,Neverbální narušování výuky;Verbální narušování výuky;Verbální agrese,(Kázeňské) Tresty,(Kázeňské) Tresty;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp296,A3,Verbální narušování výuky,Verbální narušování výuky;Fyzická agrese,Spolupráce s odborníky,Spolupráce s odborníky;Důsledky;(Kázeňské) Tresty;Rozhovor;Dohoda;Přemístění žáka;Podpora,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp297,A1,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Fyzická agrese;Diagnóza;Emoční výbuchy,Přemístění žáka,Přemístění žáka;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp299,A4,Verbální narušování výuky,Verbální narušování výuky;Verbální agrese;Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Rozhovor;Přemístění žáka,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp3,A7,Problémy s docházkou,Problémy s docházkou;Diagnóza;Lhaní a podvody,Rozhovor,Rozhovor;Podpora;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,2.0,,,,0
+exp30,A4,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Nevěnování se výuce/Nepozornost při výuce,(Kázeňské) Tresty,(Kázeňské) Tresty;Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp300,A3,Sebedestruktivní chování,Sebedestruktivní chování;Diagnóza;Fyzická agrese,Rozhovor,Rozhovor;Práce s kolektivem;Spolupráce s odborníky;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp302,A3,Diagnóza,Diagnóza;Nevěnování se výuce/Nepozornost při výuce;Verbální narušování výuky,Nerespektující komunikace,Nerespektující komunikace,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp303,A2,Verbální narušování výuky,Verbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce,Upozornění,Upozornění;Přemístění žáka;Nerespektující komunikace,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,1.0,,,,0
+exp304,A7,Verbální narušování výuky,Verbální narušování výuky,Rozhovor,Rozhovor;Nerespektující komunikace,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp305,A7,Verbální narušování výuky,Verbální narušování výuky;Neverbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce,Upozornění,Upozornění;(Kázeňské) Tresty;Důsledky,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp307,A1,Lhaní a podvody,Lhaní a podvody,Rozhovor,Rozhovor;Nerespektující komunikace,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp308,A4,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Podpora,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp309,A2,Sebedestruktivní chování,Sebedestruktivní chování,Spolupráce s odborníky,Spolupráce s odborníky;Práce s kolektivem;Podpora,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp31,A3,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Přemístění žáka,Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp310,A7,Diagnóza,Diagnóza;Nezvládání výuky,Spolupráce s odborníky,Spolupráce s odborníky;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp311,A7,Šikana,Šikana,Spolupráce s odborníky,Spolupráce s odborníky;(Kázeňské) Tresty,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp312,A1,Neverbální narušování výuky,Neverbální narušování výuky;Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Důsledky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp313,A3,Problémy s docházkou,Problémy s docházkou;Diagnóza,Spolupráce s odborníky,Spolupráce s odborníky;Podpora;Práce s kolektivem;Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp314,A7,Fyzická agrese,Fyzická agrese;Verbální agrese;Šikana,Rozhovor,Rozhovor;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp316,A1,Sebedestruktivní chování,Sebedestruktivní chování;Emoční výbuchy,Rozhovor,Rozhovor;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp317,A4,Verbální agrese,Verbální agrese,Rozhovor,Rozhovor;Důsledky,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Dlouhodobý úspěch,1.0,,,,0
+exp319,A3,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Fyzická agrese;Verbální agrese,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp320,A1,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Upozornění,Upozornění;Důsledky;Nerespektující komunikace,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp321,A1,Emoční výbuchy,Emoční výbuchy;Nevěnování se výuce/Nepozornost při výuce;Nezvládání výuky,Rozhovor,Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp322,A2,Neverbální narušování výuky,Neverbální narušování výuky;Sebedestruktivní chování,Rozhovor,Rozhovor,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp323,A3,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Neplnění školních povinností/nepřipravenost na výuku;Problémy s docházkou,Rozhovor,Rozhovor;Důsledky;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp324,A7,Fyzická agrese,Fyzická agrese,Práce s kolektivem,Práce s kolektivem,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp325,A3,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Verbální narušování výuky;Neverbální narušování výuky,Přemístění žáka,Přemístění žáka;Nerespektující komunikace,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp326,A2,Fyzická agrese,Fyzická agrese,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp327,A3,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Verbální narušování výuky;Diagnóza,Podpora,Podpora;(Kázeňské) Tresty,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp328,A7,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Problémy s docházkou,(Kázeňské) Tresty,(Kázeňské) Tresty;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp329,A7,Lhaní a podvody,Lhaní a podvody;Neplnění školních povinností/nepřipravenost na výuku;Problémy s docházkou,Rozhovor,Rozhovor;Důsledky,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp33,A7,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Verbální narušování výuky,Nerespektující komunikace,Nerespektující komunikace;Spolupráce s odborníky;Přemístění žáka,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp331,A1,Diagnóza,Diagnóza;Emoční výbuchy;Fyzická agrese,Rozhovor,Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp334,A7,Fyzická agrese,Fyzická agrese;Verbální agrese;Emoční výbuchy,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp335,A3,Diagnóza,Diagnóza,Práce s kolektivem,Práce s kolektivem;Proaktivní řešení,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp336,A2,Verbální narušování výuky,Verbální narušování výuky;Neverbální narušování výuky,Přemístění žáka,Přemístění žáka;Důsledky,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp337,A3,Verbální agrese,Verbální agrese;Verbální narušování výuky,Rozhovor,Rozhovor;Nerespektující komunikace,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp338,A1,Fyzická agrese,Fyzická agrese;Verbální agrese;Porušování třídních/školních pravidel,Nerespektující komunikace,Nerespektující komunikace;Fyzické zakročení;Upozornění;Spolupráce s odborníky;Rozhovor;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp340,A1,Problémy s docházkou,Problémy s docházkou,Rozhovor,Rozhovor;Spolupráce s odborníky;Nerespektující komunikace,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp341,A1,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Přemístění žáka,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp343,A2,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Verbální agrese,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp344,A3,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Verbální narušování výuky,Rozhovor,Rozhovor;Upozornění;Proaktivní řešení,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp345,A2,Verbální narušování výuky,Verbální narušování výuky;Neverbální narušování výuky,Rozhovor,Rozhovor;Upozornění;Podpora,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp347,A7,Šikana,Šikana,Spolupráce s odborníky,Spolupráce s odborníky;(Kázeňské) Tresty,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp348,A2,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp349,A7,Lhaní a podvody,Lhaní a podvody,Fyzické zakročení,Fyzické zakročení,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp351,A1,Verbální agrese,Verbální agrese,Přemístění žáka,Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp358,A1,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Důsledky;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp36,A2,Emoční výbuchy,Emoční výbuchy,Rozhovor,Rozhovor,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp360,A2,Fyzická agrese,Fyzická agrese,Rozhovor,Rozhovor;(Kázeňské) Tresty,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp361,A3,Verbální narušování výuky,Verbální narušování výuky;Neverbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce;Diagnóza,Rozhovor,Rozhovor;Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp362,A2,Nezvládání výuky,Nezvládání výuky;Nevěnování se výuce/Nepozornost při výuce,Spolupráce s odborníky,Spolupráce s odborníky;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp363,A7,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Problémy s docházkou,Rozhovor,Rozhovor;Spolupráce s odborníky;Upozornění,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp364,A1,Emoční výbuchy,Emoční výbuchy;Fyzická agrese;Verbální agrese,Upozornění,Upozornění;Přemístění žáka;Spolupráce s odborníky;Rozhovor;Důsledky,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp365,A2,Fyzická agrese,Fyzická agrese,Rozhovor,Rozhovor;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp366,A1,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Lhaní a podvody;Problémy s docházkou,Rozhovor,Rozhovor,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp367,A3,Fyzická agrese,Fyzická agrese,,,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp368,A1,Fyzická agrese,Fyzická agrese,Důsledky,Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp371,A4,Verbální agrese,Verbální agrese,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp373,A7,Problémy s docházkou,Problémy s docházkou;Neplnění školních povinností/nepřipravenost na výuku,Rozhovor,Rozhovor;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp375,A7,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku,Upozornění,Upozornění;(Kázeňské) Tresty;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,1.0,,,,0
+exp376,A2,Problémy s docházkou,Problémy s docházkou;Neplnění školních povinností/nepřipravenost na výuku,Rozhovor,Rozhovor;Důsledky;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp377,A4,Fyzická agrese,Fyzická agrese;Verbální agrese,Rozhovor,Rozhovor;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp378,A4,Verbální agrese,Verbální agrese,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp38,A1,Diagnóza,Diagnóza;Fyzická agrese;Emoční výbuchy,Upozornění,Upozornění;Přemístění žáka;Práce s kolektivem;Spolupráce s odborníky;Rozhovor;Dohoda,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp381,A1,Verbální agrese,Verbální agrese;Nevěnování se výuce/Nepozornost při výuce;Verbální narušování výuky;Neverbální narušování výuky,Rozhovor,Rozhovor;Spolupráce s odborníky;Upozornění,Neúspěch,Neúspěch,deep,Plná,Neúspěch,4.0,,,,0
+exp382,A3,Verbální agrese,Verbální agrese;Fyzická agrese,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,4.0,,,,0
+exp383,A3,Fyzická agrese,Fyzická agrese;Verbální agrese;Verbální narušování výuky;Neplnění školních povinností/nepřipravenost na výuku,Důsledky,Důsledky;Rozhovor;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp385,A1,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Verbální narušování výuky;Fyzická agrese;Verbální agrese;Porušování třídních/školních pravidel,Nerespektující komunikace,Nerespektující komunikace;Důsledky;Rozhovor,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp388,A2,Verbální agrese,Verbální agrese,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp389,A4,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce,Upozornění,Upozornění;Podpora,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp390,A1,Verbální narušování výuky,Verbální narušování výuky;Neverbální narušování výuky,Podpora,Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp391,A2,Verbální narušování výuky,Verbální narušování výuky,Nerespektující komunikace,Nerespektující komunikace;Důsledky,Neúspěch,Neúspěch,deep,Plná,Dlouhodobý úspěch,1.0,,,,0
+exp393,A2,Diagnóza,Diagnóza,Podpora,Podpora,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp395,A1,Verbální agrese,Verbální agrese;Verbální narušování výuky;Neverbální narušování výuky,Upozornění,Upozornění;Rozhovor;Práce s kolektivem;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp396,A3,Verbální narušování výuky,Verbální narušování výuky;Neverbální narušování výuky,Rozhovor,Rozhovor;Proaktivní řešení;Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp398,A4,Problémy s docházkou,Problémy s docházkou,(Kázeňské) Tresty,(Kázeňské) Tresty,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp399,A2,Verbální agrese,Verbální agrese;Fyzická agrese,Rozhovor,Rozhovor;Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp4,A7,Lhaní a podvody,Lhaní a podvody;Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Spolupráce s odborníky;(Kázeňské) Tresty,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp40,A7,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Dohoda,Dohoda;Práce s kolektivem;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp400,A4,Diagnóza,Diagnóza;Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp401,A4,Problémy s docházkou,Problémy s docházkou,Rozhovor,Rozhovor;Spolupráce s odborníky;Přemístění žáka,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Neúspěch,4.0,,,,0
+exp405,A3,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Neplnění školních povinností/nepřipravenost na výuku,Rozhovor,Rozhovor;Spolupráce s odborníky;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp406,A3,Lhaní a podvody,Lhaní a podvody;Fyzická agrese;Verbální agrese,Důsledky,Důsledky;Přemístění žáka;Rozhovor;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp407,A2,Verbální narušování výuky,Verbální narušování výuky;Emoční výbuchy;Fyzická agrese,Rozhovor,Rozhovor,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp408,A1,Diagnóza,Diagnóza;Verbální narušování výuky;Fyzická agrese;Neverbální narušování výuky;Verbální agrese,Upozornění,Upozornění;Podpora;Dohoda;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Neúspěch,4.0,,,,0
+exp409,A3,Verbální narušování výuky,Verbální narušování výuky;Fyzická agrese;Diagnóza,Rozhovor,Rozhovor;Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp41,A2,Šikana,Šikana;Fyzická agrese;Verbální agrese,Práce s kolektivem,Práce s kolektivem;Spolupráce s odborníky;Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp411,A2,Neverbální narušování výuky,Neverbální narušování výuky,Upozornění,Upozornění,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp412,A7,Šikana,Šikana;Fyzická agrese,Spolupráce s odborníky,Spolupráce s odborníky;Práce s kolektivem,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp414,A4,Verbální agrese,Verbální agrese;Porušování třídních/školních pravidel,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp416,A3,Fyzická agrese,Fyzická agrese;Problémy s docházkou,Podpora,Podpora;Práce s kolektivem,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp418,A3,Verbální agrese,Verbální agrese,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp419,A1,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Neplnění školních povinností/nepřipravenost na výuku,Přemístění žáka,Přemístění žáka;Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp42,A4,Neverbální narušování výuky,Neverbální narušování výuky,Upozornění,Upozornění;Podpora,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp421,A1,Verbální agrese,Verbální agrese;Verbální narušování výuky;Neverbální narušování výuky;Fyzická agrese,Upozornění,Upozornění;Přemístění žáka;Nerespektující komunikace;Rozhovor;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp422,A2,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Dohoda;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp423,A7,Fyzická agrese,Fyzická agrese;Verbální agrese;Šikana,Rozhovor,Rozhovor;Spolupráce s odborníky;Upozornění;(Kázeňské) Tresty,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp425,A1,Fyzická agrese,Fyzická agrese;Lhaní a podvody,Práce s kolektivem,Práce s kolektivem;Rozhovor;Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp426,A1,Neverbální narušování výuky,Neverbální narušování výuky;Verbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce;Fyzická agrese;Verbální agrese,Rozhovor,Rozhovor;Důsledky;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp427,A1,Verbální agrese,Verbální agrese;Nevěnování se výuce/Nepozornost při výuce;Diagnóza,Rozhovor,Rozhovor;Důsledky;Upozornění;Nerespektující komunikace;Přemístění žáka;Podpora;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,4.0,,,,0
+exp428,A1,Šikana,Šikana;Diagnóza,Práce s kolektivem,Práce s kolektivem;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp43,A1,Fyzická agrese,Fyzická agrese,Rozhovor,Rozhovor;Spolupráce s odborníky;Důsledky;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp430,A2,Fyzická agrese,Fyzická agrese,Dohoda,Dohoda,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp432,A3,Verbální narušování výuky,Verbální narušování výuky;Neverbální narušování výuky,Nerespektující komunikace,Nerespektující komunikace;Rozhovor,Neúspěch,Neúspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp434,A3,Fyzická agrese,Fyzická agrese;Nevěnování se výuce/Nepozornost při výuce,Nerespektující komunikace,Nerespektující komunikace,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp435,A2,Verbální narušování výuky,Verbální narušování výuky,Rozhovor,Rozhovor;Dohoda;Upozornění;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp437,A7,Lhaní a podvody,Lhaní a podvody;Problémy s docházkou;Nevěnování se výuce/Nepozornost při výuce,Spolupráce s odborníky,Spolupráce s odborníky;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp438,A3,Diagnóza,Diagnóza;Porušování třídních/školních pravidel,Spolupráce s odborníky,Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Dlouhodobý úspěch,2.0,,,,0
+exp439,A2,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Porušování třídních/školních pravidel;Problémy s docházkou,Rozhovor,Rozhovor;Nerespektující komunikace;Podpora,Neúspěch,Neúspěch,deep,Plná,Neúspěch,4.0,,,,0
+exp44,A1,Fyzická agrese,Fyzická agrese,Rozhovor,Rozhovor;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp442,A4,Verbální agrese,Verbální agrese;Verbální narušování výuky;Neverbální narušování výuky;Porušování třídních/školních pravidel,Rozhovor,Rozhovor,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp443,A4,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Verbální narušování výuky;Problémy s docházkou,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp444,A3,Verbální narušování výuky,Verbální narušování výuky;Fyzická agrese;Porušování třídních/školních pravidel;Diagnóza,Fyzické zakročení,Fyzické zakročení;Rozhovor;Podpora;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,4.0,,,,0
+exp445,A7,Diagnóza,Diagnóza;Emoční výbuchy;Fyzická agrese;Porušování třídních/školních pravidel,Podpora,Podpora;Spolupráce s odborníky;Přemístění žáka,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp446,A7,Fyzická agrese,Fyzická agrese;Neverbální narušování výuky;Verbální narušování výuky;Neplnění školních povinností/nepřipravenost na výuku,Upozornění,Upozornění;Spolupráce s odborníky;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp449,A7,Verbální narušování výuky,Verbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce,Upozornění,Upozornění;Podpora;Nerespektující komunikace,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp45,A4,Emoční výbuchy,Emoční výbuchy,Fyzické zakročení,Fyzické zakročení;Přemístění žáka,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plochá,,,,,,0
+exp450,A2,Neverbální narušování výuky,Neverbální narušování výuky;Verbální narušování výuky,Upozornění,Upozornění;(Kázeňské) Tresty,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp451,A4,Šikana,Šikana,Rozhovor,Rozhovor;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp452,A1,Diagnóza,Diagnóza;Nezvládání výuky;Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Práce s kolektivem,Neúspěch,Neúspěch,flat,Plná,Dlouhodobý úspěch,2.0,,,,0
+exp455,A2,Šikana,Šikana,Rozhovor,Rozhovor;Spolupráce s odborníky;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp456,A3,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Verbální narušování výuky,Upozornění,Upozornění;(Kázeňské) Tresty,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp457,A1,Nezvládání výuky,Nezvládání výuky,Rozhovor,Rozhovor;Podpora;Přemístění žáka,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp458,A7,Neverbální narušování výuky,Neverbální narušování výuky;Verbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce;Emoční výbuchy,Rozhovor,Rozhovor;Přemístění žáka;Podpora,,,,Plná,Krátkodobý úspěch,4.0,,,,0
+exp46,A1,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Porušování třídních/školních pravidel;Šikana;Šikana,Rozhovor,Rozhovor;Rozhovor;Důsledky;Důsledky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp460,A2,Šikana,Šikana,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp461,A3,Šikana,Šikana,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp462,A4,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku,Důsledky,Důsledky;Podpora,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp463,A3,Fyzická agrese,Fyzická agrese,Fyzické zakročení,Fyzické zakročení;Přemístění žáka;Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp464,A7,Verbální narušování výuky,Verbální narušování výuky;Neverbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Rozhovor,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp465,A1,Problémy s docházkou,Problémy s docházkou;Neplnění školních povinností/nepřipravenost na výuku;Nevěnování se výuce/Nepozornost při výuce;Verbální agrese,Rozhovor,Rozhovor;Podpora,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp466,A4,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Nezvládání výuky;Verbální narušování výuky,Rozhovor,Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp468,A2,Verbální agrese,Verbální agrese,Rozhovor,Rozhovor;Upozornění;Spolupráce s odborníky;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp469,A1,Verbální narušování výuky,Verbální narušování výuky;Problémy s docházkou;Neplnění školních povinností/nepřipravenost na výuku;Emoční výbuchy;Diagnóza,Rozhovor,Rozhovor;Spolupráce s odborníky;Podpora;Nerespektující komunikace,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp470,A4,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Verbální agrese,Nerespektující komunikace,Nerespektující komunikace,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,1.0,,,,0
+exp472,A2,Verbální narušování výuky,Verbální narušování výuky;Neverbální narušování výuky,Práce s kolektivem,Práce s kolektivem,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp473,A7,Neverbální narušování výuky,Neverbální narušování výuky;Diagnóza,Fyzické zakročení,Fyzické zakročení,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,1.0,,,,0
+exp475,A1,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Upozornění,Upozornění,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp477,A1,Fyzická agrese,Fyzická agrese;Verbální agrese,Rozhovor,Rozhovor;Důsledky,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp480,A1,Verbální agrese,Verbální agrese;Verbální narušování výuky,Upozornění,Upozornění;Důsledky;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp481,A3,Verbální agrese,Verbální agrese,Práce s kolektivem,Práce s kolektivem;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp482,A2,Verbální narušování výuky,Verbální narušování výuky,Upozornění,Upozornění;Rozhovor;Dohoda,Částečný úspěch,Krátkodobý úspěch,deep,Plochá,,,,,,0
+exp483,A1,Verbální narušování výuky,Verbální narušování výuky;Verbální agrese;Emoční výbuchy;Diagnóza,Podpora,Podpora,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp484,A4,Verbální narušování výuky,Verbální narušování výuky,(Kázeňské) Tresty,(Kázeňské) Tresty,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp485,A2,Problémy s docházkou,Problémy s docházkou;Diagnóza,Podpora,Podpora,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp491,A4,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Důsledky,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp494,A3,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Fyzická agrese,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp495,A4,Nezvládání výuky,Nezvládání výuky,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp496,A2,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Nezvládání výuky,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp498,A4,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp499,A3,Diagnóza,Diagnóza;Fyzická agrese,Podpora,Podpora;Práce s kolektivem,Neúspěch,Neúspěch,deep,Plná,,,,,,0
+exp5,A1,Diagnóza,Diagnóza;Emoční výbuchy,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp500,A7,Šikana,Šikana,Rozhovor,Rozhovor;Dohoda;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp501,A4,,,Upozornění,Upozornění;Nerespektující komunikace,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp502,A7,Neverbální narušování výuky,Neverbální narušování výuky;Lhaní a podvody;Nevěnování se výuce/Nepozornost při výuce,Důsledky,Důsledky;Upozornění,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp503,A4,Lhaní a podvody,Lhaní a podvody,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp506,A2,,,Rozhovor,Rozhovor;Práce s kolektivem;Spolupráce s odborníky;Důsledky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp507,A7,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Neverbální narušování výuky;Problémy s docházkou,(Kázeňské) Tresty,(Kázeňské) Tresty;Podpora,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp508,A1,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Neplnění školních povinností/nepřipravenost na výuku;Diagnóza,Rozhovor,Rozhovor;Podpora,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp509,A2,Fyzická agrese,Fyzická agrese,Důsledky,Důsledky;Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp510,A1,Emoční výbuchy,Emoční výbuchy;Problémy s docházkou;Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Rozhovor;Podpora;Spolupráce s odborníky;Nerespektující komunikace,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp512,A2,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Rozhovor;Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp514,A3,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Neverbální narušování výuky;Verbální narušování výuky,Nerespektující komunikace,Nerespektující komunikace;Přemístění žáka;Rozhovor,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,1.0,,,,0
+exp515,A4,Fyzická agrese,Fyzická agrese,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp516,A1,Sebedestruktivní chování,Sebedestruktivní chování,Rozhovor,Rozhovor;Spolupráce s odborníky;Podpora;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp520,A3,Verbální narušování výuky,Verbální narušování výuky;Diagnóza;Verbální agrese;Neverbální narušování výuky,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor;Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp522,A7,Šikana,Šikana,Rozhovor,Rozhovor;Spolupráce s odborníky;(Kázeňské) Tresty;Práce s kolektivem,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp523,A4,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce,Podpora,Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp525,A7,Diagnóza,Diagnóza;Verbální narušování výuky;Neverbální narušování výuky,Rozhovor,Rozhovor;Přemístění žáka;Dohoda;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp527,A2,Šikana,Šikana,Rozhovor,Rozhovor;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp528,A4,Emoční výbuchy,Emoční výbuchy,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp529,A4,Neverbální narušování výuky,Neverbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce,Upozornění,Upozornění;Důsledky;Rozhovor,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp531,A3,Diagnóza,Diagnóza;Verbální narušování výuky,Podpora,Podpora;Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp532,A3,Fyzická agrese,Fyzická agrese;Emoční výbuchy;Verbální agrese;Porušování třídních/školních pravidel,Upozornění,Upozornění;Důsledky;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp533,A2,Verbální agrese,Verbální agrese;Fyzická agrese,Rozhovor,Rozhovor;Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp534,A2,Neverbální narušování výuky,Neverbální narušování výuky;Verbální narušování výuky,Rozhovor,Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plochá,,,,,,0
+exp537,A7,Diagnóza,Diagnóza;Neverbální narušování výuky;Fyzická agrese,Rozhovor,Rozhovor;Upozornění;Spolupráce s odborníky;Přemístění žáka,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp540,A3,Emoční výbuchy,Emoční výbuchy,Upozornění,Upozornění;Nerespektující komunikace,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp542,A1,Diagnóza,Diagnóza;Verbální narušování výuky;Neverbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce,Přemístění žáka,Přemístění žáka;Rozhovor,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp543,A3,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Fyzická agrese;Neverbální narušování výuky;Verbální agrese;Nevěnování se výuce/Nepozornost při výuce,Podpora,Podpora;Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp544,A2,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce,,,,,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp545,A3,Fyzická agrese,Fyzická agrese;Emoční výbuchy,Rozhovor,Rozhovor;Dohoda,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp546,A2,Fyzická agrese,Fyzická agrese,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor;Důsledky,Neúspěch,Neúspěch,deep,Plochá,,,,,,0
+exp548,A2,Fyzická agrese,Fyzická agrese,Rozhovor,Rozhovor;Spolupráce s odborníky,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp549,A7,Fyzická agrese,Fyzická agrese;Verbální agrese;Verbální narušování výuky;Neverbální narušování výuky,Upozornění,Upozornění;Přemístění žáka;Spolupráce s odborníky;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp55,A7,Verbální narušování výuky,Verbální narušování výuky,Upozornění,Upozornění,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,2.0,,,,0
+exp551,A7,Fyzická agrese,Fyzická agrese;Verbální agrese,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp553,A7,Diagnóza,Diagnóza;Neplnění školních povinností/nepřipravenost na výuku;Verbální narušování výuky;Fyzická agrese,(Kázeňské) Tresty,(Kázeňské) Tresty;Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp555,A1,Fyzická agrese,Fyzická agrese;Emoční výbuchy,Důsledky,Důsledky;Upozornění;Rozhovor;Dohoda,Částečný úspěch,Krátkodobý úspěch,deep,Plochá,,,,,,0
+exp556,A3,Verbální agrese,Verbální agrese,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp558,A4,Neverbální narušování výuky,Neverbální narušování výuky;Neverbální narušování výuky,Podpora,Podpora;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp561,A1,Emoční výbuchy,Emoční výbuchy;Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp562,A1,Fyzická agrese,Fyzická agrese;Fyzická agrese;Verbální agrese;Verbální agrese;Porušování třídních/školních pravidel;Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Rozhovor;Důsledky;Důsledky,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp567,A1,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Práce s kolektivem,Práce s kolektivem;Spolupráce s odborníky;Rozhovor,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp57,A3,Emoční výbuchy,Emoční výbuchy,Přemístění žáka,Přemístění žáka;Podpora;Nerespektující komunikace,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,2.0,,,,0
+exp570,A2,Verbální narušování výuky,Verbální narušování výuky,Podpora,Podpora,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp571,A7,Fyzická agrese,Fyzická agrese;Emoční výbuchy;Neverbální narušování výuky;Porušování třídních/školních pravidel,Rozhovor,Rozhovor,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp577,A2,Problémy s docházkou,Problémy s docházkou,Práce s kolektivem,Práce s kolektivem;Rozhovor;Podpora;Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp58,A2,Emoční výbuchy,Emoční výbuchy,Rozhovor,Rozhovor;Nerespektující komunikace,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp582,A2,Verbální agrese,Verbální agrese,Upozornění,Upozornění;Dohoda,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp584,A1,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp59,A7,Fyzická agrese,Fyzická agrese;Emoční výbuchy;Nezvládání výuky;Diagnóza,Rozhovor,Rozhovor;Přemístění žáka;Fyzické zakročení,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp595,A7,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Lhaní a podvody,Rozhovor,Rozhovor;Upozornění,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp597,A1,Problémy s docházkou,Problémy s docházkou;Neplnění školních povinností/nepřipravenost na výuku;Nevěnování se výuce/Nepozornost při výuce;Verbální narušování výuky,Upozornění,Upozornění;Podpora;Rozhovor;Spolupráce s odborníky,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp598,A3,Verbální narušování výuky,Verbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Rozhovor;Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp599,A3,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Neplnění školních povinností/nepřipravenost na výuku,Rozhovor,Rozhovor;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,flat,Plná,Krátkodobý úspěch,3.0,,,,0
+exp6,A2,Neverbální narušování výuky,Neverbální narušování výuky;Verbální narušování výuky,Rozhovor,Rozhovor;Podpora,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp61,A7,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Neplnění školních povinností/nepřipravenost na výuku,,,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,1.0,,,,0
+exp612,A2,Verbální narušování výuky,Verbální narušování výuky;Emoční výbuchy,Rozhovor,Rozhovor;Dohoda;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp613,A7,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Lhaní a podvody,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp615,A7,Emoční výbuchy,Emoční výbuchy;Verbální narušování výuky;Neplnění školních povinností/nepřipravenost na výuku;Diagnóza,Spolupráce s odborníky,Spolupráce s odborníky;(Kázeňské) Tresty;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plochá,Krátkodobý úspěch,4.0,,,,0
+exp617,A2,Verbální narušování výuky,Verbální narušování výuky;Neverbální narušování výuky,Rozhovor,Rozhovor;Nerespektující komunikace,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp62,A1,Problémy s docházkou,Problémy s docházkou;Verbální agrese;Fyzická agrese;Neplnění školních povinností/nepřipravenost na výuku,Důsledky,Důsledky;Rozhovor;Spolupráce s odborníky;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp620,A1,Diagnóza,Diagnóza;Emoční výbuchy;Nezvládání výuky,Spolupráce s odborníky,Spolupráce s odborníky;Přemístění žáka;Rozhovor;Podpora,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp622,A2,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Problémy s docházkou,Rozhovor,Rozhovor;Přemístění žáka,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp623,A4,Fyzická agrese,Fyzická agrese;Emoční výbuchy,Rozhovor,Rozhovor;Přemístění žáka,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp624,A7,Neverbální narušování výuky,Neverbální narušování výuky;Porušování třídních/školních pravidel,Přemístění žáka,Přemístění žáka;Práce s kolektivem;Rozhovor;Dohoda;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp626,A1,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Neplnění školních povinností/nepřipravenost na výuku;Verbální narušování výuky;Šikana,Upozornění,Upozornění;Důsledky;Rozhovor;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp628,A2,Verbální narušování výuky,Verbální narušování výuky;Neverbální narušování výuky,Nerespektující komunikace,Nerespektující komunikace,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp629,A3,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp63,A2,Verbální agrese,Verbální agrese;Verbální narušování výuky,Upozornění,Upozornění;Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp630,A4,Fyzická agrese,Fyzická agrese,Rozhovor,Rozhovor;Fyzické zakročení,Neúspěch,Neúspěch,deep,Plochá,,,,,,0
+exp631,A1,Verbální narušování výuky,Verbální narušování výuky;Neverbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce,Upozornění,Upozornění;Rozhovor;Nerespektující komunikace;Důsledky,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp634,A7,Verbální agrese,Verbální agrese,Upozornění,Upozornění;Rozhovor;Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp636,A3,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Neverbální narušování výuky,Rozhovor,Rozhovor;Přemístění žáka;Nerespektující komunikace,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp637,A3,Fyzická agrese,Fyzická agrese;Verbální narušování výuky,Upozornění,Upozornění;Nerespektující komunikace;Rozhovor,Neúspěch,Neúspěch,deep,Plochá,Krátkodobý úspěch,2.0,,,,0
+exp638,A4,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Podpora;Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp64,A7,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Neverbální narušování výuky;Porušování třídních/školních pravidel;Diagnóza,Přemístění žáka,Přemístění žáka,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp641,A3,Verbální agrese,Verbální agrese;Fyzická agrese,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor;Upozornění;Důsledky,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp643,A2,Sebedestruktivní chování,Sebedestruktivní chování,Rozhovor,Rozhovor;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plochá,,,,,,0
+exp644,A4,Emoční výbuchy,Emoční výbuchy,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp645,A4,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Verbální agrese;Problémy s docházkou;Verbální narušování výuky,Upozornění,Upozornění;Nerespektující komunikace;Rozhovor;Důsledky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp646,A4,Šikana,Šikana,Rozhovor,Rozhovor;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp647,A1,Fyzická agrese,Fyzická agrese;Verbální agrese,Rozhovor,Rozhovor;Práce s kolektivem;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp648,A4,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp65,A7,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Fyzická agrese;Verbální agrese;Neverbální narušování výuky,Nerespektující komunikace,Nerespektující komunikace;Fyzické zakročení;Spolupráce s odborníky;Přemístění žáka;Upozornění;Podpora,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp650,A2,Šikana,Šikana;Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp651,A1,Fyzická agrese,Fyzická agrese;Verbální agrese;Porušování třídních/školních pravidel;Šikana,Spolupráce s odborníky,Spolupráce s odborníky;Práce s kolektivem;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp653,A1,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp654,A3,Verbální agrese,Verbální agrese;Fyzická agrese;Porušování třídních/školních pravidel,Spolupráce s odborníky,Spolupráce s odborníky;Podpora;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp655,A3,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Verbální agrese;Verbální narušování výuky;Neverbální narušování výuky;Diagnóza,Podpora,Podpora;Upozornění;Spolupráce s odborníky;Přemístění žáka;Rozhovor,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp659,A2,Verbální agrese,Verbální agrese,Upozornění,Upozornění,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp660,A4,Verbální narušování výuky,Verbální narušování výuky;Neverbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce;Lhaní a podvody;Verbální agrese,Rozhovor,Rozhovor;Spolupráce s odborníky;Důsledky;Upozornění;Nerespektující komunikace,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp662,A7,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Verbální narušování výuky;Šikana,Spolupráce s odborníky,Spolupráce s odborníky;Dohoda,Neúspěch,Neúspěch,deep,Plochá,,,,,,0
+exp663,A3,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Verbální agrese,Práce s kolektivem,Práce s kolektivem;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp664,A2,Problémy s docházkou,Problémy s docházkou,Rozhovor,Rozhovor;Spolupráce s odborníky;Důsledky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp665,A4,Problémy s docházkou,Problémy s docházkou,Rozhovor,Rozhovor;Spolupráce s odborníky;Přemístění žáka,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp666,A1,Problémy s docházkou,Problémy s docházkou;Porušování třídních/školních pravidel;Neplnění školních povinností/nepřipravenost na výuku,Rozhovor,Rozhovor;Důsledky;Dohoda;Spolupráce s odborníky,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp668,A1,Šikana,Šikana;Verbální agrese,Rozhovor,Rozhovor;Dohoda;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp669,A7,Šikana,Šikana;Lhaní a podvody,(Kázeňské) Tresty,(Kázeňské) Tresty;Spolupráce s odborníky;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp67,A2,Neverbální narušování výuky,Neverbální narušování výuky;Verbální narušování výuky,Upozornění,Upozornění;Rozhovor;Spolupráce s odborníky;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp670,A1,Verbální agrese,Verbální agrese;Fyzická agrese,Rozhovor,Rozhovor;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp671,A7,Lhaní a podvody,Lhaní a podvody;Šikana;Verbální agrese,Rozhovor,Rozhovor;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp672,A7,Neverbální narušování výuky,Neverbální narušování výuky,Nerespektující komunikace,Nerespektující komunikace;Práce s kolektivem,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,1.0,,,,0
+exp673,A2,Verbální narušování výuky,Verbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce,Podpora,Podpora;Rozhovor;Spolupráce s odborníky,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp675,A1,Verbální agrese,Verbální agrese;Fyzická agrese;Neverbální narušování výuky;Verbální narušování výuky,Upozornění,Upozornění;Rozhovor;Spolupráce s odborníky;Práce s kolektivem;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp676,A3,Lhaní a podvody,Lhaní a podvody,Rozhovor,Rozhovor;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp677,A3,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Spolupráce s odborníky,,,deep,Plochá,,,,,,0
+exp678,A1,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Verbální narušování výuky;Neverbální narušování výuky;Verbální agrese,Nerespektující komunikace,Nerespektující komunikace;(Kázeňské) Tresty,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp68,A7,Lhaní a podvody,Lhaní a podvody;Verbální agrese,Rozhovor,Rozhovor;Práce s kolektivem;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp680,A7,Verbální agrese,Verbální agrese;Verbální narušování výuky,Spolupráce s odborníky,Spolupráce s odborníky;(Kázeňské) Tresty;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp681,A1,Fyzická agrese,Fyzická agrese;Emoční výbuchy,Upozornění,Upozornění;Nerespektující komunikace;Fyzické zakročení;Rozhovor;Spolupráce s odborníky;Podpora;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp682,A2,Fyzická agrese,Fyzická agrese,Rozhovor,Rozhovor;Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plochá,,4.0,,,,0
+exp683,A2,Fyzická agrese,Fyzická agrese,Rozhovor,Rozhovor,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp684,A2,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku,Rozhovor,Rozhovor;Upozornění;Nerespektující komunikace,Neúspěch,Neúspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp686,A4,Problémy s docházkou,Problémy s docházkou;Neplnění školních povinností/nepřipravenost na výuku,Rozhovor,Rozhovor;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plochá,,,,,,0
+exp69,A1,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Problémy s docházkou,Rozhovor,Rozhovor;Spolupráce s odborníky;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp690,A1,Fyzická agrese,Fyzická agrese;Diagnóza;Emoční výbuchy;Verbální agrese,Rozhovor,Rozhovor;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp691,A7,Diagnóza,Diagnóza,Práce s kolektivem,Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp693,A3,Diagnóza,Diagnóza;Fyzická agrese;Emoční výbuchy,Nerespektující komunikace,Nerespektující komunikace;Přemístění žáka;Důsledky;Upozornění,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,1.0,,,,0
+exp694,A1,Fyzická agrese,Fyzická agrese;Verbální agrese;Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Důsledky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp695,A1,Problémy s docházkou,Problémy s docházkou;Neplnění školních povinností/nepřipravenost na výuku;Diagnóza,Rozhovor,Rozhovor;Podpora;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,4.0,,,,0
+exp696,A4,Problémy s docházkou,Problémy s docházkou;Diagnóza;Neplnění školních povinností/nepřipravenost na výuku,Rozhovor,Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plochá,,4.0,,,,0
+exp699,A7,Diagnóza,Diagnóza;Neplnění školních povinností/nepřipravenost na výuku;Nezvládání výuky,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp7,A2,Emoční výbuchy,Emoční výbuchy,Rozhovor,Rozhovor;Podpora,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp70,A1,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Neplnění školních povinností/nepřipravenost na výuku,Nerespektující komunikace,Nerespektující komunikace;Důsledky;(Kázeňské) Tresty;Rozhovor;Dohoda,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp700,A1,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Přemístění žáka,Přemístění žáka,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp701,A3,Problémy s docházkou,Problémy s docházkou;Neplnění školních povinností/nepřipravenost na výuku,Spolupráce s odborníky,Spolupráce s odborníky;Podpora;Proaktivní řešení;Rozhovor,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp702,A4,Verbální narušování výuky,Verbální narušování výuky;Neverbální narušování výuky,Upozornění,Upozornění;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp704,A1,Emoční výbuchy,Emoční výbuchy;Verbální narušování výuky;Verbální agrese;Fyzická agrese,Přemístění žáka,Přemístění žáka;Podpora;Rozhovor;Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp706,A3,Fyzická agrese,Fyzická agrese;Verbální agrese,Nerespektující komunikace,Nerespektující komunikace;Spolupráce s odborníky;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp707,A1,Diagnóza,Diagnóza;Emoční výbuchy;Fyzická agrese,Rozhovor,Rozhovor;Spolupráce s odborníky;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp708,A2,Šikana,Šikana,Rozhovor,Rozhovor;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp709,A7,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Verbální narušování výuky;Neverbální narušování výuky,Upozornění,Upozornění;Přemístění žáka;Rozhovor,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp71,A7,Verbální agrese,Verbální agrese;Porušování třídních/školních pravidel;Verbální narušování výuky;Problémy s docházkou,Upozornění,Upozornění;Přemístění žáka;Nerespektující komunikace;Spolupráce s odborníky;(Kázeňské) Tresty,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp711,A2,Emoční výbuchy,Emoční výbuchy,Rozhovor,Rozhovor;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp712,A4,Problémy s docházkou,Problémy s docházkou;Nevěnování se výuce/Nepozornost při výuce,Podpora,Podpora,Neúspěch,Neúspěch,,Plná,Neúspěch,3.0,,,,0
+exp713,A1,Diagnóza,Diagnóza;Nezvládání výuky,Rozhovor,Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp715,A1,Diagnóza,Diagnóza;Emoční výbuchy;Verbální agrese;Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Rozhovor;Podpora;Dohoda;Důsledky;(Kázeňské) Tresty,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp716,A7,Verbální narušování výuky,Verbální narušování výuky,Upozornění,Upozornění;Důsledky;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp717,A7,Diagnóza,Diagnóza;Nezvládání výuky;Nevěnování se výuce/Nepozornost při výuce,Upozornění,Upozornění;Přemístění žáka;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp72,A4,Emoční výbuchy,Emoční výbuchy,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor;Přemístění žáka,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp720,A1,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Diagnóza,Upozornění,Upozornění;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp722,A2,Fyzická agrese,Fyzická agrese,Rozhovor,Rozhovor;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp723,A7,Problémy s docházkou,Problémy s docházkou;Nezvládání výuky,Rozhovor,Rozhovor;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp724,A3,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Verbální narušování výuky;Fyzická agrese;Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Rozhovor;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp725,A4,Diagnóza,Diagnóza;Lhaní a podvody,Spolupráce s odborníky,Spolupráce s odborníky;Práce s kolektivem,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp726,A2,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce,Dohoda,Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp728,A1,Problémy s docházkou,Problémy s docházkou;Nevěnování se výuce/Nepozornost při výuce;Neplnění školních povinností/nepřipravenost na výuku;Nezvládání výuky;Verbální agrese;Porušování třídních/školních pravidel,Podpora,Podpora;Upozornění;Spolupráce s odborníky;Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp729,A3,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor;Přemístění žáka;Důsledky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp73,A1,Verbální narušování výuky,Verbální narušování výuky;Verbální agrese,Upozornění,Upozornění;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp730,A1,Emoční výbuchy,Emoční výbuchy;Verbální agrese,Rozhovor,Rozhovor;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp733,A2,Fyzická agrese,Fyzická agrese,Práce s kolektivem,Práce s kolektivem;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp735,A7,Lhaní a podvody,Lhaní a podvody;Neplnění školních povinností/nepřipravenost na výuku;Problémy s docházkou;Verbální agrese,Upozornění,Upozornění;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp740,A2,Verbální agrese,Verbální agrese;Fyzická agrese;Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Spolupráce s odborníky;Přemístění žáka,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp741,A7,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce,Podpora,Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp743,A3,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Verbální narušování výuky;Diagnóza;Neverbální narušování výuky;Porušování třídních/školních pravidel,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp744,A1,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Fyzická agrese;Fyzická agrese;Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Rozhovor;Důsledky;Důsledky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp754,A7,Emoční výbuchy,Emoční výbuchy,Rozhovor,Rozhovor;Přemístění žáka,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp755,A2,Sebedestruktivní chování,Sebedestruktivní chování,Rozhovor,Rozhovor;Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,1.0,,,,0
+exp756,A7,Fyzická agrese,Fyzická agrese;Diagnóza,Rozhovor,Rozhovor;Práce s kolektivem;Přemístění žáka,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp757,A4,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce,Podpora,Podpora,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp759,A1,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Důsledky,Důsledky;Dohoda;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp760,A3,Verbální agrese,Verbální agrese;Verbální narušování výuky,Rozhovor,Rozhovor;Podpora;Důsledky,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp762,A4,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Nevěnování se výuce/Nepozornost při výuce;Problémy s docházkou,Rozhovor,Rozhovor;Spolupráce s odborníky,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp763,A3,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Neverbální narušování výuky,Podpora,Podpora,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plochá,,,,,,0
+exp764,A2,Verbální agrese,Verbální agrese,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp765,A2,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp767,A4,Fyzická agrese,Fyzická agrese;Sebedestruktivní chování;Verbální agrese;Emoční výbuchy,Nerespektující komunikace,Nerespektující komunikace;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,2.0,,,,0
+exp768,A7,Verbální agrese,Verbální agrese;Verbální narušování výuky,Rozhovor,Rozhovor;Přemístění žáka;Práce s kolektivem;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp769,A2,Verbální agrese,Verbální agrese;Fyzická agrese,Rozhovor,Rozhovor;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp77,A2,Verbální agrese,Verbální agrese,(Kázeňské) Tresty,(Kázeňské) Tresty;Nerespektující komunikace,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp770,A1,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Nevěnování se výuce/Nepozornost při výuce;Nezvládání výuky;Diagnóza,Rozhovor,Rozhovor;Práce s kolektivem;Spolupráce s odborníky,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp771,A1,Problémy s docházkou,Problémy s docházkou;Neplnění školních povinností/nepřipravenost na výuku,Rozhovor,Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp772,A7,Šikana,Šikana;Verbální narušování výuky;Neverbální narušování výuky,Rozhovor,Rozhovor;(Kázeňské) Tresty,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp775,A1,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Verbální narušování výuky;Neverbální narušování výuky,Upozornění,Upozornění;Rozhovor;Přemístění žáka,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,2.0,,,,0
+exp778,A3,Fyzická agrese,Fyzická agrese;Emoční výbuchy,Rozhovor,Rozhovor;Spolupráce s odborníky;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp781,A2,Emoční výbuchy,Emoční výbuchy,Rozhovor,Rozhovor,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp782,A7,Diagnóza,Diagnóza;Emoční výbuchy;Lhaní a podvody;Porušování třídních/školních pravidel;Neverbální narušování výuky;Verbální narušování výuky;Fyzická agrese;Verbální agrese,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp784,A1,Diagnóza,Diagnóza;Verbální agrese;Fyzická agrese,Přemístění žáka,Přemístění žáka;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,4.0,,,,0
+exp785,A1,Šikana,Šikana;Porušování třídních/školních pravidel,Práce s kolektivem,Práce s kolektivem;Důsledky;Podpora,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp787,A7,Verbální agrese,Verbální agrese;Verbální narušování výuky,Práce s kolektivem,Práce s kolektivem,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp790,A4,Verbální narušování výuky,Verbální narušování výuky;Neverbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce,Spolupráce s odborníky,Spolupráce s odborníky;Podpora,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp791,A4,Verbální agrese,Verbální agrese;Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp792,A4,Fyzická agrese,Fyzická agrese;Nevěnování se výuce/Nepozornost při výuce;Porušování třídních/školních pravidel,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp794,A3,Diagnóza,Diagnóza;Šikana,Rozhovor,Rozhovor;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp795,A3,Verbální narušování výuky,Verbální narušování výuky;Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Práce s kolektivem;Spolupráce s odborníky;Přemístění žáka;Důsledky,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp797,A4,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Verbální agrese,Důsledky,Důsledky;Nerespektující komunikace,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp798,A4,Verbální narušování výuky,Verbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce;Neverbální narušování výuky,Podpora,Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp799,A4,Verbální agrese,Verbální agrese,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor;Práce s kolektivem;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp8,A7,Problémy s docházkou,Problémy s docházkou;Porušování třídních/školních pravidel,Spolupráce s odborníky,Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp801,A2,Neverbální narušování výuky,Neverbální narušování výuky,Rozhovor,Rozhovor;Podpora,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp802,A1,Fyzická agrese,Fyzická agrese;Emoční výbuchy;Neplnění školních povinností/nepřipravenost na výuku;Sebedestruktivní chování,Podpora,Podpora;Spolupráce s odborníky;Rozhovor;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Neúspěch,4.0,,,,0
+exp803,A1,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Problémy s docházkou,Rozhovor,Rozhovor;Nerespektující komunikace;Podpora;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp805,A1,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Nezvládání výuky,Rozhovor,Rozhovor;Podpora;Nerespektující komunikace;Spolupráce s odborníky,,,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp806,A7,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Neplnění školních povinností/nepřipravenost na výuku;Verbální narušování výuky,Rozhovor,Rozhovor;Přemístění žáka;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp807,A3,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Neverbální narušování výuky;Verbální narušování výuky;Diagnóza,Podpora,Podpora,Částečný úspěch,Krátkodobý úspěch,deep,Plochá,,,,,,0
+exp808,A4,Sebedestruktivní chování,Sebedestruktivní chování,Podpora,Podpora;Rozhovor;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp809,A1,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Fyzická agrese;Lhaní a podvody;Diagnóza,Rozhovor,Rozhovor;Důsledky,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp81,A3,Verbální narušování výuky,Verbální narušování výuky;Fyzická agrese;Neverbální narušování výuky,Upozornění,Upozornění;(Kázeňské) Tresty;Přemístění žáka,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp810,A3,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Verbální narušování výuky;Neverbální narušování výuky,Rozhovor,Rozhovor;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp811,A7,Fyzická agrese,Fyzická agrese;Diagnóza,Spolupráce s odborníky,Spolupráce s odborníky;Přemístění žáka;Fyzické zakročení,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp813,A7,Fyzická agrese,Fyzická agrese;Verbální agrese,Rozhovor,Rozhovor;Dohoda,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp815,A7,Verbální agrese,Verbální agrese;Emoční výbuchy;Verbální narušování výuky;Sebedestruktivní chování;Verbální agrese,Přemístění žáka,Přemístění žáka;Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp816,A7,Fyzická agrese,Fyzická agrese;Verbální narušování výuky,Rozhovor,Rozhovor;Nerespektující komunikace;Spolupráce s odborníky;(Kázeňské) Tresty,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp817,A1,Fyzická agrese,Fyzická agrese,(Kázeňské) Tresty,(Kázeňské) Tresty;Rozhovor;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp818,A3,Šikana,Šikana,Rozhovor,Rozhovor;Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp819,A2,Fyzická agrese,Fyzická agrese,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp820,A2,Sebedestruktivní chování,Sebedestruktivní chování;Verbální agrese,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp821,A2,Emoční výbuchy,Emoční výbuchy,Rozhovor,Rozhovor;Podpora;Spolupráce s odborníky,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp824,A1,Verbální agrese,Verbální agrese,Upozornění,Upozornění;Rozhovor,Neúspěch,Neúspěch,deep,Plochá,,,,,,0
+exp825,A7,Šikana,Šikana,Práce s kolektivem,Práce s kolektivem;Spolupráce s odborníky;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp826,A2,Verbální agrese,Verbální agrese,Rozhovor,Rozhovor,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp829,A4,Verbální narušování výuky,Verbální narušování výuky;Neverbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce,Upozornění,Upozornění;Rozhovor;Důsledky;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp83,A2,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Šikana,Rozhovor,Rozhovor;Upozornění,Neúspěch,Neúspěch,deep,Plochá,Neúspěch,3.0,,,,0
+exp830,A1,Fyzická agrese,Fyzická agrese,Spolupráce s odborníky,Spolupráce s odborníky;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp831,A2,Fyzická agrese,Fyzická agrese;Verbální agrese,Rozhovor,Rozhovor;Práce s kolektivem;Spolupráce s odborníky;Důsledky;Podpora,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp832,A2,Verbální agrese,Verbální agrese,Rozhovor,Rozhovor,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp834,A3,Fyzická agrese,Fyzická agrese;Diagnóza;Verbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce;Neplnění školních povinností/nepřipravenost na výuku,Rozhovor,Rozhovor;Přemístění žáka;Důsledky,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp836,A2,Verbální narušování výuky,Verbální narušování výuky;Nezvládání výuky,Podpora,Podpora,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp837,A4,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Rozhovor;Podpora;Upozornění,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp838,A1,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Problémy s docházkou;Diagnóza,Dohoda,Dohoda;Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp840,A1,Verbální agrese,Verbální agrese,Rozhovor,Rozhovor;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp842,A7,Nezvládání výuky,Nezvládání výuky,,,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp843,A7,Diagnóza,Diagnóza;Neplnění školních povinností/nepřipravenost na výuku,Podpora,Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp844,A1,Verbální agrese,Verbální agrese;Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Spolupráce s odborníky;Dohoda;Práce s kolektivem;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp847,A7,Diagnóza,Diagnóza;Fyzická agrese;Verbální agrese;Emoční výbuchy,Dohoda,Dohoda;Spolupráce s odborníky;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp848,A2,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Emoční výbuchy,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp849,A2,Emoční výbuchy,Emoční výbuchy;Diagnóza,Spolupráce s odborníky,Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plochá,,,,,,0
+exp850,A3,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Fyzická agrese;Verbální agrese,Rozhovor,Rozhovor;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp851,A3,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Neverbální narušování výuky,Rozhovor,Rozhovor;Práce s kolektivem;Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp852,A4,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp853,A4,Neverbální narušování výuky,Neverbální narušování výuky,Rozhovor,Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp854,A3,Verbální narušování výuky,Verbální narušování výuky;Neverbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce;Fyzická agrese,Důsledky,Důsledky;Proaktivní řešení;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp855,A1,Verbální agrese,Verbální agrese;Neverbální narušování výuky;Verbální narušování výuky,(Kázeňské) Tresty,(Kázeňské) Tresty;Rozhovor;Důsledky;Podpora;Nerespektující komunikace,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp856,A2,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Spolupráce s odborníky,Spolupráce s odborníky;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp857,A1,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Nevěnování se výuce/Nepozornost při výuce,Důsledky,Důsledky;Rozhovor;Podpora;Dohoda,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp859,A3,Emoční výbuchy,Emoční výbuchy;Diagnóza,Rozhovor,Rozhovor;Spolupráce s odborníky;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp86,A3,Fyzická agrese,Fyzická agrese,Přemístění žáka,Přemístění žáka;Podpora;Upozornění,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp860,A1,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Neplnění školních povinností/nepřipravenost na výuku;Verbální narušování výuky;Fyzická agrese,Podpora,Podpora;Spolupráce s odborníky;Přemístění žáka;Důsledky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp861,A2,Nezvládání výuky,Nezvládání výuky,Rozhovor,Rozhovor;Podpora;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp862,A1,Verbální narušování výuky,Verbální narušování výuky;Neverbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce;Neplnění školních povinností/nepřipravenost na výuku;Fyzická agrese;Verbální agrese,Podpora,Podpora;Důsledky;Rozhovor;Nerespektující komunikace,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp863,A1,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Neverbální narušování výuky;Verbální agrese,Rozhovor,Rozhovor;Dohoda,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp867,A3,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Porušování třídních/školních pravidel,Upozornění,Upozornění;Nerespektující komunikace,,,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp869,A4,Verbální narušování výuky,Verbální narušování výuky,Důsledky,Důsledky;Rozhovor,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp870,A3,Verbální agrese,Verbální agrese;Fyzická agrese,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor;Důsledky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp871,A1,Diagnóza,Diagnóza,,,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp874,A2,Problémy s docházkou,Problémy s docházkou,Rozhovor,Rozhovor;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp875,A2,Problémy s docházkou,Problémy s docházkou,Rozhovor,Rozhovor;Práce s kolektivem;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,4.0,,,,0
+exp876,A7,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Spolupráce s odborníky,Spolupráce s odborníky;(Kázeňské) Tresty,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp88,A7,Verbální narušování výuky,Verbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce,Upozornění,Upozornění;Rozhovor;Spolupráce s odborníky;(Kázeňské) Tresty,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp882,A3,Emoční výbuchy,Emoční výbuchy;Diagnóza,Spolupráce s odborníky,Spolupráce s odborníky;Přemístění žáka,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp883,A3,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Porušování třídních/školních pravidel;Verbální narušování výuky;Verbální agrese,Nerespektující komunikace,Nerespektující komunikace;Upozornění;(Kázeňské) Tresty,Neúspěch,Neúspěch,deep,Plná,Dlouhodobý úspěch,2.0,,,,0
+exp886,A4,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku,Rozhovor,Rozhovor;Podpora,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp887,A2,Fyzická agrese,Fyzická agrese,Rozhovor,Rozhovor;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp888,A4,Verbální narušování výuky,Verbální narušování výuky,Rozhovor,Rozhovor,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp89,A1,Lhaní a podvody,Lhaní a podvody;Porušování třídních/školních pravidel;Verbální agrese,Upozornění,Upozornění;Rozhovor;Podpora,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp891,A2,Šikana,Šikana,Rozhovor,Rozhovor;Práce s kolektivem;Spolupráce s odborníky;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp893,A1,Verbální narušování výuky,Verbální narušování výuky;Neverbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce,Upozornění,Upozornění;Podpora;Fyzické zakročení;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp894,A4,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Upozornění,Upozornění;Důsledky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp895,A2,Verbální agrese,Verbální agrese;Fyzická agrese,Dohoda,Dohoda;Spolupráce s odborníky;Rozhovor;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plochá,Krátkodobý úspěch,3.0,,,,0
+exp897,A3,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Verbální agrese,Spolupráce s odborníky,Spolupráce s odborníky;Upozornění,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,1.0,,,,0
+exp899,A1,Problémy s docházkou,Problémy s docházkou,Rozhovor,Rozhovor;Podpora;Dohoda,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp9,A4,Fyzická agrese,Fyzická agrese,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp90,A1,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Fyzická agrese;Verbální agrese,Fyzické zakročení,Fyzické zakročení;Rozhovor;Spolupráce s odborníky,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp901,A4,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp902,A4,Verbální narušování výuky,Verbální narušování výuky,,,Neúspěch,Neúspěch,deep,Plná,Dlouhodobý úspěch,2.0,,,,0
+exp904,A7,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Lhaní a podvody,Spolupráce s odborníky,Spolupráce s odborníky;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp910,A7,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku,Podpora,Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp911,A7,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Diagnóza,Rozhovor,Rozhovor;Práce s kolektivem,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp912,A4,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp913,A2,Šikana,Šikana,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp914,A3,Fyzická agrese,Fyzická agrese;Verbální agrese,Dohoda,Dohoda;Spolupráce s odborníky;Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp916,A2,Šikana,Šikana,Práce s kolektivem,Práce s kolektivem;Spolupráce s odborníky;Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,4.0,,,,0
+exp918,A2,Verbální narušování výuky,Verbální narušování výuky,Fyzické zakročení,Fyzické zakročení,Neúspěch,Neúspěch,deep,Plochá,,,,,,0
+exp92,A7,Neverbální narušování výuky,Neverbální narušování výuky;Neverbální narušování výuky,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,1.0,,,,0
+exp923,A2,Sebedestruktivní chování,Sebedestruktivní chování,Rozhovor,Rozhovor;Spolupráce s odborníky;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp928,A1,Fyzická agrese,Fyzická agrese;Verbální narušování výuky;Neverbální narušování výuky;Verbální agrese,Spolupráce s odborníky,Spolupráce s odborníky;Přemístění žáka;Důsledky;Podpora,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp931,A3,Verbální agrese,Verbální agrese;Šikana,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp932,A4,Verbální narušování výuky,Verbální narušování výuky,Rozhovor,Rozhovor,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,1.0,,,,0
+exp934,A2,Diagnóza,Diagnóza,Spolupráce s odborníky,Spolupráce s odborníky;Práce s kolektivem;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp935,A2,Neverbální narušování výuky,Neverbální narušování výuky;Verbální narušování výuky,Upozornění,Upozornění;Nerespektující komunikace;Podpora,Neúspěch,Neúspěch,deep,Plochá,,,,,,0
+exp937,A3,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Emoční výbuchy;Fyzická agrese;Verbální agrese;Neverbální narušování výuky;Diagnóza,Nerespektující komunikace,Nerespektující komunikace;Rozhovor;(Kázeňské) Tresty;Důsledky;Přemístění žáka,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp938,A1,Verbální narušování výuky,Verbální narušování výuky;Neverbální narušování výuky;Nezvládání výuky,Upozornění,Upozornění;Fyzické zakročení;Podpora,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp939,A7,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce,,,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp940,A7,Fyzická agrese,Fyzická agrese;Šikana,Rozhovor,Rozhovor;Práce s kolektivem;Spolupráce s odborníky;Práce s kolektivem;(Kázeňské) Tresty,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp941,A1,Emoční výbuchy,Emoční výbuchy;Fyzická agrese,Rozhovor,Rozhovor;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp943,A2,Verbální agrese,Verbální agrese,Fyzické zakročení,Fyzické zakročení,Neúspěch,Neúspěch,deep,Plochá,,,,,,0
+exp946,A3,Fyzická agrese,Fyzická agrese;Verbální agrese,Fyzické zakročení,Fyzické zakročení;Spolupráce s odborníky;Rozhovor;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp947,A3,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel;Verbální agrese,Rozhovor,Rozhovor;Upozornění;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp948,A1,Problémy s docházkou,Problémy s docházkou;Nevěnování se výuce/Nepozornost při výuce;Verbální agrese;Porušování třídních/školních pravidel;Fyzická agrese,Rozhovor,Rozhovor;Spolupráce s odborníky;Přemístění žáka;Dohoda,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp95,A2,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Verbální narušování výuky,Podpora,Podpora;Přemístění žáka,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp950,A2,Nezvládání výuky,Nezvládání výuky;Fyzická agrese,Podpora,Podpora,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp951,A2,Fyzická agrese,Fyzická agrese,Rozhovor,Rozhovor;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plochá,Krátkodobý úspěch,3.0,,,,0
+exp952,A3,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Verbální narušování výuky;Nezvládání výuky;Fyzická agrese;Neplnění školních povinností/nepřipravenost na výuku;Diagnóza,Podpora,Podpora;Rozhovor;Přemístění žáka;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp953,A4,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp956,A1,Verbální narušování výuky,Verbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce,Upozornění,Upozornění;Nerespektující komunikace,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp957,A4,Diagnóza,Diagnóza;Šikana,Rozhovor,Rozhovor;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,2.0,,,,0
+exp959,A1,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Neplnění školních povinností/nepřipravenost na výuku;Verbální narušování výuky;Neverbální narušování výuky;Verbální agrese,Rozhovor,Rozhovor;Přemístění žáka,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp96,A4,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Neplnění školních povinností/nepřipravenost na výuku;Porušování třídních/školních pravidel,Rozhovor,Rozhovor;Podpora,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp960,A3,Fyzická agrese,Fyzická agrese;Verbální agrese;Verbální narušování výuky,Upozornění,Upozornění;Rozhovor;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp961,A4,Diagnóza,Diagnóza;Verbální agrese;Fyzická agrese;Neverbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce,Podpora,Podpora;(Kázeňské) Tresty;Přemístění žáka;Rozhovor;Nerespektující komunikace,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp962,A1,Fyzická agrese,Fyzická agrese;Verbální narušování výuky;Neverbální narušování výuky;Diagnóza,Upozornění,Upozornění;Rozhovor;Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp963,A1,Šikana,Šikana,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp966,A4,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce,Dohoda,Dohoda,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp970,A1,Problémy s docházkou,Problémy s docházkou,Upozornění,Upozornění;Rozhovor;Podpora,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp973,A1,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Neplnění školních povinností/nepřipravenost na výuku;Problémy s docházkou,Podpora,Podpora;Rozhovor,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp974,A2,Verbální agrese,Verbální agrese,Rozhovor,Rozhovor;Dohoda,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0
+exp976,A1,Verbální agrese,Verbální agrese;Verbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce;Neverbální narušování výuky;Porušování třídních/školních pravidel,Spolupráce s odborníky,Spolupráce s odborníky;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp977,A1,Neverbální narušování výuky,Neverbální narušování výuky;Verbální narušování výuky;Nevěnování se výuce/Nepozornost při výuce;Neplnění školních povinností/nepřipravenost na výuku,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp979,A4,Porušování třídních/školních pravidel,Porušování třídních/školních pravidel,Důsledky,Důsledky;Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp98,A4,Verbální agrese,Verbální agrese,Rozhovor,Rozhovor;Spolupráce s odborníky;Přemístění žáka,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp981,A4,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Problémy s docházkou,Podpora,Podpora;Rozhovor;Spolupráce s odborníky,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp983,A7,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce;Neplnění školních povinností/nepřipravenost na výuku;Verbální narušování výuky;Neverbální narušování výuky;Fyzická agrese,(Kázeňské) Tresty,(Kázeňské) Tresty;Spolupráce s odborníky,Částečný úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,2.0,,,,0
+exp984,A4,Verbální agrese,Verbální agrese;Verbální narušování výuky,Přemístění žáka,Přemístění žáka;Důsledky,Neúspěch,Neúspěch,deep,Plná,Neúspěch,1.0,,,,0
+exp985,A3,Nevěnování se výuce/Nepozornost při výuce,Nevěnování se výuce/Nepozornost při výuce,Rozhovor,Rozhovor;Dohoda;Podpora,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp986,A3,Verbální agrese,Verbální agrese;Verbální narušování výuky,Nerespektující komunikace,Nerespektující komunikace,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,1.0,,,,0
+exp987,A1,Fyzická agrese,Fyzická agrese;Šikana,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plná,Krátkodobý úspěch,3.0,,,,0
+exp988,A1,Šikana,Šikana;Verbální agrese;Porušování třídních/školních pravidel,Rozhovor,Rozhovor,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,3.0,,,,0
+exp989,A3,Diagnóza,Diagnóza;Emoční výbuchy;Nevěnování se výuce/Nepozornost při výuce,Přemístění žáka,Přemístění žáka;Podpora;Důsledky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp990,A4,Neplnění školních povinností/nepřipravenost na výuku,Neplnění školních povinností/nepřipravenost na výuku;Problémy s docházkou;Diagnóza,Rozhovor,Rozhovor;Spolupráce s odborníky;Podpora,Neúspěch,Neúspěch,deep,Plná,Neúspěch,3.0,,,,0
+exp991,A1,Verbální agrese,Verbální agrese,Rozhovor,Rozhovor;Práce s kolektivem,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp993,A2,Diagnóza,Diagnóza,Spolupráce s odborníky,Spolupráce s odborníky,Dlouhodobý úspěch,Dlouhodobý úspěch,deep,Plná,Dlouhodobý úspěch,4.0,,,,0
+exp995,A7,Verbální agrese,Verbální agrese;Sebedestruktivní chování;Fyzická agrese,Rozhovor,Rozhovor;Spolupráce s odborníky,Krátkodobý úspěch,Krátkodobý úspěch,deep,Plná,Krátkodobý úspěch,4.0,,,,0
+exp998,A3,Fyzická agrese,Fyzická agrese,Rozhovor,Rozhovor,Neúspěch,Neúspěch,deep,Plná,Neúspěch,2.0,,,,0

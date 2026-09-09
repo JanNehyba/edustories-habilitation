@@ -37,6 +37,7 @@ SUPPRESS = re.compile(r"<!--\s*necislo\b[^>]*-->")
 
 # tvrdá čísla (v pořadí priorit)
 NUM_PATTERNS = [
+    re.compile(r"[−\-]?\d+[.,]\d+\s?%"),       # desetinné procento (4,7 %)
     re.compile(r"[−\-]?\d+[.,]\d+"),          # desetinné (0,64 / -0.85)
     re.compile(r"\d{1,3}(?: \d{3})+"),        # 1 319 (mezera jako oddělovač tisíců)
     re.compile(r"\d+\s?%"),                   # 72 % / 72%
@@ -104,7 +105,7 @@ def hard_numbers(line: str) -> list[str]:
             if any(a < m.end() and m.start() < b for a, b in taken):
                 continue
             tok = m.group(0)
-            if pat is NUM_PATTERNS[3]:  # celá čísla
+            if pat is NUM_PATTERNS[-1]:  # celá čísla
                 if int(tok) < 20:
                     continue
             taken.append((m.start(), m.end()))

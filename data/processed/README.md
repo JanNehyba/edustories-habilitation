@@ -10,6 +10,13 @@ pseudonymy). Slouží k ověření čísel v knize, ne jako náhrada korpusu.
   (id + štítky, žádný text). Studie 2.
 - `kap7_hodnoceni_pseudo.csv` — hodnocení dvojic řešení (id, dimenze,
   hodnocení, zdroj, štítky přístupů; anotátorky A1–A6, žádný text). Studie 3.
+- `k3_wide.csv` — hodnocení třetí etapy (řez K3_freeze_2026-09-08): id,
+  anotátorka A2/A12, kvalita, dopad, vhodnost, příznaky komentářů, délky
+  částí; žádný text. Studie 4.
+- `k1_k3_pary.csv` — kazuistiky s kódováním první i třetí etapy (id, štítky
+  K1 pod pseudonymy, hodnocení K3; žádný text). Studie 4.
+- `k3_predikce_raw.csv` — predikce dopadu jazykovým modelem (id, model, varianta,
+  předpověď, hodnocení obou anotátorek; žádný text). Oddíl 8.6.
 - `anotace_long_k*.csv`, `k1_rez_ids.csv`, `*_ids.csv`, `truncated_uids.csv` —
   odvozené anotační a pomocné tabulky.
 

@@ -36,7 +36,7 @@ HUMAN = [e for cols in KAMPANE.values() for e in cols]
 REGISTR = [
     ("–", "prosinec 2023 – únor 2024", "K1 zácvik (pokus)", "A1, A2, A5, A6",
      None, "kvalitativní kódy bez matice; kódovací kniha, strom V1→V2"),
-    ("k1_test_03_24", "březen 2024", "K1 test", "❓ (pět souborů)", "c1_k1_test_03_24", ""),
+    ("k1_test_03_24", "březen 2024", "K1 test", "pět anotátorek", "c1_k1_test_03_24", ""),
     ("k1_test_04_24", "duben 2024", "K1 test", "A1–A4, A7", "c1_k1_test_04_24", ""),
     ("k1_naostro_05_24", "od května 2024", "K1 finál", "A1–A4, A7",
      "c1_k1_naostro_05_24",
@@ -49,7 +49,7 @@ REGISTR = [
      "lidské kódy K1 sloučené do matice korpusu (provenience ověřena, kap. 4)"),
     ("k2_setkani10_04_25", "duben 2025", "K2 zácvik", "A1, A2, A8–A11",
      "c1_k2_setkani10_04_25", ""),
-    ("k2_anotace40_04_25", "duben 2025", "K2 zácvik 2", "A1, A2, A8–A12 ❓",
+    ("k2_anotace40_04_25", "duben 2025", "K2 zácvik 2", "A1, A2, A8–A12",
      "c1_k2_anotace40_04_25", ""),
     ("–", "červen 2025", "K2 příprava", "gpt-4o (strojově)", None,
      "generace srovnávacích řešení, ne anotace"),
@@ -60,13 +60,14 @@ REGISTR = [
      " soubor čítá 324 <!-- manifest kap7_k2_shoda_cisla: n_kazuistik=324 -->"
      " kazuistik (kapitola 7); zde uvedený počet = spárované na jednotný"
      " identifikátor"),
-    ("k3_zacvik_26", "2026", "K3 zácvik", "A2 ❓, A12 ❓", "c1_k3_zacvik_26", ""),
-    ("k3_pilot1_26", "2026", "K3 pilot 1", "A2 ❓, A12 ❓", "c1_k3_pilot1_26", ""),
-    ("k3_pilot2_26", "2026", "K3 pilot 2", "A2 ❓, A12 ❓", "c1_k3_pilot2_26", ""),
-    ("k3_final_26", "2026 (probíhá)", "K3 finál", "A2 ❓, A12 ❓", "c1_k3_final_26",
-     "stav k datu otisku matice pokrytí; freeze viz Studie 4"),
-    ("hf_publikovano_en", "podzim 2024 ❓", "publikace (ne anotace)", "–",
-     "c1_hf_publikovano_en", "veřejný dataset, výběr z řezu srpen 2024"),
+    ("k3_zacvik_26", "jaro 2026", "K3 zácvik", "A2, A12", "c1_k3_zacvik_26", ""),
+    ("k3_pilot1_26", "jaro 2026", "K3 pilot 1", "A2, A12", "c1_k3_pilot1_26", ""),
+    ("k3_pilot2_26", "jaro 2026", "K3 pilot 2", "A2, A12", "c1_k3_pilot2_26", ""),
+    ("k3_final_26", "březen až září 2026", "K3 finál", "A2, A12", "c1_k3_final_26",
+     "dělba práce s vestavěným překryvem; uzavřeno řezem K3_freeze_2026-09-08"
+     " (kapitola 8)"),
+    ("hf_publikovano_en", "září 2024", "publikace (ne anotace)", "–",
+     "c1_hf_publikovano_en", "veřejná datová sada, výběr z řezu srpen 2024"),
 ]
 
 
@@ -144,9 +145,9 @@ def main() -> None:
               " regenerovat skriptem 17")
     md.append("")
     md.append("Tato příloha dokládá registr anotačních událostí,")
-    md.append("rekonciliaci velikostí datových řezů a kanonický přehled měr shody.")
+    md.append("přehled velikostí datových řezů a přehled měr shody.")
     md.append("Úplná matice pokrytí (kazuistika × událost) je dostupná v doprovodném")
-    md.append("repozitáři jako `anotace_pokryti.csv`; zde uvádíme agregáty. Počty")
+    md.append("repozitáři jako tabulka pokrytí; zde uvádíme agregáty. Počty")
     md.append("kazuistik se vztahují k záznamům spárovaným na jednotný identifikátor")
     md.append("(kapitola 4); počty řádků v původních anotačních souborech se mohou")
     md.append("mírně lišit o záznamy, které se spárovat nepodařilo.")
@@ -154,8 +155,12 @@ def main() -> None:
     md.append("## C.1 Registr anotačních událostí")
     md.append("")
     md.append("**Tabulka C.1.** Anotační události tří etap (anotátorky pod"
-              " anonymizovanými pseudonymy A1–A12; ❓ = mapování pseudonymu"
-              " na osobu čeká na potvrzení).")
+              " anonymizovanými pseudonymy A1–A12).")
+    md.append("")
+    md.append("Číslo pseudonymu odpovídá pořadí, v němž se anotátorka zapojila do"
+              " projektu jako celku, nikoli pořadí uvnitř jednotlivé etapy. Táž osoba"
+              " proto vystupuje pod týmž pseudonymem ve všech kapitolách i v doprovodném"
+              " repozitáři; ve třetí etapě tak vedle sebe stojí A2 a A12.")
     md.append("")
     md.append("```{=latex}")
     md.append("\\footnotesize")
@@ -173,25 +178,25 @@ def main() -> None:
     md.append("")
     md.append("*Poznámka. Vygenerováno z matice pokrytí [skriptem přílohy C](https://github.com/JanNehyba/edustories-habilitation/blob/main/analyzy/scripts/17_priloha_c.py); metadata událostí dle datové dokumentace.*")
     md.append("")
-    md.append("## C.2 Rekonciliace velikostí řezů")
+    md.append("## C.2 Přehled velikostí datových řezů")
     md.append("")
     md.append("**Tabulka C.2.** Čísla, která se v knize a podkladech vztahují k „velikosti dat“, a jejich vztah.")
     md.append("")
     md.append("| Číslo | Co označuje | Zdroj |")
     md.append("|---|---|---|")
-    md.append(f"| {a('kap5_korpus_cisla', 'n_korpus_s6', tis(3202), '3202')} | zveřejněné kazuistiky, řez květen 2026 (S6) | zdrojová tabulka kap5 |")
-    md.append(f"| {a('kap5_korpus_cisla', 'rust_S4082024', tis(1695), '1695')} | řez srpen 2024 (S4; prostor identifikátorů druhé etapy) | zdrojová tabulka kap5 |")
-    md.append(f"| {a('kap5_korpus_cisla', 'rust_S5HFrelease', tis(1492), '1492')} | veřejný dataset (kurátorovaný výběr z S4); záznamy výběru odpovídají {a_c('c1_hf_publikovano_en', pocty['hf_publikovano_en'])} unikátním kazuistikám (Tabulka C.1) | zdrojové tabulky kap5 + příloha C |")
-    md.append(f"| {a('kap5_korpus_cisla', 'n_k1_rez', tis(1359), '1359')} | reprodukovatelný řez K1 (dedup ∧ lidská anotace v matici) | zdrojová tabulka kap5 |")
-    md.append(f"| {a('kap4_provenience_cisla', 'prov_rez_pokryto_lidskou', tis(1350), '1350')} | z řezu K1 s dochovaným přímým anotačním listem | zdrojová tabulka kap4_provenience |")
-    md.append(f"| {a('kap7_k2_shoda_cisla', 'n_kazuistik', tis(324), '324')} | analytický vzorek druhé etapy (zaslepené dvojice) | zdrojová tabulka kap7 |")
-    md.append("| přibližně třináct set <!-- necislo: historické číslo rukopisů, nerekonstruovatelné --> | dobový stav pracovní databáze ve starších rukopisech | kniha nepoužívá (kapitola 4) |")
+    md.append(f"| {a('kap5_korpus_cisla', 'n_korpus_s6', tis(3202), '3202')} | zveřejněné kazuistiky, řez květen 2026 (S6) | kapitola 5 |")
+    md.append(f"| {a('kap5_korpus_cisla', 'rust_S4082024', tis(1695), '1695')} | řez srpen 2024 (S4; prostor identifikátorů druhé etapy) | kapitola 5 |")
+    md.append(f"| {a('kap5_korpus_cisla', 'rust_S5HFrelease', tis(1492), '1492')} | veřejná datová sada (kurátorovaný výběr z S4); záznamy výběru odpovídají {a_c('c1_hf_publikovano_en', pocty['hf_publikovano_en'])} unikátním kazuistikám (Tabulka C.1) | kapitola 5, příloha C |")
+    md.append(f"| {a('kap5_korpus_cisla', 'n_k1_rez', tis(1359), '1359')} | reprodukovatelný řez K1 (deduplikované kazuistiky s lidskou anotací v matici) | kapitoly 4 a 5 |")
+    md.append(f"| {a('kap4_provenience_cisla', 'prov_rez_pokryto_lidskou', tis(1350), '1350')} | z řezu K1 s dochovaným přímým anotačním listem | kapitola 4 |")
+    md.append(f"| {a('kap7_k2_shoda_cisla', 'n_kazuistik', tis(324), '324')} | vzorek druhé etapy (zaslepené dvojice) | kapitola 7 |")
+    md.append("| přibližně třináct set <!-- necislo: historické číslo rukopisů, nerekonstruovatelné --> | stav pracovní databáze v dřívějších výstupech projektu | kapitola 4 |")
     md.append("")
-    md.append("*Poznámka. Hodnoty pocházejí ze zdrojových tabulek čísel citovaných v tomto přehledu; zdůvodnění viz kapitola 4.*")
+    md.append("*Poznámka. Hodnoty pocházejí z tabulek výsledných hodnot analýz citovaných v uvedených kapitolách; zdůvodnění viz kapitola 4.*")
     md.append("")
-    md.append("## C.3 Kanonický přehled měr shody")
+    md.append("## C.3 Přehled měr shody")
     md.append("")
-    md.append("**Tabulka C.3.** Shrnutí spolehlivosti napříč etapami (podrobnosti a intervaly spolehlivosti v kapitolách 6 a 7).")
+    md.append("**Tabulka C.3.** Shrnutí spolehlivosti napříč etapami (podrobnosti a intervaly spolehlivosti v kapitolách 6, 7 a 8).")
     md.append("")
     md.append("| Etapa | Veličina | Hodnota |")
     md.append("|---|---|---|")
@@ -213,7 +218,41 @@ def main() -> None:
     md.append(f"| K2 | α humanistická–behaviorální | {r7('alpha_ord_final_humanisticke')} |")
     md.append(f"| K2 | α systémová–situační | {r7('alpha_ord_final_systemove')} |")
     md.append(f"| K2 | Jaccard rámce (konvence článku) | {r7('jaccard_pristupy_obe_prazdne_shoda')} |")
-    md.append("| K3 | probíhá | viz Studie 4 po uzavření etapy <!-- necislo: bez hodnoty --> |")
+    kap8_path = TAB / "kap8_kvalita_cisla.csv"
+    if kap8_path.exists():
+        kap8 = load_manifest("kap8_kvalita_cisla")
+
+        def r8(key: str) -> str:
+            return a("kap8_kvalita_cisla", key, dc(float(kap8[key])), kap8[key])
+
+        md.append(f"| K3 | κ kvalita | {r8('shoda_kvalita_kappa')} |")
+        md.append(f"| K3 | AC1 kvalita | {r8('shoda_kvalita_ac1')} |")
+        md.append(f"| K3 | κ dopad | {r8('shoda_dopad_kappa')} |")
+        md.append(f"| K3 | vážená κ vhodnost | {r8('shoda_vhodnost_wkappa')} |")
+        md.append(f"| K1 × K3 | κ dopad mezi etapami | {r8('k1k3_dopad_kappa')} |")
+    else:
+        md.append("| K3 | shoda | viz kapitola 8 <!-- necislo: bez hodnoty --> |")
+
+    # predikční experiment (oddíl 8.6): model proti konsenzuálnímu štítku a lidský strop
+    pred_path = TAB / "kap8_predikce_cisla.csv"
+    if pred_path.exists():
+        pred = load_manifest("kap8_predikce_cisla")
+
+        def rp(key: str) -> str:
+            return a("kap8_predikce_cisla", key, dc(float(pred[key])), pred[key])
+
+        modely = sorted({k.split("_zero_shot_")[0][len("predikce_"):]
+                         for k in pred if "_zero_shot_konsenzus_bal_acc" in k})
+        for m in modely:
+            popis = m.replace("_", "-")
+            md.append(f"| K3 predikce | vyvážená přesnost modelu {popis} vůči shodě "
+                      f"anotátorek | {rp(f'predikce_{m}_zero_shot_konsenzus_bal_acc')} |")
+        if "predikce_clovek_clovek_bal_acc" in pred:
+            md.append("| K3 predikce | vyvážená přesnost A2 vůči A12 (lidský strop) | "
+                      f"{rp('predikce_clovek_clovek_bal_acc')} |")
+        if "predikce_majorita_bal_acc" in pred:
+            md.append("| K3 predikce | vyvážená přesnost hádání většinové třídy | "
+                      f"{rp('predikce_majorita_bal_acc')} |")
     md.append("")
     md.append("*Poznámka. Hodnoty ze [zdrojových čísel Studie 2](https://github.com/JanNehyba/edustories-habilitation/blob/main/vystupy/tabulky/kap6_kodovani_cisla.csv) a [zdrojových čísel Studie 3](https://github.com/JanNehyba/edustories-habilitation/blob/main/vystupy/tabulky/kap7_k2_shoda_cisla.csv) v doprovodném repozitáři.*")
     md.append("")
@@ -225,7 +264,7 @@ def main() -> None:
     md.append("- [x] Tabulky číslované C.1–C.3, s uvedeným zdrojem")
     md.append("- [x] Anonymizace: pouze pseudonymy A1–A12")
     md.append("- [x] Žádný em-dash; en-dash jen v rozsazích")
-    md.append("- [ ] Po K3 freeze regenerovat (řádek K3 finál a C.3) skriptem 17")
+    md.append("- [x] Po přepočtu matice pokrytí s finální třetí etapou regenerováno skriptem 17 (řádek K3 finál, C.3 z manifestu kap8; 8. 9. 2026)")
     md.append("- [ ] Zápis freeze přílohy do PLAN.md §1 log")
     md.append("")
 
