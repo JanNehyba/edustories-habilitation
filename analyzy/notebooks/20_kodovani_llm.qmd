@@ -20,7 +20,7 @@ the manifest `vystupy/tabulky/kap6_kodovani_cisla.csv`.
 
 ```{r setup}
 suppressPackageStartupMessages({
-  library(dplyr); library(tidyr); library(irr)
+  library(dplyr); library(tidyr); library(irr); library(digest)
 })
 SEED <- 20260714; set.seed(SEED)
 H2 <- normalizePath(file.path(getwd(), "../.."))
@@ -30,8 +30,7 @@ SROV_PUB <- file.path(H2, "data/processed/srovnani_k1_llm.csv")  # veřejná kop
 CLS7 <- file.path(CAPV, "vysledky_class_7.csv")
 S4   <- file.path(H2, "data/raw/korpus/matice/Poslední záloha databáze 4.9.2024/matrix-annotated-22-08-2024 (2).csv")
 LONG <- file.path(H2, "data/processed/anotace_long_k1.csv")
-sha256 <- function(p) strsplit(system2("shasum", c("-a", "256", shQuote(p)),
-                                       stdout = TRUE), " ")[[1]][1]
+sha256 <- function(path) digest::digest(file = path, algo = "sha256")
 manifest <- list()
 put <- function(metric, value, sha) manifest[[length(manifest) + 1]] <<-
   data.frame(metric = metric, value = round(as.numeric(value), 4), data_sha = sha)
@@ -39,14 +38,8 @@ put <- function(metric, value, sha) manifest[[length(manifest) + 1]] <<-
 # srovnani.csv = id + kategorie člověka i modelu, BEZ textů a jmen → bezpečné
 # zveřejnit. Autor čte zdroj z data/raw a zapisuje veřejnou kopii do
 # data/processed; Binder čte veřejnou kopii. Oba stejný obsah = stejná čísla.
-if (file.exists(SROV)) {
-  srov <- read.csv(SROV, sep = ";", encoding = "UTF-8")
-  write.csv(srov, SROV_PUB, row.names = FALSE)
-  SROV_SHA <- sha256(SROV)
-} else {
-  srov <- read.csv(SROV_PUB, encoding = "UTF-8")
-  SROV_SHA <- sha256(SROV_PUB)
-}
+srov <- read.csv(SROV_PUB, encoding = "UTF-8")
+SROV_SHA <- sha256(SROV_PUB)
 # srovnani.csv (id + kategorie člověka i modelu, BEZ textů a jmen) je jediný vstup
 # NUTNÝ pro míry shody → je veřejný v companionu a Studie 2 je plně reprodukovatelná
 # v Binderu. Soubory class_7 a matice slouží JEN k ověření provenience sloupců
@@ -106,26 +99,37 @@ if (HAVE_PROV) {
   # Binder / veřejný běh: provenienční soubory nejsou; míry shody se počítají
   # přímo ze sloupců srovnani.csv (člověk = solutions_annotated, model = main_category).
   j <- srov
+  provenance <- read.csv(file.path(H2, "data/processed/kap6_provenience_souhrn.csv"))
+  for (row_index in seq_len(nrow(provenance)))
+    put(provenance$metric[row_index], provenance$value[row_index], provenance$data_sha[row_index])
   cat("Provenienční soubory (class_7, matice) nejsou přítomny — běh z veřejného",
       "srovnani.csv. Ověření provenience sloupců bylo provedeno autorem (viz kap. 6.2);",
       "míry shody níže se počítají přímo z kategorií.\n")
 }
 HUMAN <- "solutions_annotated"; LLM <- "main_category"; SECONDARY <- "secondary_categories"
 cat("HUMAN =", HUMAN, "| LLM =", LLM, "| secondary = další štítky LLM\n")
-put("n_paru_llm_clovek", nrow(srov), SROV_SHA)
+put("n_archivnich_radku", nrow(srov), SROV_SHA)
 ```
 
-## LLM–human agreement (reproduction of κ = 0.64 / 72.16 %)
+## LLM–human agreement: complete labels and historical reproduction
 
 Exact match on the primary category; extended match (per the original CAPV
 code) counts agreement when the HUMAN label appears among the LLM's
-main + secondary labels. Cohen's κ on primary categories.
+main + secondary labels. Cohen's κ on primary categories. Empty labels are
+not categories. The historical calculation is retained under separate keys;
+the main calculation requires a nonempty human and model label.
 
 ```{r agreement}
 h <- first_label(j[[HUMAN]])
 l <- first_label(j[[LLM]])
 sec <- ifelse(is.na(j[[SECONDARY]]) | j[[SECONDARY]] %in% c("", "N/A"),
               "", j[[SECONDARY]])
+put("historicka_shoda_presna", mean(h == l, na.rm = TRUE), SROV_SHA)
+put("historicka_kappa", irr::kappa2(cbind(h, l))$value, SROV_SHA)
+valid_pairs <- !is.na(h) & h != "" & !is.na(l) & l != ""
+put("n_neuplnych_stitku", sum(!valid_pairs), SROV_SHA)
+h <- h[valid_pairs]; l <- l[valid_pairs]; sec <- sec[valid_pairs]
+put("n_paru_llm_clovek", length(h), SROV_SHA)
 exact <- mean(h == l, na.rm = TRUE)
 extended <- mean(mapply(function(hh, ll, ss) {
   hh %in% trimws(unlist(strsplit(paste(ll, ss, sep = ","), "[;,]")))
@@ -152,11 +156,10 @@ knitr::kable(data.frame(
            sprintf("[%.3f; %.3f]", ci_k[1], ci_k[2]))))
 ```
 
-Schema note: the comparison uses
+Schema note: the complete-label comparison uses
 `r length(setdiff(unique(na.omit(h)), ""))` distinct human solution categories
-(the core K1 codebook set, see appendix A; one pair has an empty human label —
-excluded from the count, kept in the agreement reproduction to match the
-original CAPV code). The public HF release uses a different label set —
+(the core K1 codebook set, see appendix A). The incomplete pair is excluded
+from the main analysis, not treated as a further class. The public HF release uses a different label set —
 documented drift, categories are never merged silently.
 
 ```{r schema}
@@ -192,32 +195,44 @@ write.csv(konf, file.path(TABDIR, "kap6_konfuzni_matice.csv"), row.names = FALSE
 knitr::kable(perkat, digits = 3, caption = "Shoda modelu s člověkem po kategoriích")
 ```
 
-## Disagreement examples (candidates for the qualitative box in ch. 6)
+## Post-audit sensitivity: exact overlap with archived prompt examples
 
-Candidates: human != model, solution text present in S6 (PUBLISHED cases only
-— book must not quote unpublished texts), short enough to quote. Printed here
-for the author to pick 2–3; the chosen ones are quoted verbatim in ch. 6.
+The public flags contain identifiers and exact-overlap indicators, never case
+texts. Matching used the full solution after NFC, case and whitespace
+normalisation against the examples in archived notebook cell 108 (zero-based).
+This is a retrospective sensitivity analysis of stored predictions, not a new
+held-out experiment. Independently verifying the flags requires the private
+source texts; the reported sensitivity statistics can be reproduced publicly.
 
-```{r neshody-kandidati}
-# Tento blok cituje TEXTY řešení (jen zveřejněné kazuistiky) → potřebuje plný
-# export S6, který je neveřejný. V Binderu chybí; kandidáti neshod jsou stejně
-# jen podklad pro výběr do knihy (finální tři jsou v kap. 6.5 vytištěné).
-S6P <- file.path(H2, "data/raw/korpus/export-2026-05/Edustories_export_may26_svabik_v2.csv")
-if (file.exists(S6P)) {
-  s6 <- read.csv(S6P, encoding = "UTF-8")
-  s6sol <- setNames(s6$solution_cs, as.character(s6$id))
-  mism <- j[which(ok)[hh != ll], c("id", "solutions_annotated", "main_category")]
-  mism$text <- s6sol[as.character(mism$id)]          # jen zveřejněné (S6 = published)
-  mism <- mism[!is.na(mism$text) & nchar(mism$text) > 60 & nchar(mism$text) < 420, ]
-  set.seed(SEED)
-  kand <- mism[sample(nrow(mism), min(6, nrow(mism))), ]
-  for (i in seq_len(nrow(kand)))
-    cat("### Kandidát", i, "(id", kand$id[i], ")\nČLOVĚK:", first_label(kand$solutions_annotated[i]),
-        "| MODEL:", first_label(kand$main_category[i]), "\n", kand$text[i], "\n\n")
-} else {
-  cat("Plný export S6 není přítomen (běh z veřejných dat) — kvalitativní příklady",
-      "neshod jsou vytištěny v kap. 6.5 knihy.\n")
-}
+```{r overlap-sensitivity}
+overlap_path <- file.path(H2, "data/processed/kap6_overlap_flags.csv")
+overlap_flags <- read.csv(overlap_path, encoding = "UTF-8")
+stopifnot(!anyDuplicated(overlap_flags$id), setequal(overlap_flags$id, srov$id))
+overlap_pairs <- left_join(srov, overlap_flags, by = "id")
+stopifnot(nrow(overlap_pairs) == nrow(srov), !anyNA(overlap_pairs$exact_overlap))
+overlap_sha <- digest::digest(paste(SROV_SHA, sha256(overlap_path)), algo = "sha256")
+put("n_vstupnich_prekryvu", sum(overlap_pairs$exact_overlap == 1), overlap_sha)
+clean_pairs <- overlap_pairs[overlap_pairs$exact_overlap == 0, ]
+clean_human <- first_label(clean_pairs[[HUMAN]])
+clean_model <- first_label(clean_pairs[[LLM]])
+complete_labels <- !is.na(clean_human) & clean_human != "" & !is.na(clean_model) & clean_model != ""
+clean_human <- clean_human[complete_labels]; clean_model <- clean_model[complete_labels]
+put("bez_prekryvu_n", length(clean_human), overlap_sha)
+put("bez_prekryvu_shoda", mean(clean_human == clean_model), overlap_sha)
+put("bez_prekryvu_kappa", irr::kappa2(cbind(clean_human, clean_model))$value, overlap_sha)
+set.seed(SEED)
+clean_bootstrap <- replicate(B, {
+  selected_pairs <- sample.int(length(clean_human), replace = TRUE)
+  c(mean(clean_human[selected_pairs] == clean_model[selected_pairs]),
+    irr::kappa2(cbind(clean_human[selected_pairs], clean_model[selected_pairs]))$value)
+})
+clean_accuracy_ci <- quantile(clean_bootstrap[1, ], c(.025, .975))
+clean_kappa_ci <- quantile(clean_bootstrap[2, ], c(.025, .975))
+put("bez_prekryvu_shoda_ci_lo", clean_accuracy_ci[1], overlap_sha)
+put("bez_prekryvu_shoda_ci_hi", clean_accuracy_ci[2], overlap_sha)
+put("bez_prekryvu_kappa_ci_lo", clean_kappa_ci[1], overlap_sha)
+put("bez_prekryvu_kappa_ci_hi", clean_kappa_ci[2], overlap_sha)
+knitr::kable(bind_rows(manifest) |> filter(grepl("^bez_prekryvu|^n_vstupnich|^historicka", metric)))
 ```
 
 ## K1 inter-annotator agreement (overlap subset, human coding)
@@ -262,13 +277,15 @@ k1_rows <- lapply(K1_DIMS, function(dm) {
   # Stabilní pořadí jednotek + vlastní seed pro každou dimenzi: změna jedné
   # dimenze nesmí posunout bootstrapové intervaly ostatních dimenzí.
   cases <- sort(unique(d$case_uid))
+  wide <- d |> pivot_wider(names_from = case_uid, values_from = hodnota, id_cols = anotator)
+  ratings <- as.matrix(wide[, -1, drop = FALSE])[, cases, drop = FALSE]
   set.seed(SEED + match(dm, K1_DIMS))
   boots <- vapply(seq_len(B), function(b) {
     samp <- sample(cases, replace = TRUE)
-    db <- bind_rows(lapply(seq_along(samp), function(i) {
-      x <- d[d$case_uid == samp[i], ]; x$case_uid <- paste0(x$case_uid, "_", i); x
-    }))
-    alpha_nom(db)["a"]
+    sampled_ratings <- ratings[, samp, drop = FALSE]
+    sampled_ratings <- sampled_ratings[, colSums(!is.na(sampled_ratings)) >= 2, drop = FALSE]
+    if (ncol(sampled_ratings) < 2) return(NA_real_)
+    suppressWarnings(irr::kripp.alpha(sampled_ratings, method = "nominal")$value)
   }, numeric(1))
   ci <- quantile(boots, c(.025, .975), na.rm = TRUE)
   put(paste0("k1_alpha_nom_", dm), base["a"], LONG_SHA)

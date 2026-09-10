@@ -120,7 +120,7 @@ def main() -> None:
     manifest_rows.append(("c2_multiplicita_1x", mult[1]))
 
     with OUT_MAN.open("w", newline="", encoding="utf-8") as fh:
-        w = csv.writer(fh)
+        w = csv.writer(fh, lineterminator="\n")
         w.writerow(["metric", "value", "skript", "data_sha", "seed", "datum"])
         for k, v in manifest_rows:
             w.writerow([k, v, SKRIPT, sha, "", date.today().isoformat()])
@@ -159,8 +159,10 @@ def main() -> None:
     md.append("")
     md.append("Číslo pseudonymu odpovídá pořadí, v němž se anotátorka zapojila do"
               " projektu jako celku, nikoli pořadí uvnitř jednotlivé etapy. Táž osoba"
-              " proto vystupuje pod týmž pseudonymem ve všech kapitolách i v doprovodném"
-              " repozitáři; ve třetí etapě tak vedle sebe stojí A2 a A12.")
+              " proto vystupuje pod týmž projektovým pseudonymem ve všech kapitolách;"
+              " ve třetí etapě tak vedle sebe stojí A2 a A12. Veřejná tabulka K2"
+              " používá samostatné lokální pseudonymy A1–A6. Jejich čísla nejsou"
+              " převodníkem na projektové pseudonymy ani prostředkem propojování osob.")
     md.append("")
     md.append("```{=latex}")
     md.append("\\footnotesize")
@@ -213,6 +215,7 @@ def main() -> None:
     md.append(f"| K1 (LLM × člověk) | přesná shoda | {r6('shoda_presna_llm')} |")
     md.append(f"| K1 (LLM × člověk) | rozšířená shoda | {r6('shoda_rozsirena_llm')} |")
     md.append(f"| K1 (LLM × člověk) | Cohenovo κ | {r6('kappa_llm_clovek')} |")
+    md.append(f"| K1 (LLM × člověk), bez zjištěných překryvů | retrospektivní κ | {r6('bez_prekryvu_kappa')} |")
     md.append(f"| K2 | α vhodnost | {r7('alpha_ord_final_vhodnost')} |")
     md.append(f"| K2 | α reaktivní–proaktivní | {r7('alpha_ord_final_reaktivni')} |")
     md.append(f"| K2 | α humanistická–behaviorální | {r7('alpha_ord_final_humanisticke')} |")
@@ -248,7 +251,7 @@ def main() -> None:
             md.append(f"| K3 predikce | vyvážená přesnost modelu {popis} vůči shodě "
                       f"anotátorek | {rp(f'predikce_{m}_zero_shot_konsenzus_bal_acc')} |")
         if "predikce_clovek_clovek_bal_acc" in pred:
-            md.append("| K3 predikce | vyvážená přesnost A2 vůči A12 (lidský strop) | "
+            md.append("| K3 čtení výstupu | vyvážená shoda A2 vůči A12 (jiná úloha než predikce) | "
                       f"{rp('predikce_clovek_clovek_bal_acc')} |")
         if "predikce_majorita_bal_acc" in pred:
             md.append("| K3 predikce | vyvážená přesnost hádání většinové třídy | "
@@ -268,6 +271,8 @@ def main() -> None:
     md.append("- [ ] Zápis freeze přílohy do PLAN.md §1 log")
     md.append("")
 
+    md = [line[:-1].replace("*Poznámka. ", "*Poznámka.* ", 1)
+          if line.startswith("*Poznámka. ") and line.endswith("*") else line for line in md]
     OUT_MD.write_text("\n".join(md), encoding="utf-8")
     print(f"Manifest: {len(manifest_rows)} metrik → {OUT_MAN.relative_to(ROOT)}")
     print(f"Příloha C: {len(md)} řádků → {OUT_MD.relative_to(ROOT)}")

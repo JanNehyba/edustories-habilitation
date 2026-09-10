@@ -84,7 +84,6 @@
       <a href="#kniha">Kniha</a>
       <a href="#data">Data</a>
       <a href="#analyzy">Analýzy</a>
-      <a href="#podklady">Podklady k řízení</a>
       <a href="#licence">Licence</a>
     </nav>
   </div>
@@ -99,26 +98,28 @@
   <p class="lead">Monografie zkoumá, jaké náročné chování žáků učitelé v praxi
   řeší a jak lze k výzkumu tohoto tématu využít velké jazykové modely. Opírá se
   o korpus <strong>Edustories</strong> (více než tři tisíce kazuistik, které
-  napsali studující učitelství a učitelé z praxe) a ve třech empirických
+  napsali studující učitelství a učitelé z praxe) a ve čtyřech empirických
   studiích popisuje typy náročného chování a jejich řešení, ověřuje, nakolik se
   jazykový model shoduje s lidskými anotátorkami, a srovnává řešení generovaná
-  umělou inteligencí s řešeními učitelů. Na této stránce najdete samotnou knihu,
-  zveřejněná data i analytický kód, takže každé číslo v knize si lze dohledat až
-  k datům a výpočtu, z něhož vzešlo.</p>
+  umělou inteligencí s řešeními učitelů. Čtvrtá studie zkoumá kvalitu kazuistik a predikci dopadu. Na této stránce najdete
+  odvozená data, analytický kód a popis rozsahu ověřitelnosti výsledků.</p>
 
   <p class="ext">Související: <a href="https://edustories.cz/" target="_blank" rel="noopener">platforma Edustories ↗</a>
   &nbsp;·&nbsp; <a href="https://huggingface.co/datasets/MU-NLPC/Edustories-en" target="_blank" rel="noopener">dataset na Hugging Face ↗</a>
   &nbsp;·&nbsp; <a href="https://github.com/JanNehyba/edustories-habilitation" target="_blank" rel="noopener">repozitář na GitHubu ↗</a></p>
 
   <h2 id="kniha">Kniha</h2>
+  <p class="pdfmeta"><a href="vystupy/export/habilitace2-CZ.pdf" target="_blank" rel="noopener">Otevřít knihu ↗</a> · <a href="vystupy/export/habilitace2-CZ.pdf" download>Stáhnout PDF</a></p>
+  <details>
+    <summary>Zobrazit PDF přímo na stránce</summary>
   <div class="pdfwrap">
     <iframe src="vystupy/export/habilitace2-CZ.pdf#view=FitH" title="Náročné chování žáků v době AI: PDF monografie" loading="lazy"></iframe>
   </div>
-  <p class="pdfmeta"><a href="vystupy/export/habilitace2-CZ.pdf" target="_blank" rel="noopener">Otevřít knihu na celé stránce ↗</a> &nbsp;·&nbsp; <a href="vystupy/export/habilitace2-CZ.pdf" download target="_blank" rel="noopener">stáhnout knihu (PDF)</a></p>
+  </details>
 
   <h2 id="data">Data</h2>
   <p>Veřejně dostupná je <strong>odvozená datová podmnožina bez textů kazuistik
-  a bez osobních údajů</strong>: tabulky délek a věku, kategorie přiřazené
+  a přímých identifikátorů</strong>: tabulky délek a věku, kategorie přiřazené
   člověkem i modelem a pseudonymizovaná hodnocení dvojic řešení (anotátorky
   vystupují pod pseudonymy). Je uložena ve složce
   <a href="https://github.com/JanNehyba/edustories-habilitation/tree/main/data/processed" target="_blank" rel="noopener"><code>data/processed/</code></a>
@@ -126,18 +127,10 @@
   v angličtině je publikován jako dataset
   <a href="https://huggingface.co/datasets/MU-NLPC/Edustories-en" target="_blank" rel="noopener">Edustories-en</a>
   na Hugging Face.</p>
-  <p><strong>Plný korpus</strong>, přes tři tisíce českých kazuistik i s texty,
-  zůstává za platformou <a href="https://edustories.cz/" target="_blank" rel="noopener">edustories.cz</a>, kde
-  slouží studujícím a učitelům; volně ke stažení není. Kniha proto pracuje se
-  zveřejněnou podmnožinou a s doloženými časovými řezy korpusu, nikoli s „živou“
-  databází.</p>
+  <p>Tento doprovodný balíček nezpřístupňuje úplné textové vstupy analýz. Veřejná platforma, anglický výběr a datované analytické řezy jsou odlišné výstupy. Budoucí vydání nejnovější databáze tato stránka nepředjímá.</p>
 
   <h2 id="analyzy">Analýzy a jejich ověření</h2>
-  <p>Čtyři analytické notebooky v jazyce R přepočítávají výsledky od zveřejněných
-  dat po tabulky a obrázky knihy. Můžete si je přečíst jako hotové reporty, nebo
-  je spustit v prohlížeči přes Binder (sestaví se prostředí RStudio, nic se
-  neinstaluje do vašeho počítače; jeho příprava ale při prvním spuštění trvá
-  i několik minut, prosíme o strpení):</p>
+  <p>Čtyři notebooky v R a offline přepočet uložených predikcí vytvářejí hlavní statistické výsledky. Hotové reporty lze číst bez instalace. Pro opakování výpočtů použijte zveřejněný návod a skript <code>reproduce.py</code>; nový modelový běh ani API klíč nejsou potřeba.</p>
   <dl>
     <dt>Studie 1: Co korpus obsahuje</dt>
     <dd><a href="vystupy/reporty/10_korpus.html" target="_blank" rel="noopener">report</a> · typy náročného chování, řešení a dopadů na reprodukovatelném řezu korpusu.</dd>
@@ -148,40 +141,10 @@
     <dt>Studie 4: Dá se kvalita kazuistik spolehlivě posoudit?</dt>
     <dd><a href="vystupy/reporty/40_kvalita.html" target="_blank" rel="noopener">report</a> · spolehlivost posouzení kvality kazuistik, dopadu a vhodnosti řešení, srovnání první a třetí anotační etapy a predikce dopadu jazykovým modelem.</dd>
   </dl>
-  <p><a href="https://mybinder.org/v2/gh/JanNehyba/edustories-habilitation/HEAD?urlpath=rstudio" target="_blank" rel="noopener">Spustit analýzy v prohlížeči (Binder) ↗</a>
-  &nbsp;·&nbsp;
-  <a href="https://github.com/JanNehyba/edustories-habilitation/tree/main/analyzy/notebooks" target="_blank" rel="noopener">zdrojové notebooky ↗</a></p>
+  <p><a href="https://github.com/JanNehyba/edustories-habilitation/tree/main/analyzy/notebooks" target="_blank" rel="noopener">Zdrojové notebooky ↗</a> · <a href="https://github.com/JanNehyba/edustories-habilitation/blob/main/reproduce.py">Reprodukční skript</a></p>
   <p class="note">Jak pracovat s daty a skripty a jak si i bez technických
-  znalostí sami ověříte kterékoli číslo z knihy, popisuje srozumitelný návod
+  znalostí sami ověříte hlavní výsledky knihy, popisuje srozumitelný návod
   <a href="https://github.com/JanNehyba/edustories-habilitation/blob/main/JAK-OVERIT-CISLA.md" target="_blank" rel="noopener">Jak si ověřit čísla knihy</a>.</p>
-
-  <h2 id="podklady">Podklady k habilitačnímu řízení</h2>
-  <p class="note">Formální dokumentaci habilitačního řízení přijímá fakulta
-  a posuzuje habilitační komise s oponenty; tato stránka ji zpřístupňuje
-  veřejně pro přehlednost, nenahrazuje oficiální podání.</p>
-  <p>Práce je <strong>empirická monografie</strong> podle
-  <a href="https://www.zakonyprolidi.cz/cs/1998-111#p72" target="_blank" rel="noopener">§ 72 zákona č. 111/1998 Sb.</a>
-  Požadavky konkretizují
-  <a href="https://www.muni.cz/o-univerzite/uredni-deska/rad-habilitacniho-rizeni-a-rizeni-ke-jmenovani-profesorem-na-mu" target="_blank" rel="noopener">Řád habilitačního řízení MU</a>
-  a <a href="https://www.ped.muni.cz/vyzkum/habilitace-a-jmenovani-profesorem" target="_blank" rel="noopener">Zásady habilitačního řízení na PdF MU</a>:
-  recenzovaná monografie v rozsahu nejméně sta tištěných stran. Pracovní verze
-  má sto osmdesát tři stran. Struktura sleduje standard: úvod, teoretická
-  východiska, metodologie, čtyři empirické studie, diskuse a závěr.</p>
-  <p>Formální náležitosti odpovídají
-  <a href="https://www.ped.muni.cz/vyzkum/habilitace-a-jmenovani-profesorem" target="_blank" rel="noopener">oficiálnímu Vzoru MU</a>:
-  formát A4, řádkování 1,5, jednotná titulní strana i prohlášení autora. Práce
-  je psána česky s povinným anglickým abstraktem; citační norma je
-  <a href="https://apastyle.apa.org/" target="_blank" rel="noopener">APA 7</a>. Etické náležitosti (schválení
-  Etickou komisí pro výzkum Masarykovy univerzity, č. j. EKV-2022-118, a
-  trojstupňová anonymizace ověřená auditem) dokládá příloha o etice.</p>
-  <p>Vedle samotné monografie stanoví Zásady PdF (čl. 5) i odborné předpoklady
-  uchazeče: vědecké studie, ohlasy, pedagogickou praxi, projekty a další. Jejich
-  přehled shrnují dokumenty níže.</p>
-  <p class="doclink"><a href="vystupy/export/soulad-s-pozadavky.pdf" target="_blank" rel="noopener">Přehled souladu s požadavky na habilitační práci (PDF ke stažení)</a>. Dokument kritérium po kritériu ukazuje, jak práce i uchazeč naplňují požadavky habilitačního řízení.</p>
-  <p class="doclink"><a href="vystupy/export/odborna-charakteristika.pdf" target="_blank" rel="noopener">Odborná charakteristika uchazeče (PDF ke stažení)</a> a <a href="vystupy/export/cv-nehyba.pdf" target="_blank" rel="noopener">odborný životopis (PDF ke stažení)</a>. Revidované veřejné verze pro tuto stránku (bez osobních kontaktních údajů); úplné znění je součástí dokumentace předkládané komisi.</p>
-  <p>Výsledky práce jsou plně <strong>dohledatelné</strong>: data, kód
-  i postupy jsou zveřejněné tak, aby šlo analýzy nezávisle přepočítat
-  (viz oddíl Analýzy výše).</p>
 
   <h2 id="licence">Licence</h2>
   <p>Celý repozitář (kód a notebooky, zveřejněná odvozená data, tabulky, obrázky

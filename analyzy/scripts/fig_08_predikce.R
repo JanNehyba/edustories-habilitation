@@ -17,7 +17,8 @@ cz <- function(x) format(x, decimal.mark = ",")
 modely <- unique(sub("^predikce_(.+)_zero_shot_.*$", "\\1",
                      grep("_zero_shot_a12_bal_acc$", man$metric, value = TRUE)))
 stopifnot(length(modely) >= 1)
-prim <- modely[1]
+prim <- "kimi_k3"
+stopifnot(prim %in% modely)
 
 # ── panel A: vyvážená přesnost modelu proti majoritě a lidskému stropu ─────────
 poradi <- c(prim, setdiff(modely, prim))   # primární model nahoře
@@ -43,14 +44,16 @@ radky <- rbind(radky,
 radky <- radky[!is.na(radky$bal), ]
 radky$lab <- factor(paste0(radky$co, " (", radky$ref, ")"),
                     levels = rev(paste0(radky$co, " (", radky$ref, ")")))
-pA <- ggplot(radky, aes(100 * bal, lab, color = typ)) +
+pA <- ggplot(radky, aes(100 * bal, lab, color = typ, shape = typ)) +
   geom_segment(aes(x = 100 / 3, xend = 100 * bal, yend = lab), linewidth = 0.7,
                color = GREY_LINE) +
   geom_point(size = 3.4) +
   scale_color_manual(values = c(model = PED_ORANGE, `lidé` = MUNI_BLUE, `báze` = GREY_TEXT),
                      guide = "none") +
   scale_x_continuous(limits = c(0, 100), labels = function(x) paste0(cz(x), " %")) +
-  labs(x = "vyvážená přesnost (báze hádání = 33,3 %)", y = NULL) +
+  scale_shape_manual(values = c(model = 16, `lidé` = 17, `báze` = 15), guide = "none") +
+  labs(x = "vyvážená přesnost / shoda (odlišné úlohy)", y = NULL) +
+  facet_grid(typ ~ ., scales = "free_y", space = "free_y") +
   theme_book_h()
-save_book_fig(file.path(FIG, "kap8_predikce.png"), pA, width = 8, height = 3.2)
+save_book_fig(file.path(FIG, "kap8_predikce.png"), pA, width = 8, height = 5)
 cat("OK: kap8_predikce →", FIG, "\n")

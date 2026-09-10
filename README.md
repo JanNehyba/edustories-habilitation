@@ -1,74 +1,52 @@
-# Edustories: doprovodný repozitář habilitační práce
+# Edustories: doprovodný repozitář habilitační monografie
 
-> ⚠️ **Pracovní návrh, nikoli oficiální podání.** Toto je pracovní návrh habilitační monografie. **Nejde** o oficiálně podanou ani posuzovanou habilitační práci.
+Pracovní verze monografie Jana Nehyby *Náročné chování žáků v době AI*.
+Nejde o oficiální podání ani o stanovisko habilitační komise.
 
-Doprovodný repozitář monografie *Náročné chování žáků v době AI: kazuistiky
-z praxe a jazykové modely v pedagogickém výzkumu* (Jan Nehyba, Masarykova
-univerzita, 2026). Slouží k tomu, aby si kdokoli mohl ověřit každé číslo v knize.
+## Obsah
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/JanNehyba/edustories-habilitation/HEAD?urlpath=rstudio)
+- Čtyři hotové HTML reporty v `vystupy/reporty/`.
+- Odvozené tabulky bez úplných textů kazuistik v `data/processed/`.
+- Analýzy v R, uložené predikce a jejich offline přepočet v Pythonu.
+- Výsledkové tabulky a obrázky.
+- Návod: [JAK-OVERIT-CISLA.md](JAK-OVERIT-CISLA.md).
 
-## Jak si ověřit čísla knihy
+## Opakování výpočtů
 
-Každé číslo v knize je dohledatelné ke skriptu a datům. Vyberte si podle toho,
-kolik techniky chcete (podrobný návod: [JAK-OVERIT-CISLA.md](JAK-OVERIT-CISLA.md)):
+Vyžaduje Python 3.11 nebo novější, R 4.6.1 a Quarto na PATH.
+Ověřená prostředí popisují `requirements.txt`, `analyzy/renv.lock`
+a `vystupy/tabulky/R-session-info.txt`.
 
-**1. Bez instalace (2 minuty).** Otevřete v prohlížeči HTML report příslušné
-analýzy ve složce [`vystupy/reporty/`](vystupy/reporty): `10_korpus.html`
-(kap. 5), `20_kodovani_llm.html` (kap. 6), `30_ai_vs_ucitel.html` (kap. 7),
-`40_kvalita.html` (kap. 8).
-Najdete v nich tytéž tabulky a hodnoty jako v knize. Konkrétní číslo dohledáte
-ve zdrojové tabulce čísel ve složce [`vystupy/tabulky/`](vystupy/tabulky) (tabulka „název
-metriky, hodnota“; klíč je v knize v komentáři u každého čísla).
+```sh
+python -m pip install -r requirements.txt
+python reproduce.py
+```
 
-**2. Přepočítat v prohlížeči (Binder, ~15 min první spuštění).** Klikněte na
-odznak „launch binder“ nahoře. Otevře se RStudio v prohlížeči (nic se
-neinstaluje k vám). Otevřete notebook v `analyzy/notebooks/` a dejte
-**Render**. Všechny čtyři empirické studie jsou reprodukovatelné rovnou
-z veřejných dat tohoto repozitáře, bez textů kazuistik a bez jmen:
-- **Studie 1** (`10_korpus.qmd`): z odvozené tabulky `kap5_perkazuistika.csv`
-  (počty slov, věk, publikační status; bez textů kazuistik);
-- **Studie 2** (`20_kodovani_llm.qmd`): ze `srovnani_k1_llm.csv` (kategorie
-  člověka a modelu, bez textů a jmen);
-- **Studie 3** (`30_ai_vs_ucitel.qmd`): z `kap7_hodnoceni_pseudo.csv`
-  (hodnocení dvojic řešení; anotátorky pod pseudonymy A1–A6, bez textů);
-- **Studie 4** (`40_kvalita.qmd`): z `k3_wide.csv` (kvalita, dopad a vhodnost
-  od obou anotátorek řezu `K3_freeze_2026-09-08`), `k3_segmenty.csv` (srovnání
-  s červencovou verzí týchž tabulek) a `k1_k3_pary.csv` (kazuistiky kódované
-  první i třetí etapou); predikci dopadu jazykovým modelem počítá skript
-  `26_k3_predikce_llm.py` a její výstupy jsou v `k3_predikce_raw.csv`.
+Skript obnoví R balíčky, přepočítá uložené predikce i všechny čtyři studie,
+vytvoří obrázky a zkontroluje výsledky proti přibaleným manifestům.
+Při chybě skončí neúspěšně, žádnou studii tiše nepřeskočí.
+Obnova balíčků může potřebovat internet; analýzy nevolají modelové API.
+Přepínač `--skip-restore` použije již nainstalované R balíčky bez obnovy verzí.
 
-**Pozn. k pseudonymům:** veřejný dataset Studie 3 přečíslovává svých šest
-anotátorek nezávisle jako A1–A6. V knize (příloha C.1) tytéž anotátorky
-vystupují v celoknižním schématu A1–A12 (Studie 3 = A1, A2, A8, A9, A10, A12).
-Obě sady jsou pseudonymy a nemají mezi sebou vztah 1:1.
+## Rozsah ověřitelnosti
 
-**3. Lokálně** (technicky): `./reproduce.sh` ověří prostředí, přepočítá figury
-a spustí kontrolní brány.
+Reprodukce ověřuje výpočty z poskytnutých odvozených dat. Neopakuje původní
+lidské kódování, generování odpovědí, anonymizaci ani textovou kontrolu úniku.
+Historické monitorovací, adjudikační a provenienční souhrny jsou označené
+vstupy; bez neveřejných textů je nelze znovu nezávisle vytvořit.
+Skript `26_k3_predikce_llm.py` dokumentuje nový experiment, není součástí
+offline reprodukce a vyžaduje další vstupy a oprávnění.
+Kapitoly 4, 6 a 8 rozlišují tato omezení od statistické reprodukce.
 
-## Co repozitář obsahuje a co ne
-
-Obsahuje: analýzy v R a skripty, zdrojové tabulky čísel (jediný zdroj čísel
-prózy), HTML reporty, figury, veřejnou datovou podmnožinu **bez textů kazuistik
-a bez osobních údajů** (anotátorky pod pseudonymy) a build knihy.
-
-Neobsahuje **plné texty kazuistik**: korpus zahrnuje i nezveřejněné případy
-a jde o citlivá data o reálných dětech od identifikovatelných pisatelů, takže
-celý řez korpusu veřejný být nemůže. Analýzy proto běží z odvozených tabulek
-(počty, kategorie), které texty nepotřebují; texty jsou nutné jen pro doslovné
-citace, které jsou vytištěné přímo v knize. Veřejný anotovaný výběr korpusu je
-na Hugging Face: `MU-NLPC/Edustories-en`.
+Veřejná tabulka K2 používá vlastní lokální pseudonymy A1–A6.
+Nejsou převodníkem na projektové pseudonymy knihy A1–A12.
+Úplná textová databáze ani dokumenty habilitačního řízení nejsou součástí
+tohoto balíčku. To nepředjímá rozhodnutí o budoucím vydání databáze.
+[Veřejná platforma](https://edustories.cz/) a
+[anglický výběr](https://huggingface.co/datasets/MU-NLPC/Edustories-en)
+jsou samostatné výstupy.
 
 ## Licence
 
-Celý repozitář (kód a notebooky, odvozená data, tabulky, obrázky i text a sazba
-monografie) je pod jednotnou licencí **CC BY-NC 4.0** (nekomerční užití
-s uvedením zdroje; viz `LICENSE`).
-
-- **Plný korpus kazuistik** není součástí repozitáře (dostupný přes platformu
-  projektu). Výběr v angličtině na Hugging Face `MU-NLPC/Edustories-en` má
-  vlastní licenci.
-
-Chyby a neshody čísel hlaste v Issues tohoto repozitáře.
-
-Průběžná pracovní verze; release s DOI vznikne až po finálním PDF knihy.
+Dosavadní licence CC BY-NC 4.0 zůstává zachována; viz `LICENSE`.
+Licence tohoto repozitáře se nevztahuje na jiné výstupy projektu.

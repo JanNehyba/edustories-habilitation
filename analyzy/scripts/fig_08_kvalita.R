@@ -100,7 +100,7 @@ save_book_fig(file.path(FIG, "kap8_shoda_etapy.png"), p3, width = 8, height = 4.
 # ── Obrázek 8.4: typ řešení (K1) × podíl dlouhodobého úspěchu (K3) ─────────
 rd <- read.csv(file.path(TAB, "kap8_reseni_dopad.csv"), encoding = "UTF-8")
 rd <- rd[rd$n_kazuistik >= 20, ]
-rd$lab <- paste0(rd$res, " (n = ", rd$n_kazuistik, ")")
+rd$lab <- paste0(rd$res, " (n dvojic = ", rd$n_k1, ")")
 rd$lab <- factor(rd$lab, levels = rd$lab[order(rd$du_podil)])
 p4 <- ggplot(rd, aes(100 * du_podil, lab)) +
   geom_errorbarh(aes(xmin = 100 * du_ci_lo, xmax = 100 * du_ci_hi), height = 0.2,

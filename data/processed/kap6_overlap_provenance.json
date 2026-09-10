@@ -1,0 +1,10 @@
+{
+  "method": "Full solution substring in archived examples after NFC, casefold and whitespace normalization; length > 30 characters",
+  "notebook_cell_zero_based": 108,
+  "notebook_sha256": "1d350e356fca666256055bf0cf3d712fc0c79e499771bb03ad40aa61699eddeb",
+  "matrix_sha256": "f8b444804c5931891fd86f80da2877c69b585ba15e4bc8675fafb13d77ab754a",
+  "comparison_sha256": "b9a3b31763a2a74bd9d628c8d95271addeaf7000c584036eafbfc3178b1f0f50",
+  "rows": 334,
+  "exact_overlaps": 36,
+  "interpretation": "Post-audit sensitivity, not an independently held-out experiment; original request logs are not supplied"
+}

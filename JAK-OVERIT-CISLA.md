@@ -1,55 +1,27 @@
-# Jak si ověřit čísla knihy (návod pro netechnické čtenáře)
+# Jak ověřit výsledky knihy
 
-Každé analytické číslo v knize pochází ze zdrojové tabulky čísel: tabulky
-dvojic „název metriky, hodnota“, kterou vygenerovala analýza nad verzovaným
-řezem dat. Tento repozitář
-obsahuje vše, co potřebujete k ověření, že čísla v knize odpovídají
-výstupům analýz. Nabízíme tři cesty podle toho, kolik techniky chcete.
+## Bez instalace
 
-## Cesta 1: bez instalace čehokoli (2 minuty)
+Otevřete report podle kapitoly: Studie 1 (`10_korpus.html`), Studie 2
+(`20_kodovani_llm.html`), Studie 3 (`30_ai_vs_ucitel.html`) nebo Studie 4
+(`40_kvalita.html`) ve složce `vystupy/reporty/`.
+Výsledkové tabulky leží ve `vystupy/tabulky/`; název metriky, její hodnota,
+zdrojový skript a otisk vstupu spojují číslo s výpočtem.
 
-1. Otevřete složku `vystupy/reporty/` a v ní HTML report analýzy, která vás
-   zajímá (`10_korpus.html` pro kapitolu 5, `20_kodovani_llm.html` pro
-   kapitolu 6, `30_ai_vs_ucitel.html` pro kapitolu 7). Stačí prohlížeč.
-2. V reportu najdete tytéž tabulky a hodnoty, které cituje kniha.
-3. Chcete-li konkrétní číslo, otevřete zdrojovou tabulku čísel ve složce
-   `vystupy/tabulky/` (např. `kap7_k2_shoda_cisla.csv`), což je obyčejná
-   tabulka „název metriky, hodnota“. Název klíče najdete v knize
-   v komentáři u každého čísla (ve zdrojovém textu kapitoly).
+## Vlastní přepočet
 
-## Cesta 2: spustit analýzu v prohlížeči (Binder, ~15 minut poprvé)
+Postup a závislosti uvádí [README.md](README.md). Spusťte `python reproduce.py`.
+Skript nevyžaduje původní texty ani API klíč, kontroluje všechny čtyři studie
+a skončí chybou, pokud výsledky neodpovídají přibaleným manifestům.
 
-1. Klikněte na odznak „launch binder“ v README tohoto repozitáře. Poprvé se
-   prostředí sestaví (~15 minut), pak se otevře RStudio ve vašem prohlížeči;
-   nic se neinstaluje k vám do počítače.
-2. **Všechny tři studie běží rovnou** z veřejných dat repozitáře. Otevřete
-   notebook a klikněte na **Render**, pak porovnejte hodnoty s knihou:
-   - `10_korpus.qmd` (Studie 1, kap. 5): z odvozené tabulky počtů slov a věku,
-     bez textů kazuistik;
-   - `20_kodovani_llm.qmd` (Studie 2, kap. 6): z kategorií přiřazených člověkem
-     a modelem, bez textů a jmen;
-   - `30_ai_vs_ucitel.qmd` (Studie 3, kap. 7): z tabulky hodnocení dvojic řešení
-     (anotátorky pod pseudonymy A1–A6, bez textů). Pozn.: veřejný dataset
-     přečíslovává šest anotátorek Studie 3 nezávisle jako A1–A6; v knize
-     (příloha C.1) vystupují v celoknižním schématu A1–A12 (Studie 3 = A1, A2,
-     A8, A9, A10, A12). Obě sady jsou pseudonymy bez vzájemného vztahu 1:1.
+## Co srovnávat
 
-Poznámka: v logu RStudia se mohou objevit hlášky „checkSpelling / iconv“ nad
-českými slovy. Jsou neškodné (jen kontrola pravopisu neumí diakritiku) a na
-výpočty ani render nemají vliv.
+- Studie 2: archivní řádky, úplné dvojice a retrospektivní soubor bez překryvů jsou odlišné analýzy.
+- Studie 3: rozlišujte prázdná hodnocení od chybějících řádků exportu; doplňkový model pracuje s úplnými dvojicemi.
+- Studie 4: rozlišujte plný překryv, primární soubor bez projednaných případů a případy oběma označené jako plné.
+- Predikce: neplatná odpověď je selhání, nikoli důvod vyřadit případ. Lidské čtení popsaného výstupu není totožná úloha.
+- Párové intervaly rozdílů modelů zahrnují nulu; to samo nedokazuje ekvivalenci.
 
-## Cesta 3: lokálně (pro technické čtenáře)
-
-```bash
-./reproduce.sh          # ověří prostředí, přepočítá figury a brány
-```
-
-Skript `analyzy/scripts/95_check_cisla.py` zkontroluje, že každé tvrdé
-číslo v próze knihy má kotvu na klíč zdrojové tabulky čísel a že se hodnoty shodují;
-`96_check_references.py` zkontroluje citace proti seznamu literatury.
-
-## Co znamená, když se čísla neshodují
-
-Neshoda mezi prózou a zdrojovou tabulkou čísel je chyba a budeme rádi, když ji nahlásíte
-(kontakt v README). Brány 95/96 běží před každým sestavením knihy, takže
-publikovaná verze by měla být vždy konzistentní.
+Přepočet statistik neověřuje pravdivost vyprávění ani správnost původní
+anotace. Historické kontrolní souhrny jsou dokumentační vstupy. Původní texty,
+interní kontrolní seznamy a klíče k identitám nejsou součástí tohoto balíčku.

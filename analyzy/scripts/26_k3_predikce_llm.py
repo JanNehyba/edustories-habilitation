@@ -3,14 +3,14 @@
 
 Úloha: model dostane Popis situace + Anamnézu + Řešení a má určit dopad řešení
 (Neúspěch / Krátkodobý nebo částečný úspěch / Dlouhodobý úspěch) podle definic třetí
-etapy (příloha A.3). **Popis výstupu do promptu NIKDY nevstupuje** (kontroluje assert
-i test úniku informace, jehož výsledek se ukládá do manifestu).
+etapy (příloha A.3). Sestavení promptu používá pouze vstupní pole; kontrola shody
+textu výstupu je doplňková a neprokazuje nepřítomnost parafrázované informace.
 
 Poskytovatel: e-INFRA CZ (https://llm.ai.e-infra.cz/v1, OpenAI-kompatibilní API).
 Důvod volby: české pedagogické texty zůstávají v národní akademické infrastruktuře
 a modely jsou s otevřenými vahami, takže běh je opakovatelný i mimo tento projekt.
 e-INFRA negarantuje, že nasazená verze modelu zůstane stejná, proto skript ukládá
-otisk nasazení (odpověď na pevnou kontrolní otázku při teplotě 0) a datum běhu.
+kontrolní otisk odpovědi a datum běhu. Otisk není důkazem identity nasazení.
 
 Uspořádání (pre-spec, PLAN §5):
   * vývojová množina  = kazuistiky mimo překryv (výběr modelu, ladění promptu)
@@ -29,10 +29,12 @@ Použití:
   python 26_k3_predikce_llm.py --models glm-5.3 --set eval --shots 6  # few-shot varianta
 
 Výstupy:
-  data/processed/k3_predikce_raw.csv        predikce (case_uid, model, varianta, predikce;
-                                            BEZ textů kazuistik)
-  vystupy/tabulky/kap8_predikce_cisla.csv   manifest čísel pro kapitolu 8
-  analyzy/vystupy/predikce/cache.jsonl      keš odpovědí (klíč = sha256 promptu, bez textu)
+  analyzy/vystupy/predikce/predikce_<run_id>.csv   nové odpovědi bez textů kazuistik
+  analyzy/vystupy/predikce/manifest_<run_id>.csv  výsledky nového běhu
+  analyzy/vystupy/predikce/cache.jsonl            keš oddělená podle běhu a nasazení
+
+Historická data a manifesty knihy tento skript nepřepisuje. Jejich offline
+přepočet zajišťuje 29_predikce_offline.py bez přístupu k modelové službě.
 """
 from __future__ import annotations
 
@@ -46,7 +48,7 @@ import re
 import sys
 import time
 from concurrent.futures import ThreadPoolExecutor
-from datetime import date
+from datetime import date, datetime, timezone
 from pathlib import Path
 
 import pandas as pd
@@ -54,7 +56,7 @@ import requests
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE))
-m27 = importlib.import_module("27_k3_freeze")
+from revision_metrics import prediction_metrics
 
 ROOT = Path(__file__).resolve().parents[2]
 PROC = ROOT / "data" / "processed"
@@ -95,6 +97,7 @@ def token() -> str:
 def nacti_kazuistiky() -> pd.DataFrame:
     """Texty částí kazuistik z tabulek řezu (drží se jen v paměti, nikam se neukládají)."""
     from openpyxl import load_workbook
+    m27 = importlib.import_module("27_k3_freeze")
     f2u = m27.fp2uid_map()
     rows = []
     for name, pseudo in m27.PSEUDO.items():   # mapování drží neveřejný modul 27
@@ -150,18 +153,19 @@ def prompt(row: pd.Series, priklady: list[tuple[str, str]]) -> list[dict]:
 
 
 def test_uniku(zpravy: list[dict], vystup: str) -> bool:
-    """True = v promptu není nic z popisu výstupu (kontrola na 60 znacích)."""
-    v = re.sub(r"\s+", " ", str(vystup or "")).strip()
-    if len(v) < 60:
-        return True
-    text = " ".join(re.sub(r"\s+", " ", m["content"]) for m in zpravy)
-    return v[:60] not in text
+    """Reject a literal outcome or its 60-character prefix, including short outcomes."""
+    if not isinstance(vystup, str) or not vystup.strip():
+        return False
+    outcome = re.sub(r"\s+", " ", vystup).strip().casefold()
+    prompt_text = " ".join(re.sub(r"\s+", " ", message["content"]).casefold() for message in zpravy)
+    return outcome[:60] not in prompt_text
 
 
 # ---------------------------------------------------------------- API
 class Klient:
-    def __init__(self, model: str, cache: Path):
+    def __init__(self, model: str, cache: Path, deployment_id: str | None = None):
         self.model = model
+        self.deployment_id = deployment_id or datetime.now(timezone.utc).isoformat()
         self.cache_path = cache
         self.cache: dict[str, str] = {}
         if cache.exists():
@@ -174,9 +178,11 @@ class Klient:
         self.session = requests.Session()
         self.session.headers.update({"Authorization": f"Bearer {token()}"})
 
-    def zeptej(self, zpravy: list[dict], max_tokens: int = 256) -> str:
-        klic = sha(self.model + json.dumps(zpravy, ensure_ascii=False) + str(max_tokens))
-        if klic in self.cache:
+    def zeptej(self, zpravy: list[dict], max_tokens: int = 256, use_cache: bool = True) -> str:
+        klic = sha(json.dumps({"endpoint": BASE_URL, "deployment": self.deployment_id,
+                               "model": self.model, "messages": zpravy,
+                               "max_tokens": max_tokens, "temperature": 0}, ensure_ascii=False, sort_keys=True))
+        if use_cache and klic in self.cache:
             return self.cache[klic]
         payload = {"model": self.model, "messages": zpravy, "temperature": 0,
                    "max_tokens": max_tokens}
@@ -194,13 +200,14 @@ class Klient:
                 payload["max_tokens"] = min(4096, payload["max_tokens"] * 8)  # modely, které přemýšlejí
             except requests.RequestException:
                 time.sleep(4 * (pokus + 1))
-        with self.cache_path.open("a", encoding="utf-8") as fh:
-            fh.write(json.dumps({"k": klic, "v": odpoved}, ensure_ascii=False) + "\n")
-        self.cache[klic] = odpoved
+        if use_cache:
+            with self.cache_path.open("a", encoding="utf-8") as fh:
+                fh.write(json.dumps({"k": klic, "v": odpoved}, ensure_ascii=False) + "\n")
+            self.cache[klic] = odpoved
         return odpoved
 
     def otisk(self) -> str:
-        """Otisk nasazení: hash odpovědi na pevnou otázku při teplotě 0.
+        """Kontrolní hash nové odpovědi, nikoli důkaz identity nasazení.
 
         e-INFRA nasazení neverzuje, takže „glm-5.3" dnes a za měsíc nemusí být totéž.
         Otázka musí být dost otevřená, aby se odpovědi modelů lišily; faktický dotaz
@@ -208,12 +215,14 @@ class Klient:
         """
         z = [{"role": "user", "content":
               "Napiš přesně tři věty o tom, proč je obloha modrá. Bez úvodu a bez odrážek."}]
-        return sha(self.zeptej(z, max_tokens=256))[:16]
+        return sha(self.zeptej(z, max_tokens=256, use_cache=False))[:16]
 
 
 def parsuj(text: str) -> str | None:
     """Kód z odpovědi: nejprve zkratka, pak české slovo, nakonec zkrácené „NE"."""
-    t = (text or "").strip().upper()
+    if not isinstance(text, str):
+        return None
+    t = text.strip().upper()
     for k in ("NEU", "KU", "DU"):
         if re.search(rf"\b{k}\b", t):
             return k
@@ -228,25 +237,7 @@ def parsuj(text: str) -> str | None:
 
 # ---------------------------------------------------------------- metriky
 def metriky(y_true: list[str], y_pred: list[str]) -> dict[str, float]:
-    from sklearn.metrics import (balanced_accuracy_score, cohen_kappa_score, f1_score,
-                                 recall_score)
-    par = [(t, p) for t, p in zip(y_true, y_pred) if p is not None]
-    t = [a for a, _ in par]
-    p = [b for _, b in par]
-    if not par:
-        return {}
-    tridy = ["NEU", "KU", "DU"]
-    out = {
-        "n": len(par),
-        "acc": sum(a == b for a, b in par) / len(par),
-        "bal_acc": balanced_accuracy_score(t, p),
-        "macro_f1": f1_score(t, p, average="macro", labels=tridy, zero_division=0),
-        "kappa": cohen_kappa_score(t, p, labels=tridy),
-    }
-    rec = recall_score(t, p, average=None, labels=tridy, zero_division=0)
-    for k, v in zip(tridy, rec):
-        out[f"recall_{k}"] = float(v)
-    return out
+    return prediction_metrics(y_true, y_pred)
 
 
 KOD = {"Neúspěch": "NEU", "Krátkodobý úspěch": "KU", "Dlouhodobý úspěch": "DU"}
@@ -259,8 +250,10 @@ def main() -> None:
     ap.add_argument("--n", type=int, default=0, help="omezit počet kazuistik (0 = vše)")
     ap.add_argument("--shots", type=int, default=0, help="počet příkladů v promptu")
     ap.add_argument("--concurrency", type=int, default=3)
+    ap.add_argument("--deployment-id", help="Explicit immutable deployment or cache namespace; default is a new run")
     args = ap.parse_args()
     OUT.mkdir(parents=True, exist_ok=True)
+    run_id = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%S%fZ")
 
     texty = nacti_kazuistiky()
     dev, ev = mnoziny(texty)
@@ -301,7 +294,8 @@ def main() -> None:
     zaznamy = []
     for model in args.models.split(","):
         model = model.strip()
-        kl = Klient(model, OUT / f"cache_{re.sub(r'[^a-z0-9.-]', '_', model.lower())}.jsonl")
+        kl = Klient(model, OUT / f"cache_{re.sub(r'[^a-z0-9.-]', '_', model.lower())}.jsonl",
+                    deployment_id=args.deployment_id or run_id)
         otisk = kl.otisk()
         zpravy = [prompt(vyber.iloc[i], priklady) for i in range(len(vyber))]
         assert all(test_uniku(z, vyber.iloc[i]["vystup"]) for i, z in enumerate(zpravy)), \
@@ -320,12 +314,7 @@ def main() -> None:
                             "dopad_A2": KOD.get(r.get("dopad_A2"), None),
                             "datum": date.today().isoformat()})
     Z = pd.DataFrame(zaznamy)
-    raw = PROC / "k3_predikce_raw.csv"
-    if raw.exists():
-        stare = pd.read_csv(raw)
-        Z = pd.concat([stare[~stare.set_index(["case_uid", "model", "varianta", "mnozina"]).index
-                             .isin(Z.set_index(["case_uid", "model", "varianta", "mnozina"]).index)],
-                       Z], ignore_index=True)
+    raw = OUT / f"predikce_{run_id}.csv"
     Z.to_csv(raw, index=False)
 
     # ---- vyhodnocení
@@ -344,12 +333,12 @@ def main() -> None:
                 radky.append({"model": model, "varianta": var, "reference": "konsenzus",
                               "metrika": k, "hodnota": round(float(v), 4)})
     V = pd.DataFrame(radky)
-    vysl = OUT / f"vysledky_{args.set}_{varianta}.csv"
+    vysl = OUT / f"vysledky_{run_id}_{args.set}_{varianta}.csv"
     V.to_csv(vysl, index=False)
     print("\n" + V.pivot_table(index=["model", "varianta"], columns=["reference", "metrika"],
                                values="hodnota").to_string())
     print(f"\nvýstupy: {raw}, {vysl}")
-    print("manifest kap8_predikce_cisla.csv se zapisuje až finálním během (--set eval).")
+    print("Nový běh nepřepisuje historická data ani manifesty knihy; jejich přepočet provádí skript 29.")
 
     if args.set == "eval":
         man = []
@@ -391,8 +380,9 @@ def main() -> None:
             for tr in ("NEU", "KU", "DU"):
                 man.append({"metric": f"predikce_podil_{ref.lower()}_{tr.lower()}",
                             "value": round(float((par2[f"dopad_{ref}"] == tr).mean()), 4)})
-        pd.DataFrame(man).to_csv(TAB / "kap8_predikce_cisla.csv", index=False)
-        print(f"manifest: {TAB / 'kap8_predikce_cisla.csv'} ({len(man)} metrik)")
+        run_manifest = OUT / f"manifest_{run_id}.csv"
+        pd.DataFrame(man).to_csv(run_manifest, index=False)
+        print(f"manifest nového běhu: {run_manifest} ({len(man)} metrik); historické výsledky nezměněny")
 
 
 if __name__ == "__main__":

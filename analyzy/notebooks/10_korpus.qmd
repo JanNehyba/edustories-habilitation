@@ -21,7 +21,7 @@ repaired but stay excluded; D4). Writes `vystupy/tabulky/kap5_korpus_cisla.csv`.
 
 ```{r setup}
 suppressPackageStartupMessages({
-  library(dplyr); library(tidyr); library(readr); library(stringr)
+  library(dplyr); library(tidyr); library(readr); library(stringr); library(digest)
 })
 SEED <- 20260714; set.seed(SEED)
 H2 <- normalizePath(file.path(getwd(), "../.."))
@@ -31,7 +31,7 @@ REZ <- file.path(H2, "data/processed/k1_rez_ids.csv")
 TRUNC <- file.path(H2, "data/processed/truncated_uids.csv")
 sha256 <- function(p) {
   if (!file.exists(p)) return("public-derived")   # veřejný běh: raw není, otisk se neuvádí
-  strsplit(system2("shasum", c("-a", "256", shQuote(p)), stdout = TRUE), " ")[[1]][1]
+  digest::digest(file = p, algo = "sha256")
 }
 S6_SHA <- sha256(S6); REZ_SHA <- sha256(REZ)
 manifest <- list()

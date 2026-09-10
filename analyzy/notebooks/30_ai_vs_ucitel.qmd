@@ -20,7 +20,7 @@ manuscript's LMMs (Table 3), (b) runs the pre-specified CLMM sensitivity,
 
 ```{r setup}
 suppressPackageStartupMessages({
-  library(dplyr); library(tidyr); library(lmerTest); library(ordinal); library(irr)
+  library(dplyr); library(tidyr); library(lmerTest); library(ordinal); library(irr); library(digest)
 })
 SEED <- 20260714
 set.seed(SEED)
@@ -36,17 +36,9 @@ DATA_SHA <- "ba464aaa3aa7223ba6a14009ec38dfb576db9af250079ed821bb6f9992478927"
 # (anotátorka vstupuje jen jako náhodný efekt), texty korpusu zůstávají privátní.
 KEEP <- c("Id", "anotator_name", "Otazka", "Hodnoceni", "Reseni_gen_AI",
           "Pristup.I", "Pristup.II", "Pristup.III")
-if (file.exists(CSV)) {
-  df <- read.csv(CSV, header = TRUE, sep = ",", fileEncoding = "cp1250")
-  pseudo <- setNames(sprintf("A%d", seq_along(sort(unique(df$anotator_name)))),
-                     sort(unique(df$anotator_name)))
-  df$anotator_name <- unname(pseudo[df$anotator_name])   # jména → A1..A6
-  df <- df[, KEEP]
-  write.csv(df, PUB, row.names = FALSE)                  # veřejná tabulka bez textů a jmen
-} else {
-  df <- read.csv(PUB, header = TRUE, sep = ",", encoding = "UTF-8")
-  DATA_SHA <- "public-pseudo"
-}
+df <- read.csv(PUB, header = TRUE, sep = ",", encoding = "UTF-8")
+DATA_SHA <- digest::digest(file = PUB, algo = "sha256")
+stopifnot(!anyDuplicated(df[c("Id", "anotator_name", "Otazka", "Reseni_gen_AI")]))
 stopifnot(length(unique(df$Id)) == 324,
           all(sort(unique(na.omit(df$Hodnoceni))) == -2:2))
 dims <- c(vhodnost     = "Jak.moc.je.vhodna.toto.reseni.pro.danou.situaci.",
@@ -147,10 +139,11 @@ slope_rows <- lapply(names(dims), function(nm) {
 knitr::kable(bind_rows(slope_rows), digits = 3)
 ```
 
-## Missingness by source (ignorability argument for available-case analysis)
+## Missingness by source, including structurally absent rows
 
-Blinding means raters could not skip items by source; verify empirically that
-the missing rate is comparable for AI vs teacher solutions.
+Blinding hides explicit source labels, not all textual source cues. It does not
+establish ignorable missingness. Separate missing ratings within observed rows
+from absent rows in the intended case × rater × dimension × source grid.
 
 ```{r missing-by-source}
 mis <- df |>
@@ -161,6 +154,42 @@ mis <- df |>
 knitr::kable(mis, digits = 4)
 for (i in seq_len(nrow(mis)))
   put(paste0("missing_podil_", mis$src[i]), mis$podil_na[i])
+rating_grid <- tidyr::expand_grid(Id = unique(df$Id), anotator_name = unique(df$anotator_name),
+                                Otazka = unname(dims), Reseni_gen_AI = c(0, 1)) |>
+  left_join(mutate(df, observed_row = TRUE), by = c("Id", "anotator_name", "Otazka", "Reseni_gen_AI"))
+put("n_ocekavanych_bunek", nrow(rating_grid))
+put("n_chybejicich_radku", sum(is.na(rating_grid$observed_row)))
+put("n_chybejicich_bunek_celkem", sum(is.na(rating_grid$Hodnoceni)))
+missing_grid <- rating_grid |>
+  group_by(Reseni_gen_AI, Otazka, anotator_name) |>
+  summarise(expected = n(), absent = sum(is.na(observed_row)),
+            observed_missing = sum(!is.na(observed_row) & is.na(Hodnoceni)), .groups = "drop")
+write.csv(missing_grid, file.path(H2, "vystupy/tabulky/kap7_chybeni.csv"), row.names = FALSE)
+knitr::kable(missing_grid)
+```
+
+## Post-audit sensitivity: complete AI–teacher pairs per rater and dimension
+
+```{r complete-pair-sensitivity}
+complete_keys <- df |>
+  group_by(Id, anotator_name, Otazka) |>
+  summarise(complete = n_distinct(Reseni_gen_AI) == 2 && all(!is.na(Hodnoceni)), .groups = "drop") |>
+  filter(complete)
+paired_ratings <- semi_join(df, complete_keys, by = c("Id", "anotator_name", "Otazka"))
+paired_results <- bind_rows(lapply(names(dims), function(dimension) {
+  selected <- paired_ratings[paired_ratings$Otazka == dims[[dimension]], ]
+  fitted <- lmer(Hodnoceni ~ Reseni_gen_AI + (1 | Id) + (1 | anotator_name), data = selected, REML = FALSE)
+  estimate <- summary(fitted)$coefficients["Reseni_gen_AI", "Estimate"]
+  interval <- confint(fitted, parm = "Reseni_gen_AI", method = "Wald")
+  put(paste0("paired_n_", dimension), nrow(selected))
+  put(paste0("paired_b1_", dimension), estimate)
+  put(paste0("paired_ci_lo_", dimension), interval[1, 1])
+  put(paste0("paired_ci_hi_", dimension), interval[1, 2])
+  data.frame(dimension = dimension, n = nrow(selected), estimate = estimate,
+             ci_lo = interval[1, 1], ci_hi = interval[1, 2])
+}))
+write.csv(paired_results, file.path(H2, "vystupy/tabulky/kap7_uplne_dvojice.csv"), row.names = FALSE)
+knitr::kable(paired_results, digits = 4)
 ```
 
 ## Inter-rater agreement with cluster-bootstrap 95% CIs
@@ -184,16 +213,14 @@ ids <- unique(df$Id)
 alpha_rows <- lapply(names(dims), function(nm) {
   d <- df[df$Otazka == dims[[nm]] & !is.na(df$Hodnoceni), ]
   a <- alpha_of(make_wide(d))
-  by_id <- split(d, d$Id)
+  full_matrix <- make_wide(d)
+  columns_by_id <- lapply(as.character(ids), function(case_id) {
+    which(colnames(full_matrix) %in% paste0(case_id, "_", c(0, 1)))
+  })
   boots <- vapply(seq_len(B), function(b) {
-    samp <- sample(ids, replace = TRUE)
-    db <- bind_rows(lapply(seq_along(samp), function(i) {
-      x <- by_id[[as.character(samp[i])]]
-      if (is.null(x)) return(NULL)
-      x$Id <- paste0(x$Id, "_", i)   # duplicitní tahy = nové jednotky
-      x
-    }))
-    alpha_of(make_wide(db))
+    selected_cases <- sample(seq_along(ids), replace = TRUE)
+    selected_columns <- unlist(columns_by_id[selected_cases], use.names = FALSE)
+    alpha_of(full_matrix[, selected_columns, drop = FALSE])
   }, numeric(1))
   ci <- quantile(boots, c(.025, .975), na.rm = TRUE)
   put(paste0("alpha_ord_final_", nm), a)

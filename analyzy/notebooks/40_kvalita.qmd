@@ -16,8 +16,10 @@ Frozen analysis of the third annotation campaign (K3) on the slice
 case texts** (`data/processed/`): `k3_wide.csv` (one row = case × annotator,
 A12 / A2), `k1_k3_pary.csv` (cases coded in K1 (2024) and K3 (2026)),
 `anotace_pokryti.csv`, the July monitoring point
-(`analyzy/vystupy/k3-monitoring/k3_monitoring_log.csv`) and the recalibration
-briefing (`vystupy/k3-sladeni/`, optional). Pre-specified protocol: Gwet AC1
+(`k3_monitoring_log.csv`), historical July and adjudication summaries
+(`k3_cervenec_souhrn.csv`, `k3_adjudikace_souhrn.csv`) and reconstructed
+segments (`k3_segmenty.csv`). These historical summaries are supplied inputs,
+not a newly repeated annotation or source-text audit. Pre-specified protocol: Gwet AC1
 next to κ/α; **primary reliability excludes adjudicated cases** (cases listed in
 the July recalibration briefing), the full overlap is reported as sensitivity;
 appropriateness K2 (1–5) and K3 (1–4) are never merged. Writes
@@ -36,7 +38,10 @@ H2   <- normalizePath(file.path(ROOT, ".."))             # habilitace-2/
 PROC <- file.path(H2, "data/processed")
 W  <- read.csv(file.path(PROC, "k3_wide.csv"), encoding = "UTF-8", stringsAsFactors = FALSE)
 PK <- read.csv(file.path(PROC, "k1_k3_pary.csv"), encoding = "UTF-8", stringsAsFactors = FALSE)
-DATA_SHA <- digest(file = file.path(PROC, "k3_wide.csv"), algo = "sha256")
+input_names <- c("k3_wide.csv", "k1_k3_pary.csv", "k3_segmenty.csv",
+                 "k3_monitoring_log.csv", "k3_cervenec_souhrn.csv", "k3_adjudikace_souhrn.csv")
+input_hashes <- vapply(file.path(PROC, input_names), function(path) digest(file = path, algo = "sha256"), character(1))
+DATA_SHA <- digest(paste(input_names, input_hashes, collapse = "\n"), algo = "sha256", serialize = FALSE)
 W$case_uid[is.na(W$case_uid)] <- ""
 W$kvalita[W$kvalita == ""] <- NA; W$dopad[W$dopad == ""] <- NA
 stopifnot(all(W$anotator %in% c("A12", "A2")))
@@ -77,7 +82,8 @@ for (a in c("A12", "A2")) {
   put(paste0("adjudikovano_radku_", a), sum(wa$adjudikovano))
 }
 uids <- unique(W$case_uid[W$case_uid != ""])
-put("n_kazuistik_k3_unikat", length(uids) + sum(W$case_uid == ""))
+put("n_kazuistik_k3_unikat", length(uids))
+put("n_kazuistik_k3_horni_mez", length(uids) + sum(W$case_uid == ""))
 put("n_radku_bez_uid", sum(W$case_uid == ""))
 ov <- W %>% filter(case_uid != "") %>% count(case_uid) %>% filter(n == 2)
 put("n_prekryv", nrow(ov))
@@ -137,9 +143,9 @@ P <- W %>% filter(case_uid %in% ov$case_uid) %>%
 P$adj <- pmax(P$adjudikovano_A12, P$adjudikovano_A2)
 P$poradi <- W$poradi[match(P$case_uid, W$case_uid[W$anotator == "A12"])]
 prim <- P[P$adj == 0, ]
-rel <- function(D, prefix) {
+rel <- function(D, prefix, dimensions = c("kvalita", "dopad", "vhodnost")) {
   # kvalita, dopad: nominal; vhodnost: ordinal
-  for (dim in c("kvalita", "dopad", "vhodnost")) {
+  for (dim in dimensions) {
     a <- D[[paste0(dim, "_A12")]]; b <- D[[paste0(dim, "_A2")]]
     ok <- !is.na(a) & !is.na(b); a <- a[ok]; b <- b[ok]
     key <- paste0(prefix, dim)
@@ -171,6 +177,13 @@ rel <- function(D, prefix) {
 }
 rel(prim, "shoda_")   # primary (without adjudicated)
 rel(P, "plny_")       # sensitivity (full overlap)
+complete_quality <- prim[prim$kvalita_A12 == "Plná" & prim$kvalita_A2 == "Plná", ]
+rel(complete_quality, "obe_plne_", dimensions = c("dopad", "vhodnost"))
+for (annotator in c("A12", "A2")) {
+  flat_records <- W[W$anotator == annotator & W$kvalita %in% "Plochá", ]
+  put(paste0("plocha_s_dopadem_", annotator), sum(!is.na(flat_records$dopad)))
+  put(paste0("plocha_s_vhodnosti_", annotator), sum(!is.na(flat_records$vhodnost)))
+}
 
 # confusion matrices (full overlap; A12 rows, A2 columns)
 mz <- bind_rows(lapply(c("kvalita", "dopad", "vhodnost"), function(dim) {
@@ -186,7 +199,8 @@ rec <- bind_rows(manifest); knitr::kable(rec[grepl("^shoda_|^plny_", rec$metric)
 ## 4 Recalibration: July monitoring point and order quartiles
 
 ```{r drift}
-log <- file.path(ROOT, "vystupy/k3-monitoring/k3_monitoring_log.csv")
+log <- file.path(PROC, "k3_monitoring_log.csv")
+stopifnot(file.exists(log))
 if (file.exists(log)) {
   m <- read.csv(log, encoding = "UTF-8"); m <- m[m$datum == "2026-07-16", ]
   put("cervenec_prekryv_n", m$prekryv_hotovo)
@@ -196,15 +210,9 @@ if (file.exists(log)) {
   put("cervenec_kvalita_n", m$kvalita_n); put("cervenec_kvalita_presna", m$kvalita_shoda); put("cervenec_kvalita_ac1", m$kvalita_ac1)
 }
 # direction of the July drift from the recalibration briefing (text parsed, no case texts)
-brief <- file.path(H2, "vystupy/k3-sladeni/Podklady_sladeni_K3_2026-07-15.xlsx")
-if (file.exists(brief) && requireNamespace("readxl", quietly = TRUE)) {
-  txt <- paste(unlist(readxl::read_excel(brief, sheet = "Návod a souhrn", col_names = FALSE)), collapse = " ")
-  g <- function(rx) as.numeric(sub(",", ".", regmatches(txt, regexpr(rx, txt, perl = TRUE))))
-  put("cervenec_vhodnost_A2_vyssi", as.numeric(sub(".*ve (\\d+) ze (\\d+) případů.*", "\\1", txt)))
-  put("cervenec_vhodnost_neshod", as.numeric(sub(".*ve (\\d+) ze (\\d+) případů.*", "\\2", txt)))
-  put("cervenec_vhodnost_prumer_A2", as.numeric(sub(".*průměr ([0-9],[0-9]+) vs ([0-9],[0-9]+).*", "\\1", gsub(",", ",", txt)) |> sub(",", ".", x = _)))
-  put("cervenec_vhodnost_prumer_A12", as.numeric(sub(".*průměr ([0-9],[0-9]+) vs ([0-9],[0-9]+).*", "\\2", txt) |> sub(",", ".", x = _)))
-}
+july_summary <- read.csv(file.path(PROC, "k3_cervenec_souhrn.csv"))
+for (summary_row in seq_len(nrow(july_summary)))
+  put(july_summary$metric[summary_row], july_summary$value[summary_row])
 # quartiles of the full overlap by A12 processing order (exploratory)
 Q <- P %>% arrange(poradi) %>% mutate(kvartil = ntile(poradi, 4))
 kv <- bind_rows(lapply(1:4, function(q) {
@@ -255,7 +263,10 @@ if (file.exists(seg_f)) {
 }
 # adjudication summary (counts only; produced by 27_k3_freeze.py from the briefing sheet)
 adjs <- file.path(PROC, "k3_adjudikace_souhrn.csv")
-if (file.exists(adjs)) { s <- read.csv(adjs); for (i in seq_len(nrow(s))) put(s$metric[i], s$value[i]) }
+stopifnot(file.exists(adjs))
+adjudication_summary <- read.csv(adjs)
+for (summary_row in seq_len(nrow(adjudication_summary)))
+  put(adjudication_summary$metric[summary_row], adjudication_summary$value[summary_row])
 knitr::kable(kv, digits = 3)
 ```
 
@@ -268,11 +279,12 @@ put("k1k3_kvalita_flat_k1", sum(PK$k1_flat == "flat", na.rm = TRUE))
 long <- bind_rows(lapply(c("A12", "A2"), function(a)
   data.frame(case_uid = PK$case_uid, k1 = PK$k1_dopad3, k3 = PK[[paste0("k3_dopad_", a)]],
              vh = PK[[paste0("k3_vhodnost_", a)]], res = PK$k1_reseni_primarni, stringsAsFactors = FALSE)))
-d <- long[!is.na(long$k1) & !is.na(long$k3) & long$k3 != "", ]
+d <- long[!is.na(long$k1) & long$k1 != "" & !is.na(long$k3) & long$k3 != "", ]
+put("k1k3_neuplny_k1_n", sum((is.na(long$k1) | long$k1 == "") & !is.na(long$k3) & long$k3 != ""))
 put("k1k3_dopad_n", nrow(d)); put("k1k3_dopad_presna", exact(d$k1, d$k3))
 put("k1k3_dopad_kappa", kappa_nom(d$k1, d$k3)); put("k1k3_dopad_ac1", ac1(d$k1, d$k3))
 # cluster bootstrap over cases
-cb <- function(f) { u <- unique(d$case_uid); v <- replicate(B, {
+cb <- function(f) { set.seed(SEED); u <- unique(d$case_uid); v <- replicate(B, {
   s <- sample(u, length(u), TRUE); dd <- d[unlist(lapply(s, function(x) which(d$case_uid == x))), ]
   f(dd$k1, dd$k3) }); quantile(v, c(.025, .975), names = FALSE) }
 ci <- cb(exact); put("k1k3_dopad_presna_ci_lo", ci[1]); put("k1k3_dopad_presna_ci_hi", ci[2])
@@ -282,13 +294,14 @@ write.csv(mz2, file.path(H2, "vystupy/tabulky/kap8_matice_k1k3.csv"), row.names 
 
 # solution type (K1 primary) × K3 outcome / appropriateness
 r <- long[!is.na(long$res) & long$res != "", ]
+r$pair_complete <- !is.na(r$k1) & r$k1 != "" & !is.na(r$k3) & r$k3 != ""
 r$du <- as.integer(r$k3 == "Dlouhodobý úspěch")
-r$du[is.na(r$k3) | r$k3 == ""] <- NA
+r$du[!r$pair_complete] <- NA
 tab <- r %>% group_by(res) %>% summarise(n_kazuistik = n_distinct(case_uid), n = sum(!is.na(du)),
   du_podil = mean(du, na.rm = TRUE), vhodnost_prumer = mean(vh, na.rm = TRUE), .groups = "drop") %>%
   arrange(desc(n_kazuistik))
 put("k1k3_reseni_n", n_distinct(r$case_uid))
-cbres <- function(cat, f) { u <- unique(r$case_uid[r$res == cat]); v <- replicate(B, {
+cbres <- function(cat, f) { set.seed(SEED); u <- unique(r$case_uid[r$res == cat]); v <- replicate(B, {
   s <- sample(u, length(u), TRUE); dd <- r[r$res == cat, ][unlist(lapply(s, function(x) which(r$case_uid[r$res == cat] == x))), ]
   f(dd) }); quantile(v, c(.025, .975), names = FALSE, na.rm = TRUE) }
 tab$du_ci_lo <- NA; tab$du_ci_hi <- NA; tab$vh_ci_lo <- NA; tab$vh_ci_hi <- NA
@@ -304,13 +317,13 @@ for (i in seq_len(nrow(tab))) {
   put(paste0("reseni_", s, "_vhodnost_prumer"), tab$vhodnost_prumer[i])
   put(paste0("reseni_", s, "_vh_ci_lo"), tab$vh_ci_lo[i]); put(paste0("reseni_", s, "_vh_ci_hi"), tab$vh_ci_hi[i])
   # same cases, outcome as coded by the FIRST campaign: makes the two teams comparable
-  k1sub <- PK[!is.na(PK$k1_reseni_primarni) & PK$k1_reseni_primarni == cat_ & !is.na(PK$k1_dopad3), ]
-  tab$du_podil_k1[i] <- mean(k1sub$k1_dopad3 == "Dlouhodobý úspěch")
+  k1sub <- r[r$res == cat_ & r$pair_complete, ]
+  tab$du_podil_k1[i] <- mean(k1sub$k1 == "Dlouhodobý úspěch")
   tab$n_k1[i] <- nrow(k1sub)
   put(paste0("reseni_", s, "_du_podil_k1"), tab$du_podil_k1[i])
   put(paste0("reseni_", s, "_n_k1"), tab$n_k1[i])
 }
-ct <- table(r$res[!is.na(r$k3) & r$k3 != ""], r$k3[!is.na(r$k3) & r$k3 != ""])
+ct <- table(r$res[r$pair_complete], r$k3[r$pair_complete])
 chi <- suppressWarnings(chisq.test(ct))
 put("k1k3_reseni_dopad_cramer_v", sqrt(chi$statistic / (sum(ct) * (min(dim(ct)) - 1))))
 write.csv(tab, file.path(H2, "vystupy/tabulky/kap8_reseni_dopad.csv"), row.names = FALSE)
@@ -332,4 +345,22 @@ out <- rec %>% mutate(skript = "analyzy/notebooks/40_kvalita.qmd", data_sha = DA
                       seed = SEED, datum = format(Sys.Date()))
 write.csv(out, file.path(H2, "vystupy/tabulky/kap8_kvalita_cisla.csv"), row.names = FALSE)
 cat("manifest:", nrow(out), "metrics →", "vystupy/tabulky/kap8_kvalita_cisla.csv\n")
+```
+
+## 7 Stored predictions: offline recalculation
+
+These tables are recalculated by `29_predikce_offline.py` without API calls.
+Invalid responses remain in the denominator as failed predictions. Intervals
+are retrospective case bootstraps; paired differences do not establish model
+equivalence. Human reading of the reported outcome is a different task.
+
+```{r stored-predictions}
+predictions <- read.csv(file.path(H2, "vystupy/tabulky/kap8_predikce_vysledky.csv"))
+knitr::kable(predictions[, c("model", "varianta", "reference", "n", "n_invalid",
+                            "coverage", "bal_acc", "bal_acc_ci_lo", "bal_acc_ci_hi",
+                            "macro_f1", "kappa", "kappa_valid")], digits = 3)
+differences <- read.csv(file.path(H2, "vystupy/tabulky/kap8_predikce_rozdily.csv"))
+knitr::kable(differences, digits = 4)
+knitr::kable(rec[grepl("^obe_plne_.*(n$|kappa$|presna$)", rec$metric), ])
+sessionInfo()
 ```

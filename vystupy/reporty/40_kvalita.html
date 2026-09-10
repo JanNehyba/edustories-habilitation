@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="EduStories / habilitace-2">
-<meta name="dcterms.date" content="2026-09-08">
+<meta name="dcterms.date" content="2026-09-10">
 
 <title>E4 — Quality of case studies, reliability and K1 × K3 (Study 4, K3 campaign)</title>
 <style>
@@ -2218,6 +2218,7 @@ vertical-align: -.125em;
   <li><a href="#recalibration-july-monitoring-point-and-order-quartiles" id="toc-recalibration-july-monitoring-point-and-order-quartiles" class="nav-link" data-scroll-target="#recalibration-july-monitoring-point-and-order-quartiles">4 Recalibration: July monitoring point and order quartiles</a></li>
   <li><a href="#k1-k3-replication-of-outcome-and-solution-type-vs-outcome" id="toc-k1-k3-replication-of-outcome-and-solution-type-vs-outcome" class="nav-link" data-scroll-target="#k1-k3-replication-of-outcome-and-solution-type-vs-outcome">5 K1 × K3: replication of outcome and solution type vs outcome</a></li>
   <li><a href="#regression-checks-against-the-descriptive-scripts-2223-and-freeze" id="toc-regression-checks-against-the-descriptive-scripts-2223-and-freeze" class="nav-link" data-scroll-target="#regression-checks-against-the-descriptive-scripts-2223-and-freeze">6 Regression checks against the descriptive scripts (22/23) and freeze</a></li>
+  <li><a href="#stored-predictions-offline-recalculation" id="toc-stored-predictions-offline-recalculation" class="nav-link" data-scroll-target="#stored-predictions-offline-recalculation">7 Stored predictions: offline recalculation</a></li>
   </ul>
 </nav>
 </div>
@@ -2242,7 +2243,7 @@ vertical-align: -.125em;
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">September 8, 2026</p>
+      <p class="date">September 10, 2026</p>
     </div>
   </div>
   
@@ -2254,7 +2255,7 @@ vertical-align: -.125em;
 </header>
 
 
-<p>Frozen analysis of the third annotation campaign (K3) on the slice <code>K3_freeze_2026-09-08</code> (PLAN.md §5 E4). Inputs are derived tables <strong>without case texts</strong> (<code>data/processed/</code>): <code>k3_wide.csv</code> (one row = case × annotator, A12 / A2), <code>k1_k3_pary.csv</code> (cases coded in K1 (2024) and K3 (2026)), <code>anotace_pokryti.csv</code>, the July monitoring point (<code>analyzy/vystupy/k3-monitoring/k3_monitoring_log.csv</code>) and the recalibration briefing (<code>vystupy/k3-sladeni/</code>, optional). Pre-specified protocol: Gwet AC1 next to κ/α; <strong>primary reliability excludes adjudicated cases</strong> (cases listed in the July recalibration briefing), the full overlap is reported as sensitivity; appropriateness K2 (1–5) and K3 (1–4) are never merged. Writes <code>vystupy/tabulky/kap8_kvalita_cisla.csv</code> (+ <code>kap8_matice_zamen.csv</code>, <code>kap8_reseni_dopad.csv</code>, <code>kap8_kvartily.csv</code>, <code>kap8_segmenty.csv</code>).</p>
+<p>Frozen analysis of the third annotation campaign (K3) on the slice <code>K3_freeze_2026-09-08</code> (PLAN.md §5 E4). Inputs are derived tables <strong>without case texts</strong> (<code>data/processed/</code>): <code>k3_wide.csv</code> (one row = case × annotator, A12 / A2), <code>k1_k3_pary.csv</code> (cases coded in K1 (2024) and K3 (2026)), <code>anotace_pokryti.csv</code>, the July monitoring point (<code>k3_monitoring_log.csv</code>), historical July and adjudication summaries (<code>k3_cervenec_souhrn.csv</code>, <code>k3_adjudikace_souhrn.csv</code>) and reconstructed segments (<code>k3_segmenty.csv</code>). These historical summaries are supplied inputs, not a newly repeated annotation or source-text audit. Pre-specified protocol: Gwet AC1 next to κ/α; <strong>primary reliability excludes adjudicated cases</strong> (cases listed in the July recalibration briefing), the full overlap is reported as sensitivity; appropriateness K2 (1–5) and K3 (1–4) are never merged. Writes <code>vystupy/tabulky/kap8_kvalita_cisla.csv</code> (+ <code>kap8_matice_zamen.csv</code>, <code>kap8_reseni_dopad.csv</code>, <code>kap8_kvartily.csv</code>, <code>kap8_segmenty.csv</code>).</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">suppressPackageStartupMessages</span>({</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">library</span>(dplyr); <span class="fu">library</span>(tidyr); <span class="fu">library</span>(irr); <span class="fu">library</span>(irrCAC); <span class="fu">library</span>(digest)</span>
@@ -2267,33 +2268,36 @@ vertical-align: -.125em;
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>PROC <span class="ot">&lt;-</span> <span class="fu">file.path</span>(H2, <span class="st">&quot;data/processed&quot;</span>)</span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>W  <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="fu">file.path</span>(PROC, <span class="st">&quot;k3_wide.csv&quot;</span>), <span class="at">encoding =</span> <span class="st">&quot;UTF-8&quot;</span>, <span class="at">stringsAsFactors =</span> <span class="cn">FALSE</span>)</span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>PK <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="fu">file.path</span>(PROC, <span class="st">&quot;k1_k3_pary.csv&quot;</span>), <span class="at">encoding =</span> <span class="st">&quot;UTF-8&quot;</span>, <span class="at">stringsAsFactors =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>DATA_SHA <span class="ot">&lt;-</span> <span class="fu">digest</span>(<span class="at">file =</span> <span class="fu">file.path</span>(PROC, <span class="st">&quot;k3_wide.csv&quot;</span>), <span class="at">algo =</span> <span class="st">&quot;sha256&quot;</span>)</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>W<span class="sc">$</span>case_uid[<span class="fu">is.na</span>(W<span class="sc">$</span>case_uid)] <span class="ot">&lt;-</span> <span class="st">&quot;&quot;</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>W<span class="sc">$</span>kvalita[W<span class="sc">$</span>kvalita <span class="sc">==</span> <span class="st">&quot;&quot;</span>] <span class="ot">&lt;-</span> <span class="cn">NA</span>; W<span class="sc">$</span>dopad[W<span class="sc">$</span>dopad <span class="sc">==</span> <span class="st">&quot;&quot;</span>] <span class="ot">&lt;-</span> <span class="cn">NA</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="fu">stopifnot</span>(<span class="fu">all</span>(W<span class="sc">$</span>anotator <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;A12&quot;</span>, <span class="st">&quot;A2&quot;</span>)))</span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>manifest <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>put <span class="ot">&lt;-</span> <span class="cf">function</span>(metric, value) manifest[[<span class="fu">length</span>(manifest) <span class="sc">+</span> <span class="dv">1</span>]] <span class="ot">&lt;&lt;-</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">data.frame</span>(<span class="at">metric =</span> metric, <span class="at">value =</span> <span class="fu">round</span>(<span class="fu">as.numeric</span>(value), <span class="dv">4</span>))</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>pct <span class="ot">&lt;-</span> <span class="cf">function</span>(x) <span class="fu">round</span>(<span class="dv">100</span> <span class="sc">*</span> x, <span class="dv">1</span>)</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="co"># ── agreement helpers (two raters, one row per unit) ──────────────────────</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>exact <span class="ot">&lt;-</span> <span class="cf">function</span>(a, b) <span class="fu">mean</span>(a <span class="sc">==</span> b)</span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>kappa_nom <span class="ot">&lt;-</span> <span class="cf">function</span>(a, b) irr<span class="sc">::</span><span class="fu">kappa2</span>(<span class="fu">cbind</span>(a, b))<span class="sc">$</span>value</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>kappa_w  <span class="ot">&lt;-</span> <span class="cf">function</span>(a, b) irr<span class="sc">::</span><span class="fu">kappa2</span>(<span class="fu">cbind</span>(a, b), <span class="at">weight =</span> <span class="st">&quot;squared&quot;</span>)<span class="sc">$</span>value</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>alpha_nom <span class="ot">&lt;-</span> <span class="cf">function</span>(a, b) irr<span class="sc">::</span><span class="fu">kripp.alpha</span>(<span class="fu">rbind</span>(<span class="fu">as.integer</span>(<span class="fu">factor</span>(<span class="fu">c</span>(a, b)))[<span class="fu">seq_along</span>(a)],</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>                                                   <span class="fu">as.integer</span>(<span class="fu">factor</span>(<span class="fu">c</span>(a, b)))[<span class="sc">-</span><span class="fu">seq_along</span>(a)]),</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>                                             <span class="at">method =</span> <span class="st">&quot;nominal&quot;</span>)<span class="sc">$</span>value</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>alpha_ord <span class="ot">&lt;-</span> <span class="cf">function</span>(a, b) irr<span class="sc">::</span><span class="fu">kripp.alpha</span>(<span class="fu">rbind</span>(a, b), <span class="at">method =</span> <span class="st">&quot;ordinal&quot;</span>)<span class="sc">$</span>value</span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>ac1 <span class="ot">&lt;-</span> <span class="cf">function</span>(a, b) irrCAC<span class="sc">::</span><span class="fu">gwet.ac1.raw</span>(<span class="fu">data.frame</span>(a, b))<span class="sc">$</span>est<span class="sc">$</span>coeff.val</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>ac2 <span class="ot">&lt;-</span> <span class="cf">function</span>(a, b) irrCAC<span class="sc">::</span><span class="fu">gwet.ac1.raw</span>(<span class="fu">data.frame</span>(a, b), <span class="at">weights =</span> <span class="st">&quot;quadratic&quot;</span>)<span class="sc">$</span>est<span class="sc">$</span>coeff.val</span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>boot_ci <span class="ot">&lt;-</span> <span class="cf">function</span>(a, b, f, <span class="at">B =</span> <span class="dv">1000</span>) {</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Seed per call: an interval must not depend on how many bootstraps ran earlier in</span></span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>  <span class="co"># the notebook, otherwise adding a section silently changes every later interval.</span></span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set.seed</span>(SEED)</span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>  n <span class="ot">&lt;-</span> <span class="fu">length</span>(a); v <span class="ot">&lt;-</span> <span class="fu">replicate</span>(B, { i <span class="ot">&lt;-</span> <span class="fu">sample.int</span>(n, n, <span class="cn">TRUE</span>); <span class="fu">f</span>(a[i], b[i]) })</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">quantile</span>(v, <span class="fu">c</span>(.<span class="dv">025</span>, .<span class="dv">975</span>), <span class="at">na.rm =</span> <span class="cn">TRUE</span>, <span class="at">names =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>input_names <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;k3_wide.csv&quot;</span>, <span class="st">&quot;k1_k3_pary.csv&quot;</span>, <span class="st">&quot;k3_segmenty.csv&quot;</span>,</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>                 <span class="st">&quot;k3_monitoring_log.csv&quot;</span>, <span class="st">&quot;k3_cervenec_souhrn.csv&quot;</span>, <span class="st">&quot;k3_adjudikace_souhrn.csv&quot;</span>)</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>input_hashes <span class="ot">&lt;-</span> <span class="fu">vapply</span>(<span class="fu">file.path</span>(PROC, input_names), <span class="cf">function</span>(path) <span class="fu">digest</span>(<span class="at">file =</span> path, <span class="at">algo =</span> <span class="st">&quot;sha256&quot;</span>), <span class="fu">character</span>(<span class="dv">1</span>))</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>DATA_SHA <span class="ot">&lt;-</span> <span class="fu">digest</span>(<span class="fu">paste</span>(input_names, input_hashes, <span class="at">collapse =</span> <span class="st">&quot;</span><span class="sc">\n</span><span class="st">&quot;</span>), <span class="at">algo =</span> <span class="st">&quot;sha256&quot;</span>, <span class="at">serialize =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>W<span class="sc">$</span>case_uid[<span class="fu">is.na</span>(W<span class="sc">$</span>case_uid)] <span class="ot">&lt;-</span> <span class="st">&quot;&quot;</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>W<span class="sc">$</span>kvalita[W<span class="sc">$</span>kvalita <span class="sc">==</span> <span class="st">&quot;&quot;</span>] <span class="ot">&lt;-</span> <span class="cn">NA</span>; W<span class="sc">$</span>dopad[W<span class="sc">$</span>dopad <span class="sc">==</span> <span class="st">&quot;&quot;</span>] <span class="ot">&lt;-</span> <span class="cn">NA</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu">stopifnot</span>(<span class="fu">all</span>(W<span class="sc">$</span>anotator <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;A12&quot;</span>, <span class="st">&quot;A2&quot;</span>)))</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>manifest <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>put <span class="ot">&lt;-</span> <span class="cf">function</span>(metric, value) manifest[[<span class="fu">length</span>(manifest) <span class="sc">+</span> <span class="dv">1</span>]] <span class="ot">&lt;&lt;-</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">data.frame</span>(<span class="at">metric =</span> metric, <span class="at">value =</span> <span class="fu">round</span>(<span class="fu">as.numeric</span>(value), <span class="dv">4</span>))</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>pct <span class="ot">&lt;-</span> <span class="cf">function</span>(x) <span class="fu">round</span>(<span class="dv">100</span> <span class="sc">*</span> x, <span class="dv">1</span>)</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="co"># ── agreement helpers (two raters, one row per unit) ──────────────────────</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>exact <span class="ot">&lt;-</span> <span class="cf">function</span>(a, b) <span class="fu">mean</span>(a <span class="sc">==</span> b)</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>kappa_nom <span class="ot">&lt;-</span> <span class="cf">function</span>(a, b) irr<span class="sc">::</span><span class="fu">kappa2</span>(<span class="fu">cbind</span>(a, b))<span class="sc">$</span>value</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>kappa_w  <span class="ot">&lt;-</span> <span class="cf">function</span>(a, b) irr<span class="sc">::</span><span class="fu">kappa2</span>(<span class="fu">cbind</span>(a, b), <span class="at">weight =</span> <span class="st">&quot;squared&quot;</span>)<span class="sc">$</span>value</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>alpha_nom <span class="ot">&lt;-</span> <span class="cf">function</span>(a, b) irr<span class="sc">::</span><span class="fu">kripp.alpha</span>(<span class="fu">rbind</span>(<span class="fu">as.integer</span>(<span class="fu">factor</span>(<span class="fu">c</span>(a, b)))[<span class="fu">seq_along</span>(a)],</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>                                                   <span class="fu">as.integer</span>(<span class="fu">factor</span>(<span class="fu">c</span>(a, b)))[<span class="sc">-</span><span class="fu">seq_along</span>(a)]),</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>                                             <span class="at">method =</span> <span class="st">&quot;nominal&quot;</span>)<span class="sc">$</span>value</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>alpha_ord <span class="ot">&lt;-</span> <span class="cf">function</span>(a, b) irr<span class="sc">::</span><span class="fu">kripp.alpha</span>(<span class="fu">rbind</span>(a, b), <span class="at">method =</span> <span class="st">&quot;ordinal&quot;</span>)<span class="sc">$</span>value</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>ac1 <span class="ot">&lt;-</span> <span class="cf">function</span>(a, b) irrCAC<span class="sc">::</span><span class="fu">gwet.ac1.raw</span>(<span class="fu">data.frame</span>(a, b))<span class="sc">$</span>est<span class="sc">$</span>coeff.val</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>ac2 <span class="ot">&lt;-</span> <span class="cf">function</span>(a, b) irrCAC<span class="sc">::</span><span class="fu">gwet.ac1.raw</span>(<span class="fu">data.frame</span>(a, b), <span class="at">weights =</span> <span class="st">&quot;quadratic&quot;</span>)<span class="sc">$</span>est<span class="sc">$</span>coeff.val</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>boot_ci <span class="ot">&lt;-</span> <span class="cf">function</span>(a, b, f, <span class="at">B =</span> <span class="dv">1000</span>) {</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Seed per call: an interval must not depend on how many bootstraps ran earlier in</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>  <span class="co"># the notebook, otherwise adding a section silently changes every later interval.</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">set.seed</span>(SEED)</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>  n <span class="ot">&lt;-</span> <span class="fu">length</span>(a); v <span class="ot">&lt;-</span> <span class="fu">replicate</span>(B, { i <span class="ot">&lt;-</span> <span class="fu">sample.int</span>(n, n, <span class="cn">TRUE</span>); <span class="fu">f</span>(a[i], b[i]) })</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">quantile</span>(v, <span class="fu">c</span>(.<span class="dv">025</span>, .<span class="dv">975</span>), <span class="at">na.rm =</span> <span class="cn">TRUE</span>, <span class="at">names =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <section id="scope-and-coverage" class="level2">
 <h2 class="anchored" data-anchor-id="scope-and-coverage">1 Scope and coverage</h2>
@@ -2307,13 +2311,14 @@ vertical-align: -.125em;
 <span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="fu">paste0</span>(<span class="st">&quot;adjudikovano_radku_&quot;</span>, a), <span class="fu">sum</span>(wa<span class="sc">$</span>adjudikovano))</span>
 <span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>uids <span class="ot">&lt;-</span> <span class="fu">unique</span>(W<span class="sc">$</span>case_uid[W<span class="sc">$</span>case_uid <span class="sc">!=</span> <span class="st">&quot;&quot;</span>])</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="fu">put</span>(<span class="st">&quot;n_kazuistik_k3_unikat&quot;</span>, <span class="fu">length</span>(uids) <span class="sc">+</span> <span class="fu">sum</span>(W<span class="sc">$</span>case_uid <span class="sc">==</span> <span class="st">&quot;&quot;</span>))</span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="fu">put</span>(<span class="st">&quot;n_radku_bez_uid&quot;</span>, <span class="fu">sum</span>(W<span class="sc">$</span>case_uid <span class="sc">==</span> <span class="st">&quot;&quot;</span>))</span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>ov <span class="ot">&lt;-</span> W <span class="sc">%&gt;%</span> <span class="fu">filter</span>(case_uid <span class="sc">!=</span> <span class="st">&quot;&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">count</span>(case_uid) <span class="sc">%&gt;%</span> <span class="fu">filter</span>(n <span class="sc">==</span> <span class="dv">2</span>)</span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="fu">put</span>(<span class="st">&quot;n_prekryv&quot;</span>, <span class="fu">nrow</span>(ov))</span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>adj_uid <span class="ot">&lt;-</span> <span class="fu">unique</span>(W<span class="sc">$</span>case_uid[W<span class="sc">$</span>adjudikovano <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> W<span class="sc">$</span>case_uid <span class="sc">!=</span> <span class="st">&quot;&quot;</span>])</span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="fu">put</span>(<span class="st">&quot;n_prekryv_adjudikovano&quot;</span>, <span class="fu">sum</span>(ov<span class="sc">$</span>case_uid <span class="sc">%in%</span> adj_uid))</span>
-<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="fu">bind_rows</span>(manifest))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="fu">put</span>(<span class="st">&quot;n_kazuistik_k3_unikat&quot;</span>, <span class="fu">length</span>(uids))</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="fu">put</span>(<span class="st">&quot;n_kazuistik_k3_horni_mez&quot;</span>, <span class="fu">length</span>(uids) <span class="sc">+</span> <span class="fu">sum</span>(W<span class="sc">$</span>case_uid <span class="sc">==</span> <span class="st">&quot;&quot;</span>))</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="fu">put</span>(<span class="st">&quot;n_radku_bez_uid&quot;</span>, <span class="fu">sum</span>(W<span class="sc">$</span>case_uid <span class="sc">==</span> <span class="st">&quot;&quot;</span>))</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>ov <span class="ot">&lt;-</span> W <span class="sc">%&gt;%</span> <span class="fu">filter</span>(case_uid <span class="sc">!=</span> <span class="st">&quot;&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">count</span>(case_uid) <span class="sc">%&gt;%</span> <span class="fu">filter</span>(n <span class="sc">==</span> <span class="dv">2</span>)</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="fu">put</span>(<span class="st">&quot;n_prekryv&quot;</span>, <span class="fu">nrow</span>(ov))</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>adj_uid <span class="ot">&lt;-</span> <span class="fu">unique</span>(W<span class="sc">$</span>case_uid[W<span class="sc">$</span>adjudikovano <span class="sc">==</span> <span class="dv">1</span> <span class="sc">&amp;</span> W<span class="sc">$</span>case_uid <span class="sc">!=</span> <span class="st">&quot;&quot;</span>])</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a><span class="fu">put</span>(<span class="st">&quot;n_prekryv_adjudikovano&quot;</span>, <span class="fu">sum</span>(ov<span class="sc">$</span>case_uid <span class="sc">%in%</span> adj_uid))</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(<span class="fu">bind_rows</span>(manifest))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
 <thead>
@@ -2365,17 +2370,21 @@ vertical-align: -.125em;
 </tr>
 <tr class="odd">
 <td style="text-align: left;">n_kazuistik_k3_unikat</td>
-<td style="text-align: right;">3192.0000</td>
+<td style="text-align: right;">3185.0000</td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">n_kazuistik_k3_horni_mez</td>
+<td style="text-align: right;">3192.0000</td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;">n_radku_bez_uid</td>
 <td style="text-align: right;">7.0000</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;">n_prekryv</td>
 <td style="text-align: right;">693.0000</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;">n_prekryv_adjudikovano</td>
 <td style="text-align: right;">64.0000</td>
 </tr>
@@ -2432,9 +2441,9 @@ vertical-align: -.125em;
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>P<span class="sc">$</span>adj <span class="ot">&lt;-</span> <span class="fu">pmax</span>(P<span class="sc">$</span>adjudikovano_A12, P<span class="sc">$</span>adjudikovano_A2)</span>
 <span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>P<span class="sc">$</span>poradi <span class="ot">&lt;-</span> W<span class="sc">$</span>poradi[<span class="fu">match</span>(P<span class="sc">$</span>case_uid, W<span class="sc">$</span>case_uid[W<span class="sc">$</span>anotator <span class="sc">==</span> <span class="st">&quot;A12&quot;</span>])]</span>
 <span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>prim <span class="ot">&lt;-</span> P[P<span class="sc">$</span>adj <span class="sc">==</span> <span class="dv">0</span>, ]</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>rel <span class="ot">&lt;-</span> <span class="cf">function</span>(D, prefix) {</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>rel <span class="ot">&lt;-</span> <span class="cf">function</span>(D, prefix, <span class="at">dimensions =</span> <span class="fu">c</span>(<span class="st">&quot;kvalita&quot;</span>, <span class="st">&quot;dopad&quot;</span>, <span class="st">&quot;vhodnost&quot;</span>)) {</span>
 <span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>  <span class="co"># kvalita, dopad: nominal; vhodnost: ordinal</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (dim <span class="cf">in</span> <span class="fu">c</span>(<span class="st">&quot;kvalita&quot;</span>, <span class="st">&quot;dopad&quot;</span>, <span class="st">&quot;vhodnost&quot;</span>)) {</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (dim <span class="cf">in</span> dimensions) {</span>
 <span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    a <span class="ot">&lt;-</span> D[[<span class="fu">paste0</span>(dim, <span class="st">&quot;_A12&quot;</span>)]]; b <span class="ot">&lt;-</span> D[[<span class="fu">paste0</span>(dim, <span class="st">&quot;_A2&quot;</span>)]]</span>
 <span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    ok <span class="ot">&lt;-</span> <span class="sc">!</span><span class="fu">is.na</span>(a) <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(b); a <span class="ot">&lt;-</span> a[ok]; b <span class="ot">&lt;-</span> b[ok]</span>
 <span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    key <span class="ot">&lt;-</span> <span class="fu">paste0</span>(prefix, dim)</span>
@@ -2466,16 +2475,23 @@ vertical-align: -.125em;
 <span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>}</span>
 <span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a><span class="fu">rel</span>(prim, <span class="st">&quot;shoda_&quot;</span>)   <span class="co"># primary (without adjudicated)</span></span>
 <span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a><span class="fu">rel</span>(P, <span class="st">&quot;plny_&quot;</span>)       <span class="co"># sensitivity (full overlap)</span></span>
-<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a><span class="co"># confusion matrices (full overlap; A12 rows, A2 columns)</span></span>
-<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a>mz <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(<span class="fu">lapply</span>(<span class="fu">c</span>(<span class="st">&quot;kvalita&quot;</span>, <span class="st">&quot;dopad&quot;</span>, <span class="st">&quot;vhodnost&quot;</span>), <span class="cf">function</span>(dim) {</span>
-<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a>  a <span class="ot">&lt;-</span> P[[<span class="fu">paste0</span>(dim, <span class="st">&quot;_A12&quot;</span>)]]; b <span class="ot">&lt;-</span> P[[<span class="fu">paste0</span>(dim, <span class="st">&quot;_A2&quot;</span>)]]</span>
-<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a>  ok <span class="ot">&lt;-</span> <span class="sc">!</span><span class="fu">is.na</span>(a) <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(b)</span>
-<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.data.frame</span>(<span class="fu">table</span>(<span class="at">A12 =</span> a[ok], <span class="at">A2 =</span> b[ok])) <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">dimenze =</span> dim) <span class="sc">%&gt;%</span></span>
-<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename</span>(<span class="at">n =</span> Freq) <span class="sc">%&gt;%</span> <span class="fu">select</span>(dimenze, A12, A2, n)</span>
-<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a>}))</span>
-<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(mz, <span class="fu">file.path</span>(H2, <span class="st">&quot;vystupy/tabulky/kap8_matice_zamen.csv&quot;</span>), <span class="at">row.names =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a>rec <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(manifest); knitr<span class="sc">::</span><span class="fu">kable</span>(rec[<span class="fu">grepl</span>(<span class="st">&quot;^shoda_|^plny_&quot;</span>, rec<span class="sc">$</span>metric), ])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a>complete_quality <span class="ot">&lt;-</span> prim[prim<span class="sc">$</span>kvalita_A12 <span class="sc">==</span> <span class="st">&quot;Plná&quot;</span> <span class="sc">&amp;</span> prim<span class="sc">$</span>kvalita_A2 <span class="sc">==</span> <span class="st">&quot;Plná&quot;</span>, ]</span>
+<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a><span class="fu">rel</span>(complete_quality, <span class="st">&quot;obe_plne_&quot;</span>, <span class="at">dimensions =</span> <span class="fu">c</span>(<span class="st">&quot;dopad&quot;</span>, <span class="st">&quot;vhodnost&quot;</span>))</span>
+<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (annotator <span class="cf">in</span> <span class="fu">c</span>(<span class="st">&quot;A12&quot;</span>, <span class="st">&quot;A2&quot;</span>)) {</span>
+<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a>  flat_records <span class="ot">&lt;-</span> W[W<span class="sc">$</span>anotator <span class="sc">==</span> annotator <span class="sc">&amp;</span> W<span class="sc">$</span>kvalita <span class="sc">%in%</span> <span class="st">&quot;Plochá&quot;</span>, ]</span>
+<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="fu">paste0</span>(<span class="st">&quot;plocha_s_dopadem_&quot;</span>, annotator), <span class="fu">sum</span>(<span class="sc">!</span><span class="fu">is.na</span>(flat_records<span class="sc">$</span>dopad)))</span>
+<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="fu">paste0</span>(<span class="st">&quot;plocha_s_vhodnosti_&quot;</span>, annotator), <span class="fu">sum</span>(<span class="sc">!</span><span class="fu">is.na</span>(flat_records<span class="sc">$</span>vhodnost)))</span>
+<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a><span class="co"># confusion matrices (full overlap; A12 rows, A2 columns)</span></span>
+<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a>mz <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(<span class="fu">lapply</span>(<span class="fu">c</span>(<span class="st">&quot;kvalita&quot;</span>, <span class="st">&quot;dopad&quot;</span>, <span class="st">&quot;vhodnost&quot;</span>), <span class="cf">function</span>(dim) {</span>
+<span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a>  a <span class="ot">&lt;-</span> P[[<span class="fu">paste0</span>(dim, <span class="st">&quot;_A12&quot;</span>)]]; b <span class="ot">&lt;-</span> P[[<span class="fu">paste0</span>(dim, <span class="st">&quot;_A2&quot;</span>)]]</span>
+<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a>  ok <span class="ot">&lt;-</span> <span class="sc">!</span><span class="fu">is.na</span>(a) <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(b)</span>
+<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a>  <span class="fu">as.data.frame</span>(<span class="fu">table</span>(<span class="at">A12 =</span> a[ok], <span class="at">A2 =</span> b[ok])) <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">dimenze =</span> dim) <span class="sc">%&gt;%</span></span>
+<span id="cb4-55"><a href="#cb4-55" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename</span>(<span class="at">n =</span> Freq) <span class="sc">%&gt;%</span> <span class="fu">select</span>(dimenze, A12, A2, n)</span>
+<span id="cb4-56"><a href="#cb4-56" aria-hidden="true" tabindex="-1"></a>}))</span>
+<span id="cb4-57"><a href="#cb4-57" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(mz, <span class="fu">file.path</span>(H2, <span class="st">&quot;vystupy/tabulky/kap8_matice_zamen.csv&quot;</span>), <span class="at">row.names =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb4-58"><a href="#cb4-58" aria-hidden="true" tabindex="-1"></a>rec <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(manifest); knitr<span class="sc">::</span><span class="fu">kable</span>(rec[<span class="fu">grepl</span>(<span class="st">&quot;^shoda_|^plny_&quot;</span>, rec<span class="sc">$</span>metric), ])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
 <thead>
@@ -2487,482 +2503,482 @@ vertical-align: -.125em;
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">75</td>
+<td style="text-align: left;">76</td>
 <td style="text-align: left;">shoda_kvalita_n</td>
 <td style="text-align: right;">629.0000</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">76</td>
+<td style="text-align: left;">77</td>
 <td style="text-align: left;">shoda_kvalita_presna</td>
 <td style="text-align: right;">0.9793</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">77</td>
+<td style="text-align: left;">78</td>
 <td style="text-align: left;">shoda_kvalita_presna_ci_lo</td>
 <td style="text-align: right;">0.9682</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">78</td>
+<td style="text-align: left;">79</td>
 <td style="text-align: left;">shoda_kvalita_presna_ci_hi</td>
 <td style="text-align: right;">0.9905</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">79</td>
+<td style="text-align: left;">80</td>
 <td style="text-align: left;">shoda_kvalita_kappa</td>
 <td style="text-align: right;">0.7689</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">80</td>
+<td style="text-align: left;">81</td>
 <td style="text-align: left;">shoda_kvalita_kappa_ci_lo</td>
 <td style="text-align: right;">0.6378</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">81</td>
+<td style="text-align: left;">82</td>
 <td style="text-align: left;">shoda_kvalita_kappa_ci_hi</td>
 <td style="text-align: right;">0.8794</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">82</td>
+<td style="text-align: left;">83</td>
 <td style="text-align: left;">shoda_kvalita_alpha</td>
 <td style="text-align: right;">0.7690</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">83</td>
+<td style="text-align: left;">84</td>
 <td style="text-align: left;">shoda_kvalita_alpha_ci_lo</td>
 <td style="text-align: right;">0.6375</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">84</td>
+<td style="text-align: left;">85</td>
 <td style="text-align: left;">shoda_kvalita_alpha_ci_hi</td>
 <td style="text-align: right;">0.8795</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">85</td>
+<td style="text-align: left;">86</td>
 <td style="text-align: left;">shoda_kvalita_ac1</td>
 <td style="text-align: right;">0.9773</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">86</td>
+<td style="text-align: left;">87</td>
 <td style="text-align: left;">shoda_kvalita_ac1_ci_lo</td>
 <td style="text-align: right;">0.9638</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">87</td>
+<td style="text-align: left;">88</td>
 <td style="text-align: left;">shoda_kvalita_ac1_ci_hi</td>
 <td style="text-align: right;">0.9896</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">88</td>
+<td style="text-align: left;">89</td>
 <td style="text-align: left;">shoda_dopad_n</td>
 <td style="text-align: right;">603.0000</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">89</td>
+<td style="text-align: left;">90</td>
 <td style="text-align: left;">shoda_dopad_presna</td>
 <td style="text-align: right;">0.8109</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">90</td>
+<td style="text-align: left;">91</td>
 <td style="text-align: left;">shoda_dopad_presna_ci_lo</td>
 <td style="text-align: right;">0.7778</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">91</td>
+<td style="text-align: left;">92</td>
 <td style="text-align: left;">shoda_dopad_presna_ci_hi</td>
 <td style="text-align: right;">0.8408</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">92</td>
+<td style="text-align: left;">93</td>
 <td style="text-align: left;">shoda_dopad_kappa</td>
 <td style="text-align: right;">0.6875</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">93</td>
+<td style="text-align: left;">94</td>
 <td style="text-align: left;">shoda_dopad_kappa_ci_lo</td>
 <td style="text-align: right;">0.6349</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">94</td>
+<td style="text-align: left;">95</td>
 <td style="text-align: left;">shoda_dopad_kappa_ci_hi</td>
 <td style="text-align: right;">0.7368</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">95</td>
+<td style="text-align: left;">96</td>
 <td style="text-align: left;">shoda_dopad_alpha</td>
 <td style="text-align: right;">0.6874</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">96</td>
+<td style="text-align: left;">97</td>
 <td style="text-align: left;">shoda_dopad_alpha_ci_lo</td>
 <td style="text-align: right;">0.6344</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">97</td>
+<td style="text-align: left;">98</td>
 <td style="text-align: left;">shoda_dopad_alpha_ci_hi</td>
 <td style="text-align: right;">0.7367</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">98</td>
+<td style="text-align: left;">99</td>
 <td style="text-align: left;">shoda_dopad_ac1</td>
 <td style="text-align: right;">0.7291</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">99</td>
+<td style="text-align: left;">100</td>
 <td style="text-align: left;">shoda_dopad_ac1_ci_lo</td>
 <td style="text-align: right;">0.6799</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">100</td>
+<td style="text-align: left;">101</td>
 <td style="text-align: left;">shoda_dopad_ac1_ci_hi</td>
 <td style="text-align: right;">0.7738</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">101</td>
+<td style="text-align: left;">102</td>
 <td style="text-align: left;">shoda_vhodnost_n</td>
 <td style="text-align: right;">603.0000</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">102</td>
+<td style="text-align: left;">103</td>
 <td style="text-align: left;">shoda_vhodnost_presna</td>
 <td style="text-align: right;">0.5788</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">103</td>
+<td style="text-align: left;">104</td>
 <td style="text-align: left;">shoda_vhodnost_presna_ci_lo</td>
 <td style="text-align: right;">0.5423</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">104</td>
+<td style="text-align: left;">105</td>
 <td style="text-align: left;">shoda_vhodnost_presna_ci_hi</td>
 <td style="text-align: right;">0.6202</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">105</td>
+<td style="text-align: left;">106</td>
 <td style="text-align: left;">shoda_vhodnost_pm1</td>
 <td style="text-align: right;">0.9801</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">106</td>
+<td style="text-align: left;">107</td>
 <td style="text-align: left;">shoda_vhodnost_wkappa</td>
 <td style="text-align: right;">0.5188</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">107</td>
+<td style="text-align: left;">108</td>
 <td style="text-align: left;">shoda_vhodnost_wkappa_ci_lo</td>
 <td style="text-align: right;">0.4550</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">108</td>
+<td style="text-align: left;">109</td>
 <td style="text-align: left;">shoda_vhodnost_wkappa_ci_hi</td>
 <td style="text-align: right;">0.5826</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">109</td>
+<td style="text-align: left;">110</td>
 <td style="text-align: left;">shoda_vhodnost_alpha_ord</td>
 <td style="text-align: right;">0.5009</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">110</td>
+<td style="text-align: left;">111</td>
 <td style="text-align: left;">shoda_vhodnost_alpha_ord_ci_lo</td>
 <td style="text-align: right;">0.4409</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">111</td>
+<td style="text-align: left;">112</td>
 <td style="text-align: left;">shoda_vhodnost_alpha_ord_ci_hi</td>
 <td style="text-align: right;">0.5651</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">112</td>
+<td style="text-align: left;">113</td>
 <td style="text-align: left;">shoda_vhodnost_ac1</td>
 <td style="text-align: right;">0.4729</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">113</td>
+<td style="text-align: left;">114</td>
 <td style="text-align: left;">shoda_vhodnost_ac2</td>
 <td style="text-align: right;">0.8705</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">114</td>
+<td style="text-align: left;">115</td>
 <td style="text-align: left;">shoda_vhodnost_ac1_ci_lo</td>
 <td style="text-align: right;">0.4253</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">115</td>
+<td style="text-align: left;">116</td>
 <td style="text-align: left;">shoda_vhodnost_ac1_ci_hi</td>
 <td style="text-align: right;">0.5243</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">116</td>
+<td style="text-align: left;">117</td>
 <td style="text-align: left;">shoda_vhodnost_A2_vyssi</td>
 <td style="text-align: right;">149.0000</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">117</td>
+<td style="text-align: left;">118</td>
 <td style="text-align: left;">shoda_vhodnost_A12_vyssi</td>
 <td style="text-align: right;">105.0000</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">118</td>
+<td style="text-align: left;">119</td>
 <td style="text-align: left;">shoda_vhodnost_prumer_A12</td>
 <td style="text-align: right;">3.3035</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">119</td>
+<td style="text-align: left;">120</td>
 <td style="text-align: left;">shoda_vhodnost_prumer_A2</td>
 <td style="text-align: right;">3.3715</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">120</td>
+<td style="text-align: left;">121</td>
 <td style="text-align: left;">shoda_vhodnost_rozdil_prumer</td>
 <td style="text-align: right;">0.0680</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">121</td>
+<td style="text-align: left;">122</td>
 <td style="text-align: left;">shoda_vhodnost_rozdil_ci_lo</td>
 <td style="text-align: right;">0.0100</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">122</td>
+<td style="text-align: left;">123</td>
 <td style="text-align: left;">shoda_vhodnost_rozdil_ci_hi</td>
 <td style="text-align: right;">0.1227</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">123</td>
+<td style="text-align: left;">124</td>
 <td style="text-align: left;">plny_kvalita_n</td>
 <td style="text-align: right;">693.0000</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">124</td>
+<td style="text-align: left;">125</td>
 <td style="text-align: left;">plny_kvalita_presna</td>
 <td style="text-align: right;">0.9683</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">125</td>
+<td style="text-align: left;">126</td>
 <td style="text-align: left;">plny_kvalita_presna_ci_lo</td>
 <td style="text-align: right;">0.9553</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">126</td>
+<td style="text-align: left;">127</td>
 <td style="text-align: left;">plny_kvalita_presna_ci_hi</td>
 <td style="text-align: right;">0.9812</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">127</td>
+<td style="text-align: left;">128</td>
 <td style="text-align: left;">plny_kvalita_kappa</td>
 <td style="text-align: right;">0.6695</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">128</td>
+<td style="text-align: left;">129</td>
 <td style="text-align: left;">plny_kvalita_kappa_ci_lo</td>
 <td style="text-align: right;">0.5273</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">129</td>
+<td style="text-align: left;">130</td>
 <td style="text-align: left;">plny_kvalita_kappa_ci_hi</td>
 <td style="text-align: right;">0.7898</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">130</td>
+<td style="text-align: left;">131</td>
 <td style="text-align: left;">plny_kvalita_alpha</td>
 <td style="text-align: right;">0.6692</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">131</td>
+<td style="text-align: left;">132</td>
 <td style="text-align: left;">plny_kvalita_alpha_ci_lo</td>
 <td style="text-align: right;">0.5261</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">132</td>
+<td style="text-align: left;">133</td>
 <td style="text-align: left;">plny_kvalita_alpha_ci_hi</td>
 <td style="text-align: right;">0.7896</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">133</td>
+<td style="text-align: left;">134</td>
 <td style="text-align: left;">plny_kvalita_ac1</td>
 <td style="text-align: right;">0.9649</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">134</td>
+<td style="text-align: left;">135</td>
 <td style="text-align: left;">plny_kvalita_ac1_ci_lo</td>
 <td style="text-align: right;">0.9502</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">135</td>
+<td style="text-align: left;">136</td>
 <td style="text-align: left;">plny_kvalita_ac1_ci_hi</td>
 <td style="text-align: right;">0.9793</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">136</td>
+<td style="text-align: left;">137</td>
 <td style="text-align: left;">plny_dopad_n</td>
 <td style="text-align: right;">663.0000</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">137</td>
+<td style="text-align: left;">138</td>
 <td style="text-align: left;">plny_dopad_presna</td>
 <td style="text-align: right;">0.8009</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">138</td>
+<td style="text-align: left;">139</td>
 <td style="text-align: left;">plny_dopad_presna_ci_lo</td>
 <td style="text-align: right;">0.7692</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">139</td>
+<td style="text-align: left;">140</td>
 <td style="text-align: left;">plny_dopad_presna_ci_hi</td>
 <td style="text-align: right;">0.8296</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">140</td>
+<td style="text-align: left;">141</td>
 <td style="text-align: left;">plny_dopad_kappa</td>
 <td style="text-align: right;">0.6739</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">141</td>
+<td style="text-align: left;">142</td>
 <td style="text-align: left;">plny_dopad_kappa_ci_lo</td>
 <td style="text-align: right;">0.6236</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">142</td>
+<td style="text-align: left;">143</td>
 <td style="text-align: left;">plny_dopad_kappa_ci_hi</td>
 <td style="text-align: right;">0.7211</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">143</td>
+<td style="text-align: left;">144</td>
 <td style="text-align: left;">plny_dopad_alpha</td>
 <td style="text-align: right;">0.6735</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">144</td>
+<td style="text-align: left;">145</td>
 <td style="text-align: left;">plny_dopad_alpha_ci_lo</td>
 <td style="text-align: right;">0.6229</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">145</td>
+<td style="text-align: left;">146</td>
 <td style="text-align: left;">plny_dopad_alpha_ci_hi</td>
 <td style="text-align: right;">0.7208</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">146</td>
+<td style="text-align: left;">147</td>
 <td style="text-align: left;">plny_dopad_ac1</td>
 <td style="text-align: right;">0.7137</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">147</td>
+<td style="text-align: left;">148</td>
 <td style="text-align: left;">plny_dopad_ac1_ci_lo</td>
 <td style="text-align: right;">0.6680</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">148</td>
+<td style="text-align: left;">149</td>
 <td style="text-align: left;">plny_dopad_ac1_ci_hi</td>
 <td style="text-align: right;">0.7554</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">149</td>
+<td style="text-align: left;">150</td>
 <td style="text-align: left;">plny_vhodnost_n</td>
 <td style="text-align: right;">664.0000</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">150</td>
+<td style="text-align: left;">151</td>
 <td style="text-align: left;">plny_vhodnost_presna</td>
 <td style="text-align: right;">0.5813</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">151</td>
+<td style="text-align: left;">152</td>
 <td style="text-align: left;">plny_vhodnost_presna_ci_lo</td>
 <td style="text-align: right;">0.5437</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">152</td>
+<td style="text-align: left;">153</td>
 <td style="text-align: left;">plny_vhodnost_presna_ci_hi</td>
 <td style="text-align: right;">0.6175</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">153</td>
+<td style="text-align: left;">154</td>
 <td style="text-align: left;">plny_vhodnost_pm1</td>
 <td style="text-align: right;">0.9789</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">154</td>
+<td style="text-align: left;">155</td>
 <td style="text-align: left;">plny_vhodnost_wkappa</td>
 <td style="text-align: right;">0.5314</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">155</td>
+<td style="text-align: left;">156</td>
 <td style="text-align: left;">plny_vhodnost_wkappa_ci_lo</td>
 <td style="text-align: right;">0.4695</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">156</td>
+<td style="text-align: left;">157</td>
 <td style="text-align: left;">plny_vhodnost_wkappa_ci_hi</td>
 <td style="text-align: right;">0.5808</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">157</td>
+<td style="text-align: left;">158</td>
 <td style="text-align: left;">plny_vhodnost_alpha_ord</td>
 <td style="text-align: right;">0.5101</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">158</td>
+<td style="text-align: left;">159</td>
 <td style="text-align: left;">plny_vhodnost_alpha_ord_ci_lo</td>
 <td style="text-align: right;">0.4469</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">159</td>
+<td style="text-align: left;">160</td>
 <td style="text-align: left;">plny_vhodnost_alpha_ord_ci_hi</td>
 <td style="text-align: right;">0.5611</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">160</td>
+<td style="text-align: left;">161</td>
 <td style="text-align: left;">plny_vhodnost_ac1</td>
 <td style="text-align: right;">0.4753</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">161</td>
+<td style="text-align: left;">162</td>
 <td style="text-align: left;">plny_vhodnost_ac2</td>
 <td style="text-align: right;">0.8694</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">162</td>
+<td style="text-align: left;">163</td>
 <td style="text-align: left;">plny_vhodnost_ac1_ci_lo</td>
 <td style="text-align: right;">0.4275</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">163</td>
+<td style="text-align: left;">164</td>
 <td style="text-align: left;">plny_vhodnost_ac1_ci_hi</td>
 <td style="text-align: right;">0.5223</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">164</td>
+<td style="text-align: left;">165</td>
 <td style="text-align: left;">plny_vhodnost_A2_vyssi</td>
 <td style="text-align: right;">171.0000</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">165</td>
+<td style="text-align: left;">166</td>
 <td style="text-align: left;">plny_vhodnost_A12_vyssi</td>
 <td style="text-align: right;">107.0000</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">166</td>
+<td style="text-align: left;">167</td>
 <td style="text-align: left;">plny_vhodnost_prumer_A12</td>
 <td style="text-align: right;">3.2801</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">167</td>
+<td style="text-align: left;">168</td>
 <td style="text-align: left;">plny_vhodnost_prumer_A2</td>
 <td style="text-align: right;">3.3750</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">168</td>
+<td style="text-align: left;">169</td>
 <td style="text-align: left;">plny_vhodnost_rozdil_prumer</td>
 <td style="text-align: right;">0.0949</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">169</td>
+<td style="text-align: left;">170</td>
 <td style="text-align: left;">plny_vhodnost_rozdil_ci_lo</td>
 <td style="text-align: right;">0.0452</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">170</td>
+<td style="text-align: left;">171</td>
 <td style="text-align: left;">plny_vhodnost_rozdil_ci_hi</td>
 <td style="text-align: right;">0.1446</td>
 </tr>
@@ -2974,77 +2990,75 @@ vertical-align: -.125em;
 <section id="recalibration-july-monitoring-point-and-order-quartiles" class="level2">
 <h2 class="anchored" data-anchor-id="recalibration-july-monitoring-point-and-order-quartiles">4 Recalibration: July monitoring point and order quartiles</h2>
 <div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>log <span class="ot">&lt;-</span> <span class="fu">file.path</span>(ROOT, <span class="st">&quot;vystupy/k3-monitoring/k3_monitoring_log.csv&quot;</span>)</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">file.exists</span>(log)) {</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  m <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(log, <span class="at">encoding =</span> <span class="st">&quot;UTF-8&quot;</span>); m <span class="ot">&lt;-</span> m[m<span class="sc">$</span>datum <span class="sc">==</span> <span class="st">&quot;2026-07-16&quot;</span>, ]</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;cervenec_prekryv_n&quot;</span>, m<span class="sc">$</span>prekryv_hotovo)</span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;cervenec_vhodnost_n&quot;</span>, m<span class="sc">$</span>vhodnost_n); <span class="fu">put</span>(<span class="st">&quot;cervenec_vhodnost_presna&quot;</span>, m<span class="sc">$</span>vhodnost_shoda)</span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;cervenec_vhodnost_wkappa&quot;</span>, m<span class="sc">$</span>vhodnost_koef); <span class="fu">put</span>(<span class="st">&quot;cervenec_vhodnost_ac1&quot;</span>, m<span class="sc">$</span>vhodnost_ac1)</span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;cervenec_dopad_n&quot;</span>, m<span class="sc">$</span>dopad_n); <span class="fu">put</span>(<span class="st">&quot;cervenec_dopad_presna&quot;</span>, m<span class="sc">$</span>dopad_shoda); <span class="fu">put</span>(<span class="st">&quot;cervenec_dopad_kappa&quot;</span>, m<span class="sc">$</span>dopad_koef)</span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;cervenec_kvalita_n&quot;</span>, m<span class="sc">$</span>kvalita_n); <span class="fu">put</span>(<span class="st">&quot;cervenec_kvalita_presna&quot;</span>, m<span class="sc">$</span>kvalita_shoda); <span class="fu">put</span>(<span class="st">&quot;cervenec_kvalita_ac1&quot;</span>, m<span class="sc">$</span>kvalita_ac1)</span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="co"># direction of the July drift from the recalibration briefing (text parsed, no case texts)</span></span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>brief <span class="ot">&lt;-</span> <span class="fu">file.path</span>(H2, <span class="st">&quot;vystupy/k3-sladeni/Podklady_sladeni_K3_2026-07-15.xlsx&quot;</span>)</span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">file.exists</span>(brief) <span class="sc">&amp;&amp;</span> <span class="fu">requireNamespace</span>(<span class="st">&quot;readxl&quot;</span>, <span class="at">quietly =</span> <span class="cn">TRUE</span>)) {</span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>  txt <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="fu">unlist</span>(readxl<span class="sc">::</span><span class="fu">read_excel</span>(brief, <span class="at">sheet =</span> <span class="st">&quot;Návod a souhrn&quot;</span>, <span class="at">col_names =</span> <span class="cn">FALSE</span>)), <span class="at">collapse =</span> <span class="st">&quot; &quot;</span>)</span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>  g <span class="ot">&lt;-</span> <span class="cf">function</span>(rx) <span class="fu">as.numeric</span>(<span class="fu">sub</span>(<span class="st">&quot;,&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="fu">regmatches</span>(txt, <span class="fu">regexpr</span>(rx, txt, <span class="at">perl =</span> <span class="cn">TRUE</span>))))</span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;cervenec_vhodnost_A2_vyssi&quot;</span>, <span class="fu">as.numeric</span>(<span class="fu">sub</span>(<span class="st">&quot;.*ve (</span><span class="sc">\\</span><span class="st">d+) ze (</span><span class="sc">\\</span><span class="st">d+) případů.*&quot;</span>, <span class="st">&quot;</span><span class="sc">\\</span><span class="st">1&quot;</span>, txt)))</span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;cervenec_vhodnost_neshod&quot;</span>, <span class="fu">as.numeric</span>(<span class="fu">sub</span>(<span class="st">&quot;.*ve (</span><span class="sc">\\</span><span class="st">d+) ze (</span><span class="sc">\\</span><span class="st">d+) případů.*&quot;</span>, <span class="st">&quot;</span><span class="sc">\\</span><span class="st">2&quot;</span>, txt)))</span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;cervenec_vhodnost_prumer_A2&quot;</span>, <span class="fu">as.numeric</span>(<span class="fu">sub</span>(<span class="st">&quot;.*průměr ([0-9],[0-9]+) vs ([0-9],[0-9]+).*&quot;</span>, <span class="st">&quot;</span><span class="sc">\\</span><span class="st">1&quot;</span>, <span class="fu">gsub</span>(<span class="st">&quot;,&quot;</span>, <span class="st">&quot;,&quot;</span>, txt)) <span class="sc">|&gt;</span> <span class="fu">sub</span>(<span class="st">&quot;,&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="at">x =</span> _)))</span>
-<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;cervenec_vhodnost_prumer_A12&quot;</span>, <span class="fu">as.numeric</span>(<span class="fu">sub</span>(<span class="st">&quot;.*průměr ([0-9],[0-9]+) vs ([0-9],[0-9]+).*&quot;</span>, <span class="st">&quot;</span><span class="sc">\\</span><span class="st">2&quot;</span>, txt) <span class="sc">|&gt;</span> <span class="fu">sub</span>(<span class="st">&quot;,&quot;</span>, <span class="st">&quot;.&quot;</span>, <span class="at">x =</span> _)))</span>
-<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="co"># quartiles of the full overlap by A12 processing order (exploratory)</span></span>
-<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>Q <span class="ot">&lt;-</span> P <span class="sc">%&gt;%</span> <span class="fu">arrange</span>(poradi) <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">kvartil =</span> <span class="fu">ntile</span>(poradi, <span class="dv">4</span>))</span>
-<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>kv <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(<span class="fu">lapply</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="cf">function</span>(q) {</span>
-<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>  d <span class="ot">&lt;-</span> Q[Q<span class="sc">$</span>kvartil <span class="sc">==</span> q, ]; out <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">kvartil =</span> q, <span class="at">n =</span> <span class="fu">nrow</span>(d))</span>
-<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (dim <span class="cf">in</span> <span class="fu">c</span>(<span class="st">&quot;kvalita&quot;</span>, <span class="st">&quot;dopad&quot;</span>, <span class="st">&quot;vhodnost&quot;</span>)) {</span>
-<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>    a <span class="ot">&lt;-</span> d[[<span class="fu">paste0</span>(dim, <span class="st">&quot;_A12&quot;</span>)]]; b <span class="ot">&lt;-</span> d[[<span class="fu">paste0</span>(dim, <span class="st">&quot;_A2&quot;</span>)]]; ok <span class="ot">&lt;-</span> <span class="sc">!</span><span class="fu">is.na</span>(a) <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(b)</span>
-<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a>    out[[<span class="fu">paste0</span>(dim, <span class="st">&quot;_presna&quot;</span>)]] <span class="ot">&lt;-</span> <span class="fu">exact</span>(a[ok], b[ok])</span>
-<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a>    <span class="fu">put</span>(<span class="fu">paste0</span>(<span class="st">&quot;kvartil&quot;</span>, q, <span class="st">&quot;_&quot;</span>, dim, <span class="st">&quot;_presna&quot;</span>), <span class="fu">exact</span>(a[ok], b[ok]))</span>
-<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a>  out</span>
-<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a>}))</span>
-<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(kv, <span class="fu">file.path</span>(H2, <span class="st">&quot;vystupy/tabulky/kap8_kvartily.csv&quot;</span>), <span class="at">row.names =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a><span class="co"># Segments before/after the recalibration, reconstructed by 28_k3_segmenty.py from the</span></span>
-<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a><span class="co"># July snapshot of both tables (backup of 2026-07-22 = state before the meeting; the</span></span>
-<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a><span class="co"># script verifies it reproduces the July monitoring point exactly).</span></span>
-<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a><span class="co">#   beze_zmeny = rated by 22 July and unchanged since -&gt; BEFORE the recalibration</span></span>
-<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a><span class="co">#   jen_finale = rated only after 22 July              -&gt; AFTER the recalibration</span></span>
-<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a><span class="co">#   zmeneno    = rated in July and rewritten afterwards (retroactive revision)</span></span>
-<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a>seg_f <span class="ot">&lt;-</span> <span class="fu">file.path</span>(PROC, <span class="st">&quot;k3_segmenty.csv&quot;</span>)</span>
-<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">file.exists</span>(seg_f)) {</span>
-<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a>  SG <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(seg_f, <span class="at">encoding =</span> <span class="st">&quot;UTF-8&quot;</span>)</span>
-<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;segmenty_dostupne&quot;</span>, <span class="dv">1</span>)</span>
-<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;seg_beze_zmeny_n&quot;</span>, <span class="fu">sum</span>(SG<span class="sc">$</span>segment <span class="sc">==</span> <span class="st">&quot;beze_zmeny&quot;</span>))</span>
-<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;seg_jen_finale_n&quot;</span>, <span class="fu">sum</span>(SG<span class="sc">$</span>segment <span class="sc">==</span> <span class="st">&quot;jen_finale&quot;</span>))</span>
-<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;seg_zmeneno_n&quot;</span>, <span class="fu">sum</span>(SG<span class="sc">$</span>segment <span class="sc">==</span> <span class="st">&quot;zmeneno&quot;</span>))</span>
-<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;seg_zmeneno_A12&quot;</span>, <span class="fu">sum</span>(SG<span class="sc">$</span>segment <span class="sc">==</span> <span class="st">&quot;zmeneno&quot;</span> <span class="sc">&amp;</span> SG<span class="sc">$</span>anotator <span class="sc">==</span> <span class="st">&quot;A12&quot;</span>))</span>
-<span id="cb5-46"><a href="#cb5-46" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;seg_zmeneno_A2&quot;</span>, <span class="fu">sum</span>(SG<span class="sc">$</span>segment <span class="sc">==</span> <span class="st">&quot;zmeneno&quot;</span> <span class="sc">&amp;</span> SG<span class="sc">$</span>anotator <span class="sc">==</span> <span class="st">&quot;A2&quot;</span>))</span>
-<span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (dim <span class="cf">in</span> <span class="fu">c</span>(<span class="st">&quot;kvalita&quot;</span>, <span class="st">&quot;dopad&quot;</span>, <span class="st">&quot;vhodnost&quot;</span>))</span>
-<span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a>    <span class="fu">put</span>(<span class="fu">paste0</span>(<span class="st">&quot;seg_zmeneno_&quot;</span>, dim), <span class="fu">sum</span>(SG[[<span class="fu">paste0</span>(<span class="st">&quot;zmena_&quot;</span>, dim)]], <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span>
-<span id="cb5-49"><a href="#cb5-49" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;seg_zmeneno_projednano&quot;</span>, <span class="fu">sum</span>(SG<span class="sc">$</span>segment <span class="sc">==</span> <span class="st">&quot;zmeneno&quot;</span> <span class="sc">&amp;</span> SG<span class="sc">$</span>adjudikovano <span class="sc">==</span> <span class="dv">1</span>))</span>
-<span id="cb5-50"><a href="#cb5-50" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;seg_cervenec_radku_A12&quot;</span>, <span class="fu">sum</span>(SG<span class="sc">$</span>anotator <span class="sc">==</span> <span class="st">&quot;A12&quot;</span> <span class="sc">&amp;</span> SG<span class="sc">$</span>segment <span class="sc">!=</span> <span class="st">&quot;jen_finale&quot;</span>))</span>
-<span id="cb5-51"><a href="#cb5-51" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;seg_cervenec_radku_A2&quot;</span>, <span class="fu">sum</span>(SG<span class="sc">$</span>anotator <span class="sc">==</span> <span class="st">&quot;A2&quot;</span> <span class="sc">&amp;</span> SG<span class="sc">$</span>segment <span class="sc">!=</span> <span class="st">&quot;jen_finale&quot;</span>))</span>
-<span id="cb5-52"><a href="#cb5-52" aria-hidden="true" tabindex="-1"></a>  s12 <span class="ot">&lt;-</span> SG[SG<span class="sc">$</span>anotator <span class="sc">==</span> <span class="st">&quot;A12&quot;</span>, <span class="fu">c</span>(<span class="st">&quot;case_uid&quot;</span>, <span class="st">&quot;segment&quot;</span>)]; <span class="fu">names</span>(s12)[<span class="dv">2</span>] <span class="ot">&lt;-</span> <span class="st">&quot;seg_A12&quot;</span></span>
-<span id="cb5-53"><a href="#cb5-53" aria-hidden="true" tabindex="-1"></a>  s2  <span class="ot">&lt;-</span> SG[SG<span class="sc">$</span>anotator <span class="sc">==</span> <span class="st">&quot;A2&quot;</span>,  <span class="fu">c</span>(<span class="st">&quot;case_uid&quot;</span>, <span class="st">&quot;segment&quot;</span>)]; <span class="fu">names</span>(s2)[<span class="dv">2</span>]  <span class="ot">&lt;-</span> <span class="st">&quot;seg_A2&quot;</span></span>
-<span id="cb5-54"><a href="#cb5-54" aria-hidden="true" tabindex="-1"></a>  PS <span class="ot">&lt;-</span> P <span class="sc">%&gt;%</span> <span class="fu">left_join</span>(s12, <span class="at">by =</span> <span class="st">&quot;case_uid&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">left_join</span>(s2, <span class="at">by =</span> <span class="st">&quot;case_uid&quot;</span>)</span>
-<span id="cb5-55"><a href="#cb5-55" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;seg_prekryv_A2_cervenec&quot;</span>, <span class="fu">sum</span>(PS<span class="sc">$</span>seg_A2 <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;beze_zmeny&quot;</span>, <span class="st">&quot;zmeneno&quot;</span>), <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span>
-<span id="cb5-56"><a href="#cb5-56" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;seg_prekryv_A2_po&quot;</span>, <span class="fu">sum</span>(PS<span class="sc">$</span>seg_A2 <span class="sc">==</span> <span class="st">&quot;jen_finale&quot;</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span>
-<span id="cb5-57"><a href="#cb5-57" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;seg_prekryv_A12_po&quot;</span>, <span class="fu">sum</span>(PS<span class="sc">$</span>seg_A12 <span class="sc">==</span> <span class="st">&quot;jen_finale&quot;</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span>
-<span id="cb5-58"><a href="#cb5-58" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;seg_prekryv_A12_zmeneno&quot;</span>, <span class="fu">sum</span>(PS<span class="sc">$</span>seg_A12 <span class="sc">==</span> <span class="st">&quot;zmeneno&quot;</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span>
-<span id="cb5-59"><a href="#cb5-59" aria-hidden="true" tabindex="-1"></a>  ok <span class="ot">&lt;-</span> <span class="sc">!</span><span class="fu">is.na</span>(PS<span class="sc">$</span>seg_A12) <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(PS<span class="sc">$</span>seg_A2)</span>
-<span id="cb5-60"><a href="#cb5-60" aria-hidden="true" tabindex="-1"></a>  PRED <span class="ot">&lt;-</span> PS[ok <span class="sc">&amp;</span> PS<span class="sc">$</span>seg_A12 <span class="sc">==</span> <span class="st">&quot;beze_zmeny&quot;</span> <span class="sc">&amp;</span> PS<span class="sc">$</span>seg_A2 <span class="sc">==</span> <span class="st">&quot;beze_zmeny&quot;</span>, ]</span>
-<span id="cb5-61"><a href="#cb5-61" aria-hidden="true" tabindex="-1"></a>  PO   <span class="ot">&lt;-</span> PS[ok <span class="sc">&amp;</span> PS<span class="sc">$</span>seg_A12 <span class="sc">==</span> <span class="st">&quot;jen_finale&quot;</span> <span class="sc">&amp;</span> PS<span class="sc">$</span>seg_A2 <span class="sc">==</span> <span class="st">&quot;beze_zmeny&quot;</span>, ]</span>
-<span id="cb5-62"><a href="#cb5-62" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;seg_pred_n&quot;</span>, <span class="fu">nrow</span>(PRED)); <span class="fu">put</span>(<span class="st">&quot;seg_po_n&quot;</span>, <span class="fu">nrow</span>(PO))</span>
-<span id="cb5-63"><a href="#cb5-63" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">nrow</span>(PRED) <span class="sc">&gt;</span> <span class="dv">20</span>) <span class="fu">rel</span>(PRED, <span class="st">&quot;segpred_&quot;</span>)</span>
-<span id="cb5-64"><a href="#cb5-64" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">nrow</span>(PO) <span class="sc">&gt;</span> <span class="dv">20</span>) <span class="fu">rel</span>(PO, <span class="st">&quot;segpo_&quot;</span>)</span>
-<span id="cb5-65"><a href="#cb5-65" aria-hidden="true" tabindex="-1"></a>  <span class="fu">write.csv</span>(SG <span class="sc">%&gt;%</span> <span class="fu">count</span>(anotator, segment),</span>
-<span id="cb5-66"><a href="#cb5-66" aria-hidden="true" tabindex="-1"></a>            <span class="fu">file.path</span>(H2, <span class="st">&quot;vystupy/tabulky/kap8_segmenty.csv&quot;</span>), <span class="at">row.names =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb5-67"><a href="#cb5-67" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb5-68"><a href="#cb5-68" aria-hidden="true" tabindex="-1"></a><span class="co"># adjudication summary (counts only; produced by 27_k3_freeze.py from the briefing sheet)</span></span>
-<span id="cb5-69"><a href="#cb5-69" aria-hidden="true" tabindex="-1"></a>adjs <span class="ot">&lt;-</span> <span class="fu">file.path</span>(PROC, <span class="st">&quot;k3_adjudikace_souhrn.csv&quot;</span>)</span>
-<span id="cb5-70"><a href="#cb5-70" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">file.exists</span>(adjs)) { s <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(adjs); <span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_len</span>(<span class="fu">nrow</span>(s))) <span class="fu">put</span>(s<span class="sc">$</span>metric[i], s<span class="sc">$</span>value[i]) }</span>
-<span id="cb5-71"><a href="#cb5-71" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(kv, <span class="at">digits =</span> <span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>log <span class="ot">&lt;-</span> <span class="fu">file.path</span>(PROC, <span class="st">&quot;k3_monitoring_log.csv&quot;</span>)</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">stopifnot</span>(<span class="fu">file.exists</span>(log))</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">file.exists</span>(log)) {</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  m <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(log, <span class="at">encoding =</span> <span class="st">&quot;UTF-8&quot;</span>); m <span class="ot">&lt;-</span> m[m<span class="sc">$</span>datum <span class="sc">==</span> <span class="st">&quot;2026-07-16&quot;</span>, ]</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;cervenec_prekryv_n&quot;</span>, m<span class="sc">$</span>prekryv_hotovo)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;cervenec_vhodnost_n&quot;</span>, m<span class="sc">$</span>vhodnost_n); <span class="fu">put</span>(<span class="st">&quot;cervenec_vhodnost_presna&quot;</span>, m<span class="sc">$</span>vhodnost_shoda)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;cervenec_vhodnost_wkappa&quot;</span>, m<span class="sc">$</span>vhodnost_koef); <span class="fu">put</span>(<span class="st">&quot;cervenec_vhodnost_ac1&quot;</span>, m<span class="sc">$</span>vhodnost_ac1)</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;cervenec_dopad_n&quot;</span>, m<span class="sc">$</span>dopad_n); <span class="fu">put</span>(<span class="st">&quot;cervenec_dopad_presna&quot;</span>, m<span class="sc">$</span>dopad_shoda); <span class="fu">put</span>(<span class="st">&quot;cervenec_dopad_kappa&quot;</span>, m<span class="sc">$</span>dopad_koef)</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;cervenec_kvalita_n&quot;</span>, m<span class="sc">$</span>kvalita_n); <span class="fu">put</span>(<span class="st">&quot;cervenec_kvalita_presna&quot;</span>, m<span class="sc">$</span>kvalita_shoda); <span class="fu">put</span>(<span class="st">&quot;cervenec_kvalita_ac1&quot;</span>, m<span class="sc">$</span>kvalita_ac1)</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a><span class="co"># direction of the July drift from the recalibration briefing (text parsed, no case texts)</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>july_summary <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="fu">file.path</span>(PROC, <span class="st">&quot;k3_cervenec_souhrn.csv&quot;</span>))</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (summary_row <span class="cf">in</span> <span class="fu">seq_len</span>(<span class="fu">nrow</span>(july_summary)))</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(july_summary<span class="sc">$</span>metric[summary_row], july_summary<span class="sc">$</span>value[summary_row])</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a><span class="co"># quartiles of the full overlap by A12 processing order (exploratory)</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>Q <span class="ot">&lt;-</span> P <span class="sc">%&gt;%</span> <span class="fu">arrange</span>(poradi) <span class="sc">%&gt;%</span> <span class="fu">mutate</span>(<span class="at">kvartil =</span> <span class="fu">ntile</span>(poradi, <span class="dv">4</span>))</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>kv <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(<span class="fu">lapply</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">4</span>, <span class="cf">function</span>(q) {</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>  d <span class="ot">&lt;-</span> Q[Q<span class="sc">$</span>kvartil <span class="sc">==</span> q, ]; out <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">kvartil =</span> q, <span class="at">n =</span> <span class="fu">nrow</span>(d))</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (dim <span class="cf">in</span> <span class="fu">c</span>(<span class="st">&quot;kvalita&quot;</span>, <span class="st">&quot;dopad&quot;</span>, <span class="st">&quot;vhodnost&quot;</span>)) {</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>    a <span class="ot">&lt;-</span> d[[<span class="fu">paste0</span>(dim, <span class="st">&quot;_A12&quot;</span>)]]; b <span class="ot">&lt;-</span> d[[<span class="fu">paste0</span>(dim, <span class="st">&quot;_A2&quot;</span>)]]; ok <span class="ot">&lt;-</span> <span class="sc">!</span><span class="fu">is.na</span>(a) <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(b)</span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>    out[[<span class="fu">paste0</span>(dim, <span class="st">&quot;_presna&quot;</span>)]] <span class="ot">&lt;-</span> <span class="fu">exact</span>(a[ok], b[ok])</span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>    <span class="fu">put</span>(<span class="fu">paste0</span>(<span class="st">&quot;kvartil&quot;</span>, q, <span class="st">&quot;_&quot;</span>, dim, <span class="st">&quot;_presna&quot;</span>), <span class="fu">exact</span>(a[ok], b[ok]))</span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb5-24"><a href="#cb5-24" aria-hidden="true" tabindex="-1"></a>  out</span>
+<span id="cb5-25"><a href="#cb5-25" aria-hidden="true" tabindex="-1"></a>}))</span>
+<span id="cb5-26"><a href="#cb5-26" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(kv, <span class="fu">file.path</span>(H2, <span class="st">&quot;vystupy/tabulky/kap8_kvartily.csv&quot;</span>), <span class="at">row.names =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb5-27"><a href="#cb5-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Segments before/after the recalibration, reconstructed by 28_k3_segmenty.py from the</span></span>
+<span id="cb5-28"><a href="#cb5-28" aria-hidden="true" tabindex="-1"></a><span class="co"># July snapshot of both tables (backup of 2026-07-22 = state before the meeting; the</span></span>
+<span id="cb5-29"><a href="#cb5-29" aria-hidden="true" tabindex="-1"></a><span class="co"># script verifies it reproduces the July monitoring point exactly).</span></span>
+<span id="cb5-30"><a href="#cb5-30" aria-hidden="true" tabindex="-1"></a><span class="co">#   beze_zmeny = rated by 22 July and unchanged since -&gt; BEFORE the recalibration</span></span>
+<span id="cb5-31"><a href="#cb5-31" aria-hidden="true" tabindex="-1"></a><span class="co">#   jen_finale = rated only after 22 July              -&gt; AFTER the recalibration</span></span>
+<span id="cb5-32"><a href="#cb5-32" aria-hidden="true" tabindex="-1"></a><span class="co">#   zmeneno    = rated in July and rewritten afterwards (retroactive revision)</span></span>
+<span id="cb5-33"><a href="#cb5-33" aria-hidden="true" tabindex="-1"></a>seg_f <span class="ot">&lt;-</span> <span class="fu">file.path</span>(PROC, <span class="st">&quot;k3_segmenty.csv&quot;</span>)</span>
+<span id="cb5-34"><a href="#cb5-34" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="fu">file.exists</span>(seg_f)) {</span>
+<span id="cb5-35"><a href="#cb5-35" aria-hidden="true" tabindex="-1"></a>  SG <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(seg_f, <span class="at">encoding =</span> <span class="st">&quot;UTF-8&quot;</span>)</span>
+<span id="cb5-36"><a href="#cb5-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;segmenty_dostupne&quot;</span>, <span class="dv">1</span>)</span>
+<span id="cb5-37"><a href="#cb5-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;seg_beze_zmeny_n&quot;</span>, <span class="fu">sum</span>(SG<span class="sc">$</span>segment <span class="sc">==</span> <span class="st">&quot;beze_zmeny&quot;</span>))</span>
+<span id="cb5-38"><a href="#cb5-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;seg_jen_finale_n&quot;</span>, <span class="fu">sum</span>(SG<span class="sc">$</span>segment <span class="sc">==</span> <span class="st">&quot;jen_finale&quot;</span>))</span>
+<span id="cb5-39"><a href="#cb5-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;seg_zmeneno_n&quot;</span>, <span class="fu">sum</span>(SG<span class="sc">$</span>segment <span class="sc">==</span> <span class="st">&quot;zmeneno&quot;</span>))</span>
+<span id="cb5-40"><a href="#cb5-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;seg_zmeneno_A12&quot;</span>, <span class="fu">sum</span>(SG<span class="sc">$</span>segment <span class="sc">==</span> <span class="st">&quot;zmeneno&quot;</span> <span class="sc">&amp;</span> SG<span class="sc">$</span>anotator <span class="sc">==</span> <span class="st">&quot;A12&quot;</span>))</span>
+<span id="cb5-41"><a href="#cb5-41" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;seg_zmeneno_A2&quot;</span>, <span class="fu">sum</span>(SG<span class="sc">$</span>segment <span class="sc">==</span> <span class="st">&quot;zmeneno&quot;</span> <span class="sc">&amp;</span> SG<span class="sc">$</span>anotator <span class="sc">==</span> <span class="st">&quot;A2&quot;</span>))</span>
+<span id="cb5-42"><a href="#cb5-42" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (dim <span class="cf">in</span> <span class="fu">c</span>(<span class="st">&quot;kvalita&quot;</span>, <span class="st">&quot;dopad&quot;</span>, <span class="st">&quot;vhodnost&quot;</span>))</span>
+<span id="cb5-43"><a href="#cb5-43" aria-hidden="true" tabindex="-1"></a>    <span class="fu">put</span>(<span class="fu">paste0</span>(<span class="st">&quot;seg_zmeneno_&quot;</span>, dim), <span class="fu">sum</span>(SG[[<span class="fu">paste0</span>(<span class="st">&quot;zmena_&quot;</span>, dim)]], <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb5-44"><a href="#cb5-44" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;seg_zmeneno_projednano&quot;</span>, <span class="fu">sum</span>(SG<span class="sc">$</span>segment <span class="sc">==</span> <span class="st">&quot;zmeneno&quot;</span> <span class="sc">&amp;</span> SG<span class="sc">$</span>adjudikovano <span class="sc">==</span> <span class="dv">1</span>))</span>
+<span id="cb5-45"><a href="#cb5-45" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;seg_cervenec_radku_A12&quot;</span>, <span class="fu">sum</span>(SG<span class="sc">$</span>anotator <span class="sc">==</span> <span class="st">&quot;A12&quot;</span> <span class="sc">&amp;</span> SG<span class="sc">$</span>segment <span class="sc">!=</span> <span class="st">&quot;jen_finale&quot;</span>))</span>
+<span id="cb5-46"><a href="#cb5-46" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;seg_cervenec_radku_A2&quot;</span>, <span class="fu">sum</span>(SG<span class="sc">$</span>anotator <span class="sc">==</span> <span class="st">&quot;A2&quot;</span> <span class="sc">&amp;</span> SG<span class="sc">$</span>segment <span class="sc">!=</span> <span class="st">&quot;jen_finale&quot;</span>))</span>
+<span id="cb5-47"><a href="#cb5-47" aria-hidden="true" tabindex="-1"></a>  s12 <span class="ot">&lt;-</span> SG[SG<span class="sc">$</span>anotator <span class="sc">==</span> <span class="st">&quot;A12&quot;</span>, <span class="fu">c</span>(<span class="st">&quot;case_uid&quot;</span>, <span class="st">&quot;segment&quot;</span>)]; <span class="fu">names</span>(s12)[<span class="dv">2</span>] <span class="ot">&lt;-</span> <span class="st">&quot;seg_A12&quot;</span></span>
+<span id="cb5-48"><a href="#cb5-48" aria-hidden="true" tabindex="-1"></a>  s2  <span class="ot">&lt;-</span> SG[SG<span class="sc">$</span>anotator <span class="sc">==</span> <span class="st">&quot;A2&quot;</span>,  <span class="fu">c</span>(<span class="st">&quot;case_uid&quot;</span>, <span class="st">&quot;segment&quot;</span>)]; <span class="fu">names</span>(s2)[<span class="dv">2</span>]  <span class="ot">&lt;-</span> <span class="st">&quot;seg_A2&quot;</span></span>
+<span id="cb5-49"><a href="#cb5-49" aria-hidden="true" tabindex="-1"></a>  PS <span class="ot">&lt;-</span> P <span class="sc">%&gt;%</span> <span class="fu">left_join</span>(s12, <span class="at">by =</span> <span class="st">&quot;case_uid&quot;</span>) <span class="sc">%&gt;%</span> <span class="fu">left_join</span>(s2, <span class="at">by =</span> <span class="st">&quot;case_uid&quot;</span>)</span>
+<span id="cb5-50"><a href="#cb5-50" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;seg_prekryv_A2_cervenec&quot;</span>, <span class="fu">sum</span>(PS<span class="sc">$</span>seg_A2 <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">&quot;beze_zmeny&quot;</span>, <span class="st">&quot;zmeneno&quot;</span>), <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb5-51"><a href="#cb5-51" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;seg_prekryv_A2_po&quot;</span>, <span class="fu">sum</span>(PS<span class="sc">$</span>seg_A2 <span class="sc">==</span> <span class="st">&quot;jen_finale&quot;</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb5-52"><a href="#cb5-52" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;seg_prekryv_A12_po&quot;</span>, <span class="fu">sum</span>(PS<span class="sc">$</span>seg_A12 <span class="sc">==</span> <span class="st">&quot;jen_finale&quot;</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb5-53"><a href="#cb5-53" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;seg_prekryv_A12_zmeneno&quot;</span>, <span class="fu">sum</span>(PS<span class="sc">$</span>seg_A12 <span class="sc">==</span> <span class="st">&quot;zmeneno&quot;</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>))</span>
+<span id="cb5-54"><a href="#cb5-54" aria-hidden="true" tabindex="-1"></a>  ok <span class="ot">&lt;-</span> <span class="sc">!</span><span class="fu">is.na</span>(PS<span class="sc">$</span>seg_A12) <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(PS<span class="sc">$</span>seg_A2)</span>
+<span id="cb5-55"><a href="#cb5-55" aria-hidden="true" tabindex="-1"></a>  PRED <span class="ot">&lt;-</span> PS[ok <span class="sc">&amp;</span> PS<span class="sc">$</span>seg_A12 <span class="sc">==</span> <span class="st">&quot;beze_zmeny&quot;</span> <span class="sc">&amp;</span> PS<span class="sc">$</span>seg_A2 <span class="sc">==</span> <span class="st">&quot;beze_zmeny&quot;</span>, ]</span>
+<span id="cb5-56"><a href="#cb5-56" aria-hidden="true" tabindex="-1"></a>  PO   <span class="ot">&lt;-</span> PS[ok <span class="sc">&amp;</span> PS<span class="sc">$</span>seg_A12 <span class="sc">==</span> <span class="st">&quot;jen_finale&quot;</span> <span class="sc">&amp;</span> PS<span class="sc">$</span>seg_A2 <span class="sc">==</span> <span class="st">&quot;beze_zmeny&quot;</span>, ]</span>
+<span id="cb5-57"><a href="#cb5-57" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="st">&quot;seg_pred_n&quot;</span>, <span class="fu">nrow</span>(PRED)); <span class="fu">put</span>(<span class="st">&quot;seg_po_n&quot;</span>, <span class="fu">nrow</span>(PO))</span>
+<span id="cb5-58"><a href="#cb5-58" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">nrow</span>(PRED) <span class="sc">&gt;</span> <span class="dv">20</span>) <span class="fu">rel</span>(PRED, <span class="st">&quot;segpred_&quot;</span>)</span>
+<span id="cb5-59"><a href="#cb5-59" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">nrow</span>(PO) <span class="sc">&gt;</span> <span class="dv">20</span>) <span class="fu">rel</span>(PO, <span class="st">&quot;segpo_&quot;</span>)</span>
+<span id="cb5-60"><a href="#cb5-60" aria-hidden="true" tabindex="-1"></a>  <span class="fu">write.csv</span>(SG <span class="sc">%&gt;%</span> <span class="fu">count</span>(anotator, segment),</span>
+<span id="cb5-61"><a href="#cb5-61" aria-hidden="true" tabindex="-1"></a>            <span class="fu">file.path</span>(H2, <span class="st">&quot;vystupy/tabulky/kap8_segmenty.csv&quot;</span>), <span class="at">row.names =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb5-62"><a href="#cb5-62" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb5-63"><a href="#cb5-63" aria-hidden="true" tabindex="-1"></a><span class="co"># adjudication summary (counts only; produced by 27_k3_freeze.py from the briefing sheet)</span></span>
+<span id="cb5-64"><a href="#cb5-64" aria-hidden="true" tabindex="-1"></a>adjs <span class="ot">&lt;-</span> <span class="fu">file.path</span>(PROC, <span class="st">&quot;k3_adjudikace_souhrn.csv&quot;</span>)</span>
+<span id="cb5-65"><a href="#cb5-65" aria-hidden="true" tabindex="-1"></a><span class="fu">stopifnot</span>(<span class="fu">file.exists</span>(adjs))</span>
+<span id="cb5-66"><a href="#cb5-66" aria-hidden="true" tabindex="-1"></a>adjudication_summary <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(adjs)</span>
+<span id="cb5-67"><a href="#cb5-67" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (summary_row <span class="cf">in</span> <span class="fu">seq_len</span>(<span class="fu">nrow</span>(adjudication_summary)))</span>
+<span id="cb5-68"><a href="#cb5-68" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(adjudication_summary<span class="sc">$</span>metric[summary_row], adjudication_summary<span class="sc">$</span>value[summary_row])</span>
+<span id="cb5-69"><a href="#cb5-69" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(kv, <span class="at">digits =</span> <span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
 <thead>
@@ -3099,53 +3113,55 @@ vertical-align: -.125em;
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>long <span class="ot">&lt;-</span> <span class="fu">bind_rows</span>(<span class="fu">lapply</span>(<span class="fu">c</span>(<span class="st">&quot;A12&quot;</span>, <span class="st">&quot;A2&quot;</span>), <span class="cf">function</span>(a)</span>
 <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">data.frame</span>(<span class="at">case_uid =</span> PK<span class="sc">$</span>case_uid, <span class="at">k1 =</span> PK<span class="sc">$</span>k1_dopad3, <span class="at">k3 =</span> PK[[<span class="fu">paste0</span>(<span class="st">&quot;k3_dopad_&quot;</span>, a)]],</span>
 <span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>             <span class="at">vh =</span> PK[[<span class="fu">paste0</span>(<span class="st">&quot;k3_vhodnost_&quot;</span>, a)]], <span class="at">res =</span> PK<span class="sc">$</span>k1_reseni_primarni, <span class="at">stringsAsFactors =</span> <span class="cn">FALSE</span>)))</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span> long[<span class="sc">!</span><span class="fu">is.na</span>(long<span class="sc">$</span>k1) <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(long<span class="sc">$</span>k3) <span class="sc">&amp;</span> long<span class="sc">$</span>k3 <span class="sc">!=</span> <span class="st">&quot;&quot;</span>, ]</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="fu">put</span>(<span class="st">&quot;k1k3_dopad_n&quot;</span>, <span class="fu">nrow</span>(d)); <span class="fu">put</span>(<span class="st">&quot;k1k3_dopad_presna&quot;</span>, <span class="fu">exact</span>(d<span class="sc">$</span>k1, d<span class="sc">$</span>k3))</span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="fu">put</span>(<span class="st">&quot;k1k3_dopad_kappa&quot;</span>, <span class="fu">kappa_nom</span>(d<span class="sc">$</span>k1, d<span class="sc">$</span>k3)); <span class="fu">put</span>(<span class="st">&quot;k1k3_dopad_ac1&quot;</span>, <span class="fu">ac1</span>(d<span class="sc">$</span>k1, d<span class="sc">$</span>k3))</span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="co"># cluster bootstrap over cases</span></span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>cb <span class="ot">&lt;-</span> <span class="cf">function</span>(f) { u <span class="ot">&lt;-</span> <span class="fu">unique</span>(d<span class="sc">$</span>case_uid); v <span class="ot">&lt;-</span> <span class="fu">replicate</span>(B, {</span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>  s <span class="ot">&lt;-</span> <span class="fu">sample</span>(u, <span class="fu">length</span>(u), <span class="cn">TRUE</span>); dd <span class="ot">&lt;-</span> d[<span class="fu">unlist</span>(<span class="fu">lapply</span>(s, <span class="cf">function</span>(x) <span class="fu">which</span>(d<span class="sc">$</span>case_uid <span class="sc">==</span> x))), ]</span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">f</span>(dd<span class="sc">$</span>k1, dd<span class="sc">$</span>k3) }); <span class="fu">quantile</span>(v, <span class="fu">c</span>(.<span class="dv">025</span>, .<span class="dv">975</span>), <span class="at">names =</span> <span class="cn">FALSE</span>) }</span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>ci <span class="ot">&lt;-</span> <span class="fu">cb</span>(exact); <span class="fu">put</span>(<span class="st">&quot;k1k3_dopad_presna_ci_lo&quot;</span>, ci[<span class="dv">1</span>]); <span class="fu">put</span>(<span class="st">&quot;k1k3_dopad_presna_ci_hi&quot;</span>, ci[<span class="dv">2</span>])</span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>ci <span class="ot">&lt;-</span> <span class="fu">cb</span>(kappa_nom); <span class="fu">put</span>(<span class="st">&quot;k1k3_dopad_kappa_ci_lo&quot;</span>, ci[<span class="dv">1</span>]); <span class="fu">put</span>(<span class="st">&quot;k1k3_dopad_kappa_ci_hi&quot;</span>, ci[<span class="dv">2</span>])</span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>mz2 <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">table</span>(<span class="at">K1 =</span> d<span class="sc">$</span>k1, <span class="at">K3 =</span> d<span class="sc">$</span>k3)) <span class="sc">%&gt;%</span> <span class="fu">rename</span>(<span class="at">n =</span> Freq)</span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(mz2, <span class="fu">file.path</span>(H2, <span class="st">&quot;vystupy/tabulky/kap8_matice_k1k3.csv&quot;</span>), <span class="at">row.names =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a><span class="co"># solution type (K1 primary) × K3 outcome / appropriateness</span></span>
-<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>r <span class="ot">&lt;-</span> long[<span class="sc">!</span><span class="fu">is.na</span>(long<span class="sc">$</span>res) <span class="sc">&amp;</span> long<span class="sc">$</span>res <span class="sc">!=</span> <span class="st">&quot;&quot;</span>, ]</span>
-<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>r<span class="sc">$</span>du <span class="ot">&lt;-</span> <span class="fu">as.integer</span>(r<span class="sc">$</span>k3 <span class="sc">==</span> <span class="st">&quot;Dlouhodobý úspěch&quot;</span>)</span>
-<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>r<span class="sc">$</span>du[<span class="fu">is.na</span>(r<span class="sc">$</span>k3) <span class="sc">|</span> r<span class="sc">$</span>k3 <span class="sc">==</span> <span class="st">&quot;&quot;</span>] <span class="ot">&lt;-</span> <span class="cn">NA</span></span>
-<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>tab <span class="ot">&lt;-</span> r <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(res) <span class="sc">%&gt;%</span> <span class="fu">summarise</span>(<span class="at">n_kazuistik =</span> <span class="fu">n_distinct</span>(case_uid), <span class="at">n =</span> <span class="fu">sum</span>(<span class="sc">!</span><span class="fu">is.na</span>(du)),</span>
-<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>  <span class="at">du_podil =</span> <span class="fu">mean</span>(du, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="at">vhodnost_prumer =</span> <span class="fu">mean</span>(vh, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="at">.groups =</span> <span class="st">&quot;drop&quot;</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n_kazuistik))</span>
-<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a><span class="fu">put</span>(<span class="st">&quot;k1k3_reseni_n&quot;</span>, <span class="fu">n_distinct</span>(r<span class="sc">$</span>case_uid))</span>
-<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>cbres <span class="ot">&lt;-</span> <span class="cf">function</span>(cat, f) { u <span class="ot">&lt;-</span> <span class="fu">unique</span>(r<span class="sc">$</span>case_uid[r<span class="sc">$</span>res <span class="sc">==</span> cat]); v <span class="ot">&lt;-</span> <span class="fu">replicate</span>(B, {</span>
-<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a>  s <span class="ot">&lt;-</span> <span class="fu">sample</span>(u, <span class="fu">length</span>(u), <span class="cn">TRUE</span>); dd <span class="ot">&lt;-</span> r[r<span class="sc">$</span>res <span class="sc">==</span> cat, ][<span class="fu">unlist</span>(<span class="fu">lapply</span>(s, <span class="cf">function</span>(x) <span class="fu">which</span>(r<span class="sc">$</span>case_uid[r<span class="sc">$</span>res <span class="sc">==</span> cat] <span class="sc">==</span> x))), ]</span>
-<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">f</span>(dd) }); <span class="fu">quantile</span>(v, <span class="fu">c</span>(.<span class="dv">025</span>, .<span class="dv">975</span>), <span class="at">names =</span> <span class="cn">FALSE</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) }</span>
-<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a>tab<span class="sc">$</span>du_ci_lo <span class="ot">&lt;-</span> <span class="cn">NA</span>; tab<span class="sc">$</span>du_ci_hi <span class="ot">&lt;-</span> <span class="cn">NA</span>; tab<span class="sc">$</span>vh_ci_lo <span class="ot">&lt;-</span> <span class="cn">NA</span>; tab<span class="sc">$</span>vh_ci_hi <span class="ot">&lt;-</span> <span class="cn">NA</span></span>
-<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a>tab<span class="sc">$</span>du_podil_k1 <span class="ot">&lt;-</span> <span class="cn">NA</span>; tab<span class="sc">$</span>n_k1 <span class="ot">&lt;-</span> <span class="cn">NA</span></span>
-<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a>slug <span class="ot">&lt;-</span> <span class="cf">function</span>(x) { x <span class="ot">&lt;-</span> <span class="fu">tolower</span>(<span class="fu">iconv</span>(x, <span class="at">to =</span> <span class="st">&quot;ASCII//TRANSLIT&quot;</span>)); <span class="fu">gsub</span>(<span class="st">&quot;^_+|_+$&quot;</span>, <span class="st">&quot;&quot;</span>, <span class="fu">gsub</span>(<span class="st">&quot;[^a-z0-9]+&quot;</span>, <span class="st">&quot;_&quot;</span>, x)) }</span>
-<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_len</span>(<span class="fu">nrow</span>(tab))) {</span>
-<span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a>  cat_ <span class="ot">&lt;-</span> tab<span class="sc">$</span>res[i]; s <span class="ot">&lt;-</span> <span class="fu">slug</span>(cat_)</span>
-<span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a>  ci <span class="ot">&lt;-</span> <span class="fu">cbres</span>(cat_, <span class="cf">function</span>(dd) <span class="fu">mean</span>(dd<span class="sc">$</span>du, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)); tab<span class="sc">$</span>du_ci_lo[i] <span class="ot">&lt;-</span> ci[<span class="dv">1</span>]; tab<span class="sc">$</span>du_ci_hi[i] <span class="ot">&lt;-</span> ci[<span class="dv">2</span>]</span>
-<span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a>  ci <span class="ot">&lt;-</span> <span class="fu">cbres</span>(cat_, <span class="cf">function</span>(dd) <span class="fu">mean</span>(dd<span class="sc">$</span>vh, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)); tab<span class="sc">$</span>vh_ci_lo[i] <span class="ot">&lt;-</span> ci[<span class="dv">1</span>]; tab<span class="sc">$</span>vh_ci_hi[i] <span class="ot">&lt;-</span> ci[<span class="dv">2</span>]</span>
-<span id="cb6-37"><a href="#cb6-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="fu">paste0</span>(<span class="st">&quot;reseni_&quot;</span>, s, <span class="st">&quot;_n&quot;</span>), tab<span class="sc">$</span>n_kazuistik[i])</span>
-<span id="cb6-38"><a href="#cb6-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="fu">paste0</span>(<span class="st">&quot;reseni_&quot;</span>, s, <span class="st">&quot;_du_podil&quot;</span>), tab<span class="sc">$</span>du_podil[i])</span>
-<span id="cb6-39"><a href="#cb6-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="fu">paste0</span>(<span class="st">&quot;reseni_&quot;</span>, s, <span class="st">&quot;_du_ci_lo&quot;</span>), tab<span class="sc">$</span>du_ci_lo[i]); <span class="fu">put</span>(<span class="fu">paste0</span>(<span class="st">&quot;reseni_&quot;</span>, s, <span class="st">&quot;_du_ci_hi&quot;</span>), tab<span class="sc">$</span>du_ci_hi[i])</span>
-<span id="cb6-40"><a href="#cb6-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="fu">paste0</span>(<span class="st">&quot;reseni_&quot;</span>, s, <span class="st">&quot;_vhodnost_prumer&quot;</span>), tab<span class="sc">$</span>vhodnost_prumer[i])</span>
-<span id="cb6-41"><a href="#cb6-41" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="fu">paste0</span>(<span class="st">&quot;reseni_&quot;</span>, s, <span class="st">&quot;_vh_ci_lo&quot;</span>), tab<span class="sc">$</span>vh_ci_lo[i]); <span class="fu">put</span>(<span class="fu">paste0</span>(<span class="st">&quot;reseni_&quot;</span>, s, <span class="st">&quot;_vh_ci_hi&quot;</span>), tab<span class="sc">$</span>vh_ci_hi[i])</span>
-<span id="cb6-42"><a href="#cb6-42" aria-hidden="true" tabindex="-1"></a>  <span class="co"># same cases, outcome as coded by the FIRST campaign: makes the two teams comparable</span></span>
-<span id="cb6-43"><a href="#cb6-43" aria-hidden="true" tabindex="-1"></a>  k1sub <span class="ot">&lt;-</span> PK[<span class="sc">!</span><span class="fu">is.na</span>(PK<span class="sc">$</span>k1_reseni_primarni) <span class="sc">&amp;</span> PK<span class="sc">$</span>k1_reseni_primarni <span class="sc">==</span> cat_ <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(PK<span class="sc">$</span>k1_dopad3), ]</span>
-<span id="cb6-44"><a href="#cb6-44" aria-hidden="true" tabindex="-1"></a>  tab<span class="sc">$</span>du_podil_k1[i] <span class="ot">&lt;-</span> <span class="fu">mean</span>(k1sub<span class="sc">$</span>k1_dopad3 <span class="sc">==</span> <span class="st">&quot;Dlouhodobý úspěch&quot;</span>)</span>
-<span id="cb6-45"><a href="#cb6-45" aria-hidden="true" tabindex="-1"></a>  tab<span class="sc">$</span>n_k1[i] <span class="ot">&lt;-</span> <span class="fu">nrow</span>(k1sub)</span>
-<span id="cb6-46"><a href="#cb6-46" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="fu">paste0</span>(<span class="st">&quot;reseni_&quot;</span>, s, <span class="st">&quot;_du_podil_k1&quot;</span>), tab<span class="sc">$</span>du_podil_k1[i])</span>
-<span id="cb6-47"><a href="#cb6-47" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="fu">paste0</span>(<span class="st">&quot;reseni_&quot;</span>, s, <span class="st">&quot;_n_k1&quot;</span>), tab<span class="sc">$</span>n_k1[i])</span>
-<span id="cb6-48"><a href="#cb6-48" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb6-49"><a href="#cb6-49" aria-hidden="true" tabindex="-1"></a>ct <span class="ot">&lt;-</span> <span class="fu">table</span>(r<span class="sc">$</span>res[<span class="sc">!</span><span class="fu">is.na</span>(r<span class="sc">$</span>k3) <span class="sc">&amp;</span> r<span class="sc">$</span>k3 <span class="sc">!=</span> <span class="st">&quot;&quot;</span>], r<span class="sc">$</span>k3[<span class="sc">!</span><span class="fu">is.na</span>(r<span class="sc">$</span>k3) <span class="sc">&amp;</span> r<span class="sc">$</span>k3 <span class="sc">!=</span> <span class="st">&quot;&quot;</span>])</span>
-<span id="cb6-50"><a href="#cb6-50" aria-hidden="true" tabindex="-1"></a>chi <span class="ot">&lt;-</span> <span class="fu">suppressWarnings</span>(<span class="fu">chisq.test</span>(ct))</span>
-<span id="cb6-51"><a href="#cb6-51" aria-hidden="true" tabindex="-1"></a><span class="fu">put</span>(<span class="st">&quot;k1k3_reseni_dopad_cramer_v&quot;</span>, <span class="fu">sqrt</span>(chi<span class="sc">$</span>statistic <span class="sc">/</span> (<span class="fu">sum</span>(ct) <span class="sc">*</span> (<span class="fu">min</span>(<span class="fu">dim</span>(ct)) <span class="sc">-</span> <span class="dv">1</span>))))</span>
-<span id="cb6-52"><a href="#cb6-52" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(tab, <span class="fu">file.path</span>(H2, <span class="st">&quot;vystupy/tabulky/kap8_reseni_dopad.csv&quot;</span>), <span class="at">row.names =</span> <span class="cn">FALSE</span>)</span>
-<span id="cb6-53"><a href="#cb6-53" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(tab, <span class="at">digits =</span> <span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>d <span class="ot">&lt;-</span> long[<span class="sc">!</span><span class="fu">is.na</span>(long<span class="sc">$</span>k1) <span class="sc">&amp;</span> long<span class="sc">$</span>k1 <span class="sc">!=</span> <span class="st">&quot;&quot;</span> <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(long<span class="sc">$</span>k3) <span class="sc">&amp;</span> long<span class="sc">$</span>k3 <span class="sc">!=</span> <span class="st">&quot;&quot;</span>, ]</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="fu">put</span>(<span class="st">&quot;k1k3_neuplny_k1_n&quot;</span>, <span class="fu">sum</span>((<span class="fu">is.na</span>(long<span class="sc">$</span>k1) <span class="sc">|</span> long<span class="sc">$</span>k1 <span class="sc">==</span> <span class="st">&quot;&quot;</span>) <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(long<span class="sc">$</span>k3) <span class="sc">&amp;</span> long<span class="sc">$</span>k3 <span class="sc">!=</span> <span class="st">&quot;&quot;</span>))</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="fu">put</span>(<span class="st">&quot;k1k3_dopad_n&quot;</span>, <span class="fu">nrow</span>(d)); <span class="fu">put</span>(<span class="st">&quot;k1k3_dopad_presna&quot;</span>, <span class="fu">exact</span>(d<span class="sc">$</span>k1, d<span class="sc">$</span>k3))</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="fu">put</span>(<span class="st">&quot;k1k3_dopad_kappa&quot;</span>, <span class="fu">kappa_nom</span>(d<span class="sc">$</span>k1, d<span class="sc">$</span>k3)); <span class="fu">put</span>(<span class="st">&quot;k1k3_dopad_ac1&quot;</span>, <span class="fu">ac1</span>(d<span class="sc">$</span>k1, d<span class="sc">$</span>k3))</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="co"># cluster bootstrap over cases</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>cb <span class="ot">&lt;-</span> <span class="cf">function</span>(f) { <span class="fu">set.seed</span>(SEED); u <span class="ot">&lt;-</span> <span class="fu">unique</span>(d<span class="sc">$</span>case_uid); v <span class="ot">&lt;-</span> <span class="fu">replicate</span>(B, {</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>  s <span class="ot">&lt;-</span> <span class="fu">sample</span>(u, <span class="fu">length</span>(u), <span class="cn">TRUE</span>); dd <span class="ot">&lt;-</span> d[<span class="fu">unlist</span>(<span class="fu">lapply</span>(s, <span class="cf">function</span>(x) <span class="fu">which</span>(d<span class="sc">$</span>case_uid <span class="sc">==</span> x))), ]</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">f</span>(dd<span class="sc">$</span>k1, dd<span class="sc">$</span>k3) }); <span class="fu">quantile</span>(v, <span class="fu">c</span>(.<span class="dv">025</span>, .<span class="dv">975</span>), <span class="at">names =</span> <span class="cn">FALSE</span>) }</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>ci <span class="ot">&lt;-</span> <span class="fu">cb</span>(exact); <span class="fu">put</span>(<span class="st">&quot;k1k3_dopad_presna_ci_lo&quot;</span>, ci[<span class="dv">1</span>]); <span class="fu">put</span>(<span class="st">&quot;k1k3_dopad_presna_ci_hi&quot;</span>, ci[<span class="dv">2</span>])</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>ci <span class="ot">&lt;-</span> <span class="fu">cb</span>(kappa_nom); <span class="fu">put</span>(<span class="st">&quot;k1k3_dopad_kappa_ci_lo&quot;</span>, ci[<span class="dv">1</span>]); <span class="fu">put</span>(<span class="st">&quot;k1k3_dopad_kappa_ci_hi&quot;</span>, ci[<span class="dv">2</span>])</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>mz2 <span class="ot">&lt;-</span> <span class="fu">as.data.frame</span>(<span class="fu">table</span>(<span class="at">K1 =</span> d<span class="sc">$</span>k1, <span class="at">K3 =</span> d<span class="sc">$</span>k3)) <span class="sc">%&gt;%</span> <span class="fu">rename</span>(<span class="at">n =</span> Freq)</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(mz2, <span class="fu">file.path</span>(H2, <span class="st">&quot;vystupy/tabulky/kap8_matice_k1k3.csv&quot;</span>), <span class="at">row.names =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a><span class="co"># solution type (K1 primary) × K3 outcome / appropriateness</span></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>r <span class="ot">&lt;-</span> long[<span class="sc">!</span><span class="fu">is.na</span>(long<span class="sc">$</span>res) <span class="sc">&amp;</span> long<span class="sc">$</span>res <span class="sc">!=</span> <span class="st">&quot;&quot;</span>, ]</span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>r<span class="sc">$</span>pair_complete <span class="ot">&lt;-</span> <span class="sc">!</span><span class="fu">is.na</span>(r<span class="sc">$</span>k1) <span class="sc">&amp;</span> r<span class="sc">$</span>k1 <span class="sc">!=</span> <span class="st">&quot;&quot;</span> <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(r<span class="sc">$</span>k3) <span class="sc">&amp;</span> r<span class="sc">$</span>k3 <span class="sc">!=</span> <span class="st">&quot;&quot;</span></span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>r<span class="sc">$</span>du <span class="ot">&lt;-</span> <span class="fu">as.integer</span>(r<span class="sc">$</span>k3 <span class="sc">==</span> <span class="st">&quot;Dlouhodobý úspěch&quot;</span>)</span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>r<span class="sc">$</span>du[<span class="sc">!</span>r<span class="sc">$</span>pair_complete] <span class="ot">&lt;-</span> <span class="cn">NA</span></span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>tab <span class="ot">&lt;-</span> r <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(res) <span class="sc">%&gt;%</span> <span class="fu">summarise</span>(<span class="at">n_kazuistik =</span> <span class="fu">n_distinct</span>(case_uid), <span class="at">n =</span> <span class="fu">sum</span>(<span class="sc">!</span><span class="fu">is.na</span>(du)),</span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>  <span class="at">du_podil =</span> <span class="fu">mean</span>(du, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="at">vhodnost_prumer =</span> <span class="fu">mean</span>(vh, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="at">.groups =</span> <span class="st">&quot;drop&quot;</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">arrange</span>(<span class="fu">desc</span>(n_kazuistik))</span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a><span class="fu">put</span>(<span class="st">&quot;k1k3_reseni_n&quot;</span>, <span class="fu">n_distinct</span>(r<span class="sc">$</span>case_uid))</span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a>cbres <span class="ot">&lt;-</span> <span class="cf">function</span>(cat, f) { <span class="fu">set.seed</span>(SEED); u <span class="ot">&lt;-</span> <span class="fu">unique</span>(r<span class="sc">$</span>case_uid[r<span class="sc">$</span>res <span class="sc">==</span> cat]); v <span class="ot">&lt;-</span> <span class="fu">replicate</span>(B, {</span>
+<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a>  s <span class="ot">&lt;-</span> <span class="fu">sample</span>(u, <span class="fu">length</span>(u), <span class="cn">TRUE</span>); dd <span class="ot">&lt;-</span> r[r<span class="sc">$</span>res <span class="sc">==</span> cat, ][<span class="fu">unlist</span>(<span class="fu">lapply</span>(s, <span class="cf">function</span>(x) <span class="fu">which</span>(r<span class="sc">$</span>case_uid[r<span class="sc">$</span>res <span class="sc">==</span> cat] <span class="sc">==</span> x))), ]</span>
+<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">f</span>(dd) }); <span class="fu">quantile</span>(v, <span class="fu">c</span>(.<span class="dv">025</span>, .<span class="dv">975</span>), <span class="at">names =</span> <span class="cn">FALSE</span>, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) }</span>
+<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a>tab<span class="sc">$</span>du_ci_lo <span class="ot">&lt;-</span> <span class="cn">NA</span>; tab<span class="sc">$</span>du_ci_hi <span class="ot">&lt;-</span> <span class="cn">NA</span>; tab<span class="sc">$</span>vh_ci_lo <span class="ot">&lt;-</span> <span class="cn">NA</span>; tab<span class="sc">$</span>vh_ci_hi <span class="ot">&lt;-</span> <span class="cn">NA</span></span>
+<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a>tab<span class="sc">$</span>du_podil_k1 <span class="ot">&lt;-</span> <span class="cn">NA</span>; tab<span class="sc">$</span>n_k1 <span class="ot">&lt;-</span> <span class="cn">NA</span></span>
+<span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a>slug <span class="ot">&lt;-</span> <span class="cf">function</span>(x) { x <span class="ot">&lt;-</span> <span class="fu">tolower</span>(<span class="fu">iconv</span>(x, <span class="at">to =</span> <span class="st">&quot;ASCII//TRANSLIT&quot;</span>)); <span class="fu">gsub</span>(<span class="st">&quot;^_+|_+$&quot;</span>, <span class="st">&quot;&quot;</span>, <span class="fu">gsub</span>(<span class="st">&quot;[^a-z0-9]+&quot;</span>, <span class="st">&quot;_&quot;</span>, x)) }</span>
+<span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="fu">seq_len</span>(<span class="fu">nrow</span>(tab))) {</span>
+<span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a>  cat_ <span class="ot">&lt;-</span> tab<span class="sc">$</span>res[i]; s <span class="ot">&lt;-</span> <span class="fu">slug</span>(cat_)</span>
+<span id="cb6-37"><a href="#cb6-37" aria-hidden="true" tabindex="-1"></a>  ci <span class="ot">&lt;-</span> <span class="fu">cbres</span>(cat_, <span class="cf">function</span>(dd) <span class="fu">mean</span>(dd<span class="sc">$</span>du, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)); tab<span class="sc">$</span>du_ci_lo[i] <span class="ot">&lt;-</span> ci[<span class="dv">1</span>]; tab<span class="sc">$</span>du_ci_hi[i] <span class="ot">&lt;-</span> ci[<span class="dv">2</span>]</span>
+<span id="cb6-38"><a href="#cb6-38" aria-hidden="true" tabindex="-1"></a>  ci <span class="ot">&lt;-</span> <span class="fu">cbres</span>(cat_, <span class="cf">function</span>(dd) <span class="fu">mean</span>(dd<span class="sc">$</span>vh, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)); tab<span class="sc">$</span>vh_ci_lo[i] <span class="ot">&lt;-</span> ci[<span class="dv">1</span>]; tab<span class="sc">$</span>vh_ci_hi[i] <span class="ot">&lt;-</span> ci[<span class="dv">2</span>]</span>
+<span id="cb6-39"><a href="#cb6-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="fu">paste0</span>(<span class="st">&quot;reseni_&quot;</span>, s, <span class="st">&quot;_n&quot;</span>), tab<span class="sc">$</span>n_kazuistik[i])</span>
+<span id="cb6-40"><a href="#cb6-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="fu">paste0</span>(<span class="st">&quot;reseni_&quot;</span>, s, <span class="st">&quot;_du_podil&quot;</span>), tab<span class="sc">$</span>du_podil[i])</span>
+<span id="cb6-41"><a href="#cb6-41" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="fu">paste0</span>(<span class="st">&quot;reseni_&quot;</span>, s, <span class="st">&quot;_du_ci_lo&quot;</span>), tab<span class="sc">$</span>du_ci_lo[i]); <span class="fu">put</span>(<span class="fu">paste0</span>(<span class="st">&quot;reseni_&quot;</span>, s, <span class="st">&quot;_du_ci_hi&quot;</span>), tab<span class="sc">$</span>du_ci_hi[i])</span>
+<span id="cb6-42"><a href="#cb6-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="fu">paste0</span>(<span class="st">&quot;reseni_&quot;</span>, s, <span class="st">&quot;_vhodnost_prumer&quot;</span>), tab<span class="sc">$</span>vhodnost_prumer[i])</span>
+<span id="cb6-43"><a href="#cb6-43" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="fu">paste0</span>(<span class="st">&quot;reseni_&quot;</span>, s, <span class="st">&quot;_vh_ci_lo&quot;</span>), tab<span class="sc">$</span>vh_ci_lo[i]); <span class="fu">put</span>(<span class="fu">paste0</span>(<span class="st">&quot;reseni_&quot;</span>, s, <span class="st">&quot;_vh_ci_hi&quot;</span>), tab<span class="sc">$</span>vh_ci_hi[i])</span>
+<span id="cb6-44"><a href="#cb6-44" aria-hidden="true" tabindex="-1"></a>  <span class="co"># same cases, outcome as coded by the FIRST campaign: makes the two teams comparable</span></span>
+<span id="cb6-45"><a href="#cb6-45" aria-hidden="true" tabindex="-1"></a>  k1sub <span class="ot">&lt;-</span> r[r<span class="sc">$</span>res <span class="sc">==</span> cat_ <span class="sc">&amp;</span> r<span class="sc">$</span>pair_complete, ]</span>
+<span id="cb6-46"><a href="#cb6-46" aria-hidden="true" tabindex="-1"></a>  tab<span class="sc">$</span>du_podil_k1[i] <span class="ot">&lt;-</span> <span class="fu">mean</span>(k1sub<span class="sc">$</span>k1 <span class="sc">==</span> <span class="st">&quot;Dlouhodobý úspěch&quot;</span>)</span>
+<span id="cb6-47"><a href="#cb6-47" aria-hidden="true" tabindex="-1"></a>  tab<span class="sc">$</span>n_k1[i] <span class="ot">&lt;-</span> <span class="fu">nrow</span>(k1sub)</span>
+<span id="cb6-48"><a href="#cb6-48" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="fu">paste0</span>(<span class="st">&quot;reseni_&quot;</span>, s, <span class="st">&quot;_du_podil_k1&quot;</span>), tab<span class="sc">$</span>du_podil_k1[i])</span>
+<span id="cb6-49"><a href="#cb6-49" aria-hidden="true" tabindex="-1"></a>  <span class="fu">put</span>(<span class="fu">paste0</span>(<span class="st">&quot;reseni_&quot;</span>, s, <span class="st">&quot;_n_k1&quot;</span>), tab<span class="sc">$</span>n_k1[i])</span>
+<span id="cb6-50"><a href="#cb6-50" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb6-51"><a href="#cb6-51" aria-hidden="true" tabindex="-1"></a>ct <span class="ot">&lt;-</span> <span class="fu">table</span>(r<span class="sc">$</span>res[r<span class="sc">$</span>pair_complete], r<span class="sc">$</span>k3[r<span class="sc">$</span>pair_complete])</span>
+<span id="cb6-52"><a href="#cb6-52" aria-hidden="true" tabindex="-1"></a>chi <span class="ot">&lt;-</span> <span class="fu">suppressWarnings</span>(<span class="fu">chisq.test</span>(ct))</span>
+<span id="cb6-53"><a href="#cb6-53" aria-hidden="true" tabindex="-1"></a><span class="fu">put</span>(<span class="st">&quot;k1k3_reseni_dopad_cramer_v&quot;</span>, <span class="fu">sqrt</span>(chi<span class="sc">$</span>statistic <span class="sc">/</span> (<span class="fu">sum</span>(ct) <span class="sc">*</span> (<span class="fu">min</span>(<span class="fu">dim</span>(ct)) <span class="sc">-</span> <span class="dv">1</span>))))</span>
+<span id="cb6-54"><a href="#cb6-54" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(tab, <span class="fu">file.path</span>(H2, <span class="st">&quot;vystupy/tabulky/kap8_reseni_dopad.csv&quot;</span>), <span class="at">row.names =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb6-55"><a href="#cb6-55" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(tab, <span class="at">digits =</span> <span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
 <colgroup>
@@ -3180,28 +3196,28 @@ vertical-align: -.125em;
 <tr class="odd">
 <td style="text-align: left;">Rozhovor</td>
 <td style="text-align: right;">463</td>
-<td style="text-align: right;">451</td>
+<td style="text-align: right;">449</td>
 <td style="text-align: right;">0.421</td>
 <td style="text-align: right;">3.254</td>
-<td style="text-align: right;">0.376</td>
-<td style="text-align: right;">0.464</td>
-<td style="text-align: right;">3.170</td>
-<td style="text-align: right;">3.335</td>
-<td style="text-align: right;">0.492</td>
-<td style="text-align: right;">463</td>
+<td style="text-align: right;">0.375</td>
+<td style="text-align: right;">0.467</td>
+<td style="text-align: right;">3.172</td>
+<td style="text-align: right;">3.332</td>
+<td style="text-align: right;">0.499</td>
+<td style="text-align: right;">449</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Upozornění</td>
 <td style="text-align: right;">97</td>
-<td style="text-align: right;">92</td>
-<td style="text-align: right;">0.293</td>
+<td style="text-align: right;">91</td>
+<td style="text-align: right;">0.297</td>
 <td style="text-align: right;">2.750</td>
-<td style="text-align: right;">0.200</td>
-<td style="text-align: right;">0.387</td>
-<td style="text-align: right;">2.567</td>
-<td style="text-align: right;">2.936</td>
-<td style="text-align: right;">0.371</td>
-<td style="text-align: right;">97</td>
+<td style="text-align: right;">0.205</td>
+<td style="text-align: right;">0.391</td>
+<td style="text-align: right;">2.564</td>
+<td style="text-align: right;">2.935</td>
+<td style="text-align: right;">0.385</td>
+<td style="text-align: right;">91</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Spolupráce s odborníky</td>
@@ -3209,12 +3225,12 @@ vertical-align: -.125em;
 <td style="text-align: right;">89</td>
 <td style="text-align: right;">0.382</td>
 <td style="text-align: right;">3.315</td>
-<td style="text-align: right;">0.278</td>
-<td style="text-align: right;">0.484</td>
-<td style="text-align: right;">3.135</td>
-<td style="text-align: right;">3.483</td>
-<td style="text-align: right;">0.462</td>
-<td style="text-align: right;">93</td>
+<td style="text-align: right;">0.286</td>
+<td style="text-align: right;">0.489</td>
+<td style="text-align: right;">3.122</td>
+<td style="text-align: right;">3.495</td>
+<td style="text-align: right;">0.483</td>
+<td style="text-align: right;">89</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Podpora</td>
@@ -3222,25 +3238,25 @@ vertical-align: -.125em;
 <td style="text-align: right;">63</td>
 <td style="text-align: right;">0.349</td>
 <td style="text-align: right;">3.429</td>
-<td style="text-align: right;">0.242</td>
-<td style="text-align: right;">0.462</td>
-<td style="text-align: right;">3.206</td>
-<td style="text-align: right;">3.613</td>
-<td style="text-align: right;">0.409</td>
-<td style="text-align: right;">66</td>
+<td style="text-align: right;">0.234</td>
+<td style="text-align: right;">0.467</td>
+<td style="text-align: right;">3.210</td>
+<td style="text-align: right;">3.619</td>
+<td style="text-align: right;">0.429</td>
+<td style="text-align: right;">63</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Nerespektující komunikace</td>
 <td style="text-align: right;">45</td>
-<td style="text-align: right;">41</td>
-<td style="text-align: right;">0.220</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">0.231</td>
 <td style="text-align: right;">2.098</td>
-<td style="text-align: right;">0.098</td>
-<td style="text-align: right;">0.356</td>
-<td style="text-align: right;">1.805</td>
-<td style="text-align: right;">2.419</td>
-<td style="text-align: right;">0.156</td>
-<td style="text-align: right;">45</td>
+<td style="text-align: right;">0.105</td>
+<td style="text-align: right;">0.381</td>
+<td style="text-align: right;">1.810</td>
+<td style="text-align: right;">2.400</td>
+<td style="text-align: right;">0.179</td>
+<td style="text-align: right;">39</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Práce s kolektivem</td>
@@ -3248,12 +3264,12 @@ vertical-align: -.125em;
 <td style="text-align: right;">37</td>
 <td style="text-align: right;">0.514</td>
 <td style="text-align: right;">3.378</td>
-<td style="text-align: right;">0.368</td>
-<td style="text-align: right;">0.676</td>
-<td style="text-align: right;">3.139</td>
-<td style="text-align: right;">3.606</td>
-<td style="text-align: right;">0.684</td>
-<td style="text-align: right;">38</td>
+<td style="text-align: right;">0.351</td>
+<td style="text-align: right;">0.667</td>
+<td style="text-align: right;">3.132</td>
+<td style="text-align: right;">3.622</td>
+<td style="text-align: right;">0.703</td>
+<td style="text-align: right;">37</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">Přemístění žáka</td>
@@ -3263,8 +3279,8 @@ vertical-align: -.125em;
 <td style="text-align: right;">3.200</td>
 <td style="text-align: right;">0.314</td>
 <td style="text-align: right;">0.657</td>
-<td style="text-align: right;">2.886</td>
-<td style="text-align: right;">3.486</td>
+<td style="text-align: right;">2.857</td>
+<td style="text-align: right;">3.514</td>
 <td style="text-align: right;">0.543</td>
 <td style="text-align: right;">35</td>
 </tr>
@@ -3274,12 +3290,12 @@ vertical-align: -.125em;
 <td style="text-align: right;">27</td>
 <td style="text-align: right;">0.296</td>
 <td style="text-align: right;">2.778</td>
-<td style="text-align: right;">0.143</td>
-<td style="text-align: right;">0.464</td>
+<td style="text-align: right;">0.125</td>
+<td style="text-align: right;">0.480</td>
 <td style="text-align: right;">2.407</td>
 <td style="text-align: right;">3.143</td>
-<td style="text-align: right;">0.321</td>
-<td style="text-align: right;">28</td>
+<td style="text-align: right;">0.333</td>
+<td style="text-align: right;">27</td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;">(Kázeňské) Tresty</td>
@@ -3290,7 +3306,7 @@ vertical-align: -.125em;
 <td style="text-align: right;">0.150</td>
 <td style="text-align: right;">0.550</td>
 <td style="text-align: right;">2.350</td>
-<td style="text-align: right;">3.150</td>
+<td style="text-align: right;">3.100</td>
 <td style="text-align: right;">0.400</td>
 <td style="text-align: right;">20</td>
 </tr>
@@ -3313,12 +3329,12 @@ vertical-align: -.125em;
 <td style="text-align: right;">10</td>
 <td style="text-align: right;">0.400</td>
 <td style="text-align: right;">3.400</td>
-<td style="text-align: right;">0.111</td>
-<td style="text-align: right;">0.700</td>
-<td style="text-align: right;">2.727</td>
+<td style="text-align: right;">0.091</td>
+<td style="text-align: right;">0.714</td>
+<td style="text-align: right;">2.699</td>
 <td style="text-align: right;">4.000</td>
-<td style="text-align: right;">0.267</td>
-<td style="text-align: right;">15</td>
+<td style="text-align: right;">0.400</td>
+<td style="text-align: right;">10</td>
 </tr>
 <tr class="even">
 <td style="text-align: left;">Proaktivní řešení</td>
@@ -3354,7 +3370,289 @@ vertical-align: -.125em;
 <span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="fu">write.csv</span>(out, <span class="fu">file.path</span>(H2, <span class="st">&quot;vystupy/tabulky/kap8_kvalita_cisla.csv&quot;</span>), <span class="at">row.names =</span> <span class="cn">FALSE</span>)</span>
 <span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">&quot;manifest:&quot;</span>, <span class="fu">nrow</span>(out), <span class="st">&quot;metrics →&quot;</span>, <span class="st">&quot;vystupy/tabulky/kap8_kvalita_cisla.csv</span><span class="sc">\n</span><span class="st">&quot;</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>manifest: 437 metrics → vystupy/tabulky/kap8_kvalita_cisla.csv</code></pre>
+<pre><code>manifest: 478 metrics → vystupy/tabulky/kap8_kvalita_cisla.csv</code></pre>
+</div>
+</div>
+</section>
+<section id="stored-predictions-offline-recalculation" class="level2">
+<h2 class="anchored" data-anchor-id="stored-predictions-offline-recalculation">7 Stored predictions: offline recalculation</h2>
+<p>These tables are recalculated by <code>29_predikce_offline.py</code> without API calls. Invalid responses remain in the denominator as failed predictions. Intervals are retrospective case bootstraps; paired differences do not establish model equivalence. Human reading of the reported outcome is a different task.</p>
+<div class="cell">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>predictions <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="fu">file.path</span>(H2, <span class="st">&quot;vystupy/tabulky/kap8_predikce_vysledky.csv&quot;</span>))</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(predictions[, <span class="fu">c</span>(<span class="st">&quot;model&quot;</span>, <span class="st">&quot;varianta&quot;</span>, <span class="st">&quot;reference&quot;</span>, <span class="st">&quot;n&quot;</span>, <span class="st">&quot;n_invalid&quot;</span>,</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>                            <span class="st">&quot;coverage&quot;</span>, <span class="st">&quot;bal_acc&quot;</span>, <span class="st">&quot;bal_acc_ci_lo&quot;</span>, <span class="st">&quot;bal_acc_ci_hi&quot;</span>,</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>                            <span class="st">&quot;macro_f1&quot;</span>, <span class="st">&quot;kappa&quot;</span>, <span class="st">&quot;kappa_valid&quot;</span>)], <span class="at">digits =</span> <span class="dv">3</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 7%">
+<col style="width: 8%">
+<col style="width: 8%">
+<col style="width: 3%">
+<col style="width: 8%">
+<col style="width: 7%">
+<col style="width: 7%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 7%">
+<col style="width: 5%">
+<col style="width: 10%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">model</th>
+<th style="text-align: left;">varianta</th>
+<th style="text-align: left;">reference</th>
+<th style="text-align: right;">n</th>
+<th style="text-align: right;">n_invalid</th>
+<th style="text-align: right;">coverage</th>
+<th style="text-align: right;">bal_acc</th>
+<th style="text-align: right;">bal_acc_ci_lo</th>
+<th style="text-align: right;">bal_acc_ci_hi</th>
+<th style="text-align: right;">macro_f1</th>
+<th style="text-align: right;">kappa</th>
+<th style="text-align: right;">kappa_valid</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">glm-5.3</td>
+<td style="text-align: left;">few_shot</td>
+<td style="text-align: left;">A12</td>
+<td style="text-align: right;">601</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">0.988</td>
+<td style="text-align: right;">0.603</td>
+<td style="text-align: right;">0.557</td>
+<td style="text-align: right;">0.642</td>
+<td style="text-align: right;">0.569</td>
+<td style="text-align: right;">0.322</td>
+<td style="text-align: right;">0.328</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">glm-5.3</td>
+<td style="text-align: left;">few_shot</td>
+<td style="text-align: left;">A2</td>
+<td style="text-align: right;">601</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">0.988</td>
+<td style="text-align: right;">0.592</td>
+<td style="text-align: right;">0.551</td>
+<td style="text-align: right;">0.631</td>
+<td style="text-align: right;">0.549</td>
+<td style="text-align: right;">0.294</td>
+<td style="text-align: right;">0.299</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">glm-5.3</td>
+<td style="text-align: left;">few_shot</td>
+<td style="text-align: left;">konsenzus</td>
+<td style="text-align: right;">487</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0.988</td>
+<td style="text-align: right;">0.633</td>
+<td style="text-align: right;">0.589</td>
+<td style="text-align: right;">0.674</td>
+<td style="text-align: right;">0.584</td>
+<td style="text-align: right;">0.344</td>
+<td style="text-align: right;">0.350</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">glm-5.3</td>
+<td style="text-align: left;">zero_shot</td>
+<td style="text-align: left;">A12</td>
+<td style="text-align: right;">601</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">0.988</td>
+<td style="text-align: right;">0.582</td>
+<td style="text-align: right;">0.539</td>
+<td style="text-align: right;">0.623</td>
+<td style="text-align: right;">0.541</td>
+<td style="text-align: right;">0.285</td>
+<td style="text-align: right;">0.292</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">glm-5.3</td>
+<td style="text-align: left;">zero_shot</td>
+<td style="text-align: left;">A2</td>
+<td style="text-align: right;">601</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">0.988</td>
+<td style="text-align: right;">0.569</td>
+<td style="text-align: right;">0.526</td>
+<td style="text-align: right;">0.609</td>
+<td style="text-align: right;">0.517</td>
+<td style="text-align: right;">0.253</td>
+<td style="text-align: right;">0.258</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">glm-5.3</td>
+<td style="text-align: left;">zero_shot</td>
+<td style="text-align: left;">konsenzus</td>
+<td style="text-align: right;">487</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">0.988</td>
+<td style="text-align: right;">0.604</td>
+<td style="text-align: right;">0.561</td>
+<td style="text-align: right;">0.648</td>
+<td style="text-align: right;">0.551</td>
+<td style="text-align: right;">0.296</td>
+<td style="text-align: right;">0.302</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">kimi-k3</td>
+<td style="text-align: left;">zero_shot</td>
+<td style="text-align: left;">A12</td>
+<td style="text-align: right;">601</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">0.978</td>
+<td style="text-align: right;">0.589</td>
+<td style="text-align: right;">0.551</td>
+<td style="text-align: right;">0.628</td>
+<td style="text-align: right;">0.542</td>
+<td style="text-align: right;">0.290</td>
+<td style="text-align: right;">0.300</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">kimi-k3</td>
+<td style="text-align: left;">zero_shot</td>
+<td style="text-align: left;">A2</td>
+<td style="text-align: right;">601</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">0.978</td>
+<td style="text-align: right;">0.567</td>
+<td style="text-align: right;">0.527</td>
+<td style="text-align: right;">0.605</td>
+<td style="text-align: right;">0.513</td>
+<td style="text-align: right;">0.254</td>
+<td style="text-align: right;">0.262</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">kimi-k3</td>
+<td style="text-align: left;">zero_shot</td>
+<td style="text-align: left;">konsenzus</td>
+<td style="text-align: right;">487</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">0.977</td>
+<td style="text-align: right;">0.600</td>
+<td style="text-align: right;">0.557</td>
+<td style="text-align: right;">0.645</td>
+<td style="text-align: right;">0.546</td>
+<td style="text-align: right;">0.298</td>
+<td style="text-align: right;">0.309</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>differences <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="fu">file.path</span>(H2, <span class="st">&quot;vystupy/tabulky/kap8_predikce_rozdily.csv&quot;</span>))</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(differences, <span class="at">digits =</span> <span class="dv">4</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">comparison</th>
+<th style="text-align: right;">n</th>
+<th style="text-align: right;">difference</th>
+<th style="text-align: right;">ci_lo</th>
+<th style="text-align: right;">ci_hi</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">glm_vs_kimi</td>
+<td style="text-align: right;">487</td>
+<td style="text-align: right;">0.0037</td>
+<td style="text-align: right;">-0.0387</td>
+<td style="text-align: right;">0.0482</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">few_vs_zero</td>
+<td style="text-align: right;">487</td>
+<td style="text-align: right;">0.0288</td>
+<td style="text-align: right;">-0.0111</td>
+<td style="text-align: right;">0.0651</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">kable</span>(rec[<span class="fu">grepl</span>(<span class="st">&quot;^obe_plne_.*(n$|kappa$|presna$)&quot;</span>, rec<span class="sc">$</span>metric), ])</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">metric</th>
+<th style="text-align: right;">value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">172</td>
+<td style="text-align: left;">obe_plne_dopad_n</td>
+<td style="text-align: right;">593.0000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">173</td>
+<td style="text-align: left;">obe_plne_dopad_presna</td>
+<td style="text-align: right;">0.8145</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">176</td>
+<td style="text-align: left;">obe_plne_dopad_kappa</td>
+<td style="text-align: right;">0.6923</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">185</td>
+<td style="text-align: left;">obe_plne_vhodnost_n</td>
+<td style="text-align: right;">593.0000</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">186</td>
+<td style="text-align: left;">obe_plne_vhodnost_presna</td>
+<td style="text-align: right;">0.5784</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">190</td>
+<td style="text-align: left;">obe_plne_vhodnost_wkappa</td>
+<td style="text-align: right;">0.5039</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sessionInfo</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>R version 4.6.1 (2026-06-24 ucrt)
+Platform: x86_64-w64-mingw32/x64
+Running under: Windows 10 x64 (build 19045)
+
+Matrix products: default
+  LAPACK version 3.12.1
+
+locale:
+[1] LC_COLLATE=English_United States.utf8 
+[2] LC_CTYPE=English_United States.utf8   
+[3] LC_MONETARY=English_United States.utf8
+[4] LC_NUMERIC=C                          
+[5] LC_TIME=English_United States.utf8    
+
+time zone: Europe/Prague
+tzcode source: internal
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] digest_0.6.39  irrCAC_1.4     irr_0.85       lpSolve_5.6.23 tidyr_1.3.2   
+[6] dplyr_1.2.1   
+
+loaded via a namespace (and not attached):
+ [1] vctrs_0.7.3      cli_3.6.6        knitr_1.52       rlang_1.3.0     
+ [5] xfun_0.60        stringi_1.8.9    purrr_1.2.2      generics_0.1.4  
+ [9] jsonlite_2.0.0   glue_1.8.1       htmltools_0.5.9  rmarkdown_2.32  
+[13] evaluate_1.0.5   tibble_3.3.1     fastmap_1.2.0    yaml_2.3.12     
+[17] lifecycle_1.0.5  stringr_1.6.0    compiler_4.6.1   pkgconfig_2.0.3 
+[21] R6_2.6.1         tidyselect_1.2.1 pillar_1.11.1    magrittr_2.0.5  
+[25] withr_3.0.3      tools_4.6.1     </code></pre>
 </div>
 </div>
 </section>

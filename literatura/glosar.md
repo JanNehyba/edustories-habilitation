@@ -45,7 +45,7 @@ průběžně; při přidání pojmu zkontrolovat konzistenci napříč kapitolam
 | zdrojová tabulka čísel | numbers manifest | technický pojem: tabulka „metrika–hodnota“ z analýzy, jediný zdroj čísel prózy (brána 95); v próze knihy „tabulka výsledných hodnot analýzy“ (jen 4.8), „manifest“ ani „kotva“ se v próze neužívají | kap. 4 (technicky) |
 | kotva (čísla) | (number) anchor | technický pojem: HTML komentář vážící číslo v próze na zdrojovou tabulku čísel; v próze knihy se neužívá | kap. 4 (technicky) |
 | doprovodný repozitář | companion repository | veřejný repozitář s kódem, reporty a daty | kap. 4, 10 |
-| anotátorka A1–A12 | annotator A1–A12 | pseudonymy; mapování na osoby jen interně | kap. 4, příloha C |
+| anotátorka A1–A12 | annotator A1–A12 | projektové pseudonymy knihy; veřejné K2 má samostatnou lokální řadu A1–A6, mapování osob jen interně | kap. 4, příloha C |
 | trojstupňová anonymizace | three-stage anonymization | pisatel → NER (NameTag/CNEC 2.0) → LLM; poté ruční kontrola | kap. 3, 4, přílohy B, D |
 | VO (výzkumná otázka) | RQ (research question) | v knize VŽDY zkratka „VO“, nikdy „RQ“ | kap. 1 |
 | Studie 1–4 | Study 1–4 | empirické kapitoly 5–8 | kap. 1 |
@@ -53,15 +53,15 @@ průběžně; při přidání pojmu zkontrolovat konzistenci napříč kapitolam
 | osobnostní a sociální výchova (OSV) | personal and social education (PSE) | průřezové téma RVP ZV; nejbližší domácí příbuzný SEL, bez programové podoby a metaanalytické evidence | kap. 2 |
 | SOFA (Society for All) | SOFA (Society for All) | organizace zavádějící PBIS do českých škol (pozitivní podpora chování) | kap. 2 |
 | TALIS | TALIS (OECD Teaching and Learning International Survey) | mezinárodní šetření o vyučování a učení; zdroj čísel o čase věnovaném udržování pořádku a o připravenosti učitelů na řízení třídy | kap. 3 |
-| řez K3_freeze_2026-09-08 | K3 freeze slice | finální řez třetí etapy (stop-rozhodnutí 8. 9. 2026): obě finální tabulky s otiskem sha256, 1 948 + 1 947 řádků, překryv 694 | kap. 4, 8 |
+| řez K3_freeze_2026-09-08 | K3 freeze slice | finální řez třetí etapy (stop-rozhodnutí 8. 9. 2026): obě finální tabulky s otiskem sha256, 1 947 + 1 938 řádků, překryv 693; 3 185 doložených jedinečných ID a sedm řádků bez ID (horní mez 3 192) | kap. 4, 8 |
 | adjudikace | adjudication | společné rozhodnutí sporných případů anotátorkami s dohodnutou známkou; adjudikované případy nevstupují do reliability | kap. 8 |
 | rekalibrace | recalibration | sjednocení výkladu škály uprostřed etapy (K3 vhodnost, červenec 2026) = přiznaná změna protokolu; shoda se uvádí zvlášť před a po | kap. 4, 8 |
-| segment před/po rekalibraci | pre-/post-recalibration segment | části překryvu hodnocené před a po rekalibrační schůzce; pooling zakázán | kap. 8 |
+| segment před/po rekalibraci | pre-/post-recalibration segment | různé případy hodnocené A12 před/po schůzce vůči dřívějším hodnocením A2; společný finální souhrn je deskriptivní, rozdíl segmentů není kauzální účinek | kap. 8 |
 | konsenzuální štítek | consensus label | hodnota, na níž se obě anotátorky shodly; referenční hodnota pro predikci | kap. 8 |
 | vyvážená přesnost | balanced accuracy | průměr citlivostí přes třídy; primární metrika predikce (šikmé třídy dopadu) | kap. 8 |
 | macro-F1 | macro-F1 | průměr F1 přes třídy bez vážení četností | kap. 8 |
 | odložená množina | held-out set | kazuistiky, které model při ladění instrukce ani v příkladech neviděl | kap. 8 |
-| únik informace | (label) leakage | přítomnost cílové informace (Výstup) ve vstupu modelu; kontrolováno explicitním testem | kap. 8 |
+| únik informace | (label) leakage | přítomnost cílové informace (Výstup) ve vstupu modelu; historický test hledal jen doslovný začátek výstupu, ne všechny významové nápovědy | kap. 8 |
 | predikce úspěchu řešení | prediction of solution success | úloha modelu odhadnout dopad řešení z popisu, anamnézy a řešení bez výstupu | kap. 8 |
 
 ## Poznámky ke sporným volbám

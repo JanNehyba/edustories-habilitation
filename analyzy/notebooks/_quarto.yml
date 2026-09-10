@@ -1,0 +1,9 @@
+project:
+  type: default
+  output-dir: ../vystupy/reporty
+  execute-dir: project
+  render:
+    - 10_korpus.qmd
+    - 20_kodovani_llm.qmd
+    - 30_ai_vs_ucitel.qmd
+    - 40_kvalita.qmd

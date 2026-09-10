@@ -1,0 +1,6 @@
+{
+  "historical_leakage_check": "Case-sensitive normalized first 60 characters; outputs shorter than 60 characters were not checked",
+  "historical_excluded_cases": 2,
+  "historical_check_passed": 1,
+  "limitations": "Stored predictions do not allow repeating a text-leakage check or identifying an immutable model deployment"
+}

@@ -56,17 +56,19 @@ fr <- rbind(
              lo = val("kappa_ci_lo"), hi = val("kappa_ci_hi"),
              skupina = "člověk × model"))
 fr$co <- factor(fr$co, levels = rev(fr$co))
-p3 <- ggplot(fr, aes(est, co, color = skupina)) +
-  geom_vline(xintercept = c(0, 0.667, 0.8), linetype = c("solid", "dashed", "dotted"),
-             color = GREY_TEXT, linewidth = 0.35) +
+p3 <- ggplot(fr, aes(est, co, color = skupina, shape = skupina)) +
+  geom_vline(xintercept = 0, color = GREY_TEXT, linewidth = 0.35) +
+  geom_vline(xintercept = 0.667, linetype = "dashed", color = GREY_TEXT, linewidth = 0.35) +
+  geom_vline(xintercept = 0.8, linetype = "dotted", color = GREY_TEXT, linewidth = 0.35) +
   geom_errorbarh(aes(xmin = lo, xmax = hi), height = 0.18, linewidth = 0.7) +
   geom_point(size = 3) +
   scale_color_manual(values = c("shoda mezi lidmi" = MUNI_BLUE,
                                 "člověk × model" = PED_ORANGE), name = NULL) +
   scale_x_continuous(limits = c(0, 1), breaks = seq(0, 1, 0.2),
                      labels = function(x) format(x, decimal.mark = ",")) +
-  labs(x = "koeficient shody (95% CI)", y = NULL) +
-  theme_book_h() + theme(legend.position = "top")
-save_book_fig(file.path(FIG, "kap6_forest.png"), p3, width = 7.5, height = 3.2)
+  labs(x = "koeficient shody (95% CI); odlišné metriky a vzorky", y = NULL) +
+  facet_grid(skupina ~ ., scales = "free_y", space = "free_y") +
+  theme_book_h() + theme(legend.position = "none")
+save_book_fig(file.path(FIG, "kap6_forest.png"), p3, width = 7.5, height = 4)
 
 cat("OK: kap6_shoda_kategorie, kap6_konfuzni, kap6_forest →", FIG, "\n")
