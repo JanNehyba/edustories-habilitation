@@ -1,3 +1,10 @@
+"""Zopakuje čtyři studie z veřejných odvozených dat bez modelových služeb.
+
+Vstupy: balíček companion, Python, R, Quarto a zamčené závislosti renv.
+Výstupy: čtyři HTML reporty, tabulky a obrázky porovnané s přibalenými manifesty.
+Obnova závislostí může využít síť; analýzy nepotřebují API klíč ani texty kazuistik.
+"""
+
 from __future__ import annotations
 
 import argparse
@@ -23,12 +30,12 @@ def manifests(root: Path) -> dict:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Reproduce four studies without raw texts or API calls.")
-    parser.add_argument("--skip-restore", action="store_true", help="Use already installed R packages; versions are not restored.")
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--skip-restore", action="store_true", help="Použít již nainstalované R balíčky bez obnovy verzí.")
     args = parser.parse_args()
     root = Path(__file__).resolve().parent
     if not (root / "data/processed").is_dir():
-        raise SystemExit("Run the copy in a built companion package.")
+        raise SystemExit("Spusťte kopii skriptu v sestaveném balíčku companion.")
     environment = os.environ.copy()
     environment["LC_ALL"] = "English_United States.utf8" if os.name == "nt" else "C.UTF-8"
     environment["LANG"] = environment["LC_ALL"]
@@ -37,10 +44,10 @@ def main() -> None:
     rscript = shutil.which("Rscript")
     quarto = shutil.which("quarto")
     if not rscript or not quarto:
-        raise SystemExit("Rscript and Quarto must be available on PATH.")
+        raise SystemExit("Rscript a Quarto musí být dostupné v PATH.")
 
     def run(command, directory=root):
-        print("RUN", " ".join(map(str, command)), flush=True)
+        print("SPOUŠTÍM", " ".join(map(str, command)), flush=True)
         subprocess.run(command, cwd=directory, env=environment, check=True)
 
     if not args.skip_restore:
@@ -59,7 +66,7 @@ def main() -> None:
     for report_name in ("10_korpus.html", "20_kodovani_llm.html", "30_ai_vs_ucitel.html", "40_kvalita.html"):
         report = root / "analyzy/vystupy/reporty" / report_name
         if not report.is_file():
-            raise SystemExit(f"Expected rendered report missing: {report}")
+            raise SystemExit(f"Chybí očekávaný vytvořený report: {report}")
         shutil.copy2(report, reports / report.name)
     scripts = root / "analyzy/scripts"
     for script in sorted(scripts.glob("fig_*.R")):
@@ -73,13 +80,13 @@ def main() -> None:
             if actual is None or not math.isclose(value, actual, abs_tol=0.0002, rel_tol=0):
                 differences.append(f"{table}:{metric}: {value} -> {actual}")
     if differences:
-        raise SystemExit("Numeric reproduction differs from packaged manifests:\n" + "\n".join(differences))
+        raise SystemExit("Přepočtená čísla se liší od přibalených manifestů:\n" + "\n".join(differences))
     if (root / "kapitoly/cs").is_dir():
         for gate in ("95_check_cisla.py", "96_check_references.py"):
             run([sys.executable, f"analyzy/scripts/{gate}"])
     else:
-        print("Manuscript gates are outside this package's scope (chapter sources not included).")
-    print("SUCCESS: four reports, figures, revision checks and packaged numeric results reproduced.")
+        print("Kontroly rukopisu nejsou součástí tohoto balíčku; zdrojové kapitoly nejsou přibaleny.")
+    print("ÚSPĚCH: čtyři reporty, obrázky, kontroly a přibalené číselné výsledky byly reprodukovány.")
 
 
 if __name__ == "__main__":

@@ -1,16 +1,37 @@
+"""Ověří jednotky analýzy, chybění, neplatné predikce a párová porovnání.
+
+Vstupy: odvozené CSV a výsledkové manifesty. Výstup: úspěch, nebo ukončení chybou.
+Cache a kontrolní otisk ověřuje náhradní klient; neodesílá skutečné síťové dotazy.
+"""
+
 from __future__ import annotations
 
 import argparse
+from contextlib import contextmanager
 import importlib
 from pathlib import Path
 import tempfile
 from types import SimpleNamespace
 from unittest import mock
+import uuid
 
 import numpy as np
 import pandas as pd
 
 from revision_metrics import prediction_metrics
+
+
+@contextmanager
+def cache_fixture():
+    parent = Path(tempfile.gettempdir()).resolve()
+    directory = parent / f"revision-test-{uuid.uuid4().hex}"
+    directory.mkdir()
+    cache = directory / "cache.jsonl"
+    try:
+        yield cache
+    finally:
+        cache.unlink(missing_ok=True)
+        directory.rmdir()
 
 
 def check(root: Path) -> None:
@@ -50,9 +71,9 @@ def check(root: Path) -> None:
     response = SimpleNamespace(status_code=200, raise_for_status=lambda: None,
                                json=lambda: {"choices": [{"message": {"content": "KU"}}]})
     session = SimpleNamespace(headers={}, post=mock.Mock(return_value=response))
-    with tempfile.TemporaryDirectory() as directory, mock.patch.object(module, "token", return_value="test-only"), \
+    with cache_fixture() as cache, mock.patch.object(module, "token", return_value="test-only"), \
             mock.patch.object(module.requests, "Session", return_value=session):
-        client = module.Klient("test-model", Path(directory) / "cache.jsonl", "deployment-one")
+        client = module.Klient("test-model", cache, "deployment-one")
         prompt = [{"role": "user", "content": "test-only"}]
         client.zeptej(prompt)
         client.zeptej(prompt)
@@ -83,7 +104,7 @@ def check(root: Path) -> None:
     differences = pd.read_csv(tables / "kap8_predikce_rozdily.csv")
     assert differences.n.eq(487).all()
     assert differences.ci_lo.lt(0).all() and differences.ci_hi.gt(0).all()
-    print("Revision checks: valid units, missingness, invalid predictions and paired comparisons OK.")
+    print("Kontroly jednotek analýzy, chybění, neplatných predikcí a párových porovnání prošly.")
 
 
 if __name__ == "__main__":

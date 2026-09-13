@@ -1,4 +1,9 @@
-"""Recompute Study 4 predictions from public stored labels; no API or private inputs."""
+"""Přepočítá metriky predikcí Studie 4 z veřejných uložených štítků.
+
+Vstupy: k3_predikce_raw.csv a historický protokol v data/processed.
+Výstupy: manifest, metriky podle reference a párové rozdíly ve vystupy/tabulky.
+Nevytváří nové modelové odpovědi, nevolá API a nepotřebuje soukromé texty.
+"""
 
 import argparse
 from datetime import date
@@ -29,21 +34,21 @@ def main():
     predictions = pd.read_csv(input_path, dtype=str, keep_default_na=False)
     keys = ["case_uid", "model", "varianta", "mnozina"]
     if predictions.duplicated(keys).any():
-        raise ValueError("Duplicate prediction keys.")
+        raise ValueError("Klíče predikcí nejsou jedinečné.")
     development_ids = set(predictions.loc[predictions.mnozina.eq("dev"), "case_uid"])
     evaluation = predictions.loc[predictions.mnozina.eq("eval")].copy()
     if development_ids & set(evaluation.case_uid):
-        raise ValueError("Development and evaluation cases overlap.")
+        raise ValueError("Vývojové a hodnoticí případy se překrývají.")
     for reference_name in ("dopad_A12", "dopad_A2"):
         if evaluation.groupby("case_uid")[reference_name].nunique().gt(1).any():
-            raise ValueError("References differ between model runs.")
+            raise ValueError("Lidské reference se mezi modelovými běhy liší.")
     unique_cases = evaluation.drop_duplicates("case_uid")
     manifest = {}
     rows = []
 
     def put(key, value):
         if key in manifest:
-            raise ValueError(f"Duplicate metric: {key}")
+            raise ValueError(f"Opakovaný klíč metriky: {key}")
         manifest[key] = round(float(value), 4)
 
     majority = unique_cases.dopad_A12.value_counts().index[0]
@@ -60,7 +65,7 @@ def main():
     consensus_runs = {}
     for (model, variant), group in evaluation.groupby(["model", "varianta"]):
         if set(group.case_uid) != set(unique_cases.case_uid):
-            raise ValueError("Model runs do not cover the same evaluation cases.")
+            raise ValueError("Modelové běhy nepokrývají stejné hodnoticí případy.")
         for reference in ("A12", "A2", "konsenzus"):
             if reference == "konsenzus":
                 selected = group.loc[group.dopad_A12.eq(group.dopad_A2) & group.dopad_A12.isin(LABELS)].copy()
@@ -97,7 +102,7 @@ def main():
         baseline = consensus_runs[baseline_key].sort_index()
         alternative = consensus_runs[alternative_key].reindex(baseline.index)
         if alternative.predikce.isna().any():
-            raise ValueError("Paired comparison contains unmatched cases.")
+            raise ValueError("Párové porovnání obsahuje nespárované případy.")
         difference = paired_balanced_difference(baseline.dopad_A12, baseline.predikce,
                                                alternative.predikce, args.bootstrap)
         for metric, value in difference.items():
@@ -112,7 +117,7 @@ def main():
                   for metric, value in manifest.items()]).to_csv(output / "kap8_predikce_cisla.csv", index=False)
     pd.DataFrame(rows).to_csv(output / "kap8_predikce_vysledky.csv", index=False)
     pd.DataFrame(differences).to_csv(output / "kap8_predikce_rozdily.csv", index=False)
-    print(f"Recomputed {len(unique_cases)} evaluation cases, {len(rows)} reference-specific rows; input {input_sha}")
+    print(f"Přepočteno {len(unique_cases)} hodnoticích případů a {len(rows)} řádků podle reference; otisk vstupu {input_sha}")
     print(pd.DataFrame(differences).to_string(index=False))
 
 

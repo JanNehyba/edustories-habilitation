@@ -9,6 +9,7 @@ Nejde o oficiální podání ani o stanovisko habilitační komise.
 - Odvozené tabulky bez úplných textů kazuistik v `data/processed/`.
 - Analýzy v R, uložené predikce a jejich offline přepočet v Pythonu.
 - Výsledkové tabulky a obrázky.
+- PDF monografie, bez zdrojových Markdown kapitol.
 - Návod: [JAK-OVERIT-CISLA.md](JAK-OVERIT-CISLA.md).
 
 ## Opakování výpočtů
@@ -25,6 +26,8 @@ python reproduce.py
 Skript obnoví R balíčky, přepočítá uložené predikce i všechny čtyři studie,
 vytvoří obrázky a zkontroluje výsledky proti přibaleným manifestům.
 Při chybě skončí neúspěšně, žádnou studii tiše nepřeskočí.
+Kontroly číselných kotev a citací rukopisu se provádějí v soukromém projektu;
+veřejný balíček bez zdrojových kapitol ověřuje analytické výsledky.
 Obnova balíčků může potřebovat internet; analýzy nevolají modelové API.
 Přepínač `--skip-restore` použije již nainstalované R balíčky bez obnovy verzí.
 

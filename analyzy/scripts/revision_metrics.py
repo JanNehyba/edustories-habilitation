@@ -1,4 +1,8 @@
-"""Offline agreement and prediction metrics with explicit failed-response handling."""
+"""Metriky shody a predikce s výslovným zacházením s neplatnými odpověďmi.
+
+Vstupy: lidské a modelové štítky v paměti. Výstupy: metriky a bootstrapové intervaly.
+Modul nečte soubory, nevolá síť a neplatnou predikci neztrácí z jmenovatele.
+"""
 
 from collections import Counter
 
@@ -21,7 +25,7 @@ def nominal_kappa(reference, prediction):
     reference = list(reference)
     prediction = list(prediction)
     if len(reference) != len(prediction):
-        raise ValueError("Reference and prediction lengths differ.")
+        raise ValueError("Počty referenčních a predikovaných štítků se liší.")
     if not reference:
         return float("nan")
     count = len(reference)
@@ -36,11 +40,11 @@ def prediction_metrics(reference, prediction):
     reference = np.asarray(list(reference), dtype=object)
     prediction = np.asarray([normalize_prediction(value) for value in prediction], dtype=object)
     if len(reference) != len(prediction):
-        raise ValueError("Reference and prediction lengths differ.")
+        raise ValueError("Počty referenčních a predikovaných štítků se liší.")
     if not len(reference):
         return {}
     if not np.isin(reference, LABELS).all():
-        raise ValueError("Reference contains missing or unknown labels.")
+        raise ValueError("Referenční štítky obsahují chybějící nebo neznámé hodnoty.")
     valid = prediction != INVALID
     recalls = {}
     f_scores = []
@@ -81,7 +85,7 @@ def paired_balanced_difference(reference, baseline, alternative, repetitions=100
     baseline = np.asarray(baseline, dtype=object)
     alternative = np.asarray(alternative, dtype=object)
     if not (len(reference) == len(baseline) == len(alternative)):
-        raise ValueError("Paired comparison requires the same cases.")
+        raise ValueError("Párové porovnání vyžaduje stejné případy.")
     random = np.random.default_rng(SEED)
     differences = []
     for _ in range(repetitions):
