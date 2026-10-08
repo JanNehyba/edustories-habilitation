@@ -43,10 +43,8 @@ Kapitoly 4, 6 a 8 rozlišují tato omezení od statistické reprodukce.
 
 Veřejná tabulka K2 používá vlastní lokální pseudonymy A1–A6.
 Nejsou převodníkem na projektové pseudonymy knihy A1–A12.
-Úplná textová databáze není součástí tohoto balíčku. To nepředjímá
-rozhodnutí o budoucím vydání databáze. Veřejné verze dokumentů uchazeče
-(životopis, odborná charakteristika, přehled souladu, otázky ke konzultaci)
-jsou ve složce `podklady/`.
+Úplná textová databáze ani dokumenty habilitačního řízení nejsou součástí
+tohoto balíčku. To nepředjímá rozhodnutí o budoucím vydání databáze.
 [Veřejná platforma](https://edustories.cz/) a
 [anglický výběr](https://huggingface.co/datasets/MU-NLPC/Edustories-en)
 jsou samostatné výstupy.
