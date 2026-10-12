@@ -111,8 +111,8 @@ p4 <- ggplot(rd, aes(100 * du_podil, lab)) +
   scale_shape_manual(values = c(`první etapa (2024)` = 1, `třetí etapa (2026)` = 16),
                      name = NULL) +
   scale_x_continuous(limits = c(0, 100), labels = function(x) paste0(cz(x), " %")) +
-  labs(x = "podíl kazuistik s dlouhodobým úspěchem (interval spolehlivosti u třetí etapy)",
-       y = NULL) +
+  # interval spolehlivosti u třetí etapy vysvětluje popisek Obrázku 8.4 (osa byla useknutá)
+  labs(x = "podíl kazuistik s dlouhodobým úspěchem", y = NULL) +
   theme_book_h() + theme(legend.position = "top")
 save_book_fig(file.path(FIG, "kap8_reseni_dopad.png"), p4, width = 8, height = 4.2)
 

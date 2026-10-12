@@ -110,6 +110,8 @@ def strip_noncited(text: str) -> str:
     text = re.sub(r"<!--.*?-->", " ", text, flags=re.S)
     text = re.sub(r"```.*?```", " ", text, flags=re.S)
     text = re.sub(r"^>[^\n]*$", " ", text, flags=re.M)
+    # cíl odkazu [text](URL) by rozbil závorku citace „(Autor, 2026; [kód](URL))“
+    text = re.sub(r"\]\([^)]*\)", "]", text)
     m = re.search(r"\n#{2,4}\s+(?:References?|Literature|Literatura)\b", text, re.I)
     if m:
         tail = text[m.end():]
@@ -209,6 +211,14 @@ def main() -> int:
         for key in refs:
             if key[0] == s and key[1].rstrip("abc") == base:
                 used.add(key)
+    # právní předpisy se v textu citují číslem („zákon č. 82/2015 Sb.“), ne autorem a rokem
+    all_text = " ".join(strip_noncited(f.read_text(encoding="utf-8"))
+                        for f in sorted(args.chapters.glob("*.md")) if f.name != "99-references.md")
+    predpisy = set(re.findall(r"č\.\s*(\d+/\d{4})\s*Sb\.", all_text))
+    for key, head in refs.items():
+        m = re.match(r"^(?:Zákon|Vyhláška|Nařízení vlády)\s+č\.\s*(\d+/\d{4})\s*Sb\.", head)
+        if m and m.group(1) in predpisy:
+            used.add(key)
     orphans = [(k, v) for k, v in sorted(refs.items()) if k not in used]
 
     print(f"96_check_references (CZ-HARD): {len(cited)} citací v textu, {len(refs)} záznamů.")

@@ -15,8 +15,8 @@ Nejde o oficiální podání ani o stanovisko habilitační komise.
 ## Opakování výpočtů
 
 Vyžaduje Python 3.11 nebo novější, R 4.6.1 a Quarto na PATH.
-Ověřená prostředí popisují `requirements.txt`, `analyzy/renv.lock`
-a `vystupy/tabulky/R-session-info.txt`.
+Ověřená prostředí popisují `requirements.txt`, `analyzy/requirements-lock.txt`
+(příprava dat v Pythonu), `analyzy/renv.lock` a `vystupy/tabulky/R-session-info.txt`.
 
 ```sh
 python -m pip install -r requirements.txt

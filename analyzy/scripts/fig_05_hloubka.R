@@ -26,6 +26,10 @@ save_book_fig(file.path(FIG, "kap5_delky.png"), p1, width = 7.5, height = 3.6)
 
 # ── Obrázek: rozložení věku žáků ──
 v <- read.csv(file.path(TAB, "kap5_vek_rozdeleni.csv"), encoding = "UTF-8")
+# Osa jen pro věk 4 až 20 let (čitelnost). Kazuistiky mimo toto rozpětí graf neukazuje;
+# popisek Obrázku 5.3 to musí uvádět (revize G8-025, znění v revize/kod-poznamky.md).
+mimo_osu <- sum(v$n[v$n > 0 & (v$vek < 4 | v$vek > 20)])
+cat("kap5_vek: mimo osu (věk < 4 nebo > 20)", mimo_osu, "kazuistik\n")
 v <- v[v$n > 0 & v$vek >= 4 & v$vek <= 20, ]
 p2 <- ggplot(v, aes(vek, n)) +
   geom_col(fill = MUNI_BLUE, width = 0.8) +

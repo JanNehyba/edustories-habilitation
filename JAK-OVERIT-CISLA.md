@@ -6,11 +6,16 @@ Otevřete report podle kapitoly: Studie 1 (`10_korpus.html`), Studie 2
 (`20_kodovani_llm.html`), Studie 3 (`30_ai_vs_ucitel.html`) nebo Studie 4
 (`40_kvalita.html`) ve složce `vystupy/reporty/`.
 Výsledkové tabulky leží ve `vystupy/tabulky/`; název metriky, její hodnota,
-zdrojový skript a otisk vstupu spojují číslo s výpočtem.
+zdrojový skript a otisk vstupu spojují číslo s výpočtem. Při přepočtu se
+porovnávají hodnoty; otisk vstupního souboru se může lišit i u obsahově
+shodného souboru (například podle konců řádků).
 
 ## Vlastní přepočet
 
 Postup a závislosti uvádí [README.md](README.md). Spusťte `python reproduce.py`.
+Verze balíčků R jsou v `analyzy/renv.lock`, verze balíčků Pythonu pro přípravu
+dat v `analyzy/requirements-lock.txt`. Dvě veřejné vstupní tabulky Studií 2 a 3
+vytváří ze syrových dat skript `analyzy/scripts/31_verejne_vstupy.R`.
 Skript nevyžaduje původní texty ani API klíč, kontroluje všechny čtyři studie
 a skončí chybou, pokud výsledky neodpovídají přibaleným manifestům.
 
