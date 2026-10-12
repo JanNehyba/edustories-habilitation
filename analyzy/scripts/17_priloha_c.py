@@ -45,22 +45,15 @@ REGISTR = [
     ("k1_test_03_24", "K1 test 1", "březen 2024", "pět souborů", ""),
     ("k1_test_04_24", "K1 test 2", "duben 2024", "A1–A4, A7", ""),
     ("k1_naostro_05_24", "K1 finál", "od května 2024", "A1–A4, A7",
-     "dělba práce s vestavěným překryvem; anotační listy obsahují 1 413"
-     " kazuistik, <!-- necislo: registr událostí --> z nichž 69"
-     " <!-- necislo: rozdíl 1413−1344 --> se nepodařilo spárovat"
-     " přes text popisu"),
+     "dělba práce s vestavěným překryvem"),
     ("llm_anotace_matice_08_24", "K1 sloučení do matice", "srpen 2024", "–",
-     "lidské kódy K1 sloučené do matice korpusu (provenience ověřena, kap. 4)"),
+     "lidské kódy K1 sloučené do matice korpusu"),
     ("k2_setkani10_04_25", "K2 zácvik 1", "duben 2025", "A1, A2, A8–A11", ""),
     ("k2_anotace40_04_25", "K2 zácvik 2", "duben 2025", "A1, A2, A8–A12", ""),
     (None, "K2 příprava", "červen 2025", "gpt-4o (strojově)",
      "generace srovnávacích řešení, ne anotace"),
     ("k2_final351_06_25", "K2 finál", "červen 2025", "A1, A2, A8, A9, A10, A12",
-     "zaslepené hodnocení dvojic řešení; hodnoceno 351"
-     " <!-- necislo: registr událostí --> identifikátorů, autoritativní analytický"
-     " soubor čítá 324 <!-- manifest kap7_k2_shoda_cisla: n_kazuistik=324 -->"
-     " kazuistik (kapitola 7); zde uvedený počet = spárované na jednotný"
-     " identifikátor"),
+     "zaslepené hodnocení dvojic řešení (kapitola 7)"),
     ("k3_zacvik_26", "K3 zácvik", "2026", "A2, A12", ""),
     ("k3_pilot1_26", "K3 pilot 1", "2026", "A2, A12", ""),
     ("k3_pilot2_26", "K3 pilot 2", "2026", "A2, A12", ""),
@@ -149,13 +142,10 @@ def main() -> None:
     md.append(f"> GENEROVÁNO SKRIPTEM {date.today().isoformat()} – NEEDITOVAT RUČNĚ,"
               " regenerovat skriptem 17")
     md.append("")
-    md.append("Tato příloha dokládá registr anotačních událostí,")
-    md.append("přehled velikostí datových řezů a přehled měr shody.")
-    md.append("Úplná matice pokrytí (kazuistika × událost) je dostupná v doprovodném")
-    md.append("repozitáři jako tabulka pokrytí; zde uvádíme agregáty. Počty")
-    md.append("kazuistik se vztahují k záznamům spárovaným na jednotný identifikátor")
-    md.append("(kapitola 4); počty řádků v původních anotačních souborech se mohou")
-    md.append("mírně lišit o záznamy, které se spárovat nepodařilo.")
+    md.append("Příloha uvádí registr anotačních událostí, přehled velikostí datových")
+    md.append("řezů a přehled měr shody. Počty kazuistik se vztahují k záznamům")
+    md.append("spárovaným na jednotný identifikátor; úplná tabulka pokrytí")
+    md.append("(kazuistika × událost) je v doprovodném repozitáři (Nehyba, 2026).")
     md.append("")
     md.append("## C.1 Registr anotačních událostí")
     md.append("")
@@ -163,10 +153,7 @@ def main() -> None:
               " projektovými pseudonymy A1–A12).")
     md.append("")
     md.append("Číslo pseudonymu je projektové: táž osoba vystupuje pod týmž"
-              " pseudonymem ve všech etapách a kapitolách; ve třetí etapě tak vedle"
-              " sebe stojí A2 a A12. Veřejná tabulka K2 používá samostatné lokální"
-              " pseudonymy A1–A6. Jejich čísla nejsou převodníkem na projektové"
-              " pseudonymy ani prostředkem propojování osob.")
+              " pseudonymem ve všech etapách a kapitolách.")
     md.append("")
     md.append("```{=latex}")
     md.append("\\footnotesize")
@@ -183,13 +170,11 @@ def main() -> None:
     md.append("```")
     md.append("")
     md.append("*Poznámka.* Vlastní výpočet z tabulky pokrytí; kód a data v doprovodném"
-              " repozitáři (Nehyba, 2026; postup viz kapitola 4). Události s uvedeným"
-              " počtem kazuistik odpovídají sloupcům tabulky pokrytí; metadata událostí"
-              " podle datové dokumentace.")
+              " repozitáři (Nehyba, 2026).")
     md.append("")
     md.append("## C.2 Přehled velikostí datových řezů")
     md.append("")
-    md.append("**Tabulka C.2.** Čísla, která se v knize a podkladech vztahují k „velikosti dat“, a jejich vztah.")
+    md.append("**Tabulka C.2.** Velikosti datových řezů a vzorků užívaných v knize.")
     md.append("")
     md.append("| Číslo | Co označuje | Zdroj |")
     md.append("|---|---|---|")
@@ -197,11 +182,9 @@ def main() -> None:
     md.append(f"| {a('kap5_korpus_cisla', 'rust_S4082024', tis(1695), '1695')} | řez srpen 2024 (prostor identifikátorů druhé etapy) | kapitola 5 |")
     md.append(f"| {a('kap5_korpus_cisla', 'rust_S5HFrelease', tis(1492), '1492')} | veřejná datová sada (kurátorovaný výběr z řezu srpen 2024); záznamy výběru odpovídají {a_c('c1_hf_publikovano_en', pocty['hf_publikovano_en'])} unikátním kazuistikám (Tabulka C.1) | kapitola 5, příloha C |")
     md.append(f"| {a('kap5_korpus_cisla', 'n_k1_rez', tis(1359), '1359')} | reprodukovatelný řez K1 (deduplikované kazuistiky s lidskou anotací v matici) | kapitoly 4 a 5 |")
-    md.append(f"| {a('kap4_provenience_cisla', 'prov_rez_pokryto_lidskou', tis(1350), '1350')} | z řezu K1 s přímým anotačním listem | kapitola 4 |")
     md.append(f"| {a('kap7_k2_shoda_cisla', 'n_kazuistik', tis(324), '324')} | vzorek druhé etapy (zaslepené dvojice) | kapitola 7 |")
-    md.append("| přibližně třináct set <!-- necislo: historické číslo rukopisů, nerekonstruovatelné --> | stav pracovní databáze v dřívějších výstupech projektu | kapitola 4 |")
     md.append("")
-    md.append("*Poznámka. Hodnoty pocházejí z tabulek výsledných hodnot analýz citovaných v uvedených kapitolách; zdůvodnění viz kapitola 4.*")
+    md.append("*Poznámka. Hodnoty z tabulek výsledných hodnot analýz v uvedených kapitolách.*")
     md.append("")
     md.append("## C.3 Přehled měr shody")
     md.append("")
@@ -222,12 +205,12 @@ def main() -> None:
     md.append(f"| K1 (model × člověk) | přesná shoda | {r6('shoda_presna_llm')} |")
     md.append(f"| K1 (model × člověk) | rozšířená shoda | {r6('shoda_rozsirena_llm')} |")
     md.append(f"| K1 (model × člověk) | Cohenovo κ | {r6('kappa_llm_clovek')} |")
-    md.append(f"| K1 (model × člověk), bez zjištěných překryvů | retrospektivní κ | {r6('bez_prekryvu_kappa')} |")
+    md.append(f"| K1 (model × člověk), bez kazuistik z příkladů instrukce | Cohenovo κ | {r6('bez_prekryvu_kappa')} |")
     md.append(f"| K2 | α vhodnost | {r7('alpha_ord_final_vhodnost')} |")
     md.append(f"| K2 | α reaktivní–proaktivní | {r7('alpha_ord_final_reaktivni')} |")
     md.append(f"| K2 | α humanistická–behaviorální | {r7('alpha_ord_final_humanisticke')} |")
     md.append(f"| K2 | α systémová–situační | {r7('alpha_ord_final_systemove')} |")
-    md.append(f"| K2 | Jaccard rámce (konvence článku) | {r7('jaccard_pristupy_obe_prazdne_shoda')} |")
+    md.append(f"| K2 | Jaccard rámce | {r7('jaccard_pristupy_obe_prazdne_shoda')} |")
     kap8_path = TAB / "kap8_kvalita_cisla.csv"
     if kap8_path.exists():
         kap8 = load_manifest("kap8_kvalita_cisla")
