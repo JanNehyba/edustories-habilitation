@@ -139,6 +139,46 @@ slope_rows <- lapply(names(dims), function(nm) {
 knitr::kable(bind_rows(slope_rows), digits = 3)
 ```
 
+## Sensitivity: source effect varying across annotators
+
+The primary models let annotators differ in overall severity (random intercept),
+not in how strongly they separate the two sources. Two checks (independent audit,
+2026-10-13): (a) a random slope for source by annotator, (b) a fixed
+source × annotator interaction that gives each annotator's own teacher − AI
+contrast (min, max and sign count across the six annotators).
+
+```{r lmm-annotator}
+ann_rows <- lapply(names(dims), function(nm) {
+  d <- df[df$Otazka == dims[[nm]] & !is.na(df$Hodnoceni), ]
+  m <- suppressWarnings(
+    lmer(Hodnoceni ~ Reseni_gen_AI + (1 | Id) + (1 + Reseni_gen_AI | anotator_name),
+         data = d, REML = FALSE))
+  fe <- summary(m)$coefficients
+  ci <- suppressWarnings(confint(m, parm = "beta_", method = "Wald"))
+  put(paste0("lmm_annslope_b1_ucitel_", nm), fe[2, 1])
+  put(paste0("lmm_annslope_ci_lo_", nm), ci[2, 1])
+  put(paste0("lmm_annslope_ci_hi_", nm), ci[2, 2])
+  put(paste0("lmm_annslope_p_", nm), fe[2, 5])
+  put(paste0("lmm_annslope_singular_", nm), as.integer(isSingular(m)))
+  d$ann <- factor(d$anotator_name)
+  mi <- lmer(Hodnoceni ~ Reseni_gen_AI * ann + (1 | Id), data = d, REML = FALSE)
+  b <- lme4::fixef(mi)
+  per_ann <- sapply(levels(d$ann), function(a) {
+    k <- paste0("Reseni_gen_AI:ann", a)
+    b[["Reseni_gen_AI"]] + if (k %in% names(b)) b[[k]] else 0
+  })
+  put(paste0("lmm_ann_b1_min_", nm), min(per_ann))
+  put(paste0("lmm_ann_b1_max_", nm), max(per_ann))
+  put(paste0("lmm_ann_n_kladny_", nm), sum(per_ann > 0))
+  put(paste0("lmm_ann_n_zaporny_", nm), sum(per_ann < 0))
+  data.frame(dim = nm, b1_slope_model = fe[2, 1], ci_lo = ci[2, 1], ci_hi = ci[2, 2],
+             p = fe[2, 5], singular = isSingular(m),
+             per_annotator_min = min(per_ann), per_annotator_max = max(per_ann),
+             n_positive = sum(per_ann > 0), n_negative = sum(per_ann < 0))
+})
+knitr::kable(bind_rows(ann_rows), digits = 3)
+```
+
 ## Missingness by source, including structurally absent rows
 
 Blinding hides explicit source labels, not all textual source cues. It does not
