@@ -23,6 +23,9 @@ SRC = ROOT / "data" / "processed" / "anotace_pokryti.csv"
 TAB = ROOT / "vystupy" / "tabulky"
 OUT_MD = ROOT / "kapitoly" / "cs" / "appendix-C-supplementary-tables.md"
 OUT_MAN = TAB / "priloha_c_cisla.csv"
+# Technické podrobnosti přesunuté z kapitol při úpravě čitelnosti (oddíly C.4 a dále); statický
+# text s kotvami čísel, připojí se za C.3 beze změny.
+VLOZKA = ROOT / "kapitoly" / "vlozky" / "priloha-c-technicke.md"
 SKRIPT = "analyzy/scripts/17_priloha_c.py"
 
 KAMPANE = {
@@ -61,7 +64,7 @@ REGISTR = [
      "dělba práce s vestavěným překryvem; uzavřeno řezem ze září 2026"
      " (kapitola 8)"),
     ("hf_publikovano_en", "zveřejnění datové sady (ne anotace)", "podzim 2024", "–",
-     "veřejná datová sada, výběr z řezu srpen 2024"),
+     "veřejná datová sada, výběr z řezu ze srpna 2024"),
 ]
 
 # Názvy modelů v próze: klíče manifestu nesou slug (tečka → podtržítko), proto se
@@ -133,7 +136,7 @@ def main() -> None:
         return a("kap4_metodologie_cisla", key, tis(int(kap4[key])), kap4[key])
 
     md: list[str] = []
-    md.append("# Příloha C. Doplňkové tabulky")
+    md.append("# Příloha C. Doplňkové tabulky a analýzy")
     md.append("")
     md.append("> Jazyk souboru: CZ (autoritativní; habilitace-2 nemá EN zrcadlo)")
     md.append("> Typ kapitoly: příloha (doplňkové tabulky)")
@@ -146,6 +149,8 @@ def main() -> None:
     md.append("řezů a přehled měr shody. Počty kazuistik se vztahují k záznamům")
     md.append("spárovaným na jednotný identifikátor; úplná tabulka pokrytí")
     md.append("(kazuistika × událost) je v doprovodném repozitáři (Nehyba, 2026).")
+    if VLOZKA.exists():
+        md.append("Oddíly C.4 až C.7 uvádějí technické podrobnosti ke kapitolám 4, 6, 7 a 8.")
     md.append("")
     md.append("## C.1 Registr anotačních událostí")
     md.append("")
@@ -179,8 +184,8 @@ def main() -> None:
     md.append("| Číslo | Co označuje | Zdroj |")
     md.append("|---|---|---|")
     md.append(f"| {a('kap5_korpus_cisla', 'n_korpus_s6', tis(3202), '3202')} | zveřejněné kazuistiky, řez květen 2026 | kapitola 5 |")
-    md.append(f"| {a('kap5_korpus_cisla', 'rust_S4082024', tis(1695), '1695')} | řez srpen 2024 (prostor identifikátorů druhé etapy) | kapitola 5 |")
-    md.append(f"| {a('kap5_korpus_cisla', 'rust_S5HFrelease', tis(1492), '1492')} | veřejná datová sada (kurátorovaný výběr z řezu srpen 2024); záznamy výběru odpovídají {a_c('c1_hf_publikovano_en', pocty['hf_publikovano_en'])} unikátním kazuistikám (Tabulka C.1) | kapitola 5, příloha C |")
+    md.append(f"| {a('kap5_korpus_cisla', 'rust_S4082024', tis(1695), '1695')} | řez ze srpna 2024 (prostor identifikátorů druhé etapy) | kapitola 5 |")
+    md.append(f"| {a('kap5_korpus_cisla', 'rust_S5HFrelease', tis(1492), '1492')} | veřejná datová sada (kurátorovaný výběr z řezu ze srpna 2024); záznamy výběru odpovídají {a_c('c1_hf_publikovano_en', pocty['hf_publikovano_en'])} unikátním kazuistikám (tabulka C.1) | kapitola 5, příloha C |")
     md.append(f"| {a('kap5_korpus_cisla', 'n_k1_rez', tis(1359), '1359')} | reprodukovatelný řez K1 (deduplikované kazuistiky s lidskou anotací v matici) | kapitoly 4 a 5 |")
     md.append(f"| {a('kap7_k2_shoda_cisla', 'n_kazuistik', tis(324), '324')} | vzorek druhé etapy (zaslepené dvojice) | kapitola 7 |")
     md.append("")
@@ -223,7 +228,7 @@ def main() -> None:
             md.append(f"| K3 | κ kvalita (plný překryv) | {r8('plny_kvalita_kappa')} |")
         md.append(f"| K3 | AC1 kvalita | {r8('shoda_kvalita_ac1')} |")
         md.append(f"| K3 | κ dopad | {r8('shoda_dopad_kappa')} |")
-        md.append(f"| K3 | vážená κ vhodnost | {r8('shoda_vhodnost_wkappa')} |")
+        md.append(f"| K3 | vážené κ vhodnost | {r8('shoda_vhodnost_wkappa')} |")
         md.append(f"| K1 × K3 | κ dopad mezi etapami | {r8('k1k3_dopad_kappa')} |")
     else:
         md.append("| K3 | shoda | viz kapitola 8 <!-- necislo: bez hodnoty --> |")
@@ -255,12 +260,15 @@ def main() -> None:
     md.append("*Poznámka.* Vlastní analýza; tabulky výsledných hodnot studií 2 až 4"
               " v doprovodném repozitáři (Nehyba, 2026; kapitoly 6 až 8).")
     md.append("")
+    if VLOZKA.exists():
+        md.extend(VLOZKA.read_text(encoding="utf-8").replace("\r\n", "\n").rstrip("\n").split("\n"))
+        md.append("")
     md.append("---")
     md.append("")
     md.append("### Kontrolní seznam před finalizací (build tento blok stripuje)")
     md.append("")
     md.append("- [x] Každé tvrdé číslo má kotvu na manifest nebo `<!-- necislo -->` (generováno skriptem)")
-    md.append("- [x] Tabulky číslované C.1–C.3, s uvedeným zdrojem")
+    md.append("- [x] Tabulky číslované C.1–C.5, s uvedeným zdrojem")
     md.append("- [x] Anonymizace: pouze pseudonymy A1–A12")
     md.append("- [x] Žádný em-dash; en-dash jen v rozsazích")
     md.append("- [x] Po přepočtu matice pokrytí s finální třetí etapou regenerováno skriptem 17 (řádek K3 finál, C.3 z manifestu kap8; 8. 9. 2026)")
@@ -269,12 +277,15 @@ def main() -> None:
 
     md = [line[:-1].replace("*Poznámka. ", "*Poznámka.* ", 1)
           if line.startswith("*Poznámka. ") and line.endswith("*") else line for line in md]
-    OUT_MD.write_text("\n".join(md), encoding="utf-8")
+    OUT_MD.write_text("\n".join(md), encoding="utf-8", newline="\n")
     print(f"Manifest: {len(manifest_rows)} metrik → {OUT_MAN.relative_to(ROOT)}")
     print(f"Příloha C: {len(md)} řádků → {OUT_MD.relative_to(ROOT)}")
-    # kotvy nadpisů a klikací křížové odkazy doplní brána 97 (12. 10. 2026)
+    # kotvy nadpisů a klikací křížové odkazy doplní brána 97 (12. 10. 2026);
+    # --bez-odkazu ji vynechá (když na kapitolách souběžně pracuje jiný agent)
     import subprocess
     import sys
+    if "--bez-odkazu" in sys.argv:
+        return
     subprocess.run([sys.executable, str(Path(__file__).with_name("97_krizove_odkazy.py")), "--apply"],
                    check=True)
 
