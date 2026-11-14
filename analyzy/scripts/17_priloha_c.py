@@ -257,7 +257,7 @@ def main() -> None:
             md.append("| K3 predikce | vyvážená přesnost hádání většinové třídy | "
                       f"{rp('predikce_majorita_bal_acc')} |")
     md.append("")
-    md.append("*Poznámka.* Vlastní analýza; tabulky výsledných hodnot studií 2 až 4"
+    md.append("*Poznámka.* Vlastní analýza; tabulky výsledných hodnot Studií 2 až 4"
               " v doprovodném repozitáři (Nehyba, 2026; kapitoly 6 až 8).")
     md.append("")
     if VLOZKA.exists():
