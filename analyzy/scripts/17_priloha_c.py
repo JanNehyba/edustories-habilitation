@@ -175,7 +175,10 @@ def main() -> None:
     md.append("```")
     md.append("")
     md.append("*Poznámka.* Vlastní výpočet z tabulky pokrytí; kód a data v doprovodném"
-              " repozitáři (Nehyba, 2026).")
+              " repozitáři (Nehyba, 2026). Počet u finálního kola první etapy udává kazuistiky"
+              " z anotačních listů tohoto kola, počet u sloučení do matice kazuistiky s aspoň jedním"
+              " lidským kódem v anotační matici. Údaj „pět souborů“ u prvního testu znamená pět"
+              " pracovních souborů zkušebního kola, které nejsou vedeny pod pseudonymy.")
     md.append("")
     md.append("## C.2 Přehled velikostí datových řezů")
     md.append("")
@@ -183,7 +186,7 @@ def main() -> None:
     md.append("")
     md.append("| Číslo | Co označuje | Zdroj |")
     md.append("|---|---|---|")
-    md.append(f"| {a('kap5_korpus_cisla', 'n_korpus_s6', tis(3202), '3202')} | zveřejněné kazuistiky, řez květen 2026 | kapitola 5 |")
+    md.append(f"| {a('kap5_korpus_cisla', 'n_korpus_s6', tis(3202), '3202')} | zveřejněné kazuistiky, řez z května 2026 | kapitola 5 |")
     md.append(f"| {a('kap5_korpus_cisla', 'rust_S4082024', tis(1695), '1695')} | záznamy řezu ze srpna 2024, některé kazuistiky v něm mají více záznamů (prostor identifikátorů druhé etapy) | kapitola 5 |")
     md.append(f"| {a('kap5_korpus_cisla', 'rust_S5HFrelease', tis(1492), '1492')} | veřejná datová sada (kurátorovaný výběr z řezu ze srpna 2024); záznamy výběru odpovídají {a_c('c1_hf_publikovano_en', pocty['hf_publikovano_en'])} unikátním kazuistikám (tabulka C.1) | kapitola 5, příloha C |")
     md.append(f"| {a('kap5_korpus_cisla', 'n_k1_rez', tis(1359), '1359')} | reprodukovatelný řez K1 (deduplikované kazuistiky s lidskou anotací v matici) | kapitoly 4 a 5 |")
